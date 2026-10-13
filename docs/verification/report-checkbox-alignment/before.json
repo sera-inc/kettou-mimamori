@@ -1,0 +1,209 @@
+[
+  {
+    "text": "インスリン",
+    "input": "rp_optionsinsulin",
+    "rect": {
+      "x": 299.03125,
+      "y": 1135.078125,
+      "w": 121.734375,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "炭水化物",
+    "input": "rp_optionscarbs",
+    "rect": {
+      "x": 428.765625,
+      "y": 1135.078125,
+      "w": 108,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "基礎インスリン割合",
+    "input": "rp_optionsbasal",
+    "rect": {
+      "x": 544.765625,
+      "y": 1135.078125,
+      "w": 177.734375,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "メモ",
+    "input": "rp_optionsnotes",
+    "rect": {
+      "x": 730.5,
+      "y": 1121.078125,
+      "w": 80,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "食事",
+    "input": "rp_optionsfood",
+    "rect": {
+      "x": 818.5,
+      "y": 1135.078125,
+      "w": 80,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "未加工値",
+    "input": "rp_optionsraw",
+    "rect": {
+      "x": 906.5,
+      "y": 1121.078125,
+      "w": 108,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "残存インスリン",
+    "input": "rp_optionsiob",
+    "rect": {
+      "x": 264,
+      "y": 1179.078125,
+      "w": 149.734375,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "残存糖質",
+    "input": "rp_optionscob",
+    "rect": {
+      "x": 421.734375,
+      "y": 1179.078125,
+      "w": 108,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "予測値",
+    "input": "rp_optionspredicted",
+    "rect": {
+      "x": 537.734375,
+      "y": 1179.078125,
+      "w": 94,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "自動インスリン制御（OpenAPS）",
+    "input": "rp_optionsopenaps",
+    "rect": {
+      "x": 639.734375,
+      "y": 1179.078125,
+      "w": 266.609375,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "インスリンの配分",
+    "input": "rp_optionsdistribution",
+    "rect": {
+      "x": 264,
+      "y": 1240.265625,
+      "w": 163.734375,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "血糖測定",
+    "input": "rp_optionsbgcheck",
+    "rect": {
+      "x": 435.734375,
+      "y": 1240.265625,
+      "w": 108,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "全治療内容を参照",
+    "input": "rp_optionsothertreatments",
+    "rect": {
+      "x": 551.734375,
+      "y": 1226.265625,
+      "w": 164,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "線形軸表示",
+    "input": "rp_linear",
+    "rect": {
+      "x": 341.03125,
+      "y": 1286.265625,
+      "w": 122,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "対数軸表示",
+    "input": "rp_log",
+    "rect": {
+      "x": 471.03125,
+      "y": 1300.265625,
+      "w": 122,
+      "h": 44
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  },
+  {
+    "text": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "display": "inline-flex",
+    "verticalAlign": "baseline",
+    "align": "center"
+  }
+]

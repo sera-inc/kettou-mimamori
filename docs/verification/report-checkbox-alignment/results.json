@@ -1,0 +1,952 @@
+{
+  "checkedAt": "2026-10-13T16:27:35.199Z",
+  "scope": "Report-only CSS alignment; 13 checkbox and 2 radio controls on comment/desktop/mobile, mixed/all checked/all unchecked/radio changes, native Space and label click, no horizontal overflow or API writes, axe violations zero",
+  "results": [
+    {
+      "viewport": "comment",
+      "state": "mixed",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 1121.078125
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 1121.078125
+          },
+          {
+            "id": "rp_optionsbasal",
+            "y": 1121.078125
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 1121.078125
+          },
+          {
+            "id": "rp_optionsfood",
+            "y": 1121.078125
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 1121.078125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsiob",
+            "y": 1165.078125
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 1165.078125
+          },
+          {
+            "id": "rp_optionspredicted",
+            "y": 1165.078125
+          },
+          {
+            "id": "rp_optionsopenaps",
+            "y": 1165.078125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsdistribution",
+            "y": 1211.28125
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 1211.28125
+          },
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 1211.28125
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 1255.28125
+          },
+          {
+            "id": "rp_log",
+            "y": 1255.28125
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "comment",
+      "state": "unchecked",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsbasal",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsfood",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 401.078125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsiob",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionspredicted",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionsopenaps",
+            "y": 445.078125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsdistribution",
+            "y": 491.28125
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 491.28125
+          },
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 491.28125
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 535.28125
+          },
+          {
+            "id": "rp_log",
+            "y": 535.28125
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "comment",
+      "state": "checked",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsbasal",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsfood",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 401.078125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsiob",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionspredicted",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionsopenaps",
+            "y": 445.078125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsdistribution",
+            "y": 491.28125
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 491.28125
+          },
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 491.28125
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 535.28125
+          },
+          {
+            "id": "rp_log",
+            "y": 535.28125
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "comment",
+      "state": "logarithmic",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsbasal",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsfood",
+            "y": 401.078125
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 401.078125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsiob",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionspredicted",
+            "y": 445.078125
+          },
+          {
+            "id": "rp_optionsopenaps",
+            "y": 445.078125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsdistribution",
+            "y": 491.28125
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 491.28125
+          },
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 491.28125
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 535.28125
+          },
+          {
+            "id": "rp_log",
+            "y": 535.28125
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "desktop",
+      "state": "mixed",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 1069.171875
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 1069.171875
+          },
+          {
+            "id": "rp_optionsbasal",
+            "y": 1069.171875
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 1069.171875
+          },
+          {
+            "id": "rp_optionsfood",
+            "y": 1069.171875
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 1069.171875
+          },
+          {
+            "id": "rp_optionsiob",
+            "y": 1069.171875
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 1069.171875
+          },
+          {
+            "id": "rp_optionspredicted",
+            "y": 1069.171875
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsopenaps",
+            "y": 1115.375
+          },
+          {
+            "id": "rp_optionsdistribution",
+            "y": 1115.375
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 1115.375
+          },
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 1115.375
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 1159.375
+          },
+          {
+            "id": "rp_log",
+            "y": 1159.375
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "desktop",
+      "state": "unchecked",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsbasal",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsfood",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsiob",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionspredicted",
+            "y": 561.171875
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsopenaps",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsdistribution",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 607.375
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 651.375
+          },
+          {
+            "id": "rp_log",
+            "y": 651.375
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "desktop",
+      "state": "checked",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsbasal",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsfood",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsiob",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionspredicted",
+            "y": 561.171875
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsopenaps",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsdistribution",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 607.375
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 651.375
+          },
+          {
+            "id": "rp_log",
+            "y": 651.375
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "desktop",
+      "state": "logarithmic",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsbasal",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsfood",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionsiob",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 561.171875
+          },
+          {
+            "id": "rp_optionspredicted",
+            "y": 561.171875
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsopenaps",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsdistribution",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 607.375
+          },
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 607.375
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 651.375
+          },
+          {
+            "id": "rp_log",
+            "y": 651.375
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "mobile",
+      "state": "mixed",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 1862.953125
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 1862.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsbasal",
+            "y": 1906.953125
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 1906.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsfood",
+            "y": 1950.953125
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 1950.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsiob",
+            "y": 1994.953125
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 1994.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionspredicted",
+            "y": 2038.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsopenaps",
+            "y": 2082.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsdistribution",
+            "y": 2126.953125
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 2126.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 2173.15625
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 2217.15625
+          },
+          {
+            "id": "rp_log",
+            "y": 2217.15625
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "mobile",
+      "state": "unchecked",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 262.953125
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 262.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsbasal",
+            "y": 306.953125
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 306.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsfood",
+            "y": 350.953125
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 350.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsiob",
+            "y": 394.953125
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 394.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionspredicted",
+            "y": 438.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsopenaps",
+            "y": 482.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsdistribution",
+            "y": 526.953125
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 526.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 573.15625
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 617.15625
+          },
+          {
+            "id": "rp_log",
+            "y": 617.15625
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "mobile",
+      "state": "checked",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 262.953125
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 262.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsbasal",
+            "y": 306.953125
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 306.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsfood",
+            "y": 350.953125
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 350.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsiob",
+            "y": 394.953125
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 394.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionspredicted",
+            "y": 438.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsopenaps",
+            "y": 482.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsdistribution",
+            "y": 526.953125
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 526.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 573.15625
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 617.15625
+          },
+          {
+            "id": "rp_log",
+            "y": 617.15625
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    },
+    {
+      "viewport": "mobile",
+      "state": "logarithmic",
+      "rows": [
+        [
+          {
+            "id": "rp_optionsinsulin",
+            "y": 262.953125
+          },
+          {
+            "id": "rp_optionscarbs",
+            "y": 262.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsbasal",
+            "y": 306.953125
+          },
+          {
+            "id": "rp_optionsnotes",
+            "y": 306.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsfood",
+            "y": 350.953125
+          },
+          {
+            "id": "rp_optionsraw",
+            "y": 350.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsiob",
+            "y": 394.953125
+          },
+          {
+            "id": "rp_optionscob",
+            "y": 394.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionspredicted",
+            "y": 438.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsopenaps",
+            "y": 482.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsdistribution",
+            "y": 526.953125
+          },
+          {
+            "id": "rp_optionsbgcheck",
+            "y": 526.953125
+          }
+        ],
+        [
+          {
+            "id": "rp_optionsothertreatments",
+            "y": 573.15625
+          }
+        ],
+        [
+          {
+            "id": "rp_linear",
+            "y": 617.15625
+          },
+          {
+            "id": "rp_log",
+            "y": 617.15625
+          }
+        ]
+      ],
+      "aligned": true,
+      "controls44px": true
+    }
+  ],
+  "pageErrors": [],
+  "apiWrites": []
+}
