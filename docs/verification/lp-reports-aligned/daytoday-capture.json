@@ -1,0 +1,18 @@
+{
+  "capturedAt": "2026-10-13T16:40:34.677Z",
+  "scope": "Actual product HTTP and isolated server-stored samples, ordinary native report filters and graph-size choice; complete native browser viewport; no response interception, fixed clock, media editing or API writes",
+  "url": "http://localhost:8410/report/",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "from": "2026-10-01",
+  "to": "2026-10-13",
+  "graphSize": "800x250px",
+  "heading": "日々",
+  "svgCharts": 18,
+  "tables": 12,
+  "completeNativeViewport": true,
+  "pageErrors": [],
+  "apiWrites": []
+}
