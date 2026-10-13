@@ -1,0 +1,200 @@
+
+[TIMING STATS] Total: 10 tests, Avg: 77ms, Slow: 0
+{
+  "stats": {
+    "suites": 1,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-12T14:45:53.619Z",
+    "end": "2026-10-12T14:45:54.400Z",
+    "duration": 781
+  },
+  "tests": [
+    {
+      "title": "shows an empty state for missing measurement variant 0 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 0 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 141,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 1 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 1 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 46,
+      "currentRetry": 0,
+      "speed": "medium",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 2 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 2 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 27,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 3 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 3 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 11,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 4 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 4 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 17,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "constructs every supported face component with bounded numeric sizing",
+      "fullTitle": "clock client constructs every supported face component with bounded numeric sizing",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 10,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "does not interpret face configuration as markup, classes, or styles",
+      "fullTitle": "clock client does not interpret face configuration as markup, classes, or styles",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 15,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should render browser mmol preference when server units are mg/dl",
+      "fullTitle": "clock client should render browser mmol preference when server units are mg/dl",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 8,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should render browser mg/dl preference when server units are mmol",
+      "fullTitle": "clock client should render browser mg/dl preference when server units are mmol",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 9,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should use server-scaled values when browser and server units match",
+      "fullTitle": "clock client should use server-scaled values when browser and server units match",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 10,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "shows an empty state for missing measurement variant 0 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 0 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 141,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 1 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 1 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 46,
+      "currentRetry": 0,
+      "speed": "medium",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 2 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 2 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 27,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 3 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 3 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 11,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 4 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 4 and recovers on new data",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 17,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "constructs every supported face component with bounded numeric sizing",
+      "fullTitle": "clock client constructs every supported face component with bounded numeric sizing",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 10,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "does not interpret face configuration as markup, classes, or styles",
+      "fullTitle": "clock client does not interpret face configuration as markup, classes, or styles",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 15,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should render browser mmol preference when server units are mg/dl",
+      "fullTitle": "clock client should render browser mmol preference when server units are mg/dl",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 8,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should render browser mg/dl preference when server units are mmol",
+      "fullTitle": "clock client should render browser mg/dl preference when server units are mmol",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 9,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should use server-scaled values when browser and server units match",
+      "fullTitle": "clock client should use server-scaled values when browser and server units match",
+      "file": "/opt/app/tests/clock-client.test.js",
+      "duration": 10,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ]
+}

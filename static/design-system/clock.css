@@ -1,0 +1,19 @@
+.app-clock-config {overflow: auto;text-align: left;}
+.app-clock-config .app-main {height: auto;}
+.app-clock-config-layout {display: grid;grid-template-columns: minmax(0,1fr) minmax(0,1fr);gap: var(--app-space-3);align-items: start;}
+html body.app-clock-config #config-form {position: static;width: auto;min-width: 0;padding: var(--app-space-2);opacity: 1;border: 1px solid var(--app-border);border-radius: var(--app-radius-md);background: var(--app-surface);}
+.app-clock-config :is(#config-form h2,.app-clock-preview-card h2) {margin: var(--app-space-1);font-size: var(--app-text-heading-sm-size);line-height: var(--app-text-heading-sm-leading);}
+.app-clock-config #config-form p {margin: var(--app-space-2) var(--app-space-0);}
+.app-clock-config #config-form label {display: block;margin-bottom: var(--app-space-1);}
+.app-clock-config #config-form select {max-width: 100%;}
+.app-clock-config #config-form input.elmt {width: auto;}
+.app-clock-element {display: flex;align-items: center;flex-wrap: wrap;gap: var(--app-space-1);}
+.app-clock-preview-card {min-width: 0;position: sticky;top: calc(var(--app-header-height) + var(--app-space-3));padding: var(--app-space-2);border: 1px solid var(--app-border);border-radius: var(--app-radius-md);background: var(--app-surface);}
+.app-clock-preview-card>p {margin: var(--app-space-1);color: var(--app-text-muted);}
+.app-clock-preview {container-type: size;position: relative;min-height: 20rem;height: 30rem;border-radius: var(--app-radius-md);overflow: auto;background: var(--app-surface-sunken);}
+.app-clock-config #errorMessage {min-height: 100%;}
+.app-clock-config #inner {box-sizing: border-box;width: 100%;height: auto;min-height: 100%;align-content: flex-start;padding-block: var(--app-space-2);}
+.app-clock-config #inner div {max-width: 100%;overflow-wrap: anywhere;}
+.app-clock-body .close {display: inline-flex;align-items: center;justify-content: center;min-width: var(--app-row-height);min-height: var(--app-row-height);border: 1px solid var(--app-border);border-radius: var(--app-radius-sm);background: var(--app-surface);color: var(--app-text-link);}
+.app-clock-body .close:focus-visible {opacity: 1;outline: var(--app-focus-ring-width) solid var(--app-focus-ring);outline-offset: var(--app-focus-ring-offset);}
+@media (max-width: 1100px) {.app-clock-config-layout {grid-template-columns: minmax(0,1fr);}.app-clock-preview-card {position: static;}}

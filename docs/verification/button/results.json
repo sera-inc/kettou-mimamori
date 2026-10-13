@@ -1,0 +1,25 @@
+[
+  {
+    "case": "touch target and text contrast",
+    "height": 44,
+    "contrast": 11.095790722930166,
+    "pass": true
+  },
+  {
+    "case": "outline variant has a distinct surface and readable text",
+    "contrast": 11.095790722930166,
+    "pass": true
+  },
+  {
+    "case": "Tab focus, visible focus, Enter and Space activation",
+    "focus": {
+      "style": "solid",
+      "width": "3px"
+    },
+    "pass": true
+  },
+  {
+    "case": "disabled button skipped, native form submit retained",
+    "pass": true
+  }
+]

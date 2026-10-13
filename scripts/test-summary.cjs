@@ -1,0 +1,10 @@
+'use strict';
+const fs = require('fs');
+const input = process.argv[2];
+const raw = fs.readFileSync(input, 'utf8');
+const start = raw.indexOf('"stats"');
+if (start < 0) throw new Error('No Mocha JSON report: ' + input);
+const result = JSON.parse(raw.slice(raw.lastIndexOf('{', start)));
+const summary = { stats: result.stats, failures: result.failures.map(f => ({ title: f.fullTitle, error: f.err.message, stack: f.err.stack })) };
+fs.writeFileSync(process.argv[3] || input.replace('.json', '-summary.json'), JSON.stringify(summary, null, 2));
+console.log(JSON.stringify(summary, null, 2));

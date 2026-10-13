@@ -1,0 +1,251 @@
+{
+  "generatedAt": "2026-10-13T01:39:57.477Z",
+  "pass": true,
+  "scope": "Exact serialized Flot series/data, SVG geometry, clinical table cells and legend labels; colors and only reviewed DataGrid-injected presentation captions excluded. JSON Date=ISO and nonfinite=null. Independent complete-source AST reversal verifies unchanged clinical math and missing-value handling.",
+  "beforeFile": "docs/verification/report-styles/fixed-clock-before/results.json",
+  "afterFile": "docs/verification/report-styles/fixed-clock-after/results.json",
+  "reports": [
+    {
+      "id": "daytoday",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "5319ce7a96696cbb4986dda5edb4e31fd2ebf822d557abf0dd59f83df25a3da3",
+          "afterSHA256": "5319ce7a96696cbb4986dda5edb4e31fd2ebf822d557abf0dd59f83df25a3da3"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "2f065490b8cdde067cdcab6ad0498ebb17b9c2126ef6a95b5143c2ac14269a6a",
+          "afterSHA256": "2f065490b8cdde067cdcab6ad0498ebb17b9c2126ef6a95b5143c2ac14269a6a"
+        }
+      ]
+    },
+    {
+      "id": "weektoweek",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "2f16f38e27c7d5558ee258c5693d9127f5fde966f7da997fb378ba500bc4caba",
+          "afterSHA256": "2f16f38e27c7d5558ee258c5693d9127f5fde966f7da997fb378ba500bc4caba"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "ccaad24a80881b246b275c412217266218bb64082ca9b5e0457d98c4d9e218d9",
+          "afterSHA256": "ccaad24a80881b246b275c412217266218bb64082ca9b5e0457d98c4d9e218d9"
+        }
+      ]
+    },
+    {
+      "id": "dailystats",
+      "pass": true,
+      "removedPresentationCaptions": 14,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "0dad9e39af12bd7f97c77269d665008bf75b07f3a00e3b67bde77a236da17379",
+          "afterSHA256": "0dad9e39af12bd7f97c77269d665008bf75b07f3a00e3b67bde77a236da17379"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "15ceb26f918506749059ad069b5aa0fd9b96fb0b392446c59abdba834acc77f8",
+          "afterSHA256": "15ceb26f918506749059ad069b5aa0fd9b96fb0b392446c59abdba834acc77f8"
+        }
+      ]
+    },
+    {
+      "id": "glucosedistribution",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "30189bcfbfe9fef88599a635afbb3926a9eed4212e7b604f06115c3cd3f0ba5b",
+          "afterSHA256": "30189bcfbfe9fef88599a635afbb3926a9eed4212e7b604f06115c3cd3f0ba5b"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "af533a0fb67f01d793ced1104af81341ef02a096cd9fa42fcaed7588d833b5b8",
+          "afterSHA256": "af533a0fb67f01d793ced1104af81341ef02a096cd9fa42fcaed7588d833b5b8"
+        }
+      ]
+    },
+    {
+      "id": "hourlystats",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "d7d5cfbb5ee01496d8386934740fb7c580a84725ab0c80a77e210a8a0206f298",
+          "afterSHA256": "d7d5cfbb5ee01496d8386934740fb7c580a84725ab0c80a77e210a8a0206f298"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "358d9aa420906860410be693fbd93efaafee37b8e8359dab97f03dbcd5b172d9",
+          "afterSHA256": "358d9aa420906860410be693fbd93efaafee37b8e8359dab97f03dbcd5b172d9"
+        }
+      ]
+    },
+    {
+      "id": "percentile",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "d28a3bca486861b8f875d8482f2c8b83133b236fd3fe6f1b71bb7f4b3d95aec4",
+          "afterSHA256": "d28a3bca486861b8f875d8482f2c8b83133b236fd3fe6f1b71bb7f4b3d95aec4"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "2e4aaabf8157d7ba5cf87f5025414a37dd09d2971482d2954fa903c80571e8b7",
+          "afterSHA256": "2e4aaabf8157d7ba5cf87f5025414a37dd09d2971482d2954fa903c80571e8b7"
+        }
+      ]
+    },
+    {
+      "id": "success",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "408b047fab4919ef80f00e37fb6736365cef0a4f07fdc17e23c704634020d3d3",
+          "afterSHA256": "408b047fab4919ef80f00e37fb6736365cef0a4f07fdc17e23c704634020d3d3"
+        }
+      ]
+    },
+    {
+      "id": "calibrations",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "2921dc8fe08b73d0201d57c5e39b34c334d5872870ee568732c953e0def5c2da",
+          "afterSHA256": "2921dc8fe08b73d0201d57c5e39b34c334d5872870ee568732c953e0def5c2da"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "762f7eb87f3d801f70925ae0c611a23356e7a40202de93baa6108d949f2bf7ee",
+          "afterSHA256": "762f7eb87f3d801f70925ae0c611a23356e7a40202de93baa6108d949f2bf7ee"
+        }
+      ]
+    },
+    {
+      "id": "treatments",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "9fd59a1bb86d6937bec1735c040a3ad871eff93634800018127bae6856da53ba",
+          "afterSHA256": "9fd59a1bb86d6937bec1735c040a3ad871eff93634800018127bae6856da53ba"
+        }
+      ]
+    },
+    {
+      "id": "profiles",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "6272df0cfc9dcea21e436439422d69cd3fb909949c2b7715de0d861cbe339d4f",
+          "afterSHA256": "6272df0cfc9dcea21e436439422d69cd3fb909949c2b7715de0d861cbe339d4f"
+        }
+      ]
+    },
+    {
+      "id": "loopalyzer",
+      "pass": true,
+      "removedPresentationCaptions": 0,
+      "parts": [
+        {
+          "part": "plots",
+          "beforeSHA256": "a8c9e508f1ab9d6dd792532d51dc7b1d466e125814bd6dcc0eb3836c540fbc79",
+          "afterSHA256": "a8c9e508f1ab9d6dd792532d51dc7b1d466e125814bd6dcc0eb3836c540fbc79"
+        },
+        {
+          "part": "svg",
+          "beforeSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "afterSHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "part": "tables",
+          "beforeSHA256": "3f569a7bfec4fc9670ade0bc5be13028e907926bf59b04f7f8179ed09a6b918a",
+          "afterSHA256": "3f569a7bfec4fc9670ade0bc5be13028e907926bf59b04f7f8179ed09a6b918a"
+        }
+      ]
+    }
+  ]
+}

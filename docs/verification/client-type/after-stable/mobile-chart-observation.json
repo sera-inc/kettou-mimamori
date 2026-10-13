@@ -1,0 +1,796 @@
+{
+  "layout": {
+    "chartContainer": {
+      "x": 16,
+      "y": 884.5,
+      "width": 358,
+      "height": 384
+    },
+    "container": {
+      "x": 16,
+      "y": 72,
+      "width": 358,
+      "height": 1196.5
+    },
+    "app-main": {
+      "x": 0,
+      "y": 56,
+      "width": 390,
+      "height": 1228.5
+    }
+  },
+  "geometry": [
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M0,5.631818181818184L358,5.631818181818184L358,5.631818181818184"
+      },
+      "text": null
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M0,5.631818181818184L358,5.631818181818184L358,5.631818181818184"
+      },
+      "text": null
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M0,5.631818181818184L358,5.631818181818184L358,5.631818181818184L358,61.949999999999996L358,61.949999999999996L0,61.949999999999996Z"
+      },
+      "text": null
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M0,61.949999999999996L358,61.949999999999996L358,5.631818181818184L358,61.949999999999996L358,61.949999999999996L0,61.949999999999996Z"
+      },
+      "text": null
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M0,61.949999999999996L358,61.949999999999996L358,5.631818181818184L358,61.949999999999996L358,61.949999999999996L0,61.949999999999996Z"
+      },
+      "text": null
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M0.5,6V0.5H358.5V6"
+      },
+      "text": null
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "8 AM"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "8:30"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "9 AM"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "9:30"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "10 AM"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "10:30"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "11 AM"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "11:30"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "12 PM"
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M-6,248.29999999999998H0.5V0.5H-6"
+      },
+      "text": null
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "x": "-9"
+      },
+      "text": "40"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "x": "-9"
+      },
+      "text": "55"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "x": "-9"
+      },
+      "text": "80"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "x": "-9"
+      },
+      "text": "120"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "x": "-9"
+      },
+      "text": "180"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "x": "-9"
+      },
+      "text": "260"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "x": "-9"
+      },
+      "text": "400"
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "182.60337323177367",
+        "cy": "122.98079650813214",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "189.9075081610446",
+        "cy": "122.28388025111667",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "197.2116430903156",
+        "cy": "121.59247327113324",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "204.51577801958652",
+        "cy": "120.90648914681042",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "211.81991294885745",
+        "cy": "120.22584347443744",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "219.12404787812838",
+        "cy": "119.5504538056413",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "226.42818280739937",
+        "cy": "118.88023958745133",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "233.7323177366703",
+        "cy": "118.21512210464309",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "241.03645266594123",
+        "cy": "117.55502442425787",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "248.34058759521218",
+        "cy": "116.89987134220024",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "255.64472252448314",
+        "cy": "116.2495893318207",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "262.9488574537541",
+        "cy": "115.604106494396",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "270.3016866158868",
+        "cy": "118.88023958745133",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "270.3503808487486",
+        "cy": "111.828159225673",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "277.60582154515777",
+        "cy": "121.59247327113324",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "277.6545157780196",
+        "cy": "107.61952814439296",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "284.9099564744287",
+        "cy": "125.10549679984793",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "284.95865070729053",
+        "cy": "103.60414963185805",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "292.2140914036997",
+        "cy": "128.765550803113",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "292.2627856365615",
+        "cy": "100.30328515803751",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "299.51822633297064",
+        "cy": "131.80803243763228",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "299.56692056583245",
+        "cy": "96.60341211129214",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "306.82236126224154",
+        "cy": "134.1614262784263",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "306.87105549510335",
+        "cy": "93.55208426178667",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "314.12649619151256",
+        "cy": "136.57989909766363",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "314.17519042437436",
+        "cy": "90.60362998214346",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "321.43063112078346",
+        "cy": "139.0671527974995",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "321.47932535364527",
+        "cy": "88.22030738039669",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "328.7347660500544",
+        "cy": "141.62721441417386",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "328.7834602829162",
+        "cy": "85.90021040019093",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "336.0389009793253",
+        "cy": "143.37652327589808",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "336.0875952121871",
+        "cy": "83.64007100729948",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "343.3430359085963",
+        "cy": "145.16153477205765",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "343.39173014145814",
+        "cy": "81.87309116309399",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "350.64717083786724",
+        "cy": "146.98373667060338",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "350.69586507072904",
+        "cy": "80.14110332875462",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "357.9513057671382",
+        "cy": "148.8447117172931",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "358",
+        "cy": "78.44274846060306",
+        "r": "1"
+      },
+      "text": null
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M8.385254915567643,0.00003080076114944625A8.385254915624213,8.385254915624213,0,1,0,-8.385254915567643,0.000030800761150281255L0,0Z"
+      },
+      "text": null
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "transform": "translate(2.5672438981134506e-16,-4.192627457812106)"
+      },
+      "text": ""
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M18.38525491550018,0.00006753281218352431A18.385254915624213,18.385254915624213,0,1,0,-18.38525491550018,0.00006753281218535512L-8.385254915567643,0.000030800761150281255A8.385254915624213,8.385254915624213,0,1,1,8.385254915567643,0.00003080076114944625Z"
+      },
+      "text": null
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "transform": "translate(8.196104794095284e-16,-13.385254915624213)"
+      },
+      "text": "45 g"
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M-8.385254915115093,-0.00009240228344378765A8.385254915624213,8.385254915624213,0,1,0,8.385254915567643,0.00003080076114944625L0,0Z"
+      },
+      "text": null
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "transform": "translate(-0.00003080076114898174,4.192627457698969)"
+      },
+      "text": ""
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M-0.029551460764691832,18.38523116590191A18.385254915624213,18.385254915624213,0,0,0,0.029281329861721567,18.385231598111723L0.013354800696853901,8.385244280836329A8.385254915624213,8.385254915624213,0,0,1,-0.013478003583753688,8.385244083711543Z"
+      },
+      "text": null
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "transform": "translate(-0.00009833357333743182,13.385254915263014)"
+      },
+      "text": "2.5 U"
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M-0.06370755727418538,39.63520371555644A39.63525491562421,39.63525491562421,0,0,0,0.06312520433706537,39.635204647321935L0.013354800696853901,8.385244280836329A8.385254915624213,8.385254915624213,0,0,1,-0.013478003583753688,8.385244083711543Z"
+      },
+      "text": null
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "transform": "translate(-0.00017638918178838894,24.010254914976297)"
+      },
+      "text": ""
+    },
+    {
+      "tag": "path",
+      "attributes": {
+        "d": "M0.5,6V0.5H358.5V6"
+      },
+      "text": null
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "10:15"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "10:30"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "10:45"
+    },
+    {
+      "tag": "text",
+      "attributes": {
+        "y": "9"
+      },
+      "text": "11 AM"
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "0",
+        "cy": "52.389895918008754",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "32.54545454545455",
+        "cy": "52.04544714736594",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "65.0909090909091",
+        "cy": "51.70372132037914",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "97.63636363636363",
+        "cy": "51.364675723544615",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "130.1818181818182",
+        "cy": "51.02826864058137",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "162.72727272727272",
+        "cy": "50.69445932162825",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "195.27272727272725",
+        "cy": "50.363207953620986",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "227.8181818181818",
+        "cy": "50.0344756317959",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "260.3636363636364",
+        "cy": "49.70822433226879",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "292.90909090909093",
+        "cy": "49.38441688564096",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "325.45454545454544",
+        "cy": "49.06301695158631",
+        "r": "2"
+      },
+      "text": null
+    },
+    {
+      "tag": "circle",
+      "attributes": {
+        "cx": "358",
+        "cy": "48.743988994376465",
+        "r": "2"
+      },
+      "text": null
+    }
+  ],
+  "fonts": [
+    {
+      "className": "x axis",
+      "declaredStyle": "var(--app-text-body-size)",
+      "declaredAttribute": "10",
+      "computed": "14px"
+    },
+    {
+      "className": "y axis",
+      "declaredStyle": "var(--app-text-body-size)",
+      "declaredAttribute": "10",
+      "computed": "14px"
+    },
+    {
+      "className": null,
+      "declaredStyle": "calc(var(--app-text-body-size) * 0.65625)",
+      "declaredAttribute": null,
+      "computed": "9.1875px"
+    },
+    {
+      "className": null,
+      "declaredStyle": "calc(var(--app-text-body-size) * 0.65625)",
+      "declaredAttribute": null,
+      "computed": "9.1875px"
+    },
+    {
+      "className": null,
+      "declaredStyle": "calc(var(--app-text-body-size) * 0.65625)",
+      "declaredAttribute": null,
+      "computed": "9.1875px"
+    },
+    {
+      "className": null,
+      "declaredStyle": "calc(var(--app-text-body-size) * 0.65625)",
+      "declaredAttribute": null,
+      "computed": "9.1875px"
+    },
+    {
+      "className": null,
+      "declaredStyle": "calc(var(--app-text-body-size) * 0.65625)",
+      "declaredAttribute": null,
+      "computed": "9.1875px"
+    },
+    {
+      "className": "x axis",
+      "declaredStyle": "var(--app-text-body-size)",
+      "declaredAttribute": "10",
+      "computed": "14px"
+    },
+    {
+      "className": "y axis",
+      "declaredStyle": "var(--app-text-body-size)",
+      "declaredAttribute": null,
+      "computed": "14px"
+    }
+  ]
+}

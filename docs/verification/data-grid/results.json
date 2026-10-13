@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "case": "fixture food grid retains name filtering, native keyboard edit and exact ID/carbs; horizontal scrolling is confined to grid",
+      "pass": true
+    },
+    {
+      "case": "native add quick-pick button and original drag/drop work; create request is intercepted before persistence",
+      "pass": true
+    },
+    {
+      "case": "profile interval keyboard add/remove preserves basal value and existing handlers; edits are not saved",
+      "pass": true
+    },
+    {
+      "case": "authenticated admin roles table gains caption, header scope and DDS surface; mobile header and page do not overflow",
+      "pass": true
+    }
+  ],
+  "scope": "browser-intercepted synthetic food fixture and POST; no DB persistence",
+  "pageErrors": []
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "case": "required validation, multiline Japanese and literal markup retained without rendering",
+    "focus": {
+      "height": 96,
+      "outline": "solid",
+      "resize": "vertical"
+    },
+    "pass": true
+  },
+  {
+    "case": "native maxlength and associated instructions retained",
+    "pass": true
+  },
+  {
+    "case": "readonly, disabled skip and described visible error state retained",
+    "pass": true
+  }
+]

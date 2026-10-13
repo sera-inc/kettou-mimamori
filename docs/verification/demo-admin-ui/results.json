@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-10-13T05:36:17.509Z",
+  "scope": "Actual isolated DB role/subject UI CRUD, live reader/writer token permissions and denied admin access; owned temporary records only; credential values excluded from artifacts",
+  "results": [
+    {
+      "viewport": "desktop",
+      "pass": true,
+      "roleAndSubjectActualUICrud": true,
+      "savedSubjectNotesSurviveReloadAndNameEdit": true,
+      "readerCanRead": true,
+      "readerWriteRejected": 401,
+      "writerCanCreateAndDeleteTreatment": true,
+      "writerAdminRejected": true,
+      "dialogAxeViolations": 0
+    },
+    {
+      "viewport": "mobile",
+      "pass": true,
+      "roleAndSubjectActualUICrud": true,
+      "savedSubjectNotesSurviveReloadAndNameEdit": true,
+      "readerCanRead": true,
+      "readerWriteRejected": 401,
+      "writerCanCreateAndDeleteTreatment": true,
+      "writerAdminRejected": true,
+      "dialogAxeViolations": 0
+    }
+  ],
+  "dialogs": [
+    {
+      "viewport": "desktop",
+      "type": "confirm",
+      "japanese": true
+    },
+    {
+      "viewport": "desktop",
+      "type": "confirm",
+      "japanese": true
+    },
+    {
+      "viewport": "mobile",
+      "type": "confirm",
+      "japanese": true
+    },
+    {
+      "viewport": "mobile",
+      "type": "confirm",
+      "japanese": true
+    }
+  ],
+  "pageErrors": []
+}

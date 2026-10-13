@@ -1,0 +1,60 @@
+/* DADS checkbox/radio geometry with native inputs, DDS semantic colors. */
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input:is([type="checkbox"],[type="radio"]) {
+  appearance: none;
+  box-sizing: border-box;
+  display: inline-grid;
+  place-content: center;
+  flex-shrink: 0;
+  width: var(--app-row-height);
+  height: var(--app-row-height);
+  margin: var(--app-space-0);
+  border: 2px solid var(--app-border-strong);
+  border-radius: var(--app-radius-xs);
+  background: var(--app-surface);
+  color: var(--app-text);
+  vertical-align: middle;
+  cursor: pointer;
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input[type="radio"] {border-radius: var(--app-radius-full);}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input:is([type="checkbox"],[type="radio"]):focus-visible {
+  outline: var(--app-focus-ring-width) solid var(--app-focus-ring);
+  outline-offset: var(--app-focus-ring-offset);
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input[type="checkbox"]:is(:checked,:indeterminate) {
+  background: var(--app-primary);
+  border-color: var(--app-primary-border);
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input[type="checkbox"]:is(:checked,:indeterminate)::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background: var(--app-primary-text);
+  transform: scale(1.5);
+  clip-path: path('M5.6,11.2L12.65,4.15L11.25,2.75L5.6,8.4L2.75,5.55L1.35,6.95L5.6,11.2Z');
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input[type="checkbox"]:indeterminate::before {clip-path: path('M2,6h10v2H2Z');}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input[type="radio"]:checked {border-color: var(--app-primary-border);}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input[type="radio"]:checked::before {
+  content: '';
+  width: var(--app-space-2);
+  height: var(--app-space-2);
+  border-radius: var(--app-radius-full);
+  background: var(--app-primary);
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input:is([type="checkbox"],[type="radio"]):disabled {
+  border-color: var(--app-border);
+  background: var(--app-surface-sunken);
+  cursor: default;
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input:is([type="checkbox"],[type="radio"]):disabled::before {background: var(--app-text-muted);}
+label:has(input:is([type="checkbox"],[type="radio"])) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--app-space-1);
+  min-height: var(--app-row-height);
+  cursor: pointer;
+}
+@media (forced-colors: active) {
+  html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input:is([type="checkbox"],[type="radio"]) {appearance: auto;}
+  html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,main) input:is([type="checkbox"],[type="radio"])::before {content: none;}
+}

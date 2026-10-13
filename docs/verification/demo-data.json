@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-10-13T15:30:52.496Z",
+  "synthetic": true,
+  "database": "kettou_demo",
+  "timezone": "Asia/Tokyo",
+  "from": "2026-09-30T15:00:00.000Z",
+  "to": "2026-10-13T15:30:00.000Z",
+  "entries": 4067,
+  "sgv": 4039,
+  "treatments": 128,
+  "profiles": 1,
+  "food": 3
+}

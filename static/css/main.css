@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
-
 @font-face {
   font-family: 'nsicons';
   src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff'),
@@ -26,7 +24,7 @@
  [class^="plugicon-"]:before, [class*=" plugicon-"]:before {
   font-family: "nsicons";
   font-style: normal;
-  font-weight: normal;
+  font-weight: var(--app-font-weight-normal);
   speak: none;
  
   display: inline-block;
@@ -93,9 +91,9 @@ html, body {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  background: #000;
-  color: #bdbdbd;
+  font-family: var(--app-font-sans);
+  background: var(--app-surface-sunken);
+  color: var(--app-text);
 }
 
 .container {
@@ -104,8 +102,8 @@ body {
   left: 0;
   margin: 0;
   padding: 0;
-  top: 45px;
-  z-index: 2;
+  top: 2.8125rem;
+  z-index: var(--app-z-sticky);
 }
 
 button {
@@ -115,30 +113,30 @@ button {
 }
 
 .ui-button {
-  background-color: grey;
-  border: 1px solid white;
-  padding: 2px;
+  background-color: var(--app-surface);
+  border: 1px solid var(--app-border);
+  padding: var(--app-space-0);
 }
 
 a, a:visited, a:link {
-  color: #2196f3;
+  color: var(--app-text-link);
   text-decoration: none;
 }
 
 #container.announcing .customTitle {
-  color: orange;
+  color: var(--app-warning-text);
 }
 
 #container.alarming.urgent .customTitle {
-  color: red;
+  color: var(--app-danger-text);
 }
 
 #container.alarming.warning .customTitle {
-  color: yellow;
+  color: var(--app-warning-text);
 }
 
 .primary {
-  font-family: 'Ubuntu', Verdana, Helvetica, Arial, sans-serif;
+  font-family: var(--app-font-sans);
   vertical-align: middle;
   clear: both;
   white-space: nowrap;
@@ -148,19 +146,19 @@ a, a:visited, a:link {
   float: right;
   text-align: center;
   white-space: normal;
-  padding-right: 20px;
+  padding-right: var(--app-space-2);
 }
 
 .urgent .bgButton {
-  color: red;
+  color: var(--app-danger-text);
 }
 
 .warning .bgButton {
-  color: yellow;
+  color: var(--app-warning-text);
 }
 
 .inrange .bgButton {
-  color: #4cff00;
+  color: var(--app-success-text);
 }
 
 .bgStatus .bgSpan {
@@ -168,92 +166,92 @@ a, a:visited, a:link {
 }
 
 .bgStatus .currentBG {
-  font-size: 120px;
-  line-height: 100px;
+  font-size: var(--app-text-display-size);
+  line-height: var(--app-text-display-leading);
   text-decoration: line-through;
   vertical-align: middle;
 }
 
 .bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass {
-  font-size: 90px;
+  font-size: var(--app-text-display-size);
 }
 
 .bgStatus .pill.direction {
-  font-weight: normal;
+  font-weight: var(--app-font-weight-normal);
   text-decoration: none;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: var(--app-text-display-size);
+  line-height: var(--app-text-display-leading);
   vertical-align: middle;
   border: none;
   background: none;
 }
 
 .bgStatus .majorPills {
-  font-size: 30px;
-  line-height: 34px;
+  font-size: var(--app-text-display-sm-size);
+  line-height: var(--app-text-body-leading);
 }
 
 .minorPills {
-  font-size: 22px;
-  line-height: 25px;
-  z-index: 500;
+  font-size: var(--app-text-heading-sm-size);
+  line-height: var(--app-text-body-leading);
+  z-index: var(--app-z-toast);
   white-space: normal;
 }
 
 .majorPills > span:not(:first-child) {
-  margin-left: 5px;
+  margin-left: var(--app-space-05);
 }
 
 .minorPills > span:not(:first-child) {
-  margin-left: 5px;
+  margin-left: var(--app-space-05);
 }
 
 .pill {
   white-space: nowrap;
-  border-radius: 5px;
-  border: 2px solid #808080;
-  background: #808080;
+  border-radius: var(--app-radius-xs);
+  border: 2px solid var(--app-border);
+  background: var(--app-surface);
   display: inline-block;
-  margin-bottom: 4px;
-  padding: 2px 0;
+  margin-bottom: var(--app-space-05);
+  padding: var(--app-space-0) 0;
 }
 
 .pill em, .pill label {
-  padding: 2px 3px;
+  padding: var(--app-space-0) var(--app-space-05);
   white-space: nowrap;
 }
 
 .pill em {
   font-style: normal;
-  font-weight: bold;
-  background: #000;
-  border-radius: 3px;
+  font-weight: var(--app-font-weight-bold);
+  background: var(--app-surface);
+  border-radius: var(--app-radius-xs);
 }
 
 .pill label {
-  color: #000;
+  color: var(--app-text);
 }
 
 .container .pill.warn em {
-  color: yellow;
+  color: var(--app-warning-text);
 }
 
 .container .pill.urgent em {
-  color: red;
+  color: var(--app-danger-text);
 }
 
 .alarming-timeago .timeago.pill.warn {
-  border-color: yellow;
+  border-color: var(--app-warning-text);
 }
 .alarming-timeago .timeago.pill.warn label {
-  background: yellow;
+  background: var(--app-warning-bg);
 }
 
 .alarming-timeago .timeago.pill.urgent {
-  border-color: red;
+  border-color: var(--app-danger-text);
 }
 .alarming-timeago .timeago.pill.urgent label {
-  background: red;
+  background: var(--app-danger-bg);
 }
 
 .bgStatus.current .currentBG {
@@ -265,8 +263,8 @@ a, a:visited, a:link {
 }
 
 .status {
-  color: #808080;
-  font-size: 100px;
+  color: var(--app-text);
+  font-size: var(--app-text-display-size);
   white-space: normal;
 }
 .statusBox {
@@ -274,9 +272,9 @@ a, a:visited, a:link {
   width: 40%;
 }
 .statusPills {
-  font-size: 20px;
-  line-height: 23px;
-  margin-left: 5px;
+  font-size: var(--app-text-heading-sm-size);
+  line-height: var(--app-text-body-leading);
+  margin-left: var(--app-space-05);
 }
 
 .loading .statusPills {
@@ -284,13 +282,13 @@ a, a:visited, a:link {
 }
 
 .statusPills .pill {
-  background: #808080;
-  border-color: #808080;
-  margin-right: 5px;
+  background: var(--app-surface);
+  border-color: var(--app-border);
+  margin-right: var(--app-space-05);
 }
 
 .statusPills .pill em {
-  color: #bdbdbd;
+  color: var(--app-text);
 }
 
 #chartContainer {
@@ -298,11 +296,11 @@ a, a:visited, a:link {
   right: 0;
   bottom: 0;
   height: auto;
-  font-size: 20px;
-  background: #111;
+  font-size: var(--app-text-heading-sm-size);
+  background: var(--app-surface-sunken);
   display: block;
   position: absolute;
-  margin: 2px;
+  margin: var(--app-space-0);
   overflow: hidden;
 }
 
@@ -314,32 +312,32 @@ a, a:visited, a:link {
 }
 
 #silenceBtn, #viewMenu {
-  z-index: 99;
-  border-radius: 5px;
-  border: 2px solid #bdbdbd;
+  z-index: var(--app-z-sticky);
+  border-radius: var(--app-radius-xs);
+  border: 2px solid var(--app-border);
 }
 
 #viewMenu {
-  left: 150px;
+  left: 9.375rem;
   right: inherit;
-  font-size: 18px;
+  font-size: var(--app-text-heading-sm-size);
 }
 
 #viewMenu li label input[type="checkbox"] {
-  height: 14px;
-  margin-right: 5px;
+  height: 0.875rem;
+  margin-right: var(--app-space-05);
 }
 
 #silenceBtn a {
-  font-size: 40px
+  font-size: var(--app-text-display-sm-size)
 }
 
 .bgButton {
-  margin: 10px;
-  border: 2px solid #000;
-  border-radius: 5px;
+  margin: var(--app-space-1);
+  border: 2px solid var(--app-border);
+  border-radius: var(--app-radius-xs);
   display: inline-block;
-  width: 360px;
+  width: 22.5rem;
 }
 
 .loading .pill.rawbg {
@@ -348,42 +346,42 @@ a, a:visited, a:link {
 
 .pill.rawbg {
   display: inline-block;
-  border-radius: 2px;
-  border: 1px solid #808080;
+  border-radius: var(--app-radius-xs);
+  border: 1px solid var(--app-border);
   padding: 0;
 }
 
 .pill.rawbg em {
-  color: white;
-  background-color: black;
+  color: var(--app-text);
+  background-color: var(--app-surface);
   display: block;
-  font-size: 20px;
+  font-size: var(--app-text-heading-sm-size);
   border-radius: 0;
-  padding: 0 2px;
+  padding: 0 var(--app-space-0);
 }
 
 .pill.rawbg label {
   display: block;
-  font-size: 14px;
-  padding: 0 2px;
+  font-size: var(--app-text-body-size);
+  padding: 0 var(--app-space-0);
 }
 
 .alarming .bgButton {
-  border-color: #bdbdbd;
-  color: #000;
-  box-shadow: 2px 2px 0 #ddd;
+  border-color: var(--app-border);
+  color: var(--app-text);
+  box-shadow: var(--app-shadow-raised);
 }
 
 .alarming.urgent .bgButton {
-  background-color: red;
+  background-color: var(--app-danger-bg);
 }
 
 .alarming.warning .bgButton {
-  background-color: yellow;
+  background-color: var(--app-warning-bg);
 }
 
 .alarming .bgButton:active {
-  border: 2px solid #bdbdbd;
+  border: 2px solid var(--app-border);
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -392,25 +390,25 @@ a, a:visited, a:link {
 
 .button {
   text-align: center;
-  background: #ababab;
-  margin: 10px auto;
+  background: var(--app-surface);
+  margin: var(--app-space-1) auto;
 }
 
 .tooltip {
   top: 0;
   left: 0;
-  color: #444;
+  color: var(--app-text);
   position: absolute;
   text-align: left;
-  padding: 4px;
-  font-size: 14px;
-  line-height: 15px;
-  background: white;
+  padding: var(--app-space-05);
+  font-size: var(--app-text-body-size);
+  line-height: var(--app-text-body-leading);
+  background: var(--app-surface);
   border: 0;
-  border-radius: 8px;
+  border-radius: var(--app-radius-md);
   float: right;
-  min-width: 150px;
-  max-width: 400px;
+  min-width: 9.375rem;
+  max-width: 25rem;
 }
 
 .alarms {
@@ -423,26 +421,26 @@ a, a:visited, a:link {
 
 .focus-range {
   list-style: none;
-  margin: 4px;
+  margin: var(--app-space-05);
   padding: 0;
-  color: #808080;
+  color: var(--app-text);
   width: 40%;
   text-align: center;
 }
 
 .focus-range li {
   display: inline-block;
-  font-size: 18px;
+  font-size: var(--app-text-heading-sm-size);
   white-space: nowrap;
-  border-radius: 5px;
-  border: 2px solid #000;
+  border-radius: var(--app-radius-xs);
+  border: 2px solid var(--app-border);
   cursor: pointer;
 }
 
 .focus-range .selected {
-  border-color: #808080;
-  color: #000;
-  background: #808080;
+  border-color: var(--app-border);
+  color: var(--app-text);
+  background: var(--app-surface);
 }
 
 .pill.hidden {
@@ -451,7 +449,7 @@ a, a:visited, a:link {
 
 .toolbar-title {
   text-align: left;
-  padding: 0 10px;
+  padding: 0 var(--app-space-1);
 }
 
 .toolbar-title h2 {
@@ -459,26 +457,26 @@ a, a:visited, a:link {
 }
 
 .page-content {
-  padding: 10px;
+  padding: var(--app-space-1);
 }
 
 .authentication-status {
-  padding: 10px;
-  border-top: 1px solid #bdbdbd;
+  padding: var(--app-space-1);
+  border-top: 1px solid var(--app-border);
 }
 
 .authentication-status a {
-  color: #2196f3;
+  color: var(--app-text-link);
   text-decoration: underline;
 }
 
 .authentication-status .small {
-  font-size: 12px;
+  font-size: var(--app-text-body-size);
 }
 
 @media (max-width: 1000px) {
   .bgStatus {
-    width: 450px;
+    width: 28.125rem;
   }
 
   .bgButton {
@@ -486,37 +484,37 @@ a, a:visited, a:link {
   }
 
   .bgStatus .currentBG {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass {
-    font-size: 70px;
+    font-size: var(--app-text-display-size);
   }
 
   .bgStatus .pill.direction {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .majorPills {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: var(--app-text-heading-sm-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .bgStatus .minorPills {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .status {
-    font-size: 70px;
-    padding-top: 8px;
+    font-size: var(--app-text-display-size);
+    padding-top: var(--app-space-1);
   }
 
   .statusPills {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .focus-range {
@@ -525,35 +523,35 @@ a, a:visited, a:link {
   }
 
   .focus-range li {
-    font-size: 14px;
+    font-size: var(--app-text-body-size);
   }
 
   #silenceBtn a {
-    font-size: 30px;
+    font-size: var(--app-text-display-sm-size);
   }
 
   #chartContainer {
-    font-size: 14px;
+    font-size: var(--app-text-body-size);
   }
 }
 
 @media (max-width: 750px) {
   .x.axis {
-    font-size: 2.5vmin !important;
+    font-size: var(--app-text-body-size) !important;
   }
 
 
   .bgStatus {
     width: 50%;
-    padding: 0 0 20px 0;
+    padding: 0 0 var(--app-space-2) 0;
   }
 
   .pill.rawbg em {
-    font-size: 14px;
+    font-size: var(--app-text-body-size);
   }
 
   .pill.rawbg label {
-    font-size: 12px;
+    font-size: var(--app-text-body-size);
   }
 
   .statusBox {
@@ -561,32 +559,32 @@ a, a:visited, a:link {
   }
 
   .bgStatus .currentBG {
-    font-size: 70px;
-    line-height: 60px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass {
-    font-size: 50px;
+    font-size: var(--app-text-display-size);
   }
 
   .bgStatus .pill.direction {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .majorPills {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .bgStatus .minorPills {
-    font-size: 12px;
-    line-height: 13px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .status {
-    font-size: 50px;
-    width: 250px;
+    font-size: var(--app-text-display-size);
+    width: 15.625rem;
   }
 }
 
@@ -600,54 +598,54 @@ a, a:visited, a:link {
     float: none;
     padding: 0;
     text-align: center;
-    width: 250px;
+    width: 15.625rem;
   }
 
 
   .bgButton {
-    margin: 5px;
+    margin: var(--app-space-05);
     width: auto;
   }
 
   .bgStatus .currentBG {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass {
-    font-size: 60px;
-    padding-left: 20px;
+    font-size: var(--app-text-display-size);
+    padding-left: var(--app-space-2);
   }
 
   .bgStatus .pill.direction {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .majorPills {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .bgStatus .minorPills {
-    font-size: 12px;
-    line-height: 13px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   #silenceBtn a {
-    font-size: 20px;
+    font-size: var(--app-text-heading-sm-size);
   }
 
   #viewMenu {
     left: inherit;
-    top: 170px;
-    right: 10px;
+    top: 10.625rem;
+    right: 0.625rem;
     text-align: left;
   }
 
   .status {
     padding-top: 0;
-    font-size: 20px;
+    font-size: var(--app-text-heading-sm-size);
   }
 
   .statusBox {
@@ -662,15 +660,15 @@ a, a:visited, a:link {
   .statusPills {
     display: inline;
     margin-left: auto;
-    font-size: 12px;
-    line-height: 13px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .focus-range {
     position: absolute;
-    top: 60px;
+    top: 3.75rem;
     left: auto;
-    right: 10px;
+    right: 0.625rem;
     margin: 0;
     width: auto;
   }
@@ -682,17 +680,17 @@ a, a:visited, a:link {
 
 @media (max-height: 700px) {
   #chartContainer {
-    font-size: 14px;
+    font-size: var(--app-text-body-size);
   }
   .y.axis {
-    font-size: 2.5vmin !important;
+    font-size: var(--app-text-body-size) !important;
   }
 
 }
 
 @media (max-height: 600px) {
   #chartContainer {
-    font-size: 12px;
+    font-size: var(--app-text-body-size);
   }
 }
 
@@ -702,20 +700,20 @@ a, a:visited, a:link {
     height: auto;
     background: none;
     border-bottom: none;
-    margin: 0px;
+    margin: var(--app-space-0);
   }
 
   #buttonbar {
-    margin-right: 0px;
-    padding-right: 15px;
-    margin-top: 15px;
-    height: 44px;
+    margin-right: var(--app-space-0);
+    padding-right: var(--app-space-2);
+    margin-top: var(--app-space-2);
+    height: 2.75rem;
     opacity: 0.75;
     vertical-align: middle;
     position: absolute;
     right: 0;
-    z-index: 500;
-    width: 400px;
+    z-index: var(--app-z-toast);
+    width: 25rem;
   }
 
   #toolbar .customTitle {
@@ -723,48 +721,48 @@ a, a:visited, a:link {
   }
 
   .container {
-    top: 15px;
-    padding-bottom: 20px;
+    top: 0.9375rem;
+    padding-bottom: var(--app-space-2);
   }
 
   #chartContainer {
-    font-size: 10px;
+    font-size: var(--app-text-body-size);
   }
 }
 
 @media (max-height: 480px) and (min-width: 400px) {
   .bgStatus .currentBG {
-    font-size: 70px;
-    line-height: 60px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass {
-    font-size: 70px;
+    font-size: var(--app-text-display-size);
   }
 
   .bgStatus .pill.direction {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .majorPills {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .bgStatus .minorPills {
-    font-size: 12px;
-    line-height: 13px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .status {
-    font-size: 50px;
-    padding-top: 5px;
+    font-size: var(--app-text-display-size);
+    padding-top: var(--app-space-05);
   }
 
   .statusPills {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
 }
@@ -773,43 +771,43 @@ a, a:visited, a:link {
 
   .bgStatus {
     text-align: center;
-    width: 220px;
+    width: 13.75rem;
     left: 0;
   }
 
   .bgStatus .currentBG {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass {
-    font-size: 60px;
+    font-size: var(--app-text-display-size);
   }
 
   .bgStatus .pill.direction {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: var(--app-text-display-size);
+    line-height: var(--app-text-display-leading);
   }
 
   .bgStatus .majorPills {
-    font-size: 15px;
-    line-height: 17px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   .bgStatus .minorPills {
-    font-size: 12px;
-    line-height: 13px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 
   #silenceBtn {
-    right: -25px;
+    right: -1.5625rem;
   }
 
   .focus-range {
     position: absolute;
-    top: 40px;
+    top: 2.5rem;
     left: auto;
-    right: 35px;
+    right: 2.1875rem;
     margin: 0;
     width: auto;
   }
@@ -821,7 +819,7 @@ a, a:visited, a:link {
   .statusPills {
     display: inline;
     margin-left: auto;
-    font-size: 12px;
-    line-height: 13px;
+    font-size: var(--app-text-body-size);
+    line-height: var(--app-text-body-leading);
   }
 }

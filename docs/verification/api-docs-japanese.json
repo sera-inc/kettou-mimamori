@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-10-13T13:40:46.235Z",
+  "scope": "Actual v1/v3 documentation, keyboard controls, authenticated v1 status/public v3 version reads and zero API writes; technical names/code values preserved",
+  "legacyAlias": 307,
+  "results": [
+    {
+      "route": "/api-docs/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "operations": 20,
+      "deepLinks": 20,
+      "japaneseControls": true,
+      "serverResponse": 200,
+      "payloadKeys": [
+        "status",
+        "name",
+        "version",
+        "serverTime",
+        "serverTimeEpoch",
+        "apiEnabled",
+        "careportalEnabled",
+        "boluscalcEnabled",
+        "settings",
+        "extendedSettings",
+        "authorized",
+        "runtimeState"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/status"
+        }
+      ],
+      "axeViolations": 0,
+      "overflow": false,
+      "pageErrors": [],
+      "idleMutations": 0
+    },
+    {
+      "route": "/api3-docs/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "operations": 11,
+      "deepLinks": 11,
+      "japaneseControls": true,
+      "serverResponse": 200,
+      "payloadKeys": [
+        "status",
+        "result"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v3/version"
+        }
+      ],
+      "axeViolations": 0,
+      "overflow": false,
+      "pageErrors": [],
+      "idleMutations": 0
+    },
+    {
+      "route": "/api-docs/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "operations": 20,
+      "deepLinks": 20,
+      "japaneseControls": true,
+      "serverResponse": 200,
+      "payloadKeys": [
+        "status",
+        "name",
+        "version",
+        "serverTime",
+        "serverTimeEpoch",
+        "apiEnabled",
+        "careportalEnabled",
+        "boluscalcEnabled",
+        "settings",
+        "extendedSettings",
+        "authorized",
+        "runtimeState"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v1/status"
+        }
+      ],
+      "axeViolations": 0,
+      "overflow": false,
+      "pageErrors": [],
+      "idleMutations": 0
+    },
+    {
+      "route": "/api3-docs/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "operations": 11,
+      "deepLinks": 11,
+      "japaneseControls": true,
+      "serverResponse": 200,
+      "payloadKeys": [
+        "status",
+        "result"
+      ],
+      "requests": [
+        {
+          "method": "GET",
+          "path": "/api/v3/version"
+        }
+      ],
+      "axeViolations": 0,
+      "overflow": false,
+      "pageErrors": [],
+      "idleMutations": 0
+    }
+  ]
+}

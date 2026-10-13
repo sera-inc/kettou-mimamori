@@ -1,0 +1,590 @@
+{
+  "stats": {
+    "suites": 61,
+    "tests": 319,
+    "passes": 319,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-12T14:18:09.300Z",
+    "end": "2026-10-12T14:18:29.984Z",
+    "duration": 20684
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/ar2.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 10,
+        "passes": 10,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:09.733Z",
+        "end": "2026-10-12T14:18:09.763Z",
+        "duration": 30
+      }
+    },
+    {
+      "file": "tests/basalprofileplugin.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:10.141Z",
+        "end": "2026-10-12T14:18:10.154Z",
+        "duration": 13
+      }
+    },
+    {
+      "file": "tests/bgnow.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:10.472Z",
+        "end": "2026-10-12T14:18:10.490Z",
+        "duration": 18
+      }
+    },
+    {
+      "file": "tests/boluswizardpreview.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:10.865Z",
+        "end": "2026-10-12T14:18:10.918Z",
+        "duration": 53
+      }
+    },
+    {
+      "file": "tests/bridge-connect-compat.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:11.198Z",
+        "end": "2026-10-12T14:18:11.209Z",
+        "duration": 11
+      }
+    },
+    {
+      "file": "tests/bridge.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:11.481Z",
+        "end": "2026-10-12T14:18:11.697Z",
+        "duration": 216
+      }
+    },
+    {
+      "file": "tests/cannulaage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:12.067Z",
+        "end": "2026-10-12T14:18:12.107Z",
+        "duration": 40
+      }
+    },
+    {
+      "file": "tests/careportal.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:13.006Z",
+        "end": "2026-10-12T14:18:14.268Z",
+        "duration": 1262
+      }
+    },
+    {
+      "file": "tests/cob.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 2,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:14.589Z",
+        "end": "2026-10-12T14:18:14.653Z",
+        "duration": 64
+      }
+    },
+    {
+      "file": "tests/data.calcdelta.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 10,
+        "passes": 10,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:14.935Z",
+        "end": "2026-10-12T14:18:14.952Z",
+        "duration": 17
+      }
+    },
+    {
+      "file": "tests/data.treatmenttocurve.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:15.253Z",
+        "end": "2026-10-12T14:18:15.264Z",
+        "duration": 11
+      }
+    },
+    {
+      "file": "tests/ddata.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:15.580Z",
+        "end": "2026-10-12T14:18:15.590Z",
+        "duration": 10
+      }
+    },
+    {
+      "file": "tests/direction.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:15.864Z",
+        "end": "2026-10-12T14:18:15.881Z",
+        "duration": 17
+      }
+    },
+    {
+      "file": "tests/env.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 6,
+        "tests": 24,
+        "passes": 24,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:16.134Z",
+        "end": "2026-10-12T14:18:16.248Z",
+        "duration": 114
+      }
+    },
+    {
+      "file": "tests/errorcodes.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:16.564Z",
+        "end": "2026-10-12T14:18:16.581Z",
+        "duration": 17
+      }
+    },
+    {
+      "file": "tests/expressextensions.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:16.831Z",
+        "end": "2026-10-12T14:18:16.837Z",
+        "duration": 6
+      }
+    },
+    {
+      "file": "tests/insulinage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:17.176Z",
+        "end": "2026-10-12T14:18:17.214Z",
+        "duration": 38
+      }
+    },
+    {
+      "file": "tests/iob.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 3,
+        "tests": 14,
+        "passes": 14,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:17.512Z",
+        "end": "2026-10-12T14:18:17.540Z",
+        "duration": 28
+      }
+    },
+    {
+      "file": "tests/language.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:17.795Z",
+        "end": "2026-10-12T14:18:17.840Z",
+        "duration": 45
+      }
+    },
+    {
+      "file": "tests/levels.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:18.094Z",
+        "end": "2026-10-12T14:18:18.103Z",
+        "duration": 9
+      }
+    },
+    {
+      "file": "tests/loop.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:18.459Z",
+        "end": "2026-10-12T14:18:18.484Z",
+        "duration": 25
+      }
+    },
+    {
+      "file": "tests/maker.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 2,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:18.751Z",
+        "end": "2026-10-12T14:18:18.763Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/mmconnect.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:19.018Z",
+        "end": "2026-10-12T14:18:19.366Z",
+        "duration": 348
+      }
+    },
+    {
+      "file": "tests/mongo-pool-config.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:19.795Z",
+        "end": "2026-10-12T14:18:19.816Z",
+        "duration": 21
+      }
+    },
+    {
+      "file": "tests/plugins.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:20.087Z",
+        "end": "2026-10-12T14:18:20.156Z",
+        "duration": 69
+      }
+    },
+    {
+      "file": "tests/profile.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 45,
+        "passes": 45,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:20.460Z",
+        "end": "2026-10-12T14:18:20.516Z",
+        "duration": 56
+      }
+    },
+    {
+      "file": "tests/profileeditor.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:20.849Z",
+        "end": "2026-10-12T14:18:20.859Z",
+        "duration": 10
+      }
+    },
+    {
+      "file": "tests/pushover.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:21.179Z",
+        "end": "2026-10-12T14:18:21.189Z",
+        "duration": 10
+      }
+    },
+    {
+      "file": "tests/query.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:21.894Z",
+        "end": "2026-10-12T14:18:21.909Z",
+        "duration": 15
+      }
+    },
+    {
+      "file": "tests/sandbox.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:22.170Z",
+        "end": "2026-10-12T14:18:22.255Z",
+        "duration": 85
+      }
+    },
+    {
+      "file": "tests/security.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 2,
+        "tests": 17,
+        "passes": 17,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:22.621Z",
+        "end": "2026-10-12T14:18:24.966Z",
+        "duration": 2345
+      }
+    },
+    {
+      "file": "tests/sensorage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:25.398Z",
+        "end": "2026-10-12T14:18:25.453Z",
+        "duration": 55
+      }
+    },
+    {
+      "file": "tests/settings.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 14,
+        "passes": 14,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:25.710Z",
+        "end": "2026-10-12T14:18:25.740Z",
+        "duration": 30
+      }
+    },
+    {
+      "file": "tests/simplealarms.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:26.113Z",
+        "end": "2026-10-12T14:18:26.129Z",
+        "duration": 16
+      }
+    },
+    {
+      "file": "tests/timeago.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:26.481Z",
+        "end": "2026-10-12T14:18:26.497Z",
+        "duration": 16
+      }
+    },
+    {
+      "file": "tests/times.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:26.748Z",
+        "end": "2026-10-12T14:18:26.757Z",
+        "duration": 9
+      }
+    },
+    {
+      "file": "tests/treatmentnotify.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:27.152Z",
+        "end": "2026-10-12T14:18:27.171Z",
+        "duration": 19
+      }
+    },
+    {
+      "file": "tests/units.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:27.506Z",
+        "end": "2026-10-12T14:18:27.519Z",
+        "duration": 13
+      }
+    },
+    {
+      "file": "tests/upbat.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:27.818Z",
+        "end": "2026-10-12T14:18:27.842Z",
+        "duration": 24
+      }
+    },
+    {
+      "file": "tests/utils.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 2,
+        "tests": 11,
+        "passes": 11,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:28.154Z",
+        "end": "2026-10-12T14:18:28.175Z",
+        "duration": 21
+      }
+    },
+    {
+      "file": "tests/verifyauth.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T14:18:28.543Z",
+        "end": "2026-10-12T14:18:29.964Z",
+        "duration": 1421
+      }
+    }
+  ],
+  "failures": []
+}

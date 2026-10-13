@@ -1,11 +1,11 @@
 body {
-  fill: #fff;
+  fill: var(--app-text);
 }
 
 .axis path,
 .axis line {
   fill: none;
-  stroke: #ffffff;
+  stroke: var(--app-border);
   shape-rendering: crispEdges;
 }
 
@@ -13,12 +13,12 @@ body {
   shape-rendering: crispEdges;
 }
 .grid path, .axis line {
-  stroke: #bdbdbd;
+  stroke: var(--app-border);
   stroke-opacity: 1;
 }
 
 .brush .extent {
-  stroke: #ffffff;
+  stroke: var(--app-border);
   stroke-opacity: 0;
   fill-opacity: 0;
 }

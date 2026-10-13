@@ -1,0 +1,13 @@
+<% const pageTitles={index:'血糖の状態',report:'レポート',profile:'プロフィール',food:'食品と食事',admin:'管理ツール',split:'複数の画面を表示',clockconfig:'時計の設定'};
+const pageDescriptions={index:'最新の状態と推移を確認できます。',report:'期間や記録の種類を選んで、推移を振り返れます。',profile:'基礎インスリンや目標範囲など、記録に使用する設定を管理します。',food:'食品の情報と、よく使う食事の組み合わせを管理します。',admin:'アクセス権、通知、保存された記録を管理します。',split:'設定した表示先を、同じ画面で確認できます。'}; %>
+<div class="app-page-title"><h1><%= pageTitles[type] || title %></h1>
+  <p class="app-reading-context"><strong class="customTitle" role="status" aria-live="polite"><%= settings.customTitle || '血糖みまもり' %></strong></p>
+  <div class="app-page-summary"><p class="app-page-description"><%= type==='clockconfig' ? '表示する情報と大きさを選び、専用の時計画面を作成できます。' : (pageDescriptions[type] || '') %></p>
+  <% if(type==='index') { %>
+    <div id="centerMessagePanel" role="status" aria-live="polite"><div id="loadingMessage"><p id="loadingMessageText">画面を読み込んでいます。</p></div></div>
+  <% } %>
+  </div>
+  <% if(type==='food'||type==='profile') { %>
+  <p class="app-page-status" role="status"><strong class="translate">Status</strong>: <span <% if(type==='food') { %>id="fe_status"<% }else{ %>class="pe_status translate"<% } %>>Not loaded</span></p>
+  <% } %>
+</div>

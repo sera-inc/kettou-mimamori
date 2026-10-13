@@ -1,0 +1,23 @@
+[
+  {
+    "file": "lib/client/boluscalc.js",
+    "before": "'Portion: ' + foodlist[i].portion",
+    "after": "translate('Portion') + ': ' + foodlist[i].portion",
+    "beforeSourceSHA256": "3fbf3c243ce7de71588a1a945516abdae3a4bbe7972a3917380cf9f40033276a",
+    "reason": "Translate food selection labels and the display unit only; quantities, selection indices, nutrient arithmetic and stored unit identifiers unchanged"
+  },
+  {
+    "file": "lib/client/boluscalc.js",
+    "before": "'Carbs: ' + foodlist[i].carbs",
+    "after": "translate('Carbs') + ': ' + foodlist[i].carbs",
+    "beforeSourceSHA256": "e48d2784f202350a5a4b12e00787a0aa058ba59754e0b346a9dc486d4057741f",
+    "reason": "Translate food selection labels and the display unit only; quantities, selection indices, nutrient arithmetic and stored unit identifiers unchanged"
+  },
+  {
+    "file": "lib/client/boluscalc.js",
+    "before": "o += foodlist[i].unit + ' | ';",
+    "after": "o += translate(foodlist[i].unit) + ' | ';",
+    "beforeSourceSHA256": "eda5d150ca9efc94604de0afabb9e64d2623b8736d3a84fd51bb84c2496eb458",
+    "reason": "Translate food selection labels and the display unit only; quantities, selection indices, nutrient arithmetic and stored unit identifiers unchanged"
+  }
+]

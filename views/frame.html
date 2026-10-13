@@ -15,40 +15,33 @@ for (let i = 0; i <= 8; i++) {
 const sitesPerRow = urlArray.length > 3 ? Math.round(urlArray.length / 2) : urlArray.length;
 const rows = urlArray.length > 3 ? 2 : 1;
 
-%><html>
+type = 'split';
+%><!DOCTYPE html>
+<html lang="ja">
 <head>
-  <title>Nightscout multiframe view</title>
-  <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <style media="screen" type="text/css">
-  html, body, table, tr, td {
-    margin:0 !important;
-    padding:0 !important;
-    border: 0;
-}
-table {
-  width:100%;
-  height:100%;
-}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>複数の画面を表示 | 血糖みまもり</title>
+  <link rel="stylesheet" href="/design-system/index.css">
 </head>
-<body>
-  <table>
-    <% let s = 0;
-       for (let r = 1; r <= rows; r++) {
-      %><tr>
-        <% for (let sp = 0; sp < sitesPerRow; sp++) {
-          let pointer = sp + s;
-          %><td align="center" style="height:20px"><%= nameArray[pointer] %></td>
-        <% } %>
-        </tr>
-        <tr>
-          <% for (let sp = 0; sp < sitesPerRow; sp++) {
-            let pointer = sp + s;
-            %><td align="center" width="auto"><iframe src="<%= urlArray[pointer] %>" style="width:100%;height:100%;"></iframe></td>
-          <% } %>
-        </tr>
-    <% s += sitesPerRow; } %>
-  </table>
+<body class="app-page" data-page="split">
+  <%- include('partials/toolbar') %>
+  <main id="app-main" class="app-main" tabindex="-1">
+  <%- include('partials/page-title') %>
+  <% if(!urlArray.length) { %>
+    <div class="app-empty-state" data-variant="no-data" role="status">
+      <p class="app-empty-state-title">表示する画面はまだ設定されていません</p>
+      <p class="app-empty-state-description">表示先のURLと名前を設定すると、複数の画面を並べて確認できます。管理者に表示先の設定を依頼してください。</p>
+      <div class="app-empty-state-actions"><a class="app-button" href="/">血糖の状態へ戻る</a></div>
+    </div>
+  <% }else{ %>
+    <div class="app-frame-grid" style="--app-frame-columns:<%= sitesPerRow %>">
+    <% urlArray.forEach(function(url,pointer) {const label=nameArray[pointer].trim()||('画面'+(pointer+1)); %>
+      <section class="app-frame-card"><h2><%= label %></h2><iframe src="<%= url %>" title="<%= label %>" loading="lazy"></iframe></section>
+    <% }); %>
+    </div>
+  <% } %>
+  </main>
 </body>
 
 </html>

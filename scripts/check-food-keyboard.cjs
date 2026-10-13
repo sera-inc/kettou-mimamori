@@ -1,0 +1,62 @@
+'use strict';
+const fs = require('node:fs');
+const assert = require('node:assert/strict');
+const {chromium} = require(process.env.PLAYWRIGHT_MODULE_PATH || 'playwright');
+const out = 'docs/verification/food-keyboard';
+const food = {_id: '000000000000000000000041', type: 'food', name: 'ごはん', category: '主食', subcategory: '米飯', portion: 150, unit: 'g', carbs: 55, gi: 2, fat: 1, protein: 4, energy: 1000};
+const records = [food, {_id: '000000000000000000000044', type: 'quickpick', name: '非表示の食事', position: 0, hidden: 'true', hideafteruse: 'false', carbs: 0, foods: []}, {_id: '000000000000000000000042', type: 'quickpick', name: '朝食', position: 1, hidden: 'false', hideafteruse: 'false', carbs: 0, foods: []}, {_id: '000000000000000000000043', type: 'quickpick', name: '昼食', position: 2, hidden: 'false', hideafteruse: 'false', carbs: 0, foods: []}];
+const secret = fs.readFileSync('.env.local', 'utf8').match(/^API_SECRET=(.+)$/m)[1].trim();
+const hashed = require('node:crypto').createHash('sha1').update(secret).digest('hex');
+(async () => {
+  fs.mkdirSync(out, {recursive: true}); const browser = await chromium.launch({headless: true, channel: 'chrome'});
+  const results = [], errors = [], networkWrites = [];
+  try {
+    for (const [size, viewport] of [['desktop', {width: 1440, height: 1200}], ['mobile', {width: 390, height: 844}]]) {
+      const page = await browser.newPage({viewport, locale: 'ja-JP', serviceWorkers: 'block'});
+      page.on('pageerror', error => errors.push(error.message));
+      page.on('request', request => {if (request.url().includes('/api/') && request.method() !== 'GET') networkWrites.push(request.method());});
+      await page.addInitScript(value => localStorage.setItem('apisecrethash', JSON.stringify(value)), hashed);
+      await page.route('**/api/v1/food.json', route => route.fulfill({json: records}));
+      await page.goto('http://localhost:8410/food');
+      await page.waitForSelector('.app-food-add:not([disabled])');
+      const pick = id => page.locator('.sortablequickpick[_id="' + id + '"]');
+      const breakfast = records[2]._id, lunch = records[3]._id;
+      await page.locator('#app-food-target').focus(); await page.keyboard.press('Home'); await page.keyboard.press('ArrowDown');
+      assert.equal(await page.locator('#app-food-target').inputValue(), lunch);
+      await page.locator('.app-food-add').focus(); await page.keyboard.press('Space');
+      await page.waitForSelector('.fe_foodinsideqp');
+      assert.equal(await pick(lunch).locator('.fe_foodinsideqp').count(), 1);
+      assert.equal(await pick(breakfast).locator('.fe_foodinsideqp').count(), 0);
+      assert((await pick(lunch).locator('legend').textContent()).includes('55 g'));
+      assert.equal(await pick(lunch).locator('.fe_qpportions').inputValue(), '1');
+      assert.equal(await page.locator(':focus').getAttribute('class'), 'app-food-add');
+      await pick(lunch).locator('.fe_qpportions').fill('2'); await page.keyboard.press('Tab');
+      await page.waitForFunction(id => document.querySelector('.sortablequickpick[_id="' + id + '"] legend').textContent.includes('110 g'), lunch);
+      assert.equal(await page.locator(':focus').getAttribute('class'), 'fe_qpportions');
+      const beforeScroll = await page.evaluate(() => scrollY);
+      await pick(lunch).locator('.app-food-up').focus(); await page.keyboard.press('Enter');
+      await page.waitForFunction(id => document.querySelector('.sortablequickpick').getAttribute('_id') === id, lunch);
+      assert.equal(await page.locator(':focus').getAttribute('class'), 'app-food-down');
+      assert.equal(await pick(lunch).locator('.fe_qpportions').inputValue(), '2');
+      await page.keyboard.press('Space');
+      await page.waitForFunction(id => Array.from(document.querySelectorAll('.sortablequickpick')).at(-1).getAttribute('_id') === id, lunch);
+      assert.equal(await page.locator(':focus').getAttribute('class'), 'app-food-up');
+      assert.equal(await pick(lunch).locator('.fe_qpportions').inputValue(), '2');
+      await page.locator('#fe_quickpick_showhidden').focus(); await page.keyboard.press('Space');
+      await page.waitForSelector('.sortablequickpick[_id="' + records[1]._id + '"]');
+      assert.deepEqual(await page.locator('.sortablequickpick').evaluateAll(picks => picks.map(pick => pick.getAttribute('_id'))), [records[1]._id, breakfast, lunch], 'Hidden record is retained at its original position through both sorts');
+      const controlNames = await pick(lunch).locator('input').evaluateAll(inputs => inputs.map(input => ({class: input.className, name: input.getAttribute('aria-label')})));
+      assert(controlNames.every(input => input.name), JSON.stringify(controlNames));
+      await page.addScriptTag({path: require.resolve('axe-core/axe.min.js')});
+      const audit = await page.evaluate(async () => (await axe.run(document)).violations.map(item => ({id: item.id, impact: item.impact, targets: item.nodes.map(node => node.target)})));
+      const blocking = audit.filter(item => ['critical', 'serious'].includes(item.impact)); assert.deepEqual(blocking, []);
+      await page.screenshot({path: out + '/' + size + '.png', fullPage: true});
+      assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+      results.push({viewport: size, pass: true, carbValues: {onePortion: 55, twoPortions: 110}, beforeScroll, controlNames, axeViolations: audit, assertions: ['native target selection', 'Space adds through original drop handler', 'existing portion recalculation', 'Enter/Space sorting through original update handler', 'focus restored after redraw', 'exact record/portions retained', 'no save requests']});
+      await page.close();
+    }
+    assert.deepEqual(errors, []); assert.deepEqual(networkWrites, []);
+    fs.writeFileSync(out + '/results.json', JSON.stringify({generatedAt: new Date().toISOString(), scope: 'Synthetic food GET fixtures; keyboard uses original callbacks; no API writes or database persistence', results, pageErrors: errors, apiWrites: networkWrites}, null, 2));
+    console.log(JSON.stringify(results, null, 2));
+  } finally {await browser.close();}
+})().catch(error => {console.error(error); process.exitCode = 1;});

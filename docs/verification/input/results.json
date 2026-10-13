@@ -1,0 +1,23 @@
+[
+  {
+    "case": "native required, range and fractional-step validation; exact numeric value submitted",
+    "pass": true
+  },
+  {
+    "case": "readonly value and dashed border retained, disabled skipped, error associated and visibly marked",
+    "pass": true
+  },
+  {
+    "case": "date/time values and visible keyboard focus retained",
+    "focus": {
+      "outline": "solid",
+      "width": "3px",
+      "height": 44
+    },
+    "pass": true
+  },
+  {
+    "case": "existing profile input accepts unchanged decimal representation without saving",
+    "pass": true
+  }
+]

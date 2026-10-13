@@ -1,0 +1,418 @@
+[
+  {
+    "file": "package.json",
+    "beforeSemanticSHA256": "aa3a8adf7c2e73944e4d8a438341988aefba7d7d76a566dcab5ba497e4f2b7fd",
+    "rows": [
+      {
+        "path": [
+          "name"
+        ],
+        "existed": true,
+        "before": "nightscout",
+        "after": "kettou-mimamori"
+      },
+      {
+        "path": [
+          "description"
+        ],
+        "existed": true,
+        "before": "Nightscout acts as a web-based CGM (Continuous Glucose Montinor) to allow multiple caregivers to remotely view a patients glucose data in realtime.",
+        "after": "血糖値の推移、治療記録、食品とプロフィールを確認する血糖みまもり"
+      },
+      {
+        "path": [
+          "repository",
+          "url"
+        ],
+        "existed": true,
+        "before": "https://github.com/nightscout/cgm-remote-monitor.git",
+        "after": "https://github.com/sera-inc/kettou-mimamori.git"
+      },
+      {
+        "path": [
+          "protocolName"
+        ],
+        "existed": false,
+        "after": "nightscout"
+      }
+    ]
+  },
+  {
+    "file": "package-lock.json",
+    "beforeSemanticSHA256": "d7392dbabe2d6d67b8524e2bd1634818cc383e812553d913fe3ad6ba9f5999b8",
+    "rows": [
+      {
+        "path": [
+          "name"
+        ],
+        "existed": true,
+        "before": "nightscout",
+        "after": "kettou-mimamori"
+      },
+      {
+        "path": [
+          "packages",
+          "",
+          "name"
+        ],
+        "existed": true,
+        "before": "nightscout",
+        "after": "kettou-mimamori"
+      }
+    ]
+  },
+  {
+    "file": "app.json",
+    "beforeSemanticSHA256": "9d5810a1f5a0aac88902a8024f01bcdad20c3828a30f3c34b57814fd8b5aad60",
+    "rows": [
+      {
+        "path": [
+          "name"
+        ],
+        "existed": true,
+        "before": "CGM Remote Monitor",
+        "after": "血糖みまもり"
+      },
+      {
+        "path": [
+          "repository"
+        ],
+        "existed": true,
+        "before": "https://github.com/nightscout/cgm-remote-monitor",
+        "after": "https://github.com/sera-inc/kettou-mimamori"
+      },
+      {
+        "path": [
+          "env",
+          "MONGODB_URI",
+          "description"
+        ],
+        "existed": true,
+        "before": "The MongoDB Connection String to connect to your MongoDB cluster. If you don't have this from MongoDB Atlas, please re-read installation instructions at http://nightscout.github.io/nightscout/new_user/ before continuing",
+        "after": "MongoDBの接続文字列を指定します。接続先と認証情報は、利用するデータベースの管理者へ確認してください。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_HIGH",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the High alarm (triggered when BG crosses BG_TARGET_TOP). ('on' or 'off')",
+        "after": "新しいブラウザの高血糖警報の初期設定です。血糖値がBG_TARGET_TOPを超えると発動します。onまたはoffを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_LOW",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the Low alarm (triggered when BG crosses BG_TARGET_BOTTOM). ('on' or 'off')",
+        "after": "新しいブラウザの低血糖警報の初期設定です。血糖値がBG_TARGET_BOTTOMを下回ると発動します。onまたはoffを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_TIMEAGO_URGENT",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for an urgent alarm when CGM data hasn't been received in the number of minutes set in ALARM_TIMEAGO_URGENT_MINS. ('on' or 'off')",
+        "after": "測定データがALARM_TIMEAGO_URGENT_MINS分以上届かない場合の緊急警報です。onまたはoffを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_TIMEAGO_URGENT_MINS",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the number of minutes since the last CGM reading to trigger an ALARM_TIMEAGO_URGENT alarm.",
+        "after": "最後の血糖測定から緊急警報を出すまでの時間を分で指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_TIMEAGO_WARN",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for a warning alarm when CGM data hasn't been received in the number of minutes set in ALARM_TIMEAGO_WARN_MINS. ('on' or 'off')",
+        "after": "測定データがALARM_TIMEAGO_WARN_MINS分以上届かない場合の警告です。onまたはoffを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_TIMEAGO_WARN_MINS",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the number of minutes since the last CGM reading to trigger an ALARM_TIMEAGO_WARN alarm.",
+        "after": "最後の血糖測定から警告を出すまでの時間を分で指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_TYPES",
+          "description"
+        ],
+        "existed": true,
+        "before": "'simple' and/or 'predict'. Simple alarms trigger when BG crosses the various thresholds set below. Predict alarms use a formula that forecasts where the BG is going based on its trend. You will *not* get warnings when crossing the BG thresholds set below when using the predict type.",
+        "after": "simple（しきい値による警報）、predict（推移の予測による警報）、または両方を指定します。predictだけでは、下記の血糖しきい値を超えたことによる警報は出ません。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_URGENT_HIGH",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the Urgent High alarm (triggered when BG crosses BG_HIGH). ('on' or 'off')",
+        "after": "新しいブラウザの重度の高血糖警報の初期設定です。血糖値がBG_HIGHを超えると発動します。onまたはoffを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "ALARM_URGENT_LOW",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the Urgent Low alarm (triggered when BG crosses BG_LOW). ('on' or 'off')",
+        "after": "新しいブラウザの重度の低血糖警報の初期設定です。血糖値がBG_LOWを下回ると発動します。onまたはoffを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "API_SECRET",
+          "description"
+        ],
+        "existed": true,
+        "before": "A passphrase that must be at least 12 characters long. Avoid 'special' characters, which can cause problems in some cases.",
+        "after": "APIの認証に使用する12文字以上の秘密の文字列です。十分に長いランダムな値を使用してください。"
+      },
+      {
+        "path": [
+          "env",
+          "BG_HIGH",
+          "description"
+        ],
+        "existed": true,
+        "before": "Urgent High BG threshold, triggers the ALARM_URGENT_HIGH alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
+        "after": "重度の高血糖警報のしきい値です。DISPLAY_UNITSで指定したmg/dLまたはmmol/Lの単位で設定します。"
+      },
+      {
+        "path": [
+          "env",
+          "BG_LOW",
+          "description"
+        ],
+        "existed": true,
+        "before": "Urgent Low BG threshold, triggers the ALARM_URGENT_LOW alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
+        "after": "重度の低血糖警報のしきい値です。DISPLAY_UNITSで指定したmg/dLまたはmmol/Lの単位で設定します。"
+      },
+      {
+        "path": [
+          "env",
+          "BG_TARGET_BOTTOM",
+          "description"
+        ],
+        "existed": true,
+        "before": "Low BG threshold, triggers the ALARM_LOW alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
+        "after": "低血糖警報のしきい値です。DISPLAY_UNITSで指定したmg/dLまたはmmol/Lの単位で設定します。"
+      },
+      {
+        "path": [
+          "env",
+          "BG_TARGET_TOP",
+          "description"
+        ],
+        "existed": true,
+        "before": "High BG threshold, triggers the ALARM_HIGH alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
+        "after": "高血糖警報のしきい値です。DISPLAY_UNITSで指定したmg/dLまたはmmol/Lの単位で設定します。"
+      },
+      {
+        "path": [
+          "env",
+          "BOLUS_RENDER_OVER",
+          "description"
+        ],
+        "existed": true,
+        "before": "U value over which the bolus values are rendered on the chart if the 'x U and Over' option is selected.",
+        "after": "一定量以上の投与をグラフに表示する場合の、投与量の下限を単位数で指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "BRIDGE_PASSWORD",
+          "description"
+        ],
+        "existed": true,
+        "before": "Your Dexcom account password, to receive CGM data from the Dexcom Share service. Also make sure to include 'bridge' in your ENABLE line.",
+        "after": "Dexcom Shareから血糖データを受信するアカウントのパスワードです。ENABLEにbridgeを追加してください。"
+      },
+      {
+        "path": [
+          "env",
+          "BRIDGE_SERVER",
+          "description"
+        ],
+        "existed": true,
+        "before": "If you are bridging from the Dexcom Share service, and are anywhere *outside* the US, change this to EU. ('US' or 'EU')",
+        "after": "Dexcom Shareの接続先です。米国はUS、米国外はEUを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "BRIDGE_USER_NAME",
+          "description"
+        ],
+        "existed": true,
+        "before": "Your Dexcom account username, to receive CGM data from the Dexcom Share service. Also make sure to include 'bridge' in your ENABLE line.",
+        "after": "Dexcom Shareから血糖データを受信するアカウントの利用者名です。ENABLEにbridgeを追加してください。"
+      },
+      {
+        "path": [
+          "env",
+          "CUSTOM_TITLE",
+          "description"
+        ],
+        "existed": true,
+        "before": "The display name for the Nightscout site. Appears in the upper left of the main view. Often set to the name of the CGM wearer.",
+        "after": "記録画面に表示する名前です。利用者や確認対象を区別する名前を設定できます。"
+      },
+      {
+        "path": [
+          "env",
+          "DISPLAY_UNITS",
+          "description"
+        ],
+        "existed": true,
+        "before": "Preferred BG units for the site: 'mg/dl' or 'mmol/L' (or just 'mmol').",
+        "after": "血糖値の表示単位です。mg/dlまたはmmol/L（mmolも可）を指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "ENABLE",
+          "description"
+        ],
+        "existed": true,
+        "before": "Plugins to enable for your site. Must be a space-delimited, lower-case list. Include the word 'bridge' here if you are receiving data from the Dexcom Share service. Include 'mmconnect' if you are bridging from the MiniMed CareLink service.",
+        "after": "有効にする機能名を、小文字と半角スペース区切りで指定します。Dexcom Shareはbridge、MiniMed CareLinkはmmconnectを追加します。"
+      },
+      {
+        "path": [
+          "env",
+          "MMCONNECT_USER_NAME",
+          "description"
+        ],
+        "existed": true,
+        "before": "Your CareLink account username, to receive CGM data from the CareLink service. Also make sure to include 'mmconnect' in your ENABLE line.",
+        "after": "CareLinkから血糖データを受信するアカウントの利用者名です。ENABLEにmmconnectを追加してください。"
+      },
+      {
+        "path": [
+          "env",
+          "MMCONNECT_PASSWORD",
+          "description"
+        ],
+        "existed": true,
+        "before": "Your CareLink account password, to receive CGM data from the CareLink service. Also make sure to include 'mmconnect' in your ENABLE line.",
+        "after": "CareLinkから血糖データを受信するアカウントのパスワードです。ENABLEにmmconnectを追加してください。"
+      },
+      {
+        "path": [
+          "env",
+          "MMCONNECT_SERVER",
+          "description"
+        ],
+        "existed": true,
+        "before": "If you are bridging from the CareLink service, and are anywhere *outside* the US, change this to EU. ('US' or 'EU')",
+        "after": "CareLinkの接続先です。米国はUS、米国外はEUを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "NIGHT_MODE",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for whether Night Mode should be enabled. ('on' or 'off')",
+        "after": "夜間に画面を暗くする設定の初期値です。onまたはoffを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "SHOW_PLUGINS",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for whether or not these plugins are checked (active) by default, not merely enabled. Include plugins here as in the ENABLE line; space-separated and lower-case.",
+        "after": "最初から表示する有効な機能名を、小文字と半角スペース区切りで指定します。ENABLEとは別に、表示状態を設定します。"
+      },
+      {
+        "path": [
+          "env",
+          "SHOW_RAWBG",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the display of raw CGM data (if available). ('always', 'never', or 'noise')",
+        "after": "生の血糖データがある場合の表示設定です。always（常時）、never（表示しない）、noise（ノイズがある場合）を指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "THEME",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the color theme of the CGM graph. ('default', 'colors', or 'colorblindfriendly')",
+        "after": "血糖グラフの色設定の初期値です。default、colors、colorblindfriendlyを指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "TIME_FORMAT",
+          "description"
+        ],
+        "existed": true,
+        "before": "Default setting for new browser views, for the time mode. ('12' or '24')",
+        "after": "時刻の表示形式の初期値です。12時間表示は12、24時間表示は24を指定します。"
+      },
+      {
+        "path": [
+          "env",
+          "USE_NPM_INSTALL",
+          "description"
+        ],
+        "existed": true,
+        "before": "You need to have this set for deployment to work in Heroku",
+        "after": "Herokuへの配備に必要な依存ファイルのインストール設定です。"
+      },
+      {
+        "path": [
+          "env",
+          "TIME_FORMAT",
+          "value"
+        ],
+        "existed": true,
+        "before": "12",
+        "after": "24"
+      },
+      {
+        "path": [
+          "env",
+          "LANGUAGE"
+        ],
+        "existed": false,
+        "after": {
+          "description": "画面の表示言語です。日本語はjaを指定します。",
+          "value": "ja",
+          "required": false
+        }
+      }
+    ]
+  }
+]

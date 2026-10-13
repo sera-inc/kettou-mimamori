@@ -1,0 +1,86 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 37,
+    "passes": 37,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T04:22:38.600Z",
+    "end": "2026-10-13T04:22:52.153Z",
+    "duration": 13553
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/api.food.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:22:39.268Z",
+        "end": "2026-10-13T04:22:41.682Z",
+        "duration": 2414
+      }
+    },
+    {
+      "file": "tests/api.profiles.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 3,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:22:42.138Z",
+        "end": "2026-10-13T04:22:43.598Z",
+        "duration": 1460
+      }
+    },
+    {
+      "file": "tests/api.treatments.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:22:43.980Z",
+        "end": "2026-10-13T04:22:45.425Z",
+        "duration": 1445
+      }
+    },
+    {
+      "file": "tests/loopalyzer-boundary.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:22:45.917Z",
+        "end": "2026-10-13T04:22:51.852Z",
+        "duration": 5935
+      }
+    },
+    {
+      "file": "tests/reportstorage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:22:52.121Z",
+        "end": "2026-10-13T04:22:52.143Z",
+        "duration": 22
+      }
+    }
+  ],
+  "failures": []
+}

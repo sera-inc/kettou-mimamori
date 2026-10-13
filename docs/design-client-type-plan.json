@@ -1,0 +1,56 @@
+{
+  "scope": "Only client display typography and shadow; clinical values, treatment label scaling arithmetic, coordinates, protocols and interaction callbacks retained. The divisor 16 converts the original pixel geometry into multiples of the reviewed body token.",
+  "files": [
+    {
+      "file": "lib/client/chart.js",
+      "beforeSHA256": "e2e31fd9ef4f6bd720f1b714b08da5b7f7e45e9d227c46fc690ad1f55c20332a",
+      "beforeAST": "f6f489f211886273dd17d014799e5d5e4e844ce05fe89491ef2914f91d922cd5",
+      "rows": [
+        {
+          "original": ".style(\"font-size\", \"16px\")",
+          "replacement": ".style(\"font-size\", \"var(--app-text-body-size)\")",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "file": "lib/client/renderer.js",
+      "beforeSHA256": "0ac1b8085d6e02f77b803c496556220168c4a867435774d21a089d15e4d6cf71",
+      "beforeAST": "dda4b8953153233041bdf4803956ae06c49d791bbc68b223a831a9798df9a6b4",
+      "rows": [
+        {
+          "original": ".style('font-size', 15)",
+          "replacement": ".style('font-size', 'var(--app-text-body-size)')",
+          "count": 3
+        },
+        {
+          "original": ".attr('font-size', 15)",
+          "replacement": ".attr('font-size', 'var(--app-text-body-size)')",
+          "count": 3
+        },
+        {
+          "original": "return fontSize;",
+          "replacement": "return 'calc(var(--app-text-body-size) * ' + (fontSize / 16) + ')';",
+          "count": 1
+        },
+        {
+          "original": ".style('text-shadow', '0px 0px 10px rgba(0, 0, 0, 1)')",
+          "replacement": ".style('text-shadow', 'none')",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "file": "lib/client/boluscalc.js",
+      "beforeSHA256": "52a3ebb4ca89569cf67379503eceaa49d658d373f16be2c54d7a45bc4151d77d",
+      "beforeAST": "6d25ccbbbaea823bc0e58ec580198a118ddd1356c17c7fabac5c79e6fc8bc283",
+      "rows": [
+        {
+          "original": "float:right;margin-right:20px;font-size:12px",
+          "replacement": "float:right;margin-right:1.25rem;font-size:var(--app-text-body-size)",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

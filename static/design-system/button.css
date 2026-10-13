@@ -1,0 +1,54 @@
+/* Layer 3 HTML adapter based on the preserved DADS button source.
+   Native elements and existing event IDs remain in place. */
+html body :is(button,input[type="button"],input[type="submit"],.app-button,.ui-button,#pe_submit,#fe_submit) {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--app-space-1);
+  min-height: var(--app-row-height);
+  max-width: 100%;
+  padding: var(--app-space-1) var(--app-space-2);
+  border: 1px solid var(--app-primary-border);
+  border-radius: var(--app-radius-sm);
+  background: var(--app-primary);
+  color: var(--app-primary-text);
+  box-shadow: none;
+  font-family: var(--app-font-sans);
+  font-size: var(--app-text-body-size);
+  font-weight: var(--app-font-weight-bold);
+  line-height: var(--app-text-body-leading);
+  letter-spacing: var(--app-text-body-tracking);
+  text-decoration: none;
+  cursor: pointer;
+}
+html body :is(button,input[type="button"],input[type="submit"],.app-button,.ui-button,#pe_submit,#fe_submit):hover {
+  background: var(--app-primary-hover);
+  text-decoration: underline;
+}
+html body :is(button,input[type="button"],input[type="submit"],.app-button,.ui-button,#pe_submit,#fe_submit):active {
+  background: var(--app-primary-active);
+}
+html body :is(button,input[type="button"],input[type="submit"],.app-button,.ui-button,#pe_submit,#fe_submit):focus-visible {
+  outline: var(--app-focus-ring-width) solid var(--app-focus-ring);
+  outline-offset: var(--app-focus-ring-offset);
+}
+html body :is(button,input[type="button"],input[type="submit"],.app-button,.ui-button,#pe_submit,#fe_submit):is(:disabled,[aria-disabled="true"]) {
+  background: var(--app-surface-sunken);
+  border-color: var(--app-border);
+  color: var(--app-text-muted);
+  text-decoration: none;
+  cursor: default;
+}
+html body :is(button,input[type="button"],input[type="submit"],.app-button,.ui-button,#pe_submit,#fe_submit)[data-type="outline"] {
+  background: var(--app-surface);
+  color: var(--app-primary);
+}
+html body :is(button,input[type="button"],input[type="submit"],.app-button,.ui-button,#pe_submit,#fe_submit)[data-type="outline"]:hover {
+  background: var(--app-primary-bg);
+}
+@media (forced-colors: active) {
+  html body :is(button,input[type="button"],input[type="submit"],.app-button):disabled {
+    border-style: dashed;
+  }
+}

@@ -1,0 +1,11 @@
+'use strict';
+const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto');const file='docs/company-metadata-plan.json';
+if(process.argv[2]==='plan'){
+  assert(!fs.existsSync(file),'Keep the reviewed metadata plan');const pkg=JSON.parse(fs.readFileSync('package.json','utf8')),swagger=JSON.parse(fs.readFileSync('lib/api3/swagger.json','utf8'));
+  const rows=[['package.json',['author'],pkg.author,{name:'株式会社世良',email:'info@sera-inc.co.jp'}],['package.json',['homepage'],pkg.homepage,'https://sera-inc.co.jp'],['package.json',['bugs'],pkg.bugs,{email:'info@sera-inc.co.jp'}],['lib/api3/swagger.json',['info','contact'],swagger.info.contact,{name:'株式会社世良',url:'https://sera-inc.co.jp',email:'info@sera-inc.co.jp'}]];
+  fs.writeFileSync(file,JSON.stringify(rows.map(([file,path,original,replacement])=>({file,path,original,replacement})),null,2));
+}else if(process.argv[2]==='apply'||process.argv[2]==='verify'){
+  const plans=JSON.parse(fs.readFileSync(file,'utf8'));for(const filename of new Set(plans.map(row=>row.file))){let parsed=JSON.parse(fs.readFileSync(filename,'utf8'));if(process.argv[2]==='verify')parsed=require('./migrate-api-japanese.cjs').reverse(filename,parsed);const current=process.argv[2]==='verify'&&fs.existsSync('docs/service-metadata-plan.json')?require('./migrate-service-metadata.cjs').reverse(filename,parsed):parsed;for(const row of plans.filter(row=>row.file===filename)){let parent=current;for(const key of row.path.slice(0,-1))parent=parent[key];const key=row.path.at(-1);assert.deepEqual(parent[key],process.argv[2]==='apply'?row.original:row.replacement);parent[key]=process.argv[2]==='apply'?row.replacement:row.original;}
+    if(process.argv[2]==='apply')fs.writeFileSync(filename,JSON.stringify(current,null,2)+'\n');else{const baseline=JSON.parse(fs.readFileSync('docs/company-metadata-baseline.json','utf8')).find(item=>item.file===filename);assert.equal(crypto.createHash('sha256').update(JSON.stringify(current)).digest('hex'),baseline.semanticSHA256,'After reversing only the four contact/maintainer fields, the entire metadata must match its original captured state');}}
+  console.log('Reviewed metadata fields applied/verified; contributor credits, dependency specifications, API names/versions/paths/schemas remain unchanged.');
+}else throw Error('Use plan, apply or verify');

@@ -1,0 +1,39 @@
+{
+  "stats": {
+    "suites": 61,
+    "tests": 315,
+    "passes": 311,
+    "pending": 0,
+    "failures": 5,
+    "start": "2026-10-12T10:43:41.434Z",
+    "end": "2026-10-12T10:45:31.066Z",
+    "duration": 109632
+  },
+  "failures": [
+    {
+      "error": "benv-shim.require: file not found: C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\fixtures/../../node_modules/.cache/_ns_cache/public/js/bundle.app.js",
+      "stack": "Error: benv-shim.require: file not found: C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\fixtures/../../node_modules/.cache/_ns_cache/public/js/bundle.app.js\n    at Object.shimRequire [as require] (tests\\fixtures\\benv-shim.js:123:11)\n    at C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\fixtures\\headless.js:27:12\n    at Object.setup (tests\\fixtures\\benv-shim.js:82:17)\n    at root.init [as setup] (tests\\fixtures\\headless.js:23:10)\n    at Context.<anonymous> (tests\\careportal.test.js:58:14)\n    at process.processImmediate (node:internal/timers:504:21)",
+      "title": "careportal \"before all\" hook for \"open careportal, and enter a treatment\""
+    },
+    {
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)",
+      "title": "verifyauth should return defaults when called without secret"
+    },
+    {
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)",
+      "title": "verifyauth should fail when calling with wrong secret"
+    },
+    {
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)",
+      "title": "verifyauth should fail unauthorized and delay subsequent attempts"
+    },
+    {
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)",
+      "title": "verifyauth should work fine authorized"
+    }
+  ]
+}

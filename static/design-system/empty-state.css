@@ -1,0 +1,43 @@
+.app-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--app-space-1);
+  padding: var(--app-space-6) var(--app-space-3);
+  text-align: center;
+}
+
+/* アイコンは muted 色（設計書 §4.2.4）。意味は必ずテキストで併記する */
+.app-empty-state-icon {
+  display: inline-flex;
+  color: var(--app-text-muted);
+}
+
+.app-empty-state-title {
+  margin: 0;
+  color: var(--app-text);
+  font-size: var(--app-text-heading-sm-size);
+  font-weight: var(--app-text-heading-sm-weight);
+  line-height: var(--app-text-heading-sm-leading);
+  letter-spacing: var(--app-text-heading-sm-tracking);
+}
+
+.app-empty-state-description {
+  max-width: 36rem;
+  margin: 0;
+  color: var(--app-text-muted);
+  font-size: var(--app-text-body-size);
+  font-weight: var(--app-text-body-weight);
+  line-height: var(--app-text-body-leading);
+  letter-spacing: var(--app-text-body-tracking);
+}
+
+.app-empty-state-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--app-space-1);
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--app-space-1);
+}

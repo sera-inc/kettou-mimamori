@@ -1,0 +1,64 @@
+{
+  "generatedAt": "2026-10-13T02:07:59.353Z",
+  "scope": "Actual desktop/mobile native keyboard menus, clinical warning callback, exact intercepted socket ack duration, prediction checkbox and redraw focus/storage; mute=true; no API writes",
+  "results": [
+    {
+      "viewport": "desktop",
+      "pass": true,
+      "reading": 300,
+      "alarmOptions": 3,
+      "selectedDuration": 4500000,
+      "ackPayload": [
+        1,
+        "BG High",
+        4500000
+      ],
+      "ackNetworkIntercepted": true,
+      "forecastType": "ar2",
+      "forecastPreference": "",
+      "alarmAudit": {
+        "violations": [],
+        "incomplete": [
+          "aria-valid-attr-value",
+          "color-contrast"
+        ]
+      },
+      "forecastAudit": {
+        "violations": [],
+        "incomplete": [
+          "aria-valid-attr-value",
+          "color-contrast"
+        ]
+      }
+    },
+    {
+      "viewport": "mobile",
+      "pass": true,
+      "reading": 300,
+      "alarmOptions": 3,
+      "selectedDuration": 4500000,
+      "ackPayload": [
+        1,
+        "BG High",
+        4500000
+      ],
+      "ackNetworkIntercepted": true,
+      "forecastType": "ar2",
+      "forecastPreference": "",
+      "alarmAudit": {
+        "violations": [],
+        "incomplete": [
+          "aria-valid-attr-value",
+          "color-contrast"
+        ]
+      },
+      "forecastAudit": {
+        "violations": [],
+        "incomplete": [
+          "aria-valid-attr-value",
+          "color-contrast"
+        ]
+      }
+    }
+  ]
+}

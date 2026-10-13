@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-13T15:43:22.973Z",
+  "restartAuthorizedByUser": true,
+  "dataDiskReset": false,
+  "hostNodeModulesRetained": [
+    "sera-glucose",
+    "sera-inc-public-site"
+  ],
+  "engine": "29.8.2",
+  "existingServices": [
+    {
+      "name": "shinryo-desk-dev-openemr-1",
+      "status": "running",
+      "health": "healthy"
+    },
+    {
+      "name": "shinryo-desk-dev-mysql-1",
+      "status": "running",
+      "health": "healthy"
+    }
+  ]
+}

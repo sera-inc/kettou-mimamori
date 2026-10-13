@@ -1,0 +1,146 @@
+[
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": ".css('margin-top', '10px')",
+    "after": ".css('margin-top', '0.625rem')",
+    "count": 1,
+    "beforeSHA256": "133688ed8173c2ea0ee85d9975a3e8598e634f8a227fb96cb9d59a2c2a98ef73",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": "    , buttons: [",
+    "after": "    , modal: true\r\n    , buttons: [",
+    "count": 1,
+    "beforeSHA256": "7e411f3bbce3f98ddd87124b28471db8b2deb0d4a84d49616713d3aa252d1a08",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": ".css('box-shadow', '20px 20px 20px 0px black')",
+    "after": ".css('box-shadow', 'var(--app-shadow-overlay)')",
+    "count": 1,
+    "beforeSHA256": "bd02905b2d107eae5bd5c1139aa1788df2b939557b9d1ea366e519ec077858eb",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": "style=\"width:300px\"",
+    "after": "style=\"width:18.75rem\"",
+    "count": 2,
+    "beforeSHA256": "edb2e033d06df46252d31c2b8110c5008b8cb765940f7e0865caf7605ce4f63c",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": ".css('background-color', '#0f0f0f')",
+    "after": ".css('background-color', 'var(--app-surface)')",
+    "count": 1,
+    "beforeSHA256": "fabec7408d5a9b148cc495a4f5bfb6244d0d39def3a5bdf9e7a5a0443c2f413c",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": ".css('background', '#040404')",
+    "after": ".css('background', 'var(--app-surface-sunken)')",
+    "count": 1,
+    "beforeSHA256": "c9f86104cd34d33527eef0a838948eacddd1df324566c0eae653d7e7a5a39685",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": ".css('width', '100px')",
+    "after": ".css('width', '6.25rem')",
+    "count": 1,
+    "beforeSHA256": "9a8fb11ae19c7f1d050dd3dec785c419cc4f83bf452a9ff0bf5498d500102eb7",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": ".css('width', '150px')",
+    "after": ".css('width', '9.375rem')",
+    "count": 2,
+    "beforeSHA256": "8915518ef276dc84e084e38e2960a9182ab942215859b280f0cb4f5a902967b5",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": "title=\"Delete this role\" class=\"titletranslate\"",
+    "after": "title=\"' + client.translate('Delete this role') + '\" class=\"titletranslate\"",
+    "count": 1,
+    "beforeSHA256": "055b9a6f1f81bbce1fab513e4d12123f3980b34d4c06aac0857fca1fdf8a9ce1",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": ".css('margin-top', '10px')",
+    "after": ".css('margin-top', '0.625rem')",
+    "count": 1,
+    "beforeSHA256": "c7d0c78ba695e591cc4a8987e02b4bfa1851bbc0081a2b892e88823edd400de3",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": "    , buttons: [",
+    "after": "    , modal: true\r\n    , buttons: [",
+    "count": 1,
+    "beforeSHA256": "d044a8a59dcc752e0f8a0f49fa601dd373f3ae449f54c0f33cd25952e977a41b",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": ".css('box-shadow', '20px 20px 20px 0px black')",
+    "after": ".css('box-shadow', 'var(--app-shadow-overlay)')",
+    "count": 1,
+    "beforeSHA256": "4b58edea1ba32fcce223d2fb45020d5c995035b7ccb14544129c66a252f687af",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": "style=\"width:300px\"",
+    "after": "style=\"width:18.75rem\"",
+    "count": 1,
+    "beforeSHA256": "4539d584cab05d76b660a785f1e11464ba06d31909678ac74df03c3a9ec0be29",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": ".css('background-color', '#0f0f0f')",
+    "after": ".css('background-color', 'var(--app-surface)')",
+    "count": 1,
+    "beforeSHA256": "c3e8c1c5cb471311b24416134f7456b3f5d79ef97fc4f73ae63452d0385e0fe7",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": ".css('background', '#040404')",
+    "after": ".css('background', 'var(--app-surface-sunken)')",
+    "count": 1,
+    "beforeSHA256": "0e09a1e2aba32723d97d6c7302ba2bd380ae34d9f22f8104e5a5053372e03ec4",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": ".css('width', '100px')",
+    "after": ".css('width', '6.25rem')",
+    "count": 1,
+    "beforeSHA256": "34d5ea6899b347960597e33dfe4c458d098e26915dfa9982372e07b04195219c",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": ".css('width', '150px')",
+    "after": ".css('width', '9.375rem')",
+    "count": 3,
+    "beforeSHA256": "af9bcab558f10b608d30425245b6309d627d927483fac86ada304ed43d54a4c2",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": "subject.roles ? subject.roles.join(', ') : '[none]'",
+    "after": "subject.roles ? subject.roles.join(', ') : client.translate('[none]')",
+    "count": 1,
+    "beforeSHA256": "b79cbad196e872eea57577d7ee8c0107550d6b1c7df8b30609ce41a0482800b9",
+    "reason": "Reviewed admin appearance, modal semantics and dynamic label only; role permissions, subject credentials and all save/validation/request handlers unchanged"
+  }
+]

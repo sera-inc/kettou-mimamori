@@ -7,10 +7,10 @@ describe('settings', function ( ) {
   var settings = require('../lib/settings')();
 
   it('have defaults ready', function () {
-    settings.timeFormat.should.equal(12);
+    settings.timeFormat.should.equal(24);
     settings.nightMode.should.equal(false);
     settings.showRawbg.should.equal('never');
-    settings.customTitle.should.equal('Nightscout');
+    settings.customTitle.should.equal('血糖みまもり');
     settings.theme.should.equal('default');
     settings.alarmUrgentHigh.should.equal(true);
     settings.alarmUrgentHighMins.should.eql([30, 60, 90, 120]);
@@ -26,7 +26,7 @@ describe('settings', function ( ) {
     settings.alarmTimeagoWarnMins.should.equal(15);
     settings.alarmTimeagoUrgent.should.equal(true);
     settings.alarmTimeagoUrgentMins.should.equal(30);
-    settings.language.should.equal('en');
+    settings.language.should.equal('ja');
     settings.showPlugins.should.equal('dbsize');
     settings.insecureUseHttp.should.equal(false);
     settings.secureHstsHeader.should.equal(true);

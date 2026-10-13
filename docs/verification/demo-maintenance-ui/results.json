@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-10-13T05:40:54.044Z",
+  "scope": "Real isolated DB maintenance UI; owned past-date/future records only, invalid/cancel/confirm paths, exact Tokyo day boundaries and full pre-existing collection digests",
+  "results": [
+    {
+      "viewport": "desktop",
+      "pass": true,
+      "invalidRangeRejected": true,
+      "cancelPreservedData": true,
+      "allThreeCollectionsPreviewed": true,
+      "profileTimezone": "Asia/Tokyo",
+      "exactInclusiveDayFilters": true,
+      "dateRangeDeleted": 3,
+      "futureTreatmentDeleted": 1,
+      "allPreExistingRecordsUnchanged": true,
+      "axeViolations": 0,
+      "dialogs": [
+        {
+          "type": "alert",
+          "accepted": false
+        },
+        {
+          "type": "confirm",
+          "accepted": false
+        },
+        {
+          "type": "confirm",
+          "accepted": true
+        },
+        {
+          "type": "confirm",
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "pass": true,
+      "invalidRangeRejected": true,
+      "cancelPreservedData": true,
+      "allThreeCollectionsPreviewed": true,
+      "profileTimezone": "Asia/Tokyo",
+      "exactInclusiveDayFilters": true,
+      "dateRangeDeleted": 3,
+      "futureTreatmentDeleted": 1,
+      "allPreExistingRecordsUnchanged": true,
+      "axeViolations": 0,
+      "dialogs": [
+        {
+          "type": "alert",
+          "accepted": false
+        },
+        {
+          "type": "confirm",
+          "accepted": false
+        },
+        {
+          "type": "confirm",
+          "accepted": true
+        },
+        {
+          "type": "confirm",
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "pageErrors": []
+}

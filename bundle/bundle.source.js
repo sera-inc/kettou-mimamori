@@ -18,6 +18,7 @@ require('../node_modules/flot/jquery.flot.pie');
 require('../node_modules/flot/jquery.flot.fillbetween');
 
 const moment = require('moment-timezone');
+require('moment/locale/ja');
 
 window.moment = moment;
 

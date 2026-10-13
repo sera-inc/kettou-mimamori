@@ -1,0 +1,2062 @@
+{
+  "generatedAt": "2026-10-13T02:36:18.401Z",
+  "scope": "Actual synthetic glucose/treatment rendering and original food picker calculation, two portions=90 g; no API writes; exact geometry and clinical-value comparison when requested",
+  "results": [
+    {
+      "viewport": "desktop",
+      "pass": true,
+      "chart": {
+        "layout": {
+          "chartContainer": {
+            "x": 264,
+            "y": 502.9375,
+            "width": 1152,
+            "height": 489.0625
+          },
+          "container": {
+            "x": 264,
+            "y": 80,
+            "width": 1152,
+            "height": 417.9375
+          },
+          "app-main": {
+            "x": 240,
+            "y": 56,
+            "width": 1200,
+            "height": 465.9375
+          }
+        },
+        "geometry": [
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,7.303267045454548L1152,7.303267045454548L1152,7.303267045454548"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,7.303267045454548L1152,7.303267045454548L1152,7.303267045454548"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,7.303267045454548L1152,7.303267045454548L1152,7.303267045454548L1152,80.3359375L1152,80.3359375L0,80.3359375Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,80.3359375L1152,80.3359375L1152,7.303267045454548L1152,80.3359375L1152,80.3359375L0,80.3359375Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,80.3359375L1152,80.3359375L1152,7.303267045454548L1152,80.3359375L1152,80.3359375L0,80.3359375Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,321.34375)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0.5,6V0.5H1152.5V6"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0.5,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "8 AM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(141.5228509249184,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "8:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(282.5457018498368,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "9 AM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(423.5685527747552,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "9:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(564.5914036996736,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10 AM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(705.6142546245919,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(846.6371055495104,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "11 AM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(987.6599564744287,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "11:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(1128.6828073993472,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "12 PM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(1152, 0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M-6,321.84375H0.5V0.5H-6"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,289.21477902491745)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "40"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,253.09567900239145)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "55"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,210.59785638111373)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "80"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,164.60990471239262)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "120"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,118.62195304367147)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "180"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,76.9145185995641)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "260"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,28.055014960879472)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "400"
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "587.59521218716",
+              "cy": "159.47986411585993",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "611.0990206746463",
+              "cy": "158.57611236660523",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "634.6028291621328",
+              "cy": "157.67950497465992",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "658.1066376496192",
+              "cy": "156.78992986993688",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "681.6104461371056",
+              "cy": "155.9072775988247",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "705.1142546245919",
+              "cy": "155.03144124336782",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "728.6180631120784",
+              "cy": "154.16231634354344",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "752.1218715995648",
+              "cy": "153.29980082249355",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "775.6256800870511",
+              "cy": "152.44379491457877",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "799.1294885745375",
+              "cy": "151.59420109612657",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "822.633297062024",
+              "cy": "150.7509240187541",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "846.1371055495104",
+              "cy": "149.91387044515162",
+              "r": "4"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "869.7976060935799",
+              "cy": "154.16231634354344",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "869.9542981501633",
+              "cy": "145.01727215970485",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "893.3014145810663",
+              "cy": "157.67950497465992",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "893.4581066376496",
+              "cy": "139.5595752508062",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "916.8052230685528",
+              "cy": "162.23514724485932",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "916.9619151251361",
+              "cy": "134.35248570727356",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "940.3090315560391",
+              "cy": "166.98145668235614",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "940.4657236126225",
+              "cy": "130.07196848265988",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "963.8128400435255",
+              "cy": "170.92690647147055",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "963.9695321001088",
+              "cy": "125.27402223824873",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "987.3166485310119",
+              "cy": "173.97875635858776",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "987.4733405875952",
+              "cy": "121.31710079498995",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1010.8204570184985",
+              "cy": "177.11499980090738",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1010.9771490750817",
+              "cy": "117.49358443129304",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1034.3242655059848",
+              "cy": "180.34043737599467",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1034.480957562568",
+              "cy": "114.40292332433152",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1057.8280739934712",
+              "cy": "183.66029129097936",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1057.9847660500543",
+              "cy": "111.39425236394815",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1081.3318824809576",
+              "cy": "185.9287717975762",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1081.4885745375407",
+              "cy": "108.46333360674694",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1104.835690968444",
+              "cy": "188.24355100649075",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1104.9923830250273",
+              "cy": "106.17193760468317",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1128.3394994559303",
+              "cy": "190.60655823544877",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1128.4961915125136",
+              "cy": "103.92591877643058",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1151.8433079434167",
+              "cy": "193.01984596813526",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1152",
+              "cy": "101.72351473219095",
+              "r": "3"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(705.1142546245919, 155.03144124336782)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M16.770509831135286,0.0000616015222988925A16.770509831248425,16.770509831248425,0,1,0,-16.770509831135286,0.00006160152230056251L0,0Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(5.134487796226901e-16,-8.385254915624213)"
+            },
+            "text": ""
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(705.1142546245919, 155.03144124336782)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M36.77050983100036,0.00013506562436704862A36.770509831248425,36.770509831248425,0,1,0,-36.77050983100036,0.00013506562437071024L-16.770509831135286,0.00006160152230056251A16.770509831248425,16.770509831248425,0,1,1,16.770509831135286,0.0000616015222988925Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(1.6392209588190568e-15,-26.770509831248425)"
+            },
+            "text": "45 g"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(705.1142546245919, 155.03144124336782)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M-16.770509830230186,-0.0001848045668875753A16.770509831248425,16.770509831248425,0,1,0,16.770509831135286,0.0000616015222988925L0,0Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(-0.00006160152229796347,8.385254915397939)"
+            },
+            "text": ""
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(705.1142546245919, 155.03144124336782)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M-0.059102921529383665,36.77046233180382A36.770509831248425,36.770509831248425,0,0,0,0.058562659723443135,36.770463196223446L0.026709601393707802,16.770488561672657A16.770509831248425,16.770509831248425,0,0,1,-0.026956007167507377,16.770488167423085Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(-0.00019666714667486364,26.770509830526027)"
+            },
+            "text": "2.5 U"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(705.1142546245919, 155.03144124336782)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M-0.12741511454837076,79.27040743111289A79.27050983124842,79.27050983124842,0,0,0,0.12625040867413073,79.27040929464387L0.026709601393707802,16.770488561672657A16.770509831248425,16.770509831248425,0,0,1,-0.026956007167507377,16.770488167423085Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(-0.0003527783635767779,48.020509829952594)"
+            },
+            "text": ""
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,321.34375)"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,137.71875)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0.5,6V0.5H1152.5V6"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(209.95454545454547,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10:15"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(524.1363636363636,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(838.3181818181819,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10:45"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(1152.5,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "11 AM"
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "0",
+              "cy": "67.93852145440931",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "104.72727272727273",
+              "cy": "67.4918448618296",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "209.45454545454547",
+              "cy": "67.04869934643092",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "314.18181818181813",
+              "cy": "66.60902951790875",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "418.90909090909093",
+              "cy": "66.17278127914375",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "523.6363636363636",
+              "cy": "65.73990178625697",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "628.3636363636363",
+              "cy": "65.31033941019528",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "733.0909090909091",
+              "cy": "64.88404369977769",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "837.8181818181819",
+              "cy": "64.46096534613599",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "942.5454545454546",
+              "cy": "64.04105614848743",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1047.2727272727273",
+              "cy": "63.62426898117963",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "1152",
+              "cy": "63.210557761951826",
+              "r": "2"
+            },
+            "text": null
+          }
+        ],
+        "fonts": [
+          {
+            "className": "x axis",
+            "declaredStyle": "16px",
+            "declaredAttribute": "10",
+            "computed": "16px"
+          },
+          {
+            "className": "y axis",
+            "declaredStyle": "16px",
+            "declaredAttribute": "10",
+            "computed": "16px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "21px",
+            "declaredAttribute": null,
+            "computed": "21px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "21px",
+            "declaredAttribute": null,
+            "computed": "21px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "21px",
+            "declaredAttribute": null,
+            "computed": "21px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "21px",
+            "declaredAttribute": null,
+            "computed": "21px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "21px",
+            "declaredAttribute": null,
+            "computed": "21px"
+          },
+          {
+            "className": "x axis",
+            "declaredStyle": "16px",
+            "declaredAttribute": "10",
+            "computed": "16px"
+          },
+          {
+            "className": "y axis",
+            "declaredStyle": "16px",
+            "declaredAttribute": null,
+            "computed": "16px"
+          }
+        ]
+      },
+      "calculator": {
+        "carbs": "90",
+        "table": [
+          [
+            "",
+            "確認用のご飯",
+            "300.0 g",
+            "(90.0 g)"
+          ]
+        ],
+        "values": {
+          "bc_inzulinbg": "0.00",
+          "bc_inzulincarbs": "7.50",
+          "bc_iob": "-2.38",
+          "bc_cobu": "",
+          "bc_insulintotal": "5.10",
+          "bc_carbsneeded": "",
+          "bc_insulinover": ""
+        }
+      },
+      "tableFont": {
+        "declared": "12px",
+        "computed": "12px"
+      },
+      "apiWrites": []
+    },
+    {
+      "viewport": "mobile",
+      "pass": true,
+      "chart": {
+        "layout": {
+          "chartContainer": {
+            "x": 16,
+            "y": 884.5,
+            "width": 358,
+            "height": 384
+          },
+          "container": {
+            "x": 16,
+            "y": 72,
+            "width": 358,
+            "height": 1196.5
+          },
+          "app-main": {
+            "x": 0,
+            "y": 56,
+            "width": 390,
+            "height": 1228.5
+          }
+        },
+        "geometry": [
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,5.631818181818184L358,5.631818181818184L358,5.631818181818184"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,5.631818181818184L358,5.631818181818184L358,5.631818181818184"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,5.631818181818184L358,5.631818181818184L358,5.631818181818184L358,61.949999999999996L358,61.949999999999996L0,61.949999999999996Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,61.949999999999996L358,61.949999999999996L358,5.631818181818184L358,61.949999999999996L358,61.949999999999996L0,61.949999999999996Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0,61.949999999999996L358,61.949999999999996L358,5.631818181818184L358,61.949999999999996L358,61.949999999999996L0,61.949999999999996Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,247.79999999999998)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0.5,6V0.5H358.5V6"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0.5,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "8 AM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(44.32480957562568,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "8:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(88.14961915125136,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "9 AM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(131.97442872687705,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "9:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(175.79923830250272,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10 AM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(219.62404787812838,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(263.4488574537541,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "11 AM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(307.27366702937974,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "11:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(351.09847660500543,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "12 PM"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(358,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M-6,248.29999999999998H0.5V0.5H-6"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,223.13859882874502)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "40"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,195.28583061532268)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "55"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,162.51419449184863)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "80"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,127.05119132620717)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "120"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,91.58818816056571)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "180"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,59.426049468744864)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "260"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,21.74868682619759)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "x": "-9"
+            },
+            "text": "400"
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "182.60337323177367",
+              "cy": "122.98079650813214",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "189.9075081610446",
+              "cy": "122.28388025111667",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "197.2116430903156",
+              "cy": "121.59247327113324",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "204.51577801958652",
+              "cy": "120.90648914681042",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "211.81991294885745",
+              "cy": "120.22584347443744",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "219.12404787812838",
+              "cy": "119.5504538056413",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "226.42818280739937",
+              "cy": "118.88023958745133",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "233.7323177366703",
+              "cy": "118.21512210464309",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "241.03645266594123",
+              "cy": "117.55502442425787",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "248.34058759521218",
+              "cy": "116.89987134220024",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "255.64472252448314",
+              "cy": "116.2495893318207",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "262.9488574537541",
+              "cy": "115.604106494396",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "270.3016866158868",
+              "cy": "118.88023958745133",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "270.3503808487486",
+              "cy": "111.828159225673",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "277.60582154515777",
+              "cy": "121.59247327113324",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "277.6545157780196",
+              "cy": "107.61952814439296",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "284.9099564744287",
+              "cy": "125.10549679984793",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "284.95865070729053",
+              "cy": "103.60414963185805",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "292.2140914036997",
+              "cy": "128.765550803113",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "292.2627856365615",
+              "cy": "100.30328515803751",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "299.51822633297064",
+              "cy": "131.80803243763228",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "299.56692056583245",
+              "cy": "96.60341211129214",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "306.82236126224154",
+              "cy": "134.1614262784263",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "306.87105549510335",
+              "cy": "93.55208426178667",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "314.12649619151256",
+              "cy": "136.57989909766363",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "314.17519042437436",
+              "cy": "90.60362998214346",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "321.43063112078346",
+              "cy": "139.0671527974995",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "321.47932535364527",
+              "cy": "88.22030738039669",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "328.7347660500544",
+              "cy": "141.62721441417386",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "328.7834602829162",
+              "cy": "85.90021040019093",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "336.0389009793253",
+              "cy": "143.37652327589808",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "336.0875952121871",
+              "cy": "83.64007100729948",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "343.3430359085963",
+              "cy": "145.16153477205765",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "343.39173014145814",
+              "cy": "81.87309116309399",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "350.64717083786724",
+              "cy": "146.98373667060338",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "350.69586507072904",
+              "cy": "80.14110332875462",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "357.9513057671382",
+              "cy": "148.8447117172931",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "358",
+              "cy": "78.44274846060306",
+              "r": "1"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(219.12404787812838, 119.5504538056413)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M8.385254915567643,0.00003080076114944625A8.385254915624213,8.385254915624213,0,1,0,-8.385254915567643,0.000030800761150281255L0,0Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(2.5672438981134506e-16,-4.192627457812106)"
+            },
+            "text": ""
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(219.12404787812838, 119.5504538056413)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M18.38525491550018,0.00006753281218352431A18.385254915624213,18.385254915624213,0,1,0,-18.38525491550018,0.00006753281218535512L-8.385254915567643,0.000030800761150281255A8.385254915624213,8.385254915624213,0,1,1,8.385254915567643,0.00003080076114944625Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(8.196104794095284e-16,-13.385254915624213)"
+            },
+            "text": "45 g"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(219.12404787812838, 119.5504538056413)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M-8.385254915115093,-0.00009240228344378765A8.385254915624213,8.385254915624213,0,1,0,8.385254915567643,0.00003080076114944625L0,0Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(-0.00003080076114898174,4.192627457698969)"
+            },
+            "text": ""
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(219.12404787812838, 119.5504538056413)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M-0.029551460764691832,18.38523116590191A18.385254915624213,18.385254915624213,0,0,0,0.029281329861721567,18.385231598111723L0.013354800696853901,8.385244280836329A8.385254915624213,8.385254915624213,0,0,1,-0.013478003583753688,8.385244083711543Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(-0.00009833357333743182,13.385254915263014)"
+            },
+            "text": "2.5 U"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(219.12404787812838, 119.5504538056413)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M-0.06370755727418538,39.63520371555644A39.63525491562421,39.63525491562421,0,0,0,0.06312520433706537,39.635204647321935L0.013354800696853901,8.385244280836329A8.385254915624213,8.385254915624213,0,0,1,-0.013478003583753688,8.385244083711543Z"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "transform": "translate(-0.00017638918178838894,24.010254914976297)"
+            },
+            "text": ""
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,247.79999999999998)"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(0,106.2)"
+            },
+            "text": null
+          },
+          {
+            "tag": "path",
+            "attributes": {
+              "d": "M0.5,6V0.5H358.5V6"
+            },
+            "text": null
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(65.5909090909091,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10:15"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(163.22727272727272,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10:30"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(260.8636363636364,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "10:45"
+          },
+          {
+            "tag": "g",
+            "attributes": {
+              "transform": "translate(358.5,0)"
+            },
+            "text": null
+          },
+          {
+            "tag": "text",
+            "attributes": {
+              "y": "9"
+            },
+            "text": "11 AM"
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "0",
+              "cy": "52.389895918008754",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "32.54545454545455",
+              "cy": "52.04544714736594",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "65.0909090909091",
+              "cy": "51.70372132037914",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "97.63636363636363",
+              "cy": "51.364675723544615",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "130.1818181818182",
+              "cy": "51.02826864058137",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "162.72727272727272",
+              "cy": "50.69445932162825",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "195.27272727272725",
+              "cy": "50.363207953620986",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "227.8181818181818",
+              "cy": "50.0344756317959",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "260.3636363636364",
+              "cy": "49.70822433226879",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "292.90909090909093",
+              "cy": "49.38441688564096",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "325.45454545454544",
+              "cy": "49.06301695158631",
+              "r": "2"
+            },
+            "text": null
+          },
+          {
+            "tag": "circle",
+            "attributes": {
+              "cx": "358",
+              "cy": "48.743988994376465",
+              "r": "2"
+            },
+            "text": null
+          }
+        ],
+        "fonts": [
+          {
+            "className": "x axis",
+            "declaredStyle": "16px",
+            "declaredAttribute": "10",
+            "computed": "14px"
+          },
+          {
+            "className": "y axis",
+            "declaredStyle": "16px",
+            "declaredAttribute": "10",
+            "computed": "16px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "10.5px",
+            "declaredAttribute": null,
+            "computed": "10.5px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "10.5px",
+            "declaredAttribute": null,
+            "computed": "10.5px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "10.5px",
+            "declaredAttribute": null,
+            "computed": "10.5px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "10.5px",
+            "declaredAttribute": null,
+            "computed": "10.5px"
+          },
+          {
+            "className": null,
+            "declaredStyle": "10.5px",
+            "declaredAttribute": null,
+            "computed": "10.5px"
+          },
+          {
+            "className": "x axis",
+            "declaredStyle": "16px",
+            "declaredAttribute": "10",
+            "computed": "14px"
+          },
+          {
+            "className": "y axis",
+            "declaredStyle": "16px",
+            "declaredAttribute": null,
+            "computed": "16px"
+          }
+        ]
+      },
+      "calculator": {
+        "carbs": "90",
+        "table": [
+          [
+            "",
+            "確認用のご飯",
+            "300.0 g",
+            "(90.0 g)"
+          ]
+        ],
+        "values": {
+          "bc_inzulinbg": "0.00",
+          "bc_inzulincarbs": "7.50",
+          "bc_iob": "-2.38",
+          "bc_cobu": "",
+          "bc_insulintotal": "5.10",
+          "bc_carbsneeded": "",
+          "bc_insulinover": ""
+        }
+      },
+      "tableFont": {
+        "declared": "12px",
+        "computed": "12px"
+      },
+      "apiWrites": []
+    }
+  ]
+}

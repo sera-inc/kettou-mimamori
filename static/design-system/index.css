@@ -1,0 +1,26 @@
+/* Layer 1/2 are copied byte-for-byte from digital-design-system. */
+@import './tokens/index.css';
+@import './product-geometry.css';
+@import './template-geometry.css';
+@import './chart-semantic.css';
+@import './button.css';
+@import './input.css';
+@import './select.css';
+@import './choice.css';
+@import './textarea.css';
+@import './app-shell.css';
+@import './data-grid.css';
+@import './empty-state.css';
+@import './state-layout.css';
+@import './clock.css';
+@import './toast.css';
+@import './toast-theme.css';
+@import './drawer.css';
+@import './skeleton.css';
+@import './loading-layout.css';
+@import './accessibility.css';
+@import './vendor/popover/Popover.css';
+@import './menus.css';
+@import './service.css';
+@import './icons.css';
+@import './brand.css';

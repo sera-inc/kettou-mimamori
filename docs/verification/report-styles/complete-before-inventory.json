@@ -1,0 +1,1318 @@
+{
+  "generatedAt": "2026-10-12T17:25:51.726Z",
+  "scope": "Owned report and report-plugin JavaScript literals using all 148 CSS named colors, embedded literals/templates, and font attr/style calls; an inventory, not proof of migration or accessibility. Third-party Flot source untouched.",
+  "count": 171,
+  "appearance": 158,
+  "files": {
+    "lib/report_plugins/calibrations.js": 19,
+    "lib/report_plugins/dailystats.js": 3,
+    "lib/report_plugins/daytoday.js": 77,
+    "lib/report_plugins/glucosedistribution.js": 6,
+    "lib/report_plugins/hourlystats.js": 8,
+    "lib/report_plugins/loopalyzer.js": 16,
+    "lib/report_plugins/percentile.js": 11,
+    "lib/report_plugins/success.js": 1,
+    "lib/report_plugins/treatments.js": 5,
+    "lib/report_plugins/weektoweek.js": 18,
+    "lib/report/reportclient.js": 7
+  },
+  "records": [
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "Aqua",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "Blue",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "Brown",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "Chartreuse",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "Coral",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "CornflowerBlue",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "DarkCyan",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "DarkMagenta",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "DarkOrange",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "Fuchsia",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "Green",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 63,
+      "type": "color-literal",
+      "value": "Yellow",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 70,
+      "type": "color-literal",
+      "value": "White",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 145,
+      "type": "color-literal",
+      "value": "WhiteSmoke",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 188,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 196,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 209,
+      "type": "color-literal",
+      "value": "grey",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 219,
+      "type": "color-literal",
+      "value": "grey",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "line": 261,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/dailystats.js",
+      "line": 155,
+      "type": "color-literal",
+      "value": "#f88",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/dailystats.js",
+      "line": 155,
+      "type": "color-literal",
+      "value": "#8f8",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/dailystats.js",
+      "line": 155,
+      "type": "color-literal",
+      "value": "#ff8",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 165,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 180,
+      "type": "color-literal",
+      "value": "WhiteSmoke",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 237,
+      "type": "color-literal",
+      "value": "#D6FFD6",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 238,
+      "type": "color-literal",
+      "value": "grey",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 250,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 258,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 270,
+      "type": "color-literal",
+      "value": "grey",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 287,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 288,
+      "type": "color-literal",
+      "value": "transparent",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 294,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 392,
+      "type": "color-literal",
+      "value": "purple",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 592,
+      "type": "color-literal",
+      "value": "blue",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 599,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 636,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 644,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 654,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 662,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 678,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 678,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 682,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 719,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "normal",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 719,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "10px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 722,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 731,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "normal",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 731,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "10px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 734,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 749,
+      "type": "color-literal",
+      "value": "grey",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 764,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 766,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 768,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 768,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 771,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 783,
+      "type": "color-literal",
+      "value": "blue",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 785,
+      "type": "color-literal",
+      "value": "blue",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 787,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 787,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 790,
+      "type": "color-literal",
+      "value": "blue",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 819,
+      "type": "color-literal",
+      "value": "white",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 820,
+      "type": "color-literal",
+      "value": "Violet",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 821,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 821,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 824,
+      "type": "color-literal",
+      "value": "Violet",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 838,
+      "type": "color-literal",
+      "value": "white",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 839,
+      "type": "color-literal",
+      "value": "Salmon",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 840,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 840,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 843,
+      "type": "color-literal",
+      "value": "Salmon",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 857,
+      "type": "color-literal",
+      "value": "white",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 858,
+      "type": "color-literal",
+      "value": "Brown",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 859,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 859,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 862,
+      "type": "color-literal",
+      "value": "Brown",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 877,
+      "type": "color-literal",
+      "value": "white",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 878,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 879,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 879,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 882,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 892,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 895,
+      "type": "color-literal",
+      "value": "darkred",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 902,
+      "type": "color-literal",
+      "value": "purple",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 905,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 907,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 907,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 910,
+      "type": "color-literal",
+      "value": "purple",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 923,
+      "type": "color-literal",
+      "value": "white",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 924,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 925,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 925,
+      "type": "font-call",
+      "property": "font-size",
+      "value": "12px",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 928,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 940,
+      "type": "color-literal",
+      "value": "blue",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 941,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 1018,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 1031,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 1067,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 1105,
+      "type": "font-call",
+      "property": "font-weight",
+      "value": "bold",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 1105,
+      "type": "font-call",
+      "property": "font-size",
+      "value": 12,
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 1108,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/glucosedistribution.js",
+      "line": 103,
+      "type": "color-literal",
+      "value": "#f88",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/glucosedistribution.js",
+      "line": 103,
+      "type": "color-literal",
+      "value": "#8f8",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/glucosedistribution.js",
+      "line": 103,
+      "type": "color-literal",
+      "value": "#ff8",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/glucosedistribution.js",
+      "line": 105,
+      "type": "color-literal",
+      "value": "#f88",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/glucosedistribution.js",
+      "line": 106,
+      "type": "color-literal",
+      "value": "#8f8",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/glucosedistribution.js",
+      "line": 107,
+      "type": "color-literal",
+      "value": "#ff8",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "line": 191,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "line": 191,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "line": 191,
+      "type": "color-literal",
+      "value": "lightgreen",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "line": 195,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "font-weight",
+          "value": "bold"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "line": 205,
+      "type": "color-literal",
+      "value": "white",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "line": 205,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "line": 205,
+      "type": "color-literal",
+      "value": "lightgreen",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "line": 209,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "color",
+          "value": "black"
+        },
+        {
+          "property": "font-weight",
+          "value": "bold"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 86,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "border-collapse",
+          "value": "collapse"
+        },
+        {
+          "property": "border",
+          "value": "0px"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 88,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "border-collapse",
+          "value": "collapse"
+        },
+        {
+          "property": "border",
+          "value": "0px"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 89,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "font-weight",
+          "value": "bold"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 90,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "background-color",
+          "value": "#4CAF50"
+        },
+        {
+          "property": "color",
+          "value": "white"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 922,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 929,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1070,
+      "type": "color-literal",
+      "value": "#DDDDDD",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1071,
+      "type": "color-literal",
+      "value": "#33A0FF",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1072,
+      "type": "color-literal",
+      "value": "#33AA33",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1073,
+      "type": "color-literal",
+      "value": "#8E1578",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1074,
+      "type": "color-literal",
+      "value": "#D6FFD6",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1075,
+      "type": "color-literal",
+      "value": "#FF7000",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1076,
+      "type": "color-literal",
+      "value": "#23D820",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1077,
+      "type": "color-literal",
+      "value": "#F3F3F3",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1094,
+      "type": "color-literal",
+      "value": "#FFFFFF",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 1100,
+      "type": "color-literal",
+      "value": "#000000",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 101,
+      "type": "color-literal",
+      "value": "#000000",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 113,
+      "type": "color-literal",
+      "value": "#000055",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 125,
+      "type": "color-literal",
+      "value": "#000055",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 138,
+      "type": "color-literal",
+      "value": "#a0a0FF",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 150,
+      "type": "color-literal",
+      "value": "#a0a0FF",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 162,
+      "type": "color-literal",
+      "value": "#FFFF00",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 166,
+      "type": "color-literal",
+      "value": "#FF0000",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 172,
+      "type": "color-literal",
+      "value": "#555",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 177,
+      "type": "color-literal",
+      "value": "#555",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 181,
+      "type": "color-literal",
+      "value": "#FF0000",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "line": 188,
+      "type": "color-literal",
+      "value": "#FFFF00",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/success.js",
+      "line": 26,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "border",
+          "value": "1px #ccc solid"
+        },
+        {
+          "property": "background-color",
+          "value": "#fcc"
+        },
+        {
+          "property": "background-color",
+          "value": "#cfc"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/treatments.js",
+      "line": 36,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "color",
+          "value": "lightgreen"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/treatments.js",
+      "line": 38,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "color",
+          "value": "red"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/treatments.js",
+      "line": 40,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "color",
+          "value": "blue"
+        }
+      ],
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/treatments.js",
+      "line": 292,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/treatments.js",
+      "line": 311,
+      "type": "color-literal",
+      "value": "lightgray",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 7,
+      "type": "color-literal",
+      "value": "rgb(73, 22, 153)",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 8,
+      "type": "color-literal",
+      "value": "rgb(34, 201, 228)",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 9,
+      "type": "color-literal",
+      "value": "rgb(0, 153, 123)",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 10,
+      "type": "color-literal",
+      "value": "rgb(135, 135, 228)",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 11,
+      "type": "color-literal",
+      "value": "rgb(135, 49, 204)",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 12,
+      "type": "color-literal",
+      "value": "rgb(36, 36, 228)",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 13,
+      "type": "color-literal",
+      "value": "rgb(0, 234, 188)",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 112,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 172,
+      "type": "color-literal",
+      "value": "#0099ff",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 189,
+      "type": "color-literal",
+      "value": "WhiteSmoke",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 234,
+      "type": "color-literal",
+      "value": "#D6FFD6",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 235,
+      "type": "color-literal",
+      "value": "grey",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 247,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 255,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 267,
+      "type": "color-literal",
+      "value": "grey",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 288,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 289,
+      "type": "color-literal",
+      "value": "transparent",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 295,
+      "type": "color-literal",
+      "value": "black",
+      "classification": "appearance"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 188,
+      "type": "color-literal",
+      "value": "darkgreen",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 191,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 193,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 843,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 852,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 857,
+      "type": "color-literal",
+      "value": "transparent",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 858,
+      "type": "color-literal",
+      "value": "transparent",
+      "classification": "internal-classification-or-invisible-sentinel"
+    }
+  ]
+}

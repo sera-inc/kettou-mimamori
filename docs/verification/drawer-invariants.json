@@ -1,0 +1,20 @@
+{
+  "baseline": "92d0834219aa771b5837dbcbf1baeb839a200cf6",
+  "results": [
+    {
+      "file": "lib/client/careportal.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing only reviewed color/shadow literals and close-button save exclusion"
+    },
+    {
+      "file": "lib/client/boluscalc.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing only reviewed color/shadow literals and close-button save exclusion"
+    },
+    {
+      "file": "lib/client/adminnotifiesclient.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing only reviewed color/shadow literals and close-button save exclusion"
+    }
+  ]
+}

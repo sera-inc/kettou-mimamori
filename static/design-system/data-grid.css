@@ -1,0 +1,50 @@
+/* HTML adapter of DDS DataGrid; preserve existing filtering and drag targets. */
+.app-data-grid {box-sizing: border-box;max-width: 100%;overflow-x: auto;color: var(--app-text);font-family: var(--app-font-sans);margin-block: var(--app-space-2);}
+.app-data-grid:focus-visible {outline: var(--app-focus-ring-width) solid var(--app-focus-ring);outline-offset: var(--app-focus-ring-offset);}
+.app-data-grid__table {width: 100%;border-collapse: collapse;font-size: var(--app-text-table-size);font-weight: var(--app-text-table-weight);line-height: var(--app-text-table-leading);letter-spacing: var(--app-text-table-tracking);}
+.app-data-grid__caption {position: absolute;width: 1px;height: 1px;overflow: hidden;clip-path: inset(50%);white-space: nowrap;}
+html body.app-page .app-data-grid__table :is(th,td) {box-sizing: border-box;min-height: var(--app-row-height);padding: var(--app-space-1) var(--app-space-2);border: 1px solid var(--app-border);text-align: left;vertical-align: middle;}
+html body.app-page .app-data-grid__table th {background: var(--app-surface-sunken);border-bottom: 2px solid var(--app-border-strong);color: var(--app-text);font-weight: var(--app-font-weight-bold);}
+html body.app-page .app-data-grid__table tr {background: var(--app-surface) !important;}
+html body.app-page .app-data-grid__table [data-numeric] {text-align: right;font-family: var(--app-font-mono);font-variant-numeric: tabular-nums;letter-spacing: var(--app-text-numeric-tracking);}
+.app-data-grid__table tbody tr:hover {background: var(--app-surface-hover) !important;}
+html body.app-page .legend table {width: auto;border-collapse: collapse;font-family: var(--app-font-sans);font-size: var(--app-text-body-sm-size);font-weight: var(--app-font-weight-normal);line-height: var(--app-text-body-sm-leading);color: var(--app-text);}
+html body.app-page .legend td {padding: var(--app-space-0) var(--app-space-05);border: 0;}
+html body.app-page .legend .legendColorBox > div {border-color: var(--app-border) !important;}
+html body.app-page fieldset {box-sizing: border-box;min-inline-size: 0;margin: var(--app-space-3) var(--app-space-0);padding: var(--app-space-3);border: 1px solid var(--app-border);border-radius: var(--app-radius-md);background: var(--app-surface);color: var(--app-text);}
+html body.app-page fieldset fieldset {padding: var(--app-space-2);}
+html body.app-page fieldset legend {max-width: 100%;padding: var(--app-space-05) var(--app-space-1);font-size: var(--app-text-heading-sm-size);font-weight: var(--app-font-weight-bold);line-height: var(--app-text-heading-sm-leading);}
+html body.app-page :is(#pe_form,#fe_form,#admin_placeholder) {margin: var(--app-space-0);}
+html body.app-page .browserSettings dl {display: flex;align-items: center;flex-wrap: wrap;gap: var(--app-space-1);margin: var(--app-space-2) var(--app-space-0);}
+html body.app-page .browserSettings dl > :is(dt,dd) {box-sizing: border-box;min-inline-size: 0;max-inline-size: 100%;}
+html body.app-page .app-form-fields {width: 100%;border: 0;}
+.app-form-fields tbody {display: block;}
+.app-form-fields tr {display: grid;grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));gap: var(--app-space-2);}
+html body.app-page .app-form-fields td {display: block;min-width: 0;padding: var(--app-space-1);border: 0;}
+html body.app-page #fe_form .app-form-fields :is(input,select) {width: 100%;}
+html body.app-page #fe_data {width: auto !important;height: auto !important;overflow: visible !important;}
+.app-food-grid [role="table"] {min-width: 85rem;}
+html body.app-page #fe_data_header,.app-food-grid .draggablefood {display: grid;grid-template-columns: 7rem 13rem 8rem 6rem 7rem 7rem 10rem 10rem 7rem 7rem 7rem;align-items: stretch;}
+html body.app-page #fe_data_header {background: var(--app-surface-sunken);border-bottom: 2px solid var(--app-border-strong);font-weight: var(--app-font-weight-bold);}
+html body.app-page #fe_data_header>span,.app-food-grid .draggablefood>span {box-sizing: border-box;display: flex;align-items: center;gap: var(--app-space-05);width: auto;min-height: var(--app-row-height);padding: var(--app-space-1);border-bottom: 1px solid var(--app-border);overflow-wrap: anywhere;}
+html body.app-page .app-food-grid .draggablefood {border: 0;border-radius: 0;background: var(--app-surface);}
+html body.app-page .app-food-grid .draggablefood:hover {background: var(--app-surface-hover);}
+.app-data-grid__icon-button {min-width: var(--app-row-height);min-height: var(--app-row-height);}
+html body.app-page #app-main button.app-data-grid__icon-button {padding: var(--app-space-1);background: var(--app-surface);color: var(--app-primary);}
+.app-data-grid__icon-button img {width: 1rem;height: 1rem;}
+.app-page-title .app-page-status {margin-top: var(--app-space-1);color: var(--app-text-muted);font-size: var(--app-text-body-sm-size);}
+.app-food-grid [data-numeric] {justify-content: flex-end;font-family: var(--app-font-mono);font-variant-numeric: tabular-nums;}
+html body.app-page #tabnav {display: flex;flex-wrap: wrap;gap: var(--app-space-1);margin: var(--app-space-2) var(--app-space-0);padding: var(--app-space-0);list-style: none;}
+html body.app-page #tabnav li {margin: var(--app-space-0);padding: var(--app-space-0);}
+html body.app-page #tabnav a,html body.app-page .presetdates {display: inline-flex;align-items: center;min-height: var(--app-row-height);padding: var(--app-space-1);border: 1px solid var(--app-border);border-radius: var(--app-radius-sm);background: var(--app-surface);color: var(--app-text-link);text-decoration: underline;}
+.app-report-filters {width: 100%;}
+html body.app-page .app-report-filters td {padding: var(--app-space-1);vertical-align: top;}
+.app-report-filters input,.app-report-filters select {margin-block: var(--app-space-05);}
+@media (max-width: 767px) {
+  html body.app-page fieldset {padding: var(--app-space-2);}
+  html body.app-page fieldset fieldset {padding: var(--app-space-1);}
+  .app-form-fields tr {grid-template-columns: minmax(0,1fr);}
+  .app-report-filters {display:block;box-sizing:border-box;max-inline-size:100%;}
+  .app-report-filters :is(tbody,tr) {display: block;}
+  html body.app-page .app-report-filters td {display: inline-block;max-width: 100%;box-sizing: border-box;}
+}

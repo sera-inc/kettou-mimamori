@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-10-13T02:15:34.732Z",
+  "scope": "Actual authorization acknowledgements and socket transport reconnects; filters, active report, plugin identity and Show handler count; no API writes",
+  "results": [
+    {
+      "viewport": "desktop",
+      "operation": "reauthorize",
+      "pass": true,
+      "from": "2026-09-29",
+      "to": "2026-10-12",
+      "low": "75",
+      "high": "170",
+      "notes": "再接続後にも条件を保持",
+      "selected": "hourlystats",
+      "samePlugins": true,
+      "handlers": 1,
+      "originalHandlers": 1
+    },
+    {
+      "viewport": "desktop",
+      "operation": "reconnect",
+      "pass": true,
+      "from": "2026-09-29",
+      "to": "2026-10-12",
+      "low": "75",
+      "high": "170",
+      "notes": "再接続後にも条件を保持",
+      "selected": "hourlystats",
+      "samePlugins": true,
+      "handlers": 1,
+      "originalHandlers": 1
+    },
+    {
+      "viewport": "mobile",
+      "operation": "reauthorize",
+      "pass": true,
+      "from": "2026-09-29",
+      "to": "2026-10-12",
+      "low": "75",
+      "high": "170",
+      "notes": "再接続後にも条件を保持",
+      "selected": "hourlystats",
+      "samePlugins": true,
+      "handlers": 1,
+      "originalHandlers": 1
+    },
+    {
+      "viewport": "mobile",
+      "operation": "reconnect",
+      "pass": true,
+      "from": "2026-09-29",
+      "to": "2026-10-12",
+      "low": "75",
+      "high": "170",
+      "notes": "再接続後にも条件を保持",
+      "selected": "hourlystats",
+      "samePlugins": true,
+      "handlers": 1,
+      "originalHandlers": 1
+    }
+  ]
+}

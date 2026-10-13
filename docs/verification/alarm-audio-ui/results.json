@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-10-13T05:16:18.833Z",
+  "scope": "Real UI handlers and clinical alarm class with an explicitly simulated denied/resolved browser media promise; desktop/mobile mute and recovery; only the owned notice dismissed; no API writes; physical speaker output is outside this automatic check",
+  "results": [
+    {
+      "viewport": "desktop",
+      "mute": false,
+      "pass": true,
+      "clinicalAlarmClass": "container app-skeleton-group has-minor-pills alarming-timeago alarming urgent",
+      "audioPlayCalls": 11,
+      "axeViolations": 0
+    },
+    {
+      "viewport": "desktop",
+      "mute": true,
+      "pass": true,
+      "clinicalAlarmClass": "container app-skeleton-group has-minor-pills alarming-timeago alarming urgent",
+      "audioPlayCalls": 0,
+      "axeViolations": 0
+    },
+    {
+      "viewport": "mobile",
+      "mute": false,
+      "pass": true,
+      "clinicalAlarmClass": "container app-skeleton-group has-minor-pills alarming-timeago alarming urgent",
+      "audioPlayCalls": 10,
+      "axeViolations": 0
+    },
+    {
+      "viewport": "mobile",
+      "mute": true,
+      "pass": true,
+      "clinicalAlarmClass": "container app-skeleton-group has-minor-pills alarming-timeago alarming urgent",
+      "audioPlayCalls": 0,
+      "axeViolations": 0
+    }
+  ],
+  "pageErrors": [],
+  "apiWrites": []
+}

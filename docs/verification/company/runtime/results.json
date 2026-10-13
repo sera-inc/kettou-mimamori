@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-10-13T04:15:06.882Z",
+  "scope": "Actual desktop/mobile eight routes, keyboard support links, expanded product/license drawer, manifest and API contact metadata; legacy API name and copyright credit retained; no API writes/contact submission",
+  "results": [
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/report",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/profile",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/food",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/admin",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/clock/clock",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/clock/config",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "desktop",
+      "route": "/split",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/report",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/profile",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/food",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/admin",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/clock/clock",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/clock/config",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    },
+    {
+      "viewport": "mobile",
+      "route": "/split",
+      "pass": true,
+      "email": "info@sera-inc.co.jp"
+    }
+  ],
+  "legacyAPIName": "nightscout",
+  "apiWrites": []
+}

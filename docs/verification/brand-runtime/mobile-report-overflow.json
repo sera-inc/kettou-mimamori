@@ -1,0 +1,132 @@
+{
+  "width": 390,
+  "scroll": 396,
+  "elements": [
+    {
+      "tag": "TABLE",
+      "id": "",
+      "className": "app-report-filters",
+      "right": 396,
+      "width": 380
+    },
+    {
+      "tag": "TBODY",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TD",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": "rp_foodgui",
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TD",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": "rp_foodgui",
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TD",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TD",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TD",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TD",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TR",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    },
+    {
+      "tag": "TD",
+      "id": "",
+      "className": null,
+      "right": 394,
+      "width": 376
+    }
+  ]
+}

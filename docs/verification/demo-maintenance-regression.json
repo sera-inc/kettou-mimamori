@@ -1,0 +1,72 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 22,
+    "passes": 22,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T05:40:24.292Z",
+    "end": "2026-10-13T05:40:36.908Z",
+    "duration": 12616
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/admintools.modern.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:40:26.575Z",
+        "end": "2026-10-13T05:40:28.100Z",
+        "duration": 1525
+      }
+    },
+    {
+      "file": "tests/api.unauthorized.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:40:29.236Z",
+        "end": "2026-10-13T05:40:32.544Z",
+        "duration": 3308
+      }
+    },
+    {
+      "file": "tests/authorization-subject-notes.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:40:33.237Z",
+        "end": "2026-10-13T05:40:33.368Z",
+        "duration": 131
+      }
+    },
+    {
+      "file": "tests/stored-output-sinks.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:40:35.031Z",
+        "end": "2026-10-13T05:40:36.886Z",
+        "duration": 1855
+      }
+    }
+  ],
+  "failures": []
+}

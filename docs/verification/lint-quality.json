@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-10-12T16:52:15.435Z",
+  "lint": {
+    "scope": "npm run lint (lib) plus ESLint of three changed HTML adapters",
+    "exitCode": 0,
+    "errors": 0,
+    "warnings": 16
+  },
+  "targetedRegression": {
+    "stats": {
+      "suites": 16,
+      "tests": 57,
+      "passes": 57,
+      "pending": 0,
+      "failures": 0,
+      "start": "2026-10-12T16:50:01.192Z",
+      "end": "2026-10-12T16:50:41.365Z",
+      "duration": 40174
+    },
+    "files": 9
+  },
+  "fullRegressionBeforeLintCleanup": "accessibility-all.json",
+  "invariants": "lint-invariants.json"
+}

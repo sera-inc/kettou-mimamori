@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 13,
+    "passes": 13,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-12T13:23:31.048Z",
+    "end": "2026-10-12T13:23:34.284Z",
+    "duration": 3236
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/concurrent-writes.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 13,
+        "passes": 13,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:23:31.580Z",
+        "end": "2026-10-12T13:23:34.259Z",
+        "duration": 2679
+      }
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,72 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T05:35:45.094Z",
+    "end": "2026-10-13T05:35:45.221Z",
+    "duration": 127
+  },
+  "tests": [
+    {
+      "title": "returns saved Japanese notes without exposing internal storage fields",
+      "fullTitle": "Subject notes in the authenticated admin listing returns saved Japanese notes without exposing internal storage fields",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 104,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "preserves subjects that have no notes",
+      "fullTitle": "Subject notes in the authenticated admin listing preserves subjects that have no notes",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 8,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "requires the existing admin permission before returning notes or tokens",
+      "fullTitle": "Subject notes in the authenticated admin listing requires the existing admin permission before returning notes or tokens",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 9,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "returns saved Japanese notes without exposing internal storage fields",
+      "fullTitle": "Subject notes in the authenticated admin listing returns saved Japanese notes without exposing internal storage fields",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 104,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "preserves subjects that have no notes",
+      "fullTitle": "Subject notes in the authenticated admin listing preserves subjects that have no notes",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 8,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "requires the existing admin permission before returning notes or tokens",
+      "fullTitle": "Subject notes in the authenticated admin listing requires the existing admin permission before returning notes or tokens",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 9,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ]
+}

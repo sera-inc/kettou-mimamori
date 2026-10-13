@@ -1,0 +1,156 @@
+[
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABa0lEQVQ4T6WTzysEYRjHP+/Mrv2hHOTuqJRNOfgPSORHokg4OClHcnVzVygHF6WIcuHMnyCHVRyI3ZYxa23vzOzs7LzamaI0e5i89fTWt/f5vPV5n1cQsXLbHepvfLv5JaLORoZNwMbyFo5vYfsWB0c7xAasLa5T/vCg45Oj48P4gJWFVYxCA63L5PzkND5gfm4Jo+Chd5W5OrtsDYgS1pQ1OTuNUfTQO8tcX9xE+QugYnS/X81MzGP7MpTWkEFVZY1KxcVPV3h27zAtA+oCagIcDfWUCgEje31qfHwK06gHjaF5iXQcHCV5lHmqqgQCNEAI0IsavCVDwNBurxoeGwmaAkDDwvYsqtIh//6AJUoklP97s62BbJYeAqIcpJNZsoM+r2aVbKKOekiBL8An3BuAEiGg1SSKAYnttpFxPdR9Jv4zipxFTUuQKqsfYbFGWfTYuO06yRfxIyweoLuG+iMsFuBfvzFy7FqE33vs2BFqlfN5AAAAAElFTkSuQmCC",
+    "after": "/brand/icons/plus.svg",
+    "count": 1,
+    "beforeSHA256": "c3cf9b2790c8bf7ada404a8500686d596083f86cf81124bfbe5704099340a288"
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrElEQVQ4T42Ty2sTQRzHv5tmk2yyjRNtpfZhL8V6s2KoUNC2XqwgaCsVQcGiFqpHi0c9iRdR/ANE9KR40FIQX4cueKoPaKFoLdSYNtE0abKT1+5s9iW7aUMiHtzTzO7v85md+c6PA4DrHbsPCKIgOWO1pA7dT6YXnXH949SE/F63pqwZtRrO+SCKgjQ5NUV+azpmHj2krMwaJC4c8Erj+/eRyloMMwWFKgbn1nC3ervlK1evkXBLGBZT8SOewotnTylTNLdgeg/pDgZDC2cPHSR8bB22DVC9hFe0SG/H0xFXcHlykjRHRDBWgJcZSCY38Xx2lhqMnRYE34Px/sN9vlQWeoHBAx2yXsRruVAVuFsIBaSJ8+eJGPaBqQV4NROJjTzez89jLBoFn6FgybQL54wS3uTyVDFQ3cL2IYpBv3RhdJSIIQ80tQyv7gEqJvS8AmUlBs7UXPhtjtZgh3UFNYngk86NHCfNAg9dMwHVBPu+CpsVkTXKeJeVG+AGgTOZ3tt6MSKKjy+NjEBjFrR4ElZmA4pdxstMFsyyJu6tZZ7Ux9vwB6EAL50ZGiRECEPPUOixVTRxHlicgSVWxEdZpuZWfNuS2hk48NjwMIkIYZglBnV5Cbqtws/5IaAJmsfCglrEl2y2QeKmEBJ80tixKmxrFpSVr0gV0viQoxho2YUuPohmeFD22PiklLC4ma5JuBvdrfLJI0dJd0s7bM0ES8aR/BXDXGaTskqlL+D3Lwy0tZEePoAd4EA5YF4tYymdonfjmQh3s6dTPjU4SHYGwjAKecSXFyGlM1TdytntE56T+ts7SC/vhw3gm6njc2Kd3vm5Ub1IwQAvnYhGiZpYw1wiWYPrIw7wnBTt7CLOOwdmut14kQQvqt24tfK/utGR6LaF+iRqMf4N/O/8D28HiiCRYqzAAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/trash-empty.svg",
+    "count": 1,
+    "beforeSHA256": "1faf612c1109b0164aa7b7b25040b9d120a93564c37e5fcee58499791f8897be"
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACSklEQVQ4T5VTYU9SYRR+zn0vXhDEFyRBXcpmbZnZsOXsI2xpVnNcv/ilufET8h/oL8h/gN/aWhs2yjKt26rPSvUh5yQodQlqgKQCd5fbLg2jxlycT+/OOc85z/OcvYSa8MoRLqimUEuzOSgwBl0nFFUtW1K1J/Ho6Hxtr/H2yQqnarJ3fFHucNnC57tdXIUJhydl6CAwIhwfFXCwf5hUC6XpjYXAQgUcUngRzkxlgHc0Kl+57I443S7s5VQwxqCVCYVSGfkTFSQQmsQmHGVzKJ78nJMs2izBohRg8ZFB293iSPQPdPOiqiOdyiGdysdKmp4t64LXxlu9otUKTVdhkSSUjgooHOez7R1uvr2bA10cfx66cb0n3GS14tPHrWz6R34i+fT2m6q0rruv7tvs9gdOtxNk0mA2SRB0gqVZwGb8AOSbXIkMDV+Qt7cy2IinJ+LRWxWNf5ur+Kx2vub0OABRg2QSIYqEr/EMaHjqrdJ/tce/upqIxR76B/8FVzySFc7MzWvtnW6vyjSAAFFgyBkSrt17n7jU1+ldjcVn1x+PzNTZzkWLTXF5zvmYmaEslCEIxnUE7H07AA1NvVPaO9r8X5Kpic+Pfp+oNvpCH/R6rKo5GphUIq1Oh7y++T2wv/LHvLNAtTXqHX8Zkqyt4XQ6M73/emzuf4GnDLg/wu0tbYliqTifWhqZbniAAfCMLs/oRMHU0s26VzjTA6PI/QqXJC1BxAZ3XwSSjbA4/UyesWU/Y2Jw51mgIRmnA4ytXXcU385iINYIg1+OJdcoyf/hkgAAAABJRU5ErkJggg==",
+    "after": "/brand/icons/copy.svg",
+    "count": 1,
+    "beforeSHA256": "a74bc5e9e1ebc6ac2acc8e19517ee61480fad2d39c52b957c720236f521a1d5c"
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACh0lEQVQ4T5XSXUhTYRgH8P85O+fMOZ3H2WButc7MD3AQWyaYIRZEqANpt9HHCiwvIhWim8gPiqArJailVmdhJGEI3USk4rAQc1MnTdMitZhtfm86ncvcYhMls2i9l+/Hj//zvA+B/1kmcKSArGIohmNIZoIMkRVE1O95sOQaOXCCK+KUYgWcy99gne2zRA1Q9VR1/u7DVcVcIdyrLshFCtQPNyIqgG6gtWImduB69lVM+r9EQqvEajQM8dEBokcxnSWas0fSElMw5B1EdlIuLM43GJxz1P0zgfhhjDFDmsFf1pVixOeASqTGgt+Llk+tEwCt2wDuQgsSWghgxwXYNxvL8iwbIoLjN3KvsQQVRCAUgIyWg3c0wRdYPmoz2C0E7qE2NUFdnpa4D73TfZgLLNThIirCCGuW8MWpRcYC9TF8DYwhPU6DtvEO2Kb666zF9sidMBC6lVsJES1EiCDwZPQZHHMfzBJB7ONdcbLOm3mVcP9wQi5UwO2bQdP7pxOi9aDOYrB7NgATQnfyb2Mq4AJN0eDiU9A82oL+6UFcyS7DXqkSfixDKpDB1P8Ai98Xdd1661aZBO6jNif5YPm5zFOYXZsCQzHYE8dhZP4jspK1mAm6oYpR49Xn1+iZtNW81fdU/zp8kSaSDSSfpzxkPK85jfn1WawSK9BI9mMJXkiFSXAvzYAfMNu79O90v0/u1jdKzPER5IzmJLyhefiJFchFyWApKUzWRnj8Hp1F370VfRPaNgfKZgWfIlEZL2WVQsAASUIZ2sY60Ou01bQXdm2L/kcgvJn5PJ3nElTG0qwSuHwutAy32tsLunZE/ysQPsh5caCaoYRlQgHjoUnC8PK4ZUf0TeAnGJ/iJEGClrwAAAAASUVORK5CYII=",
+    "after": "/brand/icons/check.svg",
+    "count": 1,
+    "beforeSHA256": "ba78e84e72e98ada8e1610c0fcb7181b469ecab7dca32d8bcf4c4d1500bb369c"
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABa0lEQVQ4T6WTzysEYRjHP+/Mrv2hHOTuqJRNOfgPSORHokg4OClHcnVzVygHF6WIcuHMnyCHVRyI3ZYxa23vzOzs7LzamaI0e5i89fTWt/f5vPV5n1cQsXLbHepvfLv5JaLORoZNwMbyFo5vYfsWB0c7xAasLa5T/vCg45Oj48P4gJWFVYxCA63L5PzkND5gfm4Jo+Chd5W5OrtsDYgS1pQ1OTuNUfTQO8tcX9xE+QugYnS/X81MzGP7MpTWkEFVZY1KxcVPV3h27zAtA+oCagIcDfWUCgEje31qfHwK06gHjaF5iXQcHCV5lHmqqgQCNEAI0IsavCVDwNBurxoeGwmaAkDDwvYsqtIh//6AJUoklP97s62BbJYeAqIcpJNZsoM+r2aVbKKOekiBL8An3BuAEiGg1SSKAYnttpFxPdR9Jv4zipxFTUuQKqsfYbFGWfTYuO06yRfxIyweoLuG+iMsFuBfvzFy7FqE33vs2BFqlfN5AAAAAElFTkSuQmCC",
+    "after": "/brand/icons/plus.svg",
+    "count": 1,
+    "beforeSHA256": "c09c4ea2fddd6dd271b1b6fdd2ce9973c52bf0d622bf62658bfc7296bed84383"
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrElEQVQ4T42Ty2sTQRzHv5tmk2yyjRNtpfZhL8V6s2KoUNC2XqwgaCsVQcGiFqpHi0c9iRdR/ANE9KR40FIQX4cueKoPaKFoLdSYNtE0abKT1+5s9iW7aUMiHtzTzO7v85md+c6PA4DrHbsPCKIgOWO1pA7dT6YXnXH949SE/F63pqwZtRrO+SCKgjQ5NUV+azpmHj2krMwaJC4c8Erj+/eRyloMMwWFKgbn1nC3ervlK1evkXBLGBZT8SOewotnTylTNLdgeg/pDgZDC2cPHSR8bB22DVC9hFe0SG/H0xFXcHlykjRHRDBWgJcZSCY38Xx2lhqMnRYE34Px/sN9vlQWeoHBAx2yXsRruVAVuFsIBaSJ8+eJGPaBqQV4NROJjTzez89jLBoFn6FgybQL54wS3uTyVDFQ3cL2IYpBv3RhdJSIIQ80tQyv7gEqJvS8AmUlBs7UXPhtjtZgh3UFNYngk86NHCfNAg9dMwHVBPu+CpsVkTXKeJeVG+AGgTOZ3tt6MSKKjy+NjEBjFrR4ElZmA4pdxstMFsyyJu6tZZ7Ux9vwB6EAL50ZGiRECEPPUOixVTRxHlicgSVWxEdZpuZWfNuS2hk48NjwMIkIYZglBnV5Cbqtws/5IaAJmsfCglrEl2y2QeKmEBJ80tixKmxrFpSVr0gV0viQoxho2YUuPohmeFD22PiklLC4ma5JuBvdrfLJI0dJd0s7bM0ES8aR/BXDXGaTskqlL+D3Lwy0tZEePoAd4EA5YF4tYymdonfjmQh3s6dTPjU4SHYGwjAKecSXFyGlM1TdytntE56T+ts7SC/vhw3gm6njc2Kd3vm5Ub1IwQAvnYhGiZpYw1wiWYPrIw7wnBTt7CLOOwdmut14kQQvqt24tfK/utGR6LaF+iRqMf4N/O/8D28HiiCRYqzAAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/trash-empty.svg",
+    "count": 1,
+    "beforeSHA256": "7318a55f09465087832f9cc487e1d75c9a6d2740cf4ded1ca8db52d6d40697b6"
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABEUlEQVQ4jZ3MMUsCYQDG8ee8IySQbNCLyyEKG/RLNAXicqvQcAeNLrcFLlE0+xHuNpt8wy04rrYm8Q4HQRE56BSC3lSqU1BwCoxM39dnffj9BWyxXvVeEzvtctBwHyRebNu2Nk2lzMlrgJB+qBEeTByiKYpihl+fIO8jTI9PDJEVF1+K2iw+M6PhDuyag4NkQi/c3FkCK5Z3ZbM76qLltpCbn+vXxq0FABsDy9hzPdBvqvtXvvXzrw1swmsDLPjfACteGeDBfwK8+FdgGwwAIgC0ncsjxGRSH/eiPBgAJADY2z8sJ4JBfNBsDqlADVYMANIzKalv/bHaefKsTH9iPFb8ISsGAJym0+Qinz3jQktbAHcxvx3559eSAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/edit.svg",
+    "count": 1,
+    "beforeSHA256": "897669fb9890b831e2ee831e54309af9a71be32e4f14f1d326cd61d32df6b0be"
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH3SURBVDhPlZK/a1NRFMe/9/1KotLcwbYiipo2NqmDpTpoiJiguPgPCC7iYAcbYp0LxUGkxVr6Y6lgu6iLm4uCQszi4JS6FHQRFMRBDOJrcvPyEs+97+V3A+2Bw7nvcr6f973nXoZ+8RQTqCGn1hrSuIOCWneF5tfO8MWZ2Ax/NPmYB1kop/Z2iV6AL56O3eNj4TP4Lf7iVnSKm7ByWOuFdAJ88d14lp8Oj+P9jw/Y/vMFBgK4GbnNLUaQpU5Iawbt4gEpzqPiVmirprqi/BRKjo0XW5vFSkmkMevNxAM0bPvidyQuuwJuvUrbdTBWh6ZpGOOjEM4Onn/aKIoyQR6gwBriTHzGs/09j5Jbxo5rw67aEDWhfuOiCkM3cO7wWdQcB68+viyKfyKt4zq2s/H7/OJQEj9Lv6BrOkbCJ/H62xvYBHFAx2Aurh5LITJwAgfMIA6GDiEyPBL8/LVwg2GdPHbF/PllLGwtI2CYlBYsqteOp7H6dhFkxEvHqxqmyGB70szkeU2ya+l0eSQOmh5ECR9SzzzlE8oVsN53IKm0LQGmQRCTXBBAfitAV/QBMBLoTRfyKMqBtN0VfQFymAogXZB4Xw6YD9DJheGDDFrvHUDlytHLSB1J4tJwAonBCwSk1l0ArafciDm6Vtko07+qZrqUz9o1wH8prahHZgYc2gAAAABJRU5ErkJggg==",
+    "after": "/brand/icons/up.svg",
+    "count": 1,
+    "beforeSHA256": "a4a7f9f824f835037ad5c675f9670ae9427b64baf9a3e361656df2be504a9003"
+  },
+  {
+    "file": "lib/report_plugins/treatments.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrElEQVQ4T42Ty2sTQRzHv5tmk2yyjRNtpfZhL8V6s2KoUNC2XqwgaCsVQcGiFqpHi0c9iRdR/ANE9KR40FIQX4cueKoPaKFoLdSYNtE0abKT1+5s9iW7aUMiHtzTzO7v85md+c6PA4DrHbsPCKIgOWO1pA7dT6YXnXH949SE/F63pqwZtRrO+SCKgjQ5NUV+azpmHj2krMwaJC4c8Erj+/eRyloMMwWFKgbn1nC3ervlK1evkXBLGBZT8SOewotnTylTNLdgeg/pDgZDC2cPHSR8bB22DVC9hFe0SG/H0xFXcHlykjRHRDBWgJcZSCY38Xx2lhqMnRYE34Px/sN9vlQWeoHBAx2yXsRruVAVuFsIBaSJ8+eJGPaBqQV4NROJjTzez89jLBoFn6FgybQL54wS3uTyVDFQ3cL2IYpBv3RhdJSIIQ80tQyv7gEqJvS8AmUlBs7UXPhtjtZgh3UFNYngk86NHCfNAg9dMwHVBPu+CpsVkTXKeJeVG+AGgTOZ3tt6MSKKjy+NjEBjFrR4ElZmA4pdxstMFsyyJu6tZZ7Ux9vwB6EAL50ZGiRECEPPUOixVTRxHlicgSVWxEdZpuZWfNuS2hk48NjwMIkIYZglBnV5Cbqtws/5IaAJmsfCglrEl2y2QeKmEBJ80tixKmxrFpSVr0gV0viQoxho2YUuPohmeFD22PiklLC4ma5JuBvdrfLJI0dJd0s7bM0ES8aR/BXDXGaTskqlL+D3Lwy0tZEePoAd4EA5YF4tYymdonfjmQh3s6dTPjU4SHYGwjAKecSXFyGlM1TdytntE56T+ts7SC/vhw3gm6njc2Kd3vm5Ub1IwQAvnYhGiZpYw1wiWYPrIw7wnBTt7CLOOwdmut14kQQvqt24tfK/utGR6LaF+iRqMf4N/O/8D28HiiCRYqzAAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/trash-empty.svg",
+    "count": 1,
+    "beforeSHA256": "503dcdf168e142c500da7a6297ea37fb6348e2390fef63800142c2579856395c"
+  },
+  {
+    "file": "lib/report_plugins/treatments.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABEUlEQVQ4jZ3MMUsCYQDG8ee8IySQbNCLyyEKG/RLNAXicqvQcAeNLrcFLlE0+xHuNpt8wy04rrYm8Q4HQRE56BSC3lSqU1BwCoxM39dnffj9BWyxXvVeEzvtctBwHyRebNu2Nk2lzMlrgJB+qBEeTByiKYpihl+fIO8jTI9PDJEVF1+K2iw+M6PhDuyag4NkQi/c3FkCK5Z3ZbM76qLltpCbn+vXxq0FABsDy9hzPdBvqvtXvvXzrw1swmsDLPjfACteGeDBfwK8+FdgGwwAIgC0ncsjxGRSH/eiPBgAJADY2z8sJ4JBfNBsDqlADVYMANIzKalv/bHaefKsTH9iPFb8ISsGAJym0+Qinz3jQktbAHcxvx3559eSAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/edit.svg",
+    "count": 1,
+    "beforeSHA256": "d75ae89956d44ace2d3f510d63db4185e6b36a7d41378612da59c62eb2e589a5"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABEUlEQVQ4jZ3MMUsCYQDG8ee8IySQbNCLyyEKG/RLNAXicqvQcAeNLrcFLlE0+xHuNpt8wy04rrYm8Q4HQRE56BSC3lSqU1BwCoxM39dnffj9BWyxXvVeEzvtctBwHyRebNu2Nk2lzMlrgJB+qBEeTByiKYpihl+fIO8jTI9PDJEVF1+K2iw+M6PhDuyag4NkQi/c3FkCK5Z3ZbM76qLltpCbn+vXxq0FABsDy9hzPdBvqvtXvvXzrw1swmsDLPjfACteGeDBfwK8+FdgGwwAIgC0ncsjxGRSH/eiPBgAJADY2z8sJ4JBfNBsDqlADVYMANIzKalv/bHaefKsTH9iPFb8ISsGAJym0+Qinz3jQktbAHcxvx3559eSAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/edit.svg",
+    "count": 1,
+    "beforeSHA256": "f44d3427e56ec143e113cca7df1b8a627fedb82caa89746b2c5dd711541b0f0c"
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrElEQVQ4T42Ty2sTQRzHv5tmk2yyjRNtpfZhL8V6s2KoUNC2XqwgaCsVQcGiFqpHi0c9iRdR/ANE9KR40FIQX4cueKoPaKFoLdSYNtE0abKT1+5s9iW7aUMiHtzTzO7v85md+c6PA4DrHbsPCKIgOWO1pA7dT6YXnXH949SE/F63pqwZtRrO+SCKgjQ5NUV+azpmHj2krMwaJC4c8Erj+/eRyloMMwWFKgbn1nC3ervlK1evkXBLGBZT8SOewotnTylTNLdgeg/pDgZDC2cPHSR8bB22DVC9hFe0SG/H0xFXcHlykjRHRDBWgJcZSCY38Xx2lhqMnRYE34Px/sN9vlQWeoHBAx2yXsRruVAVuFsIBaSJ8+eJGPaBqQV4NROJjTzez89jLBoFn6FgybQL54wS3uTyVDFQ3cL2IYpBv3RhdJSIIQ80tQyv7gEqJvS8AmUlBs7UXPhtjtZgh3UFNYngk86NHCfNAg9dMwHVBPu+CpsVkTXKeJeVG+AGgTOZ3tt6MSKKjy+NjEBjFrR4ElZmA4pdxstMFsyyJu6tZZ7Ux9vwB6EAL50ZGiRECEPPUOixVTRxHlicgSVWxEdZpuZWfNuS2hk48NjwMIkIYZglBnV5Cbqtws/5IaAJmsfCglrEl2y2QeKmEBJ80tixKmxrFpSVr0gV0viQoxho2YUuPohmeFD22PiklLC4ma5JuBvdrfLJI0dJd0s7bM0ES8aR/BXDXGaTskqlL+D3Lwy0tZEePoAd4EA5YF4tYymdonfjmQh3s6dTPjU4SHYGwjAKecSXFyGlM1TdytntE56T+ts7SC/vhw3gm6njc2Kd3vm5Ub1IwQAvnYhGiZpYw1wiWYPrIw7wnBTt7CLOOwdmut14kQQvqt24tfK/utGR6LaF+iRqMf4N/O/8D28HiiCRYqzAAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/trash-empty.svg",
+    "count": 1,
+    "beforeSHA256": "a909c50d22486b9e23eeebd35c7a37dea008e0c280a5411136c39fd459197187"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABEUlEQVQ4jZ3MMUsCYQDG8ee8IySQbNCLyyEKG/RLNAXicqvQcAeNLrcFLlE0+xHuNpt8wy04rrYm8Q4HQRE56BSC3lSqU1BwCoxM39dnffj9BWyxXvVeEzvtctBwHyRebNu2Nk2lzMlrgJB+qBEeTByiKYpihl+fIO8jTI9PDJEVF1+K2iw+M6PhDuyag4NkQi/c3FkCK5Z3ZbM76qLltpCbn+vXxq0FABsDy9hzPdBvqvtXvvXzrw1swmsDLPjfACteGeDBfwK8+FdgGwwAIgC0ncsjxGRSH/eiPBgAJADY2z8sJ4JBfNBsDqlADVYMANIzKalv/bHaefKsTH9iPFb8ISsGAJym0+Qinz3jQktbAHcxvx3559eSAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/edit.svg",
+    "count": 1,
+    "beforeSHA256": "2ecbaf865322516b7028556509219d1d58d1211f1f05042002e0a7fe86b3e71d"
+  },
+  {
+    "file": "lib/admin_plugins/subjects.js",
+    "before": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACrElEQVQ4T42Ty2sTQRzHv5tmk2yyjRNtpfZhL8V6s2KoUNC2XqwgaCsVQcGiFqpHi0c9iRdR/ANE9KR40FIQX4cueKoPaKFoLdSYNtE0abKT1+5s9iW7aUMiHtzTzO7v85md+c6PA4DrHbsPCKIgOWO1pA7dT6YXnXH949SE/F63pqwZtRrO+SCKgjQ5NUV+azpmHj2krMwaJC4c8Erj+/eRyloMMwWFKgbn1nC3ervlK1evkXBLGBZT8SOewotnTylTNLdgeg/pDgZDC2cPHSR8bB22DVC9hFe0SG/H0xFXcHlykjRHRDBWgJcZSCY38Xx2lhqMnRYE34Px/sN9vlQWeoHBAx2yXsRruVAVuFsIBaSJ8+eJGPaBqQV4NROJjTzez89jLBoFn6FgybQL54wS3uTyVDFQ3cL2IYpBv3RhdJSIIQ80tQyv7gEqJvS8AmUlBs7UXPhtjtZgh3UFNYngk86NHCfNAg9dMwHVBPu+CpsVkTXKeJeVG+AGgTOZ3tt6MSKKjy+NjEBjFrR4ElZmA4pdxstMFsyyJu6tZZ7Ux9vwB6EAL50ZGiRECEPPUOixVTRxHlicgSVWxEdZpuZWfNuS2hk48NjwMIkIYZglBnV5Cbqtws/5IaAJmsfCglrEl2y2QeKmEBJ80tixKmxrFpSVr0gV0viQoxho2YUuPohmeFD22PiklLC4ma5JuBvdrfLJI0dJd0s7bM0ES8aR/BXDXGaTskqlL+D3Lwy0tZEePoAd4EA5YF4tYymdonfjmQh3s6dTPjU4SHYGwjAKecSXFyGlM1TdytntE56T+ts7SC/vhw3gm6njc2Kd3vm5Ub1IwQAvnYhGiZpYw1wiWYPrIw7wnBTt7CLOOwdmut14kQQvqt24tfK/utGR6LaF+iRqMf4N/O/8D28HiiCRYqzAAAAAAElFTkSuQmCC",
+    "after": "/brand/icons/trash-empty.svg",
+    "count": 1,
+    "beforeSHA256": "eff286ad4a5db72da22987dc632770e7f22dda7f00246e032301e1705a02e1c5"
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "before": "<a class=\"app-brand\" href=\"/\">",
+    "after": "<a class=\"app-brand\" href=\"/\"><img class=\"app-brand-mark\" src=\"/brand/mark.svg\" width=\"32\" height=\"32\" alt=\"\" aria-hidden=\"true\">",
+    "count": 1,
+    "beforeSHA256": "07776405e94ce223995befcb0a5aaa4709449d6d5f3fcea2240e3437e129716c"
+  },
+  {
+    "file": "views/index.html",
+    "before": "<details class=\"app-service-license\">",
+    "after": "<img class=\"app-care-illustration\" src=\"/brand/care-connection.png\" width=\"1774\" height=\"887\" alt=\"血糖記録を確認する人と医療スタッフのイラスト\" loading=\"lazy\">\n        <details class=\"app-service-license\">",
+    "count": 1,
+    "beforeSHA256": "7ca1d8ffaaf145009e0a6507c1862f0d8ac0070a3212ddfe7419a82ba6a80031"
+  },
+  {
+    "file": "lib/client/clock-client.js",
+    "before": "<img alt=\"arrow\">",
+    "after": "<img alt=\"血糖値の変化方向\">",
+    "count": 1,
+    "beforeSHA256": "0d68743be4cd2c106d328ed91c5a44dc47ff9469370def1d543bd353bf4c4278"
+  },
+  {
+    "file": "static/design-system/index.css",
+    "before": "@import './service.css';",
+    "after": "@import './service.css';\n@import './icons.css';\n@import './brand.css';",
+    "count": 1,
+    "beforeSHA256": "530409bc6a016aa3074c76b3db901f0f3d8243dc9ba95d15f9d68ee87618c34c"
+  },
+  {
+    "file": "views/service-worker.js",
+    "before": "    '/images/logo2.png'",
+    "after": "    '/images/logo2.png',\n    '/brand/mark.svg',\n    '/brand/icon-192.png',\n    '/brand/icon-512.png',\n    '/brand/care-connection.png',\n    '/design-system/icons.css',\n    '/design-system/brand.css'",
+    "count": 1,
+    "beforeSHA256": "43faacadc2ea565b3b1fde70e3cda1f57593685f56906ae07a64fb435e4afdd9"
+  },
+  {
+    "file": "static/manifest.json",
+    "before": "{\r\n\t\"name\": \"血糖みまもり\",\r\n\t\"short_name\": \"血糖みまもり\",\r\n\t\"lang\": \"ja\",\r\n\t\"description\": \"株式会社世良が提供する、血糖値と治療記録を確認するサービス\",\r\n\t\"start_url\": \"/\",\r\n\t\"icons\": [\r\n\t\t{\r\n\t\t\t\"src\": \"\\/images\\/android-chrome-36x36.png\",\r\n\t\t\t\"sizes\": \"36x36\",\r\n\t\t\t\"type\": \"image\\/png\",\r\n\t\t\t\"density\": \"0.75\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"src\": \"\\/images\\/android-chrome-48x48.png\",\r\n\t\t\t\"sizes\": \"48x48\",\r\n\t\t\t\"type\": \"image\\/png\",\r\n\t\t\t\"density\": \"1.0\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"src\": \"\\/images\\/android-chrome-72x72.png\",\r\n\t\t\t\"sizes\": \"72x72\",\r\n\t\t\t\"type\": \"image\\/png\",\r\n\t\t\t\"density\": \"1.5\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"src\": \"\\/images\\/android-chrome-96x96.png\",\r\n\t\t\t\"sizes\": \"96x96\",\r\n\t\t\t\"type\": \"image\\/png\",\r\n\t\t\t\"density\": \"2.0\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"src\": \"\\/images\\/android-chrome-144x144.png\",\r\n\t\t\t\"sizes\": \"144x144\",\r\n\t\t\t\"type\": \"image\\/png\",\r\n\t\t\t\"density\": \"3.0\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"src\": \"\\/images\\/android-chrome-192x192.png\",\r\n\t\t\t\"sizes\": \"192x192\",\r\n\t\t\t\"type\": \"image\\/png\",\r\n\t\t\t\"density\": \"4.0\"\r\n\t\t}\r\n\t],\r\n\t\"display\": \"standalone\"\r\n}\r\n",
+    "after": "{\n  \"name\": \"血糖みまもり\",\n  \"short_name\": \"血糖みまもり\",\n  \"lang\": \"ja\",\n  \"description\": \"株式会社世良が提供する、血糖値と治療記録を確認するサービス\",\n  \"start_url\": \"/\",\n  \"icons\": [\n    {\n      \"src\": \"/images/android-chrome-36x36.png\",\n      \"sizes\": \"36x36\",\n      \"type\": \"image/png\",\n      \"density\": \"0.75\"\n    },\n    {\n      \"src\": \"/images/android-chrome-48x48.png\",\n      \"sizes\": \"48x48\",\n      \"type\": \"image/png\",\n      \"density\": \"1.0\"\n    },\n    {\n      \"src\": \"/images/android-chrome-72x72.png\",\n      \"sizes\": \"72x72\",\n      \"type\": \"image/png\",\n      \"density\": \"1.5\"\n    },\n    {\n      \"src\": \"/images/android-chrome-96x96.png\",\n      \"sizes\": \"96x96\",\n      \"type\": \"image/png\",\n      \"density\": \"2.0\"\n    },\n    {\n      \"src\": \"/images/android-chrome-144x144.png\",\n      \"sizes\": \"144x144\",\n      \"type\": \"image/png\",\n      \"density\": \"3.0\"\n    },\n    {\n      \"src\": \"/images/android-chrome-192x192.png\",\n      \"sizes\": \"192x192\",\n      \"type\": \"image/png\",\n      \"density\": \"4.0\"\n    },\n    {\n      \"src\": \"/brand/icon-192.png\",\n      \"sizes\": \"192x192\",\n      \"type\": \"image/png\",\n      \"purpose\": \"any maskable\"\n    },\n    {\n      \"src\": \"/brand/icon-512.png\",\n      \"sizes\": \"512x512\",\n      \"type\": \"image/png\",\n      \"purpose\": \"any maskable\"\n    }\n  ],\n  \"display\": \"standalone\",\n  \"theme_color\": \"#0017c1\",\n  \"background_color\": \"#ffffff\"\n}\n",
+    "count": 1,
+    "beforeSHA256": "5fe646d84ed9fb2564c8216e5829d34f0c71fb1df0d0900c13e0a626bfdba841"
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "before": "<strong class=\"customTitle\"><%= settings.customTitle || '血糖みまもり' %></strong>",
+    "after": "<strong class=\"app-service-name\">血糖みまもり</strong>",
+    "count": 1,
+    "beforeSHA256": "129ed29b5e06324b14bb050da0cd5ff61af56cda124655ef9cd36a46413ea22c"
+  },
+  {
+    "file": "views/partials/page-title.ejs",
+    "before": "<div class=\"app-page-summary\">",
+    "after": "<p class=\"app-reading-context\"><strong class=\"customTitle\" role=\"status\" aria-live=\"polite\"><%= settings.customTitle || '血糖みまもり' %></strong></p>\n  <div class=\"app-page-summary\">",
+    "count": 1,
+    "beforeSHA256": "eb0400eecc40dc3740fbe6ced090f96f71af4155600815fa0cd7b47cf4a906d0"
+  }
+]

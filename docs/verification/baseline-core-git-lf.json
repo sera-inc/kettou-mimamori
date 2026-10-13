@@ -1,0 +1,357 @@
+{
+  "stats": {
+    "suites": 73,
+    "tests": 263,
+    "passes": 259,
+    "pending": 0,
+    "failures": 4,
+    "start": "2026-10-12T13:21:30.424Z",
+    "end": "2026-10-12T13:21:37.768Z",
+    "duration": 7344
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/client-core/captured-fixtures.lint.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 52,
+        "passes": 52,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:30.956Z",
+        "end": "2026-10-12T13:21:31.169Z",
+        "duration": 213
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-confirm-text.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 11,
+        "passes": 11,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:31.512Z",
+        "end": "2026-10-12T13:21:31.563Z",
+        "duration": 51
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-duration.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:31.854Z",
+        "end": "2026-10-12T13:21:31.866Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-event-types.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:32.119Z",
+        "end": "2026-10-12T13:21:32.131Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-normalize-treatment.captured.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:32.380Z",
+        "end": "2026-10-12T13:21:32.468Z",
+        "duration": 88
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-normalize-treatment.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 16,
+        "passes": 16,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:32.785Z",
+        "end": "2026-10-12T13:21:32.819Z",
+        "duration": 34
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-resolve-event-name.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:33.118Z",
+        "end": "2026-10-12T13:21:33.132Z",
+        "duration": 14
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-validate.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:33.408Z",
+        "end": "2026-10-12T13:21:33.424Z",
+        "duration": 16
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-loop.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 14,
+        "passes": 14,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:33.690Z",
+        "end": "2026-10-12T13:21:33.724Z",
+        "duration": 34
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-openaps.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 9,
+        "tests": 27,
+        "passes": 27,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:33.997Z",
+        "end": "2026-10-12T13:21:34.037Z",
+        "duration": 40
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-pump.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:34.301Z",
+        "end": "2026-10-12T13:21:34.324Z",
+        "duration": 23
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-uploader.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 10,
+        "passes": 10,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:34.582Z",
+        "end": "2026-10-12T13:21:34.601Z",
+        "duration": 19
+      }
+    },
+    {
+      "file": "tests/client-core/loop-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:34.885Z",
+        "end": "2026-10-12T13:21:34.894Z",
+        "duration": 9
+      }
+    },
+    {
+      "file": "tests/client-core/openaps-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:35.167Z",
+        "end": "2026-10-12T13:21:35.175Z",
+        "duration": 8
+      }
+    },
+    {
+      "file": "tests/client-core/pill-goldens.test.js",
+      "exitCode": 4,
+      "stats": {
+        "suites": 5,
+        "tests": 4,
+        "passes": 0,
+        "pending": 0,
+        "failures": 4,
+        "start": "2026-10-12T13:21:35.460Z",
+        "end": "2026-10-12T13:21:35.611Z",
+        "duration": 151
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-defaults-and-time.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:35.877Z",
+        "end": "2026-10-12T13:21:35.894Z",
+        "duration": 17
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-migrate.captured.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 11,
+        "tests": 41,
+        "passes": 41,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:36.161Z",
+        "end": "2026-10-12T13:21:36.200Z",
+        "duration": 39
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-migrate.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:36.451Z",
+        "end": "2026-10-12T13:21:36.466Z",
+        "duration": 15
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-profiles.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 13,
+        "passes": 13,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:36.735Z",
+        "end": "2026-10-12T13:21:36.756Z",
+        "duration": 21
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-ranges.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:37.035Z",
+        "end": "2026-10-12T13:21:37.046Z",
+        "duration": 11
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-records.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:37.345Z",
+        "end": "2026-10-12T13:21:37.363Z",
+        "duration": 18
+      }
+    },
+    {
+      "file": "tests/client-core/pump-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:21:37.669Z",
+        "end": "2026-10-12T13:21:37.756Z",
+        "duration": 87
+      }
+    }
+  ],
+  "failures": [
+    {
+      "fullTitle": "captured-fixture pill goldens aaps matches committed pills-golden.json",
+      "file": "tests/client-core/pill-goldens.test.js",
+      "err": {
+        "stack": "Error: Golden drift in aaps starting line 61.\nExpected:\n  58:         \"info\": [\n  59:           {\n  60:             \"label\": \"Inserted\",\n  61:             \"value\": \"12/31/1969, 4:00:00 PM\"\n  62:           }\n  63:         ],\n  64:         \"label\": \"CAGE\",\n  65:         \"pillClass\": null,\n  66:         \"value\": \"n/a \"\nActual:\n  58:         \"info\": [\n  59:           {\n  60:             \"label\": \"Inserted\",\n  61:             \"value\": \"1/1/1970, 12:00:00 AM\"\n  62:           }\n  63:         ],\n  64:         \"label\": \"CAGE\",\n  65:         \"pillClass\": null,\n  66:         \"value\": \"n/a \"\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)",
+        "message": "Golden drift in aaps starting line 61.\nExpected:\n  58:         \"info\": [\n  59:           {\n  60:             \"label\": \"Inserted\",\n  61:             \"value\": \"12/31/1969, 4:00:00 PM\"\n  62:           }\n  63:         ],\n  64:         \"label\": \"CAGE\",\n  65:         \"pillClass\": null,\n  66:         \"value\": \"n/a \"\nActual:\n  58:         \"info\": [\n  59:           {\n  60:             \"label\": \"Inserted\",\n  61:             \"value\": \"1/1/1970, 12:00:00 AM\"\n  62:           }\n  63:         ],\n  64:         \"label\": \"CAGE\",\n  65:         \"pillClass\": null,\n  66:         \"value\": \"n/a \"\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write"
+      }
+    },
+    {
+      "fullTitle": "captured-fixture pill goldens loop matches committed pills-golden.json",
+      "file": "tests/client-core/pill-goldens.test.js",
+      "err": {
+        "stack": "Error: Golden drift in loop starting line 90.\nExpected:\n  87:         \"info\": [\n  88:           {\n  89:             \"label\": \"Inserted\",\n  90:             \"value\": \"12/31/1969, 4:00:00 PM\"\n  91:           }\n  92:         ],\n  93:         \"label\": \"CAGE\",\n  94:         \"pillClass\": null,\n  95:         \"value\": \"n/a \"\nActual:\n  87:         \"info\": [\n  88:           {\n  89:             \"label\": \"Inserted\",\n  90:             \"value\": \"1/1/1970, 12:00:00 AM\"\n  91:           }\n  92:         ],\n  93:         \"label\": \"CAGE\",\n  94:         \"pillClass\": null,\n  95:         \"value\": \"n/a \"\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)",
+        "message": "Golden drift in loop starting line 90.\nExpected:\n  87:         \"info\": [\n  88:           {\n  89:             \"label\": \"Inserted\",\n  90:             \"value\": \"12/31/1969, 4:00:00 PM\"\n  91:           }\n  92:         ],\n  93:         \"label\": \"CAGE\",\n  94:         \"pillClass\": null,\n  95:         \"value\": \"n/a \"\nActual:\n  87:         \"info\": [\n  88:           {\n  89:             \"label\": \"Inserted\",\n  90:             \"value\": \"1/1/1970, 12:00:00 AM\"\n  91:           }\n  92:         ],\n  93:         \"label\": \"CAGE\",\n  94:         \"pillClass\": null,\n  95:         \"value\": \"n/a \"\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write"
+      }
+    },
+    {
+      "fullTitle": "captured-fixture pill goldens phone-uploader matches committed pills-golden.json",
+      "file": "tests/client-core/pill-goldens.test.js",
+      "err": {
+        "stack": "Error: Golden drift in phone-uploader starting line 47.\nExpected:\n  44:         \"info\": [\n  45:           {\n  46:             \"label\": \"Inserted\",\n  47:             \"value\": \"12/31/1969, 4:00:00 PM\"\n  48:           }\n  49:         ],\n  50:         \"label\": \"CAGE\",\n  51:         \"pillClass\": null,\n  52:         \"value\": \"n/a \"\nActual:\n  44:         \"info\": [\n  45:           {\n  46:             \"label\": \"Inserted\",\n  47:             \"value\": \"1/1/1970, 12:00:00 AM\"\n  48:           }\n  49:         ],\n  50:         \"label\": \"CAGE\",\n  51:         \"pillClass\": null,\n  52:         \"value\": \"n/a \"\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)",
+        "message": "Golden drift in phone-uploader starting line 47.\nExpected:\n  44:         \"info\": [\n  45:           {\n  46:             \"label\": \"Inserted\",\n  47:             \"value\": \"12/31/1969, 4:00:00 PM\"\n  48:           }\n  49:         ],\n  50:         \"label\": \"CAGE\",\n  51:         \"pillClass\": null,\n  52:         \"value\": \"n/a \"\nActual:\n  44:         \"info\": [\n  45:           {\n  46:             \"label\": \"Inserted\",\n  47:             \"value\": \"1/1/1970, 12:00:00 AM\"\n  48:           }\n  49:         ],\n  50:         \"label\": \"CAGE\",\n  51:         \"pillClass\": null,\n  52:         \"value\": \"n/a \"\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write"
+      }
+    },
+    {
+      "fullTitle": "captured-fixture pill goldens trio matches committed pills-golden.json",
+      "file": "tests/client-core/pill-goldens.test.js",
+      "err": {
+        "stack": "Error: Golden drift in trio starting line 63.\nExpected:\n  60:         \"info\": [\n  61:           {\n  62:             \"label\": \"Inserted\",\n  63:             \"value\": \"12/31/1969, 4:00:00 PM\"\n  64:           }\n  65:         ],\n  66:         \"label\": \"CAGE\",\n  67:         \"pillClass\": null,\n  68:         \"value\": \"n/a \"\nActual:\n  60:         \"info\": [\n  61:           {\n  62:             \"label\": \"Inserted\",\n  63:             \"value\": \"1/1/1970, 12:00:00 AM\"\n  64:           }\n  65:         ],\n  66:         \"label\": \"CAGE\",\n  67:         \"pillClass\": null,\n  68:         \"value\": \"n/a \"\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)",
+        "message": "Golden drift in trio starting line 63.\nExpected:\n  60:         \"info\": [\n  61:           {\n  62:             \"label\": \"Inserted\",\n  63:             \"value\": \"12/31/1969, 4:00:00 PM\"\n  64:           }\n  65:         ],\n  66:         \"label\": \"CAGE\",\n  67:         \"pillClass\": null,\n  68:         \"value\": \"n/a \"\nActual:\n  60:         \"info\": [\n  61:           {\n  62:             \"label\": \"Inserted\",\n  63:             \"value\": \"1/1/1970, 12:00:00 AM\"\n  64:           }\n  65:         ],\n  66:         \"label\": \"CAGE\",\n  67:         \"pillClass\": null,\n  68:         \"value\": \"n/a \"\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write"
+      }
+    }
+  ]
+}

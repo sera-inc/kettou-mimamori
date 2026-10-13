@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-10-13T06:27:57.639Z",
+  "servedAssets": 40,
+  "scope": "Actual served bytes match original new SVG/PNG sources; PWA maskable entries; seven routes and 24 inherited-color icon classes on desktop/mobile; no data writes",
+  "results": [
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "desktop",
+      "route": "/report",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "desktop",
+      "route": "/profile",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "desktop",
+      "route": "/food",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "desktop",
+      "route": "/admin",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "desktop",
+      "route": "/clock/config",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "desktop",
+      "route": "/split",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "desktop",
+      "originalLineIcons": 24,
+      "oldFontGlyphsReplaced": true
+    },
+    {
+      "viewport": "mobile",
+      "route": "/",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "mobile",
+      "route": "/report",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "mobile",
+      "route": "/profile",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "mobile",
+      "route": "/food",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "mobile",
+      "route": "/admin",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "mobile",
+      "route": "/clock/config",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "mobile",
+      "route": "/split",
+      "markLoaded": true,
+      "serviceName": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "viewport": "mobile",
+      "originalLineIcons": 24,
+      "oldFontGlyphsReplaced": true
+    }
+  ],
+  "pageErrors": [],
+  "apiWrites": []
+}

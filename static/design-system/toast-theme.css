@@ -1,0 +1,5 @@
+html body.app-page .app-toast-region {text-align: left;}
+html body.app-page #app-toast-region .app-toast .app-toast__close {box-sizing: border-box;min-width: var(--app-row-height);min-height: var(--app-row-height);background: var(--app-surface);color: var(--app-text);font-size: var(--app-text-heading-lg-size);}
+html body.app-page #app-toast-region .app-toast .app-toast__action {min-height: var(--app-row-height);padding: var(--app-space-05) var(--app-space-1);background: var(--app-surface);color: var(--app-text-link);}
+html body.app-page .app-toast .app-toast__icon {min-width: var(--app-space-3);font-size: var(--app-text-heading-sm-size);font-weight: var(--app-font-weight-bold);}
+@media (prefers-reduced-motion: reduce) {.app-toast {animation: none;}}

@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-10-13T13:56:12.444Z",
+  "database": "kettou_demo",
+  "scope": "Actual complete UI frames; default permission groups, unsaved input forms and public API v3 explanation; no subject credentials, no response substitution, no API writes",
+  "screenshots": [
+    {
+      "name": "admin-desktop",
+      "route": "/admin",
+      "file": "docs/verification/lp-management/admin-desktop.png",
+      "fullPage": true,
+      "sha256": "5e8b7dde0c96f7b3c3d1fc0da9db92484d9415228ca42705a53237cbc13a0387"
+    },
+    {
+      "name": "role-settings-desktop",
+      "route": "/admin",
+      "file": "docs/verification/lp-management/role-settings-desktop.png",
+      "fullPage": true,
+      "sha256": "108171d85190fd5d53effba09e18df2005dca0361827f0cd958cc9c1776acaee"
+    },
+    {
+      "name": "subject-settings-desktop",
+      "route": "/admin",
+      "file": "docs/verification/lp-management/subject-settings-desktop.png",
+      "fullPage": true,
+      "sha256": "d85faceae7603874fff0dd9dab1f44eee48025c75b3e55b848faeb29d6e06ef7"
+    },
+    {
+      "name": "maintenance-desktop",
+      "route": "/admin",
+      "file": "docs/verification/lp-management/maintenance-desktop.png",
+      "fullPage": true,
+      "sha256": "c6c3fb96a4a443339129724365cce0ffa76e035b41edd48ed6a32b7732407567"
+    },
+    {
+      "name": "api-docs-desktop",
+      "route": "/api3-docs/",
+      "file": "docs/verification/lp-management/api-docs-desktop.png",
+      "fullPage": true,
+      "sha256": "0ca3a7566ae9e8afdd97452d582f51b830d533bab59c81b16ba0a34ab647c34c"
+    }
+  ],
+  "apiWrites": [],
+  "pageErrors": [],
+  "axe": [
+    {
+      "name": "admin-desktop",
+      "violations": []
+    },
+    {
+      "name": "role-settings-desktop",
+      "violations": []
+    },
+    {
+      "name": "subject-settings-desktop",
+      "violations": []
+    },
+    {
+      "name": "maintenance-desktop",
+      "violations": []
+    },
+    {
+      "name": "api-docs-desktop",
+      "violations": []
+    }
+  ]
+}

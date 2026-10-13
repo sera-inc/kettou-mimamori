@@ -1,0 +1,71 @@
+name: Accessibility preview
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      mongo:
+        image: mongo:7.0
+        ports: ['27118:27017']
+        options: >-
+          --health-cmd "mongosh --quiet --eval 'db.adminCommand({ping:1}).ok'"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      NODE_ENV: production
+      TZ: Asia/Tokyo
+      PORT: '8410'
+      NIGHTSCOUT_HOSTNAME: 127.0.0.1
+      INSECURE_USE_HTTP: 'true'
+      MONGO_CONNECTION: mongodb://127.0.0.1:27118/kettou_demo
+      DEMO_MONGO_URI: mongodb://127.0.0.1:27118/kettou_demo
+      # Synthetic, isolated CI preview only; this is never a deployment secret.
+      API_SECRET: ci-kettou-preview-secret
+      AUTH_DEFAULT_ROLES: readable
+      LANGUAGE: ja
+      CUSTOM_TITLE: 血糖みまもり
+      DISPLAY_UNITS: mg/dl
+      ENABLE: careportal basal dbsize rawbg iob cob bwp cage sage iage treatmentnotify upbat direction timeago ar2 boluscalc profile food
+      SHOW_PLUGINS: careportal boluscalc iob cob basal cage sage iage direction timeago
+      ALARM_TYPES: simple
+      PLAYWRIGHT_CHANNEL: bundled
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --omit=optional --force --no-audit --no-fund
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Bundle and prepare synthetic profile
+        run: |
+          npm run bundle
+          node scripts/seed-demo.cjs --profile-only
+      - name: Start isolated preview
+        run: |
+          node lib/server/server.js >docs/a11y-server.log 2>&1 &
+          node scripts/wait-preview.cjs
+      - name: Check rendered routes and open dialogs
+        run: npm run test:a11y
+      - name: Keep diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: accessibility-results
+          path: |
+            docs/verification/a11y/results.json
+            docs/a11y-server.log

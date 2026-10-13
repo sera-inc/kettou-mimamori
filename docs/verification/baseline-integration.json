@@ -1,0 +1,961 @@
+{
+  "stats": {
+    "suites": 159,
+    "tests": 707,
+    "passes": 698,
+    "pending": 3,
+    "failures": 6,
+    "start": "2026-10-12T13:14:25.701Z",
+    "end": "2026-10-12T13:16:09.842Z",
+    "duration": 104141
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/XX_clean.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:25.966Z",
+        "end": "2026-10-12T13:14:27.305Z",
+        "duration": 1339
+      }
+    },
+    {
+      "file": "tests/adminnotifies.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:27.578Z",
+        "end": "2026-10-12T13:14:27.585Z",
+        "duration": 7
+      }
+    },
+    {
+      "file": "tests/api.aaps-client.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 10,
+        "passes": 10,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:28.003Z",
+        "end": "2026-10-12T13:14:29.355Z",
+        "duration": 1352
+      }
+    },
+    {
+      "file": "tests/api.activity.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:29.718Z",
+        "end": "2026-10-12T13:14:31.342Z",
+        "duration": 1624
+      }
+    },
+    {
+      "file": "tests/api.alexa.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:31.712Z",
+        "end": "2026-10-12T13:14:32.865Z",
+        "duration": 1153
+      }
+    },
+    {
+      "file": "tests/api.deduplication.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:33.235Z",
+        "end": "2026-10-12T13:14:34.548Z",
+        "duration": 1313
+      }
+    },
+    {
+      "file": "tests/api.devicestatus.test.js",
+      "exitCode": 6,
+      "stats": {
+        "suites": 2,
+        "tests": 8,
+        "passes": 2,
+        "pending": 0,
+        "failures": 6,
+        "start": "2026-10-12T13:14:34.924Z",
+        "end": "2026-10-12T13:14:36.403Z",
+        "duration": 1479
+      }
+    },
+    {
+      "file": "tests/api.entries.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 21,
+        "passes": 21,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:36.868Z",
+        "end": "2026-10-12T13:14:40.972Z",
+        "duration": 4104
+      }
+    },
+    {
+      "file": "tests/api.entries.uuid.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 2,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:41.385Z",
+        "end": "2026-10-12T13:14:42.809Z",
+        "duration": 1424
+      }
+    },
+    {
+      "file": "tests/api.food.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:43.330Z",
+        "end": "2026-10-12T13:14:44.633Z",
+        "duration": 1303
+      }
+    },
+    {
+      "file": "tests/api.id-validation.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 3,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:45.008Z",
+        "end": "2026-10-12T13:14:46.181Z",
+        "duration": 1173
+      }
+    },
+    {
+      "file": "tests/api.objectid-validation.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:46.441Z",
+        "end": "2026-10-12T13:14:46.450Z",
+        "duration": 9
+      }
+    },
+    {
+      "file": "tests/api.partial-failures.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 8,
+        "tests": 14,
+        "passes": 14,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:46.817Z",
+        "end": "2026-10-12T13:14:48.196Z",
+        "duration": 1379
+      }
+    },
+    {
+      "file": "tests/api.profiles.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 3,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:48.598Z",
+        "end": "2026-10-12T13:14:50.127Z",
+        "duration": 1529
+      }
+    },
+    {
+      "file": "tests/api.root.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:50.674Z",
+        "end": "2026-10-12T13:14:51.746Z",
+        "duration": 1072
+      }
+    },
+    {
+      "file": "tests/api.security.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 2,
+        "tests": 16,
+        "passes": 16,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:52.677Z",
+        "end": "2026-10-12T13:14:53.871Z",
+        "duration": 1194
+      }
+    },
+    {
+      "file": "tests/api.shape-handling.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 14,
+        "tests": 69,
+        "passes": 69,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:54.273Z",
+        "end": "2026-10-12T13:14:56.749Z",
+        "duration": 2476
+      }
+    },
+    {
+      "file": "tests/api.status.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:57.144Z",
+        "end": "2026-10-12T13:14:58.267Z",
+        "duration": 1123
+      }
+    },
+    {
+      "file": "tests/api.treatments.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:14:58.640Z",
+        "end": "2026-10-12T13:15:00.172Z",
+        "duration": 1532
+      }
+    },
+    {
+      "file": "tests/api.unauthorized.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:00.670Z",
+        "end": "2026-10-12T13:15:02.932Z",
+        "duration": 2262
+      }
+    },
+    {
+      "file": "tests/api.v1-batch-operations.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 6,
+        "tests": 10,
+        "passes": 9,
+        "pending": 1,
+        "failures": 0,
+        "start": "2026-10-12T13:15:03.369Z",
+        "end": "2026-10-12T13:15:04.589Z",
+        "duration": 1220
+      }
+    },
+    {
+      "file": "tests/api.verifyauth.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:04.947Z",
+        "end": "2026-10-12T13:15:06.031Z",
+        "duration": 1084
+      }
+    },
+    {
+      "file": "tests/api3.aaps-patterns.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 6,
+        "tests": 13,
+        "passes": 13,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:06.722Z",
+        "end": "2026-10-12T13:15:09.487Z",
+        "duration": 2765
+      }
+    },
+    {
+      "file": "tests/api3.basic.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:10.222Z",
+        "end": "2026-10-12T13:15:11.275Z",
+        "duration": 1053
+      }
+    },
+    {
+      "file": "tests/api3.create.operation.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:11.571Z",
+        "end": "2026-10-12T13:15:11.586Z",
+        "duration": 15
+      }
+    },
+    {
+      "file": "tests/api3.create.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 29,
+        "passes": 29,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:12.270Z",
+        "end": "2026-10-12T13:15:14.098Z",
+        "duration": 1828
+      }
+    },
+    {
+      "file": "tests/api3.delete.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:14.936Z",
+        "end": "2026-10-12T13:15:17.067Z",
+        "duration": 2131
+      }
+    },
+    {
+      "file": "tests/api3.generic.workflow.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 23,
+        "passes": 23,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:17.874Z",
+        "end": "2026-10-12T13:15:20.733Z",
+        "duration": 2859
+      }
+    },
+    {
+      "file": "tests/api3.patch.operation.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:21.154Z",
+        "end": "2026-10-12T13:15:21.169Z",
+        "duration": 15
+      }
+    },
+    {
+      "file": "tests/api3.patch.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 16,
+        "passes": 16,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:21.978Z",
+        "end": "2026-10-12T13:15:24.382Z",
+        "duration": 2404
+      }
+    },
+    {
+      "file": "tests/api3.read.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 11,
+        "passes": 11,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:25.125Z",
+        "end": "2026-10-12T13:15:27.404Z",
+        "duration": 2279
+      }
+    },
+    {
+      "file": "tests/api3.renderer.security.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:27.855Z",
+        "end": "2026-10-12T13:15:27.890Z",
+        "duration": 35
+      }
+    },
+    {
+      "file": "tests/api3.renderer.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:28.627Z",
+        "end": "2026-10-12T13:15:31.060Z",
+        "duration": 2433
+      }
+    },
+    {
+      "file": "tests/api3.search.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 8,
+        "tests": 147,
+        "passes": 147,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:31.793Z",
+        "end": "2026-10-12T13:15:38.176Z",
+        "duration": 6383
+      }
+    },
+    {
+      "file": "tests/api3.security.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:38.866Z",
+        "end": "2026-10-12T13:15:41.245Z",
+        "duration": 2379
+      }
+    },
+    {
+      "file": "tests/api3.shape-handling.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 11,
+        "passes": 11,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:41.967Z",
+        "end": "2026-10-12T13:15:43.250Z",
+        "duration": 1283
+      }
+    },
+    {
+      "file": "tests/api3.socket.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:43.946Z",
+        "end": "2026-10-12T13:15:45.026Z",
+        "duration": 1080
+      }
+    },
+    {
+      "file": "tests/api3.storage.find.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:45.472Z",
+        "end": "2026-10-12T13:15:45.491Z",
+        "duration": 19
+      }
+    },
+    {
+      "file": "tests/api3.storage.modify.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 3,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:45.914Z",
+        "end": "2026-10-12T13:15:45.937Z",
+        "duration": 23
+      }
+    },
+    {
+      "file": "tests/api3.storage.utils.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:46.462Z",
+        "end": "2026-10-12T13:15:46.524Z",
+        "duration": 62
+      }
+    },
+    {
+      "file": "tests/api3.update.operation.security.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:46.870Z",
+        "end": "2026-10-12T13:15:46.878Z",
+        "duration": 8
+      }
+    },
+    {
+      "file": "tests/api3.update.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 20,
+        "passes": 20,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:47.594Z",
+        "end": "2026-10-12T13:15:49.856Z",
+        "duration": 2262
+      }
+    },
+    {
+      "file": "tests/api3.xss-purification.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:50.639Z",
+        "end": "2026-10-12T13:15:53.398Z",
+        "duration": 2759
+      }
+    },
+    {
+      "file": "tests/client.renderer.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 9,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:53.741Z",
+        "end": "2026-10-12T13:15:53.756Z",
+        "duration": 15
+      }
+    },
+    {
+      "file": "tests/dbsize.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 11,
+        "passes": 11,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:54.192Z",
+        "end": "2026-10-12T13:15:54.216Z",
+        "duration": 24
+      }
+    },
+    {
+      "file": "tests/fail.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:54.541Z",
+        "end": "2026-10-12T13:15:54.549Z",
+        "duration": 8
+      }
+    },
+    {
+      "file": "tests/flakiness-control.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:54.794Z",
+        "end": "2026-10-12T13:15:54.831Z",
+        "duration": 37
+      }
+    },
+    {
+      "file": "tests/mongo-storage.retry.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:55.076Z",
+        "end": "2026-10-12T13:15:55.261Z",
+        "duration": 185
+      }
+    },
+    {
+      "file": "tests/mongo-storage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:55.587Z",
+        "end": "2026-10-12T13:15:55.821Z",
+        "duration": 234
+      }
+    },
+    {
+      "file": "tests/notifications-api.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:56.184Z",
+        "end": "2026-10-12T13:15:56.724Z",
+        "duration": 540
+      }
+    },
+    {
+      "file": "tests/notifications.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:56.993Z",
+        "end": "2026-10-12T13:15:57.011Z",
+        "duration": 18
+      }
+    },
+    {
+      "file": "tests/openaps.missingPill.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:57.336Z",
+        "end": "2026-10-12T13:15:57.372Z",
+        "duration": 36
+      }
+    },
+    {
+      "file": "tests/openaps.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:57.733Z",
+        "end": "2026-10-12T13:15:57.763Z",
+        "duration": 30
+      }
+    },
+    {
+      "file": "tests/pebble.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 2,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:15:58.120Z",
+        "end": "2026-10-12T13:16:00.388Z",
+        "duration": 2268
+      }
+    },
+    {
+      "file": "tests/pump.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 10,
+        "passes": 10,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:00.875Z",
+        "end": "2026-10-12T13:16:00.912Z",
+        "duration": 37
+      }
+    },
+    {
+      "file": "tests/pushnotify.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:01.161Z",
+        "end": "2026-10-12T13:16:01.267Z",
+        "duration": 106
+      }
+    },
+    {
+      "file": "tests/rawbg.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:01.538Z",
+        "end": "2026-10-12T13:16:01.550Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/reports.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 0,
+        "pending": 2,
+        "failures": 0,
+        "start": "2026-10-12T13:16:02.459Z",
+        "end": "2026-10-12T13:16:02.461Z",
+        "duration": 2
+      }
+    },
+    {
+      "file": "tests/reportstorage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:02.754Z",
+        "end": "2026-10-12T13:16:02.772Z",
+        "duration": 18
+      }
+    },
+    {
+      "file": "tests/storage.selector-hardening.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:03.328Z",
+        "end": "2026-10-12T13:16:03.370Z",
+        "duration": 42
+      }
+    },
+    {
+      "file": "tests/storage.shape-handling.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 10,
+        "tests": 31,
+        "passes": 31,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:03.634Z",
+        "end": "2026-10-12T13:16:05.430Z",
+        "duration": 1796
+      }
+    },
+    {
+      "file": "tests/websocket.input-validation.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:05.892Z",
+        "end": "2026-10-12T13:16:06.323Z",
+        "duration": 431
+      }
+    },
+    {
+      "file": "tests/websocket.shape-handling.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 10,
+        "tests": 18,
+        "passes": 18,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:06.655Z",
+        "end": "2026-10-12T13:16:08.258Z",
+        "duration": 1603
+      }
+    },
+    {
+      "file": "tests/websocket.xss-purification.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 3,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:08.606Z",
+        "end": "2026-10-12T13:16:09.822Z",
+        "duration": 1216
+      }
+    }
+  ],
+  "failures": [
+    {
+      "fullTitle": "Devicestatus API post a devicestatus, query, delete, verify gone",
+      "file": "tests/api.devicestatus.test.js",
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'equal')\n    at Test.<anonymous> (tests/api.devicestatus.test.js:59:14)\n    at Test.assert (node_modules/supertest/lib/test.js:204:10)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:61:53\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)",
+        "message": "Cannot read properties of undefined (reading 'equal')"
+      }
+    },
+    {
+      "fullTitle": "Devicestatus API _id validation should return 400 for POST with invalid UUID _id",
+      "file": "tests/api.devicestatus.test.js",
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'have')\n    at Context.<anonymous> (tests/api.devicestatus.test.js:113:10)\n    at process.processImmediate (node:internal/timers:484:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:114:32\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)",
+        "message": "Cannot read properties of undefined (reading 'have')"
+      }
+    },
+    {
+      "fullTitle": "Devicestatus API _id validation should return 400 for DELETE with invalid _id",
+      "file": "tests/api.devicestatus.test.js",
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'match')\n    at Context.<anonymous> (tests/api.devicestatus.test.js:141:10)\n    at process.processImmediate (node:internal/timers:484:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:142:40\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)",
+        "message": "Cannot read properties of undefined (reading 'match')"
+      }
+    },
+    {
+      "fullTitle": "Devicestatus API _id validation should accept POST with valid 24-hex _id",
+      "file": "tests/api.devicestatus.test.js",
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'be')\n    at Test.<anonymous> (tests/api.devicestatus.test.js:167:14)\n    at Test.assert (node_modules/supertest/lib/test.js:204:10)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:168:36\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)",
+        "message": "Cannot read properties of undefined (reading 'be')"
+      }
+    },
+    {
+      "fullTitle": "Devicestatus API _id validation should accept POST without _id (auto-generate)",
+      "file": "tests/api.devicestatus.test.js",
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'be')\n    at Context.<anonymous> (tests/api.devicestatus.test.js:195:10)\n    at process.processImmediate (node:internal/timers:484:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:196:32\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)",
+        "message": "Cannot read properties of undefined (reading 'be')"
+      }
+    },
+    {
+      "fullTitle": "Devicestatus API _id validation should return 400 for array POST with one invalid _id",
+      "file": "tests/api.devicestatus.test.js",
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'match')\n    at Context.<anonymous> (tests/api.devicestatus.test.js:225:10)\n    at process.processImmediate (node:internal/timers:484:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:226:40\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)",
+        "message": "Cannot read properties of undefined (reading 'match')"
+      }
+    }
+  ]
+}

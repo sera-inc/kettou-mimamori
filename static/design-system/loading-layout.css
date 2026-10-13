@@ -1,0 +1,11 @@
+.app-page-summary {display: grid;}
+.app-page-summary>.app-page-description,.app-page-summary>#centerMessagePanel {grid-area: 1/1;}
+.app-page-summary[data-loading-message="true"]>.app-page-description {visibility: hidden;}
+html body.app-page #centerMessagePanel {position: static;inset: auto;width: auto;height: auto;margin: var(--app-space-0);padding: var(--app-space-0);background: var(--app-surface-sunken);color: var(--app-text-muted);font-size: var(--app-text-body-size);line-height: var(--app-text-body-leading);}
+html body.app-page #loadingMessageText {margin: var(--app-space-0);}
+html body.app-page .app-reading-slot,html body.app-page .bgButton {position: relative;}
+html body.app-page .app-reading-slot {min-width: 0;}
+html body.app-page .app-reading-skeleton {position: absolute;inset: 0;height: 100%;pointer-events: none;}
+html body.app-page #app-chart-skeleton {position: absolute;inset: 0;height: 100%;pointer-events: none;z-index: var(--app-z-base);}
+html body.app-page #container:not(.app-loading-active) .app-skeleton {display: none;}
+html body.app-page #container.app-loading-active :is(.bgSpan,#currentTime) {visibility: hidden;}

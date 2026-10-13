@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-10-13T03:30:54.302Z",
+  "scope": "Real desktop/mobile default and stored language/time settings, failed dictionary request with bundled Japanese, explicit English compatibility, native settings save/reload, no API writes",
+  "results": [
+    {
+      "viewport": "desktop",
+      "scenario": "default",
+      "pass": true,
+      "initial": {
+        "language": "ja",
+        "timeFormat": 24,
+        "time": "13:05",
+        "auth": "この端末を認証",
+        "directions": "横ばい"
+      },
+      "languageOptions": 30,
+      "apiWrites": []
+    },
+    {
+      "viewport": "desktop",
+      "scenario": "stored-twelve",
+      "pass": true,
+      "initial": {
+        "language": "ja",
+        "timeFormat": 12,
+        "time": "1:05 午後",
+        "auth": "この端末を認証",
+        "directions": "横ばい"
+      },
+      "languageOptions": 30,
+      "apiWrites": []
+    },
+    {
+      "viewport": "desktop",
+      "scenario": "dictionary-fallback",
+      "pass": true,
+      "initial": {
+        "language": "ja",
+        "timeFormat": 24,
+        "time": "13:05",
+        "auth": "この端末を認証",
+        "directions": "横ばい"
+      },
+      "languageOptions": 30,
+      "apiWrites": []
+    },
+    {
+      "viewport": "desktop",
+      "scenario": "explicit-english",
+      "pass": true,
+      "initial": {
+        "language": "en",
+        "timeFormat": 12,
+        "time": "1:05 pm",
+        "auth": "Device authentication",
+        "directions": "holding"
+      },
+      "languageOptions": 30,
+      "apiWrites": []
+    },
+    {
+      "viewport": "mobile",
+      "scenario": "default",
+      "pass": true,
+      "initial": {
+        "language": "ja",
+        "timeFormat": 24,
+        "time": "13:05",
+        "auth": "この端末を認証",
+        "directions": "横ばい"
+      },
+      "languageOptions": 30,
+      "apiWrites": []
+    },
+    {
+      "viewport": "mobile",
+      "scenario": "stored-twelve",
+      "pass": true,
+      "initial": {
+        "language": "ja",
+        "timeFormat": 12,
+        "time": "1:05 午後",
+        "auth": "この端末を認証",
+        "directions": "横ばい"
+      },
+      "languageOptions": 30,
+      "apiWrites": []
+    },
+    {
+      "viewport": "mobile",
+      "scenario": "dictionary-fallback",
+      "pass": true,
+      "initial": {
+        "language": "ja",
+        "timeFormat": 24,
+        "time": "13:05",
+        "auth": "この端末を認証",
+        "directions": "横ばい"
+      },
+      "languageOptions": 30,
+      "apiWrites": []
+    },
+    {
+      "viewport": "mobile",
+      "scenario": "explicit-english",
+      "pass": true,
+      "initial": {
+        "language": "en",
+        "timeFormat": 12,
+        "time": "1:05 pm",
+        "auth": "Device authentication",
+        "directions": "holding"
+      },
+      "languageOptions": 30,
+      "apiWrites": []
+    }
+  ]
+}

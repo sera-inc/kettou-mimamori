@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 16,
+    "tests": 57,
+    "passes": 57,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-12T16:50:01.192Z",
+    "end": "2026-10-12T16:50:41.365Z",
+    "duration": 40174
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/api.profiles.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 3,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:01.716Z",
+        "end": "2026-10-12T16:50:03.263Z",
+        "duration": 1547
+      }
+    },
+    {
+      "file": "tests/api3.socket.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:04.096Z",
+        "end": "2026-10-12T16:50:05.944Z",
+        "duration": 1848
+      }
+    },
+    {
+      "file": "tests/bootevent-debounce.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 6,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:06.315Z",
+        "end": "2026-10-12T16:50:38.359Z",
+        "duration": 32044
+      }
+    },
+    {
+      "file": "tests/bridge-connect-compat.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:38.734Z",
+        "end": "2026-10-12T16:50:38.747Z",
+        "duration": 13
+      }
+    },
+    {
+      "file": "tests/mongo-storage.retry.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:39.104Z",
+        "end": "2026-10-12T16:50:39.318Z",
+        "duration": 214
+      }
+    },
+    {
+      "file": "tests/mongo-storage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:39.700Z",
+        "end": "2026-10-12T16:50:39.972Z",
+        "duration": 272
+      }
+    },
+    {
+      "file": "tests/profileeditor.records.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:40.262Z",
+        "end": "2026-10-12T16:50:40.274Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/profileeditor.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:40.573Z",
+        "end": "2026-10-12T16:50:40.579Z",
+        "duration": 6
+      }
+    },
+    {
+      "file": "tests/server.security-headers.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 10,
+        "passes": 10,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:50:41.214Z",
+        "end": "2026-10-12T16:50:41.352Z",
+        "duration": 138
+      }
+    }
+  ],
+  "failures": []
+}

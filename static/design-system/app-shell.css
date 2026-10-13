@@ -1,0 +1,77 @@
+/* HTML adaptation of DDS AppShell; all visual values use semantic tokens. */
+[hidden] {display: none !important;}
+.app-page {
+  box-sizing: border-box;
+  margin: var(--app-space-0);
+  padding-top: var(--app-header-height);
+  padding-left: var(--app-nav-width);
+  background: var(--app-surface-sunken);
+  color: var(--app-text);
+  font-family: var(--app-font-sans);
+  font-size: var(--app-text-body-size);
+  line-height: var(--app-text-body-leading);
+}
+.app-skip-link {position: fixed;top: var(--app-space-1);left: var(--app-space-1);z-index: var(--app-z-toast);width: 1px;height: 1px;overflow: hidden;clip-path: inset(50%);}
+.app-skip-link:focus-visible {width: auto;height: auto;clip-path: none;padding: var(--app-space-2);background: var(--app-surface);color: var(--app-text-link);outline: var(--app-focus-ring-width) solid var(--app-focus-ring);outline-offset: var(--app-focus-ring-offset);}
+html body.app-page #toolbar {
+  box-sizing: border-box;position: fixed;inset: 0 0 auto 0;z-index: var(--app-z-sticky);display: flex;align-items: center;gap: var(--app-space-2);height: var(--app-header-height);margin: var(--app-space-0);padding: var(--app-space-1) var(--app-space-3);border-bottom: 1px solid var(--app-border);background: var(--app-surface);color: var(--app-text);font-size: var(--app-text-body-size);
+}
+.app-brand {color: var(--app-primary);text-decoration: none;white-space: nowrap;}
+html body.app-page #toolbar .customTitle {display: inline;position: static;margin: var(--app-space-0);font-family: var(--app-font-sans);font-size: var(--app-text-heading-sm-size);font-weight: var(--app-font-weight-bold);line-height: var(--app-text-heading-sm-leading);text-shadow: none;}
+html body.app-page #toolbar .customTitle::before {display: none;}
+html body.app-page #buttonbar {display: flex;align-items: center;gap: var(--app-space-1);margin: 0 0 0 auto;font-size: var(--app-text-body-size);}
+html body.app-page #buttonbar>a,html body.app-page .closeButton {display: inline-flex;position: static;align-items: center;justify-content: center;box-sizing: border-box;min-width: var(--app-row-height);min-height: var(--app-row-height);margin: var(--app-space-0);padding: var(--app-space-1);border: 1px solid var(--app-border);border-radius: var(--app-radius-sm);background: var(--app-surface);color: var(--app-primary);text-decoration: none;font-size: var(--app-text-body-size);}
+html body.app-page .closeButton {margin-left: auto;white-space: nowrap;}
+html body.app-page #toolbar {justify-content: flex-start;}
+html body.app-page #toolbar .closeButton {position: static;transform: none;inset: auto;width: auto;height: auto;min-width: var(--app-row-height);min-height: var(--app-row-height);padding: var(--app-space-1);}
+html body.app-page #buttonbar {position: static;width: auto;height: auto;opacity: 1;}
+.app-nav {box-sizing: border-box;position: fixed;top: var(--app-header-height);left: 0;bottom: 0;z-index: var(--app-z-drawer);width: var(--app-nav-width);padding: var(--app-space-2) var(--app-space-1);overflow-y: auto;border-right: 1px solid var(--app-border);background: var(--app-surface);}
+.app-nav-section {margin: var(--app-space-3) var(--app-space-2) var(--app-space-1);color: var(--app-text-muted);font-size: var(--app-text-label-size);font-weight: var(--app-font-weight-bold);}
+.app-nav-item {display: flex;align-items: center;box-sizing: border-box;min-height: var(--app-row-height);margin: var(--app-space-05) var(--app-space-0);padding: var(--app-space-1) var(--app-space-2);border-radius: var(--app-radius-sm);color: var(--app-text);text-decoration: none;}
+.app-nav-item:hover {background: var(--app-surface-hover);text-decoration: underline;}
+.app-nav-item[aria-current="page"] {background: var(--app-primary-bg);color: var(--app-primary);font-weight: var(--app-font-weight-bold);box-shadow: inset 0.1875rem 0 0 var(--app-primary);}
+.app-page :is(a,button,[tabindex]):focus-visible {outline: var(--app-focus-ring-width) solid var(--app-focus-ring);outline-offset: var(--app-focus-ring-offset);}
+html body #app-nav-toggle,html body #app-nav-close {display: none;}
+html body.app-page .app-main {box-sizing: border-box;max-width: var(--app-content-max);margin: var(--app-space-0) auto;padding: var(--app-space-3);}
+.app-page-title {margin-bottom: var(--app-space-3);}
+.app-page-title h1 {margin: var(--app-space-0) var(--app-space-0) var(--app-space-1);font-size: var(--app-text-heading-lg-size);font-weight: var(--app-font-weight-bold);line-height: var(--app-text-heading-lg-leading);}
+.app-page-title p {margin: var(--app-space-0);color: var(--app-text-muted);}
+html body.app-page .primary {display: grid;grid-template-columns: minmax(0,1.25fr) minmax(0,1fr);gap: var(--app-space-2);white-space: normal;}
+html body.app-page :is(.bgStatus,.status) {box-sizing: border-box;float: none;width: auto;min-width: 0;padding: var(--app-space-3);border: 1px solid var(--app-border);border-radius: var(--app-radius-lg);background: var(--app-surface);text-align: left;}
+.app-kpi-label {margin: var(--app-space-0) var(--app-space-0) var(--app-space-2);font-size: var(--app-text-body-size);font-weight: var(--app-font-weight-bold);color: var(--app-text-muted);}
+html body.app-page .bgButton {width: auto;margin: var(--app-space-0);padding: var(--app-space-0);border: 0;background: transparent;}
+html body.app-page .bgStatus .currentBG {font-size: var(--app-text-display-size);line-height: var(--app-text-display-leading);}
+html body.app-page .bgStatus .pill.direction {font-size: var(--app-text-heading-lg-size);line-height: var(--app-text-heading-lg-leading);}
+html body.app-page :is(.majorPills,.minorPills,.statusPills) {font-size: var(--app-text-body-size);line-height: var(--app-text-body-leading);}
+html body.app-page .statusBox {width: auto;text-align: left;}
+html body.app-page #currentTime {font-size: var(--app-text-display-sm-size);line-height: var(--app-text-display-sm-leading);}
+html body.app-page .primary>div:empty {display: none;}
+html body.app-page .focus-range {position: static;inset: auto;width: auto;grid-column: 1/-1;display: flex;flex-wrap: wrap;gap: var(--app-space-1);margin: var(--app-space-0);padding: var(--app-space-0);list-style: none;font-size: var(--app-text-body-size);}
+html body.app-page .focus-range li {display: block;margin: var(--app-space-0);padding: var(--app-space-0);border: 0;}
+html body.app-page #container .focus-range li>button {background: var(--app-surface);color: var(--app-primary);}
+html body.app-page #container .focus-range li>button:hover {background: var(--app-primary-bg);}
+html body.app-page #container .focus-range li.selected>button {background: var(--app-primary);color: var(--app-primary-text);}
+html body.app-page #chartContainer {position: fixed;left: calc(var(--app-nav-width) + var(--app-space-3));right: var(--app-space-3);padding: var(--app-space-0);border: 1px solid var(--app-border);border-radius: var(--app-radius-md);background: var(--app-surface);font-size: var(--app-text-body-size);}
+html body.app-page #notification {z-index: var(--app-z-toast);color: var(--app-info-text);background: var(--app-info-bg);}
+html body.app-page .authentication-status {margin: var(--app-space-3) 0;color: var(--app-text-muted);font-size: var(--app-text-body-sm-size);}
+.app-nav-open {overflow: hidden;}
+#app-nav-backdrop {position: fixed;inset: 0;z-index: var(--app-z-sticky);background: var(--app-text);opacity: 0.25;}
+@media (max-width: 767px) {
+  .app-page {padding-left: var(--app-space-0);}
+  html body.app-page #toolbar {gap: var(--app-space-1);padding: var(--app-space-1);}
+  html body #app-nav-toggle,html body #app-nav-close {display: inline-flex;}
+  .app-nav {top: 0;max-width: calc(100vw - var(--app-space-4));width: var(--app-nav-width);transform: translateX(-100%);visibility: hidden;}
+  .app-nav[data-open="true"] {transform: translateX(0);visibility: visible;}
+  html body.app-page .app-main {padding: var(--app-space-2);}
+  html body.app-page .primary {grid-template-columns: minmax(0,1fr);}
+  html body.app-page :is(.bgStatus,.status) {padding: var(--app-space-2);}
+  html body.app-page .closeButton {font-size: var(--app-text-body-sm-size);}
+  html body.app-page #chartContainer {left: var(--app-space-2);right: var(--app-space-2);}
+  html body.app-page #buttonbar {gap: var(--app-space-05);}
+  html body.app-page #toolbar .customTitle {font-size: var(--app-text-body-size);}
+}
+@media (prefers-reduced-motion: reduce) {.app-page *, .app-page *::before,.app-page *::after {animation-duration: 0s !important;transition-duration: 0s !important;scroll-behavior: auto !important;}}
+/* Let the page scroll when cards and controls leave too little chart height. */
+@media (max-width: 767px), (max-height: 700px) {
+  html body.app-page #chartContainer {position: relative;top: auto !important;left: auto;right: auto;box-sizing: border-box;width: 100%;min-height: 24rem;margin-top: var(--app-space-2);}
+}

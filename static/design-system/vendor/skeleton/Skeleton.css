@@ -1,0 +1,73 @@
+.app-skeleton {
+  display: block;
+  width: 100%;
+  background-color: var(--app-surface-sunken);
+  /* シマー: surface-sunken → surface-hover 系のグラデーションを掃引する（設計書 §4.2.5） */
+  background-image: linear-gradient(
+    90deg,
+    var(--app-surface-sunken) 25%,
+    var(--app-surface-hover) 37%,
+    var(--app-surface) 45%,
+    var(--app-surface-hover) 53%,
+    var(--app-surface-sunken) 65%
+  );
+  background-size: 400% 100%;
+  border-radius: var(--app-radius-xs);
+  animation: app-skeleton-shimmer 1.4s ease infinite;
+}
+
+.app-skeleton[data-shape="text"] {
+  /* 周囲のフォントサイズに追従し、実テキストとの寸法差を最小にする */
+  height: 1em;
+}
+
+.app-skeleton[data-shape="rect"] {
+  height: 4rem;
+  border-radius: var(--app-radius-sm);
+}
+
+.app-skeleton[data-shape="circle"] {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--app-radius-full);
+  flex-shrink: 0;
+}
+
+@keyframes app-skeleton-shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* アニメーション停止（設計書 §4.2.5 必須） */
+@media (prefers-reduced-motion: reduce) {
+  .app-skeleton {
+    animation: none;
+    background-image: none;
+  }
+}
+
+@media (forced-colors: active) {
+  /* 強制カラーでは背景が失われるため、輪郭でプレースホルダを知覚可能にする */
+  .app-skeleton {
+    border: 1px solid CanvasText;
+  }
+}
+
+/* 視覚非表示の読み込みラベル（支援技術にのみ公開） */
+.app-skeleton-group__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

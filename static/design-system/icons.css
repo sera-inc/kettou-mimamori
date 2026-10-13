@@ -1,0 +1,27 @@
+/* Original line icons. Keep existing classes, names and handlers. */
+html body [class^="icon-"]::before,html body [class*=" icon-"]::before {content:"";display:inline-block;width:1em;height:1em;vertical-align:-0.125em;margin-inline:0.2em;background-color:currentColor;mask:var(--app-icon) center/contain no-repeat;-webkit-mask:var(--app-icon) center/contain no-repeat;font-family:inherit;}
+html body .icon-help-circled {--app-icon:url("/brand/icons/help-circled.svg");}
+html body .icon-angle-double-up {--app-icon:url("/brand/icons/angle-double-up.svg");}
+html body .icon-angle-double-down {--app-icon:url("/brand/icons/angle-double-down.svg");}
+html body .icon-menu {--app-icon:url("/brand/icons/menu.svg");}
+html body .icon-cog {--app-icon:url("/brand/icons/cog.svg");}
+html body .icon-cancel-circled {--app-icon:url("/brand/icons/cancel-circled.svg");}
+html body .icon-volume {--app-icon:url("/brand/icons/volume.svg");}
+html body .icon-plus {--app-icon:url("/brand/icons/plus.svg");}
+html body .icon-hourglass {--app-icon:url("/brand/icons/hourglass.svg");}
+html body .icon-calc {--app-icon:url("/brand/icons/calc.svg");}
+html body .icon-tint {--app-icon:url("/brand/icons/tint.svg");}
+html body .icon-chart-line {--app-icon:url("/brand/icons/chart-line.svg");}
+html body .icon-sort-numeric {--app-icon:url("/brand/icons/sort-numeric.svg");}
+html body .icon-edit {--app-icon:url("/brand/icons/edit.svg");}
+html body .icon-lock {--app-icon:url("/brand/icons/lock.svg");}
+html body .icon-lock-open {--app-icon:url("/brand/icons/lock-open.svg");}
+html body .icon-trash-empty {--app-icon:url("/brand/icons/trash-empty.svg");}
+html body .icon-up {--app-icon:url("/brand/icons/up.svg");}
+html body .icon-copy {--app-icon:url("/brand/icons/copy.svg");}
+html body .icon-check {--app-icon:url("/brand/icons/check.svg");}
+html body .icon-battery-25 {--app-icon:url("/brand/icons/battery-25.svg");}
+html body .icon-battery-50 {--app-icon:url("/brand/icons/battery-50.svg");}
+html body .icon-battery-75 {--app-icon:url("/brand/icons/battery-75.svg");}
+html body .icon-battery-100 {--app-icon:url("/brand/icons/battery-100.svg");}
+@media (forced-colors:active) {html body [class^="icon-"]::before,html body [class*=" icon-"]::before {forced-color-adjust:none;background-color:CanvasText;}}

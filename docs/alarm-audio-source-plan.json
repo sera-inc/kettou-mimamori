@@ -1,0 +1,30 @@
+[
+  {
+    "file": "lib/client/index.js",
+    "before": "  var history = 48;",
+    "after": "  var history = 48;\r\n  var audioNoticeId;\r\n  var alarmAudio = require('./alarm-audio')(function playbackFailed () {\r\n    audioNoticeId = client.browserUtils.showNotification(client.translate('Alarm audio could not play. Use the check notification sound button to enable it.'), 'warn');\r\n  }, function playbackRecovered () {\r\n    if (window.KettouToast && audioNoticeId) {\r\n      window.KettouToast.dismiss(audioNoticeId);\r\n      audioNoticeId = undefined;\r\n    }\r\n  });",
+    "beforeSourceSHA256": "90649ee1f43713d55be23076c59c0eba5373ee9dcd0b8a6db7a1645748242afe",
+    "reason": "Handle actual browser playback rejection without altering clinical alarm state, ack, sound selection or mute behavior; dismiss only the owned notice after successful retry"
+  },
+  {
+    "file": "lib/client/index.js",
+    "before": "      audio.play();",
+    "after": "      alarmAudio.play(audio);",
+    "beforeSourceSHA256": "29b9006d23c69596c0ed85ab5a23ffbd6a3fdbd420a88d673fb1067f8203cfcb",
+    "reason": "Call the original audio element through a promise rejection handler"
+  },
+  {
+    "file": "lib/client/index.js",
+    "before": "new SpeechSynthesisUtterance('Ok ok.')",
+    "after": "new SpeechSynthesisUtterance(client.translate('Notification sound check'))",
+    "beforeSourceSHA256": "210a01c8230f88b5d4128b1b16627a596334781eb974e593d5df466ef47082b1",
+    "reason": "Use the selected locale for the existing speech test text"
+  },
+  {
+    "file": "lib/client/index.js",
+    "before": "msg.lang = 'en-US';",
+    "after": "msg.lang = client.language.speechCode;",
+    "beforeSourceSHA256": "9b08090d776d46e38c6b1b00de40513955b8bf42ac5f7d03b0d4c502cf3e661a",
+    "reason": "Use the existing selected language speech code for the speech test"
+  }
+]

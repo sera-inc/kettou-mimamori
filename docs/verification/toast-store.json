@@ -1,0 +1,14 @@
+[
+  {
+    "case": "maximum three visible notifications, FIFO promotion and minimum five-second display",
+    "pass": true
+  },
+  {
+    "case": "hover and focus both pause timers until every pause reason is released",
+    "pass": true
+  },
+  {
+    "case": "notifications requiring action remain until explicitly dismissed",
+    "pass": true
+  }
+]

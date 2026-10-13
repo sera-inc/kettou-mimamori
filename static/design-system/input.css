@@ -1,0 +1,32 @@
+/* Layer 3 adapter for DADS input-text. Input types and validity are native. */
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,#main,main,.app-input-preview) input:is(:not([type]),[type="text"],[type="number"],[type="password"],[type="email"],[type="search"],[type="url"],[type="tel"],[type="date"],[type="time"],[type="datetime-local"]) {
+  box-sizing: border-box;
+  min-height: var(--app-row-height);
+  min-width: 6rem;
+  max-width: 100%;
+  padding: var(--app-space-1) var(--app-space-2);
+  border: 1px solid var(--app-border-strong);
+  border-radius: var(--app-radius-md);
+  background: var(--app-surface);
+  color: var(--app-text);
+  font-family: var(--app-font-sans);
+  font-size: var(--app-text-body-size);
+  font-weight: var(--app-font-weight-normal);
+  line-height: var(--app-text-body-leading);
+  letter-spacing: var(--app-text-body-tracking);
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,#main,main,.app-input-preview) input[readonly]:not(:disabled) {border-style: dashed;}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,#main,main,.app-input-preview) input:is(:focus-visible) {
+  outline: var(--app-focus-ring-width) solid var(--app-focus-ring);
+  outline-offset: var(--app-focus-ring-offset);
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,#main,main,.app-input-preview) input:is(:user-invalid,[aria-invalid="true"]) {
+  border-color: var(--app-danger-border);
+  background: var(--app-danger-bg);
+}
+html :is(body,#pe_form,#fe_form,#drawer,#treatmentDrawer,#boluscalcDrawer,#main,main,.app-input-preview) input:is(:disabled,[aria-disabled="true"]) {
+  background: var(--app-surface-sunken);
+  color: var(--app-text-muted);
+  border-color: var(--app-border);
+}
+.app-input-error {color: var(--app-danger-text);}

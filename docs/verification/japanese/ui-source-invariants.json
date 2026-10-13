@@ -1,0 +1,93 @@
+[
+  {
+    "file": "views/index.html",
+    "pass": true,
+    "displayExpressions": 8,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": false
+  },
+  {
+    "file": "lib/client/boluscalc.js",
+    "pass": true,
+    "displayExpressions": 8,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": true
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "pass": true,
+    "displayExpressions": 7,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": true
+  },
+  {
+    "file": "lib/report_plugins/loopalyzer.js",
+    "pass": true,
+    "displayExpressions": 1,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": true
+  },
+  {
+    "file": "lib/report_plugins/glucosedistribution.js",
+    "pass": true,
+    "displayExpressions": 2,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": true
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "pass": true,
+    "displayExpressions": 3,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": true
+  },
+  {
+    "file": "lib/plugins/cannulaage.js",
+    "pass": true,
+    "displayExpressions": 1,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": true
+  },
+  {
+    "file": "lib/plugins/batteryage.js",
+    "pass": true,
+    "displayExpressions": 1,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": true
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "pass": true,
+    "displayExpressions": 6,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": true
+  },
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "pass": true,
+    "displayExpressions": 8,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": false
+  },
+  {
+    "file": "lib/report_plugins/profiles.js",
+    "pass": true,
+    "displayExpressions": 1,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": false
+  },
+  {
+    "file": "lib/food/food.js",
+    "pass": true,
+    "displayExpressions": 6,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": false
+  },
+  {
+    "file": "lib/plugins/pluginbase.js",
+    "pass": true,
+    "displayExpressions": 2,
+    "exactSource": true,
+    "astCheckedByOriginalPlan": false
+  }
+]

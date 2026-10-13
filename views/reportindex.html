@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title>Nightscout Reporting</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>レポート | 血糖みまもり</title>
   
   <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
@@ -31,13 +33,13 @@
   <%- include('preloadCSS')%>
   
 </head>
-  <body>
+  <body class="app-page" data-page="report">
     <%- include('partials/toolbar') %>
-
+  <main id="app-main" class="app-main" tabindex="-1">
+  <%- include('partials/page-title') %>
   <ul id="tabnav">
   </ul>
-  <main>
-    <table>
+    <table class="app-report-filters" role="presentation">
       <tr>
         <td><input type="checkbox" id="rp_enabledate" checked></td>
         <td>
@@ -120,9 +122,8 @@
     <div id="info"></div>
     <hr>
     <div id="pluginchartplaceholders"></div>
-  </main>
-
   <%- include('partials/authentication-status') %>
+  </main>
 
   <script src="<%= locals.bundle %>/js/bundle.app.js"></script>
   <script src="/socket.io/socket.io.js"></script>

@@ -1,0 +1,37 @@
+
+> kettou-mimamori@15.0.8 lint
+> eslint lib
+
+
+C:\Users\kny12\OneDrive\ドキュメント\ChatGPT\医療\sera-glucose\lib\api\entries\index.js
+  656:16  warning  Found non-literal argument to RegExp Constructor  security/detect-non-literal-regexp
+
+C:\Users\kny12\OneDrive\ドキュメント\ChatGPT\医療\sera-glucose\lib\middleware\express-extension-to-accept.js
+  19:16  warning  Found non-literal argument to RegExp Constructor  security/detect-non-literal-regexp
+
+C:\Users\kny12\OneDrive\ドキュメント\ChatGPT\医療\sera-glucose\lib\profilefunctions.js
+  220:30  warning  Unsafe Regular Expression  security/detect-unsafe-regex
+
+C:\Users\kny12\OneDrive\ドキュメント\ChatGPT\医療\sera-glucose\lib\server\app.js
+   14:7   warning  Found existsSync from package "fs" with non literal argument at index 0    security/detect-non-literal-fs-filename
+   16:7   warning  Found existsSync from package "fs" with non literal argument at index 0    security/detect-non-literal-fs-filename
+   18:7   warning  Found existsSync from package "fs" with non literal argument at index 0    security/detect-non-literal-fs-filename
+  174:21  warning  Found readFileSync from package "fs" with non literal argument at index 0  security/detect-non-literal-fs-filename
+  303:23  warning  Found readFileSync from package "fs" with non literal argument at index 0  security/detect-non-literal-fs-filename
+  304:23  warning  Found readFileSync from package "fs" with non literal argument at index 0  security/detect-non-literal-fs-filename
+
+C:\Users\kny12\OneDrive\ドキュメント\ChatGPT\医療\sera-glucose\lib\server\enclave.js
+  23:9   warning  Found existsSync from package "fs" with non literal argument at index 0    security/detect-non-literal-fs-filename
+  24:14  warning  Found readFileSync from package "fs" with non literal argument at index 0  security/detect-non-literal-fs-filename
+
+C:\Users\kny12\OneDrive\ドキュメント\ChatGPT\医療\sera-glucose\lib\server\env.js
+   70:12  warning  Found readFileSync from package "fs" with non literal argument at index 0  security/detect-non-literal-fs-filename
+   71:15  warning  Found readFileSync from package "fs" with non literal argument at index 0  security/detect-non-literal-fs-filename
+   74:16  warning  Found readFileSync from package "fs" with non literal argument at index 0  security/detect-non-literal-fs-filename
+  238:14  warning  Found readFileSync from package "fs" with non literal argument at index 0  security/detect-non-literal-fs-filename
+
+C:\Users\kny12\OneDrive\ドキュメント\ChatGPT\医療\sera-glucose\lib\server\query.js
+  253:12  warning  Found non-literal argument to RegExp Constructor  security/detect-non-literal-regexp
+
+✖ 16 problems (0 errors, 16 warnings)
+

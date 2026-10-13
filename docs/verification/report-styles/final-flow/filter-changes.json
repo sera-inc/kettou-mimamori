@@ -1,0 +1,22 @@
+[
+  {
+    "id": "rp_to",
+    "value": "2026-10-13",
+    "stack": "Error\n    at HTMLInputElement.set [as value] (<anonymous>:6:113)\n    at HTMLInputElement.<anonymous> (http://localhost:8410/bundle/js/bundle.app.js:2:1548319)\n    at k.each (http://localhost:8410/bundle/js/bundle.app.js:2:1484168)\n    at k.fn.init.each (http://localhost:8410/bundle/js/bundle.app.js:2:1482654)\n    at k.fn.init.val (http://localhost:8410/bundle/js/bundle.app.js:2:1548014)\n    at S (http://localhost:8410/bundle/js/bundle.app.js:2:326203)\n    at http://localhost:8410/bundle/js/bundle.app.js:2:317010\n    at Socket.<anonymous> (http://localhost:8410/bundle/js/bundle.app.js:2:133715)\n    at Socket.onack (http://localhost:8410/socket.io/socket.io.js:4136:11)\n    at Socket.onpacket (http://localhost:8410/socket.io/socket.io.js:4040:16)"
+  },
+  {
+    "id": "rp_from",
+    "value": "2026-10-07",
+    "stack": "Error\n    at HTMLInputElement.set [as value] (<anonymous>:6:113)\n    at HTMLInputElement.<anonymous> (http://localhost:8410/bundle/js/bundle.app.js:2:1548319)\n    at k.each (http://localhost:8410/bundle/js/bundle.app.js:2:1484168)\n    at k.fn.init.each (http://localhost:8410/bundle/js/bundle.app.js:2:1482654)\n    at k.fn.init.val (http://localhost:8410/bundle/js/bundle.app.js:2:1548014)\n    at S (http://localhost:8410/bundle/js/bundle.app.js:2:326247)\n    at http://localhost:8410/bundle/js/bundle.app.js:2:317010\n    at Socket.<anonymous> (http://localhost:8410/bundle/js/bundle.app.js:2:133715)\n    at Socket.onack (http://localhost:8410/socket.io/socket.io.js:4136:11)\n    at Socket.onpacket (http://localhost:8410/socket.io/socket.io.js:4040:16)"
+  },
+  {
+    "id": "rp_to",
+    "value": "2026-10-13",
+    "stack": "Error\n    at HTMLInputElement.set [as value] (<anonymous>:6:113)\n    at HTMLInputElement.<anonymous> (http://localhost:8410/bundle/js/bundle.app.js:2:1548319)\n    at k.each (http://localhost:8410/bundle/js/bundle.app.js:2:1484168)\n    at k.fn.init.each (http://localhost:8410/bundle/js/bundle.app.js:2:1482654)\n    at k.fn.init.val (http://localhost:8410/bundle/js/bundle.app.js:2:1548014)\n    at S (http://localhost:8410/bundle/js/bundle.app.js:2:326203)\n    at http://localhost:8410/bundle/js/bundle.app.js:2:317010\n    at Socket.<anonymous> (http://localhost:8410/bundle/js/bundle.app.js:2:133715)\n    at Socket.onack (http://localhost:8410/socket.io/socket.io.js:4136:11)\n    at Socket.onpacket (http://localhost:8410/socket.io/socket.io.js:4040:16)"
+  },
+  {
+    "id": "rp_from",
+    "value": "2026-10-07",
+    "stack": "Error\n    at HTMLInputElement.set [as value] (<anonymous>:6:113)\n    at HTMLInputElement.<anonymous> (http://localhost:8410/bundle/js/bundle.app.js:2:1548319)\n    at k.each (http://localhost:8410/bundle/js/bundle.app.js:2:1484168)\n    at k.fn.init.each (http://localhost:8410/bundle/js/bundle.app.js:2:1482654)\n    at k.fn.init.val (http://localhost:8410/bundle/js/bundle.app.js:2:1548014)\n    at S (http://localhost:8410/bundle/js/bundle.app.js:2:326247)\n    at http://localhost:8410/bundle/js/bundle.app.js:2:317010\n    at Socket.<anonymous> (http://localhost:8410/bundle/js/bundle.app.js:2:133715)\n    at Socket.onack (http://localhost:8410/socket.io/socket.io.js:4136:11)\n    at Socket.onpacket (http://localhost:8410/socket.io/socket.io.js:4040:16)"
+  }
+]

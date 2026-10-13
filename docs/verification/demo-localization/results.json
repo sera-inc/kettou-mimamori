@@ -1,0 +1,64 @@
+{
+  "generatedAt": "2026-10-13T04:41:38.298Z",
+  "scope": "Actual seeded age pill properties preserved with Japanese DOM text; real food picker labels/units and two portions = 110g; whole-document axe and visible Japanese text; no interception or saves",
+  "results": [
+    {
+      "viewport": "desktop",
+      "pass": true,
+      "originalModelDisplays": {
+        "cage": "34h",
+        "iage": "1d9h",
+        "sage": "1d11h"
+      },
+      "japaneseAgeDisplays": {
+        "cage": "34時間",
+        "iage": "1日9時間",
+        "sage": "1日11時間"
+      },
+      "foodOptions": [
+        {
+          "value": "0",
+          "text": "ごはん（確認用） | 一食分: 150 g | 炭水化物: 55 g"
+        },
+        {
+          "value": "1",
+          "text": "食パン（確認用） | 一食分: 60 g | 炭水化物: 28 g"
+        }
+      ],
+      "selectedPortions": 2,
+      "carbs": 110,
+      "mainAxeViolations": 0,
+      "dialogAxeViolations": 0
+    },
+    {
+      "viewport": "mobile",
+      "pass": true,
+      "originalModelDisplays": {
+        "cage": "34h",
+        "iage": "1d9h",
+        "sage": "1d11h"
+      },
+      "japaneseAgeDisplays": {
+        "cage": "34時間",
+        "iage": "1日9時間",
+        "sage": "1日11時間"
+      },
+      "foodOptions": [
+        {
+          "value": "0",
+          "text": "ごはん（確認用） | 一食分: 150 g | 炭水化物: 55 g"
+        },
+        {
+          "value": "1",
+          "text": "食パン（確認用） | 一食分: 60 g | 炭水化物: 28 g"
+        }
+      ],
+      "selectedPortions": 2,
+      "carbs": 110,
+      "mainAxeViolations": 0,
+      "dialogAxeViolations": 0
+    }
+  ],
+  "apiWrites": [],
+  "pageErrors": []
+}

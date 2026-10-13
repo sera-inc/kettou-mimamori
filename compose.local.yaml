@@ -1,0 +1,50 @@
+name: kettou-mimamori
+services:
+  mongo:
+    image: mongo:7.0
+    ports:
+      - "127.0.0.1:27118:27017"
+    volumes:
+      - glucose-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  app:
+    image: kettou-mimamori-local
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+      secrets:
+        - local_ca
+    working_dir: /opt/app
+    command: ["node", "lib/server/server.js"]
+    ports:
+      - "127.0.0.1:8410:1337"
+    volumes:
+      - .:/opt/app:ro
+      - glucose-dependencies:/opt/app/node_modules
+    environment:
+      NODE_ENV: production
+      TZ: Asia/Tokyo
+      NIGHTSCOUT_HOSTNAME: 0.0.0.0
+      INSECURE_USE_HTTP: "true"
+      MONGO_CONNECTION: mongodb://mongo:27017/kettou_demo
+      API_SECRET: ${API_SECRET:?Set API_SECRET in .env.local}
+      AUTH_DEFAULT_ROLES: readable
+      ENABLE: "careportal basal dbsize rawbg iob cob bwp cage sage iage treatmentnotify upbat direction timeago ar2 boluscalc profile food"
+      LANGUAGE: ja
+      CUSTOM_TITLE: 血糖みまもり
+      DISPLAY_UNITS: mg/dl
+      SHOW_PLUGINS: "careportal boluscalc iob cob basal cage sage iage direction timeago"
+      ALARM_TYPES: simple
+    depends_on:
+      mongo:
+        condition: service_healthy
+volumes:
+  glucose-data:
+  glucose-dependencies:
+secrets:
+  local_ca:
+    file: ${LOCAL_CA_FILE:?Set LOCAL_CA_FILE to a trusted certificate for the local build}

@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "case": "live empty database dashboard reports no measurements without displaying zero",
+      "pass": true
+    },
+    {
+      "case": "/clock/clock recovers from missing properties on received data; configuration link still builds",
+      "pass": true
+    },
+    {
+      "case": "/clock/config recovers from missing properties on received data; configuration link still builds",
+      "pass": true
+    },
+    {
+      "case": "food initial empty and zero search results show distinct guidance",
+      "pass": true
+    },
+    {
+      "case": "live split empty state and EJS fixture of five configured frames retain every URL/name without phantom frame",
+      "pass": true
+    },
+    {
+      "case": "boot error EJS fixture preserves diagnostics and offers retry action",
+      "pass": true
+    }
+  ],
+  "pageErrors": [],
+  "fixtures": [
+    "clock properties",
+    "food GET",
+    "configured split EJS",
+    "boot error EJS"
+  ]
+}

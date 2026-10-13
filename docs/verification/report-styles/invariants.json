@@ -1,0 +1,62 @@
+[
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 20
+  },
+  {
+    "file": "lib/report_plugins/dailystats.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 8
+  },
+  {
+    "file": "lib/report_plugins/daytoday.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 76
+  },
+  {
+    "file": "lib/report_plugins/glucosedistribution.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 9
+  },
+  {
+    "file": "lib/report_plugins/hourlystats.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 13
+  },
+  {
+    "file": "lib/report_plugins/loopalyzer.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 24
+  },
+  {
+    "file": "lib/report_plugins/percentile.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 12
+  },
+  {
+    "file": "lib/report_plugins/success.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 1
+  },
+  {
+    "file": "lib/report_plugins/treatments.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 7
+  },
+  {
+    "file": "lib/report_plugins/weektoweek.js",
+    "pass": true,
+    "scope": "Entire source and AST match pre-migration after reversing the recorded appearance, localization and separately tested Loopalyzer boundary changes; no unrecorded computation or protocol changes.",
+    "replacements": 17
+  }
+]

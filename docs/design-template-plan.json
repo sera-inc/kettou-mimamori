@@ -1,0 +1,170 @@
+[
+  {
+    "file": "views/profileindex.html",
+    "offset": 9670,
+    "original": "width:150px",
+    "replacement": "width:9.375rem"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 2475,
+    "original": "\r\n    #centerMessagePanel {\r\n      position: fixed;\r\n      top: 0;\r\n      left: 0;\r\n      bottom: 0;\r\n      right: 0;\r\n      height: 100%;\r\n      width: 100%;\r\n      margin: 0;\r\n      padding: 0;\r\n      background: #000000;\r\n      z-index: 1000;\r\n    }\r\n\r\n    #loadingMessage {\r\n      text-align: center;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 90%;\r\n      top: 30%;\r\n      left: 0;\r\n      font-size: 16px;\r\n    }\r\n\r\n    .spinner {\r\n      margin: 100px auto 0;\r\n      width: 70px;\r\n      text-align: center;\r\n    }\r\n\r\n    .spinner>div {\r\n      width: 18px;\r\n      height: 18px;\r\n      background-color: #333;\r\n\r\n      border-radius: 100%;\r\n      display: inline-block;\r\n      -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\r\n      animation: sk-bouncedelay 1.4s infinite ease-in-out both;\r\n    }\r\n\r\n    .spinner .bounce1 {\r\n      -webkit-animation-delay: -0.32s;\r\n      animation-delay: -0.32s;\r\n    }\r\n\r\n    .spinner .bounce2 {\r\n      -webkit-animation-delay: -0.16s;\r\n      animation-delay: -0.16s;\r\n    }\r\n\r\n    @-webkit-keyframes sk-bouncedelay {\r\n      0%, 80%, 100% { -webkit-transform: scale(0) }\r\n      40% { -webkit-transform: scale(1.0) }\r\n    }\r\n\r\n    @keyframes sk-bouncedelay {\r\n       0%, 80%, 100% { \r\n         -webkit-transform: scale(0);\r\n         transform: scale(0);\r\n       } 40% { \r\n         -webkit-transform: scale(1.0);\r\n         transform: scale(1.0);\r\n    }\r\n}\r\n\r\n  ",
+    "replacement": "\r\n    #centerMessagePanel {\r\n      position: fixed;\r\n      top: 0;\r\n      left: 0;\r\n      bottom: 0;\r\n      right: 0;\r\n      height: 100%;\r\n      width: 100%;\r\n      margin: 0;\r\n      padding: 0;\r\n      background: var(--app-surface);\r\n      z-index: var(--app-z-toast);\r\n    }\r\n\r\n    #loadingMessage {\r\n      text-align: center;\r\n      position: absolute;\r\n      width: 100%;\r\n      height: 90%;\r\n      top: 30%;\r\n      left: 0;\r\n      font-size: var(--app-text-body-size);\r\n    }\r\n\r\n    .spinner {\r\n      margin: var(--app-preserved-geometry-c936c776) auto 0;\r\n      width: 4.375rem;\r\n      text-align: center;\r\n    }\r\n\r\n    .spinner>div {\r\n      width: 1.125rem;\r\n      height: 1.125rem;\r\n      background-color: var(--app-surface);\r\n\r\n      border-radius: 100%;\r\n      display: inline-block;\r\n      -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\r\n      animation: sk-bouncedelay 1.4s infinite ease-in-out both;\r\n    }\r\n\r\n    .spinner .bounce1 {\r\n      -webkit-animation-delay: -0.32s;\r\n      animation-delay: -0.32s;\r\n    }\r\n\r\n    .spinner .bounce2 {\r\n      -webkit-animation-delay: -0.16s;\r\n      animation-delay: -0.16s;\r\n    }\r\n\r\n    @-webkit-keyframes sk-bouncedelay {\r\n      0%, 80%, 100% { -webkit-transform: scale(0) }\r\n      40% { -webkit-transform: scale(1.0) }\r\n    }\r\n\r\n    @keyframes sk-bouncedelay {\r\n       0%, 80%, 100% { \r\n         -webkit-transform: scale(0);\r\n         transform: scale(0);\r\n       } 40% { \r\n         -webkit-transform: scale(1.0);\r\n         transform: scale(1.0);\r\n    }\r\n}\r\n\r\n  "
+  },
+  {
+    "file": "views/index.html",
+    "offset": 20621,
+    "original": "width:50px",
+    "replacement": "width:3.125rem"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 20792,
+    "original": "width:50px",
+    "replacement": "width:3.125rem"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 24470,
+    "original": "float:right;",
+    "replacement": "float:right"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 24925,
+    "original": "width:170px",
+    "replacement": "width:10.625rem"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 25135,
+    "original": "margin-right:0;margin-left:-0.6em;color:lightgreen",
+    "replacement": "margin-right:0;margin-left:-0.6em;color:var(--app-success-text)"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 25361,
+    "original": "margin-right:0;margin-left:-0.6em;color:red",
+    "replacement": "margin-right:0;margin-left:-0.6em;color:var(--app-danger-text)"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 25581,
+    "original": "margin-right:0;margin-left:-0.6em;color:blue",
+    "replacement": "margin-right:0;margin-left:-0.6em;color:var(--app-text)"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 26001,
+    "original": "float:right;",
+    "replacement": "float:right"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 26299,
+    "original": "float:right;",
+    "replacement": "float:right"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 26582,
+    "original": "float:right;",
+    "replacement": "float:right"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 26773,
+    "original": "float:right;",
+    "replacement": "float:right"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 27323,
+    "original": "float:right;",
+    "replacement": "float:right"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 31691,
+    "original": "font-size:1em",
+    "replacement": "font-size:var(--app-text-body-size)"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 34600,
+    "original": "width:250px",
+    "replacement": "width:15.625rem"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 35619,
+    "original": "display:none;width:100%;background-color:red;text-align: center;border: 2px solid black;border-radius: 10px;margin-top:10px;",
+    "replacement": "display:none;width:100%;background-color:var(--app-danger-bg);text-align: center;border: 2px solid var(--app-border);border-radius: var(--app-radius-md);margin-top:var(--app-space-1)"
+  },
+  {
+    "file": "views/index.html",
+    "offset": 36423,
+    "original": "width:100%;",
+    "replacement": "width:100%"
+  },
+  {
+    "file": "views/frame.html",
+    "offset": 1027,
+    "original": "height:20px",
+    "replacement": "height:1.25rem"
+  },
+  {
+    "file": "views/frame.html",
+    "offset": 1302,
+    "original": "width:100%;height:100%;",
+    "replacement": "width:100%;height:100%"
+  },
+  {
+    "file": "views/foodindex.html",
+    "offset": 3128,
+    "original": "width:100%;height:250px;overflow-x:hidden;overflow-y:scroll;",
+    "replacement": "width:100%;height:15.625rem;overflow-x:hidden;overflow-y:scroll"
+  },
+  {
+    "file": "views/error.html",
+    "offset": 1237,
+    "original": "\r\n    @import url(\"//fonts.googleapis.com/css?family=Open+Sans:700\");\r\n\r\n    table {\r\n        margin: auto;\r\n        width: 70%;\r\n    }\r\n\r\n    td {\r\n        vertical-align: top;\r\n    }\r\n\r\n    body {\r\n        font-family: 'Ubuntu', Verdana, Helvetica, Arial, sans-serif;\r\n    }\r\n  ",
+    "replacement": "\r\n    @import url(\"//fonts.googleapis.com/css?family=Open+Sans:700\");\r\n\r\n    table {\r\n        margin: auto;\r\n        width: 70%;\r\n    }\r\n\r\n    td {\r\n        vertical-align: top;\r\n    }\r\n\r\n    body {\r\n        font-family: var(--app-font-sans);\r\n    }\r\n  "
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "offset": 816,
+    "original": "display:none;",
+    "replacement": "display:none"
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "offset": 986,
+    "original": "display:none;",
+    "replacement": "display:none"
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "offset": 1181,
+    "original": "display:none;",
+    "replacement": "display:none"
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "offset": 1646,
+    "original": "display:none;",
+    "replacement": "display:none"
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "offset": 1823,
+    "original": "display:none;",
+    "replacement": "display:none"
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "offset": 1874,
+    "original": "color: #c91515",
+    "replacement": "color: var(--app-text)"
+  }
+]

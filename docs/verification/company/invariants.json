@@ -1,0 +1,44 @@
+[
+  {
+    "file": "lib/settings.js",
+    "pass": true,
+    "reviewedPresentationExpressions": 1,
+    "exactSourceReversal": true
+  },
+  {
+    "file": "tests/settings.test.js",
+    "pass": true,
+    "reviewedPresentationExpressions": 1,
+    "exactSourceReversal": true
+  },
+  {
+    "file": "lib/client/index.js",
+    "pass": true,
+    "reviewedPresentationExpressions": 2,
+    "exactSourceReversal": true
+  },
+  {
+    "file": "views/index.html",
+    "pass": true,
+    "reviewedPresentationExpressions": 3,
+    "exactSourceReversal": true
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "pass": true,
+    "reviewedPresentationExpressions": 1,
+    "exactSourceReversal": true
+  },
+  {
+    "file": "views/clockviews/clock.html",
+    "pass": true,
+    "reviewedPresentationExpressions": 1,
+    "exactSourceReversal": true
+  },
+  {
+    "file": "static/manifest.json",
+    "pass": true,
+    "reviewedPresentationExpressions": 1,
+    "exactSourceReversal": true
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "file": "lib/report_plugins/treatments.js",
+    "before": "height: 600",
+    "after": "height: 600\r\n      , modal: true",
+    "reason": "Use the existing jQuery UI modal keyboard focus/escape behavior while editing; save values and handler unchanged",
+    "beforeSHA256": "2a3e616457a374c77ff9a905de749fc348d4ac2b7ed571ea6261b744db9d420a"
+  },
+  {
+    "file": "lib/report_plugins/treatments.js",
+    "before": ".css('box-shadow', '20px 20px 20px 0px black')",
+    "after": ".css('box-shadow', 'var(--app-shadow-overlay)')",
+    "reason": "Resolve the editor shadow to the DDS semantic overlay token",
+    "beforeSHA256": "e4deeb0392c9e42bb294213d6b8c91793d0fd212f66138a49c596c7668e5236d"
+  }
+]

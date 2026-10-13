@@ -1,0 +1,5971 @@
+{
+  "status": "untranslated-inventory",
+  "createdAt": "2026-10-13T07:51:13.444Z",
+  "sources": [
+    {
+      "file": "lib/server/swagger.json",
+      "sha256": "0eaac949f3f88fbd28eaac9b3ed7acffe98d08a1b70178c5afa18484f8407db1"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "sha256": "9f7212f800e83eb37e3210cd33b69d5744f16f663e7b5a927a299b17a29db2be"
+    }
+  ],
+  "scope": "Only display title/summary/description; paths, fields, enums, defaults, security and payload schemas remain unchanged",
+  "rows": [
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "info",
+        "title"
+      ],
+      "before": "Nightscout API",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "info",
+        "description"
+      ],
+      "before": "Own your DData with the Nightscout API",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries/{spec}",
+        "get",
+        "summary"
+      ],
+      "before": "All Entries matching query",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries/{spec}",
+        "get",
+        "description"
+      ],
+      "before": "The Entries endpoint returns information about the\nNightscout entries.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries/{spec}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "entry id, such as `55cf81bc436037528ec75fa5` or a type filter such\nas `sgv`, `mbg`, etc.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries/{spec}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for\nexample `find[dateString][$gte]=2015-08-27`.  All find parameters\nare interpreted as strings.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries/{spec}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries/{spec}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of entries",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries/{spec}",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Entries",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "summary"
+      ],
+      "before": "All Entries matching query",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "description"
+      ],
+      "before": "The Entries endpoint returns information about the Nightscout entries.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Prefix to use in constructing a prefix-based regex, default is `entries`.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Name of the field to use Regex against in query object, default is `dateString`.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "The type field to search against, default is sgv.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "Prefix to use in constructing a prefix-based regex.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "parameters",
+        4,
+        "description"
+      ],
+      "before": "Tail part of regexp to use in expanding/construccting a query object.\nRegexp also has bash-style brace and glob expansion applied to it,\ncreating ways to search for modal times of day, perhaps using\nsomething like this syntax: `T{15..17}:.*`, this would search for\nall records from 3pm to 5pm.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "parameters",
+        5,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for\nexample `find[dateString][$gte]=2015-08-27`.  All find parameters\nare interpreted as strings.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "parameters",
+        6,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of entries",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/slice/{storage}/{field}/{type}/{prefix}/{regex}",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/echo/{storage}/{spec}",
+        "get",
+        "summary"
+      ],
+      "before": "View generated Mongo Query object",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/echo/{storage}/{spec}",
+        "get",
+        "description"
+      ],
+      "before": "Information about the mongo query object created by the query.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/echo/{storage}/{spec}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "`entries`, or `treatments` to select the storage layer.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/echo/{storage}/{spec}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "entry id, such as `55cf81bc436037528ec75fa5` or a type filter such\nas `sgv`, `mbg`, etc.\nThis parameter is optional.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/echo/{storage}/{spec}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for\nexample `find[dateString][$gte]=2015-08-27`.  All find parameters\nare interpreted as strings.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/echo/{storage}/{spec}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/echo/{storage}/{spec}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of entries",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/echo/{prefix}/{regex}",
+        "get",
+        "summary"
+      ],
+      "before": "Echo the query object to be used.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/echo/{prefix}/{regex}",
+        "get",
+        "description"
+      ],
+      "before": "Echo debug information about the query object constructed.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/echo/{prefix}/{regex}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Prefix to use in constructing a prefix-based regex.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/echo/{prefix}/{regex}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Tail part of regexp to use in expanding/construccting a query object.\nRegexp also has bash-style brace and glob expansion applied to it,\ncreating ways to search for modal times of day, perhaps using\nsomething like this syntax: `T{15..17}:.*`, this would search for\nall records from 3pm to 5pm.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/echo/{prefix}/{regex}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for example `find[dateString][$gte]=2015-08-27`.  All find parameters are interpreted as strings.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/echo/{prefix}/{regex}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/echo/{prefix}/{regex}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of entries",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/echo/{prefix}/{regex}",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/{prefix}/{regex}",
+        "get",
+        "summary"
+      ],
+      "before": "All Entries matching query",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/{prefix}/{regex}",
+        "get",
+        "description"
+      ],
+      "before": "The Entries endpoint returns information about the Nightscout entries.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/{prefix}/{regex}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Prefix to use in constructing a prefix-based regex.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/{prefix}/{regex}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Tail part of regexp to use in expanding/construccting a query object.\nRegexp also has bash-style brace and glob expansion applied to it,\ncreating ways to search for modal times of day, perhaps using\nsomething like this syntax: `T{15..17}:.*`, this would search for\nall records from 3pm to 5pm.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/{prefix}/{regex}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for example `find[dateString][$gte]=2015-08-27`.  All find parameters are interpreted as strings.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/{prefix}/{regex}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/{prefix}/{regex}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of entries",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/times/{prefix}/{regex}",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "get",
+        "summary"
+      ],
+      "before": "All Entries matching query",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "get",
+        "description"
+      ],
+      "before": "The Entries endpoint returns information about the Nightscout entries.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for example `find[dateString][$gte]=2015-08-27`.  All find parameters are interpreted as strings.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of entries",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "post",
+        "summary"
+      ],
+      "before": "Add new entries.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "post",
+        "description"
+      ],
+      "before": "",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "post",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Rejected list of entries.  Empty list is success.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "post",
+        "responses",
+        "405",
+        "description"
+      ],
+      "before": "Invalid input",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "post",
+        "requestBody",
+        "description"
+      ],
+      "before": "Entries to be uploaded.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "delete",
+        "summary"
+      ],
+      "before": "Delete entries matching query.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "delete",
+        "description"
+      ],
+      "before": "Remove entries, same search syntax as GET.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "delete",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for example `find[dateString][$gte]=2015-08-27`.  All find parameters are interpreted as strings.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "delete",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/entries",
+        "delete",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Empty list is success.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "get",
+        "summary"
+      ],
+      "before": "Treatments",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "get",
+        "description"
+      ],
+      "before": "The Treatments endpoint returns information about the Nightscout treatments.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "The query used to find entries, supports nested query syntax.  Examples `find[insulin][$gte]=3` `find[carb][$gte]=100` `find[eventType]=Correction+Bolus` All find parameters are interpreted as strings.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of treatments",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "post",
+        "summary"
+      ],
+      "before": "Add new treatments.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "post",
+        "description"
+      ],
+      "before": "",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "post",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Rejected list of treatments.  Empty list is success.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "post",
+        "responses",
+        "405",
+        "description"
+      ],
+      "before": "Invalid input",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "post",
+        "requestBody",
+        "description"
+      ],
+      "before": "Treatments to be uploaded.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "delete",
+        "summary"
+      ],
+      "before": "Delete treatments matching query.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "delete",
+        "description"
+      ],
+      "before": "Remove treatments, same search syntax as GET.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "delete",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "The query used to find treatments to delete, support nested query syntax, for example `find[insulin][$gte]=3`. All find parameters are interpreted as strings.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "delete",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Number of entries to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments",
+        "delete",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Empty list is success.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments/{spec}",
+        "delete",
+        "summary"
+      ],
+      "before": "Delete treatments record with id provided in spec",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments/{spec}",
+        "delete",
+        "description"
+      ],
+      "before": "The Treatments endpoint returns information about the\nNightscout devicestatus records.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments/{spec}",
+        "delete",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "treatment id, such as `55cf81bc436037528ec75fa5`\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments/{spec}",
+        "delete",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "A status record of the delete.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/treatments/{spec}",
+        "delete",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/profile",
+        "get",
+        "summary"
+      ],
+      "before": "Profile",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/profile",
+        "get",
+        "description"
+      ],
+      "before": "The Profile endpoint returns information about the Nightscout Treatment Profiles.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/profile",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of treatments",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/profile",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "summary"
+      ],
+      "before": "Status",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "description"
+      ],
+      "before": "Server side status, default settings and capabilities.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Server capabilities and status.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "get",
+        "summary"
+      ],
+      "before": "All Devicestatuses matching query",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "get",
+        "description"
+      ],
+      "before": "The Devicestatus endpoint returns information about the Nightscout devicestatus records.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for example `find[dateString][$gte]=2015-08-27`.  All find parameters are interpreted as strings.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Number of devicestatus records to return.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "An array of devicestatus entries",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "get",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "post",
+        "summary"
+      ],
+      "before": "Add new devicestatus records.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "post",
+        "description"
+      ],
+      "before": "",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "post",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Rejected list of device statuses.  Empty list is success.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "post",
+        "responses",
+        "405",
+        "description"
+      ],
+      "before": "Invalid input",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "post",
+        "requestBody",
+        "description"
+      ],
+      "before": "Device statuses to be uploaded.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "delete",
+        "summary"
+      ],
+      "before": "Delete all Devicestatus records matching query",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "delete",
+        "description"
+      ],
+      "before": "The Devicestatus endpoint returns information about the\nNightscout devicestatus records.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "delete",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "The query used to find entries, support nested query syntax, for\nexample `find[created_at][$gte]=2015-08-27`.  All find parameters\nare interpreted as strings.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "delete",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "A status record of the delete.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/",
+        "delete",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/{spec}",
+        "delete",
+        "summary"
+      ],
+      "before": "Delete devicestatus record with id provided in spec",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/{spec}",
+        "delete",
+        "description"
+      ],
+      "before": "The Devicestatus endpoint returns information about the\nNightscout devicestatus records.\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/{spec}",
+        "delete",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "entry id, such as `55cf81bc436037528ec75fa5`\n",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/{spec}",
+        "delete",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "A status record of the delete.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "paths",
+        "/devicestatus/{spec}",
+        "delete",
+        "responses",
+        "default",
+        "description"
+      ],
+      "before": "Unexpected error",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "securitySchemes",
+        "api_secret",
+        "description"
+      ],
+      "before": "The hash of the API_SECRET env var",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "securitySchemes",
+        "token_in_url",
+        "description"
+      ],
+      "before": "Add token as query item in the URL. You can manage access Token in `/admin`. This uses json webtokens.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "securitySchemes",
+        "jwtoken",
+        "description"
+      ],
+      "before": "Use this if you know the temporary json webtoken.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "type",
+        "description"
+      ],
+      "before": "sgv, mbg, cal, etc",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "dateString",
+        "description"
+      ],
+      "before": "dateString, MUST be ISO `8601` format date parseable by Javascript Date()",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "date",
+        "description"
+      ],
+      "before": "Epoch",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "sgv",
+        "description"
+      ],
+      "before": "The glucose reading. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "direction",
+        "description"
+      ],
+      "before": "Direction of glucose trend reported by CGM. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "noise",
+        "description"
+      ],
+      "before": "Noise level at time of reading. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "filtered",
+        "description"
+      ],
+      "before": "The raw filtered value directly from CGM transmitter. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "unfiltered",
+        "description"
+      ],
+      "before": "The raw unfiltered value directly from CGM transmitter. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "properties",
+        "rssi",
+        "description"
+      ],
+      "before": "The signal strength from CGM transmitter. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Devicestatus",
+        "properties",
+        "device",
+        "description"
+      ],
+      "before": "Device type and hostname for example openaps://hostname",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Devicestatus",
+        "properties",
+        "created_at",
+        "description"
+      ],
+      "before": "dateString, prefer ISO `8601`",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Devicestatus",
+        "properties",
+        "openaps",
+        "description"
+      ],
+      "before": "OpenAPS devicestatus record - TODO: Fill Out Details",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Devicestatus",
+        "properties",
+        "loop",
+        "description"
+      ],
+      "before": "Loop devicestatus record - TODO: Fill Out Details",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "pump",
+        "properties",
+        "clock",
+        "description"
+      ],
+      "before": "dateString, prefer ISO `8601`",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "pump",
+        "properties",
+        "reservoir",
+        "description"
+      ],
+      "before": "Amount of insulin remaining in pump reservoir",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "pumpbattery",
+        "properties",
+        "status",
+        "description"
+      ],
+      "before": "Pump Battery Status String",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "pumpbattery",
+        "properties",
+        "voltage",
+        "description"
+      ],
+      "before": "Pump Battery Voltage Level",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "pumpstatus",
+        "properties",
+        "status",
+        "description"
+      ],
+      "before": "Pump Status String",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "pumpstatus",
+        "properties",
+        "bolusing",
+        "description"
+      ],
+      "before": "Is Pump Bolusing",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "pumpstatus",
+        "properties",
+        "suspended",
+        "description"
+      ],
+      "before": "Is Pump Suspended",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "pumpstatus",
+        "properties",
+        "timestamp",
+        "description"
+      ],
+      "before": "dateString, prefer ISO `8601`",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "uploader",
+        "properties",
+        "batteryVoltage",
+        "description"
+      ],
+      "before": "Uploader Device Battery Voltage",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "uploader",
+        "properties",
+        "battery",
+        "description"
+      ],
+      "before": "Uploader Device Battery Percentage Charge Remaining",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "state",
+        "description"
+      ],
+      "before": "CGM Sensor Session State Code",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "stateString",
+        "description"
+      ],
+      "before": "CGM Sensor Session State String",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "stateStringShort",
+        "description"
+      ],
+      "before": "CGM Sensor Session State Short String",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "txId",
+        "description"
+      ],
+      "before": "CGM Transmitter ID",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "txStatus",
+        "description"
+      ],
+      "before": "CGM Transmitter Status",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "txStatusString",
+        "description"
+      ],
+      "before": "CGM Transmitter Status String",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "txStatusStringShort",
+        "description"
+      ],
+      "before": "CGM Transmitter Status Short String",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "txActivation",
+        "description"
+      ],
+      "before": "CGM Transmitter Activation Milliseconds After Epoch",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "mode",
+        "description"
+      ],
+      "before": "Mode xdrip-js Application Operationg: expired, not expired, etc.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "timestamp",
+        "description"
+      ],
+      "before": "Last Update Milliseconds After Epoch",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "rssi",
+        "description"
+      ],
+      "before": "Receive Signal Strength of Transmitter",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "unfiltered",
+        "description"
+      ],
+      "before": "Most Recent Raw Unfiltered Glucose",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "filtered",
+        "description"
+      ],
+      "before": "Most Recent Raw Filtered Glucose",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "noise",
+        "description"
+      ],
+      "before": "Calculated Noise Value - 1=Clean, 2=Light, 3=Medium, 4=Heavy",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "noiseString",
+        "description"
+      ],
+      "before": "Noise Value String",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "slope",
+        "description"
+      ],
+      "before": "Calibration Slope Value",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "intercept",
+        "description"
+      ],
+      "before": "Calibration Intercept Value",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "calType",
+        "description"
+      ],
+      "before": "Algorithm Used to Calculate Calibration Values",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "lastCalibrationDate",
+        "description"
+      ],
+      "before": "Most Recent Calibration Milliseconds After Epoch",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "sessionStart",
+        "description"
+      ],
+      "before": "Sensor Session Start Milliseconds After Epoch",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "batteryTimestamp",
+        "description"
+      ],
+      "before": "Most Recent Batter Status Read Milliseconds After Epoch",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "voltagea",
+        "description"
+      ],
+      "before": "Voltage of Battery A",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "voltageb",
+        "description"
+      ],
+      "before": "Voltage of Battery B",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "temperature",
+        "description"
+      ],
+      "before": "Transmitter Temperature",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "xdripjs",
+        "properties",
+        "resistance",
+        "description"
+      ],
+      "before": "Sensor Resistance",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "_id",
+        "description"
+      ],
+      "before": "Internally assigned id.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "eventType",
+        "description"
+      ],
+      "before": "The type of treatment event.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "created_at",
+        "description"
+      ],
+      "before": "The date of the event, might be set retroactively .",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "glucose",
+        "description"
+      ],
+      "before": "Current glucose.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "glucoseType",
+        "description"
+      ],
+      "before": "Method used to obtain glucose, Finger or Sensor.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "carbs",
+        "description"
+      ],
+      "before": " Amount of carbs consumed in grams.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "protein",
+        "description"
+      ],
+      "before": " Amount of protein consumed in grams.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "fat",
+        "description"
+      ],
+      "before": " Amount of fat consumed in grams.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "insulin",
+        "description"
+      ],
+      "before": "Amount of insulin, if any.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "units",
+        "description"
+      ],
+      "before": "The units for the glucose value, mg/dl or mmol.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "transmitterId",
+        "description"
+      ],
+      "before": "The transmitter ID of the transmitter being started.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "sensorCode",
+        "description"
+      ],
+      "before": "The code used to start a Dexcom G6 sensor.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "notes",
+        "description"
+      ],
+      "before": "Description/notes of treatment.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "properties",
+        "enteredBy",
+        "description"
+      ],
+      "before": "Who entered the treatment.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "properties",
+        "sens",
+        "description"
+      ],
+      "before": "Internally assigned id",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "properties",
+        "dia",
+        "description"
+      ],
+      "before": "Internally assigned id",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "properties",
+        "carbratio",
+        "description"
+      ],
+      "before": "Internally assigned id",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "properties",
+        "carbs_hr",
+        "description"
+      ],
+      "before": "Internally assigned id",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "properties",
+        "_id",
+        "description"
+      ],
+      "before": "Internally assigned id",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Status",
+        "properties",
+        "apiEnabled",
+        "description"
+      ],
+      "before": "Whether or not the REST API is enabled.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Status",
+        "properties",
+        "careportalEnabled",
+        "description"
+      ],
+      "before": "Whether or not the careportal is enabled in the API.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Status",
+        "properties",
+        "head",
+        "description"
+      ],
+      "before": "The git identifier for the running instance of the app.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Status",
+        "properties",
+        "name",
+        "description"
+      ],
+      "before": "Nightscout (static)",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Status",
+        "properties",
+        "version",
+        "description"
+      ],
+      "before": "The version label of the app.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "units",
+        "description"
+      ],
+      "before": "Default units for glucose measurements across the server.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "timeFormat",
+        "description"
+      ],
+      "before": "Default time format",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "customTitle",
+        "description"
+      ],
+      "before": "Default custom title to be displayed system wide.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "nightMode",
+        "description"
+      ],
+      "before": "Should Night mode be enabled by default?",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "theme",
+        "description"
+      ],
+      "before": "Default theme to be displayed system wide, `default`, `colors`, `colorblindfriendly`.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "language",
+        "description"
+      ],
+      "before": "Default language code to be used system wide",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "showPlugins",
+        "description"
+      ],
+      "before": "Plugins that should be shown by default",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "showRawbg",
+        "description"
+      ],
+      "before": "If Raw BG is enabled when should it be shown? `never`, `always`, `noise`",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmTypes",
+        "description"
+      ],
+      "before": "Enabled alarm types, can be multiple",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmUrgentHigh",
+        "description"
+      ],
+      "before": "Enable/Disable client-side Urgent High alarms by default, for use with `simple` alarms.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmHigh",
+        "description"
+      ],
+      "before": "Enable/Disable client-side High alarms by default, for use with `simple` alarms.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmLow",
+        "description"
+      ],
+      "before": "Enable/Disable client-side Low alarms by default, for use with `simple` alarms.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmUrgentLow",
+        "description"
+      ],
+      "before": "Enable/Disable client-side Urgent Low alarms by default, for use with `simple` alarms.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmTimeagoWarn",
+        "description"
+      ],
+      "before": "Enable/Disable client-side stale data alarms by default.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmTimeagoWarnMins",
+        "description"
+      ],
+      "before": "Number of minutes before a stale data warning is generated.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmTimeagoUrgent",
+        "description"
+      ],
+      "before": "Enable/Disable client-side urgent stale data alarms by default.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "alarmTimeagoUrgentMins",
+        "description"
+      ],
+      "before": "Number of minutes before a stale data warning is generated.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "properties",
+        "enable",
+        "description"
+      ],
+      "before": "Enabled features",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Threshold",
+        "properties",
+        "bg_high",
+        "description"
+      ],
+      "before": "High BG range.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Threshold",
+        "properties",
+        "bg_target_top",
+        "description"
+      ],
+      "before": "Top of target range.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Threshold",
+        "properties",
+        "bg_target_bottom",
+        "description"
+      ],
+      "before": "Bottom of target range.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Threshold",
+        "properties",
+        "bg_low",
+        "description"
+      ],
+      "before": "Low BG range.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "ExtendedSettings",
+        "description"
+      ],
+      "before": "Extended settings of client side plugins",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "MongoQuery",
+        "description"
+      ],
+      "before": "Mongo Query object.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeleteStatus",
+        "properties",
+        "n",
+        "description"
+      ],
+      "before": "Number of records deleted. Legacy alias of deletedCount.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeleteStatus",
+        "properties",
+        "deletedCount",
+        "description"
+      ],
+      "before": "Number of records deleted.",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeleteStatus",
+        "properties",
+        "electionId",
+        "description"
+      ],
+      "before": "Election id of operation",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeleteStatus",
+        "properties",
+        "ok",
+        "description"
+      ],
+      "before": "Status of whether delete was successful",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeleteStatus",
+        "properties",
+        "operationTime",
+        "description"
+      ],
+      "before": "Time delete operation was executed",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeleteStatus",
+        "properties",
+        "$clusterTime",
+        "description"
+      ],
+      "before": "Information about execution time in cluster environment",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "optime",
+        "properties",
+        "ts",
+        "description"
+      ],
+      "before": "Time the operation started",
+      "after": null
+    },
+    {
+      "file": "lib/server/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "optime",
+        "properties",
+        "t",
+        "description"
+      ],
+      "before": "Time the operation took to complete",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "info",
+        "title"
+      ],
+      "before": "Nightscout API",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "info",
+        "description"
+      ],
+      "before": "Nightscout API v3 is a component of cgm-remote-monitor project. It aims to provide lightweight, secured and HTTP REST compliant interface for your T1D treatment data exchange.\n\nAPI v3 uses these environment variables, among other things&#58;\n- Security switch (optional, default = `true`) <pre>API3_SECURITY_ENABLE=true</pre> You can turn the whole security mechanism off, e.g. for debugging or development purposes, but this should never be set to false in production.\n\n- Maximum limit count of documents retrieved from single query <pre>API3_MAX_LIMIT=1000</pre>\n\n- Autopruning of obsolete documents (optional, default is only `DEVICESTATUS`=60) <pre>API3_AUTOPRUNE_DEVICESTATUS=60\nAPI3_AUTOPRUNE_ENTRIES=365\nAPI3_AUTOPRUNE_TREATMENTS=120 </pre> You can specify for which collections autopruning will be activated and length of retention period in days, e.g. \"Hold 60 days of devicestatus, automatically delete older documents, hold 365 days of treatments and entries, automatically delete older documents.\"\n\n- Fallback deduplication switch (optional, default = true) <pre>API3_DEDUP_FALLBACK_ENABLED=true</pre> API3 uses the `identifier` field for document identification and mutual distinction within a single collection. There is automatic deduplication implemented matching the equal `identifier` field. E.g. `CREATE` operation for document having the same `identifier` as another one existing in the database is automatically transformed into `UPDATE` operation of the document found in the database.\nDocuments not created via API v3 usually does not have any `identifier` field, but we would like to have some form of deduplication for them, too. This fallback deduplication is turned on by having set `API3_DEDUP_FALLBACK_ENABLED` to `true`. When searching the collection in database, the document is found to be a duplicate only when either he has equal `identifier` or he has no `identifier` and meets&#58; <pre>`devicestatus` collection&#58; equal combination of `created_at` and `device`\n`entries` collection&#58;      equal combination of `date` and `type`\n`food` collection&#58;         equal `created_at`\n`profile` collection&#58;      equal `created_at`\n`treatments` collection&#58;   equal combination of `created_at` and `eventType` </pre>\n\n- Fallback switch for adding `created_at` field along the `date` field (optional, default = true) <pre>API3_CREATED_AT_FALLBACK_ENABLED=true</pre> Standard APIv3 document model uses only `date` field for storing a timestamp of the event recorded by the document. But there is a fallback option to fill `created_at` field as well automatically on each insert/update, just to keep all older components working.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "tags",
+        0,
+        "description"
+      ],
+      "before": "Generic operations with each database collection (devicestatus, entries, food, profile, settings, treatments)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "tags",
+        1,
+        "description"
+      ],
+      "before": "All other various operations",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "summary"
+      ],
+      "before": "SEARCH: Search documents from the collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "description"
+      ],
+      "before": "General search operation through documents of one collection, matching the specified filtering criteria. You can apply&#58;\n\n1) filtering - combining any number of filtering parameters\n\n2) ordering - using `sort` or `sort$desc` parameter\n\n3) paging - using `limit` and `skip` parameters\n\nIf successful, HTTP 200 code is returned with JSON array of matching documents as a response content (it may be empty).\n\nThis operation requires `read` permission for the API and the collection (e.g. `*:*:read`, `api:*:read`, `*:treatments:read`, `api:treatments:read`).\n\nThe only exception is the `settings` collection which requires `admin` permission (`api:settings:admin`), because the settings of each application should be isolated and kept secret. You need to know the concrete identifier to access the app's settings.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Any number of filtering operators.\n\nEach filtering operator has name like `<field-name>$<operator>`, e.g. `carbs$gt=2` which represents filtering rule \"The field carbs must be present and greater than 2\".\n\nYou can choose from operators&#58;\n\n`eq`=equals, `insulin$eq=1.5`\n\n`ne`=not equals, `insulin$ne=1.5`\n\n`gt`=greater than, `carbs$gt=30`\n\n`gte`=greater than or equal, `carbs$gte=30`\n\n`lt`=less than, `carbs$lt=30`\n\n`lte`=less than or equal, `carbs$lte=30`\n\n`in`=in specified set, `type$in=sgv|mbg|cal`\n\n`nin`=not in specified set, `eventType$nin=Temp%20Basal|Temporary%20Target`\n\n`re`=regex pattern, `eventType$re=Temp.%2A`\n\nWhen filtering by field `date`, `created_at`, `srvModified` or `srvCreated`, you can choose from three input formats\n- Unix epoch in milliseconds (1525383610088)\n- Unix epoch in seconds (1525383610)\n- ISO 8601 with optional timezone ('2018-05-03T21:40:10.088Z' or '2018-05-03T23:40:10.088+02:00')\n\nThe date is always queried in a normalized form - UTC with zero offset and with the correct format (1525383610088 for `date`, '2018-05-03T21:40:10.088Z' for `created_at`).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Field name by which the sorting of documents is performed. This parameter cannot be combined with `sort$desc` parameter.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "Field name by which the descending (reverse) sorting of documents is performed. This parameter cannot be combined with `sort` parameter.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        4,
+        "description"
+      ],
+      "before": "Maximum number of documents to get in result array",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        5,
+        "description"
+      ],
+      "before": "Number of documents to skip from collection query before loading them into result array (used for pagination)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        6,
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        6,
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        6,
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successful operation returning array of documents matching the filtering criteria",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "406",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "summary"
+      ],
+      "before": "CREATE: Inserts a new document into the collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "description"
+      ],
+      "before": "Using this operation you can insert new documents into collection. Normally the operation ends with 201 HTTP status code, `Last-Modified` and `Location` headers specified. `identifier` is included in response body or it can be parsed from the `Location` response header.\n\nWhen the document to post is marked as a duplicate (using rules described at `API3_DEDUP_FALLBACK_ENABLED` switch), the update operation takes place instead of inserting. In this case the original document in the collection is found and it gets updated by the actual operation POST body. Finally the operation ends with 200 HTTP status code along with `Last-Modified` and correct `Location` headers. The response body then includes `isDeduplication`=`true` and `deduplicatedIdentifier` fields.\n\nThis operation provides autopruning of the collection (if autopruning is enabled).\n\nThis operation requires `create` (and/or `update` for deduplication) permission for the API and the collection (e.g. `api:treatments:create` and `api:treatments:update`)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "requestBody",
+        "description"
+      ],
+      "before": "JSON with new document to insert",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successfully updated a duplicate document in the collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "201",
+        "description"
+      ],
+      "before": "Successfully created a new document in collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "422",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "summary"
+      ],
+      "before": "READ: Retrieves a single document from the collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "description"
+      ],
+      "before": "Basically this operation looks for a document matching the `identifier` field returning 200 or 404 HTTP status code.\n\nIf the document has been found in the collection but it had already been deleted, 410 HTTP status code is to be returned.\n\nWhen `If-Modified-Since` header is used and its value is greater than the timestamp of the document in the collection, 304 HTTP status code with empty response content is returned. It means that the document has not been modified on server since the last retrieval to client side. With `If-Modified-Since` header and less or equal timestamp `srvModified` a normal 200 HTTP status with full response is returned.\n\nThis operation requires `read` permission for the API and the collection (e.g. `api:treatments:read`)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Identifier of the document to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Modified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "The document has been succesfully found and its JSON form returned in the response content.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "304",
+        "description"
+      ],
+      "before": "The document has not been modified on the server since timestamp specified in If-Modified-Since header",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "406",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "410",
+        "description"
+      ],
+      "before": "The requested document has already been deleted.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "summary"
+      ],
+      "before": "UPDATE: Updates a document in the collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "description"
+      ],
+      "before": "Normally the document with the matching `identifier` will be replaced in the collection by the whole JSON request body and 200 HTTP status code will be returned.\n\nIf the document has been found in the collection but it had already been deleted, 410 HTTP status code is to be returned.\n\nWhen no document with `identifier` has been found in the collection, then an insert operation takes place instead of updating. Finally 201 HTTP status code is returned with only `Last-Modified` header (`identifier` is already known from the path parameter).\n\nYou can also specify `If-Unmodified-Since` request header including your timestamp of document's last modification. If the document has been modified by somebody else on the server afterwards (and you do not know about it), the 412 HTTP status code is returned cancelling the update operation. You can use this feature to prevent race condition problems.\n\nThis operation provides autopruning of the collection (if autopruning is enabled).\n\nThis operation requires `update` (and/or `create`) permission for the API and the collection (e.g. `api:treatments:update` and `api:treatments:create`)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Identifier of the document to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "requestBody",
+        "description"
+      ],
+      "before": "JSON of new version of document (`identifier` in JSON is ignored if present)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "The request was successfully processed",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "201",
+        "description"
+      ],
+      "before": "Successfully created a new document in collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "410",
+        "description"
+      ],
+      "before": "The requested document has already been deleted.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "412",
+        "description"
+      ],
+      "before": "The document has already been modified on the server since specified timestamp (in If-Unmodified-Since header).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "422",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "summary"
+      ],
+      "before": "DELETE: Deletes a document from the collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "description"
+      ],
+      "before": "If the document has already been deleted, the operation will succeed anyway. Normally, documents are not really deleted from the collection but they are only marked as deleted. For special cases the deletion can be irreversible using `permanent` parameter.\n\nThis operation provides autopruning of the collection (if autopruning is enabled).\n\nThis operation requires `delete` permission for the API and the collection (e.g. `api:treatments:delete`)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Identifier of the document to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "If true, the deletion will be irreversible and it will not appear in `HISTORY` operation. Normally there is no reason for setting this flag.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "The request was successfully processed",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "422",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "summary"
+      ],
+      "before": "PATCH: Partially updates document in the collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "description"
+      ],
+      "before": "Normally the document with the matching `identifier` will be retrieved from the collection and it will be patched by all specified fields from the JSON request body. Finally 200 HTTP status code will be returned.\n\nIf the document has been found in the collection but it had already been deleted, 410 HTTP status code is to be returned.\n\nWhen no document with `identifier` has been found in the collection, then the operation ends with 404 HTTP status code.\n\nYou can also specify `If-Unmodified-Since` request header including your timestamp of document's last modification. If the document has been modified by somebody else on the server afterwards (and you do not know about it), the 412 HTTP status code is returned cancelling the update operation. You can use this feature to prevent race condition problems.\n\n`PATCH` operation can save some bandwidth for incremental document updates in comparison with `GET` - `UPDATE` operation sequence.\n\nWhile patching the document, the field `modifiedBy` is automatically set to the authorized subject's name.\n\nThis operation provides autopruning of the collection (if autopruning is enabled).\n\nThis operation requires `update` permission for the API and the collection (e.g. `api:treatments:update`)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Identifier of the document to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "requestBody",
+        "description"
+      ],
+      "before": "JSON of new version of document (`identifier` in JSON is ignored if present)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "The request was successfully processed",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "410",
+        "description"
+      ],
+      "before": "The requested document has already been deleted.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "412",
+        "description"
+      ],
+      "before": "The document has already been modified on the server since specified timestamp (in If-Unmodified-Since header).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "422",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "summary"
+      ],
+      "before": "HISTORY: Retrieves incremental changes since timestamp",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "description"
+      ],
+      "before": "HISTORY operation is intended for continuous data synchronization with other systems.\nEvery insertion, update and deletion will be included in the resulting JSON array of documents (since timestamp in `Last-Modified` request header value). All changes are listed chronologically in response with 200 HTTP status code. The maximum listed `srvModified` timestamp is also stored in `Last-Modified` and `ETag` response headers that you can use for future, directly following synchronization. You can also limit the array's length using `limit` parameter.\n\nDeleted documents will appear with `isValid` = `false` field.\n\nHISTORY operation has a fallback mechanism in place for documents, which were not created by API v3. For such documents `srvModified` is virtually assigned from the `date` field (for `entries` collection) or from the `created_at` field (for other collections).\n\nThis operation requires `read` permission for the API and the collection (e.g. `api:treatments:read`)\n\nThe only exception is the `settings` collection which requires `admin` permission (`api:settings:admin`), because the settings of each application should be isolated and kept secret. You need to know the concrete identifier to access the app's settings.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Starting timestamp (defined with respect to server's clock) since which the changes in documents are to be listed, formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nExample&#58;\n\n<pre>Last-Modified&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Maximum number of documents to get in result array",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Changed documents since specified timestamp",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "406",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "summary"
+      ],
+      "before": "HISTORY: Retrieves incremental changes since timestamp",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "description"
+      ],
+      "before": "This HISTORY operation variant is more precise than the previous one with `Last-Modified` request HTTP header), because it does not loose milliseconds precision.\n\nSince this variant queries for changed documents by timestamp precisely and exclusively, the last modified document does not repeat itself in following calls. That is the reason why is this variant more suitable for continuous synchronization with other systems.\n\nThis variant behaves quite the same as the previous one in all other aspects.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Starting timestamp (in UNIX epoch format, defined with respect to server's clock) since which the changes in documents are to be listed. Query for modified documents is made using \"greater than\" operator (not including equal timestamps).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Maximum number of documents to get in result array",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Changed documents since specified timestamp",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "406",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/version",
+        "get",
+        "summary"
+      ],
+      "before": "VERSION: Returns actual version information",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/version",
+        "get",
+        "description"
+      ],
+      "before": "No authentication is needed for this commnad (it is public)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/version",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successful response",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "summary"
+      ],
+      "before": "STATUS: Returns actual version information and all permissions granted for API",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "description"
+      ],
+      "before": "This operation requires authorization in contrast with VERSION operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successful response",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "summary"
+      ],
+      "before": "LAST MODIFIED: Retrieves timestamp of the last modification of every collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "description"
+      ],
+      "before": "LAST MODIFIED operation inspects collections separately (in parallel) and for each of them it finds the date of any last modification (insertion, update, deletion).\nNot only `srvModified`, but also `date` and `created_at` fields are inspected (as a fallback to previous API).\n\nThis operation requires `read` permission for the API and the collections (e.g. `api:treatments:read`). For each collection the permission is checked separately, you will get timestamps only for those collections that you have access to.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successful operation returning the timestamps",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "headerLocation",
+        "description"
+      ],
+      "before": "Location of document - the relative part of URL. This can be used to parse the identifier of just created document.\nExample=/api/v3/treatments/53409478-105f-11e9-ab14-d663bd873d93",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "headerLastModified",
+        "description"
+      ],
+      "before": "Timestamp of the last document modification on the server, formatted as\n'<day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT'.\nThis field is relevant only for documents which were somehow modified by API v3 (inserted, updated or deleted) and it was generated using server's clock.\nExample='Wed, 17 Oct 2018 05:13:00 GMT'",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "headerLastModifiedMaximum",
+        "description"
+      ],
+      "before": "The latest (maximum) `srvModified` field of all returning documents, formatted as\n'<day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT'.\nExample='Wed, 17 Oct 2018 05:13:00 GMT'",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "headerEtagLastModifiedMaximum",
+        "description"
+      ],
+      "before": "The latest (maximum) `srvModified` field of all returning documents. This header does not loose milliseconds from the date (unlike the `Last-Modified` header).\nExample='W/\"1525383610088\"'",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "identifierField",
+        "description"
+      ],
+      "before": "Identifier of created or modified document",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "lastModifiedField",
+        "description"
+      ],
+      "before": "Timestamp of the last document modification on the server, formatted as\nUnix epoch in milliseconds (1525383610088)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "statusField",
+        "description"
+      ],
+      "before": "HTTP response status code. The status appears also in response body's field for those clients that are unable to process standard HTTP status code.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "isDeduplicationField",
+        "description"
+      ],
+      "before": "Flag whether the operation found a duplicate document (to update)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "deduplicatedIdentifierField",
+        "description"
+      ],
+      "before": "The original document that has been marked as a duplicate document and which has been updated",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "identifier",
+        "description"
+      ],
+      "before": "Main addressing, required field that identifies document in the collection.\n\nThe client should not create the identifier, the server automatically assigns it when the document is inserted.\n\nThe server calculates the identifier in such a way that duplicate records are automatically merged (deduplicating is made by `date`, `device` and `eventType` fields).\n\nThe best practise for all applications is not to loose identifiers from received documents, but save them carefully for other consumer applications/systems.\n\nAPI v3 has a fallback mechanism in place, for documents without `identifier` field the `identifier` is set to internal `_id`, when reading or addressing these documents.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "date",
+        "description"
+      ],
+      "before": "Required timestamp when the record or event occured, you can choose from three input formats\n- Unix epoch in milliseconds (1525383610088)\n- Unix epoch in seconds (1525383610)\n- ISO 8601 with optional timezone ('2018-05-03T21:40:10.088Z' or '2018-05-03T23:40:10.088+02:00')\n\nThe date is always stored in a normalized form - UTC with zero offset. If UTC offset was present, it is going to be set in the `utcOffset` field.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "utcOffset",
+        "description"
+      ],
+      "before": "Local UTC offset (timezone) of the event in minutes. This field can be set either directly by the client (in the incoming document) or it is automatically parsed from the `date` field.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "app",
+        "description"
+      ],
+      "before": "Application or system in which the record was entered by human or device for the first time.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "device",
+        "description"
+      ],
+      "before": "The device from which the data originated (including serial number of the device, if it is relevant and safe).\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "_id",
+        "description"
+      ],
+      "before": "Internally assigned database id. This field is for internal server purposes only, clients communicate with API by using identifier field.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "srvCreated",
+        "description"
+      ],
+      "before": "The server's timestamp of document insertion into the database (Unix epoch in ms). This field appears only for documents which were inserted by API v3.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "subject",
+        "description"
+      ],
+      "before": "Name of the security subject (within Nightscout scope) which has created the document. This field is automatically set by the server from the passed JWT.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "srvModified",
+        "description"
+      ],
+      "before": "The server's timestamp of the last document modification in the database (Unix epoch in ms). This field appears  only for documents which were somehow modified by API v3 (inserted, updated or deleted).\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "modifiedBy",
+        "description"
+      ],
+      "before": "Name of the security subject (within Nightscout scope) which has patched or deleted the document for the last time. This field is automatically set by the server.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "isValid",
+        "description"
+      ],
+      "before": "A flag set by the server only for deleted documents. This field appears only within history operation and for documents which were deleted by API v3 (and they always have a false value)\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "isReadOnly",
+        "description"
+      ],
+      "before": "A flag set by client that locks the document from any changes. Every document marked with `isReadOnly=true` is forever immutable and cannot even be deleted.\n\nAny attempt to modify the read-only document will end with status 422 UNPROCESSABLE ENTITY.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "description"
+      ],
+      "before": "Shared base for all documents",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeviceStatus",
+        "description"
+      ],
+      "before": "State of physical device, which is a technical part of the whole T1D compensation system",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeviceStatus",
+        "allOf",
+        1,
+        "properties",
+        "some_property",
+        "description"
+      ],
+      "before": "...",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "description"
+      ],
+      "before": "Blood glucose measurements and CGM calibrations",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "type",
+        "description"
+      ],
+      "before": "sgv, mbg, cal, etc",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "sgv",
+        "description"
+      ],
+      "before": "The glucose reading. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "direction",
+        "description"
+      ],
+      "before": "Direction of glucose trend reported by CGM. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "noise",
+        "description"
+      ],
+      "before": "Noise level at time of reading. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "filtered",
+        "description"
+      ],
+      "before": "The raw filtered value directly from CGM transmitter. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "unfiltered",
+        "description"
+      ],
+      "before": "The raw unfiltered value directly from CGM transmitter. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "rssi",
+        "description"
+      ],
+      "before": "The signal strength from CGM transmitter. (only available for sgv types)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "units",
+        "description"
+      ],
+      "before": "The units for the glucose value, mg/dl or mmol/l. It is strongly recommended to fill in this field.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "description"
+      ],
+      "before": "Nutritional values of food",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "food",
+        "description"
+      ],
+      "before": "food, quickpick",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "category",
+        "description"
+      ],
+      "before": "Name for a group of related records",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "subcategory",
+        "description"
+      ],
+      "before": "Name for a second level of groupping",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "name",
+        "description"
+      ],
+      "before": "Name of the food described",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "portion",
+        "description"
+      ],
+      "before": "Number of units (e.g. grams) of the whole portion described",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "unit",
+        "description"
+      ],
+      "before": "Unit for the portion",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "carbs",
+        "description"
+      ],
+      "before": "Amount of carbs in the portion in grams",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "fat",
+        "description"
+      ],
+      "before": "Amount of fat in the portion in grams",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "protein",
+        "description"
+      ],
+      "before": "Amount of proteins in the portion in grams",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "energy",
+        "description"
+      ],
+      "before": "Amount of energy in the portion in kJ",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "gi",
+        "description"
+      ],
+      "before": "Glycemic index (1=low, 2=medium, 3=high)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "hideafteruse",
+        "description"
+      ],
+      "before": "Flag used for quickpick",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "hidden",
+        "description"
+      ],
+      "before": "Flag used for quickpick",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "position",
+        "description"
+      ],
+      "before": "Ordering field for quickpick",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "portions",
+        "description"
+      ],
+      "before": "component multiplier if defined inside quickpick compound",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "foods",
+        "description"
+      ],
+      "before": "Neighbour documents (from food collection) that together make a quickpick compound",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "description"
+      ],
+      "before": "Parameters describing body functioning relative to T1D + compensation parameters",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "allOf",
+        1,
+        "properties",
+        "some_property",
+        "description"
+      ],
+      "before": "...",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "description"
+      ],
+      "before": "A document representing persisted settings of some application or system (it could by Nightscout itself as well). This pack of options serves as a backup or as a shared centralized storage for multiple client instances. It is a probably good idea to `PATCH` the document instead of `UPDATE` operation, e.g. when changing one settings option in a client application.\n\n`identifier` represents a client application name here, e.g. `xdrip` or `aaps`.\n\n`Settings` collection has a more specific authorization required. For the `SEARCH` operation within this collection, you need an `admin` permission, such as `api:settings:admin`. The goal is to isolate individual client application settings.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "allOf",
+        1,
+        "properties",
+        "some_property",
+        "description"
+      ],
+      "before": "...",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "description"
+      ],
+      "before": "T1D compensation action",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "eventType",
+        "description"
+      ],
+      "before": "The type of treatment event.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "glucose",
+        "description"
+      ],
+      "before": "Current glucose.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "glucoseType",
+        "description"
+      ],
+      "before": "Method used to obtain glucose, Finger or Sensor.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "units",
+        "description"
+      ],
+      "before": "The units for the glucose value, mg/dl or mmol/l. It is strongly recommended to fill in this field when `glucose` is entered.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "carbs",
+        "description"
+      ],
+      "before": "Amount of carbs given.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "protein",
+        "description"
+      ],
+      "before": "Amount of protein given.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "fat",
+        "description"
+      ],
+      "before": "Amount of fat given.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "insulin",
+        "description"
+      ],
+      "before": "Amount of insulin, if any.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "duration",
+        "description"
+      ],
+      "before": "Duration in minutes.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "preBolus",
+        "description"
+      ],
+      "before": "How many minutes the bolus was given before the meal started.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "splitNow",
+        "description"
+      ],
+      "before": "Immediate part of combo bolus (in percent).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "splitExt",
+        "description"
+      ],
+      "before": "Extended part of combo bolus (in percent).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "percent",
+        "description"
+      ],
+      "before": "Eventual basal change in percent.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "absolute",
+        "description"
+      ],
+      "before": "Eventual basal change in absolute value (insulin units per hour).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "targetTop",
+        "description"
+      ],
+      "before": "Top limit of temporary target.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "targetBottom",
+        "description"
+      ],
+      "before": "Bottom limit of temporary target.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "profile",
+        "description"
+      ],
+      "before": "Name of the profile to which the pump has been switched.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "reason",
+        "description"
+      ],
+      "before": "For example the reason why the profile has been switched or why the temporary target has been set.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "notes",
+        "description"
+      ],
+      "before": "Description/notes of treatment.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "enteredBy",
+        "description"
+      ],
+      "before": "Who entered the treatment.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentToPost",
+        "description"
+      ],
+      "before": "Single document",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Document",
+        "description"
+      ],
+      "before": "Single document",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeviceStatusArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "EntryArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "FoodArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "ProfileArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "SettingsArray",
+        "description"
+      ],
+      "before": "Array of settings",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "TreatmentArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Version",
+        "description"
+      ],
+      "before": "Information about versions",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult",
+        "properties",
+        "version",
+        "description"
+      ],
+      "before": "The whole Nightscout instance version",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult",
+        "properties",
+        "apiVersion",
+        "description"
+      ],
+      "before": "API v3 subsystem version",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult",
+        "properties",
+        "srvDate",
+        "description"
+      ],
+      "before": "Actual server date and time in UNIX epoch format",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Status",
+        "description"
+      ],
+      "before": "Information about versions and API permissions",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult",
+        "properties",
+        "srvDate",
+        "description"
+      ],
+      "before": "Actual storage server date (Unix epoch in ms).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult",
+        "description"
+      ],
+      "before": "Result of LAST MODIFIED operation",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult_storage",
+        "properties",
+        "type",
+        "description"
+      ],
+      "before": "Type of storage engine used",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult_storage",
+        "properties",
+        "version",
+        "description"
+      ],
+      "before": "Version of the storage engine",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "properties",
+        "devicestatus",
+        "description"
+      ],
+      "before": "Timestamp of the last modification (Unix epoch in ms), `null` when there is no timestamp found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "properties",
+        "treatments",
+        "description"
+      ],
+      "before": "Timestamp of the last modification (Unix epoch in ms), `null` when there is no timestamp found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "properties",
+        "entries",
+        "description"
+      ],
+      "before": "Timestamp of the last modification (Unix epoch in ms), `null` when there is no timestamp found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "properties",
+        "profile",
+        "description"
+      ],
+      "before": "Timestamp of the last modification (Unix epoch in ms), `null` when there is no timestamp found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "description"
+      ],
+      "before": "Collections which the user have read access to.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "200Ok",
+        "description"
+      ],
+      "before": "The request was successfully processed",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "200Deduplication",
+        "description"
+      ],
+      "before": "Successfully updated a duplicate document in the collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "201Created",
+        "description"
+      ],
+      "before": "Successfully created a new document in collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "201CreatedLocation",
+        "description"
+      ],
+      "before": "Successfully created a new document in collection",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "304NotModified",
+        "description"
+      ],
+      "before": "The document has not been modified on the server since timestamp specified in If-Modified-Since header",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "400BadRequest",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "401Unauthorized",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "403Forbidden",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "404NotFound",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "406NotAcceptable",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "412PreconditionFailed",
+        "description"
+      ],
+      "before": "The document has already been modified on the server since specified timestamp (in If-Unmodified-Since header).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "410Gone",
+        "description"
+      ],
+      "before": "The requested document has already been deleted.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "422UnprocessableEntity",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "search200",
+        "description"
+      ],
+      "before": "Successful operation returning array of documents matching the filtering criteria",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "read200",
+        "description"
+      ],
+      "before": "The document has been succesfully found and its JSON form returned in the response content.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "history200",
+        "description"
+      ],
+      "before": "Changed documents since specified timestamp",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "lastModified200",
+        "description"
+      ],
+      "before": "Successful operation returning the timestamps",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "limitParam",
+        "description"
+      ],
+      "before": "Maximum number of documents to get in result array",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "skipParam",
+        "description"
+      ],
+      "before": "Number of documents to skip from collection query before loading them into result array (used for pagination)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "sortParam",
+        "description"
+      ],
+      "before": "Field name by which the sorting of documents is performed. This parameter cannot be combined with `sort$desc` parameter.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "sortDescParam",
+        "description"
+      ],
+      "before": "Field name by which the descending (reverse) sorting of documents is performed. This parameter cannot be combined with `sort` parameter.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "permanentParam",
+        "description"
+      ],
+      "before": "If true, the deletion will be irreversible and it will not appear in `HISTORY` operation. Normally there is no reason for setting this flag.",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "fieldsParam",
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "fieldsParam",
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "fieldsParam",
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "filterParams",
+        "description"
+      ],
+      "before": "Any number of filtering operators.\n\nEach filtering operator has name like `<field-name>$<operator>`, e.g. `carbs$gt=2` which represents filtering rule \"The field carbs must be present and greater than 2\".\n\nYou can choose from operators&#58;\n\n`eq`=equals, `insulin$eq=1.5`\n\n`ne`=not equals, `insulin$ne=1.5`\n\n`gt`=greater than, `carbs$gt=30`\n\n`gte`=greater than or equal, `carbs$gte=30`\n\n`lt`=less than, `carbs$lt=30`\n\n`lte`=less than or equal, `carbs$lte=30`\n\n`in`=in specified set, `type$in=sgv|mbg|cal`\n\n`nin`=not in specified set, `eventType$nin=Temp%20Basal|Temporary%20Target`\n\n`re`=regex pattern, `eventType$re=Temp.%2A`\n\nWhen filtering by field `date`, `created_at`, `srvModified` or `srvCreated`, you can choose from three input formats\n- Unix epoch in milliseconds (1525383610088)\n- Unix epoch in seconds (1525383610)\n- ISO 8601 with optional timezone ('2018-05-03T21:40:10.088Z' or '2018-05-03T23:40:10.088+02:00')\n\nThe date is always queried in a normalized form - UTC with zero offset and with the correct format (1525383610088 for `date`, '2018-05-03T21:40:10.088Z' for `created_at`).",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "lastModifiedRequiredHeader",
+        "description"
+      ],
+      "before": "Starting timestamp (defined with respect to server's clock) since which the changes in documents are to be listed, formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nExample&#58;\n\n<pre>Last-Modified&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "ifModifiedSinceHeader",
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Modified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "ifUnmodifiedSinceHeader",
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": null
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "securitySchemes",
+        "jwtoken",
+        "description"
+      ],
+      "before": "Use this if you know the temporary json webtoken.",
+      "after": null
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+DADS_DOCS=2.17.1 (2026-08-19)
+DADS_FIGMA=2.17.1
+TAILWIND_PLUGIN=1.0.1
+DESIGN_TOKENS=未導入（トークンは TAILWIND_PLUGIN の dist/v4.css から scripts/build-dads-tokens.mjs で生成）
+LAST_SYNC=2026-08-23

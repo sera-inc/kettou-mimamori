@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 6,
+    "passes": 4,
+    "pending": 2,
+    "failures": 0,
+    "start": "2026-10-12T17:27:31.896Z",
+    "end": "2026-10-12T17:27:34.261Z",
+    "duration": 2365
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/reports.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 0,
+        "pending": 2,
+        "failures": 0,
+        "start": "2026-10-12T17:27:33.877Z",
+        "end": "2026-10-12T17:27:33.879Z",
+        "duration": 2
+      }
+    },
+    {
+      "file": "tests/reportstorage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T17:27:34.225Z",
+        "end": "2026-10-12T17:27:34.250Z",
+        "duration": 25
+      }
+    }
+  ],
+  "failures": []
+}

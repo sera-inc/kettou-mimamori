@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-10-13T12:37:04.105Z",
+  "source": "http://localhost:8410",
+  "database": "kettou_demo",
+  "scope": "Actual browser rendering and native UI interactions, original complete frames, no response interception, no API writes, no clock replacement",
+  "screenshots": [
+    {
+      "name": "dashboard-desktop",
+      "route": "/",
+      "file": "docs/verification/lp-media/dashboard-desktop.png",
+      "sha256": "d81a4d6f3d3abe9dc3a304772197486a47b34580281decf239dc1f37d1ecd5e6"
+    },
+    {
+      "name": "settings-desktop",
+      "route": "/",
+      "file": "docs/verification/lp-media/settings-desktop.png",
+      "sha256": "5614ea056374342174b33f35762ec348a9695fccd61e9dabc76113586b5f86ea"
+    },
+    {
+      "name": "record-entry-desktop",
+      "route": "/",
+      "file": "docs/verification/lp-media/record-entry-desktop.png",
+      "sha256": "41507eee4c5635ae4534865581de67793f72a641b7442ce28c1663e648019905"
+    },
+    {
+      "name": "calculator-desktop",
+      "route": "/",
+      "file": "docs/verification/lp-media/calculator-desktop.png",
+      "sha256": "38cfb489027c3eb03c59ed7a863a71017c53472b4883ae35f095d7b45319e310"
+    },
+    {
+      "name": "food-picker-desktop",
+      "route": "/",
+      "file": "docs/verification/lp-media/food-picker-desktop.png",
+      "sha256": "cb25d822490fe69f63b28d12402958d143f0124ade4cf0ad0e4debf6029a3b02"
+    },
+    {
+      "name": "food-desktop",
+      "route": "/food",
+      "file": "docs/verification/lp-media/food-desktop.png",
+      "sha256": "4501c8fba6d73d280de51751f4ca8a5f417369f253be3552cb4c8f76442a67b3"
+    },
+    {
+      "name": "profile-desktop",
+      "route": "/profile",
+      "file": "docs/verification/lp-media/profile-desktop.png",
+      "sha256": "39932e2ff4ac968b654fbc1b80b99a0aa41652569ffc7a42e3a68d1f8f4e3cad"
+    },
+    {
+      "name": "clock-settings-desktop",
+      "route": "/clock/config",
+      "file": "docs/verification/lp-media/clock-settings-desktop.png",
+      "sha256": "ab09656d171c850831744adcc3594f5031acdc065f035d0fdaaeaa06194dd063"
+    },
+    {
+      "name": "clock-desktop",
+      "route": "/clock/cy10-sg40-ar30-tm10",
+      "file": "docs/verification/lp-media/clock-desktop.png",
+      "sha256": "da7d92db718db2e21a90668e946aa37d28ecf82e025e015984c9207cba54503d"
+    },
+    {
+      "name": "dashboard-mobile",
+      "route": "/",
+      "file": "docs/verification/lp-media/dashboard-mobile.png",
+      "sha256": "36bcbdaf2fa66f6dfc9cd3f20d3f2c1841f6111db7fd37e8e8a181bc7c561b53"
+    }
+  ],
+  "videos": [
+    {
+      "name": "overview",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\docs\\verification\\lp-media\\overview.webm",
+      "bytes": 2813716,
+      "sha256": "538a5137a7eb8dbe00469202e000ee181df75f80296f6bca563ba5499ad53f21"
+    },
+    {
+      "name": "records",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\docs\\verification\\lp-media\\records.webm",
+      "bytes": 1619339,
+      "sha256": "f11e460921aab3b500b98053f5f7ead25e7e294e3f52b831ba413df7f6f6fd27"
+    }
+  ],
+  "pageErrors": [],
+  "apiWrites": []
+}

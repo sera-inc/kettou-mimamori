@@ -1,0 +1,252 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 13,
+    "passes": 13,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T05:51:36.054Z",
+    "end": "2026-10-13T05:51:36.919Z",
+    "duration": 865
+  },
+  "tests": [
+    {
+      "title": "renders Japanese elapsed measurement text for 0 minutes without changing the reading",
+      "fullTitle": "clock client renders Japanese elapsed measurement text for 0 minutes without changing the reading",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 114,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "renders Japanese elapsed measurement text for 1 minutes without changing the reading",
+      "fullTitle": "clock client renders Japanese elapsed measurement text for 1 minutes without changing the reading",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 16,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "renders Japanese elapsed measurement text for 17 minutes without changing the reading",
+      "fullTitle": "clock client renders Japanese elapsed measurement text for 17 minutes without changing the reading",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 12,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 0 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 0 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 20,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 1 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 1 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 11,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 2 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 2 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 14,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 3 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 3 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 10,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 4 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 4 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 13,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "constructs every supported face component with bounded numeric sizing",
+      "fullTitle": "clock client constructs every supported face component with bounded numeric sizing",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 9,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "does not interpret face configuration as markup, classes, or styles",
+      "fullTitle": "clock client does not interpret face configuration as markup, classes, or styles",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 13,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should render browser mmol preference when server units are mg/dl",
+      "fullTitle": "clock client should render browser mmol preference when server units are mg/dl",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 7,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should render browser mg/dl preference when server units are mmol",
+      "fullTitle": "clock client should render browser mg/dl preference when server units are mmol",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 5,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should use server-scaled values when browser and server units match",
+      "fullTitle": "clock client should use server-scaled values when browser and server units match",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 6,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "renders Japanese elapsed measurement text for 0 minutes without changing the reading",
+      "fullTitle": "clock client renders Japanese elapsed measurement text for 0 minutes without changing the reading",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 114,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "renders Japanese elapsed measurement text for 1 minutes without changing the reading",
+      "fullTitle": "clock client renders Japanese elapsed measurement text for 1 minutes without changing the reading",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 16,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "renders Japanese elapsed measurement text for 17 minutes without changing the reading",
+      "fullTitle": "clock client renders Japanese elapsed measurement text for 17 minutes without changing the reading",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 12,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 0 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 0 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 20,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 1 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 1 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 11,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 2 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 2 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 14,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 3 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 3 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 10,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "shows an empty state for missing measurement variant 4 and recovers on new data",
+      "fullTitle": "clock client shows an empty state for missing measurement variant 4 and recovers on new data",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 13,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "constructs every supported face component with bounded numeric sizing",
+      "fullTitle": "clock client constructs every supported face component with bounded numeric sizing",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 9,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "does not interpret face configuration as markup, classes, or styles",
+      "fullTitle": "clock client does not interpret face configuration as markup, classes, or styles",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 13,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should render browser mmol preference when server units are mg/dl",
+      "fullTitle": "clock client should render browser mmol preference when server units are mg/dl",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 7,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should render browser mg/dl preference when server units are mmol",
+      "fullTitle": "clock client should render browser mg/dl preference when server units are mmol",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 5,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should use server-scaled values when browser and server units match",
+      "fullTitle": "clock client should use server-scaled values when browser and server units match",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\clock-client.test.js",
+      "duration": 6,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ]
+}

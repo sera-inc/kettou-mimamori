@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html lang="ja" xmlns="http://www.w3.org/1999/html">
 
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <title>Nightscout</title>
+  <title><%= face==='config' ? '時計の設定' : '時計表示' %> | 血糖みまもり</title>
 
   <link href="/images/round1.png" rel="icon" id="favicon" type="image/png" />
   <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
@@ -18,8 +19,8 @@
   <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
 
+  <link rel="stylesheet" href="/design-system/index.css">
   <style type="text/css">
-    @import url("//fonts.googleapis.com/css?family=Open+Sans:700|Noto+Color+Emoji");
     <%- include('clock-shared.css', {}); %>
     <%if (face === 'config') { %>
     <%- include('clock-config.css', {}); %>
@@ -27,12 +28,24 @@
   </style>
 </head>
 
-<body>
+<body class="app-clock-body<%= face==='config' ? ' app-page app-clock-config' : '' %>">
+  <% if(face==='config') { %>
+  <%- include('../partials/toolbar') %>
+  <main id="app-main" class="app-main" tabindex="-1">
+    <%- include('../partials/page-title') %>
+    <div class="app-clock-config-layout">
+      <%- include('clock-config.html', {}); %>
+      <section class="app-clock-preview-card"><h2>プレビュー</h2><p>表示する情報を左の設定から追加してください。</p><div class="app-clock-preview">
+  <% }else{ %>
   <main>
-    <a href="/" id="closeButton" class="close"></a>
+    <h1 class="app-visually-hidden">時計表示</h1>
+    <a href="/" id="closeButton" class="close" aria-label="血糖の状態へ戻る"></a>
+  <% } %>
     <div id="inner" data-face="<%= face %>"<%-(face === 'config') ? 'data-face-config="cy10"' : '' %>>
     </div>
+    <% if(face==='config') { %></div></section></div><% } %>
   </main>
+  <% if(face!=='config') { %><footer class="app-clock-support">血糖みまもり · 株式会社世良 <a href="mailto:info@sera-inc.co.jp">お問い合わせ</a></footer><% } %>
   <script src="<%= locals.bundle %>/js/bundle.clock.js"></script>
 
   <script type="text/javascript">
@@ -46,7 +59,7 @@
       }
     });
 
-    var secret = typeof localStorage !== 'undefined' ? localStorage.getItem('apisecrethash') : '';
+    var secret = window.Nightscout.client.readApiSecret();
     var src = '/api/v1/status.js?t=' + Date.now();
 
     if (secret) {
@@ -114,7 +127,7 @@
     <% } %>
   </script>
   <%if (face == 'config') { %>
-  <%- include('clock-config.html', {}); %>
+  <script src="/design-system/clock-config.js" defer></script>
   <% } %>
 </body>
 

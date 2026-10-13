@@ -1,0 +1,34 @@
+{
+  "stats": {
+    "suites": 73,
+    "tests": 263,
+    "passes": 259,
+    "pending": 0,
+    "failures": 4,
+    "start": "2026-10-12T13:16:20.110Z",
+    "end": "2026-10-12T13:16:27.959Z",
+    "duration": 7849
+  },
+  "failures": [
+    {
+      "title": "captured-fixture pill goldens aaps matches committed pills-golden.json",
+      "error": "Golden drift in aaps starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"aaps\",\r\n  3:   \"time\": 1778284864388,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"aaps\",\n  3:   \"time\": 1778284864388,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write",
+      "stack": "Error: Golden drift in aaps starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"aaps\",\r\n  3:   \"time\": 1778284864388,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"aaps\",\n  3:   \"time\": 1778284864388,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)"
+    },
+    {
+      "title": "captured-fixture pill goldens loop matches committed pills-golden.json",
+      "error": "Golden drift in loop starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"loop\",\r\n  3:   \"time\": 1778284977372,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"loop\",\n  3:   \"time\": 1778284977372,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write",
+      "stack": "Error: Golden drift in loop starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"loop\",\r\n  3:   \"time\": 1778284977372,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"loop\",\n  3:   \"time\": 1778284977372,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)"
+    },
+    {
+      "title": "captured-fixture pill goldens phone-uploader matches committed pills-golden.json",
+      "error": "Golden drift in phone-uploader starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"phone-uploader\",\r\n  3:   \"time\": 1778284895589,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"phone-uploader\",\n  3:   \"time\": 1778284895589,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write",
+      "stack": "Error: Golden drift in phone-uploader starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"phone-uploader\",\r\n  3:   \"time\": 1778284895589,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"phone-uploader\",\n  3:   \"time\": 1778284895589,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)"
+    },
+    {
+      "title": "captured-fixture pill goldens trio matches committed pills-golden.json",
+      "error": "Golden drift in trio starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"trio\",\r\n  3:   \"time\": 1778284860000,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"trio\",\n  3:   \"time\": 1778284860000,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write",
+      "stack": "Error: Golden drift in trio starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"trio\",\r\n  3:   \"time\": 1778284860000,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"trio\",\n  3:   \"time\": 1778284860000,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)"
+    }
+  ]
+}

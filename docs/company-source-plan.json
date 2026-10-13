@@ -1,0 +1,84 @@
+[
+  {
+    "file": "lib/settings.js",
+    "beforeSHA256": "f89533643c4992aca968d739d2d08ab003c37e819a852bf599c6d2e73f2474d1",
+    "rows": [
+      {
+        "before": "customTitle: 'Nightscout'",
+        "after": "customTitle: '血糖みまもり'"
+      }
+    ]
+  },
+  {
+    "file": "tests/settings.test.js",
+    "beforeSHA256": "234b019ea1b2fedf810170e557237498f251f7fd70a6023153310555da505fe0",
+    "rows": [
+      {
+        "before": "settings.customTitle.should.equal('Nightscout');",
+        "after": "settings.customTitle.should.equal('血糖みまもり');"
+      }
+    ]
+  },
+  {
+    "file": "lib/client/index.js",
+    "beforeSHA256": "7b99a3faa9eb34ffb418ce74ca135d249fe7c00bb326e178cc54386adc63883a",
+    "rows": [
+      {
+        "before": "client.settings.customTitle || 'Nightscout'",
+        "after": "client.settings.customTitle || '血糖みまもり'"
+      },
+      {
+        "before": "$('.appName').text(serverSettings.name);",
+        "after": "$('.appName').text('血糖みまもり');"
+      }
+    ]
+  },
+  {
+    "file": "views/index.html",
+    "beforeSHA256": "ead7f87de972b7ef0f7df6843e1dce9ec118d49fa4c31700db96de42111e1c44",
+    "rows": [
+      {
+        "before": "name=\"apple-mobile-web-app-title\" content=\"Nightscout\"",
+        "after": "name=\"apple-mobile-web-app-title\" content=\"血糖みまもり\""
+      },
+      {
+        "before": "id=\"customTitle\" value=\"Nightscout\"",
+        "after": "id=\"customTitle\" value=\"血糖みまもり\""
+      },
+      {
+        "before": "      <fieldset id=\"about\">\r\n        <legend class=\"translate\">About</legend>\r\n        <div class=\"appName\"></div>\r\n        <div>バージョン <span class=\"version\"></span></div>\r\n        <div>更新識別子 <span class=\"head\"></span></div>\r\n        <p>\r\n          <div>ライセンス：<a href=\"http://www.gnu.org/licenses/agpl.html\" target=\"_blank\">AGPL</a></div>\r\n          <div>著作権 © 2017 <a href=\"https://github.com/nightscout/cgm-remote-monitor/graphs/contributors\" target=\"_blank\">Nightscoutの開発貢献者</a></div>\r\n        </p>\r\n        <div class=\"links\">\r\n          <a href=\"https://github.com/nightscout/cgm-remote-monitor/releases\" target=\"_blank\" class=\"translate\">Release Notes</a><br>\r\n          <a href=\"https://nightscout.github.io/pages/update-fork/\" class=\"translate\">Check for Updates</a><br>\r\n          <a href=\"https://github.com/nightscout/cgm-remote-monitor\" target=\"_blank\" class=\"translate\">Open Source</a><br>\r\n          <a href=\"https://nightscout.github.io\" target=\"_blank\" class=\"translate\">Nightscout Info</a><br>\r\n          <a href=\"https://www.facebook.com/groups/cgminthecloud/\" target=\"_blank\">CGMのクラウド利用コミュニティー</a><br>\r\n        </div>\r\n      </fieldset>",
+        "after": "      <fieldset id=\"about\">\r\n        <legend>サービスについて</legend>\r\n        <div class=\"appName\">血糖みまもり</div>\r\n        <p>運営：株式会社世良</p>\r\n        <p><a href=\"mailto:info@sera-inc.co.jp\">お問い合わせ：info@sera-inc.co.jp</a></p>\r\n        <p><a href=\"https://sera-inc.co.jp\" target=\"_blank\" rel=\"noopener noreferrer\">株式会社世良の会社情報</a></p>\r\n        <details class=\"app-service-license\">\r\n          <summary>バージョンとライセンス</summary>\r\n          <p>バージョン <span class=\"version\"></span></p>\r\n          <p>更新識別子 <span class=\"head\"></span></p>\r\n          <p>ソースコードのライセンス：<a href=\"https://www.gnu.org/licenses/agpl-3.0.html\" target=\"_blank\" rel=\"noopener noreferrer\">AGPL（第3版）</a></p>\r\n          <p>基盤の著作権 © 2017 <a href=\"https://github.com/nightscout/cgm-remote-monitor/graphs/contributors\" target=\"_blank\" rel=\"noopener noreferrer\">Nightscoutの開発貢献者</a></p>\r\n          <p><a href=\"https://github.com/nightscout/cgm-remote-monitor\" target=\"_blank\" rel=\"noopener noreferrer\">基盤のソースコード</a></p>\r\n          <p><a href=\"https://github.com/nightscout/cgm-remote-monitor/releases\" target=\"_blank\" rel=\"noopener noreferrer\">基盤の更新履歴</a></p>\r\n        </details>\r\n      </fieldset>"
+      }
+    ]
+  },
+  {
+    "file": "views/partials/toolbar.ejs",
+    "beforeSHA256": "77c7e51509d87b9954e519f0251e32c14b43cdb85726d82f413d5472c5fe0c4c",
+    "rows": [
+      {
+        "before": "</nav></div>",
+        "after": "</nav><div class=\"app-service-support\">\r\n  <p>運営：株式会社世良</p>\r\n  <a href=\"mailto:info@sera-inc.co.jp\">お問い合わせ</a>\r\n  <a href=\"https://sera-inc.co.jp\" target=\"_blank\" rel=\"noopener noreferrer\">会社情報</a>\r\n</div></div>"
+      }
+    ]
+  },
+  {
+    "file": "views/clockviews/clock.html",
+    "beforeSHA256": "30254c60b3a135cdf686bb4262a61d2272c520bf0c11ec13e6353d8879e5df25",
+    "rows": [
+      {
+        "before": "  </main>",
+        "after": "  </main>\r\n  <% if(face!=='config') { %><footer class=\"app-clock-support\">血糖みまもり · 株式会社世良 <a href=\"mailto:info@sera-inc.co.jp\">お問い合わせ</a></footer><% } %>"
+      }
+    ]
+  },
+  {
+    "file": "static/manifest.json",
+    "beforeSHA256": "6b69989f6a501ad238779e40a8e08a0da52a2d0f362bdb30000f4fb9bf00597c",
+    "rows": [
+      {
+        "before": "\"name\": \"Nightscout\"",
+        "after": "\"name\": \"血糖みまもり\",\r\n\t\"short_name\": \"血糖みまもり\",\r\n\t\"lang\": \"ja\",\r\n\t\"description\": \"株式会社世良が提供する、血糖値と治療記録を確認するサービス\",\r\n\t\"start_url\": \"/\""
+      }
+    ]
+  }
+]

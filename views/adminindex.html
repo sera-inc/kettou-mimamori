@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
-      <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="apple-mobile-web-app-capable" content="yes">
-      <title>Admin tools: Nightscout</title>
+      <title>管理ツール | 血糖みまもり</title>
 
       <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
@@ -33,12 +34,14 @@
       <link rel="preload" href="/css/ui-darkness/jquery-ui.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
       <%- include('preloadCSS')%>
     </head>
-  <body>
+  <body class="app-page" data-page="admin">
     <%- include('partials/toolbar') %>
-
+    <main id="app-main" class="app-main" tabindex="-1">
+    <%- include('partials/page-title') %>
     <div id="admin_placeholder"></div>
 
     <%- include('partials/authentication-status') %>
+    </main>
 
     <script src="<%= locals.bundle %>/js/bundle.app.js"></script>
     <script src="/socket.io/socket.io.js"></script>

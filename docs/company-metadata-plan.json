@@ -1,0 +1,49 @@
+[
+  {
+    "file": "package.json",
+    "path": [
+      "author"
+    ],
+    "original": "Nightscout Team",
+    "replacement": {
+      "name": "株式会社世良",
+      "email": "info@sera-inc.co.jp"
+    }
+  },
+  {
+    "file": "package.json",
+    "path": [
+      "homepage"
+    ],
+    "original": "http://nightscout.github.io/",
+    "replacement": "https://sera-inc.co.jp"
+  },
+  {
+    "file": "package.json",
+    "path": [
+      "bugs"
+    ],
+    "original": {
+      "url": "https://github.com/nightscout/cgm-remote-monitor/issues"
+    },
+    "replacement": {
+      "email": "info@sera-inc.co.jp"
+    }
+  },
+  {
+    "file": "lib/api3/swagger.json",
+    "path": [
+      "info",
+      "contact"
+    ],
+    "original": {
+      "name": "NS development discussion channel",
+      "url": "https://gitter.im/nightscout/public"
+    },
+    "replacement": {
+      "name": "株式会社世良",
+      "url": "https://sera-inc.co.jp",
+      "email": "info@sera-inc.co.jp"
+    }
+  }
+]

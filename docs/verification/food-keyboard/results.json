@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-10-12T16:41:10.250Z",
+  "scope": "Synthetic food GET fixtures; keyboard uses original callbacks; no API writes or database persistence",
+  "results": [
+    {
+      "viewport": "desktop",
+      "pass": true,
+      "carbValues": {
+        "onePortion": 55,
+        "twoPortions": 110
+      },
+      "beforeScroll": 995,
+      "controlNames": [
+        {
+          "class": "fe_qpname",
+          "name": "食事名"
+        },
+        {
+          "class": "fq_hidden",
+          "name": "昼食を非表示にする"
+        },
+        {
+          "class": "fq_hideafteruse",
+          "name": "昼食を使用後に非表示にする"
+        },
+        {
+          "class": "fe_qpportions",
+          "name": "ごはんの食数"
+        }
+      ],
+      "axeViolations": [],
+      "assertions": [
+        "native target selection",
+        "Space adds through original drop handler",
+        "existing portion recalculation",
+        "Enter/Space sorting through original update handler",
+        "focus restored after redraw",
+        "exact record/portions retained",
+        "no save requests"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "pass": true,
+      "carbValues": {
+        "onePortion": 55,
+        "twoPortions": 110
+      },
+      "beforeScroll": 2497,
+      "controlNames": [
+        {
+          "class": "fe_qpname",
+          "name": "食事名"
+        },
+        {
+          "class": "fq_hidden",
+          "name": "昼食を非表示にする"
+        },
+        {
+          "class": "fq_hideafteruse",
+          "name": "昼食を使用後に非表示にする"
+        },
+        {
+          "class": "fe_qpportions",
+          "name": "ごはんの食数"
+        }
+      ],
+      "axeViolations": [],
+      "assertions": [
+        "native target selection",
+        "Space adds through original drop handler",
+        "existing portion recalculation",
+        "Enter/Space sorting through original update handler",
+        "focus restored after redraw",
+        "exact record/portions retained",
+        "no save requests"
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "apiWrites": []
+}

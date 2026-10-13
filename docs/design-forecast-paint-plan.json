@@ -1,0 +1,20 @@
+{
+  "file": "lib/client/renderer.js",
+  "beforeSHA256": "d61826d5b9df6fdd153311a2e85e883f55baa1a301a5d64663e48c483701c4ca",
+  "beforeAST": "2c8c7b29bcaead9f15d199dbf5d2f77cf691244a2b47a56b31934ecbb9a4959c",
+  "scope": "Only default forecast SVG stroke and positive opacity; model records, custom colors, noFade, transparent/negative sentinels, coordinates, values, protocols and notification algorithms retained",
+  "rows": [
+    {
+      "original": "var html = require('../utils/html');",
+      "replacement": "var html = require('../utils/html');\nvar forecastPaint = require('./forecast-paint');"
+    },
+    {
+      "original": "return !client.latestSGV ? 1 : chart().futureOpacity(d.mills - client.latestSGV.mills);",
+      "replacement": "return !client.latestSGV ? 1 : forecastPaint.opacity(d, chart().futureOpacity(d.mills - client.latestSGV.mills));"
+    },
+    {
+      "original": "return (d.type === 'mbg' ? \"var(--app-text)\" : d.color);",
+      "replacement": "return (d.type === 'mbg' ? \"var(--app-text)\" : forecastPaint.color(d));"
+    }
+  ]
+}

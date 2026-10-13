@@ -1,0 +1,65 @@
+[
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "beforeSourceSHA256": "83cdf5e8f96e5566fb167180906d794927bea7bd3a26bb9235bebe0daac7a4ba",
+    "before": "var translate = require('../language')().translate;\r\n",
+    "after": "",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  },
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "beforeSourceSHA256": "34789dc058bc0ab105888f17dac3f992648818bf79f5f3e85e4cf0442e83e91e",
+    "before": "var report_plugins = Nightscout.report_plugins;",
+    "after": "var report_plugins = Nightscout.report_plugins;\r\n  var translate = Nightscout.client.translate;",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  },
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "beforeSourceSHA256": "ae7360e7af26370f7614986be009c4cea891a96c4617070222551d8f77cdf4fc",
+    "before": "'<b style=\"padding-left:2em\">MBG</b>: '",
+    "after": "'<b style=\"padding-left:2em\">' + translate('MBG') + '</b>: '",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  },
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "beforeSourceSHA256": "bc2a66ad86281482ec13c90298f18c236cc8f372ed7365a5fe780064456c8b6e",
+    "before": "' Raw: '",
+    "after": "' ' + translate('Raw') + ': '",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  },
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "beforeSourceSHA256": "2e3f13ccb4d814d03636c4091f24e39ff9a3788e5444209e8aa0ffb0a641bb13",
+    "before": "'<b style=\"padding-left:4em\">CAL</b>: '",
+    "after": "'<b style=\"padding-left:4em\">' + translate('CAL') + '</b>: '",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  },
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "beforeSourceSHA256": "ed355f0318439640e3439381bf6fc66e50a062017df68c0c58b95f448ebe5b1d",
+    "before": "' Scale: '",
+    "after": "' ' + translate('Calibration scale') + ': '",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  },
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "beforeSourceSHA256": "8c1c4e108ff8da46be1abe9999bfe4c88d92de5c8dd7128037e1b33a36f3521b",
+    "before": "' Intercept: '",
+    "after": "' ' + translate('Calibration intercept') + ': '",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  },
+  {
+    "file": "lib/report_plugins/calibrations.js",
+    "beforeSourceSHA256": "1e367b78a8db28a3abbdc5227c7ff72c89560b056082d5e480dce595288d866a",
+    "before": "' Slope: '",
+    "after": "' ' + translate('Calibration slope') + ': '",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  },
+  {
+    "file": "lib/report_plugins/profiles.js",
+    "beforeSourceSHA256": "91b1f8ee75cc6edf26d4deff83ef88caabfb7e40dd6247624c534df4167419b8",
+    "before": "textAsHtml(record.timezone)",
+    "after": "textAsHtml(client.language && typeof client.language.timezoneName === 'function' ? client.language.timezoneName(record.timezone) : record.timezone)",
+    "reason": "Localize populated report labels only; original event/measurement identifiers, raw/calibration numbers, calculations and timezone values remain unchanged"
+  }
+]

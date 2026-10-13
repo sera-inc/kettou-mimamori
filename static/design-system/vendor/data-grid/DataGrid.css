@@ -1,0 +1,330 @@
+/*
+ * DataGrid — DADS table / checkbox / page-navigation 派生（設計書 §4.2.2）
+ * 参照トークンは Layer 2（--app-*）のみ。
+ */
+
+/* ===== 横スクロール領域（role='region'） ===== */
+.app-data-grid {
+  overflow-x: auto;
+  color: var(--app-text);
+  font-family: var(--app-font-sans);
+}
+
+.app-data-grid:focus-visible {
+  outline: var(--app-focus-ring-width) solid var(--app-focus-ring);
+  outline-offset: var(--app-focus-ring-offset);
+}
+
+/* 密度: --app-row-height-* の3段階 */
+.app-data-grid[data-density="dense"] {
+  --_row-height: var(--app-row-height-dense);
+}
+
+.app-data-grid[data-density="standard"] {
+  --_row-height: var(--app-row-height);
+}
+
+.app-data-grid[data-density="comfy"] {
+  --_row-height: var(--app-row-height-comfy);
+}
+
+/* ===== テーブル（DADS table 派生） ===== */
+.app-data-grid__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--app-text-table-size);
+  font-weight: var(--app-text-table-weight);
+  line-height: var(--app-text-table-leading);
+  letter-spacing: var(--app-text-table-tracking);
+}
+
+.app-data-grid__caption {
+  padding-bottom: var(--app-space-1);
+  text-align: left;
+  font-size: var(--app-text-body-size);
+  font-weight: var(--app-font-weight-bold);
+  line-height: var(--app-text-body-leading);
+}
+
+.app-data-grid__caption[data-visually-hidden] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.app-data-grid__table :is(th, td) {
+  box-sizing: border-box;
+  height: var(--_row-height);
+  padding: var(--app-space-05) var(--app-space-2);
+  border: 1px solid var(--app-border);
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* ヘッダ行: DADS table のヘッダ面をトークンで再現 */
+.app-data-grid__table thead th {
+  background-color: var(--app-surface-sunken);
+  border-bottom: 2px solid var(--app-border-strong);
+  color: var(--app-text);
+  font-weight: var(--app-font-weight-bold);
+}
+
+/* 数値列: 右寄せ + 等幅（.app-text-numeric 相当） */
+.app-data-grid__table [data-numeric] {
+  text-align: right;
+  font-family: var(--app-font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: var(--app-text-numeric-tracking);
+}
+
+/* 行のホバーと選択（選択が優先されるよう選択を後置） */
+@media (hover: hover) {
+  .app-data-grid__table tbody tr:hover {
+    background-color: var(--app-surface-hover);
+  }
+}
+
+.app-data-grid__table tbody tr[data-selected] {
+  background-color: var(--app-surface-selected);
+}
+
+/* ===== ソートヘッダ（DADS table__sort-button 派生: th > button） ===== */
+.app-data-grid__sort-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--app-space-05);
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.1875rem;
+  cursor: pointer;
+}
+
+.app-data-grid__sort-button:hover {
+  text-decoration-thickness: 0.1875rem;
+}
+
+.app-data-grid__sort-button:focus-visible {
+  outline: var(--app-focus-ring-width) solid var(--app-focus-ring);
+  outline-offset: var(--app-focus-ring-offset);
+  border-radius: var(--app-radius-xs);
+}
+
+.app-data-grid__sort-button svg {
+  flex-shrink: 0;
+}
+
+/* ===== 行選択チェックボックス（DADS checkbox 派生） ===== */
+.app-data-grid__select-cell {
+  width: 2.75rem;
+  padding: 0;
+  text-align: center;
+}
+
+.app-data-grid__checkbox {
+  appearance: none;
+  position: relative;
+  display: inline-grid;
+  place-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid var(--app-border-strong);
+  border-radius: var(--app-radius-xs);
+  background-color: var(--app-surface);
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* ヒット領域を 44px 相当へ拡張（DADS 流の ::after 拡張） */
+.app-data-grid__checkbox::after {
+  content: "";
+  position: absolute;
+  inset: -0.75rem;
+}
+
+@media (hover: hover) {
+  .app-data-grid__checkbox:hover {
+    border-color: var(--app-text);
+  }
+}
+
+.app-data-grid__checkbox:focus-visible {
+  outline: var(--app-focus-ring-width) solid var(--app-focus-ring);
+  outline-offset: var(--app-focus-ring-offset);
+}
+
+.app-data-grid__checkbox:is(:checked, :indeterminate) {
+  border-color: var(--app-primary);
+  background-color: var(--app-primary);
+}
+
+/* チェックマーク（DADS checkbox の SVG パスを clip-path で再現） */
+.app-data-grid__checkbox::before {
+  content: "";
+  display: none;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: var(--app-text-inverse);
+  clip-path: path("M5.6,11.2L12.65,4.15L11.25,2.75L5.6,8.4L2.75,5.55L1.35,6.95L5.6,11.2Z");
+}
+
+.app-data-grid__checkbox:checked::before {
+  display: block;
+}
+
+.app-data-grid__checkbox:indeterminate::before {
+  display: block;
+  clip-path: path("M2,6h10v2H2Z");
+}
+
+/* ===== 空状態 ===== */
+.app-data-grid__empty-cell {
+  padding: var(--app-space-4) var(--app-space-2);
+  text-align: center;
+  color: var(--app-text-muted);
+}
+
+/* ===== 読込中シマー（他コンポーネントを import せず内製） ===== */
+.app-data-grid__shimmer {
+  display: block;
+  width: 60%;
+  height: 1em;
+  border-radius: var(--app-radius-xs);
+  background: linear-gradient(
+    90deg,
+    var(--app-surface-sunken) 25%,
+    var(--app-surface) 50%,
+    var(--app-surface-sunken) 75%
+  );
+  background-size: 200% 100%;
+  animation: app-data-grid-shimmer 1.4s ease-in-out infinite;
+}
+
+.app-data-grid__select-cell .app-data-grid__shimmer {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0 auto;
+}
+
+.app-data-grid__table [data-numeric] .app-data-grid__shimmer {
+  margin-left: auto;
+}
+
+@keyframes app-data-grid-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-data-grid__shimmer {
+    animation: none;
+  }
+}
+
+/* ===== ページナビゲーション（DADS page-navigation 派生） ===== */
+.app-data-grid-pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--app-space-2);
+  color: var(--app-text);
+  font-family: var(--app-font-sans);
+}
+
+.app-data-grid-pagination__pages {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 0;
+  align-items: center;
+  gap: var(--app-space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-data-grid-pagination__arrow,
+.app-data-grid-pagination__page {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--app-border);
+  border-radius: var(--app-radius-full);
+  background-color: var(--app-surface);
+  padding: 0;
+  color: var(--app-primary);
+  font-size: var(--app-text-body-size);
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* ヒット領域を 44px 相当へ拡張（DADS page-navigation の ::after 拡張） */
+.app-data-grid-pagination__arrow::after,
+.app-data-grid-pagination__page::after {
+  content: "";
+  position: absolute;
+  inset: -0.375rem;
+}
+
+@media (hover: hover) {
+  .app-data-grid-pagination__arrow:enabled:hover,
+  .app-data-grid-pagination__page:enabled:not([aria-current="page"]):hover {
+    background-color: var(--app-primary-bg);
+    border-color: var(--app-primary);
+  }
+}
+
+.app-data-grid-pagination__arrow:focus-visible,
+.app-data-grid-pagination__page:focus-visible {
+  outline: var(--app-focus-ring-width) solid var(--app-focus-ring);
+  outline-offset: var(--app-focus-ring-offset);
+}
+
+.app-data-grid-pagination__page[aria-current="page"] {
+  border-color: var(--app-primary);
+  background-color: var(--app-primary);
+  color: var(--app-primary-text);
+}
+
+.app-data-grid-pagination__arrow:disabled {
+  border-color: var(--app-border);
+  background-color: var(--app-surface-sunken);
+  color: var(--app-text-muted);
+  cursor: default;
+}
+
+/* ===== 強制カラーモード ===== */
+@media (forced-colors: active) {
+  .app-data-grid__table :is(th, td) {
+    border-color: CanvasText;
+  }
+
+  .app-data-grid__checkbox:is(:checked, :indeterminate) {
+    border-color: Highlight;
+    background-color: Highlight;
+  }
+
+  .app-data-grid__checkbox::before {
+    background-color: HighlightText;
+  }
+}

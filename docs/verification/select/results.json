@@ -1,0 +1,19 @@
+[
+  {
+    "case": "native required validation and arrow-key selection retain protocol value",
+    "focus": {
+      "height": 44,
+      "outline": "solid",
+      "width": "3px"
+    },
+    "pass": true
+  },
+  {
+    "case": "disabled skipped, described error visible, native submit retained",
+    "pass": true
+  },
+  {
+    "case": "existing profile timezone options preserve stored values; no persistence",
+    "pass": true
+  }
+]

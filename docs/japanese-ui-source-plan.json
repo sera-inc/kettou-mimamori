@@ -1,0 +1,205 @@
+[
+  {
+    "file": "views/index.html",
+    "beforeSHA256": "dcbabd2aad2ea2995a36e4c1731a85ab3c6c61fb72232e49a617206cf7fe12b9",
+    "beforeAST": null,
+    "rows": [
+      {
+        "start": 5080,
+        "before": "aria-label=\"Chart\"",
+        "after": "aria-label=\"血糖値の推移グラフ\""
+      },
+      {
+        "start": 14012,
+        "before": "<div>version <span",
+        "after": "<div>バージョン <span"
+      },
+      {
+        "start": 14070,
+        "before": "<div>head <span",
+        "after": "<div>更新識別子 <span"
+      },
+      {
+        "start": 14137,
+        "before": "<div>License: <a",
+        "after": "<div>ライセンス：<a"
+      },
+      {
+        "start": 14246,
+        "before": "Copyright © 2017",
+        "after": "著作権 © 2017"
+      },
+      {
+        "start": 14357,
+        "before": ">Nightscout contributors</a>",
+        "after": ">Nightscoutの開発貢献者</a>"
+      },
+      {
+        "start": 14998,
+        "before": ">CGM in the Cloud</a>",
+        "after": ">CGMのクラウド利用コミュニティー</a>"
+      },
+      {
+        "start": 27676,
+        "before": "title=\"Use IOB in calculation\"",
+        "after": "title=\"残存インスリン（IOB）を計算に含める\""
+      }
+    ]
+  },
+  {
+    "file": "lib/client/boluscalc.js",
+    "beforeSHA256": "49464189c3a130e5bca80f58777ef71eea1f22ef8958a1c3780e07bc17ebe104",
+    "beforeAST": "bf2c9b53bd9462252eeeab9ce66165b1ef7d284104fd261a877043f4449d08c5",
+    "rows": [
+      {
+        "start": 8403,
+        "before": "'Target BG range: ' + targetBGLow",
+        "after": "translate('Target BG range:') + ' ' + targetBGLow"
+      },
+      {
+        "start": 8498,
+        "before": "'\\nBG diff: ' + record.bgdiff.toFixed(1)",
+        "after": "'\\n' + translate('BG diff:') + ' ' + record.bgdiff.toFixed(1)"
+      },
+      {
+        "start": 9362,
+        "before": "title=\"Delete record\"",
+        "after": "title=\"' + htmlUtils.textAsHtml(translate('Delete record')) + '\""
+      },
+      {
+        "start": 10873,
+        "before": "'IC: ' + ic",
+        "after": "translate('IC:') + ' ' + ic"
+      },
+      {
+        "start": 25969,
+        "before": "width: 640\r\n      , height: 400",
+        "after": "width: 640\r\n      , height: 400\r\n      , closeText: client.language.lang === 'ja' ? '閉じる' : 'Close'"
+      }
+    ]
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "beforeSHA256": "a20acd8714f7cda1646794f6680f33a5602996bd15e424b9497386703f8def08",
+    "beforeAST": "65fa80435cf7d169a1912084f79952cb713a2ddd4f911d139378cd5ca8eb29de",
+    "rows": [
+      {
+        "start": 7267,
+        "before": "timezoneInput.append('<option value=\"' + tz + '\">' + tz + '</option>');",
+        "after": "timezoneInput.append($('<option>').val(tz).text(client.language.timezoneName(tz)));"
+      }
+    ]
+  },
+  {
+    "file": "lib/report_plugins/loopalyzer.js",
+    "beforeSHA256": "ad0715f9319077b081fc73f9d9ad0b4f6169771a243ee28a66359ef63a4822fc",
+    "beforeAST": "bb760459ed24e94b5c0d69a04436949b724350bfa70c943e4a749141f5ade2ee",
+    "rows": [
+      {
+        "start": 963,
+        "before": "'<h2>Loopalyzer&nbsp;&nbsp;<span id=\"loopalyzer-dateinfo\"></span></h2>'",
+        "after": "'<h2>' + translate('Loopalyzer') + '&nbsp;&nbsp;<span id=\"loopalyzer-dateinfo\"></span></h2>'"
+      }
+    ]
+  },
+  {
+    "file": "lib/report_plugins/glucosedistribution.js",
+    "beforeSHA256": "2bab0faa0ac7961bec2cbf5892ffa96588dd80387ba2818884a2d1a05a9f6cab",
+    "beforeAST": "86fe75da852fbae6f888cb514a0fec71f2360f7587b7b6e4921826d534668266",
+    "rows": [
+      {
+        "start": 1083,
+        "before": "'Nathan, David M., et al. \"Translating the A1C assay into estimated average glucose values.\" <i>Diabetes care</i> 31.8 (2008): 1473-1478.'",
+        "after": "translate('Nathan et al. (2008): estimated average glucose from HbA1c')"
+      },
+      {
+        "start": 19574,
+        "before": "'<tr><th>Out of Range RMS</th><th>GMI</th><th>Revised GMI</th></tr>'",
+        "after": "'<tr><th>' + translate('Out of Range RMS') + '</th><th>GMI</th><th>' + translate('Revised GMI') + '</th></tr>'"
+      }
+    ]
+  },
+  {
+    "file": "lib/admin_plugins/roles.js",
+    "beforeSHA256": "1fd809244311fd70f3760b75d52f6dace8e3537b083e98b68a6405b853ae10fa",
+    "beforeAST": "c393ba47cbd64c559ce6715824d1481979e6d6a7536c8d8bf028d632bfd0e369",
+    "rows": [
+      {
+        "start": 7074,
+        "before": "toTextContent(role.name)",
+        "after": "toTextContent(role._id ? role.name : client.translate(role.name))"
+      },
+      {
+        "start": 7216,
+        "before": "? '[none]' : role.permissions.join(' ')",
+        "after": "? client.translate('[none]') : role.permissions.join(' ')"
+      },
+      {
+        "start": 7364,
+        "before": ": '[system default]'",
+        "after": ": client.translate('[system default]')"
+      }
+    ]
+  },
+  {
+    "file": "lib/plugins/cannulaage.js",
+    "beforeSHA256": "65bb7f23510b9ff6428e9d3232ff5bebc8fb2ea39db87dcd5a6d36acd83ec7d7",
+    "beforeAST": "d23c11d2156ed907fe6324b81a3e5eac9d5c1fda82a40aa24321d60adf4fda4d",
+    "rows": [
+      {
+        "start": 3478,
+        "before": "'n/a '",
+        "after": "translate('n/a') + ' '"
+      }
+    ]
+  },
+  {
+    "file": "lib/plugins/batteryage.js",
+    "beforeSHA256": "092ee71b234c41c2e2b2c11e3863f3909cca1fa86dd1f9fc254d4e6676ee9a4f",
+    "beforeAST": "b6b6ed46da1010cc87d23e9df74075bd8ccd5e77d4957e17a5635e5c722497a4",
+    "rows": [
+      {
+        "start": 4015,
+        "before": "'n/a '",
+        "after": "translate('n/a') + ' '"
+      }
+    ]
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "beforeSHA256": "8d1b7ab625ccf80a3fdc2d5a85687ba0ea93f649e8f9351b5d351ccfbfa6ceaf",
+    "beforeAST": "7fa026c0f73a953de1d0a75303c7545dc0ba89282f25da160100112251571e26",
+    "rows": [
+      {
+        "start": 3661,
+        "before": "col + ': ERROR'",
+        "after": "translate(col) + ': ' + translate('ERROR')"
+      },
+      {
+        "start": 3783,
+        "before": "col + ': ≥ '",
+        "after": "translate(col) + ': ≥ '"
+      },
+      {
+        "start": 3905,
+        "before": "col + ': 0'",
+        "after": "translate(col) + ': 0'"
+      },
+      {
+        "start": 3991,
+        "before": "col + ': '",
+        "after": "translate(col) + ': '"
+      },
+      {
+        "start": 14376,
+        "before": "params: [count, col, collectionsProcessed, collections.length]",
+        "after": "params: [count, translate(col), collectionsProcessed, collections.length]"
+      },
+      {
+        "start": 14853,
+        "before": "params: [col]",
+        "after": "params: [translate(col)]"
+      }
+    ]
+  }
+]

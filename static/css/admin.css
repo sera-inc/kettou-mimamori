@@ -1,27 +1,27 @@
 #admin-tools h1 {
   text-align: left;
-  margin: 10px;
+  margin: var(--app-space-1);
 }
 
 #admin_placeholder {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: var(--app-space-2);
+  margin-right: var(--app-space-2);
 }
 
 #admin_placeholder fieldset {
-  background-color: #383838;
-  border-radius: 8px;
+  background-color: var(--app-surface);
+  border-radius: var(--app-radius-md);
 }
 
 #admin_placeholder button{
-  font-size: 18px;
-  font-weight: bolder;
-  background-color: #ccc;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 2px solid #aaa;
-  box-shadow: 2px 2px 0 #eee;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-right: 20px;
+  font-size: var(--app-text-heading-sm-size);
+  font-weight: var(--app-font-weight-bold);
+  background-color: var(--app-surface);
+  padding: var(--app-space-05) var(--app-space-1);
+  border-radius: var(--app-radius-xs);
+  border: 2px solid var(--app-border);
+  box-shadow: var(--app-shadow-raised);
+  margin-top: var(--app-space-2);
+  margin-bottom: var(--app-space-1);
+  margin-right: var(--app-space-2);
 }

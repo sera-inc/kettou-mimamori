@@ -1,0 +1,3246 @@
+{
+  "status": "reviewed-translation-not-applied",
+  "inventorySha256": "217bf7c7e7de8369bdf0ca0ddde16a6aac43aa9588c8c6677e034cbfda36203b",
+  "scope": "Only display title/summary/description; paths, fields, enums, defaults, security and payload schemas remain unchanged",
+  "rows": [
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "info",
+        "title"
+      ],
+      "before": "Nightscout API",
+      "after": "血糖みまもり API"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "info",
+        "description"
+      ],
+      "before": "Nightscout API v3 is a component of cgm-remote-monitor project. It aims to provide lightweight, secured and HTTP REST compliant interface for your T1D treatment data exchange.\n\nAPI v3 uses these environment variables, among other things&#58;\n- Security switch (optional, default = `true`) <pre>API3_SECURITY_ENABLE=true</pre> You can turn the whole security mechanism off, e.g. for debugging or development purposes, but this should never be set to false in production.\n\n- Maximum limit count of documents retrieved from single query <pre>API3_MAX_LIMIT=1000</pre>\n\n- Autopruning of obsolete documents (optional, default is only `DEVICESTATUS`=60) <pre>API3_AUTOPRUNE_DEVICESTATUS=60\nAPI3_AUTOPRUNE_ENTRIES=365\nAPI3_AUTOPRUNE_TREATMENTS=120 </pre> You can specify for which collections autopruning will be activated and length of retention period in days, e.g. \"Hold 60 days of devicestatus, automatically delete older documents, hold 365 days of treatments and entries, automatically delete older documents.\"\n\n- Fallback deduplication switch (optional, default = true) <pre>API3_DEDUP_FALLBACK_ENABLED=true</pre> API3 uses the `identifier` field for document identification and mutual distinction within a single collection. There is automatic deduplication implemented matching the equal `identifier` field. E.g. `CREATE` operation for document having the same `identifier` as another one existing in the database is automatically transformed into `UPDATE` operation of the document found in the database.\nDocuments not created via API v3 usually does not have any `identifier` field, but we would like to have some form of deduplication for them, too. This fallback deduplication is turned on by having set `API3_DEDUP_FALLBACK_ENABLED` to `true`. When searching the collection in database, the document is found to be a duplicate only when either he has equal `identifier` or he has no `identifier` and meets&#58; <pre>`devicestatus` collection&#58; equal combination of `created_at` and `device`\n`entries` collection&#58;      equal combination of `date` and `type`\n`food` collection&#58;         equal `created_at`\n`profile` collection&#58;      equal `created_at`\n`treatments` collection&#58;   equal combination of `created_at` and `eventType` </pre>\n\n- Fallback switch for adding `created_at` field along the `date` field (optional, default = true) <pre>API3_CREATED_AT_FALLBACK_ENABLED=true</pre> Standard APIv3 document model uses only `date` field for storing a timestamp of the event recorded by the document. But there is a fallback option to fill `created_at` field as well automatically on each insert/update, just to keep all older components working.",
+      "after": "血糖みまもりのAPI v3は、1型糖尿病の治療データを交換するための、軽量で認証・認可を備えたHTTP RESTインターフェースです。\n\n主な環境変数は次のとおりです。\n\n- セキュリティの切り替え（任意、既定値は`true`）\n<pre>API3_SECURITY_ENABLE=true</pre>\n開発やデバッグでセキュリティ機構を無効にできます。本番環境ではfalseにしないでください。\n\n- 1回の検索で取得できる記録数の上限\n<pre>API3_MAX_LIMIT=1000</pre>\n\n- 古い記録の自動削除（任意、既定では`DEVICESTATUS`=60のみ）\n<pre>API3_AUTOPRUNE_DEVICESTATUS=60\nAPI3_AUTOPRUNE_ENTRIES=365\nAPI3_AUTOPRUNE_TREATMENTS=120 </pre>\n対象のコレクションと保持日数を指定します。たとえば機器状態を60日間保持し、それ以前を自動削除する設定ができます。\n\n- 旧形式の記録に対する重複排除（任意、既定値はtrue）\n<pre>API3_DEDUP_FALLBACK_ENABLED=true</pre>\nAPI v3は`identifier`で同じコレクション内の記録を識別します。同じ`identifier`の記録を`CREATE`すると、既存の記録を`UPDATE`します。\nAPI v3以外で作成された記録には通常`identifier`がないため、`API3_DEDUP_FALLBACK_ENABLED`を`true`にすると、識別子が等しい場合、または識別子がなく次の条件を満たす場合に重複と判定します。\n<pre>`devicestatus` collection&#58; equal combination of `created_at` and `device`\n`entries` collection&#58;      equal combination of `date` and `type`\n`food` collection&#58;         equal `created_at`\n`profile` collection&#58;      equal `created_at`\n`treatments` collection&#58;   equal combination of `created_at` and `eventType` </pre>\n\n- `date`と併せて`created_at`を補う設定（任意、既定値はtrue）\n<pre>API3_CREATED_AT_FALLBACK_ENABLED=true</pre>\nAPI v3の標準形式は出来事の日時を`date`に保存します。旧形式を利用する機能との互換性のため、追加・更新時に`created_at`も自動で設定できます。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "tags",
+        0,
+        "description"
+      ],
+      "before": "Generic operations with each database collection (devicestatus, entries, food, profile, settings, treatments)",
+      "after": "各コレクション（devicestatus、entries、food、profile、settings、treatments）に共通する操作"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "tags",
+        1,
+        "description"
+      ],
+      "before": "All other various operations",
+      "after": "その他の操作"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "summary"
+      ],
+      "before": "SEARCH: Search documents from the collection",
+      "after": "検索：コレクションの記録を検索"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "description"
+      ],
+      "before": "General search operation through documents of one collection, matching the specified filtering criteria. You can apply&#58;\n\n1) filtering - combining any number of filtering parameters\n\n2) ordering - using `sort` or `sort$desc` parameter\n\n3) paging - using `limit` and `skip` parameters\n\nIf successful, HTTP 200 code is returned with JSON array of matching documents as a response content (it may be empty).\n\nThis operation requires `read` permission for the API and the collection (e.g. `*:*:read`, `api:*:read`, `*:treatments:read`, `api:treatments:read`).\n\nThe only exception is the `settings` collection which requires `admin` permission (`api:settings:admin`), because the settings of each application should be isolated and kept secret. You need to know the concrete identifier to access the app's settings.",
+      "after": "指定した条件に合う記録を、1つのコレクションから検索します。\n\n1. 複数の絞り込み条件を組み合わせる\n2. `sort`または`sort$desc`で並べ替える\n3. `limit`と`skip`でページを区切る\n\n成功するとHTTP 200と、該当する記録のJSON配列を返します。配列が空になる場合もあります。\n\nAPIとコレクションに対する`read`権限が必要です（例：`*:*:read`、`api:*:read`、`*:treatments:read`、`api:treatments:read`）。\n\n例外として、`settings`コレクションは`admin`権限（`api:settings:admin`）を必要とします。アプリごとの設定を分離し、秘密を保護するためです。アプリの設定へアクセスするには、具体的な識別子が必要です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": "操作対象のコレクション"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Any number of filtering operators.\n\nEach filtering operator has name like `<field-name>$<operator>`, e.g. `carbs$gt=2` which represents filtering rule \"The field carbs must be present and greater than 2\".\n\nYou can choose from operators&#58;\n\n`eq`=equals, `insulin$eq=1.5`\n\n`ne`=not equals, `insulin$ne=1.5`\n\n`gt`=greater than, `carbs$gt=30`\n\n`gte`=greater than or equal, `carbs$gte=30`\n\n`lt`=less than, `carbs$lt=30`\n\n`lte`=less than or equal, `carbs$lte=30`\n\n`in`=in specified set, `type$in=sgv|mbg|cal`\n\n`nin`=not in specified set, `eventType$nin=Temp%20Basal|Temporary%20Target`\n\n`re`=regex pattern, `eventType$re=Temp.%2A`\n\nWhen filtering by field `date`, `created_at`, `srvModified` or `srvCreated`, you can choose from three input formats\n- Unix epoch in milliseconds (1525383610088)\n- Unix epoch in seconds (1525383610)\n- ISO 8601 with optional timezone ('2018-05-03T21:40:10.088Z' or '2018-05-03T23:40:10.088+02:00')\n\nThe date is always queried in a normalized form - UTC with zero offset and with the correct format (1525383610088 for `date`, '2018-05-03T21:40:10.088Z' for `created_at`).",
+      "after": "複数の絞り込み条件を指定できます。\n\n条件名は`<field-name>$<operator>`の形式です。例：`carbs$gt=2`は「carbsが存在し、2より大きい」という条件です。\n\n指定できる演算子：\n\n`eq`：等しい。例：`insulin$eq=1.5`\n`ne`：等しくない。例：`insulin$ne=1.5`\n`gt`：より大きい。例：`carbs$gt=30`\n`gte`：以上。例：`carbs$gte=30`\n`lt`：より小さい。例：`carbs$lt=30`\n`lte`：以下。例：`carbs$lte=30`\n`in`：指定した集合に含まれる。例：`type$in=sgv|mbg|cal`\n`nin`：指定した集合に含まれない。例：`eventType$nin=Temp%20Basal|Temporary%20Target`\n`re`：正規表現に一致する。例：`eventType$re=Temp.%2A`\n\n`date`、`created_at`、`srvModified`、`srvCreated`の絞り込みには、次の3形式を使用できます。\n- UNIX時刻のミリ秒（1525383610088）\n- UNIX時刻の秒（1525383610）\n- タイムゾーンを指定できるISO 8601（'2018-05-03T21:40:10.088Z'または'2018-05-03T23:40:10.088+02:00'）\n\n日時はUTCのオフセット0と、各項目に合う形式へ正規化して検索されます（`date`は1525383610088、`created_at`は'2018-05-03T21:40:10.088Z'）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Field name by which the sorting of documents is performed. This parameter cannot be combined with `sort$desc` parameter.",
+      "after": "昇順の並べ替えに使う項目名。`sort$desc`と同時には指定できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "Field name by which the descending (reverse) sorting of documents is performed. This parameter cannot be combined with `sort` parameter.",
+      "after": "降順の並べ替えに使う項目名。`sort`と同時には指定できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        4,
+        "description"
+      ],
+      "before": "Maximum number of documents to get in result array",
+      "after": "結果の配列に含める記録数の上限"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        5,
+        "description"
+      ],
+      "before": "Number of documents to skip from collection query before loading them into result array (used for pagination)",
+      "after": "検索結果の先頭から読み飛ばす記録数。ページ区切りに使います。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        6,
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": "応答に含める項目を指定します。項目名の列挙、または定義済みの項目集合を使えます。\n\n_all：すべての項目（既定値）\n\ndate,insulin：`date`と`insulin`のみ"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        6,
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": "すべての項目を返します（既定の動作）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "parameters",
+        6,
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": "dateとinsulinのみを返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successful operation returning array of documents matching the filtering criteria",
+      "after": "検索に成功しました。条件に合う記録の配列を返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": "リクエストの形式が正しくありません。必須項目が不足しているか、未対応の項目が指定されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "get",
+        "responses",
+        "406",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": "`Accept`ヘッダーで指定した形式に対応していません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "summary"
+      ],
+      "before": "CREATE: Inserts a new document into the collection",
+      "after": "追加：コレクションに新しい記録を追加"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "description"
+      ],
+      "before": "Using this operation you can insert new documents into collection. Normally the operation ends with 201 HTTP status code, `Last-Modified` and `Location` headers specified. `identifier` is included in response body or it can be parsed from the `Location` response header.\n\nWhen the document to post is marked as a duplicate (using rules described at `API3_DEDUP_FALLBACK_ENABLED` switch), the update operation takes place instead of inserting. In this case the original document in the collection is found and it gets updated by the actual operation POST body. Finally the operation ends with 200 HTTP status code along with `Last-Modified` and correct `Location` headers. The response body then includes `isDeduplication`=`true` and `deduplicatedIdentifier` fields.\n\nThis operation provides autopruning of the collection (if autopruning is enabled).\n\nThis operation requires `create` (and/or `update` for deduplication) permission for the API and the collection (e.g. `api:treatments:create` and `api:treatments:update`)",
+      "after": "新しい記録をコレクションへ追加します。通常はHTTP 201と、`Last-Modified`、`Location`ヘッダーを返します。`identifier`は応答本文に含まれ、`Location`ヘッダーからも取得できます。\n\n`API3_DEDUP_FALLBACK_ENABLED`の説明にある条件で重複と判定された場合は、追加の代わりに既存の記録をPOST本文で更新します。その場合はHTTP 200と`Last-Modified`、正しい`Location`ヘッダーを返します。応答本文には`isDeduplication`=`true`と`deduplicatedIdentifier`も含まれます。\n\n自動削除が有効な場合は、コレクションの古い記録を自動削除します。\n\nAPIとコレクションに対する`create`権限が必要です。重複した記録を更新する場合は`update`権限も必要です（例：`api:treatments:create`、`api:treatments:update`）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": "操作対象のコレクション"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "requestBody",
+        "description"
+      ],
+      "before": "JSON with new document to insert",
+      "after": "追加する記録のJSON"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successfully updated a duplicate document in the collection",
+      "after": "重複した既存の記録を更新しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "201",
+        "description"
+      ],
+      "before": "Successfully created a new document in collection",
+      "after": "コレクションに新しい記録を追加しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": "リクエストの形式が正しくありません。必須項目が不足しているか、未対応の項目が指定されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}",
+        "post",
+        "responses",
+        "422",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": "リクエストの形式は正しいものの、サーバーの検証に失敗しました。例：読み取り専用の記録（`isReadOnly=true`）を更新・削除しようとした場合。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "summary"
+      ],
+      "before": "READ: Retrieves a single document from the collection",
+      "after": "取得：コレクションから1件の記録を取得"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "description"
+      ],
+      "before": "Basically this operation looks for a document matching the `identifier` field returning 200 or 404 HTTP status code.\n\nIf the document has been found in the collection but it had already been deleted, 410 HTTP status code is to be returned.\n\nWhen `If-Modified-Since` header is used and its value is greater than the timestamp of the document in the collection, 304 HTTP status code with empty response content is returned. It means that the document has not been modified on server since the last retrieval to client side. With `If-Modified-Since` header and less or equal timestamp `srvModified` a normal 200 HTTP status with full response is returned.\n\nThis operation requires `read` permission for the API and the collection (e.g. `api:treatments:read`)",
+      "after": "`identifier`が一致する記録を検索し、HTTP 200または404を返します。\n\n記録が見つかっても削除済みの場合はHTTP 410を返します。\n\n`If-Modified-Since`ヘッダーの日時が記録の更新日時より後の場合は、本文なしのHTTP 304を返します。前回の取得以降に記録が更新されていないことを示します。`If-Modified-Since`の日時が`srvModified`以前の場合は、完全な本文とHTTP 200を返します。\n\nAPIとコレクションに対する`read`権限が必要です（例：`api:treatments:read`）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": "操作対象のコレクション"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Identifier of the document to which the operation is targeted",
+      "after": "操作対象の記録の識別子"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Modified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": "サーバーの時計を基準にした、記録の最終更新日時です。形式：\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nこのヘッダーがある場合、処理の前に値を記録のsrvModifiedと比較します。比較結果によって応答が変わります。srvModifiedもサーバーの時計を基準に設定されます。\n\n例：\n<pre>If-Modified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": "応答に含める項目を指定します。項目名の列挙、または定義済みの項目集合を使えます。\n\n_all：すべての項目（既定値）\n\ndate,insulin：`date`と`insulin`のみ"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": "すべての項目を返します（既定の動作）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": "dateとinsulinのみを返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "The document has been succesfully found and its JSON form returned in the response content.",
+      "after": "記録が見つかりました。JSON形式の記録を応答本文に返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "304",
+        "description"
+      ],
+      "before": "The document has not been modified on the server since timestamp specified in If-Modified-Since header",
+      "after": "If-Modified-Sinceヘッダーで指定した日時以降、記録はサーバー上で更新されていません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "406",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": "`Accept`ヘッダーで指定した形式に対応していません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "get",
+        "responses",
+        "410",
+        "description"
+      ],
+      "before": "The requested document has already been deleted.",
+      "after": "指定した記録は削除済みです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "summary"
+      ],
+      "before": "UPDATE: Updates a document in the collection",
+      "after": "更新：コレクション内の記録を置き換え"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "description"
+      ],
+      "before": "Normally the document with the matching `identifier` will be replaced in the collection by the whole JSON request body and 200 HTTP status code will be returned.\n\nIf the document has been found in the collection but it had already been deleted, 410 HTTP status code is to be returned.\n\nWhen no document with `identifier` has been found in the collection, then an insert operation takes place instead of updating. Finally 201 HTTP status code is returned with only `Last-Modified` header (`identifier` is already known from the path parameter).\n\nYou can also specify `If-Unmodified-Since` request header including your timestamp of document's last modification. If the document has been modified by somebody else on the server afterwards (and you do not know about it), the 412 HTTP status code is returned cancelling the update operation. You can use this feature to prevent race condition problems.\n\nThis operation provides autopruning of the collection (if autopruning is enabled).\n\nThis operation requires `update` (and/or `create`) permission for the API and the collection (e.g. `api:treatments:update` and `api:treatments:create`)",
+      "after": "通常、`identifier`が一致する記録をリクエスト本文のJSON全体で置き換え、HTTP 200を返します。\n\n記録が見つかっても削除済みの場合はHTTP 410を返します。\n\n該当する`identifier`の記録がない場合は、新しい記録を追加します。HTTP 201と`Last-Modified`ヘッダーを返します（`identifier`はパスの値を使います）。\n\n`If-Unmodified-Since`ヘッダーで、把握している記録の最終更新日時を指定できます。その後に別の利用者がサーバー上で更新していた場合は、HTTP 412を返して更新を取り消します。同時更新による競合を防ぐために使えます。\n\n自動削除が有効な場合は、コレクションの古い記録を自動削除します。\n\nAPIとコレクションに対する`update`権限、必要に応じて`create`権限が必要です（例：`api:treatments:update`、`api:treatments:create`）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": "操作対象のコレクション"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Identifier of the document to which the operation is targeted",
+      "after": "操作対象の記録の識別子"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": "サーバーの時計を基準にした、記録の最終更新日時です。形式：\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nこのヘッダーがある場合、処理の前に値を記録のsrvModifiedと比較します。比較結果によって応答が変わります。srvModifiedもサーバーの時計を基準に設定されます。\n\n例：\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "requestBody",
+        "description"
+      ],
+      "before": "JSON of new version of document (`identifier` in JSON is ignored if present)",
+      "after": "更新後の記録のJSON。本文に`identifier`があっても無視します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "The request was successfully processed",
+      "after": "処理が完了しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "201",
+        "description"
+      ],
+      "before": "Successfully created a new document in collection",
+      "after": "コレクションに新しい記録を追加しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": "リクエストの形式が正しくありません。必須項目が不足しているか、未対応の項目が指定されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "410",
+        "description"
+      ],
+      "before": "The requested document has already been deleted.",
+      "after": "指定した記録は削除済みです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "412",
+        "description"
+      ],
+      "before": "The document has already been modified on the server since specified timestamp (in If-Unmodified-Since header).",
+      "after": "If-Unmodified-Sinceヘッダーで指定した日時以降、記録はサーバー上で更新されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "put",
+        "responses",
+        "422",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": "リクエストの形式は正しいものの、サーバーの検証に失敗しました。例：読み取り専用の記録（`isReadOnly=true`）を更新・削除しようとした場合。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "summary"
+      ],
+      "before": "DELETE: Deletes a document from the collection",
+      "after": "削除：コレクション内の記録を削除"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "description"
+      ],
+      "before": "If the document has already been deleted, the operation will succeed anyway. Normally, documents are not really deleted from the collection but they are only marked as deleted. For special cases the deletion can be irreversible using `permanent` parameter.\n\nThis operation provides autopruning of the collection (if autopruning is enabled).\n\nThis operation requires `delete` permission for the API and the collection (e.g. `api:treatments:delete`)",
+      "after": "記録がすでに削除済みでも処理は成功します。通常は物理的に消去せず、削除済みとして記録します。特別な場合は`permanent`を指定し、復元できない完全削除にできます。\n\n自動削除が有効な場合は、コレクションの古い記録を自動削除します。\n\nAPIとコレクションに対する`delete`権限が必要です（例：`api:treatments:delete`）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": "操作対象のコレクション"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Identifier of the document to which the operation is targeted",
+      "after": "操作対象の記録の識別子"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "If true, the deletion will be irreversible and it will not appear in `HISTORY` operation. Normally there is no reason for setting this flag.",
+      "after": "trueの場合は復元できない完全削除になり、`HISTORY`にも現れません。通常、この指定は不要です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "The request was successfully processed",
+      "after": "処理が完了しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "delete",
+        "responses",
+        "422",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": "リクエストの形式は正しいものの、サーバーの検証に失敗しました。例：読み取り専用の記録（`isReadOnly=true`）を更新・削除しようとした場合。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "summary"
+      ],
+      "before": "PATCH: Partially updates document in the collection",
+      "after": "部分更新：コレクション内の記録の一部を変更"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "description"
+      ],
+      "before": "Normally the document with the matching `identifier` will be retrieved from the collection and it will be patched by all specified fields from the JSON request body. Finally 200 HTTP status code will be returned.\n\nIf the document has been found in the collection but it had already been deleted, 410 HTTP status code is to be returned.\n\nWhen no document with `identifier` has been found in the collection, then the operation ends with 404 HTTP status code.\n\nYou can also specify `If-Unmodified-Since` request header including your timestamp of document's last modification. If the document has been modified by somebody else on the server afterwards (and you do not know about it), the 412 HTTP status code is returned cancelling the update operation. You can use this feature to prevent race condition problems.\n\n`PATCH` operation can save some bandwidth for incremental document updates in comparison with `GET` - `UPDATE` operation sequence.\n\nWhile patching the document, the field `modifiedBy` is automatically set to the authorized subject's name.\n\nThis operation provides autopruning of the collection (if autopruning is enabled).\n\nThis operation requires `update` permission for the API and the collection (e.g. `api:treatments:update`)",
+      "after": "通常、`identifier`が一致する記録を取得し、JSON本文で指定した項目を変更してHTTP 200を返します。\n\n記録が見つかっても削除済みの場合はHTTP 410を返します。該当する`identifier`がない場合はHTTP 404で終了します。\n\n`If-Unmodified-Since`ヘッダーで、把握している記録の最終更新日時を指定できます。その後に別の利用者がサーバー上で更新していた場合は、HTTP 412を返して変更を取り消します。同時更新による競合を防ぐために使えます。\n\n`GET`と`UPDATE`を続けて実行する方法に比べ、差分だけを送る`PATCH`では通信量を減らせます。\n\n変更時に`modifiedBy`へ認可された利用者の名前を自動で設定します。\n\n自動削除が有効な場合は、コレクションの古い記録を自動削除します。\n\nAPIとコレクションに対する`update`権限が必要です（例：`api:treatments:update`）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": "操作対象のコレクション"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Identifier of the document to which the operation is targeted",
+      "after": "操作対象の記録の識別子"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": "サーバーの時計を基準にした、記録の最終更新日時です。形式：\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nこのヘッダーがある場合、処理の前に値を記録のsrvModifiedと比較します。比較結果によって応答が変わります。srvModifiedもサーバーの時計を基準に設定されます。\n\n例：\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "requestBody",
+        "description"
+      ],
+      "before": "JSON of new version of document (`identifier` in JSON is ignored if present)",
+      "after": "更新後の記録のJSON。本文に`identifier`があっても無視します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "The request was successfully processed",
+      "after": "処理が完了しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": "リクエストの形式が正しくありません。必須項目が不足しているか、未対応の項目が指定されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "410",
+        "description"
+      ],
+      "before": "The requested document has already been deleted.",
+      "after": "指定した記録は削除済みです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "412",
+        "description"
+      ],
+      "before": "The document has already been modified on the server since specified timestamp (in If-Unmodified-Since header).",
+      "after": "If-Unmodified-Sinceヘッダーで指定した日時以降、記録はサーバー上で更新されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/{identifier}",
+        "patch",
+        "responses",
+        "422",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": "リクエストの形式は正しいものの、サーバーの検証に失敗しました。例：読み取り専用の記録（`isReadOnly=true`）を更新・削除しようとした場合。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "summary"
+      ],
+      "before": "HISTORY: Retrieves incremental changes since timestamp",
+      "after": "履歴：指定日時以降の変更を取得"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "description"
+      ],
+      "before": "HISTORY operation is intended for continuous data synchronization with other systems.\nEvery insertion, update and deletion will be included in the resulting JSON array of documents (since timestamp in `Last-Modified` request header value). All changes are listed chronologically in response with 200 HTTP status code. The maximum listed `srvModified` timestamp is also stored in `Last-Modified` and `ETag` response headers that you can use for future, directly following synchronization. You can also limit the array's length using `limit` parameter.\n\nDeleted documents will appear with `isValid` = `false` field.\n\nHISTORY operation has a fallback mechanism in place for documents, which were not created by API v3. For such documents `srvModified` is virtually assigned from the `date` field (for `entries` collection) or from the `created_at` field (for other collections).\n\nThis operation requires `read` permission for the API and the collection (e.g. `api:treatments:read`)\n\nThe only exception is the `settings` collection which requires `admin` permission (`api:settings:admin`), because the settings of each application should be isolated and kept secret. You need to know the concrete identifier to access the app's settings.",
+      "after": "他のシステムと継続してデータを同期するための操作です。`Last-Modified`で指定した日時以降の追加・更新・削除を、時系列順のJSON配列とHTTP 200で返します。配列内で最大の`srvModified`を`Last-Modified`と`ETag`にも設定し、次の同期に利用できます。`limit`で配列の長さを制限できます。\n\n削除済みの記録は`isValid`=`false`として含まれます。\n\nAPI v3以外で作成した記録では、`entries`の`date`、その他のコレクションの`created_at`を`srvModified`の代わりに使います。\n\nAPIとコレクションに対する`read`権限が必要です（例：`api:treatments:read`）。\n\n例外として、`settings`コレクションは`admin`権限（`api:settings:admin`）を必要とします。アプリごとの設定を分離し、秘密を保護するためです。設定へアクセスするには、具体的な識別子が必要です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": "操作対象のコレクション"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Starting timestamp (defined with respect to server's clock) since which the changes in documents are to be listed, formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nExample&#58;\n\n<pre>Last-Modified&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": "サーバーの時計を基準にした、変更の取得開始日時です。形式：\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\n例：\n<pre>Last-Modified&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Maximum number of documents to get in result array",
+      "after": "結果の配列に含める記録数の上限"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": "応答に含める項目を指定します。項目名の列挙、または定義済みの項目集合を使えます。\n\n_all：すべての項目（既定値）\n\ndate,insulin：`date`と`insulin`のみ"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": "すべての項目を返します（既定の動作）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": "dateとinsulinのみを返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Changed documents since specified timestamp",
+      "after": "指定した日時以降に変更された記録"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": "リクエストの形式が正しくありません。必須項目が不足しているか、未対応の項目が指定されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history",
+        "get",
+        "responses",
+        "406",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": "`Accept`ヘッダーで指定した形式に対応していません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "summary"
+      ],
+      "before": "HISTORY: Retrieves incremental changes since timestamp",
+      "after": "履歴：指定日時以降の変更を取得"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "description"
+      ],
+      "before": "This HISTORY operation variant is more precise than the previous one with `Last-Modified` request HTTP header), because it does not loose milliseconds precision.\n\nSince this variant queries for changed documents by timestamp precisely and exclusively, the last modified document does not repeat itself in following calls. That is the reason why is this variant more suitable for continuous synchronization with other systems.\n\nThis variant behaves quite the same as the previous one in all other aspects.",
+      "after": "`Last-Modified`のHTTPヘッダーを使う履歴取得より、ミリ秒の精度を保持できる方式です。\n\n指定日時より後の変更を厳密に検索し、同じ日時の記録を含めません。そのため、次の取得時に直前の最終記録を重ねて取得せず、継続的な同期に適しています。\n\nその他の動作は、ヘッダーを使う方式と同じです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        0,
+        "description"
+      ],
+      "before": "Collection to which the operation is targeted",
+      "after": "操作対象のコレクション"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        1,
+        "description"
+      ],
+      "before": "Starting timestamp (in UNIX epoch format, defined with respect to server's clock) since which the changes in documents are to be listed. Query for modified documents is made using \"greater than\" operator (not including equal timestamps).",
+      "after": "サーバーの時計を基準にした、変更の取得開始日時（UNIX時刻）。指定値より大きい更新日時を検索し、同じ日時は含めません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        2,
+        "description"
+      ],
+      "before": "Maximum number of documents to get in result array",
+      "after": "結果の配列に含める記録数の上限"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        3,
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": "応答に含める項目を指定します。項目名の列挙、または定義済みの項目集合を使えます。\n\n_all：すべての項目（既定値）\n\ndate,insulin：`date`と`insulin`のみ"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": "すべての項目を返します（既定の動作）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "parameters",
+        3,
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": "dateとinsulinのみを返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Changed documents since specified timestamp",
+      "after": "指定した日時以降に変更された記録"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "400",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": "リクエストの形式が正しくありません。必須項目が不足しているか、未対応の項目が指定されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "404",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/{collection}/history/{lastModified}",
+        "get",
+        "responses",
+        "406",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": "`Accept`ヘッダーで指定した形式に対応していません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/version",
+        "get",
+        "summary"
+      ],
+      "before": "VERSION: Returns actual version information",
+      "after": "バージョン：現在のバージョン情報を取得"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/version",
+        "get",
+        "description"
+      ],
+      "before": "No authentication is needed for this commnad (it is public)",
+      "after": "公開されている操作のため、認証は不要です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/version",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successful response",
+      "after": "取得に成功しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "summary"
+      ],
+      "before": "STATUS: Returns actual version information and all permissions granted for API",
+      "after": "状態：現在のバージョンとAPIの全権限を取得"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "description"
+      ],
+      "before": "This operation requires authorization in contrast with VERSION operation.",
+      "after": "バージョン情報の公開取得とは異なり、この操作には認可が必要です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successful response",
+      "after": "取得に成功しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/status",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "summary"
+      ],
+      "before": "LAST MODIFIED: Retrieves timestamp of the last modification of every collection",
+      "after": "最終更新：各コレクションの最終更新日時を取得"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "description"
+      ],
+      "before": "LAST MODIFIED operation inspects collections separately (in parallel) and for each of them it finds the date of any last modification (insertion, update, deletion).\nNot only `srvModified`, but also `date` and `created_at` fields are inspected (as a fallback to previous API).\n\nThis operation requires `read` permission for the API and the collections (e.g. `api:treatments:read`). For each collection the permission is checked separately, you will get timestamps only for those collections that you have access to.",
+      "after": "各コレクションを並行して調べ、最後の追加・更新・削除の日時を取得します。旧APIとの互換性のため、`srvModified`に加えて`date`と`created_at`も確認します。\n\nAPIとコレクションに対する`read`権限が必要です（例：`api:treatments:read`）。コレクションごとに権限を確認し、アクセス可能なものだけの日時を返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "responses",
+        "200",
+        "description"
+      ],
+      "before": "Successful operation returning the timestamps",
+      "after": "取得に成功しました。最終更新日時を返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "responses",
+        "401",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "paths",
+        "/lastModified",
+        "get",
+        "responses",
+        "403",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "headerLocation",
+        "description"
+      ],
+      "before": "Location of document - the relative part of URL. This can be used to parse the identifier of just created document.\nExample=/api/v3/treatments/53409478-105f-11e9-ab14-d663bd873d93",
+      "after": "記録の所在を示す相対URL。新しく作成した記録の識別子を取得できます。\n例：/api/v3/treatments/53409478-105f-11e9-ab14-d663bd873d93"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "headerLastModified",
+        "description"
+      ],
+      "before": "Timestamp of the last document modification on the server, formatted as\n'<day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT'.\nThis field is relevant only for documents which were somehow modified by API v3 (inserted, updated or deleted) and it was generated using server's clock.\nExample='Wed, 17 Oct 2018 05:13:00 GMT'",
+      "after": "サーバー上の記録の最終更新日時。形式：\n'<day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT'\nAPI v3で追加・更新・削除された記録にのみ対応し、サーバーの時計から生成されます。\n例：'Wed, 17 Oct 2018 05:13:00 GMT'"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "headerLastModifiedMaximum",
+        "description"
+      ],
+      "before": "The latest (maximum) `srvModified` field of all returning documents, formatted as\n'<day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT'.\nExample='Wed, 17 Oct 2018 05:13:00 GMT'",
+      "after": "応答に含まれる記録の`srvModified`の最大値。形式：\n'<day-name>, <day> <month> <year> <hour>:<minute>:<second> GMT'\n例：'Wed, 17 Oct 2018 05:13:00 GMT'"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "headerEtagLastModifiedMaximum",
+        "description"
+      ],
+      "before": "The latest (maximum) `srvModified` field of all returning documents. This header does not loose milliseconds from the date (unlike the `Last-Modified` header).\nExample='W/\"1525383610088\"'",
+      "after": "応答に含まれる記録の`srvModified`の最大値。`Last-Modified`とは異なり、ミリ秒の精度を保持します。\n例：'W/\"1525383610088\"'"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "identifierField",
+        "description"
+      ],
+      "before": "Identifier of created or modified document",
+      "after": "追加または更新した記録の識別子"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "lastModifiedField",
+        "description"
+      ],
+      "before": "Timestamp of the last document modification on the server, formatted as\nUnix epoch in milliseconds (1525383610088)",
+      "after": "サーバー上の記録の最終更新日時。UNIX時刻のミリ秒（1525383610088）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "statusField",
+        "description"
+      ],
+      "before": "HTTP response status code. The status appears also in response body's field for those clients that are unable to process standard HTTP status code.",
+      "after": "HTTP応答の状態コード。標準のHTTP状態コードを処理できないクライアントのため、応答本文にも含まれます。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "isDeduplicationField",
+        "description"
+      ],
+      "before": "Flag whether the operation found a duplicate document (to update)",
+      "after": "更新対象の重複した記録が見つかったかどうか"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "deduplicatedIdentifierField",
+        "description"
+      ],
+      "before": "The original document that has been marked as a duplicate document and which has been updated",
+      "after": "重複と判定され、更新された元の記録の識別子"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "identifier",
+        "description"
+      ],
+      "before": "Main addressing, required field that identifies document in the collection.\n\nThe client should not create the identifier, the server automatically assigns it when the document is inserted.\n\nThe server calculates the identifier in such a way that duplicate records are automatically merged (deduplicating is made by `date`, `device` and `eventType` fields).\n\nThe best practise for all applications is not to loose identifiers from received documents, but save them carefully for other consumer applications/systems.\n\nAPI v3 has a fallback mechanism in place, for documents without `identifier` field the `identifier` is set to internal `_id`, when reading or addressing these documents.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "コレクション内の記録を識別する必須項目です。\n\nクライアントでは識別子を作成しないでください。追加時にサーバーが自動で割り当てます。\n\nサーバーは、`date`、`device`、`eventType`を使って重複した記録を自動で統合できるように識別子を計算します。\n\n受信した識別子を失わず保存し、他のアプリやシステムでも使えるようにしてください。\n\nAPI v3では`identifier`がない記録を取得・指定する際、内部の`_id`を`identifier`として使用します。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "date",
+        "description"
+      ],
+      "before": "Required timestamp when the record or event occured, you can choose from three input formats\n- Unix epoch in milliseconds (1525383610088)\n- Unix epoch in seconds (1525383610)\n- ISO 8601 with optional timezone ('2018-05-03T21:40:10.088Z' or '2018-05-03T23:40:10.088+02:00')\n\nThe date is always stored in a normalized form - UTC with zero offset. If UTC offset was present, it is going to be set in the `utcOffset` field.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "記録や出来事が発生した日時。必須です。次の3形式を使えます。\n- UNIX時刻のミリ秒（1525383610088）\n- UNIX時刻の秒（1525383610）\n- タイムゾーンを指定できるISO 8601（'2018-05-03T21:40:10.088Z'または'2018-05-03T23:40:10.088+02:00'）\n\n日時はUTCのオフセット0へ正規化して保存します。指定されていたUTCオフセットは`utcOffset`に設定します。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "utcOffset",
+        "description"
+      ],
+      "before": "Local UTC offset (timezone) of the event in minutes. This field can be set either directly by the client (in the incoming document) or it is automatically parsed from the `date` field.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "出来事の現地時刻のUTCオフセット（分）。受信した記録で直接指定するか、`date`から自動で解析します。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "app",
+        "description"
+      ],
+      "before": "Application or system in which the record was entered by human or device for the first time.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "人や機器が最初にこの記録を入力したアプリまたはシステム。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "device",
+        "description"
+      ],
+      "before": "The device from which the data originated (including serial number of the device, if it is relevant and safe).\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "データの取得元の機器。必要で安全な場合は製造番号も含めます。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "_id",
+        "description"
+      ],
+      "before": "Internally assigned database id. This field is for internal server purposes only, clients communicate with API by using identifier field.",
+      "after": "内部で割り当てるデータベースID。サーバー内部専用です。クライアントはidentifierで記録を指定します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "srvCreated",
+        "description"
+      ],
+      "before": "The server's timestamp of document insertion into the database (Unix epoch in ms). This field appears only for documents which were inserted by API v3.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "サーバーが記録をデータベースへ追加した日時（UNIX時刻のミリ秒）。API v3で追加した記録にのみ含まれます。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "subject",
+        "description"
+      ],
+      "before": "Name of the security subject (within Nightscout scope) which has created the document. This field is automatically set by the server from the passed JWT.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "記録を作成した認証主体の名前。受信したJWTからサーバーが自動で設定します。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "srvModified",
+        "description"
+      ],
+      "before": "The server's timestamp of the last document modification in the database (Unix epoch in ms). This field appears  only for documents which were somehow modified by API v3 (inserted, updated or deleted).\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "サーバー上での記録の最終更新日時（UNIX時刻のミリ秒）。API v3で追加・更新・削除した記録にのみ含まれます。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "modifiedBy",
+        "description"
+      ],
+      "before": "Name of the security subject (within Nightscout scope) which has patched or deleted the document for the last time. This field is automatically set by the server.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "最後に記録を部分更新または削除した認証主体の名前。サーバーが自動で設定します。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "isValid",
+        "description"
+      ],
+      "before": "A flag set by the server only for deleted documents. This field appears only within history operation and for documents which were deleted by API v3 (and they always have a false value)\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "削除済みの記録に対してサーバーが設定する項目です。履歴取得で、API v3で削除した記録にのみ含まれ、値は常にfalseです。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "properties",
+        "isReadOnly",
+        "description"
+      ],
+      "before": "A flag set by client that locks the document from any changes. Every document marked with `isReadOnly=true` is forever immutable and cannot even be deleted.\n\nAny attempt to modify the read-only document will end with status 422 UNPROCESSABLE ENTITY.",
+      "after": "クライアントが設定する変更禁止の指定。`isReadOnly=true`の記録は永久に変更できず、削除もできません。\n\n変更しようとするとHTTP 422（処理できない内容）を返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentBase",
+        "description"
+      ],
+      "before": "Shared base for all documents",
+      "after": "すべての記録に共通する形式"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeviceStatus",
+        "description"
+      ],
+      "before": "State of physical device, which is a technical part of the whole T1D compensation system",
+      "after": "1型糖尿病の管理に使う機器の状態"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeviceStatus",
+        "allOf",
+        1,
+        "properties",
+        "some_property",
+        "description"
+      ],
+      "before": "...",
+      "after": "詳細説明は未記載です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "description"
+      ],
+      "before": "Blood glucose measurements and CGM calibrations",
+      "after": "血糖測定とCGMの校正記録"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "type",
+        "description"
+      ],
+      "before": "sgv, mbg, cal, etc",
+      "after": "記録の種類（sgv、mbg、calなど）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "sgv",
+        "description"
+      ],
+      "before": "The glucose reading. (only available for sgv types)",
+      "after": "血糖測定値。sgvの記録のみ。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "direction",
+        "description"
+      ],
+      "before": "Direction of glucose trend reported by CGM. (only available for sgv types)",
+      "after": "CGMが示す血糖の変化方向。sgvの記録のみ。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "noise",
+        "description"
+      ],
+      "before": "Noise level at time of reading. (only available for sgv types)",
+      "after": "測定時のノイズの程度。sgvの記録のみ。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "filtered",
+        "description"
+      ],
+      "before": "The raw filtered value directly from CGM transmitter. (only available for sgv types)",
+      "after": "CGM送信機からの、フィルター処理済みの生データ。sgvの記録のみ。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "unfiltered",
+        "description"
+      ],
+      "before": "The raw unfiltered value directly from CGM transmitter. (only available for sgv types)",
+      "after": "CGM送信機からの、フィルター処理前の生データ。sgvの記録のみ。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "rssi",
+        "description"
+      ],
+      "before": "The signal strength from CGM transmitter. (only available for sgv types)",
+      "after": "CGM送信機の信号強度。sgvの記録のみ。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Entry",
+        "allOf",
+        1,
+        "properties",
+        "units",
+        "description"
+      ],
+      "before": "The units for the glucose value, mg/dl or mmol/l. It is strongly recommended to fill in this field.",
+      "after": "血糖値の単位（mg/dlまたはmmol/l）。指定することを強く推奨します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "description"
+      ],
+      "before": "Nutritional values of food",
+      "after": "食品の栄養情報"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "food",
+        "description"
+      ],
+      "before": "food, quickpick",
+      "after": "食品の種類（food、quickpick）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "category",
+        "description"
+      ],
+      "before": "Name for a group of related records",
+      "after": "関連する記録をまとめるグループ名"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "subcategory",
+        "description"
+      ],
+      "before": "Name for a second level of groupping",
+      "after": "第2階層のグループ名"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "name",
+        "description"
+      ],
+      "before": "Name of the food described",
+      "after": "食品名"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "portion",
+        "description"
+      ],
+      "before": "Number of units (e.g. grams) of the whole portion described",
+      "after": "1食分の量（グラムなど）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "unit",
+        "description"
+      ],
+      "before": "Unit for the portion",
+      "after": "1食分の量を表す単位"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "carbs",
+        "description"
+      ],
+      "before": "Amount of carbs in the portion in grams",
+      "after": "1食分の糖質量（グラム）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "fat",
+        "description"
+      ],
+      "before": "Amount of fat in the portion in grams",
+      "after": "1食分の脂質量（グラム）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "protein",
+        "description"
+      ],
+      "before": "Amount of proteins in the portion in grams",
+      "after": "1食分のたんぱく質量（グラム）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "energy",
+        "description"
+      ],
+      "before": "Amount of energy in the portion in kJ",
+      "after": "1食分のエネルギー（kJ）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "gi",
+        "description"
+      ],
+      "before": "Glycemic index (1=low, 2=medium, 3=high)",
+      "after": "血糖指数（1：低、2：中、3：高）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "hideafteruse",
+        "description"
+      ],
+      "before": "Flag used for quickpick",
+      "after": "よく使う食品として表示する指定"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "hidden",
+        "description"
+      ],
+      "before": "Flag used for quickpick",
+      "after": "よく使う食品として表示する指定"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "position",
+        "description"
+      ],
+      "before": "Ordering field for quickpick",
+      "after": "よく使う食品の表示順"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "portions",
+        "description"
+      ],
+      "before": "component multiplier if defined inside quickpick compound",
+      "after": "よく使う食品の組み合わせに含める場合の数量倍率"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Food",
+        "allOf",
+        1,
+        "properties",
+        "foods",
+        "description"
+      ],
+      "before": "Neighbour documents (from food collection) that together make a quickpick compound",
+      "after": "組み合わせを構成する食品コレクション内の記録"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "description"
+      ],
+      "before": "Parameters describing body functioning relative to T1D + compensation parameters",
+      "after": "1型糖尿病に関係する体の特性と血糖管理の設定"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Profile",
+        "allOf",
+        1,
+        "properties",
+        "some_property",
+        "description"
+      ],
+      "before": "...",
+      "after": "詳細説明は未記載です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "description"
+      ],
+      "before": "A document representing persisted settings of some application or system (it could by Nightscout itself as well). This pack of options serves as a backup or as a shared centralized storage for multiple client instances. It is a probably good idea to `PATCH` the document instead of `UPDATE` operation, e.g. when changing one settings option in a client application.\n\n`identifier` represents a client application name here, e.g. `xdrip` or `aaps`.\n\n`Settings` collection has a more specific authorization required. For the `SEARCH` operation within this collection, you need an `admin` permission, such as `api:settings:admin`. The goal is to isolate individual client application settings.",
+      "after": "アプリやシステムの設定を保存する記録です。血糖みまもり自体の設定も含められます。バックアップや、複数のクライアント間で共有する保存先として使います。1項目だけ変更するときは、全体を置き換える`UPDATE`より`PATCH`が適しています。\n\n`identifier`にはアプリ名を指定します（例：`xdrip`、`aaps`）。\n\n`Settings`コレクションには追加の認可が必要です。このコレクションの`SEARCH`には、`api:settings:admin`などの`admin`権限が必要です。アプリごとの設定を分離するためです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Settings",
+        "allOf",
+        1,
+        "properties",
+        "some_property",
+        "description"
+      ],
+      "before": "...",
+      "after": "詳細説明は未記載です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "description"
+      ],
+      "before": "T1D compensation action",
+      "after": "1型糖尿病の治療記録"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "eventType",
+        "description"
+      ],
+      "before": "The type of treatment event.\n\nNote&#58; this field is immutable by the client (it cannot be updated or patched)",
+      "after": "治療イベントの種類。\n\n注意：クライアントから変更できません。更新・部分更新はできません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "glucose",
+        "description"
+      ],
+      "before": "Current glucose.",
+      "after": "現在の血糖値。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "glucoseType",
+        "description"
+      ],
+      "before": "Method used to obtain glucose, Finger or Sensor.",
+      "after": "血糖測定方法（Finger：指先測定、Sensor：センサー）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "units",
+        "description"
+      ],
+      "before": "The units for the glucose value, mg/dl or mmol/l. It is strongly recommended to fill in this field when `glucose` is entered.",
+      "after": "血糖値の単位（mg/dlまたはmmol/l）。`glucose`を指定する場合は、単位の指定を強く推奨します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "carbs",
+        "description"
+      ],
+      "before": "Amount of carbs given.",
+      "after": "摂取した糖質量。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "protein",
+        "description"
+      ],
+      "before": "Amount of protein given.",
+      "after": "摂取したたんぱく質量。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "fat",
+        "description"
+      ],
+      "before": "Amount of fat given.",
+      "after": "摂取した脂質量。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "insulin",
+        "description"
+      ],
+      "before": "Amount of insulin, if any.",
+      "after": "インスリン量。該当する場合に指定します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "duration",
+        "description"
+      ],
+      "before": "Duration in minutes.",
+      "after": "継続時間（分）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "preBolus",
+        "description"
+      ],
+      "before": "How many minutes the bolus was given before the meal started.",
+      "after": "食事開始の何分前にボーラスを投与したか。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "splitNow",
+        "description"
+      ],
+      "before": "Immediate part of combo bolus (in percent).",
+      "after": "コンボボーラスの即時投与部分（%）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "splitExt",
+        "description"
+      ],
+      "before": "Extended part of combo bolus (in percent).",
+      "after": "コンボボーラスの延長投与部分（%）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "percent",
+        "description"
+      ],
+      "before": "Eventual basal change in percent.",
+      "after": "基礎インスリンの変更割合（%）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "absolute",
+        "description"
+      ],
+      "before": "Eventual basal change in absolute value (insulin units per hour).",
+      "after": "基礎インスリンの変更量（単位/時）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "targetTop",
+        "description"
+      ],
+      "before": "Top limit of temporary target.",
+      "after": "一時目標の上限。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "targetBottom",
+        "description"
+      ],
+      "before": "Bottom limit of temporary target.",
+      "after": "一時目標の下限。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "profile",
+        "description"
+      ],
+      "before": "Name of the profile to which the pump has been switched.",
+      "after": "ポンプを切り替えた先のプロフィール名。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "reason",
+        "description"
+      ],
+      "before": "For example the reason why the profile has been switched or why the temporary target has been set.",
+      "after": "プロフィールの切り替え理由や、一時目標を設定した理由など。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "notes",
+        "description"
+      ],
+      "before": "Description/notes of treatment.",
+      "after": "治療記録の説明・メモ。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Treatment",
+        "allOf",
+        1,
+        "properties",
+        "enteredBy",
+        "description"
+      ],
+      "before": "Who entered the treatment.",
+      "after": "治療記録を入力した人。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DocumentToPost",
+        "description"
+      ],
+      "before": "Single document",
+      "after": "1件の記録"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Document",
+        "description"
+      ],
+      "before": "Single document",
+      "after": "1件の記録"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "DeviceStatusArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": "記録の配列"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "EntryArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": "記録の配列"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "FoodArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": "記録の配列"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "ProfileArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": "記録の配列"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "SettingsArray",
+        "description"
+      ],
+      "before": "Array of settings",
+      "after": "設定の配列"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "TreatmentArray",
+        "description"
+      ],
+      "before": "Array of documents",
+      "after": "記録の配列"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Version",
+        "description"
+      ],
+      "before": "Information about versions",
+      "after": "バージョン情報"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult",
+        "properties",
+        "version",
+        "description"
+      ],
+      "before": "The whole Nightscout instance version",
+      "after": "血糖みまもり全体のバージョン"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult",
+        "properties",
+        "apiVersion",
+        "description"
+      ],
+      "before": "API v3 subsystem version",
+      "after": "API v3のバージョン"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult",
+        "properties",
+        "srvDate",
+        "description"
+      ],
+      "before": "Actual server date and time in UNIX epoch format",
+      "after": "現在のサーバー日時（UNIX時刻）"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "Status",
+        "description"
+      ],
+      "before": "Information about versions and API permissions",
+      "after": "バージョンとAPI権限の情報"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult",
+        "properties",
+        "srvDate",
+        "description"
+      ],
+      "before": "Actual storage server date (Unix epoch in ms).",
+      "after": "現在の保存サーバー日時（UNIX時刻のミリ秒）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult",
+        "description"
+      ],
+      "before": "Result of LAST MODIFIED operation",
+      "after": "最終更新日時の取得結果"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult_storage",
+        "properties",
+        "type",
+        "description"
+      ],
+      "before": "Type of storage engine used",
+      "after": "保存先のエンジンの種類"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "VersionResult_storage",
+        "properties",
+        "version",
+        "description"
+      ],
+      "before": "Version of the storage engine",
+      "after": "保存先のエンジンのバージョン"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "properties",
+        "devicestatus",
+        "description"
+      ],
+      "before": "Timestamp of the last modification (Unix epoch in ms), `null` when there is no timestamp found.",
+      "after": "最終更新日時（UNIX時刻のミリ秒）。日時が見つからない場合は`null`。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "properties",
+        "treatments",
+        "description"
+      ],
+      "before": "Timestamp of the last modification (Unix epoch in ms), `null` when there is no timestamp found.",
+      "after": "最終更新日時（UNIX時刻のミリ秒）。日時が見つからない場合は`null`。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "properties",
+        "entries",
+        "description"
+      ],
+      "before": "Timestamp of the last modification (Unix epoch in ms), `null` when there is no timestamp found.",
+      "after": "最終更新日時（UNIX時刻のミリ秒）。日時が見つからない場合は`null`。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "properties",
+        "profile",
+        "description"
+      ],
+      "before": "Timestamp of the last modification (Unix epoch in ms), `null` when there is no timestamp found.",
+      "after": "最終更新日時（UNIX時刻のミリ秒）。日時が見つからない場合は`null`。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "schemas",
+        "LastModifiedResult_collections",
+        "description"
+      ],
+      "before": "Collections which the user have read access to.",
+      "after": "利用者が読み取れるコレクション。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "200Ok",
+        "description"
+      ],
+      "before": "The request was successfully processed",
+      "after": "処理が完了しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "200Deduplication",
+        "description"
+      ],
+      "before": "Successfully updated a duplicate document in the collection",
+      "after": "重複した既存の記録を更新しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "201Created",
+        "description"
+      ],
+      "before": "Successfully created a new document in collection",
+      "after": "コレクションに新しい記録を追加しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "201CreatedLocation",
+        "description"
+      ],
+      "before": "Successfully created a new document in collection",
+      "after": "コレクションに新しい記録を追加しました。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "304NotModified",
+        "description"
+      ],
+      "before": "The document has not been modified on the server since timestamp specified in If-Modified-Since header",
+      "after": "If-Modified-Sinceヘッダーで指定した日時以降、記録はサーバー上で更新されていません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "400BadRequest",
+        "description"
+      ],
+      "before": "The request is malformed. There may be some required parameters missing or there are unrecognized parameters present.",
+      "after": "リクエストの形式が正しくありません。必須項目が不足しているか、未対応の項目が指定されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "401Unauthorized",
+        "description"
+      ],
+      "before": "The request was not successfully authenticated using JWT, so that the request cannot continue due to the security policy.",
+      "after": "JWTによる認証に失敗しました。セキュリティ設定により処理を続行できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "403Forbidden",
+        "description"
+      ],
+      "before": "Insecure HTTP scheme used or the request has been successfully authenticated, but the security subject is not authorized for the operation.",
+      "after": "安全でないHTTP接続、または認証された利用者に操作権限がないリクエストです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "404NotFound",
+        "description"
+      ],
+      "before": "The collection or document specified was not found.",
+      "after": "指定したコレクションまたは記録が見つかりません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "406NotAcceptable",
+        "description"
+      ],
+      "before": "The requested content type (in `Accept` header) is not supported.",
+      "after": "`Accept`ヘッダーで指定した形式に対応していません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "412PreconditionFailed",
+        "description"
+      ],
+      "before": "The document has already been modified on the server since specified timestamp (in If-Unmodified-Since header).",
+      "after": "If-Unmodified-Sinceヘッダーで指定した日時以降、記録はサーバー上で更新されています。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "410Gone",
+        "description"
+      ],
+      "before": "The requested document has already been deleted.",
+      "after": "指定した記録は削除済みです。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "422UnprocessableEntity",
+        "description"
+      ],
+      "before": "The client request is well formed but a server validation error occured. Eg. when trying to modify or delete a read-only document (having `isReadOnly=true`).",
+      "after": "リクエストの形式は正しいものの、サーバーの検証に失敗しました。例：読み取り専用の記録（`isReadOnly=true`）を更新・削除しようとした場合。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "search200",
+        "description"
+      ],
+      "before": "Successful operation returning array of documents matching the filtering criteria",
+      "after": "検索に成功しました。条件に合う記録の配列を返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "read200",
+        "description"
+      ],
+      "before": "The document has been succesfully found and its JSON form returned in the response content.",
+      "after": "記録が見つかりました。JSON形式の記録を応答本文に返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "history200",
+        "description"
+      ],
+      "before": "Changed documents since specified timestamp",
+      "after": "指定した日時以降に変更された記録"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "responses",
+        "lastModified200",
+        "description"
+      ],
+      "before": "Successful operation returning the timestamps",
+      "after": "取得に成功しました。最終更新日時を返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "limitParam",
+        "description"
+      ],
+      "before": "Maximum number of documents to get in result array",
+      "after": "結果の配列に含める記録数の上限"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "skipParam",
+        "description"
+      ],
+      "before": "Number of documents to skip from collection query before loading them into result array (used for pagination)",
+      "after": "検索結果の先頭から読み飛ばす記録数。ページ区切りに使います。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "sortParam",
+        "description"
+      ],
+      "before": "Field name by which the sorting of documents is performed. This parameter cannot be combined with `sort$desc` parameter.",
+      "after": "昇順の並べ替えに使う項目名。`sort$desc`と同時には指定できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "sortDescParam",
+        "description"
+      ],
+      "before": "Field name by which the descending (reverse) sorting of documents is performed. This parameter cannot be combined with `sort` parameter.",
+      "after": "降順の並べ替えに使う項目名。`sort`と同時には指定できません。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "permanentParam",
+        "description"
+      ],
+      "before": "If true, the deletion will be irreversible and it will not appear in `HISTORY` operation. Normally there is no reason for setting this flag.",
+      "after": "trueの場合は復元できない完全削除になり、`HISTORY`にも現れません。通常、この指定は不要です。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "fieldsParam",
+        "description"
+      ],
+      "before": "A chosen set of fields to return in response. Either you can enumerate specific fields of interest or use the predefined set. Sample parameter values&#58;\n\n_all&#58; All fields will be returned (default value)\n\ndate,insulin&#58; Only fields `date` and `insulin` will be returned",
+      "after": "応答に含める項目を指定します。項目名の列挙、または定義済みの項目集合を使えます。\n\n_all：すべての項目（既定値）\n\ndate,insulin：`date`と`insulin`のみ"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "fieldsParam",
+        "examples",
+        "all",
+        "summary"
+      ],
+      "before": "All fields will be returned (default behaviour)",
+      "after": "すべての項目を返します（既定の動作）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "fieldsParam",
+        "examples",
+        "customSet",
+        "summary"
+      ],
+      "before": "Only fields date and insulin will be returned",
+      "after": "dateとinsulinのみを返します。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "filterParams",
+        "description"
+      ],
+      "before": "Any number of filtering operators.\n\nEach filtering operator has name like `<field-name>$<operator>`, e.g. `carbs$gt=2` which represents filtering rule \"The field carbs must be present and greater than 2\".\n\nYou can choose from operators&#58;\n\n`eq`=equals, `insulin$eq=1.5`\n\n`ne`=not equals, `insulin$ne=1.5`\n\n`gt`=greater than, `carbs$gt=30`\n\n`gte`=greater than or equal, `carbs$gte=30`\n\n`lt`=less than, `carbs$lt=30`\n\n`lte`=less than or equal, `carbs$lte=30`\n\n`in`=in specified set, `type$in=sgv|mbg|cal`\n\n`nin`=not in specified set, `eventType$nin=Temp%20Basal|Temporary%20Target`\n\n`re`=regex pattern, `eventType$re=Temp.%2A`\n\nWhen filtering by field `date`, `created_at`, `srvModified` or `srvCreated`, you can choose from three input formats\n- Unix epoch in milliseconds (1525383610088)\n- Unix epoch in seconds (1525383610)\n- ISO 8601 with optional timezone ('2018-05-03T21:40:10.088Z' or '2018-05-03T23:40:10.088+02:00')\n\nThe date is always queried in a normalized form - UTC with zero offset and with the correct format (1525383610088 for `date`, '2018-05-03T21:40:10.088Z' for `created_at`).",
+      "after": "複数の絞り込み条件を指定できます。\n\n条件名は`<field-name>$<operator>`の形式です。例：`carbs$gt=2`は「carbsが存在し、2より大きい」という条件です。\n\n指定できる演算子：\n\n`eq`：等しい。例：`insulin$eq=1.5`\n`ne`：等しくない。例：`insulin$ne=1.5`\n`gt`：より大きい。例：`carbs$gt=30`\n`gte`：以上。例：`carbs$gte=30`\n`lt`：より小さい。例：`carbs$lt=30`\n`lte`：以下。例：`carbs$lte=30`\n`in`：指定した集合に含まれる。例：`type$in=sgv|mbg|cal`\n`nin`：指定した集合に含まれない。例：`eventType$nin=Temp%20Basal|Temporary%20Target`\n`re`：正規表現に一致する。例：`eventType$re=Temp.%2A`\n\n`date`、`created_at`、`srvModified`、`srvCreated`の絞り込みには、次の3形式を使用できます。\n- UNIX時刻のミリ秒（1525383610088）\n- UNIX時刻の秒（1525383610）\n- タイムゾーンを指定できるISO 8601（'2018-05-03T21:40:10.088Z'または'2018-05-03T23:40:10.088+02:00'）\n\n日時はUTCのオフセット0と、各項目に合う形式へ正規化して検索されます（`date`は1525383610088、`created_at`は'2018-05-03T21:40:10.088Z'）。"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "lastModifiedRequiredHeader",
+        "description"
+      ],
+      "before": "Starting timestamp (defined with respect to server's clock) since which the changes in documents are to be listed, formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nExample&#58;\n\n<pre>Last-Modified&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": "サーバーの時計を基準にした、変更の取得開始日時です。形式：\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\n例：\n<pre>Last-Modified&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "ifModifiedSinceHeader",
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Modified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": "サーバーの時計を基準にした、記録の最終更新日時です。形式：\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nこのヘッダーがある場合、処理の前に値を記録のsrvModifiedと比較します。比較結果によって応答が変わります。srvModifiedもサーバーの時計を基準に設定されます。\n\n例：\n<pre>If-Modified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "parameters",
+        "ifUnmodifiedSinceHeader",
+        "description"
+      ],
+      "before": "Timestamp (defined with respect to server's clock) of the last document modification formatted as&#58;\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nIf this header is present, the operation will compare its value with the srvModified timestamp of the document at first and the operation result then may differ. The srvModified timestamp was defined by server's clock.\n\nExample&#58;\n\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>",
+      "after": "サーバーの時計を基準にした、記録の最終更新日時です。形式：\n\n&lt;day-name&gt;, &lt;day&gt; &lt;month&gt; &lt;year&gt; &lt;hour&gt;&#58;&lt;minute&gt;&#58;&lt;second&gt; GMT\n\nこのヘッダーがある場合、処理の前に値を記録のsrvModifiedと比較します。比較結果によって応答が変わります。srvModifiedもサーバーの時計を基準に設定されます。\n\n例：\n<pre>If-Unmodified-Since&#58; Wed, 17 Oct 2018 05&#58;13&#58;00 GMT</pre>"
+    },
+    {
+      "file": "lib/api3/swagger.json",
+      "path": [
+        "components",
+        "securitySchemes",
+        "jwtoken",
+        "description"
+      ],
+      "before": "Use this if you know the temporary json webtoken.",
+      "after": "一時的なJSON Web Tokenが分かっている場合に使用します。"
+    }
+  ]
+}

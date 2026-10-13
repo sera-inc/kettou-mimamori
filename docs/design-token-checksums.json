@@ -1,0 +1,22 @@
+[
+  {
+    "file": "static/design-system/tokens/dads.css",
+    "sourceCommit": "6051bceb67c60fb805b757c22bbd66f3318ea980",
+    "sha256": "614a3123a6125d9a0e6854829da1a7bd68dbe73ae953a6d8db24bc61e38f2765"
+  },
+  {
+    "file": "static/design-system/tokens/brand.css",
+    "sourceCommit": "6051bceb67c60fb805b757c22bbd66f3318ea980",
+    "sha256": "6a227ca1efbff7a7d39381100b641cf0a4e98f56e2bcc258a011f1154032877d"
+  },
+  {
+    "file": "static/design-system/tokens/semantic.css",
+    "sourceCommit": "6051bceb67c60fb805b757c22bbd66f3318ea980",
+    "sha256": "1da116e872eb8f582e5a410dcd1a433f5f0dd362f0cc53c0618b598b3aa465ec"
+  },
+  {
+    "file": "static/design-system/tokens/index.css",
+    "sourceCommit": "6051bceb67c60fb805b757c22bbd66f3318ea980",
+    "sha256": "03f6b16fbceca7ffdc68bf6a5397857d1b1eb263c9effc3eec1602465da3c9aa"
+  }
+]

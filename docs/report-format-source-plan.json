@@ -1,0 +1,26 @@
+[
+  {
+    "file": "lib/report_plugins/success.js",
+    "before": "  \tborder: 1px var(--app-border) solid;",
+    "after": "    border: 1px var(--app-border) solid;",
+    "beforeSHA256": "1f91c6db7e398f7d33b8948e33c9abb710082cfdf4eb5a858e1c34a47cd3a21f"
+  },
+  {
+    "file": "lib/report_plugins/success.js",
+    "before": "  \tpadding: 0.0625rem;",
+    "after": "    padding: 0.0625rem;",
+    "beforeSHA256": "d5b8ab530fedf60dd6cb0c48b8cf4dd94c5c045ce9be274ade42bf5f1842585b"
+  },
+  {
+    "file": "lib/report_plugins/success.js",
+    "before": "  \tbackground-color: var(--app-danger-bg);",
+    "after": "    background-color: var(--app-danger-bg);",
+    "beforeSHA256": "c4d57be6a282935907d71c9abd72c3494740717d7d4df2c2a1fee371e9ca6ff9"
+  },
+  {
+    "file": "lib/report_plugins/success.js",
+    "before": "  \tbackground-color: var(--app-success-bg);",
+    "after": "    background-color: var(--app-success-bg);",
+    "beforeSHA256": "f5334f3f76a0b854bf3d2a10adaf9912fadf28fbc3ec534e36babb1009cdba78"
+  }
+]

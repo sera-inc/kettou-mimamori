@@ -1,29 +1,29 @@
 #drawer button, #treatmentDrawer button, #boluscalcDrawer button{
-  font-size: 18px;
-  font-weight: bolder;
-  background-color: #ccc;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 2px solid #aaa;
-  box-shadow: 2px 2px 0 #eee;
+  font-size: var(--app-text-heading-sm-size);
+  font-weight: var(--app-font-weight-bold);
+  background-color: var(--app-surface);
+  padding: var(--app-space-05) var(--app-space-1);
+  border-radius: var(--app-radius-xs);
+  border: 2px solid var(--app-border);
+  box-shadow: var(--app-shadow-raised);
   width: 100%;
 }
 
 #drawer {
-  background-color: #666;
-  border-left: 1px solid #999;
-  box-shadow: inset 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
-  color: #eee;
+  background-color: var(--app-surface);
+  border-left: 1px solid var(--app-border);
+  box-shadow: var(--app-shadow-raised);
+  color: var(--app-text);
   display: none;
-  font-size: 16px;
+  font-size: var(--app-text-body-size);
   overflow-y: scroll;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   position: absolute;
-  margin-top: 45px;
-  right: -200px;
+  margin-top: var(--app-space-6);
+  right: -12.5rem;
   top: 0;
-  z-index: 1;
+  z-index: var(--app-z-drawer);
 }
 
 #drawer i, #treatmentDrawer i {
@@ -31,52 +31,52 @@
 }
 
 #drawer a, #treatmentDrawer a {
-  color: white;
+  color: var(--app-text-link);
 }
 
 input[type=number]:invalid {
-  background-color: #FFCCCC;
+  background-color: var(--app-danger-bg);
 }
 
 #drawer .actions {
-  margin: 10px 2px;
+  margin: var(--app-space-1) var(--app-space-0);
 }
 
 #drawer .actions a {
   display: block;
   text-align: right;
-  padding: 10px 0;
+  padding: var(--app-space-1) 0;
   text-decoration: underline;
 }
 
 #treatmentDrawer, #adminNotifiesDrawer {
-  background-color: #666;
-  border-left: 1px solid #999;
-  box-shadow: inset 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
-  color: #eee;
+  background-color: var(--app-surface);
+  border-left: 1px solid var(--app-border);
+  box-shadow: var(--app-shadow-raised);
+  color: var(--app-text);
   display: none;
-  font-size: 16px;
+  font-size: var(--app-text-body-size);
   overflow-y: scroll;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   position: absolute;
-  margin-top: 45px;
-  right: -200px;
+  margin-top: var(--app-space-6);
+  right: -12.5rem;
   top: 0;
-  z-index: 1;
+  z-index: var(--app-z-drawer);
 }
 
 #adminNotifyContent {
-  margin: 10px;
+  margin: var(--app-space-1);
 }
 
 .adminNotifyMessage {
-  margin-left: 10px;
+  margin-left: var(--app-space-1);
 }
 
 .adminNotifyMessageAdditionalInfo {
-  margin-left: 10px;
-  font-size: 11px;
+  margin-left: var(--app-space-1);
+  font-size: var(--app-text-body-size);
 }
 
 #treatmentDrawer input {
@@ -89,89 +89,89 @@ input[type=number]:invalid {
 }
 
 #treatmentDrawer .left-column span {
-  width: 110px;
+  width: 6.875rem;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 22px;
+  line-height: var(--app-text-body-leading);
   vertical-align: middle;
 }
 
 #treatmentDrawer fieldset fieldset .left-column span {
-  width: 96px;
+  width: 6rem;
 }
 
 #treatmentDrawer .left-column input, #treatmentDrawer .left-column select {
-  width: 140px;
+  width: 8.75rem;
 }
 
 #treatmentDrawer .extra-space {
-  padding-top: 10px;
+  padding-top: var(--app-space-1);
   display: block;
 }
 
 .timeago-mins {
-  width: 25px;
+  width: 1.5625rem;
 }
 
 #eventTime {
-  padding-bottom: 15px;
+  padding-bottom: var(--app-space-2);
 }
 
 #eventTime > span {
-  width: 105px;
+  width: 6.5625rem;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 22px;
+  line-height: var(--app-text-body-leading);
   vertical-align: middle;
 }
 
 #treatmentDrawer .eventdate {
-  width: 130px;
+  width: 8.125rem;
 }
 
 #treatmentDrawer .eventtime {
-  width: 110px;
+  width: 6.875rem;
 }
 
 #eventTime label span {
-  width: 45px;
+  width: 2.8125rem;
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  line-height: 22px;
+  line-height: var(--app-text-body-leading);
   vertical-align: middle;
 }
 
 #treatmentDrawer #glucoseValue {
-  width: 230px;
+  width: 14.375rem;
 }
 
 #treatmentDrawer #notes {
-  width: 250px;
+  width: 15.625rem;
 }
 
 #about {
-  margin-bottom: 55px;
+  margin-bottom: var(--app-space-6);
 }
 #about div {
-  font-size: 12px;
+  font-size: var(--app-text-body-size);
 }
 #about .links {
-  margin: 10px;
+  margin: var(--app-space-1);
 }
 #about a {
-  color: #fff;
+  color: var(--app-text-link);
   text-decoration: underline;
 }
 
 form {
   margin: 0;
-  padding: 0 10px;
+  padding: 0 var(--app-space-1);
 }
 
 .serverSettings {
@@ -182,7 +182,7 @@ fieldset {
   margin: 0.5em 0 1em 0;
 }
 legend {
-  font-size: 1.1em;
+  font-size: var(--app-text-body-size);
 }
 dl {
   margin: 0 0 1em 0;
@@ -196,68 +196,68 @@ dd {
 
 dd.numbers input {
   text-align: right;
-  width: 50px;
+  width: 3.125rem;
 }
 dd.numbers label {
   display: block;
   float: left;
-  width: 50px;
+  width: 3.125rem;
 }
 
 h1, legend,
 #toolbar .customTitle,
 #about .appName,
 #about .version {
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-weight: var(--app-font-weight-bold);
+  text-shadow: none;
 }
 #about .appName {
-  font-size: 1em;
+  font-size: var(--app-text-body-size);
 }
 #about .version {
-  font-size: 1.25em;
+  font-size: var(--app-text-body-size);
   margin-left: 0.25em;
 }
 
 #toolbar {
-  text-shadow: 0 0 5px black;
+  text-shadow: none;
   display: flex;
-  height: 44px;
-  margin: 0 0 10px;
-  padding: 0 15px 0 40px;
+  height: 2.75rem;
+  margin: 0 0 var(--app-space-1);
+  padding: 0 var(--app-space-2) 0 var(--app-space-5);
   position: relative;
   align-items: center;
-  background: url("../images/logo2.png") no-repeat 3px center #333;
-  border-bottom: 1px solid #999;
+  background: url("../images/logo2.png") no-repeat 3px center var(--app-surface);
+  border-bottom: 1px solid var(--app-border);
   justify-content: space-between;
 }
 
 #toolbar .customTitle {
-  color: #ccc;
-  font-size: 16px;
+  color: var(--app-text);
+  font-size: var(--app-text-body-size);
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 #toolbar .button-close {
-  color: #404040;
+  color: var(--app-text);
   text-align: center;
   text-shadow: none;
-  height: 20px;
-  width: 20px;
-  padding: 5px;
+  height: 1.25rem;
+  width: 1.25rem;
+  padding: var(--app-space-05);
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 0.625rem;
   transform: translateY(-50%);
-  background: grey;
-  border: 2px solid #404040;
-  border-radius: 5px;
+  background: var(--app-surface);
+  border: 2px solid var(--app-border);
+  border-radius: var(--app-radius-xs);
 }
 
 #toolbar .button-close + #buttonbar {
-  margin-right: 40px;
+  margin-right: var(--app-space-5);
 }
 
 #buttonbar {
@@ -267,29 +267,29 @@ h1, legend,
 
 #buttonbar a,
 #buttonbar i {
-  color: #ccc;
-  font-size: 16px;
-  height: 44px;
-  line-height: 44px;
+  color: var(--app-text-link);
+  font-size: var(--app-text-body-size);
+  height: 2.75rem;
+  line-height: var(--app-text-body-leading);
 }
 
 #buttonbar .selected {
-  color: red;
+  color: var(--app-danger-text);
 }
 
 #buttonbar a {
   float: right;
   text-decoration: none;
-  width: 34px;
+  width: 2.125rem;
 }
 
 #buttonbar i {
-  padding-left: 12px;
+  padding-left: var(--app-space-1);
 }
 
 #notification {
   display: none;
-  font-size: 14px;
+  font-size: var(--app-text-body-size);
   position: absolute;
 }
 
@@ -299,31 +299,31 @@ h1, legend,
 }
 #notification {
   opacity: 0.75;
-  top: 4px;
-  z-index: 99;
+  top: 0.25rem;
+  z-index: var(--app-z-sticky);
 }
 #notification.info a {
-  background: #00f;
-  color: #fff;
+  background: var(--app-surface);
+  color: var(--app-text-link);
 }
 #notification.warn a {
-  background: #cc0;
-  color: #000;
+  background: var(--app-warning-bg);
+  color: var(--app-warning-text);
 }
 #notification.success a {
-  background: #090;
-  color: #fff;
+  background: var(--app-success-bg);
+  color: var(--app-success-text);
 }
 #notification.urgent a {
-  background: #c00;
-  color: #fff;
+  background: var(--app-danger-bg);
+  color: var(--app-danger-text);
 }
 #notification a {
-  background: #c00;
-  border-radius: 5px;
-  color: #fff;
+  background: var(--app-surface);
+  border-radius: var(--app-radius-xs);
+  color: var(--app-text-link);
   display: block;
-  height: 20px;
+  height: 1.25rem;
   padding: 0.5em;
   text-decoration: none;
 }
@@ -337,8 +337,8 @@ h1, legend,
 }
 
 .experiments a {
-  color: #fff;
-  font-size: 1.5em;
+  color: var(--app-text-link);
+  font-size: var(--app-text-body-size);
 }
 
 ul.navigation {
@@ -357,10 +357,10 @@ ul.navigation {
 
 .navigation a {
   text-decoration: none;
-  background-color: #808080;
+  background-color: var(--app-surface);
   display: block;
-  padding: 5px;
-  margin: 10px 0;
+  padding: var(--app-space-05);
+  margin: var(--app-space-1) 0;
 }
 
 .navigation a.multilink {
@@ -370,45 +370,45 @@ ul.navigation {
 }
 
 .navigation a:hover {
-  background-color: #989898;
+  background-color: var(--app-surface);
 }
 
 #boluscalcDrawer {
-    background-color: #666;
-    border-left: 1px solid #999;
-    box-shadow: inset 4px 4px 5px 0 rgba(50, 50, 50, 0.75);
-    color: #eee;
+    background-color: var(--app-surface);
+    border-left: 1px solid var(--app-border);
+    box-shadow: var(--app-shadow-raised);
+    color: var(--app-text);
     display: none;
-    font-size: 16px;
+    font-size: var(--app-text-body-size);
     overflow-y: scroll;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     position: absolute;
-    margin-top: 45px;
-    right: -200px;
-    width: 320px;
+    margin-top: var(--app-space-6);
+    right: -12.5rem;
+    width: 20rem;
     top: 0;
-    z-index: 1;
+    z-index: var(--app-z-drawer);
 }
 
 #boluscalcDrawer a {
-  color: white;
-  font-size: 12px;
+  color: var(--app-text-link);
+  font-size: var(--app-text-body-size);
 }
 
 #boluscalcDrawer .insulincalculation {
-    background: gray;
+    background: var(--app-surface);
 }
 
 #boluscalcDrawer .insulintotalcalculation {
-    background: Sienna;
+    background: var(--app-primary-bg);
 }
 
 #boluscalcDrawer .border_bottom td {
-  border-bottom:1pt solid #eee;
+  border-bottom:1px solid var(--app-border);
 }
 
 #boluscalcDrawer .foodinput {
-   background: #505050;
-   margin: 10px;
+   background: var(--app-surface);
+   margin: var(--app-space-1);
 }

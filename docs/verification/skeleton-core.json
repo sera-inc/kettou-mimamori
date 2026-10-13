@@ -1,0 +1,324 @@
+{
+  "stats": {
+    "suites": 73,
+    "tests": 263,
+    "passes": 263,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-12T16:03:07.776Z",
+    "end": "2026-10-12T16:03:16.122Z",
+    "duration": 8346
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/client-core/captured-fixtures.lint.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 52,
+        "passes": 52,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:08.103Z",
+        "end": "2026-10-12T16:03:08.306Z",
+        "duration": 203
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-confirm-text.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 11,
+        "passes": 11,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:08.882Z",
+        "end": "2026-10-12T16:03:08.946Z",
+        "duration": 64
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-duration.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:09.263Z",
+        "end": "2026-10-12T16:03:09.275Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-event-types.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:09.586Z",
+        "end": "2026-10-12T16:03:09.599Z",
+        "duration": 13
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-normalize-treatment.captured.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:09.893Z",
+        "end": "2026-10-12T16:03:09.980Z",
+        "duration": 87
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-normalize-treatment.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 16,
+        "passes": 16,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:10.281Z",
+        "end": "2026-10-12T16:03:10.301Z",
+        "duration": 20
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-resolve-event-name.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:10.588Z",
+        "end": "2026-10-12T16:03:10.598Z",
+        "duration": 10
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-validate.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:10.937Z",
+        "end": "2026-10-12T16:03:10.956Z",
+        "duration": 19
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-loop.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 14,
+        "passes": 14,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:11.269Z",
+        "end": "2026-10-12T16:03:11.307Z",
+        "duration": 38
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-openaps.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 9,
+        "tests": 27,
+        "passes": 27,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:11.620Z",
+        "end": "2026-10-12T16:03:11.677Z",
+        "duration": 57
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-pump.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:12.006Z",
+        "end": "2026-10-12T16:03:12.038Z",
+        "duration": 32
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-uploader.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 10,
+        "passes": 10,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:12.338Z",
+        "end": "2026-10-12T16:03:12.355Z",
+        "duration": 17
+      }
+    },
+    {
+      "file": "tests/client-core/loop-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:12.670Z",
+        "end": "2026-10-12T16:03:12.680Z",
+        "duration": 10
+      }
+    },
+    {
+      "file": "tests/client-core/openaps-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:13.036Z",
+        "end": "2026-10-12T16:03:13.047Z",
+        "duration": 11
+      }
+    },
+    {
+      "file": "tests/client-core/pill-goldens.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:13.379Z",
+        "end": "2026-10-12T16:03:13.562Z",
+        "duration": 183
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-defaults-and-time.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:13.850Z",
+        "end": "2026-10-12T16:03:13.866Z",
+        "duration": 16
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-migrate.captured.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 11,
+        "tests": 41,
+        "passes": 41,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:14.212Z",
+        "end": "2026-10-12T16:03:14.282Z",
+        "duration": 70
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-migrate.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:14.643Z",
+        "end": "2026-10-12T16:03:14.663Z",
+        "duration": 20
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-profiles.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 13,
+        "passes": 13,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:15.056Z",
+        "end": "2026-10-12T16:03:15.091Z",
+        "duration": 35
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-ranges.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:15.412Z",
+        "end": "2026-10-12T16:03:15.425Z",
+        "duration": 13
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-records.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:15.712Z",
+        "end": "2026-10-12T16:03:15.729Z",
+        "duration": 17
+      }
+    },
+    {
+      "file": "tests/client-core/pump-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T16:03:16.056Z",
+        "end": "2026-10-12T16:03:16.111Z",
+        "duration": 55
+      }
+    }
+  ],
+  "failures": []
+}

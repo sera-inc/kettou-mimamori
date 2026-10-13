@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-10-13T05:35:03.738Z",
+    "end": "2026-10-13T05:35:04.383Z",
+    "duration": 645
+  },
+  "tests": [
+    {
+      "title": "returns saved Japanese notes without exposing internal storage fields",
+      "fullTitle": "Subject notes in the authenticated admin listing returns saved Japanese notes without exposing internal storage fields",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 609,
+      "currentRetry": 0,
+      "err": {
+        "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    {\n      _id: 'sample-id',\n      accessToken: 'test-only-access',\n      name: '確認利用者',\n-     notes: '担当者への連絡事項',\n      roles: [\n        'readable'\n      ]\n    }\n  ]\n\n    at Context.<anonymous> (tests\\authorization-subject-notes.test.js:22:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+        "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    {\n      _id: 'sample-id',\n      accessToken: 'test-only-access',\n      name: '確認利用者',\n-     notes: '担当者への連絡事項',\n      roles: [\n        'readable'\n      ]\n    }\n  ]\n",
+        "generatedMessage": true,
+        "name": "AssertionError",
+        "code": "ERR_ASSERTION",
+        "actual": "[\n  {\n    \"_id\": \"sample-id\"\n    \"accessToken\": \"test-only-access\"\n    \"name\": \"確認利用者\"\n    \"roles\": [\n      \"readable\"\n    ]\n  }\n]",
+        "expected": "[\n  {\n    \"_id\": \"sample-id\"\n    \"accessToken\": \"test-only-access\"\n    \"name\": \"確認利用者\"\n    \"notes\": \"担当者への連絡事項\"\n    \"roles\": [\n      \"readable\"\n    ]\n  }\n]",
+        "operator": "deepStrictEqual",
+        "diff": "simple"
+      }
+    },
+    {
+      "title": "preserves subjects that have no notes",
+      "fullTitle": "Subject notes in the authenticated admin listing preserves subjects that have no notes",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 12,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "requires the existing admin permission before returning notes or tokens",
+      "fullTitle": "Subject notes in the authenticated admin listing requires the existing admin permission before returning notes or tokens",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 14,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "returns saved Japanese notes without exposing internal storage fields",
+      "fullTitle": "Subject notes in the authenticated admin listing returns saved Japanese notes without exposing internal storage fields",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 609,
+      "currentRetry": 0,
+      "err": {
+        "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    {\n      _id: 'sample-id',\n      accessToken: 'test-only-access',\n      name: '確認利用者',\n-     notes: '担当者への連絡事項',\n      roles: [\n        'readable'\n      ]\n    }\n  ]\n\n    at Context.<anonymous> (tests\\authorization-subject-notes.test.js:22:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+        "message": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    {\n      _id: 'sample-id',\n      accessToken: 'test-only-access',\n      name: '確認利用者',\n-     notes: '担当者への連絡事項',\n      roles: [\n        'readable'\n      ]\n    }\n  ]\n",
+        "generatedMessage": true,
+        "name": "AssertionError",
+        "code": "ERR_ASSERTION",
+        "actual": "[\n  {\n    \"_id\": \"sample-id\"\n    \"accessToken\": \"test-only-access\"\n    \"name\": \"確認利用者\"\n    \"roles\": [\n      \"readable\"\n    ]\n  }\n]",
+        "expected": "[\n  {\n    \"_id\": \"sample-id\"\n    \"accessToken\": \"test-only-access\"\n    \"name\": \"確認利用者\"\n    \"notes\": \"担当者への連絡事項\"\n    \"roles\": [\n      \"readable\"\n    ]\n  }\n]",
+        "operator": "deepStrictEqual",
+        "diff": "simple"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "preserves subjects that have no notes",
+      "fullTitle": "Subject notes in the authenticated admin listing preserves subjects that have no notes",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 12,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "requires the existing admin permission before returning notes or tokens",
+      "fullTitle": "Subject notes in the authenticated admin listing requires the existing admin permission before returning notes or tokens",
+      "file": "C:\\Users\\kny12\\OneDrive\\ドキュメント\\ChatGPT\\医療\\sera-glucose\\tests\\authorization-subject-notes.test.js",
+      "duration": 14,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ]
+}

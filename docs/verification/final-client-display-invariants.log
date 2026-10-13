@@ -1,0 +1,20 @@
+[
+  {
+    "file": "lib/client/chart.js",
+    "pass": true,
+    "replacements": 4,
+    "scope": "Entire source and AST equal the reviewed pre-change source after reversing only typography/shadow declarations"
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "pass": true,
+    "replacements": 8,
+    "scope": "Entire source and AST equal the reviewed pre-change source after reversing only typography/shadow declarations"
+  },
+  {
+    "file": "lib/client/boluscalc.js",
+    "pass": true,
+    "replacements": 1,
+    "scope": "Entire source and AST equal the reviewed pre-change source after reversing only typography/shadow declarations"
+  }
+]

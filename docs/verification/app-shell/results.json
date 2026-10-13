@@ -1,0 +1,63 @@
+{
+  "results": [
+    {
+      "case": "desktop route / renders shared shell without page errors",
+      "pass": true
+    },
+    {
+      "case": "desktop route /report renders shared shell without page errors",
+      "pass": true
+    },
+    {
+      "case": "desktop route /profile renders shared shell without page errors",
+      "pass": true
+    },
+    {
+      "case": "desktop route /food renders shared shell without page errors",
+      "pass": true
+    },
+    {
+      "case": "desktop route /admin renders shared shell without page errors",
+      "pass": true
+    },
+    {
+      "case": "native range buttons retain 6-hour click and 3-hour keyboard selection; options and settings open",
+      "chart": {
+        "x": 264,
+        "y": 502.9375,
+        "width": 1152,
+        "height": 489.0625
+      },
+      "pass": true
+    },
+    {
+      "case": "skip link moves keyboard focus to main",
+      "pass": true
+    },
+    {
+      "case": "mobile controls stay below cards; chart has readable height without horizontal page overflow",
+      "ranges": {
+        "x": 16,
+        "y": 642.3125,
+        "width": 358,
+        "height": 148
+      },
+      "mobileChart": {
+        "x": 16,
+        "y": 806.3125,
+        "width": 358,
+        "height": 384
+      },
+      "pass": true
+    },
+    {
+      "case": "mobile drawer traps Tab, closes by Escape and backdrop, returns focus and releases main",
+      "pass": true
+    },
+    {
+      "case": "desktop resize restores navigation",
+      "pass": true
+    }
+  ],
+  "pageErrors": []
+}

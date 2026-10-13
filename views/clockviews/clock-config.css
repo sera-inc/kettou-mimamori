@@ -1,39 +1,39 @@
 #config-form {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 250px;
-    min-width: 220px;
-    background: white;
-    color: black;
+    top: 0.625rem;
+    left: 0.625rem;
+    width: 15.625rem;
+    min-width: 13.75rem;
+    background: var(--app-surface);
+    color: var(--app-text);
     opacity: 0.8;
     padding: 1%;
-    font-size: 10px;
+    font-size: var(--app-text-body-size);
 }
 #config-form p {
-    margin: 15px;
+    margin: var(--app-space-2);
     text-align: left;
 }
 input.elmt {
-    width: 120px;
+    width: 7.5rem;
 }
 select {
     width: 100%;
 }
 #facename {
-    font-size: 7px;
+    font-size: var(--app-text-body-size);
 }
 #clocklink {
-    font-size: 18px;
+    font-size: var(--app-text-heading-sm-size);
 }
 #clocklink:link, #clocklink:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
+    background-color: var(--app-surface);
+    color: var(--app-text-link);
+    padding: var(--app-space-2) var(--app-space-3);
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
 #clocklink:hover, #clocklink:active {
-    background-color: red;
+    background-color: var(--app-danger-bg);
 }

@@ -1,0 +1,34 @@
+{
+  "stats": {
+    "suites": 61,
+    "tests": 319,
+    "passes": 315,
+    "pending": 0,
+    "failures": 4,
+    "start": "2026-10-12T13:08:42.108Z",
+    "end": "2026-10-12T13:10:27.829Z",
+    "duration": 105721
+  },
+  "failures": [
+    {
+      "title": "verifyauth should return defaults when called without secret",
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    },
+    {
+      "title": "verifyauth should fail when calling with wrong secret",
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    },
+    {
+      "title": "verifyauth should fail unauthorized and delay subsequent attempts",
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    },
+    {
+      "title": "verifyauth should work fine authorized",
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    }
+  ]
+}

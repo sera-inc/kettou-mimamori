@@ -1,0 +1,8 @@
+{
+  "generatedAt": "2026-10-13T02:45:30.902Z",
+  "file": "lib/client/renderer.js",
+  "pass": true,
+  "scope": "Only default forecast SVG stroke and positive opacity; model records, custom colors, noFade, transparent/negative sentinels, coordinates, values, protocols and notification algorithms retained",
+  "reversedSourceSHA256": "d61826d5b9df6fdd153311a2e85e883f55baa1a301a5d64663e48c483701c4ca",
+  "reversedASTSHA256": "2c8c7b29bcaead9f15d199dbf5d2f77cf691244a2b47a56b31934ecbb9a4959c"
+}

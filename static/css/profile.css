@@ -1,23 +1,23 @@
 #profile-editor h1 {
   text-align: left;
-  margin: 10px;
+  margin: var(--app-space-1);
 }
 
 #pe_form input[type="text"], #pe_form input[type="number"] {
-  width: 60px;
+  width: 3.75rem;
 }
 
 #pe_submit {
-  font-size: 18px;
-  font-weight: bolder;
-  background-color: #ccc;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 2px solid #aaa;
-  box-shadow: 2px 2px 0 #eee;
-  margin: 20px 0;
+  font-size: var(--app-text-heading-sm-size);
+  font-weight: var(--app-font-weight-bold);
+  background-color: var(--app-surface);
+  padding: var(--app-space-05) var(--app-space-1);
+  border-radius: var(--app-radius-xs);
+  border: 2px solid var(--app-border);
+  box-shadow: var(--app-shadow-raised);
+  margin: var(--app-space-2) 0;
 }
 
 .pe_stored_profile {
-  background-color: #222;
+  background-color: var(--app-surface);
 }

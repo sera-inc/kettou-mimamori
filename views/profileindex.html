@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
-      <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="apple-mobile-web-app-capable" content="yes">
-      <title>Profile Editor: Nightscout</title>
+      <title>プロフィール | 血糖みまもり</title>
 
       <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
@@ -32,9 +33,10 @@
       <%- include('preloadCSS')%>
 
     </head>
-  <body>
+  <body class="app-page" data-page="profile">
     <%- include('partials/toolbar') %>
-
+    <main id="app-main" class="app-main" tabindex="-1">
+    <%- include('partials/page-title') %>
     <form id="pe_form">
       <fieldset class="browserSettings">
         <legend class="translate">General profile settings</legend>
@@ -85,7 +87,7 @@
           </legend>
           <dl>
             <b><span class="translate">Name</span>: </b>
-            <input type="text" id="pe_profile_name" style="width:150px">
+            <input type="text" id="pe_profile_name" style="width:9.375rem">
           </dl>
           <dl>
             <b><span class="translate">Timezone</span>: </b>
@@ -164,6 +166,7 @@
     </form>
 
     <%- include('partials/authentication-status') %>
+    </main>
 
     <script src="/api/v1/status.js"></script>
     <script src="<%= locals.bundle %>/js/bundle.app.js"></script>

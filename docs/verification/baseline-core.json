@@ -1,0 +1,357 @@
+{
+  "stats": {
+    "suites": 73,
+    "tests": 263,
+    "passes": 259,
+    "pending": 0,
+    "failures": 4,
+    "start": "2026-10-12T13:16:20.110Z",
+    "end": "2026-10-12T13:16:27.959Z",
+    "duration": 7849
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/client-core/captured-fixtures.lint.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 52,
+        "passes": 52,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:20.647Z",
+        "end": "2026-10-12T13:16:20.763Z",
+        "duration": 116
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-confirm-text.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 11,
+        "passes": 11,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:21.082Z",
+        "end": "2026-10-12T13:16:21.123Z",
+        "duration": 41
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-duration.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:21.409Z",
+        "end": "2026-10-12T13:16:21.421Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-event-types.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:21.766Z",
+        "end": "2026-10-12T13:16:21.785Z",
+        "duration": 19
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-normalize-treatment.captured.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:22.060Z",
+        "end": "2026-10-12T13:16:22.145Z",
+        "duration": 85
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-normalize-treatment.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 16,
+        "passes": 16,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:22.453Z",
+        "end": "2026-10-12T13:16:22.477Z",
+        "duration": 24
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-resolve-event-name.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:22.852Z",
+        "end": "2026-10-12T13:16:22.863Z",
+        "duration": 11
+      }
+    },
+    {
+      "file": "tests/client-core/careportal-validate.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 12,
+        "passes": 12,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:23.206Z",
+        "end": "2026-10-12T13:16:23.225Z",
+        "duration": 19
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-loop.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 14,
+        "passes": 14,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:23.593Z",
+        "end": "2026-10-12T13:16:23.633Z",
+        "duration": 40
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-openaps.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 9,
+        "tests": 27,
+        "passes": 27,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:24.007Z",
+        "end": "2026-10-12T13:16:24.053Z",
+        "duration": 46
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-pump.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:24.352Z",
+        "end": "2026-10-12T13:16:24.376Z",
+        "duration": 24
+      }
+    },
+    {
+      "file": "tests/client-core/devicestatus-uploader.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 10,
+        "passes": 10,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:24.653Z",
+        "end": "2026-10-12T13:16:24.670Z",
+        "duration": 17
+      }
+    },
+    {
+      "file": "tests/client-core/loop-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:24.972Z",
+        "end": "2026-10-12T13:16:24.984Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/client-core/openaps-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:25.296Z",
+        "end": "2026-10-12T13:16:25.308Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/client-core/pill-goldens.test.js",
+      "exitCode": 4,
+      "stats": {
+        "suites": 5,
+        "tests": 4,
+        "passes": 0,
+        "pending": 0,
+        "failures": 4,
+        "start": "2026-10-12T13:16:25.616Z",
+        "end": "2026-10-12T13:16:25.797Z",
+        "duration": 181
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-defaults-and-time.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:26.066Z",
+        "end": "2026-10-12T13:16:26.080Z",
+        "duration": 14
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-migrate.captured.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 11,
+        "tests": 41,
+        "passes": 41,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:26.355Z",
+        "end": "2026-10-12T13:16:26.398Z",
+        "duration": 43
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-migrate.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 8,
+        "passes": 8,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:26.655Z",
+        "end": "2026-10-12T13:16:26.670Z",
+        "duration": 15
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-profiles.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 7,
+        "tests": 13,
+        "passes": 13,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:26.942Z",
+        "end": "2026-10-12T13:16:26.961Z",
+        "duration": 19
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-ranges.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 4,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:27.259Z",
+        "end": "2026-10-12T13:16:27.271Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/client-core/profile-editor-records.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:27.594Z",
+        "end": "2026-10-12T13:16:27.611Z",
+        "duration": 17
+      }
+    },
+    {
+      "file": "tests/client-core/pump-plugin-wiring.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-12T13:16:27.899Z",
+        "end": "2026-10-12T13:16:27.950Z",
+        "duration": 51
+      }
+    }
+  ],
+  "failures": [
+    {
+      "fullTitle": "captured-fixture pill goldens aaps matches committed pills-golden.json",
+      "file": "tests/client-core/pill-goldens.test.js",
+      "err": {
+        "stack": "Error: Golden drift in aaps starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"aaps\",\r\n  3:   \"time\": 1778284864388,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"aaps\",\n  3:   \"time\": 1778284864388,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)",
+        "message": "Golden drift in aaps starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"aaps\",\r\n  3:   \"time\": 1778284864388,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"aaps\",\n  3:   \"time\": 1778284864388,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write"
+      }
+    },
+    {
+      "fullTitle": "captured-fixture pill goldens loop matches committed pills-golden.json",
+      "file": "tests/client-core/pill-goldens.test.js",
+      "err": {
+        "stack": "Error: Golden drift in loop starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"loop\",\r\n  3:   \"time\": 1778284977372,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"loop\",\n  3:   \"time\": 1778284977372,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)",
+        "message": "Golden drift in loop starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"loop\",\r\n  3:   \"time\": 1778284977372,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"loop\",\n  3:   \"time\": 1778284977372,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write"
+      }
+    },
+    {
+      "fullTitle": "captured-fixture pill goldens phone-uploader matches committed pills-golden.json",
+      "file": "tests/client-core/pill-goldens.test.js",
+      "err": {
+        "stack": "Error: Golden drift in phone-uploader starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"phone-uploader\",\r\n  3:   \"time\": 1778284895589,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"phone-uploader\",\n  3:   \"time\": 1778284895589,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)",
+        "message": "Golden drift in phone-uploader starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"phone-uploader\",\r\n  3:   \"time\": 1778284895589,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"phone-uploader\",\n  3:   \"time\": 1778284895589,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write"
+      }
+    },
+    {
+      "fullTitle": "captured-fixture pill goldens trio matches committed pills-golden.json",
+      "file": "tests/client-core/pill-goldens.test.js",
+      "err": {
+        "stack": "Error: Golden drift in trio starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"trio\",\r\n  3:   \"time\": 1778284860000,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"trio\",\n  3:   \"time\": 1778284860000,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write\n    at Context.<anonymous> (tests/client-core/pill-goldens.test.js:65:17)\n    at process.processImmediate (node:internal/timers:484:21)",
+        "message": "Golden drift in trio starting line 1.\nExpected:\n  1: {\r\n  2:   \"fixture\": \"trio\",\r\n  3:   \"time\": 1778284860000,\r\n  4:   \"pills\": {\r\n  5:     \"rawbg\": [\r\n  6:       {\r\nActual:\n  1: {\n  2:   \"fixture\": \"trio\",\n  3:   \"time\": 1778284860000,\n  4:   \"pills\": {\n  5:     \"rawbg\": [\n  6:       {\nIf intentional: node tools/captured-fixtures/generate-pill-goldens.js --write"
+      }
+    }
+  ]
+}

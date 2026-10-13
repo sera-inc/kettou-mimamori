@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 29,
+    "passes": 29,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T04:41:31.761Z",
+    "end": "2026-10-13T04:41:39.402Z",
+    "duration": 7641
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/cannulaage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:41:32.786Z",
+        "end": "2026-10-13T04:41:32.859Z",
+        "duration": 73
+      }
+    },
+    {
+      "file": "tests/display-age.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:41:33.207Z",
+        "end": "2026-10-13T04:41:33.216Z",
+        "duration": 9
+      }
+    },
+    {
+      "file": "tests/insulinage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:41:33.618Z",
+        "end": "2026-10-13T04:41:33.658Z",
+        "duration": 40
+      }
+    },
+    {
+      "file": "tests/japanese-locale.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:41:34.102Z",
+        "end": "2026-10-13T04:41:34.365Z",
+        "duration": 263
+      }
+    },
+    {
+      "file": "tests/pluginbase.modern.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:41:36.309Z",
+        "end": "2026-10-13T04:41:36.750Z",
+        "duration": 441
+      }
+    },
+    {
+      "file": "tests/sensorage.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:41:37.122Z",
+        "end": "2026-10-13T04:41:37.172Z",
+        "duration": 50
+      }
+    },
+    {
+      "file": "tests/stored-output-sinks.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:41:38.324Z",
+        "end": "2026-10-13T04:41:39.383Z",
+        "duration": 1059
+      }
+    }
+  ],
+  "failures": []
+}

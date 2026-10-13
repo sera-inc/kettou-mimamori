@@ -1,0 +1,235 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.56kB 0.0s done
+#1 DONE 0.1s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 3.0s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/node:22-alpine
+#4 DONE 2.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 822B done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 DONE 0.0s
+
+#7 [builder  1/12] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#7 resolve docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402 0.0s done
+#7 extracting sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5
+#7 sha256:e554276b05e6306c5ad33cd85bfa7f0693083e21f6114db5abf60a20fb413039 0B / 1.26MB 0.2s
+#7 sha256:d39db1cf9caa4f49c5a2e67111fbe6e0d5eea8ede550cb82f3dc2b79712688d6 0B / 447B 0.2s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 0B / 55.59MB 0.2s
+#7 sha256:e554276b05e6306c5ad33cd85bfa7f0693083e21f6114db5abf60a20fb413039 1.26MB / 1.26MB 0.8s
+#7 sha256:d39db1cf9caa4f49c5a2e67111fbe6e0d5eea8ede550cb82f3dc2b79712688d6 447B / 447B 0.7s done
+#7 sha256:e554276b05e6306c5ad33cd85bfa7f0693083e21f6114db5abf60a20fb413039 1.26MB / 1.26MB 0.8s done
+#7 ...
+
+#6 [internal] load build context
+#6 transferring context: 3.07MB 1.5s done
+#6 DONE 1.5s
+
+#7 [builder  1/12] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#7 extracting sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5 1.3s done
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 3.15MB / 55.59MB 1.5s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 6.29MB / 55.59MB 2.0s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 9.44MB / 55.59MB 2.7s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 12.58MB / 55.59MB 4.1s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 15.73MB / 55.59MB 4.8s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 18.87MB / 55.59MB 5.1s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 22.02MB / 55.59MB 5.4s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 25.17MB / 55.59MB 5.7s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 30.41MB / 55.59MB 6.0s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 33.55MB / 55.59MB 6.3s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 37.75MB / 55.59MB 6.6s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 40.89MB / 55.59MB 6.9s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 45.09MB / 55.59MB 7.2s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 48.23MB / 55.59MB 7.5s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 51.38MB / 55.59MB 7.8s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 54.53MB / 55.59MB 8.1s
+#7 sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 55.59MB / 55.59MB 8.2s done
+#7 extracting sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937
+#7 extracting sha256:f7f2d304681aaa935c9cfd180850cf616ae843efce7682873d6521ded7268937 3.6s done
+#7 DONE 12.2s
+
+#7 [builder  1/12] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#7 extracting sha256:e554276b05e6306c5ad33cd85bfa7f0693083e21f6114db5abf60a20fb413039 0.1s done
+#7 DONE 12.4s
+
+#7 [builder  1/12] FROM docker.io/library/node:22-alpine@sha256:0a7108bf6c7bf5de370ffb1a3ed6be93d405b43ff159f681a8d18c0e2bc2e402
+#7 extracting sha256:d39db1cf9caa4f49c5a2e67111fbe6e0d5eea8ede550cb82f3dc2b79712688d6 0.0s done
+#7 DONE 12.4s
+
+#8 [builder  2/12] WORKDIR /opt/app
+#8 DONE 0.2s
+
+#9 [builder  3/12] COPY package.json package-lock.json .babelrc ./
+#9 DONE 0.1s
+
+#10 [runtime  3/10] COPY --chown=node:node package.json package-lock.json ./
+#10 DONE 0.2s
+
+#11 [builder  4/12] COPY bundle/ ./bundle/
+#11 DONE 0.1s
+
+#12 [runtime  4/10] COPY --chown=node:node LICENSE COPYRIGHT NOTICE ./
+#12 DONE 0.1s
+
+#13 [builder  5/12] COPY webpack/ ./webpack/
+#13 DONE 0.1s
+
+#14 [runtime  5/10] COPY --chown=node:node lib/ ./lib/
+#14 ...
+
+#15 [builder  6/12] COPY bin/generateRandomString.js ./bin/
+#15 DONE 0.1s
+
+#16 [builder  7/12] COPY lib/ ./lib/
+#16 ...
+
+#14 [runtime  5/10] COPY --chown=node:node lib/ ./lib/
+#14 DONE 0.5s
+
+#16 [builder  7/12] COPY lib/ ./lib/
+#16 DONE 0.3s
+
+#17 [builder  8/12] COPY static/ ./static/
+#17 DONE 0.4s
+
+#18 [runtime  6/10] COPY --chown=node:node static/ ./static/
+#18 DONE 0.4s
+
+#19 [builder  9/12] COPY views/ ./views/
+#19 DONE 0.1s
+
+#20 [runtime  7/10] COPY --chown=node:node views/ ./views/
+#20 DONE 0.2s
+
+#21 [builder 10/12] COPY translations/ ./translations/
+#21 DONE 0.1s
+
+#22 [runtime  8/10] COPY --chown=node:node translations/ ./translations/
+#22 DONE 0.1s
+
+#23 [builder 11/12] COPY server.js ./
+#23 DONE 0.1s
+
+#24 [runtime  9/10] COPY --chown=node:node server.js ./
+#24 DONE 0.1s
+
+#25 [builder 12/12] RUN --mount=type=secret,id=local_ca   if [ -f /run/secrets/local_ca ]; then export NODE_EXTRA_CA_CERTS=/run/secrets/local_ca; fi;   npm ci --cache /tmp/empty-cache --omit=optional --force &&   npm prune --omit=dev --omit=optional &&   rm -rf /tmp/*
+#25 0.743 npm warn using --force Recommended protections disabled.
+#25 50.10 
+#25 50.10 > kettou-mimamori@15.0.8 postinstall
+#25 50.10 > webpack --mode production --config webpack/webpack.config.js && npm run-script post-generate-keys
+#25 50.10 
+#25 58.49 [BABEL] Note: The code generator has deoptimised the styling of /opt/app/node_modules/jquery-ui-bundle/jquery-ui.js as it exceeds the max of 500KB.
+#25 125.6 asset js/bundle.app.js 1.71 MiB [emitted] [minimized] [big] (name: app) 2 related assets
+#25 125.6 asset js/bundle.clock.js 150 KiB [emitted] [minimized] (name: clock) 2 related assets
+#25 125.6 asset images/730d0f4654094d2dcd3c1127a227a6e9.png 1.2 KiB [emitted] [immutable] [from: static/images/logo2.png] (auxiliary name: app)
+#25 125.6 orphan modules 544 KiB [orphan] 521 modules
+#25 125.6 runtime modules 1.87 KiB 10 modules
+#25 125.6 built modules 3.38 MiB [built]
+#25 125.6   modules by path ./node_modules/ 2.4 MiB 205 modules
+#25 125.6   modules by path ./lib/ 896 KiB 111 modules
+#25 125.6   modules by path ./static/ 29.2 KiB 7 modules
+#25 125.6   modules by path ./bundle/*.js 1.39 KiB
+#25 125.6     ./bundle/bundle.source.js 1.22 KiB [built] [code generated]
+#25 125.6     ./bundle/bundle.clocks.source.js 178 bytes [built] [code generated]
+#25 125.6   modules by path ./translations/ 77.9 KiB
+#25 125.6     ./translations/ja_JP.json 34.1 KiB [built] [code generated]
+#25 125.6     ./translations/en/en.json 43.8 KiB [built] [code generated]
+#25 125.6   crypto (ignored) 15 bytes [built] [code generated]
+#25 125.6   util (ignored) 15 bytes [built] [code generated]
+#25 125.6   util (ignored) 15 bytes [built] [code generated]
+#25 125.6 
+#25 125.6 WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+#25 125.6 This can impact web performance.
+#25 125.6 Assets: 
+#25 125.6   js/bundle.app.js (1.71 MiB)
+#25 125.6 
+#25 125.6 WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+#25 125.6 Entrypoints:
+#25 125.6   app (1.71 MiB)
+#25 125.6       js/bundle.app.js
+#25 125.6 
+#25 125.6 WARNING in webpack performance recommendations: 
+#25 125.6 You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+#25 125.6 For more info visit https://webpack.js.org/guides/code-splitting/
+#25 125.6 
+#25 125.6 webpack 5.106.2 compiled with 3 warnings in 71826 ms
+#25 126.7 npm warn using --force Recommended protections disabled.
+#25 126.7 
+#25 126.7 > kettou-mimamori@15.0.8 post-generate-keys
+#25 126.7 > node bin/generateRandomString.js >node_modules/.cache/_ns_cache/randomString
+#25 126.7 
+#25 127.0 
+#25 127.0 added 1028 packages, and audited 1029 packages in 2m
+#25 127.0 
+#25 127.0 213 packages are looking for funding
+#25 127.0   run `npm fund` for details
+#25 127.3 
+#25 127.3 44 vulnerabilities (1 low, 17 moderate, 25 high, 1 critical)
+#25 127.3 
+#25 127.3 To address issues that do not require attention, run:
+#25 127.3   npm audit fix
+#25 127.3 
+#25 127.3 To address all issues possible (including breaking changes), run:
+#25 127.3   npm audit fix --force
+#25 127.3 
+#25 127.3 Some issues need review, and may require choosing
+#25 127.3 a different dependency.
+#25 127.3 
+#25 127.3 Run `npm audit` for details.
+#25 127.3 npm notice
+#25 127.3 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+#25 127.3 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#25 127.3 npm notice To update run: npm install -g npm@12.2.0
+#25 127.3 npm notice
+#25 137.9 
+#25 137.9 up to date, audited 671 packages in 10s
+#25 137.9 
+#25 137.9 129 packages are looking for funding
+#25 137.9   run `npm fund` for details
+#25 137.9 
+#25 137.9 33 vulnerabilities (1 low, 12 moderate, 19 high, 1 critical)
+#25 137.9 
+#25 137.9 To address issues that do not require attention, run:
+#25 137.9   npm audit fix
+#25 137.9 
+#25 137.9 To address all issues possible (including breaking changes), run:
+#25 137.9   npm audit fix --force
+#25 137.9 
+#25 137.9 Some issues need review, and may require choosing
+#25 137.9 a different dependency.
+#25 137.9 
+#25 137.9 Run `npm audit` for details.
+#25 138.0 npm notice
+#25 138.0 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+#25 138.0 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#25 138.0 npm notice To update run: npm install -g npm@12.2.0
+#25 138.0 npm notice
+#25 DONE 141.3s
+
+#26 [runtime 10/10] COPY --chown=node:node --from=builder /opt/app/node_modules ./node_modules
+#26 DONE 17.9s
+
+#27 exporting to image
+#27 exporting layers
+#27 exporting layers 19.2s done
+#27 exporting manifest sha256:dba78f2b80021f2bc161a4a0544c470579a87025721d3fb5632f027e0cbcb9ad 0.0s done
+#27 exporting config sha256:17177fef61385dfe8c2c9441b4c2a02a19f9ff39278ea43f600ce15fcd88f234 0.0s done
+#27 exporting attestation manifest sha256:d689abc686f4b99eccee6e4a11d1c54920ca6b4b811f3a7415dcea372e4f0a57
+#27 exporting attestation manifest sha256:d689abc686f4b99eccee6e4a11d1c54920ca6b4b811f3a7415dcea372e4f0a57 0.0s done
+#27 exporting manifest list sha256:c10a102bfa956d640af5ae514a938dbe9bff4eea60cedfdfec49c4b7812f5c49 0.0s done
+#27 naming to docker.io/library/kettou-mimamori:verification 0.0s done
+#27 unpacking to docker.io/library/kettou-mimamori:verification
+#27 unpacking to docker.io/library/kettou-mimamori:verification 15.0s done
+#27 DONE 34.5s

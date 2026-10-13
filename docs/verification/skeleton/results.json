@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "case": "desktop placeholders occupy actual reading/chart containers, hide unreceived readings, support reduced motion/forced colors, clear on data readiness, recover after connection-error reload",
+      "pass": true
+    },
+    {
+      "case": "mobile placeholders occupy actual reading/chart containers, hide unreceived readings, support reduced motion/forced colors, clear on data readiness, recover after connection-error reload",
+      "pass": true
+    },
+    {
+      "case": "offline waits five seconds, then recovers through the real status/language/data/authentication flow",
+      "pass": true,
+      "statusRequests": 2
+    },
+    {
+      "case": "startup waits five seconds, then recovers through the real status/language/data/authentication flow",
+      "pass": true,
+      "statusRequests": 2
+    },
+    {
+      "case": "authentication waits five seconds, then recovers through the real status/language/data/authentication flow",
+      "pass": true,
+      "statusRequests": 2
+    }
+  ],
+  "pageErrors": [],
+  "apiWrites": [],
+  "fixtures": [
+    "temporarily held status",
+    "one aborted status",
+    "one preparing status",
+    "one unauthorized status"
+  ]
+}

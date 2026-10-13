@@ -1,0 +1,1605 @@
+{
+  "generatedAt": "2026-10-12T17:15:26.174Z",
+  "plans": [
+    {
+      "file": "lib/report_plugins/calibrations.js",
+      "beforeSHA256": "0fdcc369407ad15496308f0050e0804e8ecdbd0f14fa9881f6c7e05822dc5d15",
+      "beforeAstSHA256": "22db9a0ec5fe96d201fa51798f8fc6a1ef5b5528e59c06ac745901a87cd78ad0",
+      "addThemeRequire": true,
+      "rows": [
+        {
+          "start": 507,
+          "end": 620,
+          "line": 22,
+          "before": "'<div style=\"width:50%;height:500px;float:left;overflow:scroll;overflow-x:hidden;\" id=\"calibrations-list\"></div>'",
+          "after": "\"<div style=\\\"width:50%;height:31.25rem;float:left;overflow:scroll;overflow-x:hidden;\\\" id=\\\"calibrations-list\\\"></div>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 1834,
+          "end": 1840,
+          "line": 63,
+          "before": "'Aqua'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-1\")",
+          "reason": "--app-chart-cal-ink-1 ※統合"
+        },
+        {
+          "start": 1842,
+          "end": 1848,
+          "line": 63,
+          "before": "'Blue'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-2\")",
+          "reason": "--app-chart-cal-ink-2 ※統合"
+        },
+        {
+          "start": 1850,
+          "end": 1857,
+          "line": 63,
+          "before": "'Brown'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-3\")",
+          "reason": "--app-chart-cal-ink-3 ※統合"
+        },
+        {
+          "start": 1859,
+          "end": 1871,
+          "line": 63,
+          "before": "'Chartreuse'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-4\")",
+          "reason": "--app-chart-cal-ink-4 ※統合"
+        },
+        {
+          "start": 1873,
+          "end": 1880,
+          "line": 63,
+          "before": "'Coral'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-5\")",
+          "reason": "--app-chart-cal-ink-5 ※統合"
+        },
+        {
+          "start": 1882,
+          "end": 1898,
+          "line": 63,
+          "before": "'CornflowerBlue'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-6\")",
+          "reason": "--app-chart-cal-ink-6 ※統合"
+        },
+        {
+          "start": 1900,
+          "end": 1910,
+          "line": 63,
+          "before": "'DarkCyan'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-7\")",
+          "reason": "--app-chart-cal-ink-7 ※統合"
+        },
+        {
+          "start": 1912,
+          "end": 1925,
+          "line": 63,
+          "before": "'DarkMagenta'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-8\")",
+          "reason": "--app-chart-cal-ink-8 ※統合"
+        },
+        {
+          "start": 1927,
+          "end": 1939,
+          "line": 63,
+          "before": "'DarkOrange'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-9\")",
+          "reason": "--app-chart-cal-ink-9 ※統合"
+        },
+        {
+          "start": 1941,
+          "end": 1950,
+          "line": 63,
+          "before": "'Fuchsia'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-10\")",
+          "reason": "--app-chart-cal-ink-10 ※統合"
+        },
+        {
+          "start": 1952,
+          "end": 1959,
+          "line": 63,
+          "before": "'Green'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-11\")",
+          "reason": "--app-chart-cal-ink-11 ※統合"
+        },
+        {
+          "start": 1961,
+          "end": 1969,
+          "line": 63,
+          "before": "'Yellow'",
+          "after": "reportTheme.color(\"--app-chart-cal-ink-12\")",
+          "reason": "--app-chart-cal-ink-12 ※統合"
+        },
+        {
+          "start": 2228,
+          "end": 2273,
+          "line": 70,
+          "before": "(!e.eventType ? colors[colorindex] : 'White')",
+          "after": "(!e.eventType ? \"var(--app-chart-cal-bg-\" + (colorindex + 1) + \")\" : \"var(--app-surface)\")",
+          "reason": "Calibration table gets pale category surfaces while plotted ink stays distinct; same twelve indices"
+        },
+        {
+          "start": 4593,
+          "end": 4605,
+          "line": 145,
+          "before": "'WhiteSmoke'",
+          "after": "\"var(--app-surface-sunken)\"",
+          "reason": "--app-surface-sunken ※統合"
+        },
+        {
+          "start": 5918,
+          "end": 5925,
+          "line": 188,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 6250,
+          "end": 6257,
+          "line": 196,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 6816,
+          "end": 6822,
+          "line": 209,
+          "before": "'grey'",
+          "after": "\"var(--app-border-strong)\"",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 7242,
+          "end": 7248,
+          "line": 219,
+          "before": "'grey'",
+          "after": "\"var(--app-border-strong)\"",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 8597,
+          "end": 8604,
+          "line": 261,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "file": "lib/report_plugins/dailystats.js",
+      "beforeSHA256": "c876ed9e5e528c38da17546654680df3b63ded4fb6f3e98d53d78e340cb31f40",
+      "beforeAstSHA256": "32f4246536e8ef31e05d521cd23cdeb29ffc7993e84cde548f0615367e3e82e6",
+      "addThemeRequire": true,
+      "rows": [
+        {
+          "start": 510,
+          "end": 525,
+          "line": 27,
+          "before": "'  width:80px;'",
+          "after": "\"  width:5rem;\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 531,
+          "end": 558,
+          "line": 28,
+          "before": "'  border: 1px #ccc solid;'",
+          "after": "\"  border: 1px var(--app-border) solid;\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 584,
+          "end": 601,
+          "line": 30,
+          "before": "'  padding: 1px;'",
+          "after": "\"  padding: 0.0625rem;\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 2419,
+          "end": 2462,
+          "line": 78,
+          "before": "'<td class=\"tdborder\" style=\"width:160px\">'",
+          "after": "\"<td class=\\\"tdborder\\\" style=\\\"width:10rem\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 3737,
+          "end": 3780,
+          "line": 117,
+          "before": "'<td class=\"tdborder\" style=\"width:160px\">'",
+          "after": "\"<td class=\\\"tdborder\\\" style=\\\"width:10rem\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5652,
+          "end": 5658,
+          "line": 155,
+          "before": "'#f88'",
+          "after": "reportTheme.color(\"--app-danger-text\")",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 5660,
+          "end": 5666,
+          "line": 155,
+          "before": "'#8f8'",
+          "after": "reportTheme.color(\"--app-success-text\")",
+          "reason": "--app-success-text ※統合"
+        },
+        {
+          "start": 5668,
+          "end": 5674,
+          "line": 155,
+          "before": "'#ff8'",
+          "after": "reportTheme.color(\"--app-warning-text\")",
+          "reason": "--app-warning-text ※統合"
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "beforeSHA256": "ef189f80bc5593feffd98c2441d8b2d117980565972bf8175594cc57b32f4ad7",
+      "beforeAstSHA256": "10983e467aa91adc15e8fe52a05b9c75983bf4046eb3ac58f2f452a8a577e031",
+      "addThemeRequire": true,
+      "rows": [
+        {
+          "start": 8609,
+          "end": 8618,
+          "line": 165,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 9141,
+          "end": 9153,
+          "line": 180,
+          "before": "'WhiteSmoke'",
+          "after": "\"var(--app-surface-sunken)\"",
+          "reason": "--app-surface-sunken ※統合"
+        },
+        {
+          "start": 11288,
+          "end": 11297,
+          "line": 237,
+          "before": "'#D6FFD6'",
+          "after": "\"var(--app-success-bg)\"",
+          "reason": "--app-success-bg ※統合"
+        },
+        {
+          "start": 11322,
+          "end": 11328,
+          "line": 238,
+          "before": "'grey'",
+          "after": "\"var(--app-border-strong)\"",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 11658,
+          "end": 11665,
+          "line": 250,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 11978,
+          "end": 11985,
+          "line": 258,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 12505,
+          "end": 12511,
+          "line": 270,
+          "before": "'grey'",
+          "after": "\"var(--app-border-strong)\"",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 13104,
+          "end": 13119,
+          "line": 290,
+          "before": "return d.color;",
+          "after": "return reportTheme.readingColor(d.color);",
+          "reason": "Resolve paint only; keep gray/raw and transparent classification/filter sentinels"
+        },
+        {
+          "start": 13141,
+          "end": 13185,
+          "line": 292,
+          "before": ".style('opacity', function() { return 0.5 })",
+          "after": ".style('opacity', function() { return 1 })",
+          "reason": "Reading markers use opaque semantic ink for non-text contrast; invisible/raw sentinels and density statistics unchanged"
+        },
+        {
+          "start": 13387,
+          "end": 13394,
+          "line": 294,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 27469,
+          "end": 27475,
+          "line": 592,
+          "before": "'blue'",
+          "after": "\"var(--app-primary)\"",
+          "reason": "--app-primary ※統合"
+        },
+        {
+          "start": 27677,
+          "end": 27682,
+          "line": 599,
+          "before": "'red'",
+          "after": "\"var(--app-danger-text)\"",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 29239,
+          "end": 29248,
+          "line": 636,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 29493,
+          "end": 29502,
+          "line": 644,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 29826,
+          "end": 29835,
+          "line": 654,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 30063,
+          "end": 30072,
+          "line": 662,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 30765,
+          "end": 30771,
+          "line": 680,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 30807,
+          "end": 30813,
+          "line": 681,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 30842,
+          "end": 30851,
+          "line": 682,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 32590,
+          "end": 32596,
+          "line": 720,
+          "before": "'10px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 32635,
+          "end": 32643,
+          "line": 721,
+          "before": "'normal'",
+          "after": "\"var(--app-font-weight-normal)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 32674,
+          "end": 32681,
+          "line": 722,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 33171,
+          "end": 33177,
+          "line": 732,
+          "before": "'10px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 33214,
+          "end": 33222,
+          "line": 733,
+          "before": "'normal'",
+          "after": "\"var(--app-font-weight-normal)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 33251,
+          "end": 33258,
+          "line": 734,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 34108,
+          "end": 34114,
+          "line": 749,
+          "before": "'grey'",
+          "after": "\"var(--app-border-strong)\"",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 34779,
+          "end": 34784,
+          "line": 764,
+          "before": "'red'",
+          "after": "\"var(--app-danger-text)\"",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 34846,
+          "end": 34851,
+          "line": 766,
+          "before": "'red'",
+          "after": "\"var(--app-danger-text)\"",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 35032,
+          "end": 35038,
+          "line": 769,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 35073,
+          "end": 35079,
+          "line": 770,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 35106,
+          "end": 35111,
+          "line": 771,
+          "before": "'red'",
+          "after": "\"var(--app-danger-text)\"",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 35808,
+          "end": 35814,
+          "line": 783,
+          "before": "'blue'",
+          "after": "\"var(--app-primary)\"",
+          "reason": "--app-primary ※統合"
+        },
+        {
+          "start": 35876,
+          "end": 35882,
+          "line": 785,
+          "before": "'blue'",
+          "after": "\"var(--app-primary)\"",
+          "reason": "--app-primary ※統合"
+        },
+        {
+          "start": 36067,
+          "end": 36073,
+          "line": 788,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 36108,
+          "end": 36114,
+          "line": 789,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 36141,
+          "end": 36147,
+          "line": 790,
+          "before": "'blue'",
+          "after": "\"var(--app-primary)\"",
+          "reason": "--app-primary ※統合"
+        },
+        {
+          "start": 37821,
+          "end": 37828,
+          "line": 819,
+          "before": "'white'",
+          "after": "\"var(--app-surface)\"",
+          "reason": "--app-surface ※統合"
+        },
+        {
+          "start": 37855,
+          "end": 37863,
+          "line": 820,
+          "before": "'Violet'",
+          "after": "\"var(--app-chart-exercise)\"",
+          "reason": "--app-chart-exercise ※統合"
+        },
+        {
+          "start": 37929,
+          "end": 37935,
+          "line": 822,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 37970,
+          "end": 37976,
+          "line": 823,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 38003,
+          "end": 38011,
+          "line": 824,
+          "before": "'Violet'",
+          "after": "\"var(--app-chart-exercise)\"",
+          "reason": "--app-chart-exercise ※統合"
+        },
+        {
+          "start": 38887,
+          "end": 38894,
+          "line": 838,
+          "before": "'white'",
+          "after": "\"var(--app-surface)\"",
+          "reason": "--app-surface ※統合"
+        },
+        {
+          "start": 38921,
+          "end": 38929,
+          "line": 839,
+          "before": "'Salmon'",
+          "after": "\"var(--app-chart-note)\"",
+          "reason": "--app-chart-note ※統合"
+        },
+        {
+          "start": 38995,
+          "end": 39001,
+          "line": 841,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 39036,
+          "end": 39042,
+          "line": 842,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 39069,
+          "end": 39077,
+          "line": 843,
+          "before": "'Salmon'",
+          "after": "\"var(--app-chart-note)\"",
+          "reason": "--app-chart-note ※統合"
+        },
+        {
+          "start": 39964,
+          "end": 39971,
+          "line": 857,
+          "before": "'white'",
+          "after": "\"var(--app-surface)\"",
+          "reason": "--app-surface ※統合"
+        },
+        {
+          "start": 39998,
+          "end": 40005,
+          "line": 858,
+          "before": "'Brown'",
+          "after": "\"var(--app-warning-text)\"",
+          "reason": "--app-warning-text ※統合"
+        },
+        {
+          "start": 40071,
+          "end": 40077,
+          "line": 860,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 40112,
+          "end": 40118,
+          "line": 861,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 40145,
+          "end": 40152,
+          "line": 862,
+          "before": "'Brown'",
+          "after": "\"var(--app-warning-text)\"",
+          "reason": "--app-warning-text ※統合"
+        },
+        {
+          "start": 41093,
+          "end": 41100,
+          "line": 877,
+          "before": "'white'",
+          "after": "\"var(--app-surface)\"",
+          "reason": "--app-surface ※統合"
+        },
+        {
+          "start": 41128,
+          "end": 41135,
+          "line": 878,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 41203,
+          "end": 41209,
+          "line": 880,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 41245,
+          "end": 41251,
+          "line": 881,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 41279,
+          "end": 41286,
+          "line": 882,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 41918,
+          "end": 41923,
+          "line": 892,
+          "before": "'red'",
+          "after": "\"var(--app-danger-text)\"",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 42023,
+          "end": 42032,
+          "line": 895,
+          "before": "'darkred'",
+          "after": "\"var(--app-danger-text)\"",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 42384,
+          "end": 42392,
+          "line": 902,
+          "before": "'purple'",
+          "after": "\"var(--app-chart-prediction)\"",
+          "reason": "--app-chart-prediction ※統合"
+        },
+        {
+          "start": 42489,
+          "end": 42496,
+          "line": 905,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 42587,
+          "end": 42593,
+          "line": 908,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 42628,
+          "end": 42634,
+          "line": 909,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 42661,
+          "end": 42669,
+          "line": 910,
+          "before": "'purple'",
+          "after": "\"var(--app-chart-prediction)\"",
+          "reason": "--app-chart-prediction ※統合"
+        },
+        {
+          "start": 43536,
+          "end": 43543,
+          "line": 923,
+          "before": "'white'",
+          "after": "\"var(--app-surface)\"",
+          "reason": "--app-surface ※統合"
+        },
+        {
+          "start": 43570,
+          "end": 43577,
+          "line": 924,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 43643,
+          "end": 43649,
+          "line": 926,
+          "before": "'12px'",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 43684,
+          "end": 43690,
+          "line": 927,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 43717,
+          "end": 43724,
+          "line": 928,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 44193,
+          "end": 44199,
+          "line": 940,
+          "before": "'blue'",
+          "after": "\"var(--app-primary)\"",
+          "reason": "--app-primary ※統合"
+        },
+        {
+          "start": 44225,
+          "end": 44234,
+          "line": 941,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 47973,
+          "end": 47979,
+          "line": 1023,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 48178,
+          "end": 48183,
+          "line": 1031,
+          "before": "'red'",
+          "after": "\"var(--app-danger-text)\"",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 49334,
+          "end": 49340,
+          "line": 1072,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 50549,
+          "end": 50551,
+          "line": 1106,
+          "before": "12",
+          "after": "\"var(--app-text-body-sm-size)\"",
+          "reason": "Annotation font size follows DDS dense small type; coordinates unchanged"
+        },
+        {
+          "start": 50584,
+          "end": 50590,
+          "line": 1107,
+          "before": "'bold'",
+          "after": "\"var(--app-font-weight-bold)\"",
+          "reason": "DDS font weight"
+        },
+        {
+          "start": 50615,
+          "end": 50624,
+          "line": 1108,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        }
+      ],
+      "exceptions": [
+        {
+          "line": 287,
+          "value": "gray",
+          "reason": "Internal reading classification or deliberate invisible paint sentinel; render boundary resolves visible paint"
+        },
+        {
+          "line": 392,
+          "value": "purple",
+          "reason": "Internal reading classification or deliberate invisible paint sentinel; render boundary resolves visible paint"
+        }
+      ]
+    },
+    {
+      "file": "lib/report_plugins/glucosedistribution.js",
+      "beforeSHA256": "8ee229720867d3ea7eab59d5cc456f1f6f2771df33fd97b82dd36ab9a24606cd",
+      "beforeAstSHA256": "c7f1b19d7695935fbb5043a02f81b922b6ed0cc28a264e7f88aed927b3f5f82f",
+      "addThemeRequire": true,
+      "rows": [
+        {
+          "start": 5043,
+          "end": 5058,
+          "line": 86,
+          "before": "'  width:80px;'",
+          "after": "\"  width:5rem;\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5064,
+          "end": 5091,
+          "line": 87,
+          "before": "'  border: 1px #ccc solid;'",
+          "after": "\"  border: 1px var(--app-border) solid;\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5117,
+          "end": 5134,
+          "line": 89,
+          "before": "'  padding: 1px;'",
+          "after": "\"  padding: 0.0625rem;\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5589,
+          "end": 5595,
+          "line": 103,
+          "before": "'#f88'",
+          "after": "reportTheme.color(\"--app-danger-text\")",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 5597,
+          "end": 5603,
+          "line": 103,
+          "before": "'#8f8'",
+          "after": "reportTheme.color(\"--app-success-text\")",
+          "reason": "--app-success-text ※統合"
+        },
+        {
+          "start": 5605,
+          "end": 5611,
+          "line": 103,
+          "before": "'#ff8'",
+          "after": "reportTheme.color(\"--app-warning-text\")",
+          "reason": "--app-warning-text ※統合"
+        },
+        {
+          "start": 5647,
+          "end": 5653,
+          "line": 105,
+          "before": "'#f88'",
+          "after": "\"var(--app-danger-bg)\"",
+          "reason": "--app-danger-bg ※統合"
+        },
+        {
+          "start": 5669,
+          "end": 5675,
+          "line": 106,
+          "before": "'#8f8'",
+          "after": "\"var(--app-success-bg)\"",
+          "reason": "--app-success-bg ※統合"
+        },
+        {
+          "start": 5689,
+          "end": 5695,
+          "line": 107,
+          "before": "'#ff8'",
+          "after": "\"var(--app-warning-bg)\"",
+          "reason": "--app-warning-bg ※統合"
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "file": "lib/report_plugins/hourlystats.js",
+      "beforeSHA256": "e21d3c9aeee0014235dd430b8e418bc7e26985472ea0702600d35378e1c2c58e",
+      "beforeAstSHA256": "bccbe7aa51d27a79552d31942af8d686846acb67b843c453c2d15a6d34611402",
+      "addThemeRequire": false,
+      "rows": [
+        {
+          "start": 6261,
+          "end": 6268,
+          "line": 191,
+          "before": "\"black\"",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 6282,
+          "end": 6287,
+          "line": 191,
+          "before": "\"red\"",
+          "after": "\"var(--app-danger-text)\"",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 6290,
+          "end": 6302,
+          "line": 191,
+          "before": "\"lightgreen\"",
+          "after": "\"var(--app-success-text)\"",
+          "reason": "--app-success-text ※統合"
+        },
+        {
+          "start": 6336,
+          "end": 6365,
+          "line": 193,
+          "before": "'<span style=\"color:black;\">'",
+          "after": "\"<span style=\\\"color:var(--app-text);\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 6422,
+          "end": 6451,
+          "line": 194,
+          "before": "'<span style=\"color:black;\">'",
+          "after": "\"<span style=\\\"color:var(--app-text);\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 6540,
+          "end": 6562,
+          "line": 195,
+          "before": "';font-weight:bold;\">'",
+          "after": "\";font-weight:var(--app-font-weight-bold);\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 6736,
+          "end": 6770,
+          "line": 203,
+          "before": "'<span style=\"font-weight:bold;\">'",
+          "after": "\"<span style=\\\"font-weight:var(--app-font-weight-bold);\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 6956,
+          "end": 6963,
+          "line": 205,
+          "before": "\"white\"",
+          "after": "\"var(--app-surface)\"",
+          "reason": "--app-surface ※統合"
+        },
+        {
+          "start": 6985,
+          "end": 6990,
+          "line": 205,
+          "before": "\"red\"",
+          "after": "\"var(--app-danger-bg)\"",
+          "reason": "--app-danger-bg ※統合"
+        },
+        {
+          "start": 6993,
+          "end": 7005,
+          "line": 205,
+          "before": "\"lightgreen\"",
+          "after": "\"var(--app-success-bg)\"",
+          "reason": "--app-success-bg ※統合"
+        },
+        {
+          "start": 7075,
+          "end": 7104,
+          "line": 207,
+          "before": "'<span style=\"color:black;\">'",
+          "after": "\"<span style=\\\"color:var(--app-text);\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 7209,
+          "end": 7238,
+          "line": 208,
+          "before": "'<span style=\"color:black;\">'",
+          "after": "\"<span style=\\\"color:var(--app-text);\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 7343,
+          "end": 7389,
+          "line": 209,
+          "before": "'<span style=\"color:black;font-weight:bold;\">'",
+          "after": "\"<span style=\\\"color:var(--app-text);font-weight:var(--app-font-weight-bold);\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "beforeSHA256": "cbeeded1c16116c40478b5563c2cbc02003531153a951904211bc8fd7de72129",
+      "beforeAstSHA256": "7dcbf9c7d463432a38d31db30588c120df376f3ad87a9a9c586f2e8471ba7af6",
+      "addThemeRequire": true,
+      "rows": [
+        {
+          "start": 4908,
+          "end": 5001,
+          "line": 69,
+          "before": "'  <div class=\"chart\" id=\"loopalyzer-basal\" style=\"height:100px;margin-bottom:-14px;\"></div>'",
+          "after": "\"  <div class=\\\"chart\\\" id=\\\"loopalyzer-basal\\\" style=\\\"height:6.25rem;margin-bottom:-0.875rem;\\\"></div>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5013,
+          "end": 5103,
+          "line": 70,
+          "before": "'  <div class=\"chart\" id=\"loopalyzer-bg\" style=\"height:200px;margin-bottom:-14px;\"></div>'",
+          "after": "\"  <div class=\\\"chart\\\" id=\\\"loopalyzer-bg\\\" style=\\\"height:12.5rem;margin-bottom:-0.875rem;\\\"></div>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5115,
+          "end": 5212,
+          "line": 71,
+          "before": "'  <div class=\"chart\" id=\"loopalyzer-tempbasal\" style=\"height:150px;margin-bottom:-14px;\"></div>'",
+          "after": "\"  <div class=\\\"chart\\\" id=\\\"loopalyzer-tempbasal\\\" style=\\\"height:9.375rem;margin-bottom:-0.875rem;\\\"></div>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5224,
+          "end": 5315,
+          "line": 72,
+          "before": "'  <div class=\"chart\" id=\"loopalyzer-iob\" style=\"height:150px;margin-bottom:-14px;\"></div>'",
+          "after": "\"  <div class=\\\"chart\\\" id=\\\"loopalyzer-iob\\\" style=\\\"height:9.375rem;margin-bottom:-0.875rem;\\\"></div>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5327,
+          "end": 5398,
+          "line": 73,
+          "before": "'  <div class=\"chart\" id=\"loopalyzer-cob\" style=\"height:150px;\"></div>'",
+          "after": "\"  <div class=\\\"chart\\\" id=\\\"loopalyzer-cob\\\" style=\\\"height:9.375rem;\\\"></div>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5526,
+          "end": 5588,
+          "line": 81,
+          "before": "'#loopalyzer-charts, #loopalyzer-profiles { padding: 20px; } '",
+          "after": "\"#loopalyzer-charts, #loopalyzer-profiles { padding: 1.25rem; } \"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5770,
+          "end": 5864,
+          "line": 86,
+          "before": "'#loopalyzer-profiles-table table { margin: 0 10px; border-collapse: collapse; border: 0px; }'",
+          "after": "\"#loopalyzer-profiles-table table { margin: 0 0.625rem; border-collapse: collapse; border: 0px; }\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 5932,
+          "end": 6029,
+          "line": 88,
+          "before": "'#loopalyzer-profiles-table td table { margin: 0 10px; border-collapse: collapse; border: 0px; }'",
+          "after": "\"#loopalyzer-profiles-table td table { margin: 0 0.625rem; border-collapse: collapse; border: 0px; }\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 6035,
+          "end": 6115,
+          "line": 89,
+          "before": "'#loopalyzer-profiles-table td caption { text-align: left; font-weight: bold; }'",
+          "after": "\"#loopalyzer-profiles-table td caption { text-align: left; font-weight:var(--app-font-weight-bold); }\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 6121,
+          "end": 6200,
+          "line": 90,
+          "before": "'#loopalyzer-profiles-table td th { background-color: #4CAF50; color: white; }'",
+          "after": "\"#loopalyzer-profiles-table td th { background-color: var(--app-surface-sunken); color: var(--app-text); }\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 6206,
+          "end": 6300,
+          "line": 91,
+          "before": "'#loopalyzer-profiles-table td td { text-align: right; vertical-align: top; padding: 0 1px; }'",
+          "after": "\"#loopalyzer-profiles-table td td { text-align: right; vertical-align: top; padding: 0 0.0625rem; }\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 6306,
+          "end": 6365,
+          "line": 92,
+          "before": "'#loopalyzer-profiles-table td td td { padding: 1px 8px; }'",
+          "after": "\"#loopalyzer-profiles-table td td td { padding: 0.0625rem 0.5rem; }\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 41716,
+          "end": 41722,
+          "line": 922,
+          "before": "'gray'",
+          "after": "reportTheme.color(\"--app-text-muted\")",
+          "reason": "--app-text-muted ※統合"
+        },
+        {
+          "start": 42067,
+          "end": 42074,
+          "line": 929,
+          "before": "'black'",
+          "after": "reportTheme.color(\"--app-text\")",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 48345,
+          "end": 48354,
+          "line": 1070,
+          "before": "'#DDDDDD'",
+          "after": "reportTheme.color(\"--app-border\")",
+          "reason": "--app-border ※統合"
+        },
+        {
+          "start": 48376,
+          "end": 48385,
+          "line": 1071,
+          "before": "'#33A0FF'",
+          "after": "reportTheme.color(\"--app-info-text\")",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 48409,
+          "end": 48418,
+          "line": 1072,
+          "before": "'#33AA33'",
+          "after": "reportTheme.color(\"--app-success-text\")",
+          "reason": "--app-success-text ※統合"
+        },
+        {
+          "start": 48446,
+          "end": 48455,
+          "line": 1073,
+          "before": "'#8E1578'",
+          "after": "reportTheme.color(\"--app-chart-prediction\")",
+          "reason": "--app-chart-prediction ※統合"
+        },
+        {
+          "start": 48484,
+          "end": 48493,
+          "line": 1074,
+          "before": "'#D6FFD6'",
+          "after": "reportTheme.color(\"--app-success-bg\")",
+          "reason": "--app-success-bg ※統合"
+        },
+        {
+          "start": 48517,
+          "end": 48526,
+          "line": 1075,
+          "before": "'#FF7000'",
+          "after": "reportTheme.color(\"--app-chart-note\")",
+          "reason": "--app-chart-note ※統合"
+        },
+        {
+          "start": 48547,
+          "end": 48556,
+          "line": 1076,
+          "before": "'#23D820'",
+          "after": "reportTheme.color(\"--app-success-text\")",
+          "reason": "--app-success-text ※統合"
+        },
+        {
+          "start": 48592,
+          "end": 48601,
+          "line": 1077,
+          "before": "\"#F3F3F3\"",
+          "after": "reportTheme.color(\"--app-surface-sunken\")",
+          "reason": "--app-surface-sunken ※統合"
+        },
+        {
+          "start": 48983,
+          "end": 48992,
+          "line": 1094,
+          "before": "\"#FFFFFF\"",
+          "after": "reportTheme.color(\"--app-surface\")",
+          "reason": "--app-surface ※統合"
+        },
+        {
+          "start": 49120,
+          "end": 49129,
+          "line": 1100,
+          "before": "\"#000000\"",
+          "after": "reportTheme.color(\"--app-text\")",
+          "reason": "--app-text ※統合"
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "file": "lib/report_plugins/percentile.js",
+      "beforeSHA256": "1602ddd0825075c2919dce14556e45fea037bc8307b79d19a8a968015a2d88ea",
+      "beforeAstSHA256": "aac0f0c3da7ebc390664faa263bc564e385f0d610ac071398f93ca92c03e7b50",
+      "addThemeRequire": true,
+      "rows": [
+        {
+          "start": 419,
+          "end": 448,
+          "line": 24,
+          "before": "'<div style=\"height:500px;\">'",
+          "after": "\"<div style=\\\"height:31.25rem;\\\">\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 2959,
+          "end": 2968,
+          "line": 101,
+          "before": "'#000000'",
+          "after": "reportTheme.color(\"--app-text\")",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 3198,
+          "end": 3207,
+          "line": 113,
+          "before": "'#000055'",
+          "after": "reportTheme.color(\"--app-info-text\")",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 3412,
+          "end": 3421,
+          "line": 125,
+          "before": "'#000055'",
+          "after": "reportTheme.color(\"--app-info-text\")",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 3676,
+          "end": 3685,
+          "line": 138,
+          "before": "'#a0a0FF'",
+          "after": "reportTheme.color(\"--app-chart-percentile-outer\")",
+          "reason": "--app-chart-percentile-outer ※統合"
+        },
+        {
+          "start": 3890,
+          "end": 3899,
+          "line": 150,
+          "before": "'#a0a0FF'",
+          "after": "reportTheme.color(\"--app-chart-percentile-outer\")",
+          "reason": "--app-chart-percentile-outer ※統合"
+        },
+        {
+          "start": 4116,
+          "end": 4125,
+          "line": 162,
+          "before": "'#FFFF00'",
+          "after": "reportTheme.color(\"--app-warning-text\")",
+          "reason": "--app-warning-text ※統合"
+        },
+        {
+          "start": 4200,
+          "end": 4209,
+          "line": 166,
+          "before": "'#FF0000'",
+          "after": "reportTheme.color(\"--app-danger-text\")",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 4341,
+          "end": 4347,
+          "line": 172,
+          "before": "'#555'",
+          "after": "reportTheme.color(\"--app-border-strong\")",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 4462,
+          "end": 4468,
+          "line": 177,
+          "before": "'#555'",
+          "after": "reportTheme.color(\"--app-border-strong\")",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 4535,
+          "end": 4544,
+          "line": 181,
+          "before": "'#FF0000'",
+          "after": "reportTheme.color(\"--app-danger-text\")",
+          "reason": "--app-danger-text ※統合"
+        },
+        {
+          "start": 4681,
+          "end": 4690,
+          "line": 188,
+          "before": "'#FFFF00'",
+          "after": "reportTheme.color(\"--app-warning-text\")",
+          "reason": "--app-warning-text ※統合"
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "file": "lib/report_plugins/success.js",
+      "beforeSHA256": "a351157c90f7e3d095fff3674cdaac2a22c654efedc2b54b76471767ccd23d24",
+      "beforeAstSHA256": "7524975d155cb9ffcd7e6f0180aeea58e09c01f8580a314ef8995835fb1bd305",
+      "addThemeRequire": false,
+      "rows": [
+        {
+          "start": 452,
+          "end": 861,
+          "line": 26,
+          "before": "#success-placeholder td {\r\n  \tborder: 1px #ccc solid;\r\n  \tmargin: 0;\r\n  \tpadding: 1px;\r\n   text-align:center;\r\n  }\r\n  #success-placeholder .bad {\r\n  \tbackground-color: #fcc;\r\n  }\r\n  #success-placeholder .good {\r\n  \tbackground-color: #cfc;\r\n  }\r\n  #success-placeholder th:first-child {\r\n  \twidth: 30%;\r\n  }\r\n  #success-placeholder th {\r\n  \twidth: 10%;\r\n  }\r\n  #success-placeholder table {\r\n  \twidth: 100%;\r\n  }",
+          "after": "#success-placeholder td {\n  \tborder: 1px var(--app-border) solid;\n  \tmargin: 0;\n  \tpadding: 0.0625rem;\n   text-align:center;\n  }\n  #success-placeholder .bad {\n  \tbackground-color: var(--app-danger-bg);\n  }\n  #success-placeholder .good {\n  \tbackground-color: var(--app-success-bg);\n  }\n  #success-placeholder th:first-child {\n  \twidth: 30%;\n  }\n  #success-placeholder th {\n  \twidth: 10%;\n  }\n  #success-placeholder table {\n  \twidth: 100%;\n  }",
+          "reason": "Reviewed CSS template color/type/geometry declarations"
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "file": "lib/report_plugins/treatments.js",
+      "beforeSHA256": "27af02c39f3dcc3ad9f89147a39db39258d12e73054c7193b6ebcea8006c363b",
+      "beforeAstSHA256": "4817810a8393a874b239b168a2618aefc6dbacfb72ac712df5bc3006d78c338a",
+      "addThemeRequire": false,
+      "rows": [
+        {
+          "start": 1247,
+          "end": 1338,
+          "line": 36,
+          "before": "'\" class=\"icon-chart-line\" style=\"margin-right:0;margin-left:-0.6em;color:lightgreen\"></i>'",
+          "after": "\"\\\" class=\\\"icon-chart-line\\\" style=\\\"margin-right:0;margin-left:-0.6em;color:var(--app-success-text)\\\"></i>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 1496,
+          "end": 1574,
+          "line": 38,
+          "before": "'\" class=\"icon-tint\" style=\"margin-right:0;margin-left:-0.6em;color:red\"></i>'",
+          "after": "\"\\\" class=\\\"icon-tint\\\" style=\\\"margin-right:0;margin-left:-0.6em;color:var(--app-danger-text)\\\"></i>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 1724,
+          "end": 1811,
+          "line": 40,
+          "before": "'\" class=\"icon-sort-numeric\" style=\"margin-right:0;margin-left:-0.6em;color:blue\"></i>'",
+          "after": "\"\\\" class=\\\"icon-sort-numeric\\\" style=\\\"margin-right:0;margin-left:-0.6em;color:var(--app-primary)\\\"></i>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 3862,
+          "end": 3933,
+          "line": 83,
+          "before": "'      <textarea id=\"rped_adnotes\" style=\"width:300px\"></textarea><br>'",
+          "after": "\"      <textarea id=\\\"rped_adnotes\\\" style=\\\"width:18.75rem\\\"></textarea><br>\"",
+          "reason": "Reviewed embedded color/type/geometry declarations"
+        },
+        {
+          "start": 14009,
+          "end": 14015,
+          "line": 292,
+          "before": "'gray'",
+          "after": "\"var(--app-text-muted)\"",
+          "reason": "--app-text-muted ※統合"
+        },
+        {
+          "start": 15428,
+          "end": 15439,
+          "line": 311,
+          "before": "'lightgray'",
+          "after": "\"var(--app-surface-sunken)\"",
+          "reason": "--app-surface-sunken ※統合"
+        }
+      ],
+      "exceptions": []
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "beforeSHA256": "ae6b479ef38e26dfbcdad98775e79cc0bcd29f8982bc86c10ae5d42a00804174",
+      "beforeAstSHA256": "c47d82921b6999b4c4c081cb282a9f19a4f9292aee74de18737939849d29524c",
+      "addThemeRequire": true,
+      "rows": [
+        {
+          "start": 119,
+          "end": 137,
+          "line": 7,
+          "before": "'rgb(73, 22, 153)'",
+          "after": "\"var(--app-chart-day-1)\"",
+          "reason": "--app-chart-day-1 ※統合"
+        },
+        {
+          "start": 143,
+          "end": 162,
+          "line": 8,
+          "before": "'rgb(34, 201, 228)'",
+          "after": "\"var(--app-chart-day-2)\"",
+          "reason": "--app-chart-day-2 ※統合"
+        },
+        {
+          "start": 168,
+          "end": 186,
+          "line": 9,
+          "before": "'rgb(0, 153, 123)'",
+          "after": "\"var(--app-chart-day-3)\"",
+          "reason": "--app-chart-day-3 ※統合"
+        },
+        {
+          "start": 192,
+          "end": 212,
+          "line": 10,
+          "before": "'rgb(135, 135, 228)'",
+          "after": "\"var(--app-chart-day-4)\"",
+          "reason": "--app-chart-day-4 ※統合"
+        },
+        {
+          "start": 218,
+          "end": 237,
+          "line": 11,
+          "before": "'rgb(135, 49, 204)'",
+          "after": "\"var(--app-chart-day-5)\"",
+          "reason": "--app-chart-day-5 ※統合"
+        },
+        {
+          "start": 243,
+          "end": 261,
+          "line": 12,
+          "before": "'rgb(36, 36, 228)'",
+          "after": "\"var(--app-chart-day-6)\"",
+          "reason": "--app-chart-day-6 ※統合"
+        },
+        {
+          "start": 267,
+          "end": 285,
+          "line": 13,
+          "before": "'rgb(0, 234, 188)'",
+          "after": "\"var(--app-chart-day-7)\"",
+          "reason": "--app-chart-day-7 ※統合"
+        },
+        {
+          "start": 6287,
+          "end": 6296,
+          "line": 172,
+          "before": "'#0099ff'",
+          "after": "\"var(--app-info-text)\"",
+          "reason": "--app-info-text ※統合"
+        },
+        {
+          "start": 6966,
+          "end": 6978,
+          "line": 189,
+          "before": "'WhiteSmoke'",
+          "after": "\"var(--app-surface-sunken)\"",
+          "reason": "--app-surface-sunken ※統合"
+        },
+        {
+          "start": 8679,
+          "end": 8688,
+          "line": 234,
+          "before": "'#D6FFD6'",
+          "after": "\"var(--app-success-bg)\"",
+          "reason": "--app-success-bg ※統合"
+        },
+        {
+          "start": 8715,
+          "end": 8721,
+          "line": 235,
+          "before": "'grey'",
+          "after": "\"var(--app-border-strong)\"",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 9069,
+          "end": 9076,
+          "line": 247,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 9403,
+          "end": 9410,
+          "line": 255,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        },
+        {
+          "start": 9954,
+          "end": 9960,
+          "line": 267,
+          "before": "'grey'",
+          "after": "\"var(--app-border-strong)\"",
+          "reason": "--app-border-strong ※統合"
+        },
+        {
+          "start": 10722,
+          "end": 10737,
+          "line": 291,
+          "before": "return d.color;",
+          "after": "return reportTheme.readingColor(d.color);",
+          "reason": "Resolve paint only; keep gray/raw and transparent classification/filter sentinels"
+        },
+        {
+          "start": 10763,
+          "end": 10807,
+          "line": 293,
+          "before": ".style('opacity', function() { return 0.5 })",
+          "after": ".style('opacity', function() { return 1 })",
+          "reason": "Weekday reading markers use opaque ink; keep date/weekday grouping and raw masking"
+        },
+        {
+          "start": 10960,
+          "end": 10967,
+          "line": 295,
+          "before": "'black'",
+          "after": "\"var(--app-text)\"",
+          "reason": "--app-text ※統合"
+        }
+      ],
+      "exceptions": [
+        {
+          "line": 112,
+          "value": "gray",
+          "reason": "Internal reading classification or deliberate invisible paint sentinel; render boundary resolves visible paint"
+        },
+        {
+          "line": 288,
+          "value": "gray",
+          "reason": "Internal reading classification or deliberate invisible paint sentinel; render boundary resolves visible paint"
+        }
+      ]
+    }
+  ]
+}

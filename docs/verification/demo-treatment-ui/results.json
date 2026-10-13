@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-10-13T05:14:04.070Z",
+  "scope": "Actual local synthetic DB; native keyboard main careportal create and populated report editor/save/delete on desktop/mobile; exact owned IDs only; no HTTP response interception",
+  "results": [
+    {
+      "viewport": "desktop",
+      "pass": true,
+      "eventType": "Note",
+      "actualCreateEditDelete": true,
+      "nativeConfirmations": 2,
+      "editorAxeViolations": 0,
+      "modalKeyboardAndFocusRestoration": true
+    },
+    {
+      "viewport": "desktop",
+      "pass": true,
+      "eventType": "Meal Bolus",
+      "actualCreateEditDelete": true,
+      "nativeConfirmations": 2,
+      "editorAxeViolations": 0,
+      "modalKeyboardAndFocusRestoration": true
+    },
+    {
+      "viewport": "mobile",
+      "pass": true,
+      "eventType": "Note",
+      "actualCreateEditDelete": true,
+      "nativeConfirmations": 2,
+      "editorAxeViolations": 0,
+      "modalKeyboardAndFocusRestoration": true
+    },
+    {
+      "viewport": "mobile",
+      "pass": true,
+      "eventType": "Meal Bolus",
+      "actualCreateEditDelete": true,
+      "nativeConfirmations": 2,
+      "editorAxeViolations": 0,
+      "modalKeyboardAndFocusRestoration": true
+    }
+  ],
+  "dialogs": [
+    {
+      "viewport": "desktop",
+      "type": "confirm",
+      "message": "入力したデータが正しいか確認をお願いします。: \nイベント: メモ\nメモ: 治療操作確認-desktop-note-614cd19d-fbde-47bc-a1a0-660cff971684\n入力者: 治療操作確認-desktop-note-614cd19d-fbde-47bc-a1a0-660cff971684\nイベント時間: 2026/10/13 14:13:40"
+    },
+    {
+      "viewport": "desktop",
+      "type": "confirm",
+      "message": "この治療データを削除しますか？\n\n\nイベント: メモ\nメモ: 治療操作確認-desktop-note-614cd19d-fbde-47bc-a1a0-660cff971684 更新\n入力者: 治療操作確認-desktop-note-614cd19d-fbde-47bc-a1a0-660cff971684\nイベント時間: 2026/10/13 14:13"
+    },
+    {
+      "viewport": "desktop",
+      "type": "confirm",
+      "message": "入力したデータが正しいか確認をお願いします。: \nイベント: 食事ボーラス\n血糖値: 130\n測定方法: 指\n摂取糖質量: 12\n投与されたインスリン: 1\nメモ: 治療操作確認-desktop-meal-a7959361-7929-4336-b57f-ee8b9d41b8c4\n入力者: 治療操作確認-desktop-meal-a7959361-7929-4336-b57f-ee8b9d41b8c4\nイベント時間: 2026/10/13 14:13:46"
+    },
+    {
+      "viewport": "desktop",
+      "type": "confirm",
+      "message": "この治療データを削除しますか？\n\n\nイベント: 食事ボーラス\n血糖値: 130\n測定方法: 指\n摂取糖質量: 15\n投与されたインスリン: 1.25\nメモ: 治療操作確認-desktop-meal-a7959361-7929-4336-b57f-ee8b9d41b8c4 更新\n入力者: 治療操作確認-desktop-meal-a7959361-7929-4336-b57f-ee8b9d41b8c4\nイベント時間: 2026/10/13 14:13"
+    },
+    {
+      "viewport": "mobile",
+      "type": "confirm",
+      "message": "入力したデータが正しいか確認をお願いします。: \nイベント: メモ\nメモ: 治療操作確認-mobile-note-283fc52b-75e7-4e10-99c5-c3131b851eab\n入力者: 治療操作確認-mobile-note-283fc52b-75e7-4e10-99c5-c3131b851eab\nイベント時間: 2026/10/13 14:13:52"
+    },
+    {
+      "viewport": "mobile",
+      "type": "confirm",
+      "message": "この治療データを削除しますか？\n\n\nイベント: メモ\nメモ: 治療操作確認-mobile-note-283fc52b-75e7-4e10-99c5-c3131b851eab 更新\n入力者: 治療操作確認-mobile-note-283fc52b-75e7-4e10-99c5-c3131b851eab\nイベント時間: 2026/10/13 14:13"
+    },
+    {
+      "viewport": "mobile",
+      "type": "confirm",
+      "message": "入力したデータが正しいか確認をお願いします。: \nイベント: 食事ボーラス\n血糖値: 130\n測定方法: 指\n摂取糖質量: 12\n投与されたインスリン: 1\nメモ: 治療操作確認-mobile-meal-a2e0767b-8004-4598-91a0-96f2c37f4628\n入力者: 治療操作確認-mobile-meal-a2e0767b-8004-4598-91a0-96f2c37f4628\nイベント時間: 2026/10/13 14:13:58"
+    },
+    {
+      "viewport": "mobile",
+      "type": "confirm",
+      "message": "この治療データを削除しますか？\n\n\nイベント: 食事ボーラス\n血糖値: 130\n測定方法: 指\n摂取糖質量: 15\n投与されたインスリン: 1.25\nメモ: 治療操作確認-mobile-meal-a2e0767b-8004-4598-91a0-96f2c37f4628 更新\n入力者: 治療操作確認-mobile-meal-a2e0767b-8004-4598-91a0-96f2c37f4628\nイベント時間: 2026/10/13 14:13"
+    }
+  ],
+  "pageErrors": []
+}

@@ -1,0 +1,799 @@
+/*
+ * tokens/dads.css — Layer 1 ブリッジ（生成物・手編集禁止）
+ * 生成元: @digital-go-jp/tailwind-theme-plugin v1.0.1 (dist/v4.css)
+ * 再生成: npm run build:tokens
+ *
+ * 出典: 本ファイルはデジタル庁デザインシステム（https://design.digital.go.jp/dads/）の
+ * デザイントークンをもとに機械変換して作成したものです（MIT License）。
+ * spacing / breakpoint は DADS Foundation（spacing / layout）の定義値より補完。
+ */
+:root {
+  --dads-color-white: #ffffff;
+  --dads-color-black: #000000;
+  --dads-color-key-50: #e8f1fe;
+  --dads-color-key-100: #d9e6ff;
+  --dads-color-key-200: #c5d7fb;
+  --dads-color-key-300: #9db7f9;
+  --dads-color-key-400: #7096f8;
+  --dads-color-key-500: #4979f5;
+  --dads-color-key-600: #3460fb;
+  --dads-color-key-700: #264af4;
+  --dads-color-key-800: #0031d8;
+  --dads-color-key-900: #0017c1;
+  --dads-color-key-1000: #00118f;
+  --dads-color-key-1100: #000071;
+  --dads-color-key-1200: #000060;
+  --dads-color-blue-50: #e8f1fe;
+  --dads-color-blue-100: #d9e6ff;
+  --dads-color-blue-200: #c5d7fb;
+  --dads-color-blue-300: #9db7f9;
+  --dads-color-blue-400: #7096f8;
+  --dads-color-blue-500: #4979f5;
+  --dads-color-blue-600: #3460fb;
+  --dads-color-blue-700: #264af4;
+  --dads-color-blue-800: #0031d8;
+  --dads-color-blue-900: #0017c1;
+  --dads-color-blue-1000: #00118f;
+  --dads-color-blue-1100: #000071;
+  --dads-color-blue-1200: #000060;
+  --dads-color-light-blue-50: #f0f9ff;
+  --dads-color-light-blue-100: #dcf0ff;
+  --dads-color-light-blue-200: #c0e4ff;
+  --dads-color-light-blue-300: #97d3ff;
+  --dads-color-light-blue-400: #57b8ff;
+  --dads-color-light-blue-500: #39abff;
+  --dads-color-light-blue-600: #008bf2;
+  --dads-color-light-blue-700: #0877d7;
+  --dads-color-light-blue-800: #0066be;
+  --dads-color-light-blue-900: #0055ad;
+  --dads-color-light-blue-1000: #00428c;
+  --dads-color-light-blue-1100: #00316a;
+  --dads-color-light-blue-1200: #00234b;
+  --dads-color-cyan-50: #e9f7f9;
+  --dads-color-cyan-100: #c8f8ff;
+  --dads-color-cyan-200: #99f2ff;
+  --dads-color-cyan-300: #79e2f2;
+  --dads-color-cyan-400: #2bc8e4;
+  --dads-color-cyan-500: #01b7d6;
+  --dads-color-cyan-600: #00a3bf;
+  --dads-color-cyan-700: #008da6;
+  --dads-color-cyan-800: #008299;
+  --dads-color-cyan-900: #006f83;
+  --dads-color-cyan-1000: #006173;
+  --dads-color-cyan-1100: #004c59;
+  --dads-color-cyan-1200: #003741;
+  --dads-color-green-50: #e6f5ec;
+  --dads-color-green-100: #c2e5d1;
+  --dads-color-green-200: #9bd4b5;
+  --dads-color-green-300: #71c598;
+  --dads-color-green-400: #51b883;
+  --dads-color-green-500: #2cac6e;
+  --dads-color-green-600: #259d63;
+  --dads-color-green-700: #1d8b56;
+  --dads-color-green-800: #197a4b;
+  --dads-color-green-900: #115a36;
+  --dads-color-green-1000: #0c472a;
+  --dads-color-green-1100: #08351f;
+  --dads-color-green-1200: #032213;
+  --dads-color-lime-50: #ebfad9;
+  --dads-color-lime-100: #d0f5a2;
+  --dads-color-lime-200: #c0f354;
+  --dads-color-lime-300: #ade830;
+  --dads-color-lime-400: #9ddd15;
+  --dads-color-lime-500: #8cc80c;
+  --dads-color-lime-600: #7eb40d;
+  --dads-color-lime-700: #6fa104;
+  --dads-color-lime-800: #618e00;
+  --dads-color-lime-900: #507500;
+  --dads-color-lime-1000: #3e5a00;
+  --dads-color-lime-1100: #2c4100;
+  --dads-color-lime-1200: #1e2d00;
+  --dads-color-yellow-50: #fbf5e0;
+  --dads-color-yellow-100: #fff0b3;
+  --dads-color-yellow-200: #ffe380;
+  --dads-color-yellow-300: #ffd43d;
+  --dads-color-yellow-400: #ffc700;
+  --dads-color-yellow-500: #ebb700;
+  --dads-color-yellow-600: #d2a400;
+  --dads-color-yellow-700: #b78f00;
+  --dads-color-yellow-800: #a58000;
+  --dads-color-yellow-900: #927200;
+  --dads-color-yellow-1000: #806300;
+  --dads-color-yellow-1100: #6e5600;
+  --dads-color-yellow-1200: #604b00;
+  --dads-color-orange-50: #ffeee2;
+  --dads-color-orange-100: #ffdfca;
+  --dads-color-orange-200: #ffc199;
+  --dads-color-orange-300: #ffa66d;
+  --dads-color-orange-400: #ff8d44;
+  --dads-color-orange-500: #ff7628;
+  --dads-color-orange-600: #fb5b01;
+  --dads-color-orange-700: #e25100;
+  --dads-color-orange-800: #c74700;
+  --dads-color-orange-900: #ac3e00;
+  --dads-color-orange-1000: #8b3200;
+  --dads-color-orange-1100: #6d2700;
+  --dads-color-orange-1200: #541e00;
+  --dads-color-red-50: #fdeeee;
+  --dads-color-red-100: #ffdada;
+  --dads-color-red-200: #ffbbbb;
+  --dads-color-red-300: #ff9696;
+  --dads-color-red-400: #ff7171;
+  --dads-color-red-500: #ff5454;
+  --dads-color-red-600: #fe3939;
+  --dads-color-red-700: #fa0000;
+  --dads-color-red-800: #ec0000;
+  --dads-color-red-900: #ce0000;
+  --dads-color-red-1000: #a90000;
+  --dads-color-red-1100: #850000;
+  --dads-color-red-1200: #620000;
+  --dads-color-magenta-50: #f3e5f4;
+  --dads-color-magenta-100: #ffd0ff;
+  --dads-color-magenta-200: #ffaeff;
+  --dads-color-magenta-300: #ff8eff;
+  --dads-color-magenta-400: #f661f6;
+  --dads-color-magenta-500: #f137f1;
+  --dads-color-magenta-600: #db00db;
+  --dads-color-magenta-700: #c000c0;
+  --dads-color-magenta-800: #aa00aa;
+  --dads-color-magenta-900: #8b008b;
+  --dads-color-magenta-1000: #6c006c;
+  --dads-color-magenta-1100: #500050;
+  --dads-color-magenta-1200: #3b003b;
+  --dads-color-purple-50: #f1eafa;
+  --dads-color-purple-100: #ecddff;
+  --dads-color-purple-200: #ddc2ff;
+  --dads-color-purple-300: #cda6ff;
+  --dads-color-purple-400: #bb87ff;
+  --dads-color-purple-500: #a565f8;
+  --dads-color-purple-600: #8843e1;
+  --dads-color-purple-700: #6f23d0;
+  --dads-color-purple-800: #5c10be;
+  --dads-color-purple-900: #5109ad;
+  --dads-color-purple-1000: #41048e;
+  --dads-color-purple-1100: #30016c;
+  --dads-color-purple-1200: #21004b;
+  --dads-color-solid-gray-50: #f2f2f2;
+  --dads-color-solid-gray-100: #e6e6e6;
+  --dads-color-solid-gray-200: #cccccc;
+  --dads-color-solid-gray-300: #b3b3b3;
+  --dads-color-solid-gray-400: #999999;
+  --dads-color-solid-gray-420: #949494;
+  --dads-color-solid-gray-500: #7f7f7f;
+  --dads-color-solid-gray-536: #767676;
+  --dads-color-solid-gray-600: #666666;
+  --dads-color-solid-gray-700: #4d4d4d;
+  --dads-color-solid-gray-800: #333333;
+  --dads-color-solid-gray-900: #1a1a1a;
+  --dads-color-opacity-gray-50: rgba(0, 0, 0, 0.05);
+  --dads-color-opacity-gray-100: rgba(0, 0, 0, 0.1);
+  --dads-color-opacity-gray-200: rgba(0, 0, 0, 0.2);
+  --dads-color-opacity-gray-300: rgba(0, 0, 0, 0.3);
+  --dads-color-opacity-gray-400: rgba(0, 0, 0, 0.4);
+  --dads-color-opacity-gray-420: rgba(0, 0, 0, 0.42);
+  --dads-color-opacity-gray-500: rgba(0, 0, 0, 0.5);
+  --dads-color-opacity-gray-536: rgba(0, 0, 0, 0.54);
+  --dads-color-opacity-gray-600: rgba(0, 0, 0, 0.6);
+  --dads-color-opacity-gray-700: rgba(0, 0, 0, 0.7);
+  --dads-color-opacity-gray-800: rgba(0, 0, 0, 0.8);
+  --dads-color-opacity-gray-900: rgba(0, 0, 0, 0.9);
+  --dads-color-success-1: #259d63;
+  --dads-color-success-2: #197a4b;
+  --dads-color-error-1: #ec0000;
+  --dads-color-error-2: #ce0000;
+  --dads-color-warning-yellow-1: #b78f00;
+  --dads-color-warning-yellow-2: #927200;
+  --dads-color-warning-orange-1: #fb5b01;
+  --dads-color-warning-orange-2: #c74700;
+  --dads-color-focus-yellow: #b78f00;
+  --dads-color-focus-blue: #0877d7;
+  --dads-font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+  --dads-font-mono: 'Noto Sans Mono', monospace;
+  --dads-font-weight-400: 400;
+  --dads-font-weight-700: 700;
+  --dads-leading-100: 1;
+  --dads-leading-120: 1.2;
+  --dads-leading-130: 1.3;
+  --dads-leading-140: 1.4;
+  --dads-leading-150: 1.5;
+  --dads-leading-160: 1.6;
+  --dads-leading-170: 1.7;
+  --dads-leading-175: 1.75;
+  --dads-leading-1-0: 1;
+  --dads-leading-1-2: 1.2;
+  --dads-leading-1-3: 1.3;
+  --dads-leading-1-4: 1.4;
+  --dads-leading-1-5: 1.5;
+  --dads-leading-1-6: 1.6;
+  --dads-leading-1-7: 1.7;
+  --dads-leading-1-75: 1.75;
+  --dads-radius-4: 0.25rem;
+  --dads-radius-6: 0.375rem;
+  --dads-radius-8: 0.5rem;
+  --dads-radius-12: 0.75rem;
+  --dads-radius-16: 1rem;
+  --dads-radius-24: 1.5rem;
+  --dads-radius-32: 2rem;
+  --dads-radius-full: 624.9375rem;
+  --dads-shadow-1: 0 2px 8px 1px rgba(0,0,0,0.1), 0 1px 5px 0 rgba(0,0,0,0.3);
+  --dads-shadow-2: 0 2px 12px 2px rgba(0,0,0,0.1), 0 1px 6px 0 rgba(0,0,0,0.3);
+  --dads-shadow-3: 0 4px 16px 3px rgba(0,0,0,0.1), 0 1px 6px 0 rgba(0,0,0,0.3);
+  --dads-shadow-4: 0 6px 20px 4px rgba(0,0,0,0.1), 0 2px 6px 0 rgba(0,0,0,0.3);
+  --dads-shadow-5: 0 8px 24px 5px rgba(0,0,0,0.1), 0 2px 10px 0 rgba(0,0,0,0.3);
+  --dads-shadow-6: 0 10px 30px 6px rgba(0,0,0,0.1), 0 3px 12px 0 rgba(0,0,0,0.3);
+  --dads-shadow-7: 0 12px 36px 7px rgba(0,0,0,0.1), 0 3px 14px 0 rgba(0,0,0,0.3);
+  --dads-shadow-8: 0 14px 40px 7px rgba(0,0,0,0.1), 0 3px 16px 0 rgba(0,0,0,0.3);
+
+  /* --- text styles (from @utility text-*) --- */
+  --dads-text-dsp-64B-140-size: 4rem;
+  --dads-text-dsp-64B-140-weight: 700;
+  --dads-text-dsp-64B-140-leading: 1.4;
+  --dads-text-dsp-64B-140-tracking: 0;
+  --dads-text-dsp-57B-140-size: 3.5625rem;
+  --dads-text-dsp-57B-140-weight: 700;
+  --dads-text-dsp-57B-140-leading: 1.4;
+  --dads-text-dsp-57B-140-tracking: 0;
+  --dads-text-dsp-48B-140-size: 3rem;
+  --dads-text-dsp-48B-140-weight: 700;
+  --dads-text-dsp-48B-140-leading: 1.4;
+  --dads-text-dsp-48B-140-tracking: 0;
+  --dads-text-dsp-64N-140-size: 4rem;
+  --dads-text-dsp-64N-140-weight: 400;
+  --dads-text-dsp-64N-140-leading: 1.4;
+  --dads-text-dsp-64N-140-tracking: 0;
+  --dads-text-dsp-57N-140-size: 3.5625rem;
+  --dads-text-dsp-57N-140-weight: 400;
+  --dads-text-dsp-57N-140-leading: 1.4;
+  --dads-text-dsp-57N-140-tracking: 0;
+  --dads-text-dsp-48N-140-size: 3rem;
+  --dads-text-dsp-48N-140-weight: 400;
+  --dads-text-dsp-48N-140-leading: 1.4;
+  --dads-text-dsp-48N-140-tracking: 0;
+  --dads-text-std-45B-140-size: 2.8125rem;
+  --dads-text-std-45B-140-weight: 700;
+  --dads-text-std-45B-140-leading: 1.4;
+  --dads-text-std-45B-140-tracking: 0;
+  --dads-text-std-36B-140-size: 2.25rem;
+  --dads-text-std-36B-140-weight: 700;
+  --dads-text-std-36B-140-leading: 1.4;
+  --dads-text-std-36B-140-tracking: 0.01em;
+  --dads-text-std-32B-150-size: 2rem;
+  --dads-text-std-32B-150-weight: 700;
+  --dads-text-std-32B-150-leading: 1.5;
+  --dads-text-std-32B-150-tracking: 0.01em;
+  --dads-text-std-28B-150-size: 1.75rem;
+  --dads-text-std-28B-150-weight: 700;
+  --dads-text-std-28B-150-leading: 1.5;
+  --dads-text-std-28B-150-tracking: 0.01em;
+  --dads-text-std-26B-150-size: 1.625rem;
+  --dads-text-std-26B-150-weight: 700;
+  --dads-text-std-26B-150-leading: 1.5;
+  --dads-text-std-26B-150-tracking: 0.02em;
+  --dads-text-std-24B-150-size: 1.5rem;
+  --dads-text-std-24B-150-weight: 700;
+  --dads-text-std-24B-150-leading: 1.5;
+  --dads-text-std-24B-150-tracking: 0.02em;
+  --dads-text-std-22B-150-size: 1.375rem;
+  --dads-text-std-22B-150-weight: 700;
+  --dads-text-std-22B-150-leading: 1.5;
+  --dads-text-std-22B-150-tracking: 0.02em;
+  --dads-text-std-20B-160-size: 1.25rem;
+  --dads-text-std-20B-160-weight: 700;
+  --dads-text-std-20B-160-leading: 1.6;
+  --dads-text-std-20B-160-tracking: 0.02em;
+  --dads-text-std-20B-150-size: 1.25rem;
+  --dads-text-std-20B-150-weight: 700;
+  --dads-text-std-20B-150-leading: 1.5;
+  --dads-text-std-20B-150-tracking: 0.02em;
+  --dads-text-std-18B-160-size: 1.125rem;
+  --dads-text-std-18B-160-weight: 700;
+  --dads-text-std-18B-160-leading: 1.6;
+  --dads-text-std-18B-160-tracking: 0.02em;
+  --dads-text-std-17B-170-size: 1.0625rem;
+  --dads-text-std-17B-170-weight: 700;
+  --dads-text-std-17B-170-leading: 1.7;
+  --dads-text-std-17B-170-tracking: 0.02em;
+  --dads-text-std-16B-170-size: 1rem;
+  --dads-text-std-16B-170-weight: 700;
+  --dads-text-std-16B-170-leading: 1.7;
+  --dads-text-std-16B-170-tracking: 0.02em;
+  --dads-text-std-16B-175-size: 1rem;
+  --dads-text-std-16B-175-weight: 700;
+  --dads-text-std-16B-175-leading: 1.75;
+  --dads-text-std-16B-175-tracking: 0.02em;
+  --dads-text-std-45N-140-size: 2.8125rem;
+  --dads-text-std-45N-140-weight: 400;
+  --dads-text-std-45N-140-leading: 1.4;
+  --dads-text-std-45N-140-tracking: 0;
+  --dads-text-std-36N-140-size: 2.25rem;
+  --dads-text-std-36N-140-weight: 400;
+  --dads-text-std-36N-140-leading: 1.4;
+  --dads-text-std-36N-140-tracking: 0.01em;
+  --dads-text-std-32N-150-size: 2rem;
+  --dads-text-std-32N-150-weight: 400;
+  --dads-text-std-32N-150-leading: 1.5;
+  --dads-text-std-32N-150-tracking: 0.01em;
+  --dads-text-std-28N-150-size: 1.75rem;
+  --dads-text-std-28N-150-weight: 400;
+  --dads-text-std-28N-150-leading: 1.5;
+  --dads-text-std-28N-150-tracking: 0.01em;
+  --dads-text-std-26N-150-size: 1.625rem;
+  --dads-text-std-26N-150-weight: 400;
+  --dads-text-std-26N-150-leading: 1.5;
+  --dads-text-std-26N-150-tracking: 0.02em;
+  --dads-text-std-24N-150-size: 1.5rem;
+  --dads-text-std-24N-150-weight: 400;
+  --dads-text-std-24N-150-leading: 1.5;
+  --dads-text-std-24N-150-tracking: 0.02em;
+  --dads-text-std-22N-150-size: 1.375rem;
+  --dads-text-std-22N-150-weight: 400;
+  --dads-text-std-22N-150-leading: 1.5;
+  --dads-text-std-22N-150-tracking: 0.02em;
+  --dads-text-std-20N-150-size: 1.25rem;
+  --dads-text-std-20N-150-weight: 400;
+  --dads-text-std-20N-150-leading: 1.5;
+  --dads-text-std-20N-150-tracking: 0.02em;
+  --dads-text-std-18N-160-size: 1.125rem;
+  --dads-text-std-18N-160-weight: 400;
+  --dads-text-std-18N-160-leading: 1.6;
+  --dads-text-std-18N-160-tracking: 0.02em;
+  --dads-text-std-17N-170-size: 1.0625rem;
+  --dads-text-std-17N-170-weight: 400;
+  --dads-text-std-17N-170-leading: 1.7;
+  --dads-text-std-17N-170-tracking: 0.02em;
+  --dads-text-std-16N-170-size: 1rem;
+  --dads-text-std-16N-170-weight: 400;
+  --dads-text-std-16N-170-leading: 1.7;
+  --dads-text-std-16N-170-tracking: 0.02em;
+  --dads-text-std-16N-175-size: 1rem;
+  --dads-text-std-16N-175-weight: 400;
+  --dads-text-std-16N-175-leading: 1.75;
+  --dads-text-std-16N-175-tracking: 0.02em;
+  --dads-text-dns-17B-130-size: 1.0625rem;
+  --dads-text-dns-17B-130-weight: 700;
+  --dads-text-dns-17B-130-leading: 1.3;
+  --dads-text-dns-17B-130-tracking: 0;
+  --dads-text-dns-17B-120-size: 1.0625rem;
+  --dads-text-dns-17B-120-weight: 700;
+  --dads-text-dns-17B-120-leading: 1.2;
+  --dads-text-dns-17B-120-tracking: 0;
+  --dads-text-dns-16B-130-size: 1rem;
+  --dads-text-dns-16B-130-weight: 700;
+  --dads-text-dns-16B-130-leading: 1.3;
+  --dads-text-dns-16B-130-tracking: 0;
+  --dads-text-dns-16B-120-size: 1rem;
+  --dads-text-dns-16B-120-weight: 700;
+  --dads-text-dns-16B-120-leading: 1.2;
+  --dads-text-dns-16B-120-tracking: 0;
+  --dads-text-dns-14B-130-size: 0.875rem;
+  --dads-text-dns-14B-130-weight: 700;
+  --dads-text-dns-14B-130-leading: 1.3;
+  --dads-text-dns-14B-130-tracking: 0;
+  --dads-text-dns-14B-120-size: 0.875rem;
+  --dads-text-dns-14B-120-weight: 700;
+  --dads-text-dns-14B-120-leading: 1.2;
+  --dads-text-dns-14B-120-tracking: 0;
+  --dads-text-dns-17N-130-size: 1.0625rem;
+  --dads-text-dns-17N-130-weight: 400;
+  --dads-text-dns-17N-130-leading: 1.3;
+  --dads-text-dns-17N-130-tracking: 0;
+  --dads-text-dns-17N-120-size: 1.0625rem;
+  --dads-text-dns-17N-120-weight: 400;
+  --dads-text-dns-17N-120-leading: 1.2;
+  --dads-text-dns-17N-120-tracking: 0;
+  --dads-text-dns-16N-130-size: 1rem;
+  --dads-text-dns-16N-130-weight: 400;
+  --dads-text-dns-16N-130-leading: 1.3;
+  --dads-text-dns-16N-130-tracking: 0;
+  --dads-text-dns-16N-120-size: 1rem;
+  --dads-text-dns-16N-120-weight: 400;
+  --dads-text-dns-16N-120-leading: 1.2;
+  --dads-text-dns-16N-120-tracking: 0;
+  --dads-text-dns-14N-130-size: 0.875rem;
+  --dads-text-dns-14N-130-weight: 400;
+  --dads-text-dns-14N-130-leading: 1.3;
+  --dads-text-dns-14N-130-tracking: 0;
+  --dads-text-dns-14N-120-size: 0.875rem;
+  --dads-text-dns-14N-120-weight: 400;
+  --dads-text-dns-14N-120-leading: 1.2;
+  --dads-text-dns-14N-120-tracking: 0;
+  --dads-text-oln-17B-100-size: 1.0625rem;
+  --dads-text-oln-17B-100-weight: 700;
+  --dads-text-oln-17B-100-leading: 1;
+  --dads-text-oln-17B-100-tracking: 0.02em;
+  --dads-text-oln-16B-100-size: 1rem;
+  --dads-text-oln-16B-100-weight: 700;
+  --dads-text-oln-16B-100-leading: 1;
+  --dads-text-oln-16B-100-tracking: 0.02em;
+  --dads-text-oln-14B-100-size: 0.875rem;
+  --dads-text-oln-14B-100-weight: 700;
+  --dads-text-oln-14B-100-leading: 1;
+  --dads-text-oln-14B-100-tracking: 0.02em;
+  --dads-text-oln-17N-100-size: 1.0625rem;
+  --dads-text-oln-17N-100-weight: 400;
+  --dads-text-oln-17N-100-leading: 1;
+  --dads-text-oln-17N-100-tracking: 0.02em;
+  --dads-text-oln-16N-100-size: 1rem;
+  --dads-text-oln-16N-100-weight: 400;
+  --dads-text-oln-16N-100-leading: 1;
+  --dads-text-oln-16N-100-tracking: 0.02em;
+  --dads-text-oln-14N-100-size: 0.875rem;
+  --dads-text-oln-14N-100-weight: 400;
+  --dads-text-oln-14N-100-leading: 1;
+  --dads-text-oln-14N-100-tracking: 0.02em;
+  --dads-text-mono-17B-150-size: 1.0625rem;
+  --dads-text-mono-17B-150-weight: 700;
+  --dads-text-mono-17B-150-leading: 1.5;
+  --dads-text-mono-17B-150-tracking: 0;
+  --dads-text-mono-16B-150-size: 1rem;
+  --dads-text-mono-16B-150-weight: 700;
+  --dads-text-mono-16B-150-leading: 1.5;
+  --dads-text-mono-16B-150-tracking: 0;
+  --dads-text-mono-14B-150-size: 0.875rem;
+  --dads-text-mono-14B-150-weight: 700;
+  --dads-text-mono-14B-150-leading: 1.5;
+  --dads-text-mono-14B-150-tracking: 0;
+  --dads-text-mono-17N-150-size: 1.0625rem;
+  --dads-text-mono-17N-150-weight: 400;
+  --dads-text-mono-17N-150-leading: 1.5;
+  --dads-text-mono-17N-150-tracking: 0;
+  --dads-text-mono-16N-150-size: 1rem;
+  --dads-text-mono-16N-150-weight: 400;
+  --dads-text-mono-16N-150-leading: 1.5;
+  --dads-text-mono-16N-150-tracking: 0;
+  --dads-text-mono-14N-150-size: 0.875rem;
+  --dads-text-mono-14N-150-weight: 400;
+  --dads-text-mono-14N-150-leading: 1.5;
+  --dads-text-mono-14N-150-tracking: 0;
+
+  /* --- spacing (DADS Foundation: 8px 基準スケール) --- */
+  /* --- breakpoints (DADS Foundation: layout) --- */
+  --dads-spacing-0: 0;
+  --dads-spacing-1: 0.5rem;
+  --dads-spacing-2: 1rem;
+  --dads-spacing-3: 1.5rem;
+  --dads-spacing-4: 2rem;
+  --dads-spacing-5: 2.5rem;
+  --dads-spacing-6: 3rem;
+  --dads-spacing-8: 4rem;
+  --dads-spacing-10: 5rem;
+  --dads-spacing-05: 0.25rem;
+  --dads-breakpoint-1col-max: 767px;
+  --dads-breakpoint-12col-sm: 928px;
+  --dads-breakpoint-12col-md: 1024px;
+  --dads-breakpoint-12col-lg: 1280px;
+  --dads-breakpoint-12col-xl: 1440px;
+  --dads-breakpoint-12col-xxl: 1920px;
+}
+
+/* --- text style classes (from @utility text-*) --- */
+.dads-text-dsp-64B-140 {
+  font-size: var(--dads-text-dsp-64B-140-size);
+  font-weight: var(--dads-text-dsp-64B-140-weight);
+  line-height: var(--dads-text-dsp-64B-140-leading);
+  letter-spacing: var(--dads-text-dsp-64B-140-tracking);
+}
+.dads-text-dsp-57B-140 {
+  font-size: var(--dads-text-dsp-57B-140-size);
+  font-weight: var(--dads-text-dsp-57B-140-weight);
+  line-height: var(--dads-text-dsp-57B-140-leading);
+  letter-spacing: var(--dads-text-dsp-57B-140-tracking);
+}
+.dads-text-dsp-48B-140 {
+  font-size: var(--dads-text-dsp-48B-140-size);
+  font-weight: var(--dads-text-dsp-48B-140-weight);
+  line-height: var(--dads-text-dsp-48B-140-leading);
+  letter-spacing: var(--dads-text-dsp-48B-140-tracking);
+}
+.dads-text-dsp-64N-140 {
+  font-size: var(--dads-text-dsp-64N-140-size);
+  font-weight: var(--dads-text-dsp-64N-140-weight);
+  line-height: var(--dads-text-dsp-64N-140-leading);
+  letter-spacing: var(--dads-text-dsp-64N-140-tracking);
+}
+.dads-text-dsp-57N-140 {
+  font-size: var(--dads-text-dsp-57N-140-size);
+  font-weight: var(--dads-text-dsp-57N-140-weight);
+  line-height: var(--dads-text-dsp-57N-140-leading);
+  letter-spacing: var(--dads-text-dsp-57N-140-tracking);
+}
+.dads-text-dsp-48N-140 {
+  font-size: var(--dads-text-dsp-48N-140-size);
+  font-weight: var(--dads-text-dsp-48N-140-weight);
+  line-height: var(--dads-text-dsp-48N-140-leading);
+  letter-spacing: var(--dads-text-dsp-48N-140-tracking);
+}
+.dads-text-std-45B-140 {
+  font-size: var(--dads-text-std-45B-140-size);
+  font-weight: var(--dads-text-std-45B-140-weight);
+  line-height: var(--dads-text-std-45B-140-leading);
+  letter-spacing: var(--dads-text-std-45B-140-tracking);
+}
+.dads-text-std-36B-140 {
+  font-size: var(--dads-text-std-36B-140-size);
+  font-weight: var(--dads-text-std-36B-140-weight);
+  line-height: var(--dads-text-std-36B-140-leading);
+  letter-spacing: var(--dads-text-std-36B-140-tracking);
+}
+.dads-text-std-32B-150 {
+  font-size: var(--dads-text-std-32B-150-size);
+  font-weight: var(--dads-text-std-32B-150-weight);
+  line-height: var(--dads-text-std-32B-150-leading);
+  letter-spacing: var(--dads-text-std-32B-150-tracking);
+}
+.dads-text-std-28B-150 {
+  font-size: var(--dads-text-std-28B-150-size);
+  font-weight: var(--dads-text-std-28B-150-weight);
+  line-height: var(--dads-text-std-28B-150-leading);
+  letter-spacing: var(--dads-text-std-28B-150-tracking);
+}
+.dads-text-std-26B-150 {
+  font-size: var(--dads-text-std-26B-150-size);
+  font-weight: var(--dads-text-std-26B-150-weight);
+  line-height: var(--dads-text-std-26B-150-leading);
+  letter-spacing: var(--dads-text-std-26B-150-tracking);
+}
+.dads-text-std-24B-150 {
+  font-size: var(--dads-text-std-24B-150-size);
+  font-weight: var(--dads-text-std-24B-150-weight);
+  line-height: var(--dads-text-std-24B-150-leading);
+  letter-spacing: var(--dads-text-std-24B-150-tracking);
+}
+.dads-text-std-22B-150 {
+  font-size: var(--dads-text-std-22B-150-size);
+  font-weight: var(--dads-text-std-22B-150-weight);
+  line-height: var(--dads-text-std-22B-150-leading);
+  letter-spacing: var(--dads-text-std-22B-150-tracking);
+}
+.dads-text-std-20B-160 {
+  font-size: var(--dads-text-std-20B-160-size);
+  font-weight: var(--dads-text-std-20B-160-weight);
+  line-height: var(--dads-text-std-20B-160-leading);
+  letter-spacing: var(--dads-text-std-20B-160-tracking);
+}
+.dads-text-std-20B-150 {
+  font-size: var(--dads-text-std-20B-150-size);
+  font-weight: var(--dads-text-std-20B-150-weight);
+  line-height: var(--dads-text-std-20B-150-leading);
+  letter-spacing: var(--dads-text-std-20B-150-tracking);
+}
+.dads-text-std-18B-160 {
+  font-size: var(--dads-text-std-18B-160-size);
+  font-weight: var(--dads-text-std-18B-160-weight);
+  line-height: var(--dads-text-std-18B-160-leading);
+  letter-spacing: var(--dads-text-std-18B-160-tracking);
+}
+.dads-text-std-17B-170 {
+  font-size: var(--dads-text-std-17B-170-size);
+  font-weight: var(--dads-text-std-17B-170-weight);
+  line-height: var(--dads-text-std-17B-170-leading);
+  letter-spacing: var(--dads-text-std-17B-170-tracking);
+}
+.dads-text-std-16B-170 {
+  font-size: var(--dads-text-std-16B-170-size);
+  font-weight: var(--dads-text-std-16B-170-weight);
+  line-height: var(--dads-text-std-16B-170-leading);
+  letter-spacing: var(--dads-text-std-16B-170-tracking);
+}
+.dads-text-std-16B-175 {
+  font-size: var(--dads-text-std-16B-175-size);
+  font-weight: var(--dads-text-std-16B-175-weight);
+  line-height: var(--dads-text-std-16B-175-leading);
+  letter-spacing: var(--dads-text-std-16B-175-tracking);
+}
+.dads-text-std-45N-140 {
+  font-size: var(--dads-text-std-45N-140-size);
+  font-weight: var(--dads-text-std-45N-140-weight);
+  line-height: var(--dads-text-std-45N-140-leading);
+  letter-spacing: var(--dads-text-std-45N-140-tracking);
+}
+.dads-text-std-36N-140 {
+  font-size: var(--dads-text-std-36N-140-size);
+  font-weight: var(--dads-text-std-36N-140-weight);
+  line-height: var(--dads-text-std-36N-140-leading);
+  letter-spacing: var(--dads-text-std-36N-140-tracking);
+}
+.dads-text-std-32N-150 {
+  font-size: var(--dads-text-std-32N-150-size);
+  font-weight: var(--dads-text-std-32N-150-weight);
+  line-height: var(--dads-text-std-32N-150-leading);
+  letter-spacing: var(--dads-text-std-32N-150-tracking);
+}
+.dads-text-std-28N-150 {
+  font-size: var(--dads-text-std-28N-150-size);
+  font-weight: var(--dads-text-std-28N-150-weight);
+  line-height: var(--dads-text-std-28N-150-leading);
+  letter-spacing: var(--dads-text-std-28N-150-tracking);
+}
+.dads-text-std-26N-150 {
+  font-size: var(--dads-text-std-26N-150-size);
+  font-weight: var(--dads-text-std-26N-150-weight);
+  line-height: var(--dads-text-std-26N-150-leading);
+  letter-spacing: var(--dads-text-std-26N-150-tracking);
+}
+.dads-text-std-24N-150 {
+  font-size: var(--dads-text-std-24N-150-size);
+  font-weight: var(--dads-text-std-24N-150-weight);
+  line-height: var(--dads-text-std-24N-150-leading);
+  letter-spacing: var(--dads-text-std-24N-150-tracking);
+}
+.dads-text-std-22N-150 {
+  font-size: var(--dads-text-std-22N-150-size);
+  font-weight: var(--dads-text-std-22N-150-weight);
+  line-height: var(--dads-text-std-22N-150-leading);
+  letter-spacing: var(--dads-text-std-22N-150-tracking);
+}
+.dads-text-std-20N-150 {
+  font-size: var(--dads-text-std-20N-150-size);
+  font-weight: var(--dads-text-std-20N-150-weight);
+  line-height: var(--dads-text-std-20N-150-leading);
+  letter-spacing: var(--dads-text-std-20N-150-tracking);
+}
+.dads-text-std-18N-160 {
+  font-size: var(--dads-text-std-18N-160-size);
+  font-weight: var(--dads-text-std-18N-160-weight);
+  line-height: var(--dads-text-std-18N-160-leading);
+  letter-spacing: var(--dads-text-std-18N-160-tracking);
+}
+.dads-text-std-17N-170 {
+  font-size: var(--dads-text-std-17N-170-size);
+  font-weight: var(--dads-text-std-17N-170-weight);
+  line-height: var(--dads-text-std-17N-170-leading);
+  letter-spacing: var(--dads-text-std-17N-170-tracking);
+}
+.dads-text-std-16N-170 {
+  font-size: var(--dads-text-std-16N-170-size);
+  font-weight: var(--dads-text-std-16N-170-weight);
+  line-height: var(--dads-text-std-16N-170-leading);
+  letter-spacing: var(--dads-text-std-16N-170-tracking);
+}
+.dads-text-std-16N-175 {
+  font-size: var(--dads-text-std-16N-175-size);
+  font-weight: var(--dads-text-std-16N-175-weight);
+  line-height: var(--dads-text-std-16N-175-leading);
+  letter-spacing: var(--dads-text-std-16N-175-tracking);
+}
+.dads-text-dns-17B-130 {
+  font-size: var(--dads-text-dns-17B-130-size);
+  font-weight: var(--dads-text-dns-17B-130-weight);
+  line-height: var(--dads-text-dns-17B-130-leading);
+  letter-spacing: var(--dads-text-dns-17B-130-tracking);
+}
+.dads-text-dns-17B-120 {
+  font-size: var(--dads-text-dns-17B-120-size);
+  font-weight: var(--dads-text-dns-17B-120-weight);
+  line-height: var(--dads-text-dns-17B-120-leading);
+  letter-spacing: var(--dads-text-dns-17B-120-tracking);
+}
+.dads-text-dns-16B-130 {
+  font-size: var(--dads-text-dns-16B-130-size);
+  font-weight: var(--dads-text-dns-16B-130-weight);
+  line-height: var(--dads-text-dns-16B-130-leading);
+  letter-spacing: var(--dads-text-dns-16B-130-tracking);
+}
+.dads-text-dns-16B-120 {
+  font-size: var(--dads-text-dns-16B-120-size);
+  font-weight: var(--dads-text-dns-16B-120-weight);
+  line-height: var(--dads-text-dns-16B-120-leading);
+  letter-spacing: var(--dads-text-dns-16B-120-tracking);
+}
+.dads-text-dns-14B-130 {
+  font-size: var(--dads-text-dns-14B-130-size);
+  font-weight: var(--dads-text-dns-14B-130-weight);
+  line-height: var(--dads-text-dns-14B-130-leading);
+  letter-spacing: var(--dads-text-dns-14B-130-tracking);
+}
+.dads-text-dns-14B-120 {
+  font-size: var(--dads-text-dns-14B-120-size);
+  font-weight: var(--dads-text-dns-14B-120-weight);
+  line-height: var(--dads-text-dns-14B-120-leading);
+  letter-spacing: var(--dads-text-dns-14B-120-tracking);
+}
+.dads-text-dns-17N-130 {
+  font-size: var(--dads-text-dns-17N-130-size);
+  font-weight: var(--dads-text-dns-17N-130-weight);
+  line-height: var(--dads-text-dns-17N-130-leading);
+  letter-spacing: var(--dads-text-dns-17N-130-tracking);
+}
+.dads-text-dns-17N-120 {
+  font-size: var(--dads-text-dns-17N-120-size);
+  font-weight: var(--dads-text-dns-17N-120-weight);
+  line-height: var(--dads-text-dns-17N-120-leading);
+  letter-spacing: var(--dads-text-dns-17N-120-tracking);
+}
+.dads-text-dns-16N-130 {
+  font-size: var(--dads-text-dns-16N-130-size);
+  font-weight: var(--dads-text-dns-16N-130-weight);
+  line-height: var(--dads-text-dns-16N-130-leading);
+  letter-spacing: var(--dads-text-dns-16N-130-tracking);
+}
+.dads-text-dns-16N-120 {
+  font-size: var(--dads-text-dns-16N-120-size);
+  font-weight: var(--dads-text-dns-16N-120-weight);
+  line-height: var(--dads-text-dns-16N-120-leading);
+  letter-spacing: var(--dads-text-dns-16N-120-tracking);
+}
+.dads-text-dns-14N-130 {
+  font-size: var(--dads-text-dns-14N-130-size);
+  font-weight: var(--dads-text-dns-14N-130-weight);
+  line-height: var(--dads-text-dns-14N-130-leading);
+  letter-spacing: var(--dads-text-dns-14N-130-tracking);
+}
+.dads-text-dns-14N-120 {
+  font-size: var(--dads-text-dns-14N-120-size);
+  font-weight: var(--dads-text-dns-14N-120-weight);
+  line-height: var(--dads-text-dns-14N-120-leading);
+  letter-spacing: var(--dads-text-dns-14N-120-tracking);
+}
+.dads-text-oln-17B-100 {
+  font-size: var(--dads-text-oln-17B-100-size);
+  font-weight: var(--dads-text-oln-17B-100-weight);
+  line-height: var(--dads-text-oln-17B-100-leading);
+  letter-spacing: var(--dads-text-oln-17B-100-tracking);
+}
+.dads-text-oln-16B-100 {
+  font-size: var(--dads-text-oln-16B-100-size);
+  font-weight: var(--dads-text-oln-16B-100-weight);
+  line-height: var(--dads-text-oln-16B-100-leading);
+  letter-spacing: var(--dads-text-oln-16B-100-tracking);
+}
+.dads-text-oln-14B-100 {
+  font-size: var(--dads-text-oln-14B-100-size);
+  font-weight: var(--dads-text-oln-14B-100-weight);
+  line-height: var(--dads-text-oln-14B-100-leading);
+  letter-spacing: var(--dads-text-oln-14B-100-tracking);
+}
+.dads-text-oln-17N-100 {
+  font-size: var(--dads-text-oln-17N-100-size);
+  font-weight: var(--dads-text-oln-17N-100-weight);
+  line-height: var(--dads-text-oln-17N-100-leading);
+  letter-spacing: var(--dads-text-oln-17N-100-tracking);
+}
+.dads-text-oln-16N-100 {
+  font-size: var(--dads-text-oln-16N-100-size);
+  font-weight: var(--dads-text-oln-16N-100-weight);
+  line-height: var(--dads-text-oln-16N-100-leading);
+  letter-spacing: var(--dads-text-oln-16N-100-tracking);
+}
+.dads-text-oln-14N-100 {
+  font-size: var(--dads-text-oln-14N-100-size);
+  font-weight: var(--dads-text-oln-14N-100-weight);
+  line-height: var(--dads-text-oln-14N-100-leading);
+  letter-spacing: var(--dads-text-oln-14N-100-tracking);
+}
+.dads-text-mono-17B-150 {
+  font-size: var(--dads-text-mono-17B-150-size);
+  font-weight: var(--dads-text-mono-17B-150-weight);
+  line-height: var(--dads-text-mono-17B-150-leading);
+  letter-spacing: var(--dads-text-mono-17B-150-tracking);
+}
+.dads-text-mono-16B-150 {
+  font-size: var(--dads-text-mono-16B-150-size);
+  font-weight: var(--dads-text-mono-16B-150-weight);
+  line-height: var(--dads-text-mono-16B-150-leading);
+  letter-spacing: var(--dads-text-mono-16B-150-tracking);
+}
+.dads-text-mono-14B-150 {
+  font-size: var(--dads-text-mono-14B-150-size);
+  font-weight: var(--dads-text-mono-14B-150-weight);
+  line-height: var(--dads-text-mono-14B-150-leading);
+  letter-spacing: var(--dads-text-mono-14B-150-tracking);
+}
+.dads-text-mono-17N-150 {
+  font-size: var(--dads-text-mono-17N-150-size);
+  font-weight: var(--dads-text-mono-17N-150-weight);
+  line-height: var(--dads-text-mono-17N-150-leading);
+  letter-spacing: var(--dads-text-mono-17N-150-tracking);
+}
+.dads-text-mono-16N-150 {
+  font-size: var(--dads-text-mono-16N-150-size);
+  font-weight: var(--dads-text-mono-16N-150-weight);
+  line-height: var(--dads-text-mono-16N-150-leading);
+  letter-spacing: var(--dads-text-mono-16N-150-tracking);
+}
+.dads-text-mono-14N-150 {
+  font-size: var(--dads-text-mono-14N-150-size);
+  font-weight: var(--dads-text-mono-14N-150-weight);
+  line-height: var(--dads-text-mono-14N-150-leading);
+  letter-spacing: var(--dads-text-mono-14N-150-tracking);
+}

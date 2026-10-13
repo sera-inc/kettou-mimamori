@@ -1,0 +1,2429 @@
+{
+  "file": "translations/ja_JP.json",
+  "beforeSHA256": "a7d3892d04a1dcdb3fe4808ad0336ff80a5e5455f58ed183f8913d53565937dc",
+  "originalKeys": [
+    "Listening on port",
+    "Mo",
+    "Tu",
+    "We",
+    "Th",
+    "Fr",
+    "Sa",
+    "Su",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+    "Category",
+    "Subcategory",
+    "Name",
+    "Today",
+    "Last 2 days",
+    "Last 3 days",
+    "Last week",
+    "Last 2 weeks",
+    "Last month",
+    "Last 3 months",
+    "From",
+    "To",
+    "Notes",
+    "Food",
+    "Insulin",
+    "Carbs",
+    "Notes contain",
+    "Target BG range bottom",
+    "top",
+    "Show",
+    "Display",
+    "Loading",
+    "Loading profile",
+    "Loading status",
+    "Loading food database",
+    "not displayed",
+    "Loading CGM data of",
+    "Loading treatments data of",
+    "Processing data of",
+    "Portion",
+    "Size",
+    "(none)",
+    "None",
+    "<none>",
+    "Result is empty",
+    "Day to day",
+    "Week to week",
+    "Daily Stats",
+    "Percentile Chart",
+    "Distribution",
+    "Hourly stats",
+    "netIOB stats",
+    "temp basals must be rendered to display this report",
+    "No data available",
+    "Low",
+    "In Range",
+    "Period",
+    "High",
+    "Average",
+    "Low Quartile",
+    "Upper Quartile",
+    "Quartile",
+    "Date",
+    "Normal",
+    "Median",
+    "Readings",
+    "StDev",
+    "Daily stats report",
+    "Glucose Percentile report",
+    "Glucose distribution",
+    "days total",
+    "Total per day",
+    "Overall",
+    "Range",
+    "% of Readings",
+    "# of Readings",
+    "Mean",
+    "Standard Deviation",
+    "Max",
+    "Min",
+    "A1c estimation*",
+    "Weekly Success",
+    "There is not sufficient data to run this report. Select more days.",
+    "Using stored API secret hash",
+    "No API secret hash stored yet. You need to enter API secret.",
+    "Database loaded",
+    "Error: Database failed to load",
+    "Error",
+    "Create new record",
+    "Save record",
+    "Portions",
+    "Unit",
+    "GI",
+    "Edit record",
+    "Delete record",
+    "Move to the top",
+    "Hidden",
+    "Hide after use",
+    "Your API secret must be at least 12 characters long",
+    "Bad API secret",
+    "API secret hash stored",
+    "Status",
+    "Not loaded",
+    "Food Editor",
+    "Your database",
+    "Filter",
+    "Save",
+    "Clear",
+    "Record",
+    "Quick picks",
+    "Show hidden",
+    "Your API secret or token",
+    "Remember this device. (Do not enable this on public computers.)",
+    "Treatments",
+    "Time",
+    "Event Type",
+    "Blood Glucose",
+    "Entered By",
+    "Delete this treatment?",
+    "Carbs Given",
+    "Insulin Given",
+    "Event Time",
+    "Please verify that the data entered is correct",
+    "BG",
+    "Use BG correction in calculation",
+    "BG from CGM (autoupdated)",
+    "BG from meter",
+    "Manual BG",
+    "Quickpick",
+    "or",
+    "Add from database",
+    "Use carbs correction in calculation",
+    "Use COB correction in calculation",
+    "Use IOB in calculation",
+    "Other correction",
+    "Rounding",
+    "Enter insulin correction in treatment",
+    "Insulin needed",
+    "Carbs needed",
+    "Carbs needed if Insulin total is negative value",
+    "Basal rate",
+    "60 minutes earlier",
+    "45 minutes earlier",
+    "30 minutes earlier",
+    "20 minutes earlier",
+    "15 minutes earlier",
+    "Time in minutes",
+    "15 minutes later",
+    "20 minutes later",
+    "30 minutes later",
+    "45 minutes later",
+    "60 minutes later",
+    "Additional Notes, Comments",
+    "RETRO MODE",
+    "Now",
+    "Other",
+    "Submit Form",
+    "Profile Editor",
+    "Reports",
+    "Add food from your database",
+    "Reload database",
+    "Add",
+    "Unauthorized",
+    "Entering record failed",
+    "Device authenticated",
+    "Device not authenticated",
+    "Authentication status",
+    "Authenticate",
+    "Remove",
+    "Your device is not authenticated yet",
+    "Sensor",
+    "Finger",
+    "Manual",
+    "Scale",
+    "Linear",
+    "Logarithmic",
+    "Logarithmic (Dynamic)",
+    "Insulin-on-Board",
+    "Carbs-on-Board",
+    "Bolus Wizard Preview",
+    "Value Loaded",
+    "Cannula Age",
+    "Basal Profile",
+    "Silence for 30 minutes",
+    "Silence for 60 minutes",
+    "Silence for 90 minutes",
+    "Silence for 120 minutes",
+    "Settings",
+    "Units",
+    "Date format",
+    "12 hours",
+    "24 hours",
+    "Log a Treatment",
+    "BG Check",
+    "Meal Bolus",
+    "Snack Bolus",
+    "Correction Bolus",
+    "Carb Correction",
+    "Note",
+    "Question",
+    "Exercise",
+    "Pump Site Change",
+    "CGM Sensor Start",
+    "CGM Sensor Stop",
+    "CGM Sensor Insert",
+    "Sensor Code",
+    "Transmitter ID",
+    "Dexcom Sensor Start",
+    "Dexcom Sensor Change",
+    "Insulin Cartridge Change",
+    "D.A.D. Alert",
+    "Glucose Reading",
+    "Measurement Method",
+    "Meter",
+    "Amount in grams",
+    "Amount in units",
+    "View all treatments",
+    "Enable Alarms",
+    "Pump Battery Change",
+    "Pump Battery Age",
+    "Pump Battery Low Alarm",
+    "Pump Battery change overdue!",
+    "When enabled an alarm may sound.",
+    "Urgent High Alarm",
+    "High Alarm",
+    "Low Alarm",
+    "Urgent Low Alarm",
+    "Stale Data: Warn",
+    "Stale Data: Urgent",
+    "mins",
+    "Night Mode",
+    "When enabled the page will be dimmed from 10pm - 6am.",
+    "Enable",
+    "Show Raw BG Data",
+    "Never",
+    "Always",
+    "When there is noise",
+    "When enabled small white dots will be displayed for raw BG data",
+    "Custom Title",
+    "Theme",
+    "Default",
+    "Colors",
+    "Colorblind-friendly colors",
+    "Reset, and use defaults",
+    "Calibrations",
+    "Alarm Test / Smartphone Enable",
+    "Bolus Wizard",
+    "in the future",
+    "time ago",
+    "hr ago",
+    "hrs ago",
+    "min ago",
+    "mins ago",
+    "day ago",
+    "days ago",
+    "long ago",
+    "Clean",
+    "Light",
+    "Medium",
+    "Heavy",
+    "Treatment type",
+    "Raw BG",
+    "Device",
+    "Noise",
+    "Calibration",
+    "Show Plugins",
+    "About",
+    "Value in",
+    "Carb Time",
+    "Language",
+    "Add new",
+    "g",
+    "ml",
+    "pcs",
+    "Drag&drop food here",
+    "Care Portal",
+    "Medium/Unknown",
+    "IN THE FUTURE",
+    "Order",
+    "oldest on top",
+    "newest on top",
+    "All sensor events",
+    "Remove future items from mongo database",
+    "Find and remove treatments in the future",
+    "This task find and remove treatments in the future.",
+    "Remove treatments in the future",
+    "Find and remove entries in the future",
+    "This task find and remove CGM data in the future created by uploader with wrong date/time.",
+    "Remove entries in the future",
+    "Loading database ...",
+    "Database contains %1 future records",
+    "Remove %1 selected records?",
+    "Error loading database",
+    "Record %1 removed ...",
+    "Error removing record %1",
+    "Deleting records ...",
+    "%1 records deleted",
+    "Clean Mongo status database",
+    "Delete all documents from devicestatus collection",
+    "This task removes all documents from devicestatus collection. Useful when uploader battery status is not properly updated.",
+    "Delete all documents",
+    "Delete all documents from devicestatus collection?",
+    "Database contains %1 records",
+    "All records removed ...",
+    "Delete all documents from devicestatus collection older than 30 days",
+    "Number of Days to Keep:",
+    "This task removes all documents from devicestatus collection that are older than 30 days. Useful when uploader battery status is not properly updated.",
+    "Delete old documents from devicestatus collection?",
+    "Clean Mongo entries (glucose entries) database",
+    "Delete all documents from entries collection older than 180 days",
+    "This task removes all documents from entries collection that are older than 180 days. Useful when uploader battery status is not properly updated.",
+    "Delete old documents",
+    "Delete old documents from entries collection?",
+    "%1 is not a valid number",
+    "%1 is not a valid number - must be more than 2",
+    "Clean Mongo treatments database",
+    "Delete all documents from treatments collection older than 180 days",
+    "This task removes all documents from treatments collection that are older than 180 days. Useful when uploader battery status is not properly updated.",
+    "Delete old documents from treatments collection?",
+    "Admin Tools",
+    "Nightscout reporting",
+    "Cancel",
+    "Edit treatment",
+    "Duration",
+    "Duration in minutes",
+    "Temp Basal",
+    "Temp Basal Start",
+    "Temp Basal End",
+    "Percent",
+    "Basal change in %",
+    "Basal value",
+    "Absolute basal value",
+    "Announcement",
+    "Loading temp basal data",
+    "Save current record before changing to new?",
+    "Profile Switch",
+    "Profile",
+    "General profile settings",
+    "Title",
+    "Database records",
+    "Add new record",
+    "Remove this record",
+    "Clone this record to new",
+    "Record valid from",
+    "Stored profiles",
+    "Timezone",
+    "Duration of Insulin Activity (DIA)",
+    "Represents the typical duration over which insulin takes effect.  Varies per patient and per insulin type. Typically 3-4 hours for most pumped insulin and most patients. Sometimes also called insulin lifetime.",
+    "Insulin to carb ratio (I:C)",
+    "Hours:",
+    "hours",
+    "g/hour",
+    "g carbs per U insulin. The ratio of how many grams of carbohydrates are offset by each U of insulin.",
+    "Insulin Sensitivity Factor (ISF)",
+    "mg/dL or mmol/L per U insulin. The ratio of how much BG changes with each U of corrective insulin.",
+    "Carbs activity / absorption rate",
+    "grams per unit time. Represents both the change in COB per unit of time, as well as the amount of carbs that should take effect over that time.  Carb absorption / activity curves are less well understood than insulin activity, but can be approximated using an initial delay followed by a constant rate of absorption (g/hr).",
+    "Basal rates [unit/hour]",
+    "Target BG range [mg/dL,mmol/L]",
+    "Start of record validity",
+    "Icicle",
+    "Render Basal",
+    "Profile used",
+    "Calculation is in target range.",
+    "Loading profile records ...",
+    "Values loaded.",
+    "Default values used.",
+    "Error. Default values used.",
+    "Time ranges of target_low and target_high don't  match. Values are restored to defaults.",
+    "Valid from:",
+    "Save current record before switching to new?",
+    "Add new interval before",
+    "Delete interval",
+    "I:C",
+    "ISF",
+    "Combo Bolus",
+    "Difference",
+    "New time",
+    "Edit Mode",
+    "When enabled icon to start edit mode is visible",
+    "Operation",
+    "Move",
+    "Delete",
+    "Move insulin",
+    "Move carbs",
+    "Remove insulin",
+    "Remove carbs",
+    "Change treatment time to %1 ?",
+    "Change carbs time to %1 ?",
+    "Change insulin time to %1 ?",
+    "Remove treatment ?",
+    "Remove insulin from treatment ?",
+    "Remove carbs from treatment ?",
+    "Rendering",
+    "Loading OpenAPS data of",
+    "Loading profile switch data",
+    "Redirecting you to the Profile Editor to create a new profile.",
+    "Pump",
+    "Sensor Age",
+    "Insulin Age",
+    "Temporary target",
+    "Reason",
+    "Eating soon",
+    "Top",
+    "Bottom",
+    "Activity",
+    "Targets",
+    "Bolus insulin:",
+    "Base basal insulin:",
+    "Positive temp basal insulin:",
+    "Negative temp basal insulin:",
+    "Total basal insulin:",
+    "Total daily insulin:",
+    "Unable to save Role",
+    "Unable to delete Role",
+    "Database contains %1 roles",
+    "Edit Role",
+    "admin, school, family, etc",
+    "Permissions",
+    "Are you sure you want to delete: ",
+    "Each role will have a 1 or more permissions.  The <em>*</em> permission is a wildcard, permissions are a hierarchy using <em>:</em> as a separator.",
+    "Add new Role",
+    "Roles - Groups of People, Devices, etc",
+    "Edit this role",
+    "Admin authorized",
+    "Subjects - People, Devices, etc",
+    "Each subject will have a unique access token and 1 or more roles.  Click on the access token to open a new view with the selected subject, this secret link can then be shared.",
+    "Add new Subject",
+    "Unable to save Subject",
+    "Unable to delete Subject",
+    "Database contains %1 subjects",
+    "Edit Subject",
+    "person, device, etc",
+    "role1, role2",
+    "Edit this subject",
+    "Delete this subject",
+    "Roles",
+    "Access Token",
+    "hour ago",
+    "hours ago",
+    "Silence for %1 minutes",
+    "Check BG",
+    "BASAL",
+    "Current basal",
+    "Sensitivity",
+    "Current Carb Ratio",
+    "Basal timezone",
+    "Active profile",
+    "Active temp basal",
+    "Active temp basal start",
+    "Active temp basal duration",
+    "Active temp basal remaining",
+    "Basal profile value",
+    "Active combo bolus",
+    "Active combo bolus start",
+    "Active combo bolus duration",
+    "Active combo bolus remaining",
+    "BG Delta",
+    "Elapsed Time",
+    "Absolute Delta",
+    "Interpolated",
+    "BWP",
+    "Urgent",
+    "Warning",
+    "Info",
+    "Lowest",
+    "Snoozing high alarm since there is enough IOB",
+    "Check BG, time to bolus?",
+    "Notice",
+    "required info missing",
+    "Insulin on Board",
+    "Current target",
+    "Expected effect",
+    "Expected outcome",
+    "Carb Equivalent",
+    "Excess insulin equivalent %1U more than needed to reach low target, not accounting for carbs",
+    "Excess insulin equivalent %1U more than needed to reach low target, MAKE SURE IOB IS COVERED BY CARBS",
+    "%1U reduction needed in active insulin to reach low target, too much basal?",
+    "basal adjustment out of range, give carbs?",
+    "basal adjustment out of range, give bolus?",
+    "above high",
+    "below low",
+    "Projected BG %1 target",
+    "aiming at",
+    "Bolus %1 units",
+    "or adjust basal",
+    "Check BG using glucometer before correcting!",
+    "Basal reduction to account %1 units:",
+    "30m temp basal",
+    "1h temp basal",
+    "Cannula change overdue!",
+    "Time to change cannula",
+    "Change cannula soon",
+    "Cannula age %1 hours",
+    "Inserted",
+    "CAGE",
+    "COB",
+    "Last Carbs",
+    "IAGE",
+    "Insulin reservoir change overdue!",
+    "Time to change insulin reservoir",
+    "Change insulin reservoir soon",
+    "Insulin reservoir age %1 hours",
+    "Changed",
+    "IOB",
+    "Careportal IOB",
+    "Last Bolus",
+    "Basal IOB",
+    "Source",
+    "Stale data, check rig?",
+    "Last received:",
+    "%1m ago",
+    "%1h ago",
+    "%1d ago",
+    "RETRO",
+    "SAGE",
+    "Sensor change/restart overdue!",
+    "Time to change/restart sensor",
+    "Change/restart sensor soon",
+    "Sensor age %1 days %2 hours",
+    "Sensor Insert",
+    "Sensor Start",
+    "days",
+    "Insulin distribution",
+    "To see this report, press SHOW while in this view",
+    "AR2 Forecast",
+    "OpenAPS Forecasts",
+    "Temporary Target",
+    "Temporary Target Cancel",
+    "OpenAPS Offline",
+    "Profiles",
+    "Time in fluctuation",
+    "Time in rapid fluctuation",
+    "This is only a rough estimation that can be very inaccurate and does not replace actual blood testing. The formula used is taken from:",
+    "Filter by hours",
+    "Time in fluctuation and Time in rapid fluctuation measure the % of time during the examined period, during which the blood glucose has been changing relatively fast or rapidly. Lower values are better.",
+    "Mean Total Daily Change is a sum of the absolute value of all glucose excursions for the examined period, divided by the number of days. Lower is better.",
+    "Mean Hourly Change is a sum of the absolute value of all glucose excursions for the examined period, divided by the number of hours in the period. Lower is better.",
+    "Out of Range RMS is calculated by squaring the distance out of range for all glucose readings for the examined period, summing them, dividing by the count and taking the square root. This metric is similar to in-range percentage but weights readings far out of range higher. Lower values are better.",
+    "GVI (Glycemic Variability Index) and PGS (Patient Glycemic Status) are measures developed by Dexcom, detailed <a href=\"",
+    "\">can be found here</a>.",
+    "Mean Total Daily Change",
+    "Mean Hourly Change",
+    "FortyFiveDown",
+    "FortyFiveUp",
+    "Flat",
+    "SingleUp",
+    "SingleDown",
+    "DoubleDown",
+    "DoubleUp",
+    "virtAsstUnknown",
+    "virtAsstTitleAR2Forecast",
+    "virtAsstTitleCurrentBasal",
+    "virtAsstTitleCurrentCOB",
+    "virtAsstTitleCurrentIOB",
+    "virtAsstTitleLaunch",
+    "virtAsstTitleLoopForecast",
+    "virtAsstTitleLastLoop",
+    "virtAsstTitleOpenAPSForecast",
+    "virtAsstTitlePumpReservoir",
+    "virtAsstTitlePumpBattery",
+    "virtAsstTitleRawBG",
+    "virtAsstTitleUploaderBattery",
+    "virtAsstTitleCurrentBG",
+    "virtAsstTitleFullStatus",
+    "virtAsstTitleCGMMode",
+    "virtAsstTitleCGMStatus",
+    "virtAsstTitleCGMSessionAge",
+    "virtAsstTitleCGMTxStatus",
+    "virtAsstTitleCGMTxAge",
+    "virtAsstTitleCGMNoise",
+    "virtAsstTitleDelta",
+    "virtAsstStatus",
+    "virtAsstBasal",
+    "virtAsstBasalTemp",
+    "virtAsstIob",
+    "virtAsstIobIntent",
+    "virtAsstIobUnits",
+    "virtAsstLaunch",
+    "virtAsstPreamble",
+    "virtAsstPreamble3person",
+    "virtAsstNoInsulin",
+    "virtAsstUploadBattery",
+    "virtAsstReservoir",
+    "virtAsstPumpBattery",
+    "virtAsstUploaderBattery",
+    "virtAsstLastLoop",
+    "virtAsstLoopNotAvailable",
+    "virtAsstLoopForecastAround",
+    "virtAsstLoopForecastBetween",
+    "virtAsstAR2ForecastAround",
+    "virtAsstAR2ForecastBetween",
+    "virtAsstForecastUnavailable",
+    "virtAsstRawBG",
+    "virtAsstOpenAPSForecast",
+    "virtAsstCob3person",
+    "virtAsstCob",
+    "virtAsstCGMMode",
+    "virtAsstCGMStatus",
+    "virtAsstCGMSessAge",
+    "virtAsstCGMSessNotStarted",
+    "virtAsstCGMTxStatus",
+    "virtAsstCGMTxAge",
+    "virtAsstCGMNoise",
+    "virtAsstCGMBattOne",
+    "virtAsstCGMBattTwo",
+    "virtAsstDelta",
+    "virtAsstDeltaEstimated",
+    "virtAsstUnknownIntentTitle",
+    "virtAsstUnknownIntentText",
+    "Fat [g]",
+    "Protein [g]",
+    "Energy [kJ]",
+    "Clock Views:",
+    "Clock",
+    "Color",
+    "Simple",
+    "TDD average",
+    "Bolus average",
+    "Basal average",
+    "Base basal average:",
+    "Carbs average",
+    "Eating Soon",
+    "Last entry {0} minutes ago",
+    "change",
+    "Speech",
+    "Target Top",
+    "Target Bottom",
+    "Canceled",
+    "Meter BG",
+    "predicted",
+    "future",
+    "ago",
+    "Last data received",
+    "Clock View",
+    "Protein",
+    "Fat",
+    "Protein average",
+    "Fat average",
+    "Total carbs",
+    "Total protein",
+    "Total fat",
+    "Database Size",
+    "Database Size near its limits!",
+    "Database size is %1 MiB out of %2 MiB. Please backup and clean up database!",
+    "Database file size",
+    "%1 MiB of %2 MiB (%3%)",
+    "Data size",
+    "virtAsstDatabaseSize",
+    "virtAsstTitleDatabaseSize",
+    "Carbs/Food/Time",
+    "You have administration messages",
+    "Admin messages in queue",
+    "Queue empty",
+    "There are no admin messages in queue",
+    "Please sign in using the API_SECRET to see your administration messages",
+    "Reads enabled in default permissions",
+    "Data reads enabled",
+    "Data writes enabled",
+    "Data writes not enabled",
+    "Color prediction lines",
+    "Release Notes",
+    "Check for Updates",
+    "Open Source",
+    "Nightscout Info",
+    "The primary purpose of Loopalyzer is to visualise how the Loop closed loop system performs. It may work with other setups as well, both closed and open loop, and non loop. However depending on which uploader you use, how frequent it is able to capture your data and upload, and how it is able to backfill missing data some graphs may have gaps or even be completely empty. Always ensure the graphs look reasonable. Best is to view one day at a time and scroll through a number of days first to see.",
+    "Loopalyzer includes a time shift feature. If you for example have breakfast at 07:00 one day and at 08:00 the day after your average blood glucose curve these two days will most likely look flattened and not show the actual response after a breakfast. Time shift will compute the average time these meals were eaten and then shift all data (carbs, insulin, basal etc.) during both days the corresponding time difference so that both meals align with the average meal start time.",
+    "In this example all data from first day is pushed 30 minutes forward in time and all data from second day 30 minutes backward in time so it appears as if you had had breakfast at 07:30 both days. This allows you to see your actual average blood glucose response from a meal.",
+    "Time shift highlights the period after the average meal start time in gray, for the duration of the DIA (Duration of Insulin Action). As all data points the entire day are shifted the curves outside the gray area may not be accurate.",
+    "Note that time shift is available only when viewing multiple days.",
+    "Please select a maximum of two weeks duration and click Show again.",
+    "Show profiles table",
+    "Show predictions",
+    "Timeshift on meals larger than %1 g carbs consumed between %2 and %3",
+    "Previous",
+    "Previous day",
+    "Next day",
+    "Next",
+    "Temp basal delta",
+    "Authorized by token",
+    "Auth role",
+    "view without token",
+    "Remove stored token",
+    "Weekly Distribution",
+    "Failed authentication",
+    "A device at IP address %1 attempted authenticating with Nightscout with wrong credentials. Check if you have an uploader setup with wrong API_SECRET or token?",
+    "Default (with leading zero and U)",
+    "Concise (with U, without leading zero)",
+    "Minimal (without leading zero and U)",
+    "Small Bolus Display",
+    "Large Bolus Display",
+    "Bolus Display Threshold",
+    "%1 U and Over",
+    "Event repeated %1 times.",
+    "minutes",
+    "Last recorded %1 %2 ago.",
+    "Security issue",
+    "Weak API_SECRET detected. Please use a mix of small and CAPITAL letters, numbers and non-alphanumeric characters such as !#%&/ to reduce the risk of unauthorized access. The minimum length of the API_SECRET is 12 characters.",
+    "less than 1",
+    "MongoDB password and API_SECRET match. This is a really bad idea. Please change both and do not reuse passwords across the system."
+  ],
+  "scope": "Japanese dictionary values only; exact keys, placeholders, original clinical conditions/counts/units and protocol values preserved. Product/source proper nouns and internationally used units remain where needed.",
+  "rows": [
+    {
+      "key": "Week to week",
+      "original": "Week to week",
+      "replacement": "週ごとの比較"
+    },
+    {
+      "key": "Your API secret or token",
+      "original": "Your API secret or token",
+      "replacement": "APIシークレットまたはトークン"
+    },
+    {
+      "key": "Remember this device. (Do not enable this on public computers.)",
+      "original": "Remember this device. (Do not enable this on public computers.)",
+      "replacement": "この端末を記憶する（共用端末では有効にしないでください）"
+    },
+    {
+      "key": "Time in minutes",
+      "original": "Time in minutes",
+      "replacement": "時間（分）"
+    },
+    {
+      "key": "Sensor Code",
+      "original": "Sensor Code",
+      "replacement": "センサーコード"
+    },
+    {
+      "key": "Transmitter ID",
+      "original": "Transmitter ID",
+      "replacement": "送信機ID"
+    },
+    {
+      "key": "Pump Battery Age",
+      "original": "Pump Battery Age",
+      "replacement": "ポンプ電池の使用期間"
+    },
+    {
+      "key": "Raw BG",
+      "original": "Raw BG",
+      "replacement": "生データによる血糖値"
+    },
+    {
+      "key": "pcs",
+      "original": "pcs",
+      "replacement": "個"
+    },
+    {
+      "key": "Drag&drop food here",
+      "original": "Drag&drop food here",
+      "replacement": "ここに食品をドラッグして追加"
+    },
+    {
+      "key": "Medium/Unknown",
+      "original": "Medium/Unknown",
+      "replacement": "中程度／不明"
+    },
+    {
+      "key": "IN THE FUTURE",
+      "original": "IN THE FUTURE",
+      "replacement": "未来の時刻"
+    },
+    {
+      "key": "Order",
+      "original": "Order",
+      "replacement": "並び順"
+    },
+    {
+      "key": "Remove future items from mongo database",
+      "original": "Remove future items from mongo database",
+      "replacement": "データベースの未来日時の記録を削除"
+    },
+    {
+      "key": "Record %1 removed ...",
+      "original": "Record %1 removed ...",
+      "replacement": "記録%1を削除しました…"
+    },
+    {
+      "key": "Error removing record %1",
+      "original": "Error removing record %1",
+      "replacement": "記録%1の削除に失敗しました"
+    },
+    {
+      "key": "Clean Mongo status database",
+      "original": "Clean Mongo status database",
+      "replacement": "機器の状態データを整理"
+    },
+    {
+      "key": "Delete all documents from devicestatus collection",
+      "original": "Delete all documents from devicestatus collection",
+      "replacement": "機器の状態コレクションの全記録を削除"
+    },
+    {
+      "key": "This task removes all documents from devicestatus collection. Useful when uploader battery status is not properly updated.",
+      "original": "This task removes all documents from devicestatus collection. Useful when uploader battery status is not properly updated.",
+      "replacement": "機器の状態コレクションの全記録を削除します。送信端末の電池残量が正しく更新されない場合に使う処理です。"
+    },
+    {
+      "key": "Delete all documents",
+      "original": "Delete all documents",
+      "replacement": "全記録を削除"
+    },
+    {
+      "key": "Delete all documents from devicestatus collection?",
+      "original": "Delete all documents from devicestatus collection?",
+      "replacement": "機器の状態コレクションの全記録を削除しますか？"
+    },
+    {
+      "key": "Database contains %1 records",
+      "original": "Database contains %1 records",
+      "replacement": "データベースの記録数：%1件"
+    },
+    {
+      "key": "All records removed ...",
+      "original": "All records removed ...",
+      "replacement": "全記録を削除しました…"
+    },
+    {
+      "key": "Delete all documents from devicestatus collection older than 30 days",
+      "original": "Delete all documents from devicestatus collection older than 30 days",
+      "replacement": "機器の状態コレクションの30日より古い記録を削除"
+    },
+    {
+      "key": "Number of Days to Keep:",
+      "original": "Number of Days to Keep:",
+      "replacement": "保存する日数："
+    },
+    {
+      "key": "This task removes all documents from devicestatus collection that are older than 30 days. Useful when uploader battery status is not properly updated.",
+      "original": "This task removes all documents from devicestatus collection that are older than 30 days. Useful when uploader battery status is not properly updated.",
+      "replacement": "機器の状態コレクションの30日より古い記録を削除します。送信端末の電池残量が正しく更新されない場合に使う処理です。"
+    },
+    {
+      "key": "Delete old documents from devicestatus collection?",
+      "original": "Delete old documents from devicestatus collection?",
+      "replacement": "機器の状態コレクションの古い記録を削除しますか？"
+    },
+    {
+      "key": "Clean Mongo entries (glucose entries) database",
+      "original": "Clean Mongo entries (glucose entries) database",
+      "replacement": "血糖データベースを整理"
+    },
+    {
+      "key": "Delete all documents from entries collection older than 180 days",
+      "original": "Delete all documents from entries collection older than 180 days",
+      "replacement": "血糖コレクションの180日より古い記録を削除"
+    },
+    {
+      "key": "This task removes all documents from entries collection that are older than 180 days. Useful when uploader battery status is not properly updated.",
+      "original": "This task removes all documents from entries collection that are older than 180 days. Useful when uploader battery status is not properly updated.",
+      "replacement": "血糖コレクションの180日より古い記録を削除します。送信端末の電池残量が正しく更新されない場合に使う処理です。"
+    },
+    {
+      "key": "Delete old documents",
+      "original": "Delete old documents",
+      "replacement": "古い記録を削除"
+    },
+    {
+      "key": "Delete old documents from entries collection?",
+      "original": "Delete old documents from entries collection?",
+      "replacement": "血糖コレクションの古い記録を削除しますか？"
+    },
+    {
+      "key": "%1 is not a valid number",
+      "original": "%1 is not a valid number",
+      "replacement": "%1は有効な数値ではありません"
+    },
+    {
+      "key": "%1 is not a valid number - must be more than 2",
+      "original": "%1 is not a valid number - must be more than 2",
+      "replacement": "%1は有効な数値ではありません。2より大きい値が必要です"
+    },
+    {
+      "key": "Clean Mongo treatments database",
+      "original": "Clean Mongo treatments database",
+      "replacement": "治療記録データベースを整理"
+    },
+    {
+      "key": "Delete all documents from treatments collection older than 180 days",
+      "original": "Delete all documents from treatments collection older than 180 days",
+      "replacement": "治療記録コレクションの180日より古い記録を削除"
+    },
+    {
+      "key": "This task removes all documents from treatments collection that are older than 180 days. Useful when uploader battery status is not properly updated.",
+      "original": "This task removes all documents from treatments collection that are older than 180 days. Useful when uploader battery status is not properly updated.",
+      "replacement": "治療記録コレクションの180日より古い記録を削除します。送信端末の電池残量が正しく更新されない場合に使う処理です。"
+    },
+    {
+      "key": "Delete old documents from treatments collection?",
+      "original": "Delete old documents from treatments collection?",
+      "replacement": "治療記録コレクションの古い記録を削除しますか？"
+    },
+    {
+      "key": "Admin Tools",
+      "original": "Admin Tools",
+      "replacement": "管理ツール"
+    },
+    {
+      "key": "Nightscout reporting",
+      "original": "Nightscout reporting",
+      "replacement": "血糖レポート"
+    },
+    {
+      "key": "Edit treatment",
+      "original": "Edit treatment",
+      "replacement": "治療記録を編集"
+    },
+    {
+      "key": "Duration",
+      "original": "Duration",
+      "replacement": "継続時間"
+    },
+    {
+      "key": "Duration in minutes",
+      "original": "Duration in minutes",
+      "replacement": "継続時間（分）"
+    },
+    {
+      "key": "Temp Basal",
+      "original": "Temp Basal",
+      "replacement": "一時基礎インスリン"
+    },
+    {
+      "key": "Temp Basal Start",
+      "original": "Temp Basal Start",
+      "replacement": "一時基礎インスリンの開始"
+    },
+    {
+      "key": "Temp Basal End",
+      "original": "Temp Basal End",
+      "replacement": "一時基礎インスリンの終了"
+    },
+    {
+      "key": "Percent",
+      "original": "Percent",
+      "replacement": "割合"
+    },
+    {
+      "key": "Basal change in %",
+      "original": "Basal change in %",
+      "replacement": "基礎インスリンの変更率（%）"
+    },
+    {
+      "key": "Basal value",
+      "original": "Basal value",
+      "replacement": "基礎インスリン量"
+    },
+    {
+      "key": "Absolute basal value",
+      "original": "Absolute basal value",
+      "replacement": "基礎インスリンの絶対量"
+    },
+    {
+      "key": "Announcement",
+      "original": "Announcement",
+      "replacement": "お知らせ"
+    },
+    {
+      "key": "Loading temp basal data",
+      "original": "Loading temp basal data",
+      "replacement": "一時基礎インスリンのデータを読み込み中"
+    },
+    {
+      "key": "Save current record before changing to new?",
+      "original": "Save current record before changing to new?",
+      "replacement": "新しい記録に変更する前に、現在の記録を保存しますか？"
+    },
+    {
+      "key": "Profile Switch",
+      "original": "Profile Switch",
+      "replacement": "プロフィールの切り替え"
+    },
+    {
+      "key": "Profile",
+      "original": "Profile",
+      "replacement": "プロフィール"
+    },
+    {
+      "key": "General profile settings",
+      "original": "General profile settings",
+      "replacement": "プロフィールの共通設定"
+    },
+    {
+      "key": "Title",
+      "original": "Title",
+      "replacement": "名称"
+    },
+    {
+      "key": "Database records",
+      "original": "Database records",
+      "replacement": "データベースの記録"
+    },
+    {
+      "key": "Clone this record to new",
+      "original": "Clone this record to new",
+      "replacement": "この記録を複製して追加"
+    },
+    {
+      "key": "Record valid from",
+      "original": "Record valid from",
+      "replacement": "記録の有効開始日時"
+    },
+    {
+      "key": "Stored profiles",
+      "original": "Stored profiles",
+      "replacement": "保存済みのプロフィール"
+    },
+    {
+      "key": "Timezone",
+      "original": "Timezone",
+      "replacement": "タイムゾーン"
+    },
+    {
+      "key": "Duration of Insulin Activity (DIA)",
+      "original": "Duration of Insulin Activity (DIA)",
+      "replacement": "インスリン作用時間（DIA）"
+    },
+    {
+      "key": "Represents the typical duration over which insulin takes effect.  Varies per patient and per insulin type. Typically 3-4 hours for most pumped insulin and most patients. Sometimes also called insulin lifetime.",
+      "original": "Represents the typical duration over which insulin takes effect.  Varies per patient and per insulin type. Typically 3-4 hours for most pumped insulin and most patients. Sometimes also called insulin lifetime.",
+      "replacement": "インスリンが作用する一般的な継続時間です。患者やインスリンの種類によって異なります。ポンプで使用する多くのインスリンと多くの患者では、通常3～4時間です。インスリンの有効時間とも呼ばれます。"
+    },
+    {
+      "key": "Insulin to carb ratio (I:C)",
+      "original": "Insulin to carb ratio (I:C)",
+      "replacement": "糖質・インスリン比（I:C）"
+    },
+    {
+      "key": "Hours:",
+      "original": "Hours:",
+      "replacement": "時間："
+    },
+    {
+      "key": "hours",
+      "original": "hours",
+      "replacement": "時間"
+    },
+    {
+      "key": "g/hour",
+      "original": "g/hour",
+      "replacement": "g/時間"
+    },
+    {
+      "key": "g carbs per U insulin. The ratio of how many grams of carbohydrates are offset by each U of insulin.",
+      "original": "g carbs per U insulin. The ratio of how many grams of carbohydrates are offset by each U of insulin.",
+      "replacement": "インスリン1単位に対応する糖質量（g）です。インスリン1単位で補える糖質のグラム数を表します。"
+    },
+    {
+      "key": "Insulin Sensitivity Factor (ISF)",
+      "original": "Insulin Sensitivity Factor (ISF)",
+      "replacement": "インスリン感受性係数（ISF）"
+    },
+    {
+      "key": "mg/dL or mmol/L per U insulin. The ratio of how much BG changes with each U of corrective insulin.",
+      "original": "mg/dL or mmol/L per U insulin. The ratio of how much BG changes with each U of corrective insulin.",
+      "replacement": "補正インスリン1単位あたりの血糖変化量（mg/dLまたはmmol/L）です。"
+    },
+    {
+      "key": "Carbs activity / absorption rate",
+      "original": "Carbs activity / absorption rate",
+      "replacement": "糖質の作用・吸収速度"
+    },
+    {
+      "key": "grams per unit time. Represents both the change in COB per unit of time, as well as the amount of carbs that should take effect over that time.  Carb absorption / activity curves are less well understood than insulin activity, but can be approximated using an initial delay followed by a constant rate of absorption (g/hr).",
+      "original": "grams per unit time. Represents both the change in COB per unit of time, as well as the amount of carbs that should take effect over that time.  Carb absorption / activity curves are less well understood than insulin activity, but can be approximated using an initial delay followed by a constant rate of absorption (g/hr).",
+      "replacement": "単位時間あたりのグラム数です。単位時間あたりの残存糖質の変化量と、その時間内に作用すると想定する糖質量を表します。糖質の吸収・作用曲線はインスリンの作用ほど解明されていませんが、最初の遅延の後に一定の吸収速度（g/時間）が続くものとして近似できます。"
+    },
+    {
+      "key": "Basal rates [unit/hour]",
+      "original": "Basal rates [unit/hour]",
+      "replacement": "基礎インスリン量［単位/時間］"
+    },
+    {
+      "key": "Target BG range [mg/dL,mmol/L]",
+      "original": "Target BG range [mg/dL,mmol/L]",
+      "replacement": "目標血糖範囲［mg/dL、mmol/L］"
+    },
+    {
+      "key": "Start of record validity",
+      "original": "Start of record validity",
+      "replacement": "記録の有効開始日時"
+    },
+    {
+      "key": "Icicle",
+      "original": "Icicle",
+      "replacement": "つらら表示"
+    },
+    {
+      "key": "Render Basal",
+      "original": "Render Basal",
+      "replacement": "基礎インスリンの表示"
+    },
+    {
+      "key": "Profile used",
+      "original": "Profile used",
+      "replacement": "使用中のプロフィール"
+    },
+    {
+      "key": "Calculation is in target range.",
+      "original": "Calculation is in target range.",
+      "replacement": "計算結果は目標範囲内です。"
+    },
+    {
+      "key": "Loading profile records ...",
+      "original": "Loading profile records ...",
+      "replacement": "プロフィールの記録を読み込み中…"
+    },
+    {
+      "key": "Values loaded.",
+      "original": "Values loaded.",
+      "replacement": "値を読み込みました。"
+    },
+    {
+      "key": "Default values used.",
+      "original": "Default values used.",
+      "replacement": "初期値を使用しました。"
+    },
+    {
+      "key": "Error. Default values used.",
+      "original": "Error. Default values used.",
+      "replacement": "エラーが発生したため初期値を使用しました。"
+    },
+    {
+      "key": "Time ranges of target_low and target_high don't  match. Values are restored to defaults.",
+      "original": "Time ranges of target_low and target_high don't  match. Values are restored to defaults.",
+      "replacement": "目標血糖の下限と上限の時間帯が一致しません。初期値に戻しました。"
+    },
+    {
+      "key": "Valid from:",
+      "original": "Valid from:",
+      "replacement": "有効開始日時："
+    },
+    {
+      "key": "Save current record before switching to new?",
+      "original": "Save current record before switching to new?",
+      "replacement": "新しい記録に切り替える前に、現在の記録を保存しますか？"
+    },
+    {
+      "key": "Add new interval before",
+      "original": "Add new interval before",
+      "replacement": "この前に時間帯を追加"
+    },
+    {
+      "key": "Delete interval",
+      "original": "Delete interval",
+      "replacement": "時間帯を削除"
+    },
+    {
+      "key": "ISF",
+      "original": "ISF",
+      "replacement": "インスリン感受性"
+    },
+    {
+      "key": "Combo Bolus",
+      "original": "Combo Bolus",
+      "replacement": "組み合わせボーラス"
+    },
+    {
+      "key": "Difference",
+      "original": "Difference",
+      "replacement": "差分"
+    },
+    {
+      "key": "New time",
+      "original": "New time",
+      "replacement": "変更後の時刻"
+    },
+    {
+      "key": "When enabled icon to start edit mode is visible",
+      "original": "When enabled icon to start edit mode is visible",
+      "replacement": "有効にすると、編集モードを開始するアイコンを表示します"
+    },
+    {
+      "key": "Operation",
+      "original": "Operation",
+      "replacement": "操作"
+    },
+    {
+      "key": "Move",
+      "original": "Move",
+      "replacement": "移動"
+    },
+    {
+      "key": "Move insulin",
+      "original": "Move insulin",
+      "replacement": "インスリンの時刻を移動"
+    },
+    {
+      "key": "Move carbs",
+      "original": "Move carbs",
+      "replacement": "糖質の時刻を移動"
+    },
+    {
+      "key": "Remove insulin",
+      "original": "Remove insulin",
+      "replacement": "インスリンを削除"
+    },
+    {
+      "key": "Remove carbs",
+      "original": "Remove carbs",
+      "replacement": "糖質を削除"
+    },
+    {
+      "key": "Change treatment time to %1 ?",
+      "original": "Change treatment time to %1 ?",
+      "replacement": "治療記録の時刻を%1に変更しますか？"
+    },
+    {
+      "key": "Change carbs time to %1 ?",
+      "original": "Change carbs time to %1 ?",
+      "replacement": "糖質の時刻を%1に変更しますか？"
+    },
+    {
+      "key": "Change insulin time to %1 ?",
+      "original": "Change insulin time to %1 ?",
+      "replacement": "インスリンの時刻を%1に変更しますか？"
+    },
+    {
+      "key": "Remove treatment ?",
+      "original": "Remove treatment ?",
+      "replacement": "治療記録を削除しますか？"
+    },
+    {
+      "key": "Remove insulin from treatment ?",
+      "original": "Remove insulin from treatment ?",
+      "replacement": "治療記録からインスリンを削除しますか？"
+    },
+    {
+      "key": "Remove carbs from treatment ?",
+      "original": "Remove carbs from treatment ?",
+      "replacement": "治療記録から糖質を削除しますか？"
+    },
+    {
+      "key": "Rendering",
+      "original": "Rendering",
+      "replacement": "描画中"
+    },
+    {
+      "key": "Loading OpenAPS data of",
+      "original": "Loading OpenAPS data of",
+      "replacement": "OpenAPSのデータを読み込み中："
+    },
+    {
+      "key": "Loading profile switch data",
+      "original": "Loading profile switch data",
+      "replacement": "プロフィール切り替えのデータを読み込み中"
+    },
+    {
+      "key": "Redirecting you to the Profile Editor to create a new profile.",
+      "original": "Redirecting you to the Profile Editor to create a new profile.",
+      "replacement": "新しいプロフィールを作成するため、プロフィール編集画面に移動します。"
+    },
+    {
+      "key": "Pump",
+      "original": "Pump",
+      "replacement": "ポンプ"
+    },
+    {
+      "key": "Sensor Age",
+      "original": "Sensor Age",
+      "replacement": "センサーの使用期間"
+    },
+    {
+      "key": "Insulin Age",
+      "original": "Insulin Age",
+      "replacement": "インスリンの使用期間"
+    },
+    {
+      "key": "Temporary target",
+      "original": "Temporary target",
+      "replacement": "一時目標"
+    },
+    {
+      "key": "Reason",
+      "original": "Reason",
+      "replacement": "理由"
+    },
+    {
+      "key": "Eating soon",
+      "original": "Eating soon",
+      "replacement": "まもなく食事"
+    },
+    {
+      "key": "Top",
+      "original": "Top",
+      "replacement": "上限"
+    },
+    {
+      "key": "Bottom",
+      "original": "Bottom",
+      "replacement": "下限"
+    },
+    {
+      "key": "Activity",
+      "original": "Activity",
+      "replacement": "活動"
+    },
+    {
+      "key": "Targets",
+      "original": "Targets",
+      "replacement": "目標"
+    },
+    {
+      "key": "Bolus insulin:",
+      "original": "Bolus insulin:",
+      "replacement": "ボーラスインスリン："
+    },
+    {
+      "key": "Base basal insulin:",
+      "original": "Base basal insulin:",
+      "replacement": "通常の基礎インスリン："
+    },
+    {
+      "key": "Positive temp basal insulin:",
+      "original": "Positive temp basal insulin:",
+      "replacement": "一時基礎インスリンの増量分："
+    },
+    {
+      "key": "Negative temp basal insulin:",
+      "original": "Negative temp basal insulin:",
+      "replacement": "一時基礎インスリンの減量分："
+    },
+    {
+      "key": "Total basal insulin:",
+      "original": "Total basal insulin:",
+      "replacement": "基礎インスリンの合計："
+    },
+    {
+      "key": "Total daily insulin:",
+      "original": "Total daily insulin:",
+      "replacement": "1日のインスリン合計："
+    },
+    {
+      "key": "Unable to save Role",
+      "original": "Unable to save Role",
+      "replacement": "権限グループを保存できません"
+    },
+    {
+      "key": "Unable to delete Role",
+      "original": "Unable to delete Role",
+      "replacement": "権限グループを削除できません"
+    },
+    {
+      "key": "Database contains %1 roles",
+      "original": "Database contains %1 roles",
+      "replacement": "データベースの権限グループ数：%1件"
+    },
+    {
+      "key": "Edit Role",
+      "original": "Edit Role",
+      "replacement": "権限グループを編集"
+    },
+    {
+      "key": "admin, school, family, etc",
+      "original": "admin, school, family, etc",
+      "replacement": "管理者、学校、家族など"
+    },
+    {
+      "key": "Permissions",
+      "original": "Permissions",
+      "replacement": "アクセス権限"
+    },
+    {
+      "key": "Are you sure you want to delete: ",
+      "original": "Are you sure you want to delete: ",
+      "replacement": "削除してよろしいですか： "
+    },
+    {
+      "key": "Each role will have a 1 or more permissions.  The <em>*</em> permission is a wildcard, permissions are a hierarchy using <em>:</em> as a separator.",
+      "original": "Each role will have a 1 or more permissions.  The <em>*</em> permission is a wildcard, permissions are a hierarchy using <em>:</em> as a separator.",
+      "replacement": "各権限グループには1つ以上のアクセス権限を設定します。<em>*</em>はすべてを表す指定です。アクセス権限は<em>:</em>で区切る階層構造です。"
+    },
+    {
+      "key": "Add new Role",
+      "original": "Add new Role",
+      "replacement": "権限グループを追加"
+    },
+    {
+      "key": "Roles - Groups of People, Devices, etc",
+      "original": "Roles - Groups of People, Devices, etc",
+      "replacement": "権限グループ — 利用者・機器などのグループ"
+    },
+    {
+      "key": "Edit this role",
+      "original": "Edit this role",
+      "replacement": "この権限グループを編集"
+    },
+    {
+      "key": "Admin authorized",
+      "original": "Admin authorized",
+      "replacement": "管理者として認証済み"
+    },
+    {
+      "key": "Subjects - People, Devices, etc",
+      "original": "Subjects - People, Devices, etc",
+      "replacement": "利用者・機器など"
+    },
+    {
+      "key": "Each subject will have a unique access token and 1 or more roles.  Click on the access token to open a new view with the selected subject, this secret link can then be shared.",
+      "original": "Each subject will have a unique access token and 1 or more roles.  Click on the access token to open a new view with the selected subject, this secret link can then be shared.",
+      "replacement": "各利用者・機器には固有のアクセストークンと1つ以上の権限グループを設定します。アクセストークンを選ぶと、その利用者・機器として画面を開きます。この秘密のリンクを共有できます。"
+    },
+    {
+      "key": "Add new Subject",
+      "original": "Add new Subject",
+      "replacement": "利用者・機器を追加"
+    },
+    {
+      "key": "Unable to save Subject",
+      "original": "Unable to save Subject",
+      "replacement": "利用者・機器を保存できません"
+    },
+    {
+      "key": "Unable to delete Subject",
+      "original": "Unable to delete Subject",
+      "replacement": "利用者・機器を削除できません"
+    },
+    {
+      "key": "Database contains %1 subjects",
+      "original": "Database contains %1 subjects",
+      "replacement": "データベースの利用者・機器数：%1件"
+    },
+    {
+      "key": "Edit Subject",
+      "original": "Edit Subject",
+      "replacement": "利用者・機器を編集"
+    },
+    {
+      "key": "person, device, etc",
+      "original": "person, device, etc",
+      "replacement": "利用者、機器など"
+    },
+    {
+      "key": "role1, role2",
+      "original": "role1, role2",
+      "replacement": "権限グループ1, 権限グループ2"
+    },
+    {
+      "key": "Edit this subject",
+      "original": "Edit this subject",
+      "replacement": "この利用者・機器を編集"
+    },
+    {
+      "key": "Delete this subject",
+      "original": "Delete this subject",
+      "replacement": "この利用者・機器を削除"
+    },
+    {
+      "key": "Roles",
+      "original": "Roles",
+      "replacement": "権限グループ"
+    },
+    {
+      "key": "Access Token",
+      "original": "Access Token",
+      "replacement": "アクセストークン"
+    },
+    {
+      "key": "hour ago",
+      "original": "hour ago",
+      "replacement": "時間前"
+    },
+    {
+      "key": "hours ago",
+      "original": "hours ago",
+      "replacement": "時間前"
+    },
+    {
+      "key": "Silence for %1 minutes",
+      "original": "Silence for %1 minutes",
+      "replacement": "警報を%1分間停止"
+    },
+    {
+      "key": "Check BG",
+      "original": "Check BG",
+      "replacement": "血糖を確認"
+    },
+    {
+      "key": "BASAL",
+      "original": "BASAL",
+      "replacement": "基礎インスリン"
+    },
+    {
+      "key": "Current basal",
+      "original": "Current basal",
+      "replacement": "現在の基礎インスリン量"
+    },
+    {
+      "key": "Sensitivity",
+      "original": "Sensitivity",
+      "replacement": "インスリン感受性"
+    },
+    {
+      "key": "Current Carb Ratio",
+      "original": "Current Carb Ratio",
+      "replacement": "現在の糖質・インスリン比"
+    },
+    {
+      "key": "Basal timezone",
+      "original": "Basal timezone",
+      "replacement": "基礎インスリンのタイムゾーン"
+    },
+    {
+      "key": "Active profile",
+      "original": "Active profile",
+      "replacement": "使用中のプロフィール"
+    },
+    {
+      "key": "Active temp basal",
+      "original": "Active temp basal",
+      "replacement": "実行中の一時基礎インスリン"
+    },
+    {
+      "key": "Active temp basal start",
+      "original": "Active temp basal start",
+      "replacement": "一時基礎インスリンの開始時刻"
+    },
+    {
+      "key": "Active temp basal duration",
+      "original": "Active temp basal duration",
+      "replacement": "一時基礎インスリンの継続時間"
+    },
+    {
+      "key": "Active temp basal remaining",
+      "original": "Active temp basal remaining",
+      "replacement": "一時基礎インスリンの残り時間"
+    },
+    {
+      "key": "Basal profile value",
+      "original": "Basal profile value",
+      "replacement": "プロフィールの基礎インスリン量"
+    },
+    {
+      "key": "Active combo bolus",
+      "original": "Active combo bolus",
+      "replacement": "実行中の組み合わせボーラス"
+    },
+    {
+      "key": "Active combo bolus start",
+      "original": "Active combo bolus start",
+      "replacement": "組み合わせボーラスの開始時刻"
+    },
+    {
+      "key": "Active combo bolus duration",
+      "original": "Active combo bolus duration",
+      "replacement": "組み合わせボーラスの継続時間"
+    },
+    {
+      "key": "Active combo bolus remaining",
+      "original": "Active combo bolus remaining",
+      "replacement": "組み合わせボーラスの残り時間"
+    },
+    {
+      "key": "BG Delta",
+      "original": "BG Delta",
+      "replacement": "血糖の変化量"
+    },
+    {
+      "key": "Elapsed Time",
+      "original": "Elapsed Time",
+      "replacement": "経過時間"
+    },
+    {
+      "key": "Absolute Delta",
+      "original": "Absolute Delta",
+      "replacement": "変化量の絶対値"
+    },
+    {
+      "key": "Interpolated",
+      "original": "Interpolated",
+      "replacement": "補間値"
+    },
+    {
+      "key": "BWP",
+      "original": "BWP",
+      "replacement": "ボーラス予測"
+    },
+    {
+      "key": "Warning",
+      "original": "Warning",
+      "replacement": "警告"
+    },
+    {
+      "key": "Info",
+      "original": "Info",
+      "replacement": "情報"
+    },
+    {
+      "key": "Lowest",
+      "original": "Lowest",
+      "replacement": "最も低い値"
+    },
+    {
+      "key": "Snoozing high alarm since there is enough IOB",
+      "original": "Snoozing high alarm since there is enough IOB",
+      "replacement": "残存インスリンが十分あるため、高血糖警報を一時停止しています"
+    },
+    {
+      "key": "Check BG, time to bolus?",
+      "original": "Check BG, time to bolus?",
+      "replacement": "血糖を確認してください。ボーラスの時間ですか？"
+    },
+    {
+      "key": "Notice",
+      "original": "Notice",
+      "replacement": "通知"
+    },
+    {
+      "key": "required info missing",
+      "original": "required info missing",
+      "replacement": "必要な情報がありません"
+    },
+    {
+      "key": "Insulin on Board",
+      "original": "Insulin on Board",
+      "replacement": "残存インスリン量"
+    },
+    {
+      "key": "Current target",
+      "original": "Current target",
+      "replacement": "現在の目標"
+    },
+    {
+      "key": "Expected effect",
+      "original": "Expected effect",
+      "replacement": "予想される作用"
+    },
+    {
+      "key": "Expected outcome",
+      "original": "Expected outcome",
+      "replacement": "予想される結果"
+    },
+    {
+      "key": "Carb Equivalent",
+      "original": "Carb Equivalent",
+      "replacement": "糖質換算量"
+    },
+    {
+      "key": "Excess insulin equivalent %1U more than needed to reach low target, not accounting for carbs",
+      "original": "Excess insulin equivalent %1U more than needed to reach low target, not accounting for carbs",
+      "replacement": "低い目標値に達するために必要な量よりインスリンが%1単位多く残っています（糖質は考慮していません）"
+    },
+    {
+      "key": "Excess insulin equivalent %1U more than needed to reach low target, MAKE SURE IOB IS COVERED BY CARBS",
+      "original": "Excess insulin equivalent %1U more than needed to reach low target, MAKE SURE IOB IS COVERED BY CARBS",
+      "replacement": "低い目標値に達するために必要な量よりインスリンが%1単位多く残っています。残存インスリンに対応する糖質があることを必ず確認してください"
+    },
+    {
+      "key": "%1U reduction needed in active insulin to reach low target, too much basal?",
+      "original": "%1U reduction needed in active insulin to reach low target, too much basal?",
+      "replacement": "低い目標値に達するには残存インスリンを%1単位減らす必要があります。基礎インスリンが多すぎませんか？"
+    },
+    {
+      "key": "basal adjustment out of range, give carbs?",
+      "original": "basal adjustment out of range, give carbs?",
+      "replacement": "基礎インスリンの調整範囲を超えています。糖質を補給しますか？"
+    },
+    {
+      "key": "basal adjustment out of range, give bolus?",
+      "original": "basal adjustment out of range, give bolus?",
+      "replacement": "基礎インスリンの調整範囲を超えています。ボーラスを投与しますか？"
+    },
+    {
+      "key": "above high",
+      "original": "above high",
+      "replacement": "上限より高い"
+    },
+    {
+      "key": "below low",
+      "original": "below low",
+      "replacement": "下限より低い"
+    },
+    {
+      "key": "Projected BG %1 target",
+      "original": "Projected BG %1 target",
+      "replacement": "予測血糖は目標の%1"
+    },
+    {
+      "key": "aiming at",
+      "original": "aiming at",
+      "replacement": "目標："
+    },
+    {
+      "key": "Bolus %1 units",
+      "original": "Bolus %1 units",
+      "replacement": "ボーラス%1単位"
+    },
+    {
+      "key": "or adjust basal",
+      "original": "or adjust basal",
+      "replacement": "または基礎インスリンを調整"
+    },
+    {
+      "key": "Check BG using glucometer before correcting!",
+      "original": "Check BG using glucometer before correcting!",
+      "replacement": "補正する前に血糖測定器で血糖を確認してください！"
+    },
+    {
+      "key": "Basal reduction to account %1 units:",
+      "original": "Basal reduction to account %1 units:",
+      "replacement": "%1単位を考慮した基礎インスリンの減量："
+    },
+    {
+      "key": "30m temp basal",
+      "original": "30m temp basal",
+      "replacement": "30分間の一時基礎インスリン"
+    },
+    {
+      "key": "1h temp basal",
+      "original": "1h temp basal",
+      "replacement": "1時間の一時基礎インスリン"
+    },
+    {
+      "key": "Cannula change overdue!",
+      "original": "Cannula change overdue!",
+      "replacement": "カニューレの交換時期を過ぎています！"
+    },
+    {
+      "key": "Time to change cannula",
+      "original": "Time to change cannula",
+      "replacement": "カニューレの交換時期です"
+    },
+    {
+      "key": "Change cannula soon",
+      "original": "Change cannula soon",
+      "replacement": "まもなくカニューレの交換時期です"
+    },
+    {
+      "key": "Cannula age %1 hours",
+      "original": "Cannula age %1 hours",
+      "replacement": "カニューレ使用から%1時間"
+    },
+    {
+      "key": "Inserted",
+      "original": "Inserted",
+      "replacement": "挿入日時"
+    },
+    {
+      "key": "CAGE",
+      "original": "CAGE",
+      "replacement": "カニューレ経過"
+    },
+    {
+      "key": "COB",
+      "original": "COB",
+      "replacement": "残存糖質"
+    },
+    {
+      "key": "Last Carbs",
+      "original": "Last Carbs",
+      "replacement": "最後の糖質摂取"
+    },
+    {
+      "key": "IAGE",
+      "original": "IAGE",
+      "replacement": "インスリン経過"
+    },
+    {
+      "key": "Insulin reservoir change overdue!",
+      "original": "Insulin reservoir change overdue!",
+      "replacement": "インスリン容器の交換時期を過ぎています！"
+    },
+    {
+      "key": "Time to change insulin reservoir",
+      "original": "Time to change insulin reservoir",
+      "replacement": "インスリン容器の交換時期です"
+    },
+    {
+      "key": "Change insulin reservoir soon",
+      "original": "Change insulin reservoir soon",
+      "replacement": "まもなくインスリン容器の交換時期です"
+    },
+    {
+      "key": "Insulin reservoir age %1 hours",
+      "original": "Insulin reservoir age %1 hours",
+      "replacement": "インスリン容器使用から%1時間"
+    },
+    {
+      "key": "Changed",
+      "original": "Changed",
+      "replacement": "交換日時"
+    },
+    {
+      "key": "IOB",
+      "original": "IOB",
+      "replacement": "残存インスリン"
+    },
+    {
+      "key": "Careportal IOB",
+      "original": "Careportal IOB",
+      "replacement": "記録からの残存インスリン量"
+    },
+    {
+      "key": "Last Bolus",
+      "original": "Last Bolus",
+      "replacement": "最後のボーラス"
+    },
+    {
+      "key": "Basal IOB",
+      "original": "Basal IOB",
+      "replacement": "基礎インスリン由来の残存量"
+    },
+    {
+      "key": "Source",
+      "original": "Source",
+      "replacement": "データ元"
+    },
+    {
+      "key": "Stale data, check rig?",
+      "original": "Stale data, check rig?",
+      "replacement": "データが古くなっています。接続機器を確認してください"
+    },
+    {
+      "key": "Last received:",
+      "original": "Last received:",
+      "replacement": "最終受信："
+    },
+    {
+      "key": "%1m ago",
+      "original": "%1m ago",
+      "replacement": "%1分前"
+    },
+    {
+      "key": "%1h ago",
+      "original": "%1h ago",
+      "replacement": "%1時間前"
+    },
+    {
+      "key": "%1d ago",
+      "original": "%1d ago",
+      "replacement": "%1日前"
+    },
+    {
+      "key": "RETRO",
+      "original": "RETRO",
+      "replacement": "過去表示"
+    },
+    {
+      "key": "SAGE",
+      "original": "SAGE",
+      "replacement": "センサー経過"
+    },
+    {
+      "key": "Sensor change/restart overdue!",
+      "original": "Sensor change/restart overdue!",
+      "replacement": "センサーの交換・再開始時期を過ぎています！"
+    },
+    {
+      "key": "Time to change/restart sensor",
+      "original": "Time to change/restart sensor",
+      "replacement": "センサーの交換・再開始時期です"
+    },
+    {
+      "key": "Change/restart sensor soon",
+      "original": "Change/restart sensor soon",
+      "replacement": "まもなくセンサーの交換・再開始時期です"
+    },
+    {
+      "key": "Sensor age %1 days %2 hours",
+      "original": "Sensor age %1 days %2 hours",
+      "replacement": "センサー使用から%1日%2時間"
+    },
+    {
+      "key": "Sensor Insert",
+      "original": "Sensor Insert",
+      "replacement": "センサーの挿入"
+    },
+    {
+      "key": "Sensor Start",
+      "original": "Sensor Start",
+      "replacement": "センサーの開始"
+    },
+    {
+      "key": "days",
+      "original": "days",
+      "replacement": "日"
+    },
+    {
+      "key": "Insulin distribution",
+      "original": "Insulin distribution",
+      "replacement": "インスリンの配分"
+    },
+    {
+      "key": "To see this report, press SHOW while in this view",
+      "original": "To see this report, press SHOW while in this view",
+      "replacement": "このレポートを表示するには、この画面で「表示」を押してください"
+    },
+    {
+      "key": "AR2 Forecast",
+      "original": "AR2 Forecast",
+      "replacement": "自己回帰モデル（AR2）の予測"
+    },
+    {
+      "key": "OpenAPS Forecasts",
+      "original": "OpenAPS Forecasts",
+      "replacement": "OpenAPSの予測"
+    },
+    {
+      "key": "Temporary Target",
+      "original": "Temporary Target",
+      "replacement": "一時目標"
+    },
+    {
+      "key": "Temporary Target Cancel",
+      "original": "Temporary Target Cancel",
+      "replacement": "一時目標を解除"
+    },
+    {
+      "key": "OpenAPS Offline",
+      "original": "OpenAPS Offline",
+      "replacement": "OpenAPSの接続停止"
+    },
+    {
+      "key": "Profiles",
+      "original": "Profiles",
+      "replacement": "プロフィール一覧"
+    },
+    {
+      "key": "Time in fluctuation",
+      "original": "Time in fluctuation",
+      "replacement": "血糖変動がある時間の割合"
+    },
+    {
+      "key": "Time in rapid fluctuation",
+      "original": "Time in rapid fluctuation",
+      "replacement": "急な血糖変動がある時間の割合"
+    },
+    {
+      "key": "This is only a rough estimation that can be very inaccurate and does not replace actual blood testing. The formula used is taken from:",
+      "original": "This is only a rough estimation that can be very inaccurate and does not replace actual blood testing. The formula used is taken from:",
+      "replacement": "これは誤差が大きくなることもある概算であり、実際の血液検査の代わりにはなりません。計算式の出典："
+    },
+    {
+      "key": "Filter by hours",
+      "original": "Filter by hours",
+      "replacement": "時間帯で絞り込み"
+    },
+    {
+      "key": "Time in fluctuation and Time in rapid fluctuation measure the % of time during the examined period, during which the blood glucose has been changing relatively fast or rapidly. Lower values are better.",
+      "original": "Time in fluctuation and Time in rapid fluctuation measure the % of time during the examined period, during which the blood glucose has been changing relatively fast or rapidly. Lower values are better.",
+      "replacement": "血糖変動がある時間の割合と急な血糖変動がある時間の割合は、対象期間に血糖が比較的速く、または急激に変化していた時間の割合を示します。値が低いほど良いとされます。"
+    },
+    {
+      "key": "Mean Total Daily Change is a sum of the absolute value of all glucose excursions for the examined period, divided by the number of days. Lower is better.",
+      "original": "Mean Total Daily Change is a sum of the absolute value of all glucose excursions for the examined period, divided by the number of days. Lower is better.",
+      "replacement": "1日あたりの平均総変化量は、対象期間の血糖変化量の絶対値を合計し、日数で割った値です。値が低いほど良いとされます。"
+    },
+    {
+      "key": "Mean Hourly Change is a sum of the absolute value of all glucose excursions for the examined period, divided by the number of hours in the period. Lower is better.",
+      "original": "Mean Hourly Change is a sum of the absolute value of all glucose excursions for the examined period, divided by the number of hours in the period. Lower is better.",
+      "replacement": "1時間あたりの平均変化量は、対象期間の血糖変化量の絶対値を合計し、時間数で割った値です。値が低いほど良いとされます。"
+    },
+    {
+      "key": "Out of Range RMS is calculated by squaring the distance out of range for all glucose readings for the examined period, summing them, dividing by the count and taking the square root. This metric is similar to in-range percentage but weights readings far out of range higher. Lower values are better.",
+      "original": "Out of Range RMS is calculated by squaring the distance out of range for all glucose readings for the examined period, summing them, dividing by the count and taking the square root. This metric is similar to in-range percentage but weights readings far out of range higher. Lower values are better.",
+      "replacement": "範囲外変動の二乗平均平方根は、対象期間の各血糖測定値について目標範囲から離れた量を二乗して合計し、測定数で割って平方根を取った値です。目標範囲内の割合と似た指標ですが、範囲から大きく離れた測定値に大きな重みを置きます。値が低いほど良いとされます。"
+    },
+    {
+      "key": "GVI (Glycemic Variability Index) and PGS (Patient Glycemic Status) are measures developed by Dexcom, detailed <a href=\"",
+      "original": "GVI (Glycemic Variability Index) and PGS (Patient Glycemic Status) are measures developed by Dexcom, detailed <a href=\"",
+      "replacement": "血糖変動指数（GVI）と患者血糖状態（PGS）はDexcomが開発した指標です。詳細は<a href=\""
+    },
+    {
+      "key": "\">can be found here</a>.",
+      "original": "\">can be found here</a>.",
+      "replacement": "\">こちらをご覧ください</a>。"
+    },
+    {
+      "key": "Mean Total Daily Change",
+      "original": "Mean Total Daily Change",
+      "replacement": "1日あたりの平均総変化量"
+    },
+    {
+      "key": "Mean Hourly Change",
+      "original": "Mean Hourly Change",
+      "replacement": "1時間あたりの平均変化量"
+    },
+    {
+      "key": "Fat [g]",
+      "original": "Fat [g]",
+      "replacement": "脂質［g］"
+    },
+    {
+      "key": "Protein [g]",
+      "original": "Protein [g]",
+      "replacement": "たんぱく質［g］"
+    },
+    {
+      "key": "Energy [kJ]",
+      "original": "Energy [kJ]",
+      "replacement": "エネルギー［kJ］"
+    },
+    {
+      "key": "Clock Views:",
+      "original": "Clock Views:",
+      "replacement": "時計の表示："
+    },
+    {
+      "key": "Clock",
+      "original": "Clock",
+      "replacement": "時計"
+    },
+    {
+      "key": "Color",
+      "original": "Color",
+      "replacement": "色"
+    },
+    {
+      "key": "Simple",
+      "original": "Simple",
+      "replacement": "簡易表示"
+    },
+    {
+      "key": "TDD average",
+      "original": "TDD average",
+      "replacement": "1日の総インスリン量の平均"
+    },
+    {
+      "key": "Bolus average",
+      "original": "Bolus average",
+      "replacement": "ボーラスの平均"
+    },
+    {
+      "key": "Basal average",
+      "original": "Basal average",
+      "replacement": "基礎インスリンの平均"
+    },
+    {
+      "key": "Base basal average:",
+      "original": "Base basal average:",
+      "replacement": "通常の基礎インスリンの平均："
+    },
+    {
+      "key": "Carbs average",
+      "original": "Carbs average",
+      "replacement": "糖質の平均"
+    },
+    {
+      "key": "Eating Soon",
+      "original": "Eating Soon",
+      "replacement": "まもなく食事"
+    },
+    {
+      "key": "Last entry {0} minutes ago",
+      "original": "Last entry {0} minutes ago",
+      "replacement": "最後の測定は{0}分前"
+    },
+    {
+      "key": "change",
+      "original": "change",
+      "replacement": "変更"
+    },
+    {
+      "key": "Speech",
+      "original": "Speech",
+      "replacement": "音声"
+    },
+    {
+      "key": "Target Top",
+      "original": "Target Top",
+      "replacement": "目標の上限"
+    },
+    {
+      "key": "Target Bottom",
+      "original": "Target Bottom",
+      "replacement": "目標の下限"
+    },
+    {
+      "key": "Canceled",
+      "original": "Canceled",
+      "replacement": "解除済み"
+    },
+    {
+      "key": "Meter BG",
+      "original": "Meter BG",
+      "replacement": "血糖測定器の値"
+    },
+    {
+      "key": "predicted",
+      "original": "predicted",
+      "replacement": "予測値"
+    },
+    {
+      "key": "future",
+      "original": "future",
+      "replacement": "未来"
+    },
+    {
+      "key": "ago",
+      "original": "ago",
+      "replacement": "前"
+    },
+    {
+      "key": "Last data received",
+      "original": "Last data received",
+      "replacement": "最後のデータ受信"
+    },
+    {
+      "key": "Clock View",
+      "original": "Clock View",
+      "replacement": "時計表示"
+    },
+    {
+      "key": "Protein",
+      "original": "Protein",
+      "replacement": "たんぱく質"
+    },
+    {
+      "key": "Fat",
+      "original": "Fat",
+      "replacement": "脂質"
+    },
+    {
+      "key": "Protein average",
+      "original": "Protein average",
+      "replacement": "たんぱく質の平均"
+    },
+    {
+      "key": "Fat average",
+      "original": "Fat average",
+      "replacement": "脂質の平均"
+    },
+    {
+      "key": "Total carbs",
+      "original": "Total carbs",
+      "replacement": "糖質の合計"
+    },
+    {
+      "key": "Total protein",
+      "original": "Total protein",
+      "replacement": "たんぱく質の合計"
+    },
+    {
+      "key": "Total fat",
+      "original": "Total fat",
+      "replacement": "脂質の合計"
+    },
+    {
+      "key": "Database Size",
+      "original": "Database Size",
+      "replacement": "データベースの容量"
+    },
+    {
+      "key": "Database Size near its limits!",
+      "original": "Database Size near its limits!",
+      "replacement": "データベースの容量が上限に近づいています！"
+    },
+    {
+      "key": "Database size is %1 MiB out of %2 MiB. Please backup and clean up database!",
+      "original": "Database size is %1 MiB out of %2 MiB. Please backup and clean up database!",
+      "replacement": "データベースの容量は上限%2 MiBのうち%1 MiBです。バックアップし、データベースを整理してください！"
+    },
+    {
+      "key": "Database file size",
+      "original": "Database file size",
+      "replacement": "データベースのファイル容量"
+    },
+    {
+      "key": "%1 MiB of %2 MiB (%3%)",
+      "original": "%1 MiB of %2 MiB (%3%)",
+      "replacement": "%2 MiB中%1 MiB（%3%）"
+    },
+    {
+      "key": "Data size",
+      "original": "Data size",
+      "replacement": "データ容量"
+    },
+    {
+      "key": "Carbs/Food/Time",
+      "original": "Carbs/Food/Time",
+      "replacement": "糖質・食品・時刻"
+    },
+    {
+      "key": "You have administration messages",
+      "original": "You have administration messages",
+      "replacement": "管理者向けのお知らせがあります"
+    },
+    {
+      "key": "Admin messages in queue",
+      "original": "Admin messages in queue",
+      "replacement": "未確認の管理者向けのお知らせ"
+    },
+    {
+      "key": "Queue empty",
+      "original": "Queue empty",
+      "replacement": "未確認のお知らせはありません"
+    },
+    {
+      "key": "There are no admin messages in queue",
+      "original": "There are no admin messages in queue",
+      "replacement": "未確認の管理者向けのお知らせはありません"
+    },
+    {
+      "key": "Please sign in using the API_SECRET to see your administration messages",
+      "original": "Please sign in using the API_SECRET to see your administration messages",
+      "replacement": "管理者向けのお知らせを表示するにはAPIシークレットで認証してください"
+    },
+    {
+      "key": "Reads enabled in default permissions",
+      "original": "Reads enabled in default permissions",
+      "replacement": "初期権限で読み取りが有効"
+    },
+    {
+      "key": "Data reads enabled",
+      "original": "Data reads enabled",
+      "replacement": "データの読み取りが有効"
+    },
+    {
+      "key": "Data writes enabled",
+      "original": "Data writes enabled",
+      "replacement": "データの書き込みが有効"
+    },
+    {
+      "key": "Data writes not enabled",
+      "original": "Data writes not enabled",
+      "replacement": "データの書き込みは無効"
+    },
+    {
+      "key": "Color prediction lines",
+      "original": "Color prediction lines",
+      "replacement": "予測線を色分け"
+    },
+    {
+      "key": "Release Notes",
+      "original": "Release Notes",
+      "replacement": "更新履歴"
+    },
+    {
+      "key": "Check for Updates",
+      "original": "Check for Updates",
+      "replacement": "更新を確認"
+    },
+    {
+      "key": "Open Source",
+      "original": "Open Source",
+      "replacement": "ソースコード公開"
+    },
+    {
+      "key": "Nightscout Info",
+      "original": "Nightscout Info",
+      "replacement": "サービスの情報"
+    },
+    {
+      "key": "The primary purpose of Loopalyzer is to visualise how the Loop closed loop system performs. It may work with other setups as well, both closed and open loop, and non loop. However depending on which uploader you use, how frequent it is able to capture your data and upload, and how it is able to backfill missing data some graphs may have gaps or even be completely empty. Always ensure the graphs look reasonable. Best is to view one day at a time and scroll through a number of days first to see.",
+      "original": "The primary purpose of Loopalyzer is to visualise how the Loop closed loop system performs. It may work with other setups as well, both closed and open loop, and non loop. However depending on which uploader you use, how frequent it is able to capture your data and upload, and how it is able to backfill missing data some graphs may have gaps or even be completely empty. Always ensure the graphs look reasonable. Best is to view one day at a time and scroll through a number of days first to see.",
+      "replacement": "ループ分析は、Loopの自動制御システムがどのように動作しているかを可視化するための機能です。他の自動制御、手動制御、ループを使わない構成でも動作する場合があります。ただし、送信機器の種類、データ取得と送信の頻度、欠損データを補完できるかによって、グラフに空白ができたり全体が空になったりすることがあります。グラフが妥当な表示になっているか、必ず確認してください。まず1日ずつ表示し、複数の日を順に確認する方法が適しています。"
+    },
+    {
+      "key": "Loopalyzer includes a time shift feature. If you for example have breakfast at 07:00 one day and at 08:00 the day after your average blood glucose curve these two days will most likely look flattened and not show the actual response after a breakfast. Time shift will compute the average time these meals were eaten and then shift all data (carbs, insulin, basal etc.) during both days the corresponding time difference so that both meals align with the average meal start time.",
+      "original": "Loopalyzer includes a time shift feature. If you for example have breakfast at 07:00 one day and at 08:00 the day after your average blood glucose curve these two days will most likely look flattened and not show the actual response after a breakfast. Time shift will compute the average time these meals were eaten and then shift all data (carbs, insulin, basal etc.) during both days the corresponding time difference so that both meals align with the average meal start time.",
+      "replacement": "ループ分析には食事の時刻をそろえる機能があります。たとえば、ある日の朝食が7時、翌日の朝食が8時だった場合、2日間の平均血糖曲線は平坦になり、朝食後の実際の反応が見えにくくなります。この機能は食事開始の平均時刻を求め、両日のすべてのデータ（糖質、インスリン、基礎インスリンなど）を時刻差の分だけ移動して、食事の開始時刻を平均にそろえます。"
+    },
+    {
+      "key": "In this example all data from first day is pushed 30 minutes forward in time and all data from second day 30 minutes backward in time so it appears as if you had had breakfast at 07:30 both days. This allows you to see your actual average blood glucose response from a meal.",
+      "original": "In this example all data from first day is pushed 30 minutes forward in time and all data from second day 30 minutes backward in time so it appears as if you had had breakfast at 07:30 both days. This allows you to see your actual average blood glucose response from a meal.",
+      "replacement": "この例では、1日目の全データを30分後へ、2日目の全データを30分前へ移動し、両日とも7時30分に朝食を取ったように表示します。これにより、食事に対する実際の平均血糖反応を確認できます。"
+    },
+    {
+      "key": "Time shift highlights the period after the average meal start time in gray, for the duration of the DIA (Duration of Insulin Action). As all data points the entire day are shifted the curves outside the gray area may not be accurate.",
+      "original": "Time shift highlights the period after the average meal start time in gray, for the duration of the DIA (Duration of Insulin Action). As all data points the entire day are shifted the curves outside the gray area may not be accurate.",
+      "replacement": "時刻をそろえた表示では、平均食事開始時刻からインスリン作用時間（DIA）が経過するまでの区間を灰色で示します。1日分すべてのデータを移動するため、灰色の区間以外の曲線は正確でない場合があります。"
+    },
+    {
+      "key": "Note that time shift is available only when viewing multiple days.",
+      "original": "Note that time shift is available only when viewing multiple days.",
+      "replacement": "食事の時刻をそろえる機能は、複数日を表示する場合だけ使用できます。"
+    },
+    {
+      "key": "Please select a maximum of two weeks duration and click Show again.",
+      "original": "Please select a maximum of two weeks duration and click Show again.",
+      "replacement": "期間を最大2週間にして、もう一度「表示」を押してください。"
+    },
+    {
+      "key": "Show profiles table",
+      "original": "Show profiles table",
+      "replacement": "プロフィール表を表示"
+    },
+    {
+      "key": "Show predictions",
+      "original": "Show predictions",
+      "replacement": "予測を表示"
+    },
+    {
+      "key": "Timeshift on meals larger than %1 g carbs consumed between %2 and %3",
+      "original": "Timeshift on meals larger than %1 g carbs consumed between %2 and %3",
+      "replacement": "%2～%3に摂取した糖質%1g超の食事を基準に時刻をそろえる"
+    },
+    {
+      "key": "Previous",
+      "original": "Previous",
+      "replacement": "前へ"
+    },
+    {
+      "key": "Previous day",
+      "original": "Previous day",
+      "replacement": "前日"
+    },
+    {
+      "key": "Next day",
+      "original": "Next day",
+      "replacement": "翌日"
+    },
+    {
+      "key": "Next",
+      "original": "Next",
+      "replacement": "次へ"
+    },
+    {
+      "key": "Temp basal delta",
+      "original": "Temp basal delta",
+      "replacement": "一時基礎インスリンの差分"
+    },
+    {
+      "key": "Authorized by token",
+      "original": "Authorized by token",
+      "replacement": "トークンで認証済み"
+    },
+    {
+      "key": "Auth role",
+      "original": "Auth role",
+      "replacement": "認証の権限グループ"
+    },
+    {
+      "key": "view without token",
+      "original": "view without token",
+      "replacement": "トークンを使わずに表示"
+    },
+    {
+      "key": "Remove stored token",
+      "original": "Remove stored token",
+      "replacement": "保存したトークンを削除"
+    },
+    {
+      "key": "Weekly Distribution",
+      "original": "Weekly Distribution",
+      "replacement": "週ごとの分布"
+    },
+    {
+      "key": "Failed authentication",
+      "original": "Failed authentication",
+      "replacement": "認証に失敗"
+    },
+    {
+      "key": "A device at IP address %1 attempted authenticating with Nightscout with wrong credentials. Check if you have an uploader setup with wrong API_SECRET or token?",
+      "original": "A device at IP address %1 attempted authenticating with Nightscout with wrong credentials. Check if you have an uploader setup with wrong API_SECRET or token?",
+      "replacement": "IPアドレス%1の機器が、誤った認証情報で接続しようとしました。送信端末のAPIシークレットやトークンの設定を確認してください"
+    },
+    {
+      "key": "Default (with leading zero and U)",
+      "original": "Default (with leading zero and U)",
+      "replacement": "標準（先頭の0と単位を表示）"
+    },
+    {
+      "key": "Concise (with U, without leading zero)",
+      "original": "Concise (with U, without leading zero)",
+      "replacement": "簡潔（単位を表示、先頭の0を省略）"
+    },
+    {
+      "key": "Minimal (without leading zero and U)",
+      "original": "Minimal (without leading zero and U)",
+      "replacement": "最小（先頭の0と単位を省略）"
+    },
+    {
+      "key": "Small Bolus Display",
+      "original": "Small Bolus Display",
+      "replacement": "少量ボーラスの表示"
+    },
+    {
+      "key": "Large Bolus Display",
+      "original": "Large Bolus Display",
+      "replacement": "多量ボーラスの表示"
+    },
+    {
+      "key": "Bolus Display Threshold",
+      "original": "Bolus Display Threshold",
+      "replacement": "ボーラス表示の切り替え量"
+    },
+    {
+      "key": "%1 U and Over",
+      "original": "%1 U and Over",
+      "replacement": "%1単位以上"
+    },
+    {
+      "key": "Event repeated %1 times.",
+      "original": "Event repeated %1 times.",
+      "replacement": "この事象は%1回発生しました。"
+    },
+    {
+      "key": "minutes",
+      "original": "minutes",
+      "replacement": "分"
+    },
+    {
+      "key": "Last recorded %1 %2 ago.",
+      "original": "Last recorded %1 %2 ago.",
+      "replacement": "最終記録：%1%2前。"
+    },
+    {
+      "key": "Security issue",
+      "original": "Security issue",
+      "replacement": "セキュリティ上の問題"
+    },
+    {
+      "key": "Weak API_SECRET detected. Please use a mix of small and CAPITAL letters, numbers and non-alphanumeric characters such as !#%&/ to reduce the risk of unauthorized access. The minimum length of the API_SECRET is 12 characters.",
+      "original": "Weak API_SECRET detected. Please use a mix of small and CAPITAL letters, numbers and non-alphanumeric characters such as !#%&/ to reduce the risk of unauthorized access. The minimum length of the API_SECRET is 12 characters.",
+      "replacement": "弱いAPIシークレットが検出されました。不正なアクセスのリスクを減らすため、英字の大文字・小文字、数字、!#%&/などの記号を組み合わせてください。APIシークレットは12文字以上必要です。"
+    },
+    {
+      "key": "less than 1",
+      "original": "less than 1",
+      "replacement": "1未満"
+    },
+    {
+      "key": "MongoDB password and API_SECRET match. This is a really bad idea. Please change both and do not reuse passwords across the system.",
+      "original": "MongoDB password and API_SECRET match. This is a really bad idea. Please change both and do not reuse passwords across the system.",
+      "replacement": "データベースのパスワードとAPIシークレットが同じです。両方を変更し、システム間で同じパスワードを使い回さないでください。"
+    }
+  ]
+}

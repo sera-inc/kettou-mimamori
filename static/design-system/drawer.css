@@ -1,0 +1,32 @@
+html body.app-page :is(#drawer,#treatmentDrawer,#boluscalcDrawer,#adminNotifiesDrawer) {display: none;box-sizing: border-box;position: fixed;top: 0 !important;right: 0;margin: var(--app-space-0);width: min(28rem,100vw) !important;height: 100dvh !important;padding: var(--app-space-2);overflow: auto;border-left: 1px solid var(--app-border);background: var(--app-surface);color: var(--app-text);box-shadow: var(--app-shadow-overlay);z-index: var(--app-z-modal);font-family: var(--app-font-sans);font-size: var(--app-text-body-size);line-height: var(--app-text-body-leading);}
+html body.app-page #buttonbar.app-dashboard-actions {display: flex;flex-wrap: wrap;justify-content: flex-start;gap: var(--app-space-1);margin: var(--app-space-0) var(--app-space-0) var(--app-space-3);padding: var(--app-space-0);width: 100%;height: auto;position: static;z-index: auto;opacity: 1;}
+html body.app-page #buttonbar.app-dashboard-actions>:is(a,button) {display: inline-flex;align-items: center;gap: var(--app-space-1);flex-shrink: 0;max-width: 100%;white-space: normal;text-align: left;}
+.app-drawer-open {overflow: hidden;}
+html body.app-page #buttonbar.app-dashboard-actions i {height: auto;padding: var(--app-space-0);line-height: inherit;color: inherit;}
+html body.app-page #buttonbar.app-dashboard-actions i.selected {color: var(--app-danger-text);}
+.app-drawer-header {position: sticky;top: calc(-1 * var(--app-space-2));display: flex;align-items: center;justify-content: space-between;gap: var(--app-space-2);padding: var(--app-space-1) var(--app-space-0);border-bottom: 1px solid var(--app-border);background: var(--app-surface);z-index: var(--app-z-sticky);}
+.app-drawer-header h2 {margin: var(--app-space-0);font-size: var(--app-text-heading-sm-size);line-height: var(--app-text-heading-sm-leading);}
+html body.app-page :is(#drawer,#treatmentDrawer,#boluscalcDrawer,#adminNotifiesDrawer) .app-drawer-close {width: auto;min-width: var(--app-row-height);min-height: var(--app-row-height);margin: var(--app-space-0);padding: var(--app-space-1);background: var(--app-surface);color: var(--app-text-link);box-shadow: none;}
+#app-drawer-backdrop {position: fixed;inset: 0;background: var(--app-text);opacity: 0.25;z-index: var(--app-z-drawer);}
+html body.app-page :is(#drawer,#treatmentDrawer,#boluscalcDrawer,#adminNotifiesDrawer) form {padding: var(--app-space-0);}
+html body.app-page :is(#drawer,#treatmentDrawer,#boluscalcDrawer,#adminNotifiesDrawer) fieldset {padding: var(--app-space-2);}
+html body.app-page #treatmentDrawer .left-column {margin-block: var(--app-space-1);}
+html body.app-page #treatmentDrawer .left-column span {display: block;width: auto;white-space: normal;overflow: visible;text-overflow: clip;}
+html body.app-page #treatmentDrawer .left-column :is(input[type="text"],input[type="number"],select),html body.app-page #treatmentDrawer :is(#notes,#glucoseValue) {width: 100%;}
+.app-drawer-table {max-width: 100%;overflow-x: auto;margin-block: var(--app-space-2);}
+.app-drawer-table:focus-visible {outline: var(--app-focus-ring-width) solid var(--app-focus-ring);outline-offset: var(--app-focus-ring-offset);}
+html body.app-page .app-drawer-table table {width: 100%;border-collapse: collapse;font-size: var(--app-text-table-size);line-height: var(--app-text-table-leading);}
+html body.app-page .app-drawer-table :is(th,td) {box-sizing: border-box;padding: var(--app-space-1);border: 1px solid var(--app-border);vertical-align: middle;}
+html body.app-page .app-drawer-table th {background: var(--app-surface-sunken);}
+html body.app-page #boluscalcDrawer :is(input,select,textarea) {max-width: 100%;}
+html body.app-page .ui-dialog {box-sizing: border-box;max-width: calc(100vw - var(--app-space-4));max-height: calc(100dvh - var(--app-space-4));padding: var(--app-space-2);overflow: auto;border: 1px solid var(--app-border);border-radius: var(--app-radius-lg);background: var(--app-surface);color: var(--app-text);box-shadow: var(--app-shadow-overlay);font-family: var(--app-font-sans);font-size: var(--app-text-body-size);z-index: var(--app-z-popover) !important;}
+html body.app-page .ui-dialog .ui-dialog-titlebar {display: flex;align-items: center;justify-content: space-between;gap: var(--app-space-1);padding: var(--app-space-1);border: 0;background: var(--app-surface-sunken);color: var(--app-text);}
+html body.app-page .ui-dialog .ui-dialog-title {float: none;margin: var(--app-space-0);font-size: var(--app-text-heading-sm-size);line-height: var(--app-text-heading-sm-leading);}
+html body.app-page .ui-dialog .ui-dialog-titlebar-close {position: static;inset: auto;transform: none;margin: var(--app-space-0);width: var(--app-row-height);height: var(--app-row-height);background: var(--app-surface);color: var(--app-text);}
+html body.app-page .ui-dialog .ui-dialog-titlebar-close .ui-icon {display: none;}
+html body.app-page .ui-dialog .ui-dialog-titlebar-close::after {content: '×';font-size: var(--app-text-heading-lg-size);}
+html body.app-page .ui-dialog .ui-dialog-content {box-sizing: border-box;max-width: 100%;padding: var(--app-space-2);border: 0;background: var(--app-surface);color: var(--app-text);}
+html body.app-page .ui-dialog .ui-dialog-buttonpane {margin-top: var(--app-space-1);padding: var(--app-space-1);border: 0;background: var(--app-surface);}
+html body.app-page .ui-dialog .ui-dialog-buttonset {display: flex;flex-wrap: wrap;gap: var(--app-space-1);}
+html body.app-page .ui-widget-overlay {background: var(--app-text);opacity: 0.25;z-index: var(--app-z-modal) !important;}
+@media (max-width: 767px) {html body.app-page :is(#drawer,#treatmentDrawer,#boluscalcDrawer,#adminNotifiesDrawer) {width: 100vw !important;}}

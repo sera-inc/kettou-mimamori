@@ -1,0 +1,6 @@
+{
+  "baseline": "92d0834219aa771b5837dbcbf1baeb839a200cf6",
+  "file": "lib/food/food.js",
+  "pass": true,
+  "scope": "Complete production AST matches upstream after reversing only resortArray; drop handling, nutrient calculations, edit validation, confirmations, authentication and save payloads unchanged. Sort callback tested separately by check-food-order.cjs."
+}

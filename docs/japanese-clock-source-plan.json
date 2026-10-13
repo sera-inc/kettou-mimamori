@@ -1,0 +1,22 @@
+[
+  {
+    "before": "    let staleTimeText;",
+    "after": "    let staleTimeText;\r\n    const japanese = String(client.settings.language || '').startsWith('ja');",
+    "beforeSHA256": "421bc08502228ecfbb3e6ba8e381c51559a8221c4125b94221ae8f1ac2104df2"
+  },
+  {
+    "before": "staleTimeText = 'Just now';",
+    "after": "staleTimeText = japanese ? 'たった今' : 'Just now';",
+    "beforeSHA256": "c545bdd9493744aded86b7e47df5c458ef33c387a53718cb4e30a2aa5930a7f8"
+  },
+  {
+    "before": "staleTimeText = '1 minute ago';",
+    "after": "staleTimeText = japanese ? '1分前' : '1 minute ago';",
+    "beforeSHA256": "bb3f8f68a34cb3852af33560230a7b66be0c9bc0cf832024d0930c2216255790"
+  },
+  {
+    "before": "staleTimeText = elapsedMins + ' minutes ago';",
+    "after": "staleTimeText = elapsedMins + (japanese ? '分前' : ' minutes ago');",
+    "beforeSHA256": "d9239327e1f1f72d4edf35df71067e8d315ce7f0243b99770820f93b9cd3af4a"
+  }
+]

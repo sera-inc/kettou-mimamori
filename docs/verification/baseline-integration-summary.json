@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "suites": 159,
+    "tests": 707,
+    "passes": 698,
+    "pending": 3,
+    "failures": 6,
+    "start": "2026-10-12T13:14:25.701Z",
+    "end": "2026-10-12T13:16:09.842Z",
+    "duration": 104141
+  },
+  "failures": [
+    {
+      "title": "Devicestatus API post a devicestatus, query, delete, verify gone",
+      "error": "Cannot read properties of undefined (reading 'equal')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'equal')\n    at Test.<anonymous> (tests/api.devicestatus.test.js:59:14)\n    at Test.assert (node_modules/supertest/lib/test.js:204:10)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:61:53\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)"
+    },
+    {
+      "title": "Devicestatus API _id validation should return 400 for POST with invalid UUID _id",
+      "error": "Cannot read properties of undefined (reading 'have')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'have')\n    at Context.<anonymous> (tests/api.devicestatus.test.js:113:10)\n    at process.processImmediate (node:internal/timers:484:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:114:32\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)"
+    },
+    {
+      "title": "Devicestatus API _id validation should return 400 for DELETE with invalid _id",
+      "error": "Cannot read properties of undefined (reading 'match')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'match')\n    at Context.<anonymous> (tests/api.devicestatus.test.js:141:10)\n    at process.processImmediate (node:internal/timers:484:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:142:40\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)"
+    },
+    {
+      "title": "Devicestatus API _id validation should accept POST with valid 24-hex _id",
+      "error": "Cannot read properties of undefined (reading 'be')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'be')\n    at Test.<anonymous> (tests/api.devicestatus.test.js:167:14)\n    at Test.assert (node_modules/supertest/lib/test.js:204:10)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:168:36\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)"
+    },
+    {
+      "title": "Devicestatus API _id validation should accept POST without _id (auto-generate)",
+      "error": "Cannot read properties of undefined (reading 'be')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'be')\n    at Context.<anonymous> (tests/api.devicestatus.test.js:195:10)\n    at process.processImmediate (node:internal/timers:484:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:196:32\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)"
+    },
+    {
+      "title": "Devicestatus API _id validation should return 400 for array POST with one invalid _id",
+      "error": "Cannot read properties of undefined (reading 'match')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'match')\n    at Context.<anonymous> (tests/api.devicestatus.test.js:225:10)\n    at process.processImmediate (node:internal/timers:484:21)\n----\n    at /opt/app/tests/api.devicestatus.test.js:226:40\n    at /opt/app/node_modules/supertest/lib/test.js:365:13\n    at Test._assertFunction (node_modules/supertest/lib/test.js:342:13)\n    at Test.assert (node_modules/supertest/lib/test.js:195:23)\n    at localAssert (node_modules/supertest/lib/test.js:138:14)\n    at Server.<anonymous> (node_modules/supertest/lib/test.js:152:11)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at emitCloseNT (node:net:2420:8)\n    at process.processTicksAndRejections (node:internal/process/task_queues:88:21)"
+    }
+  ]
+}

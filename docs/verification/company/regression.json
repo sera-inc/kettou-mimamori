@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 11,
+    "tests": 52,
+    "passes": 52,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T04:00:46.640Z",
+    "end": "2026-10-13T04:01:03.861Z",
+    "duration": 17221
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/api.status.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:00:47.151Z",
+        "end": "2026-10-13T04:00:48.949Z",
+        "duration": 1798
+      }
+    },
+    {
+      "file": "tests/api3.basic.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:00:50.084Z",
+        "end": "2026-10-13T04:00:52.244Z",
+        "duration": 2160
+      }
+    },
+    {
+      "file": "tests/api3.shape-handling.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 11,
+        "passes": 11,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:00:53.835Z",
+        "end": "2026-10-13T04:00:56.288Z",
+        "duration": 2453
+      }
+    },
+    {
+      "file": "tests/japanese-locale.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:00:56.843Z",
+        "end": "2026-10-13T04:00:57.309Z",
+        "duration": 466
+      }
+    },
+    {
+      "file": "tests/language.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:00:57.699Z",
+        "end": "2026-10-13T04:00:57.828Z",
+        "duration": 129
+      }
+    },
+    {
+      "file": "tests/profile-sinks.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:01:01.618Z",
+        "end": "2026-10-13T04:01:03.078Z",
+        "duration": 1460
+      }
+    },
+    {
+      "file": "tests/settings.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 14,
+        "passes": 14,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T04:01:03.805Z",
+        "end": "2026-10-13T04:01:03.841Z",
+        "duration": 36
+      }
+    }
+  ],
+  "failures": []
+}

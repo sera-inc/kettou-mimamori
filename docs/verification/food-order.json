@@ -1,0 +1,63 @@
+[
+  {
+    "case": "move visible record to beginning",
+    "pass": true,
+    "order": [
+      "C",
+      "A",
+      "B"
+    ],
+    "recordsAndNutrientsPreserved": true
+  },
+  {
+    "case": "move visible record to end",
+    "pass": true,
+    "order": [
+      "B",
+      "C",
+      "A"
+    ],
+    "recordsAndNutrientsPreserved": true
+  },
+  {
+    "case": "hidden first record stays first",
+    "pass": true,
+    "order": [
+      "hidden",
+      "B",
+      "A"
+    ],
+    "recordsAndNutrientsPreserved": true
+  },
+  {
+    "case": "hidden middle record is retained when moving down",
+    "pass": true,
+    "order": [
+      "hidden",
+      "B",
+      "A"
+    ],
+    "recordsAndNutrientsPreserved": true
+  },
+  {
+    "case": "only visible record stays at its original array position",
+    "pass": true,
+    "order": [
+      "hidden1",
+      "A",
+      "hidden2"
+    ],
+    "recordsAndNutrientsPreserved": true
+  },
+  {
+    "case": "move between visible anchors across a hidden record",
+    "pass": true,
+    "order": [
+      "A",
+      "hidden",
+      "C",
+      "B"
+    ],
+    "recordsAndNutrientsPreserved": true
+  }
+]

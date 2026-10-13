@@ -1,0 +1,45 @@
+/* Product-specific Layer 2 categories; no geometry or clinical thresholds. */
+:root {
+  --app-chart-exercise: var(--dads-color-purple-800);
+  --app-chart-note: var(--dads-color-orange-800);
+  --app-chart-prediction: var(--dads-color-purple-800);
+  --app-chart-forecast-ar2: var(--dads-color-cyan-1000);
+  --app-chart-forecast-value: var(--dads-color-magenta-1000);
+  --app-chart-forecast-iob: var(--dads-color-blue-900);
+  --app-chart-forecast-cob: var(--dads-color-orange-1000);
+  --app-chart-forecast-acob: var(--dads-color-purple-1000);
+  --app-chart-forecast-zt: var(--dads-color-green-1000);
+  --app-chart-forecast-uam: var(--dads-color-yellow-1000);
+  --app-chart-percentile-outer: var(--dads-color-cyan-900);
+  --app-chart-day-1: var(--dads-color-purple-800);
+  --app-chart-day-2: var(--dads-color-cyan-1000);
+  --app-chart-day-3: var(--dads-color-green-800);
+  --app-chart-day-4: var(--dads-color-blue-600);
+  --app-chart-day-5: var(--dads-color-magenta-900);
+  --app-chart-day-6: var(--dads-color-blue-900);
+  --app-chart-day-7: var(--dads-color-lime-900);
+  --app-chart-cal-ink-1: var(--dads-color-cyan-1000);
+  --app-chart-cal-ink-2: var(--dads-color-blue-900);
+  --app-chart-cal-ink-3: var(--dads-color-orange-900);
+  --app-chart-cal-ink-4: var(--dads-color-lime-900);
+  --app-chart-cal-ink-5: var(--dads-color-red-900);
+  --app-chart-cal-ink-6: var(--dads-color-blue-700);
+  --app-chart-cal-ink-7: var(--dads-color-green-900);
+  --app-chart-cal-ink-8: var(--dads-color-magenta-900);
+  --app-chart-cal-ink-9: var(--dads-color-orange-1000);
+  --app-chart-cal-ink-10: var(--dads-color-magenta-800);
+  --app-chart-cal-ink-11: var(--dads-color-green-800);
+  --app-chart-cal-ink-12: var(--dads-color-yellow-1000);
+  --app-chart-cal-bg-1: var(--dads-color-cyan-50);
+  --app-chart-cal-bg-2: var(--dads-color-blue-50);
+  --app-chart-cal-bg-3: var(--dads-color-orange-50);
+  --app-chart-cal-bg-4: var(--dads-color-lime-50);
+  --app-chart-cal-bg-5: var(--dads-color-red-50);
+  --app-chart-cal-bg-6: var(--dads-color-blue-100);
+  --app-chart-cal-bg-7: var(--dads-color-green-50);
+  --app-chart-cal-bg-8: var(--dads-color-magenta-50);
+  --app-chart-cal-bg-9: var(--dads-color-orange-100);
+  --app-chart-cal-bg-10: var(--dads-color-magenta-100);
+  --app-chart-cal-bg-11: var(--dads-color-green-50);
+  --app-chart-cal-bg-12: var(--dads-color-yellow-50);
+}

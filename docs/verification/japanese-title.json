@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-10-13T13:57:29.611Z",
+  "scope": "Actual current seeded older-reading branch on five primary routes, desktop/mobile; titles retain service and page names, English time labels removed; no interception or API writes",
+  "results": [
+    {
+      "route": "/",
+      "width": 1440,
+      "title": "血糖の状態 | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/report",
+      "width": 1440,
+      "title": "1 時間前 | レポート | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/profile",
+      "width": 1440,
+      "title": "1 時間前 | プロフィール | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/food",
+      "width": 1440,
+      "title": "1 時間前 | 食品と食事 | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/admin",
+      "width": 1440,
+      "title": "1 時間前 | 管理ツール | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "title": "血糖の状態 | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/report",
+      "width": 390,
+      "title": "1 時間前 | レポート | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/profile",
+      "width": 390,
+      "title": "1 時間前 | プロフィール | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/food",
+      "width": 390,
+      "title": "1 時間前 | 食品と食事 | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    },
+    {
+      "route": "/admin",
+      "width": 390,
+      "title": "1 時間前 | 管理ツール | 血糖みまもり",
+      "realStaleReadings": true,
+      "pageErrors": []
+    }
+  ]
+}

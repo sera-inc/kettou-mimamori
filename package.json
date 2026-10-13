@@ -1,10 +1,13 @@
 {
-  "name": "nightscout",
+  "name": "kettou-mimamori",
   "version": "15.0.8",
-  "description": "Nightscout acts as a web-based CGM (Continuous Glucose Montinor) to allow multiple caregivers to remotely view a patients glucose data in realtime.",
+  "description": "血糖値の推移、治療記録、食品とプロフィールを確認する血糖みまもり",
   "license": "AGPL-3.0",
-  "author": "Nightscout Team",
-  "homepage": "http://nightscout.github.io/",
+  "author": {
+    "name": "株式会社世良",
+    "email": "info@sera-inc.co.jp"
+  },
+  "homepage": "https://sera-inc.co.jp",
   "keywords": [
     "diabetes",
     "continuous glucose management",
@@ -14,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nightscout/cgm-remote-monitor.git"
+    "url": "https://github.com/sera-inc/kettou-mimamori.git"
   },
   "contributors": [
     {
@@ -23,13 +26,14 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/nightscout/cgm-remote-monitor/issues"
+    "email": "info@sera-inc.co.jp"
   },
   "scripts": {
     "start": "node lib/server/server.js",
     "test": "env-cmd -f ./my.test.env mocha --timeout 5000 --require ./tests/hooks.js --exit ./tests/*.test.js",
     "test-single": "env-cmd -f ./my.test.env mocha --timeout 5000 --require ./tests/hooks.js --exit ./tests/$TEST.test.js",
     "test:core": "mocha --timeout 5000 --exit ./tests/client-core/**/*.test.js",
+    "test:a11y": "node scripts/check-a11y.cjs",
     "test-ci": "env-cmd -f ./tests/ci.test.env nyc --reporter=lcov --reporter=text-summary mocha --timeout 5000 --require ./tests/hooks.js --exit ./tests/*.test.js",
     "test:fast": "env-cmd -f ./my.test.env mocha --timeout 5000 --require ./tests/hooks.js --exit --reporter min ./tests/*.test.js",
     "test:unit": "env-cmd -f ./my.test.env mocha --timeout 5000 --require ./tests/hooks.js --exit --parallel --jobs 2 ./tests/{admintools,ar2,basalprofileplugin,bgnow,boluswizardpreview,bridge,bridge-connect-compat,cannulaage,careportal,cob,data.*,ddata,direction,env,errorcodes,expressextensions,hashauth,insulinage,iob,language,levels,loop,maker,mmconnect,mongo-pool-config,pluginbase,plugins,profile,profileeditor,pushover,query,sandbox,security,sensorage,settings,simplealarms,timeago,times,treatmentnotify,units,upbat,utils,verifyauth}.test.js",
@@ -159,6 +163,7 @@
   },
   "devDependencies": {
     "@types/tough-cookie": "^4.0.0",
+    "axe-core": "4.13.0",
     "axios": "^0.31.1",
     "babel-eslint": "^10.1.0",
     "csv-parse": "^4.12.0",
@@ -171,6 +176,7 @@
     "mocha": "^11.7.5",
     "nodemon": "^3.1.14",
     "nyc": "^18.0.0",
+    "playwright": "1.62.1",
     "should": "^13.2.3",
     "supertest": "^7.2.2",
     "webpack-bundle-analyzer": "^4.5.0",
@@ -226,5 +232,6 @@
     "mongodb": {
       "mongodb-connection-string-url": "3.0.2"
     }
-  }
+  },
+  "protocolName": "nightscout"
 }

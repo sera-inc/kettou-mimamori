@@ -1,0 +1,134 @@
+{
+  "generatedAt": "2026-10-13T02:45:30.066Z",
+  "scope": "Seven known default forecast paints, actual computed DDS colors and alpha-composited contrast; frozen model records, exact custom colors, noFade, transparent/past/out-of-range/nonfinite opacity preserved; no API writes",
+  "results": [
+    {
+      "case": "ar2",
+      "pass": true,
+      "color": "cyan",
+      "token": "var(--app-chart-forecast-ar2)",
+      "modelRecordUnchanged": true
+    },
+    {
+      "case": "value",
+      "pass": true,
+      "color": "#ff00ff",
+      "token": "var(--app-chart-forecast-value)",
+      "modelRecordUnchanged": true
+    },
+    {
+      "case": "iob",
+      "pass": true,
+      "color": "#1e88e5",
+      "token": "var(--app-chart-forecast-iob)",
+      "modelRecordUnchanged": true
+    },
+    {
+      "case": "cob",
+      "pass": true,
+      "color": "#FB8C00",
+      "token": "var(--app-chart-forecast-cob)",
+      "modelRecordUnchanged": true
+    },
+    {
+      "case": "acob",
+      "pass": true,
+      "color": "#FB8C00",
+      "token": "var(--app-chart-forecast-acob)",
+      "modelRecordUnchanged": true
+    },
+    {
+      "case": "zt",
+      "pass": true,
+      "color": "#00d2d2",
+      "token": "var(--app-chart-forecast-zt)",
+      "modelRecordUnchanged": true
+    },
+    {
+      "case": "uam",
+      "pass": true,
+      "color": "#c9bd60",
+      "token": "var(--app-chart-forecast-uam)",
+      "modelRecordUnchanged": true
+    }
+  ],
+  "palette": [
+    {
+      "name": "ar2",
+      "color": "rgb(0, 97, 115)",
+      "minimumOpacity": 0.7,
+      "surface": [
+        255,
+        255,
+        255
+      ],
+      "minimumContrast": 3.6133024621651306
+    },
+    {
+      "name": "value",
+      "color": "rgb(108, 0, 108)",
+      "minimumOpacity": 0.7,
+      "surface": [
+        255,
+        255,
+        255
+      ],
+      "minimumContrast": 5.470635957799621
+    },
+    {
+      "name": "iob",
+      "color": "rgb(0, 23, 193)",
+      "minimumOpacity": 0.7,
+      "surface": [
+        255,
+        255,
+        255
+      ],
+      "minimumContrast": 5.512093232520119
+    },
+    {
+      "name": "cob",
+      "color": "rgb(139, 50, 0)",
+      "minimumOpacity": 0.7,
+      "surface": [
+        255,
+        255,
+        255
+      ],
+      "minimumContrast": 4.041134169508614
+    },
+    {
+      "name": "acob",
+      "color": "rgb(65, 4, 142)",
+      "minimumOpacity": 0.7,
+      "surface": [
+        255,
+        255,
+        255
+      ],
+      "minimumContrast": 5.864758673731373
+    },
+    {
+      "name": "zt",
+      "color": "rgb(12, 71, 42)",
+      "minimumOpacity": 0.7,
+      "surface": [
+        255,
+        255,
+        255
+      ],
+      "minimumContrast": 4.577545627233781
+    },
+    {
+      "name": "uam",
+      "color": "rgb(128, 99, 0)",
+      "minimumOpacity": 0.7,
+      "surface": [
+        255,
+        255,
+        255
+      ],
+      "minimumContrast": 3.075323704130096
+    }
+  ]
+}

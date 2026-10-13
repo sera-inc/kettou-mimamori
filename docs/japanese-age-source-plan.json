@@ -1,0 +1,16 @@
+[
+  {
+    "file": "lib/plugins/pluginbase.js",
+    "before": "var toTextContent = require('../utils/html').toTextContent;",
+    "after": "var toTextContent = require('../utils/html').toTextContent;\r\nvar displayAge = require('../utils/display-age');",
+    "beforeSourceSHA256": "41354a22855930898be30d1e6883010f0cd485ef43130d08febb4297185a38d5",
+    "reason": "Localize day/hour/minute abbreviations at the age pill DOM boundary only; input properties, alert levels, ages and payloads unchanged"
+  },
+  {
+    "file": "lib/plugins/pluginbase.js",
+    "before": ".text(toTextContent(options.value))",
+    "after": ".text(toTextContent(displayAge(plugin.name, options.value, typeof window !== 'undefined' && window.Nightscout?.client?.language?.lang)))",
+    "beforeSourceSHA256": "f0dee7841c003d7a42c2d644e78e7db4335b11d4e087d3ff7e6026fa24ac589d",
+    "reason": "Localize day/hour/minute abbreviations at the age pill DOM boundary only; input properties, alert levels, ages and payloads unchanged"
+  }
+]

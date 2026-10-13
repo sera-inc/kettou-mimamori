@@ -1,0 +1,7 @@
+{
+  "file": "lib/report_plugins/loopalyzer.js",
+  "beforeSHA256": "fba957dc477b2f79e3121d9e220eb5cec0290e5c33d9cc13d9a847163b947521",
+  "before": "if (!found && recDate.isAfter(fromDate) && recDate.isBefore(toDate))",
+  "after": "if (!found && !recDate.isBefore(fromDate) && recDate.isBefore(toDate))",
+  "reason": "Use half-open five-minute intervals [start, end) so readings exactly at midnight or five-minute boundaries are retained once."
+}

@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "case": "original notification API preserves safe rich link, persistent message, native close and focus return; unsafe markup cannot execute",
+      "pass": true
+    },
+    {
+      "case": "FIFO overflow promotion, original clear API including queued messages, and action callback work",
+      "pass": true
+    },
+    {
+      "case": "separate polite/assertive live regions and responsive notification layout",
+      "box": {
+        "x": 16,
+        "y": 438.65625,
+        "width": 358,
+        "height": 389.34375
+      },
+      "pass": true
+    }
+  ],
+  "pageErrors": []
+}

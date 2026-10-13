@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-10-13T05:16:25.310Z",
+  "pass": true,
+  "changedValues": 416,
+  "uiTranslationRows": 145,
+  "originalTotalKeys": 705,
+  "totalKeys": 839,
+  "existingKeysPreserved": true,
+  "exactPlaceholders": true,
+  "outsidePlanMatchesUpstream": true,
+  "scope": "Japanese dictionary values only; exact keys, placeholders, original clinical conditions/counts/units and protocol values preserved. Product/source proper nouns and internationally used units remain where needed."
+}

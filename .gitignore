@@ -10,6 +10,13 @@ bundle/bundle.out.js
 my.env
 my.*.env
 *.pem
+.env.local
+docs/*-unit.json
+docs/*-integration.json
+docs/*.log
+docs/*.tar
+docs/verification/**/*.png
+docs/verification/**/*.webm
 
 fly.toml
 

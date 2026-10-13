@@ -1,0 +1,35 @@
+[
+  {
+    "file": "lib/server/swagger.json",
+    "beforeSemanticSHA256": "f436ad4fc95e63db70ee7b23c8aece953b95b8749b028e9326c151e816886812",
+    "original": null,
+    "replacement": {
+      "name": "株式会社世良",
+      "url": "https://sera-inc.co.jp",
+      "email": "info@sera-inc.co.jp"
+    }
+  },
+  {
+    "file": "lib/server/swagger.yaml",
+    "beforeSemanticSHA256": "72e58e2a88fb81e9bc129ac2f94abec037d5af6767b7f92b1f26fbd0cca6883f",
+    "original": null,
+    "replacement": {
+      "name": "株式会社世良",
+      "url": "https://sera-inc.co.jp",
+      "email": "info@sera-inc.co.jp"
+    }
+  },
+  {
+    "file": "lib/api3/swagger.yaml",
+    "beforeSemanticSHA256": "fced12994203301bc2f27b7bac3b8cb4dbda8501b6ad6f96a9ed7639c4a7777c",
+    "original": {
+      "name": "NS development discussion channel",
+      "url": "https://gitter.im/nightscout/public"
+    },
+    "replacement": {
+      "name": "株式会社世良",
+      "url": "https://sera-inc.co.jp",
+      "email": "info@sera-inc.co.jp"
+    }
+  }
+]

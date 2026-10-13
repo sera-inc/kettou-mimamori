@@ -1,0 +1,14 @@
+[
+  {
+    "file": "lib/server/app.js",
+    "before": "\r\n\r\n  app.get('/api-docs.html', function(req, res) {\r\n    res.redirect(307, '/api-docs');\r\n  });",
+    "after": "",
+    "beforeSHA256": "60f51512940a511f57edc6f83e4fc6ede44f928b0086edc1a197a237efadd78c"
+  },
+  {
+    "file": "lib/server/app.js",
+    "before": "  // serve the static content\r\n  app.use(staticFiles);",
+    "after": "  app.get('/api-docs.html', function(req, res) {\r\n    res.redirect(307, '/api-docs');\r\n  });\r\n\r\n  // serve the static content\r\n  app.use(staticFiles);",
+    "beforeSHA256": "e07f89376f5427d6162389da682300ef418f55c1852fa8252da0be0d50ed8836"
+  }
+]

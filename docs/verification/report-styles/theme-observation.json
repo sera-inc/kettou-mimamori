@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-10-12T17:31:05.629Z",
+  "palettes": [
+    {
+      "category": "calibration 1",
+      "ink": "#006173",
+      "surface": "#e9f7f9",
+      "onWhite": 7.10073907665164,
+      "onSurface": 6.470783140136451
+    },
+    {
+      "category": "calibration 2",
+      "ink": "#0017c1",
+      "surface": "#e8f1fe",
+      "onWhite": 11.095790722930166,
+      "onSurface": 9.745502310485112
+    },
+    {
+      "category": "calibration 3",
+      "ink": "#ac3e00",
+      "surface": "#ffeee2",
+      "onWhite": 6.099011409998268,
+      "onSurface": 5.396176336168876
+    },
+    {
+      "category": "calibration 4",
+      "ink": "#507500",
+      "surface": "#ebfad9",
+      "onWhite": 5.4045560092361695,
+      "onSurface": 4.943528641795402
+    },
+    {
+      "category": "calibration 5",
+      "ink": "#ce0000",
+      "surface": "#fdeeee",
+      "onWhite": 5.794122728914701,
+      "onSurface": 5.1432366226816955
+    },
+    {
+      "category": "calibration 6",
+      "ink": "#264af4",
+      "surface": "#d9e6ff",
+      "onWhite": 6.234679988346858,
+      "onSurface": 4.961934929447117
+    },
+    {
+      "category": "calibration 7",
+      "ink": "#115a36",
+      "surface": "#e6f5ec",
+      "onWhite": 8.269122150580186,
+      "onSurface": 7.338565439902246
+    },
+    {
+      "category": "calibration 8",
+      "ink": "#8b008b",
+      "surface": "#f3e5f4",
+      "onWhite": 8.499926735872357,
+      "onSurface": 7.012436560408639
+    },
+    {
+      "category": "calibration 9",
+      "ink": "#8b3200",
+      "surface": "#ffdfca",
+      "onWhite": 8.22228566304115,
+      "onSurface": 6.522983572394852
+    },
+    {
+      "category": "calibration 10",
+      "ink": "#aa00aa",
+      "surface": "#ffd0ff",
+      "onWhite": 6.383627886118939,
+      "onSurface": 4.778099899218362
+    },
+    {
+      "category": "calibration 11",
+      "ink": "#197a4b",
+      "surface": "#e6f5ec",
+      "onWhite": 5.3479367103367474,
+      "onSurface": 4.746112441271428
+    },
+    {
+      "category": "calibration 12",
+      "ink": "#806300",
+      "surface": "#fbf5e0",
+      "onWhite": 5.671728574325212,
+      "onSurface": 5.196160269604881
+    },
+    {
+      "category": "weekday 1",
+      "ink": "#5c10be",
+      "surface": "#ffffff",
+      "onWhite": 9.240030553693787,
+      "onSurface": 9.240030553693787
+    },
+    {
+      "category": "weekday 2",
+      "ink": "#006173",
+      "surface": "#ffffff",
+      "onWhite": 7.10073907665164,
+      "onSurface": 7.10073907665164
+    },
+    {
+      "category": "weekday 3",
+      "ink": "#197a4b",
+      "surface": "#ffffff",
+      "onWhite": 5.3479367103367474,
+      "onSurface": 5.3479367103367474
+    },
+    {
+      "category": "weekday 4",
+      "ink": "#3460fb",
+      "surface": "#ffffff",
+      "onWhite": 4.9855558569158624,
+      "onSurface": 4.9855558569158624
+    },
+    {
+      "category": "weekday 5",
+      "ink": "#8b008b",
+      "surface": "#ffffff",
+      "onWhite": 8.499926735872357,
+      "onSurface": 8.499926735872357
+    },
+    {
+      "category": "weekday 6",
+      "ink": "#0017c1",
+      "surface": "#ffffff",
+      "onWhite": 11.095790722930166,
+      "onSurface": 11.095790722930166
+    },
+    {
+      "category": "weekday 7",
+      "ink": "#507500",
+      "surface": "#ffffff",
+      "onWhite": 5.4045560092361695,
+      "onSurface": 5.4045560092361695
+    }
+  ],
+  "classifications": [
+    {
+      "classification": "darkgreen",
+      "paint": "var(--app-success-text)",
+      "computedFill": "rgb(25, 122, 75)"
+    },
+    {
+      "classification": "red",
+      "paint": "var(--app-danger-text)",
+      "computedFill": "rgb(206, 0, 0)"
+    },
+    {
+      "classification": "gray",
+      "paint": "var(--app-text-muted)",
+      "computedFill": "rgb(102, 102, 102)"
+    },
+    {
+      "classification": "purple",
+      "paint": "var(--app-chart-prediction)",
+      "computedFill": "rgb(92, 16, 190)"
+    },
+    {
+      "classification": "transparent",
+      "paint": "transparent",
+      "computedFill": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "classification": "var(--app-chart-day-1)",
+      "paint": "var(--app-chart-day-1)",
+      "computedFill": "rgb(92, 16, 190)"
+    }
+  ],
+  "rejected": [
+    {
+      "token": "#fff",
+      "rejected": true,
+      "message": "A report color must use a semantic token"
+    },
+    {
+      "token": "--dads-color-white",
+      "rejected": true,
+      "message": "A report color must use a semantic token"
+    },
+    {
+      "token": "--app-does-not-exist",
+      "rejected": true,
+      "message": "Report color token is not resolved: --app-does-not-exist"
+    }
+  ]
+}

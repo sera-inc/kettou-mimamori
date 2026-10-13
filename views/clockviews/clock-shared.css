@@ -3,9 +3,9 @@ body {
   margin: 0 0;
   padding: 0;
   overflow: hidden;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  color: grey;
-  background-color: black;
+  font-family: var(--app-font-sans);
+  color: var(--app-text);
+  background-color: var(--app-surface-sunken);
 }
 
 main {
@@ -28,7 +28,7 @@ main {
 #inner div {
   margin-right: 2vmin;
   margin-left: 2vmin;
-  line-height: 1em;
+  line-height: var(--app-text-body-leading);
 }
 
 #inner div img {
@@ -42,7 +42,7 @@ main {
 }
 
 #errorMessage {
-  font-size: 25em;
+  font-size: var(--app-text-heading-lg-size);
 }
 
 .stale {
@@ -50,13 +50,13 @@ main {
 }
 
 .close {
-  color: white;
-  font: 4em 'Open Sans';
+  color: var(--app-text);
+  font: var(--app-font-weight-normal) var(--app-text-body-size)/var(--app-text-body-leading) var(--app-font-sans);
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 1.25rem;
   text-decoration: none;
-  z-index: 10;
+  z-index: var(--app-z-sticky);
 }
 
 .close:after {

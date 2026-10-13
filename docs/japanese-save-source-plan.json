@@ -1,0 +1,83 @@
+[
+  {
+    "file": "lib/food/food.js",
+    "before": ".text('Loading food database ...')",
+    "after": ".text(translate('Loading food database ...'))",
+    "beforeSourceSHA256": "bfa27442f45ad2429e2ed49d83b65e3a993b537f0302e0713e6e42b8a043e273",
+    "reason": "Translate transient load/save/delete status text; request, response and validation behavior retained"
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": ".text('OK')",
+    "after": ".text(translate('Record saved'))",
+    "beforeSourceSHA256": "60f7b3dfaee16219c17fcaab527b46d00f54fe3a099ed8c7ecde28cb6857a89b",
+    "reason": "Translate transient load/save/delete status text; request, response and validation behavior retained",
+    "reverseLastOccurrence": true
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": ".text('OK')",
+    "after": ".text(translate('Record saved'))",
+    "beforeSourceSHA256": "4223090e0eaecd7b2cd39aa6e0cc4b554f9db9cdd4a529ff5bb4497f6e44155a",
+    "reason": "Translate transient load/save/delete status text; request, response and validation behavior retained",
+    "reverseLastOccurrence": true
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": ".text('OK')",
+    "after": ".text(translate('Record saved'))",
+    "beforeSourceSHA256": "15093184704ca099649970db90f6593da2e8232621c7341499cf43c6ff0cfb1d",
+    "reason": "Translate transient load/save/delete status text; request, response and validation behavior retained",
+    "reverseLastOccurrence": true
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": ".text('OK')",
+    "after": ".text(translate('Record saved'))",
+    "beforeSourceSHA256": "9ec8318fd286200521de75c578473e79d1a082515585a5e5857e0365c97827d5",
+    "reason": "Translate transient load/save/delete status text; request, response and validation behavior retained",
+    "reverseLastOccurrence": true
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": ".text(status)",
+    "after": ".text(translate('Record removed'))",
+    "beforeSourceSHA256": "829920faabf8b41106cf175e320ad433f7bbb88de04add71bd98fada8b80fa35",
+    "reason": "Translate transient profile operation status; HTTP result handling unchanged"
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": ".text(status)",
+    "after": ".text(translate('Record removal failed'))",
+    "beforeSourceSHA256": "f6ebc67ea34f581e47afb795e8bd51577022a9c08f4922d1f56e504ce671631f",
+    "reason": "Translate transient profile operation status; HTTP result handling unchanged"
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": ".text(status)",
+    "after": ".text(translate('Record saved'))",
+    "beforeSourceSHA256": "82f3612e3985a1f98c79cf6e2c16d534df6b6ac7353ba3f479da0ccff58b6f8f",
+    "reason": "Translate transient profile operation status; HTTP result handling unchanged"
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": ".text(status)",
+    "after": ".text(translate('Record save failed'))",
+    "beforeSourceSHA256": "bd4cad19673ca9d35364d9cc6bc1c4be33e665e9be2b1ceb16050ad1f0c3c119",
+    "reason": "Translate transient profile operation status; HTTP result handling unchanged"
+  },
+  {
+    "file": "lib/food/food.js",
+    "before": "  function deleteRecord(_id) {\r\n    if (!client.hashauth.isAuthenticated()) {\r\n      alert(translate('Your device is not authenticated yet'));\r\n      maybePreventDefault(event);\r\n      return false;\r\n    }\r\n\r\n    $.ajax({\r\n      method: 'DELETE',\r\n      url: '/api/v1/food/'+_id,\r\n      data: foodrec,\r\n      headers: client.headers()\r\n    }).done(function success () {\r\n      $('#fe_status').hide().text(translate('Record saved')).fadeIn('slow');\r\n     }).fail(function fail() {\r\n      $('#fe_status').hide().text(translate('Error')).fadeIn('slow');\r\n    });\r\n\r\n    return false;\r\n  }\r\n\r\n",
+    "after": "  function deleteRecord(_id) {\r\n    if (!client.hashauth.isAuthenticated()) {\r\n      alert(translate('Your device is not authenticated yet'));\r\n      maybePreventDefault(event);\r\n      return false;\r\n    }\r\n\r\n    $.ajax({\r\n      method: 'DELETE',\r\n      url: '/api/v1/food/'+_id,\r\n      data: foodrec,\r\n      headers: client.headers()\r\n    }).done(function success () {\r\n      $('#fe_status').hide().text(translate('Record removed')).fadeIn('slow');\r\n     }).fail(function fail() {\r\n      $('#fe_status').hide().text(translate('Error')).fadeIn('slow');\r\n    });\r\n\r\n    return false;\r\n  }\r\n\r\n",
+    "beforeSourceSHA256": "8e1abc975eb93ab7b0ef628162f16c6ce8ebb4a4a5e273932dad8f5fc9555521",
+    "reason": "Successful deletion reports removal rather than saving"
+  },
+  {
+    "file": "lib/profile/profileeditor.js",
+    "before": "function postSuccess (data, status)",
+    "after": "function postSuccess (data)",
+    "beforeSourceSHA256": "375c198c30d6d3aa249128ffaefc0b4cd45cabfa3893c529ba890362769d9138",
+    "reason": "Remove the unused status callback parameter after replacing its display text"
+  }
+]

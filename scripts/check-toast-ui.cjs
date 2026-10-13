@@ -1,0 +1,22 @@
+'use strict';
+const fs=require('fs');const assert=require('node:assert/strict');const {chromium}=require(process.env.PLAYWRIGHT_MODULE_PATH||'playwright');const out='docs/verification/toast';
+(async()=>{fs.mkdirSync(out,{recursive:true});const browser=await chromium.launch({headless:true,channel:'chrome'});const results=[];try {
+ const page=await browser.newPage({viewport:{width:1440,height:1000},locale:'ja-JP',serviceWorkers:'block'});const errors=[];page.on('pageerror',error=>errors.push(error.message));
+ await page.goto('http://localhost:8410/');await page.waitForFunction(()=>!!window.Nightscout?.client?.browserUtils&&!!window.KettouToast);
+ const range=page.locator('.focus-range li[data-hours="6"] button');await range.focus();
+ await page.evaluate(()=>window.Nightscout.client.browserUtils.showNotification('確認用の通知です。<a href="/profile">プロフィールへ</a><img src=x onerror="window.__unsafeToast=true"><script>window.__unsafeToast=true</script>','warn'));
+ assert(await range.evaluate(el=>document.activeElement===el));
+ assert.equal(await page.locator('.app-toast').getAttribute('data-variant'),'warning');assert.equal(await page.locator('.app-toast a').getAttribute('href'),'http://localhost:8410/profile');assert.equal(await page.evaluate(()=>window.__unsafeToast),undefined);
+ await page.waitForTimeout(5500);assert.equal(await page.locator('.app-toast').count(),1);
+ const close=page.locator('.app-toast__close');assert((await close.boundingBox()).height>=44);await close.focus();await page.keyboard.press('Enter');assert.equal(await page.locator('.app-toast').count(),0);assert(await range.evaluate(el=>document.activeElement===el));
+ results.push({case:'original notification API preserves safe rich link, persistent message, native close and focus return; unsafe markup cannot execute',pass:true});
+ await page.evaluate(()=>{for(const note of ['最初','二番目','三番目','四番目'])window.Nightscout.client.browserUtils.showNotification(note,'info');});
+ assert.equal(await page.locator('.app-toast').count(),3);await page.locator('.app-toast__close').first().click();assert.equal(await page.locator('.app-toast').count(),3);assert((await page.locator('.app-toast').last().innerText()).includes('四番目'));
+ await page.evaluate(()=>window.Nightscout.client.browserUtils.closeNotification());assert.equal(await page.locator('.app-toast').count(),0);
+ await page.evaluate(()=>window.KettouToast.show({variant:'success',title:'処理が完了しました',action:{label:'確認する',onClick(){window.__toastActions=(window.__toastActions||0)+1;}}}));await page.locator('.app-toast__action').click();assert.equal(await page.evaluate(()=>window.__toastActions),1);assert.equal(await page.locator('.app-toast').count(),0);
+ results.push({case:'FIFO overflow promotion, original clear API including queued messages, and action callback work',pass:true});
+ await page.setViewportSize({width:390,height:844});await page.evaluate(()=>{window.Nightscout.client.browserUtils.showNotification('設定内容を確認してください。','warn');window.Nightscout.client.browserUtils.showNotification('接続状況を確認してください。','urgent');window.Nightscout.client.browserUtils.showNotification('記録画面を開けます。','info');});
+ assert.equal(await page.locator('#app-toast-region [role="status"]').count(),1);assert.equal(await page.locator('#app-toast-region [role="alert"]').count(),1);const box=await page.locator('#app-toast-region').boundingBox();assert(box.x>=0&&box.x+box.width<=390);assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.waitForTimeout(300);assert.equal(await page.locator('.app-toast').first().evaluate(el=>getComputedStyle(el).opacity),'1');await page.screenshot({path:out+'/mobile.png'});results.push({case:'separate polite/assertive live regions and responsive notification layout',box,pass:true});
+ assert.deepEqual(errors,[]);fs.writeFileSync(out+'/results.json',JSON.stringify({results,pageErrors:errors},null,2));console.log(JSON.stringify(results,null,2));
+}finally{await browser.close();}})().catch(error=>{console.error(error);process.exitCode=1;});

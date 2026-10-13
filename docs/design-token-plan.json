@@ -1,0 +1,5097 @@
+[
+  {
+    "file": "static/css/main.css",
+    "ordinal": 10,
+    "selector": "[class^=\"icon-\"]:before, [class*=\" icon-\"]:before, \n [class^=\"plugicon-\"]:before, [class*=\" plugicon-\"]:before",
+    "property": "font-weight",
+    "original": "normal",
+    "target": "--app-font-weight-normal",
+    "replacement": "var(--app-font-weight-normal)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 48,
+    "selector": "body",
+    "property": "font-family",
+    "original": "'Ubuntu', sans-serif",
+    "target": "--app-font-sans",
+    "replacement": "var(--app-font-sans)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 49,
+    "selector": "body",
+    "property": "background",
+    "original": "#000",
+    "target": "--app-surface-sunken",
+    "replacement": "var(--app-surface-sunken)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 50,
+    "selector": "body",
+    "property": "color",
+    "original": "#bdbdbd",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 56,
+    "selector": ".container",
+    "property": "top",
+    "original": "45px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "2.8125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 57,
+    "selector": ".container",
+    "property": "z-index",
+    "original": "2",
+    "target": "--app-z-sticky",
+    "replacement": "var(--app-z-sticky)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 61,
+    "selector": ".ui-button",
+    "property": "background-color",
+    "original": "grey",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 62,
+    "selector": ".ui-button",
+    "property": "border",
+    "original": "1px solid white",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 63,
+    "selector": ".ui-button",
+    "property": "padding",
+    "original": "2px",
+    "target": "--app-space-0",
+    "replacement": "var(--app-space-0)",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 64,
+    "selector": "a, a:visited, a:link",
+    "property": "color",
+    "original": "#2196f3",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 66,
+    "selector": "#container.announcing .customTitle",
+    "property": "color",
+    "original": "orange",
+    "target": "--app-warning-text",
+    "replacement": "var(--app-warning-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 67,
+    "selector": "#container.alarming.urgent .customTitle",
+    "property": "color",
+    "original": "red",
+    "target": "--app-danger-text",
+    "replacement": "var(--app-danger-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 68,
+    "selector": "#container.alarming.warning .customTitle",
+    "property": "color",
+    "original": "yellow",
+    "target": "--app-warning-text",
+    "replacement": "var(--app-warning-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 69,
+    "selector": ".primary",
+    "property": "font-family",
+    "original": "'Ubuntu', Verdana, Helvetica, Arial, sans-serif",
+    "target": "--app-font-sans",
+    "replacement": "var(--app-font-sans)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 76,
+    "selector": ".bgStatus",
+    "property": "padding-right",
+    "original": "20px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 77,
+    "selector": ".urgent .bgButton",
+    "property": "color",
+    "original": "red",
+    "target": "--app-danger-text",
+    "replacement": "var(--app-danger-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 78,
+    "selector": ".warning .bgButton",
+    "property": "color",
+    "original": "yellow",
+    "target": "--app-warning-text",
+    "replacement": "var(--app-warning-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 79,
+    "selector": ".inrange .bgButton",
+    "property": "color",
+    "original": "#4cff00",
+    "target": "--app-success-text",
+    "replacement": "var(--app-success-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 81,
+    "selector": ".bgStatus .currentBG",
+    "property": "font-size",
+    "original": "120px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 82,
+    "selector": ".bgStatus .currentBG",
+    "property": "line-height",
+    "original": "100px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 85,
+    "selector": ".bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass",
+    "property": "font-size",
+    "original": "90px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 86,
+    "selector": ".bgStatus .pill.direction",
+    "property": "font-weight",
+    "original": "normal",
+    "target": "--app-font-weight-normal",
+    "replacement": "var(--app-font-weight-normal)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 88,
+    "selector": ".bgStatus .pill.direction",
+    "property": "font-size",
+    "original": "90px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 89,
+    "selector": ".bgStatus .pill.direction",
+    "property": "line-height",
+    "original": "90px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 93,
+    "selector": ".bgStatus .majorPills",
+    "property": "font-size",
+    "original": "30px",
+    "target": "--app-text-display-sm-size",
+    "replacement": "var(--app-text-display-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 94,
+    "selector": ".bgStatus .majorPills",
+    "property": "line-height",
+    "original": "34px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 95,
+    "selector": ".minorPills",
+    "property": "font-size",
+    "original": "22px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 96,
+    "selector": ".minorPills",
+    "property": "line-height",
+    "original": "25px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 97,
+    "selector": ".minorPills",
+    "property": "z-index",
+    "original": "500",
+    "target": "--app-z-toast",
+    "replacement": "var(--app-z-toast)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 99,
+    "selector": ".majorPills > span:not(:first-child)",
+    "property": "margin-left",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 100,
+    "selector": ".minorPills > span:not(:first-child)",
+    "property": "margin-left",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 102,
+    "selector": ".pill",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 103,
+    "selector": ".pill",
+    "property": "border",
+    "original": "2px solid #808080",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 104,
+    "selector": ".pill",
+    "property": "background",
+    "original": "#808080",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 106,
+    "selector": ".pill",
+    "property": "margin-bottom",
+    "original": "4px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 107,
+    "selector": ".pill",
+    "property": "padding",
+    "original": "2px 0",
+    "target": "--app-space-0",
+    "replacement": "var(--app-space-0) 0",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 108,
+    "selector": ".pill em, .pill label",
+    "property": "padding",
+    "original": "2px 3px",
+    "target": "--app-space-0 --app-space-05",
+    "replacement": "var(--app-space-0) var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      },
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 111,
+    "selector": ".pill em",
+    "property": "font-weight",
+    "original": "bold",
+    "target": "--app-font-weight-bold",
+    "replacement": "var(--app-font-weight-bold)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 112,
+    "selector": ".pill em",
+    "property": "background",
+    "original": "#000",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 113,
+    "selector": ".pill em",
+    "property": "border-radius",
+    "original": "3px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 114,
+    "selector": ".pill label",
+    "property": "color",
+    "original": "#000",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 115,
+    "selector": ".container .pill.warn em",
+    "property": "color",
+    "original": "yellow",
+    "target": "--app-warning-text",
+    "replacement": "var(--app-warning-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 116,
+    "selector": ".container .pill.urgent em",
+    "property": "color",
+    "original": "red",
+    "target": "--app-danger-text",
+    "replacement": "var(--app-danger-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 117,
+    "selector": ".alarming-timeago .timeago.pill.warn",
+    "property": "border-color",
+    "original": "yellow",
+    "target": "--app-warning-text",
+    "replacement": "var(--app-warning-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 118,
+    "selector": ".alarming-timeago .timeago.pill.warn label",
+    "property": "background",
+    "original": "yellow",
+    "target": "--app-warning-bg",
+    "replacement": "var(--app-warning-bg)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 119,
+    "selector": ".alarming-timeago .timeago.pill.urgent",
+    "property": "border-color",
+    "original": "red",
+    "target": "--app-danger-text",
+    "replacement": "var(--app-danger-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 120,
+    "selector": ".alarming-timeago .timeago.pill.urgent label",
+    "property": "background",
+    "original": "red",
+    "target": "--app-danger-bg",
+    "replacement": "var(--app-danger-bg)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 123,
+    "selector": ".status",
+    "property": "color",
+    "original": "#808080",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 124,
+    "selector": ".status",
+    "property": "font-size",
+    "original": "100px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 128,
+    "selector": ".statusPills",
+    "property": "font-size",
+    "original": "20px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 129,
+    "selector": ".statusPills",
+    "property": "line-height",
+    "original": "23px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 130,
+    "selector": ".statusPills",
+    "property": "margin-left",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 132,
+    "selector": ".statusPills .pill",
+    "property": "background",
+    "original": "#808080",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 133,
+    "selector": ".statusPills .pill",
+    "property": "border-color",
+    "original": "#808080",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 134,
+    "selector": ".statusPills .pill",
+    "property": "margin-right",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 135,
+    "selector": ".statusPills .pill em",
+    "property": "color",
+    "original": "#bdbdbd",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 140,
+    "selector": "#chartContainer",
+    "property": "font-size",
+    "original": "20px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 141,
+    "selector": "#chartContainer",
+    "property": "background",
+    "original": "#111",
+    "target": "--app-surface-sunken",
+    "replacement": "var(--app-surface-sunken)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 144,
+    "selector": "#chartContainer",
+    "property": "margin",
+    "original": "2px",
+    "target": "--app-space-0",
+    "replacement": "var(--app-space-0)",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 150,
+    "selector": "#silenceBtn, #viewMenu",
+    "property": "z-index",
+    "original": "99",
+    "target": "--app-z-sticky",
+    "replacement": "var(--app-z-sticky)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 151,
+    "selector": "#silenceBtn, #viewMenu",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 152,
+    "selector": "#silenceBtn, #viewMenu",
+    "property": "border",
+    "original": "2px solid #bdbdbd",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 153,
+    "selector": "#viewMenu",
+    "property": "left",
+    "original": "150px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "9.375rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 155,
+    "selector": "#viewMenu",
+    "property": "font-size",
+    "original": "18px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 156,
+    "selector": "#viewMenu li label input[type=\"checkbox\"]",
+    "property": "height",
+    "original": "14px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.875rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 157,
+    "selector": "#viewMenu li label input[type=\"checkbox\"]",
+    "property": "margin-right",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 158,
+    "selector": "#silenceBtn a",
+    "property": "font-size",
+    "original": "40px",
+    "target": "--app-text-display-sm-size",
+    "replacement": "var(--app-text-display-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 159,
+    "selector": ".bgButton",
+    "property": "margin",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 160,
+    "selector": ".bgButton",
+    "property": "border",
+    "original": "2px solid #000",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 161,
+    "selector": ".bgButton",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 163,
+    "selector": ".bgButton",
+    "property": "width",
+    "original": "360px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "22.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 166,
+    "selector": ".pill.rawbg",
+    "property": "border-radius",
+    "original": "2px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 167,
+    "selector": ".pill.rawbg",
+    "property": "border",
+    "original": "1px solid #808080",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 169,
+    "selector": ".pill.rawbg em",
+    "property": "color",
+    "original": "white",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 170,
+    "selector": ".pill.rawbg em",
+    "property": "background-color",
+    "original": "black",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 172,
+    "selector": ".pill.rawbg em",
+    "property": "font-size",
+    "original": "20px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 174,
+    "selector": ".pill.rawbg em",
+    "property": "padding",
+    "original": "0 2px",
+    "target": "--app-space-0",
+    "replacement": "0 var(--app-space-0)",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 176,
+    "selector": ".pill.rawbg label",
+    "property": "font-size",
+    "original": "14px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 177,
+    "selector": ".pill.rawbg label",
+    "property": "padding",
+    "original": "0 2px",
+    "target": "--app-space-0",
+    "replacement": "0 var(--app-space-0)",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 178,
+    "selector": ".alarming .bgButton",
+    "property": "border-color",
+    "original": "#bdbdbd",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 179,
+    "selector": ".alarming .bgButton",
+    "property": "color",
+    "original": "#000",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 180,
+    "selector": ".alarming .bgButton",
+    "property": "box-shadow",
+    "original": "2px 2px 0 #ddd",
+    "target": "--app-shadow-raised",
+    "replacement": "var(--app-shadow-raised)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 181,
+    "selector": ".alarming.urgent .bgButton",
+    "property": "background-color",
+    "original": "red",
+    "target": "--app-danger-bg",
+    "replacement": "var(--app-danger-bg)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 182,
+    "selector": ".alarming.warning .bgButton",
+    "property": "background-color",
+    "original": "yellow",
+    "target": "--app-warning-bg",
+    "replacement": "var(--app-warning-bg)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 183,
+    "selector": ".alarming .bgButton:active",
+    "property": "border",
+    "original": "2px solid #bdbdbd",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 188,
+    "selector": ".button",
+    "property": "background",
+    "original": "#ababab",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 189,
+    "selector": ".button",
+    "property": "margin",
+    "original": "10px auto",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1) auto",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 192,
+    "selector": ".tooltip",
+    "property": "color",
+    "original": "#444",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 195,
+    "selector": ".tooltip",
+    "property": "padding",
+    "original": "4px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 196,
+    "selector": ".tooltip",
+    "property": "font-size",
+    "original": "14px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 197,
+    "selector": ".tooltip",
+    "property": "line-height",
+    "original": "15px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 198,
+    "selector": ".tooltip",
+    "property": "background",
+    "original": "white",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 200,
+    "selector": ".tooltip",
+    "property": "border-radius",
+    "original": "8px",
+    "target": "--app-radius-md",
+    "replacement": "var(--app-radius-md)",
+    "tokens": [
+      {
+        "target": "--app-radius-md"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 202,
+    "selector": ".tooltip",
+    "property": "min-width",
+    "original": "150px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "9.375rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 203,
+    "selector": ".tooltip",
+    "property": "max-width",
+    "original": "400px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 207,
+    "selector": ".focus-range",
+    "property": "margin",
+    "original": "4px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 209,
+    "selector": ".focus-range",
+    "property": "color",
+    "original": "#808080",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 213,
+    "selector": ".focus-range li",
+    "property": "font-size",
+    "original": "18px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 215,
+    "selector": ".focus-range li",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 216,
+    "selector": ".focus-range li",
+    "property": "border",
+    "original": "2px solid #000",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 218,
+    "selector": ".focus-range .selected",
+    "property": "border-color",
+    "original": "#808080",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 219,
+    "selector": ".focus-range .selected",
+    "property": "color",
+    "original": "#000",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 220,
+    "selector": ".focus-range .selected",
+    "property": "background",
+    "original": "#808080",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 223,
+    "selector": ".toolbar-title",
+    "property": "padding",
+    "original": "0 10px",
+    "target": "--app-space-1",
+    "replacement": "0 var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 225,
+    "selector": ".page-content",
+    "property": "padding",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 226,
+    "selector": ".authentication-status",
+    "property": "padding",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 227,
+    "selector": ".authentication-status",
+    "property": "border-top",
+    "original": "1px solid #bdbdbd",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 228,
+    "selector": ".authentication-status a",
+    "property": "color",
+    "original": "#2196f3",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 230,
+    "selector": ".authentication-status .small",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 231,
+    "selector": ".bgStatus",
+    "property": "width",
+    "original": "450px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "28.125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 233,
+    "selector": ".bgStatus .currentBG",
+    "property": "font-size",
+    "original": "80px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 234,
+    "selector": ".bgStatus .currentBG",
+    "property": "line-height",
+    "original": "80px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 235,
+    "selector": ".bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass",
+    "property": "font-size",
+    "original": "70px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 236,
+    "selector": ".bgStatus .pill.direction",
+    "property": "font-size",
+    "original": "70px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 237,
+    "selector": ".bgStatus .pill.direction",
+    "property": "line-height",
+    "original": "70px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 238,
+    "selector": ".bgStatus .majorPills",
+    "property": "font-size",
+    "original": "20px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 239,
+    "selector": ".bgStatus .majorPills",
+    "property": "line-height",
+    "original": "24px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 240,
+    "selector": ".bgStatus .minorPills",
+    "property": "font-size",
+    "original": "16px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 241,
+    "selector": ".bgStatus .minorPills",
+    "property": "line-height",
+    "original": "18px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 242,
+    "selector": ".status",
+    "property": "font-size",
+    "original": "70px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 243,
+    "selector": ".status",
+    "property": "padding-top",
+    "original": "8px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 244,
+    "selector": ".statusPills",
+    "property": "font-size",
+    "original": "15px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 245,
+    "selector": ".statusPills",
+    "property": "line-height",
+    "original": "17px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 248,
+    "selector": ".focus-range li",
+    "property": "font-size",
+    "original": "14px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 249,
+    "selector": "#silenceBtn a",
+    "property": "font-size",
+    "original": "30px",
+    "target": "--app-text-display-sm-size",
+    "replacement": "var(--app-text-display-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 250,
+    "selector": "#chartContainer",
+    "property": "font-size",
+    "original": "14px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 251,
+    "selector": ".x.axis",
+    "property": "font-size",
+    "original": "2.5vmin",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 253,
+    "selector": ".bgStatus",
+    "property": "padding",
+    "original": "0 0 20px 0",
+    "target": "--app-space-2",
+    "replacement": "0 0 var(--app-space-2) 0",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 254,
+    "selector": ".pill.rawbg em",
+    "property": "font-size",
+    "original": "14px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 255,
+    "selector": ".pill.rawbg label",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 257,
+    "selector": ".bgStatus .currentBG",
+    "property": "font-size",
+    "original": "70px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 258,
+    "selector": ".bgStatus .currentBG",
+    "property": "line-height",
+    "original": "60px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 259,
+    "selector": ".bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass",
+    "property": "font-size",
+    "original": "50px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 260,
+    "selector": ".bgStatus .pill.direction",
+    "property": "font-size",
+    "original": "50px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 261,
+    "selector": ".bgStatus .pill.direction",
+    "property": "line-height",
+    "original": "50px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 262,
+    "selector": ".bgStatus .majorPills",
+    "property": "font-size",
+    "original": "15px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 263,
+    "selector": ".bgStatus .majorPills",
+    "property": "line-height",
+    "original": "17px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 264,
+    "selector": ".bgStatus .minorPills",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 265,
+    "selector": ".bgStatus .minorPills",
+    "property": "line-height",
+    "original": "13px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 266,
+    "selector": ".status",
+    "property": "font-size",
+    "original": "50px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 267,
+    "selector": ".status",
+    "property": "width",
+    "original": "250px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "15.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 273,
+    "selector": ".bgStatus",
+    "property": "width",
+    "original": "250px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "15.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 274,
+    "selector": ".bgButton",
+    "property": "margin",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 276,
+    "selector": ".bgStatus .currentBG",
+    "property": "font-size",
+    "original": "70px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 277,
+    "selector": ".bgStatus .currentBG",
+    "property": "line-height",
+    "original": "70px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 278,
+    "selector": ".bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass",
+    "property": "font-size",
+    "original": "60px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 279,
+    "selector": ".bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass",
+    "property": "padding-left",
+    "original": "20px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 280,
+    "selector": ".bgStatus .pill.direction",
+    "property": "font-size",
+    "original": "60px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 281,
+    "selector": ".bgStatus .pill.direction",
+    "property": "line-height",
+    "original": "60px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 282,
+    "selector": ".bgStatus .majorPills",
+    "property": "font-size",
+    "original": "15px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 283,
+    "selector": ".bgStatus .majorPills",
+    "property": "line-height",
+    "original": "17px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 284,
+    "selector": ".bgStatus .minorPills",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 285,
+    "selector": ".bgStatus .minorPills",
+    "property": "line-height",
+    "original": "13px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 286,
+    "selector": "#silenceBtn a",
+    "property": "font-size",
+    "original": "20px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 288,
+    "selector": "#viewMenu",
+    "property": "top",
+    "original": "170px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "10.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 289,
+    "selector": "#viewMenu",
+    "property": "right",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 292,
+    "selector": ".status",
+    "property": "font-size",
+    "original": "20px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 298,
+    "selector": ".statusPills",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 299,
+    "selector": ".statusPills",
+    "property": "line-height",
+    "original": "13px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 301,
+    "selector": ".focus-range",
+    "property": "top",
+    "original": "60px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "3.75rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 303,
+    "selector": ".focus-range",
+    "property": "right",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 307,
+    "selector": "#chartContainer",
+    "property": "font-size",
+    "original": "14px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 308,
+    "selector": ".y.axis",
+    "property": "font-size",
+    "original": "2.5vmin",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 309,
+    "selector": "#chartContainer",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 314,
+    "selector": "#container #toolbar",
+    "property": "margin",
+    "original": "0px",
+    "target": "--app-space-0",
+    "replacement": "var(--app-space-0)",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 315,
+    "selector": "#buttonbar",
+    "property": "margin-right",
+    "original": "0px",
+    "target": "--app-space-0",
+    "replacement": "var(--app-space-0)",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 316,
+    "selector": "#buttonbar",
+    "property": "padding-right",
+    "original": "15px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 317,
+    "selector": "#buttonbar",
+    "property": "margin-top",
+    "original": "15px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 318,
+    "selector": "#buttonbar",
+    "property": "height",
+    "original": "44px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "2.75rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 323,
+    "selector": "#buttonbar",
+    "property": "z-index",
+    "original": "500",
+    "target": "--app-z-toast",
+    "replacement": "var(--app-z-toast)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 324,
+    "selector": "#buttonbar",
+    "property": "width",
+    "original": "400px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 326,
+    "selector": ".container",
+    "property": "top",
+    "original": "15px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.9375rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 327,
+    "selector": ".container",
+    "property": "padding-bottom",
+    "original": "20px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 328,
+    "selector": "#chartContainer",
+    "property": "font-size",
+    "original": "10px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 329,
+    "selector": ".bgStatus .currentBG",
+    "property": "font-size",
+    "original": "70px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 330,
+    "selector": ".bgStatus .currentBG",
+    "property": "line-height",
+    "original": "60px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 331,
+    "selector": ".bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass",
+    "property": "font-size",
+    "original": "70px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 332,
+    "selector": ".bgStatus .pill.direction",
+    "property": "font-size",
+    "original": "50px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 333,
+    "selector": ".bgStatus .pill.direction",
+    "property": "line-height",
+    "original": "50px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 334,
+    "selector": ".bgStatus .majorPills",
+    "property": "font-size",
+    "original": "15px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 335,
+    "selector": ".bgStatus .majorPills",
+    "property": "line-height",
+    "original": "17px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 336,
+    "selector": ".bgStatus .minorPills",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 337,
+    "selector": ".bgStatus .minorPills",
+    "property": "line-height",
+    "original": "13px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 338,
+    "selector": ".status",
+    "property": "font-size",
+    "original": "50px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 339,
+    "selector": ".status",
+    "property": "padding-top",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 340,
+    "selector": ".statusPills",
+    "property": "font-size",
+    "original": "15px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 341,
+    "selector": ".statusPills",
+    "property": "line-height",
+    "original": "17px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 343,
+    "selector": ".bgStatus",
+    "property": "width",
+    "original": "220px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "13.75rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 345,
+    "selector": ".bgStatus .currentBG",
+    "property": "font-size",
+    "original": "60px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 346,
+    "selector": ".bgStatus .currentBG",
+    "property": "line-height",
+    "original": "60px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 347,
+    "selector": ".bgStatus .currentBG.bg-limit, .bgStatus .currentBG.icon-hourglass",
+    "property": "font-size",
+    "original": "60px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 348,
+    "selector": ".bgStatus .pill.direction",
+    "property": "font-size",
+    "original": "50px",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 349,
+    "selector": ".bgStatus .pill.direction",
+    "property": "line-height",
+    "original": "50px",
+    "target": "--app-text-display-leading",
+    "replacement": "var(--app-text-display-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 350,
+    "selector": ".bgStatus .majorPills",
+    "property": "font-size",
+    "original": "15px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 351,
+    "selector": ".bgStatus .majorPills",
+    "property": "line-height",
+    "original": "17px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 352,
+    "selector": ".bgStatus .minorPills",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 353,
+    "selector": ".bgStatus .minorPills",
+    "property": "line-height",
+    "original": "13px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 354,
+    "selector": "#silenceBtn",
+    "property": "right",
+    "original": "-25px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "-1.5625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 356,
+    "selector": ".focus-range",
+    "property": "top",
+    "original": "40px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "2.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 358,
+    "selector": ".focus-range",
+    "property": "right",
+    "original": "35px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "2.1875rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 364,
+    "selector": ".statusPills",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/main.css",
+    "ordinal": 365,
+    "selector": ".statusPills",
+    "property": "line-height",
+    "original": "13px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 0,
+    "selector": "#drawer button, #treatmentDrawer button, #boluscalcDrawer button",
+    "property": "font-size",
+    "original": "18px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 1,
+    "selector": "#drawer button, #treatmentDrawer button, #boluscalcDrawer button",
+    "property": "font-weight",
+    "original": "bolder",
+    "target": "--app-font-weight-bold",
+    "replacement": "var(--app-font-weight-bold)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 2,
+    "selector": "#drawer button, #treatmentDrawer button, #boluscalcDrawer button",
+    "property": "background-color",
+    "original": "#ccc",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 3,
+    "selector": "#drawer button, #treatmentDrawer button, #boluscalcDrawer button",
+    "property": "padding",
+    "original": "5px 10px",
+    "target": "--app-space-05 --app-space-1",
+    "replacement": "var(--app-space-05) var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      },
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 4,
+    "selector": "#drawer button, #treatmentDrawer button, #boluscalcDrawer button",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 5,
+    "selector": "#drawer button, #treatmentDrawer button, #boluscalcDrawer button",
+    "property": "border",
+    "original": "2px solid #aaa",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 6,
+    "selector": "#drawer button, #treatmentDrawer button, #boluscalcDrawer button",
+    "property": "box-shadow",
+    "original": "2px 2px 0 #eee",
+    "target": "--app-shadow-raised",
+    "replacement": "var(--app-shadow-raised)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 8,
+    "selector": "#drawer",
+    "property": "background-color",
+    "original": "#666",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 9,
+    "selector": "#drawer",
+    "property": "border-left",
+    "original": "1px solid #999",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 10,
+    "selector": "#drawer",
+    "property": "box-shadow",
+    "original": "inset 4px 4px 5px 0 rgba(50, 50, 50, 0.75)",
+    "target": "--app-shadow-raised",
+    "replacement": "var(--app-shadow-raised)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 11,
+    "selector": "#drawer",
+    "property": "color",
+    "original": "#eee",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 13,
+    "selector": "#drawer",
+    "property": "font-size",
+    "original": "16px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 18,
+    "selector": "#drawer",
+    "property": "margin-top",
+    "original": "45px",
+    "target": "--app-space-6",
+    "replacement": "var(--app-space-6)",
+    "tokens": [
+      {
+        "target": "--app-space-6"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 19,
+    "selector": "#drawer",
+    "property": "right",
+    "original": "-200px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "-12.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 21,
+    "selector": "#drawer",
+    "property": "z-index",
+    "original": "1",
+    "target": "--app-z-drawer",
+    "replacement": "var(--app-z-drawer)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 23,
+    "selector": "#drawer a, #treatmentDrawer a",
+    "property": "color",
+    "original": "white",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 24,
+    "selector": "input[type=number]:invalid",
+    "property": "background-color",
+    "original": "#FFCCCC",
+    "target": "--app-danger-bg",
+    "replacement": "var(--app-danger-bg)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 25,
+    "selector": "#drawer .actions",
+    "property": "margin",
+    "original": "10px 2px",
+    "target": "--app-space-1 --app-space-0",
+    "replacement": "var(--app-space-1) var(--app-space-0)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      },
+      {
+        "target": "--app-space-0"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 28,
+    "selector": "#drawer .actions a",
+    "property": "padding",
+    "original": "10px 0",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1) 0",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 30,
+    "selector": "#treatmentDrawer, #adminNotifiesDrawer",
+    "property": "background-color",
+    "original": "#666",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 31,
+    "selector": "#treatmentDrawer, #adminNotifiesDrawer",
+    "property": "border-left",
+    "original": "1px solid #999",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 32,
+    "selector": "#treatmentDrawer, #adminNotifiesDrawer",
+    "property": "box-shadow",
+    "original": "inset 4px 4px 5px 0 rgba(50, 50, 50, 0.75)",
+    "target": "--app-shadow-raised",
+    "replacement": "var(--app-shadow-raised)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 33,
+    "selector": "#treatmentDrawer, #adminNotifiesDrawer",
+    "property": "color",
+    "original": "#eee",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 35,
+    "selector": "#treatmentDrawer, #adminNotifiesDrawer",
+    "property": "font-size",
+    "original": "16px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 40,
+    "selector": "#treatmentDrawer, #adminNotifiesDrawer",
+    "property": "margin-top",
+    "original": "45px",
+    "target": "--app-space-6",
+    "replacement": "var(--app-space-6)",
+    "tokens": [
+      {
+        "target": "--app-space-6"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 41,
+    "selector": "#treatmentDrawer, #adminNotifiesDrawer",
+    "property": "right",
+    "original": "-200px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "-12.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 43,
+    "selector": "#treatmentDrawer, #adminNotifiesDrawer",
+    "property": "z-index",
+    "original": "1",
+    "target": "--app-z-drawer",
+    "replacement": "var(--app-z-drawer)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 44,
+    "selector": "#adminNotifyContent",
+    "property": "margin",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 45,
+    "selector": ".adminNotifyMessage",
+    "property": "margin-left",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 46,
+    "selector": ".adminNotifyMessageAdditionalInfo",
+    "property": "margin-left",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 47,
+    "selector": ".adminNotifyMessageAdditionalInfo",
+    "property": "font-size",
+    "original": "11px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 51,
+    "selector": "#treatmentDrawer .left-column span",
+    "property": "width",
+    "original": "110px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "6.875rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 56,
+    "selector": "#treatmentDrawer .left-column span",
+    "property": "line-height",
+    "original": "22px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 58,
+    "selector": "#treatmentDrawer fieldset fieldset .left-column span",
+    "property": "width",
+    "original": "96px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "6rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 59,
+    "selector": "#treatmentDrawer .left-column input, #treatmentDrawer .left-column select",
+    "property": "width",
+    "original": "140px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "8.75rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 60,
+    "selector": "#treatmentDrawer .extra-space",
+    "property": "padding-top",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 62,
+    "selector": ".timeago-mins",
+    "property": "width",
+    "original": "25px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "1.5625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 63,
+    "selector": "#eventTime",
+    "property": "padding-bottom",
+    "original": "15px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 64,
+    "selector": "#eventTime > span",
+    "property": "width",
+    "original": "105px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "6.5625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 69,
+    "selector": "#eventTime > span",
+    "property": "line-height",
+    "original": "22px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 71,
+    "selector": "#treatmentDrawer .eventdate",
+    "property": "width",
+    "original": "130px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "8.125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 72,
+    "selector": "#treatmentDrawer .eventtime",
+    "property": "width",
+    "original": "110px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "6.875rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 73,
+    "selector": "#eventTime label span",
+    "property": "width",
+    "original": "45px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "2.8125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 78,
+    "selector": "#eventTime label span",
+    "property": "line-height",
+    "original": "22px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 80,
+    "selector": "#treatmentDrawer #glucoseValue",
+    "property": "width",
+    "original": "230px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "14.375rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 81,
+    "selector": "#treatmentDrawer #notes",
+    "property": "width",
+    "original": "250px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "15.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 82,
+    "selector": "#about",
+    "property": "margin-bottom",
+    "original": "55px",
+    "target": "--app-space-6",
+    "replacement": "var(--app-space-6)",
+    "tokens": [
+      {
+        "target": "--app-space-6"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 83,
+    "selector": "#about div",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 84,
+    "selector": "#about .links",
+    "property": "margin",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 85,
+    "selector": "#about a",
+    "property": "color",
+    "original": "#fff",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 88,
+    "selector": "form",
+    "property": "padding",
+    "original": "0 10px",
+    "target": "--app-space-1",
+    "replacement": "0 var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 91,
+    "selector": "legend",
+    "property": "font-size",
+    "original": "1.1em",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 96,
+    "selector": "dd.numbers input",
+    "property": "width",
+    "original": "50px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "3.125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 99,
+    "selector": "dd.numbers label",
+    "property": "width",
+    "original": "50px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "3.125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 100,
+    "selector": "h1, legend,\n#toolbar .customTitle,\n#about .appName,\n#about .version",
+    "property": "font-weight",
+    "original": "bold",
+    "target": "--app-font-weight-bold",
+    "replacement": "var(--app-font-weight-bold)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 101,
+    "selector": "h1, legend,\n#toolbar .customTitle,\n#about .appName,\n#about .version",
+    "property": "text-shadow",
+    "original": "1px 1px 2px rgba(0, 0, 0, 0.5)",
+    "target": "装飾影を除去",
+    "replacement": "none",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 102,
+    "selector": "#about .appName",
+    "property": "font-size",
+    "original": "1em",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 103,
+    "selector": "#about .version",
+    "property": "font-size",
+    "original": "1.25em",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 105,
+    "selector": "#toolbar",
+    "property": "text-shadow",
+    "original": "0 0 5px black",
+    "target": "装飾影を除去",
+    "replacement": "none",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 107,
+    "selector": "#toolbar",
+    "property": "height",
+    "original": "44px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "2.75rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 108,
+    "selector": "#toolbar",
+    "property": "margin",
+    "original": "0 0 10px",
+    "target": "--app-space-1",
+    "replacement": "0 0 var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 109,
+    "selector": "#toolbar",
+    "property": "padding",
+    "original": "0 15px 0 40px",
+    "target": "--app-space-2 --app-space-5",
+    "replacement": "0 var(--app-space-2) 0 var(--app-space-5)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      },
+      {
+        "target": "--app-space-5"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 112,
+    "selector": "#toolbar",
+    "property": "background",
+    "original": "url(\"../images/logo2.png\") no-repeat 3px center #333",
+    "target": "--app-surface",
+    "replacement": "url(\"../images/logo2.png\") no-repeat 3px center var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 113,
+    "selector": "#toolbar",
+    "property": "border-bottom",
+    "original": "1px solid #999",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 115,
+    "selector": "#toolbar .customTitle",
+    "property": "color",
+    "original": "#ccc",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 116,
+    "selector": "#toolbar .customTitle",
+    "property": "font-size",
+    "original": "16px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 120,
+    "selector": "#toolbar .button-close",
+    "property": "color",
+    "original": "#404040",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 123,
+    "selector": "#toolbar .button-close",
+    "property": "height",
+    "original": "20px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "1.25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 124,
+    "selector": "#toolbar .button-close",
+    "property": "width",
+    "original": "20px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "1.25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 125,
+    "selector": "#toolbar .button-close",
+    "property": "padding",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 128,
+    "selector": "#toolbar .button-close",
+    "property": "right",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 130,
+    "selector": "#toolbar .button-close",
+    "property": "background",
+    "original": "grey",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 131,
+    "selector": "#toolbar .button-close",
+    "property": "border",
+    "original": "2px solid #404040",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 132,
+    "selector": "#toolbar .button-close",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 133,
+    "selector": "#toolbar .button-close + #buttonbar",
+    "property": "margin-right",
+    "original": "40px",
+    "target": "--app-space-5",
+    "replacement": "var(--app-space-5)",
+    "tokens": [
+      {
+        "target": "--app-space-5"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 136,
+    "selector": "#buttonbar a,\n#buttonbar i",
+    "property": "color",
+    "original": "#ccc",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 137,
+    "selector": "#buttonbar a,\n#buttonbar i",
+    "property": "font-size",
+    "original": "16px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 138,
+    "selector": "#buttonbar a,\n#buttonbar i",
+    "property": "height",
+    "original": "44px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "2.75rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 139,
+    "selector": "#buttonbar a,\n#buttonbar i",
+    "property": "line-height",
+    "original": "44px",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 140,
+    "selector": "#buttonbar .selected",
+    "property": "color",
+    "original": "red",
+    "target": "--app-danger-text",
+    "replacement": "var(--app-danger-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 143,
+    "selector": "#buttonbar a",
+    "property": "width",
+    "original": "34px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "2.125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 144,
+    "selector": "#buttonbar i",
+    "property": "padding-left",
+    "original": "12px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 146,
+    "selector": "#notification",
+    "property": "font-size",
+    "original": "14px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 150,
+    "selector": "#notification",
+    "property": "top",
+    "original": "4px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 151,
+    "selector": "#notification",
+    "property": "z-index",
+    "original": "99",
+    "target": "--app-z-sticky",
+    "replacement": "var(--app-z-sticky)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 152,
+    "selector": "#notification.info a",
+    "property": "background",
+    "original": "#00f",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 153,
+    "selector": "#notification.info a",
+    "property": "color",
+    "original": "#fff",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 154,
+    "selector": "#notification.warn a",
+    "property": "background",
+    "original": "#cc0",
+    "target": "--app-warning-bg",
+    "replacement": "var(--app-warning-bg)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 155,
+    "selector": "#notification.warn a",
+    "property": "color",
+    "original": "#000",
+    "target": "--app-warning-text",
+    "replacement": "var(--app-warning-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 156,
+    "selector": "#notification.success a",
+    "property": "background",
+    "original": "#090",
+    "target": "--app-success-bg",
+    "replacement": "var(--app-success-bg)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 157,
+    "selector": "#notification.success a",
+    "property": "color",
+    "original": "#fff",
+    "target": "--app-success-text",
+    "replacement": "var(--app-success-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 158,
+    "selector": "#notification.urgent a",
+    "property": "background",
+    "original": "#c00",
+    "target": "--app-danger-bg",
+    "replacement": "var(--app-danger-bg)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 159,
+    "selector": "#notification.urgent a",
+    "property": "color",
+    "original": "#fff",
+    "target": "--app-danger-text",
+    "replacement": "var(--app-danger-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 160,
+    "selector": "#notification a",
+    "property": "background",
+    "original": "#c00",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 161,
+    "selector": "#notification a",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 162,
+    "selector": "#notification a",
+    "property": "color",
+    "original": "#fff",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 164,
+    "selector": "#notification a",
+    "property": "height",
+    "original": "20px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "1.25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 171,
+    "selector": ".experiments a",
+    "property": "color",
+    "original": "#fff",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 172,
+    "selector": ".experiments a",
+    "property": "font-size",
+    "original": "1.5em",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 179,
+    "selector": ".navigation a",
+    "property": "background-color",
+    "original": "#808080",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 181,
+    "selector": ".navigation a",
+    "property": "padding",
+    "original": "5px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 182,
+    "selector": ".navigation a",
+    "property": "margin",
+    "original": "10px 0",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1) 0",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 186,
+    "selector": ".navigation a:hover",
+    "property": "background-color",
+    "original": "#989898",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 187,
+    "selector": "#boluscalcDrawer",
+    "property": "background-color",
+    "original": "#666",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 188,
+    "selector": "#boluscalcDrawer",
+    "property": "border-left",
+    "original": "1px solid #999",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 189,
+    "selector": "#boluscalcDrawer",
+    "property": "box-shadow",
+    "original": "inset 4px 4px 5px 0 rgba(50, 50, 50, 0.75)",
+    "target": "--app-shadow-raised",
+    "replacement": "var(--app-shadow-raised)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 190,
+    "selector": "#boluscalcDrawer",
+    "property": "color",
+    "original": "#eee",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 192,
+    "selector": "#boluscalcDrawer",
+    "property": "font-size",
+    "original": "16px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 197,
+    "selector": "#boluscalcDrawer",
+    "property": "margin-top",
+    "original": "45px",
+    "target": "--app-space-6",
+    "replacement": "var(--app-space-6)",
+    "tokens": [
+      {
+        "target": "--app-space-6"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 198,
+    "selector": "#boluscalcDrawer",
+    "property": "right",
+    "original": "-200px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "-12.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 199,
+    "selector": "#boluscalcDrawer",
+    "property": "width",
+    "original": "320px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "20rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 201,
+    "selector": "#boluscalcDrawer",
+    "property": "z-index",
+    "original": "1",
+    "target": "--app-z-drawer",
+    "replacement": "var(--app-z-drawer)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 202,
+    "selector": "#boluscalcDrawer a",
+    "property": "color",
+    "original": "white",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 203,
+    "selector": "#boluscalcDrawer a",
+    "property": "font-size",
+    "original": "12px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 204,
+    "selector": "#boluscalcDrawer .insulincalculation",
+    "property": "background",
+    "original": "gray",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 206,
+    "selector": "#boluscalcDrawer .border_bottom td",
+    "property": "border-bottom",
+    "original": "1pt solid #eee",
+    "target": "--app-border",
+    "replacement": "1pt solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 207,
+    "selector": "#boluscalcDrawer .foodinput",
+    "property": "background",
+    "original": "#505050",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/drawer.css",
+    "ordinal": 208,
+    "selector": "#boluscalcDrawer .foodinput",
+    "property": "margin",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/dropdown.css",
+    "ordinal": 0,
+    "selector": ".dropdown-menu",
+    "property": "font-size",
+    "original": "200%",
+    "target": "--app-text-display-size",
+    "replacement": "var(--app-text-display-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/dropdown.css",
+    "ordinal": 5,
+    "selector": ".dropdown-menu",
+    "property": "right",
+    "original": "8px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/dropdown.css",
+    "ordinal": 13,
+    "selector": ".dropdown-menu li a, .dropdown-menu li label",
+    "property": "background",
+    "original": "#BBBBBB",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/dropdown.css",
+    "ordinal": 14,
+    "selector": ".dropdown-menu li a, .dropdown-menu li label",
+    "property": "color",
+    "original": "#24313C",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/dropdown.css",
+    "ordinal": 15,
+    "selector": ".dropdown-menu li a, .dropdown-menu li label",
+    "property": "padding",
+    "original": "2px 10px",
+    "target": "--app-space-0 --app-space-1",
+    "replacement": "var(--app-space-0) var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-0"
+      },
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/dropdown.css",
+    "ordinal": 16,
+    "selector": ".dropdown-menu li a:hover",
+    "property": "background",
+    "original": "#EEEEFF",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/sgv.css",
+    "ordinal": 0,
+    "selector": "body",
+    "property": "fill",
+    "original": "#fff",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/sgv.css",
+    "ordinal": 2,
+    "selector": ".axis path,\n.axis line",
+    "property": "stroke",
+    "original": "#ffffff",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/sgv.css",
+    "ordinal": 5,
+    "selector": ".grid path, .axis line",
+    "property": "stroke",
+    "original": "#bdbdbd",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/sgv.css",
+    "ordinal": 7,
+    "selector": ".brush .extent",
+    "property": "stroke",
+    "original": "#ffffff",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 1,
+    "selector": "#profile-editor h1",
+    "property": "margin",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 2,
+    "selector": "#pe_form input[type=\"text\"], #pe_form input[type=\"number\"]",
+    "property": "width",
+    "original": "60px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "3.75rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 3,
+    "selector": "#pe_submit",
+    "property": "font-size",
+    "original": "18px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 4,
+    "selector": "#pe_submit",
+    "property": "font-weight",
+    "original": "bolder",
+    "target": "--app-font-weight-bold",
+    "replacement": "var(--app-font-weight-bold)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 5,
+    "selector": "#pe_submit",
+    "property": "background-color",
+    "original": "#ccc",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 6,
+    "selector": "#pe_submit",
+    "property": "padding",
+    "original": "5px 10px",
+    "target": "--app-space-05 --app-space-1",
+    "replacement": "var(--app-space-05) var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      },
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 7,
+    "selector": "#pe_submit",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 8,
+    "selector": "#pe_submit",
+    "property": "border",
+    "original": "2px solid #aaa",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 9,
+    "selector": "#pe_submit",
+    "property": "box-shadow",
+    "original": "2px 2px 0 #eee",
+    "target": "--app-shadow-raised",
+    "replacement": "var(--app-shadow-raised)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 10,
+    "selector": "#pe_submit",
+    "property": "margin",
+    "original": "20px 0",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2) 0",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/profile.css",
+    "ordinal": 11,
+    "selector": ".pe_stored_profile",
+    "property": "background-color",
+    "original": "#222",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": [
+      "var(--app-danger-bg)"
+    ]
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 3,
+    "selector": "#food-editor h1",
+    "property": "left",
+    "original": "50px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "3.125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 8,
+    "selector": "#fe_form",
+    "property": "margin-left",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 9,
+    "selector": "#fe_form",
+    "property": "margin-right",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 11,
+    "selector": ".width50px",
+    "property": "width",
+    "original": "50px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "3.125rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 13,
+    "selector": ".width100px",
+    "property": "width",
+    "original": "100px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "6.25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 15,
+    "selector": ".width150px",
+    "property": "width",
+    "original": "150px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "9.375rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 17,
+    "selector": ".width200px",
+    "property": "width",
+    "original": "200px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "12.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 19,
+    "selector": ".sortablequickpick",
+    "property": "background-color",
+    "original": "#383838",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 20,
+    "selector": ".sortablequickpick",
+    "property": "border-radius",
+    "original": "8px",
+    "target": "--app-radius-md",
+    "replacement": "var(--app-radius-md)",
+    "tokens": [
+      {
+        "target": "--app-radius-md"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 22,
+    "selector": ".draggablefood",
+    "property": "background-color",
+    "original": "gray",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 24,
+    "selector": ".draggablefood",
+    "property": "border",
+    "original": "2px solid #000",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/food.css",
+    "ordinal": 25,
+    "selector": ".fe_foodinsideqp",
+    "property": "background-color",
+    "original": "gray",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 3,
+    "selector": "body",
+    "property": "font-family",
+    "original": "'Open Sans', Helvetica, Arial, sans-serif",
+    "target": "--app-font-sans",
+    "replacement": "var(--app-font-sans)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 4,
+    "selector": "body",
+    "property": "background",
+    "original": "white",
+    "target": "--app-surface-sunken",
+    "replacement": "var(--app-surface-sunken)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 5,
+    "selector": "body",
+    "property": "color",
+    "original": "black",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 7,
+    "selector": "#explanation",
+    "property": "font",
+    "original": "11px verdana, arial, sans-serif",
+    "target": "--app-font-weight-normal --app-text-body-size --app-text-body-leading --app-font-sans",
+    "replacement": "var(--app-font-weight-normal) var(--app-text-body-size)/var(--app-text-body-leading) var(--app-font-sans)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 10,
+    "selector": "#tabnav",
+    "property": "font",
+    "original": "bold 11pt verdana, arial, sans-serif",
+    "target": "--app-font-weight-normal --app-text-body-size --app-text-body-leading --app-font-sans",
+    "replacement": "var(--app-font-weight-normal) var(--app-text-body-size)/var(--app-text-body-leading) var(--app-font-sans)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 11,
+    "selector": "#tabnav",
+    "property": "border-bottom",
+    "original": "1px solid #6c6",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 13,
+    "selector": "#tabnav",
+    "property": "padding",
+    "original": "0 0 0 15px",
+    "target": "--app-space-2",
+    "replacement": "0 0 0 var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 15,
+    "selector": "#tabnav li",
+    "property": "padding",
+    "original": "10px 15px",
+    "target": "--app-space-1 --app-space-2",
+    "replacement": "var(--app-space-1) var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      },
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 16,
+    "selector": "#tabnav li",
+    "property": "border-top",
+    "original": "1px solid #6c6",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 17,
+    "selector": "#tabnav li",
+    "property": "border-right",
+    "original": "1px solid #6c6",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 19,
+    "selector": "#tabnav li",
+    "property": "background-color",
+    "original": "#cfc",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 20,
+    "selector": "#tabnav li",
+    "property": "color",
+    "original": "#666",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 21,
+    "selector": "#tabnav li",
+    "property": "margin",
+    "original": "0 0 -1px 0",
+    "target": "--app-preserved-geometry-5f0b2c50",
+    "replacement": "0 0 var(--app-preserved-geometry-5f0b2c50) 0",
+    "tokens": [
+      {
+        "target": "--app-preserved-geometry-5f0b2c50",
+        "value": "-0.0625rem",
+        "reason": "Retain chart/drawer alignment; structural geometry only."
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 23,
+    "selector": "#tabnav li:first-child",
+    "property": "border-left",
+    "original": "1px solid #6c6",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 24,
+    "selector": "#tabnav .selected",
+    "property": "background",
+    "original": "#fff",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 25,
+    "selector": "#tabnav .selected",
+    "property": "border-bottom",
+    "original": "1px solid #fff",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 26,
+    "selector": "#tabnav li:hover",
+    "property": "background",
+    "original": "#9f9",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 30,
+    "selector": ".tooltip",
+    "property": "color",
+    "original": "#444",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 33,
+    "selector": ".tooltip",
+    "property": "padding",
+    "original": "4px",
+    "target": "--app-space-05",
+    "replacement": "var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 34,
+    "selector": ".tooltip",
+    "property": "font-size",
+    "original": "14px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 35,
+    "selector": ".tooltip",
+    "property": "line-height",
+    "original": "15pt",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 36,
+    "selector": ".tooltip",
+    "property": "background",
+    "original": "white",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 37,
+    "selector": ".tooltip",
+    "property": "border",
+    "original": "2px solid black",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 38,
+    "selector": ".tooltip",
+    "property": "border-radius",
+    "original": "8px",
+    "target": "--app-radius-md",
+    "replacement": "var(--app-radius-md)",
+    "tokens": [
+      {
+        "target": "--app-radius-md"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 40,
+    "selector": ".tooltip",
+    "property": "min-width",
+    "original": "150px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "9.375rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 41,
+    "selector": ".tooltip",
+    "property": "max-width",
+    "original": "400px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 42,
+    "selector": "main",
+    "property": "padding",
+    "original": "15px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 43,
+    "selector": "input[type=date],\ninput[type=text],\ninput[type=number],\nselect",
+    "property": "font",
+    "original": "13px verdana, arial, sans-serif",
+    "target": "--app-font-weight-normal --app-text-body-size --app-text-body-leading --app-font-sans",
+    "replacement": "var(--app-font-weight-normal) var(--app-text-body-size)/var(--app-text-body-leading) var(--app-font-sans)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 47,
+    "selector": "label",
+    "property": "margin-right",
+    "original": "7px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 48,
+    "selector": "#rp_to",
+    "property": "margin-right",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 50,
+    "selector": ".presetdates",
+    "property": "margin-right",
+    "original": "8px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 51,
+    "selector": "#rp_show",
+    "property": "background-color",
+    "original": "#cfc",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 52,
+    "selector": "#rp_show",
+    "property": "border",
+    "original": "1px solid #6c6",
+    "target": "--app-border",
+    "replacement": "1px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 53,
+    "selector": "#rp_show",
+    "property": "color",
+    "original": "#666",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 54,
+    "selector": "#rp_show",
+    "property": "padding",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 55,
+    "selector": "#rp_show",
+    "property": "font-weight",
+    "original": "bold",
+    "target": "--app-font-weight-bold",
+    "replacement": "var(--app-font-weight-bold)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/report.css",
+    "ordinal": 56,
+    "selector": "#rp_show",
+    "property": "font-size",
+    "original": "12pt",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 1,
+    "selector": "#admin-tools h1",
+    "property": "margin",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 2,
+    "selector": "#admin_placeholder",
+    "property": "margin-left",
+    "original": "20px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 3,
+    "selector": "#admin_placeholder",
+    "property": "margin-right",
+    "original": "20px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 4,
+    "selector": "#admin_placeholder fieldset",
+    "property": "background-color",
+    "original": "#383838",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 5,
+    "selector": "#admin_placeholder fieldset",
+    "property": "border-radius",
+    "original": "8px",
+    "target": "--app-radius-md",
+    "replacement": "var(--app-radius-md)",
+    "tokens": [
+      {
+        "target": "--app-radius-md"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 6,
+    "selector": "#admin_placeholder button",
+    "property": "font-size",
+    "original": "18px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 7,
+    "selector": "#admin_placeholder button",
+    "property": "font-weight",
+    "original": "bolder",
+    "target": "--app-font-weight-bold",
+    "replacement": "var(--app-font-weight-bold)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 8,
+    "selector": "#admin_placeholder button",
+    "property": "background-color",
+    "original": "#ccc",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 9,
+    "selector": "#admin_placeholder button",
+    "property": "padding",
+    "original": "5px 10px",
+    "target": "--app-space-05 --app-space-1",
+    "replacement": "var(--app-space-05) var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      },
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 10,
+    "selector": "#admin_placeholder button",
+    "property": "border-radius",
+    "original": "5px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 11,
+    "selector": "#admin_placeholder button",
+    "property": "border",
+    "original": "2px solid #aaa",
+    "target": "--app-border",
+    "replacement": "2px solid var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 12,
+    "selector": "#admin_placeholder button",
+    "property": "box-shadow",
+    "original": "2px 2px 0 #eee",
+    "target": "--app-shadow-raised",
+    "replacement": "var(--app-shadow-raised)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 13,
+    "selector": "#admin_placeholder button",
+    "property": "margin-top",
+    "original": "20px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 14,
+    "selector": "#admin_placeholder button",
+    "property": "margin-bottom",
+    "original": "10px",
+    "target": "--app-space-1",
+    "replacement": "var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/admin.css",
+    "ordinal": 15,
+    "selector": "#admin_placeholder button",
+    "property": "margin-right",
+    "original": "20px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 0,
+    "selector": ".tooltip strong, .tooltip b",
+    "property": "font-weight",
+    "original": "700",
+    "target": "--app-font-weight-bold",
+    "replacement": "var(--app-font-weight-bold)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 2,
+    "selector": ".tooltip",
+    "property": "font-size",
+    "original": "10px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 3,
+    "selector": ".tooltip",
+    "property": "padding",
+    "original": "3px 5px",
+    "target": "--app-space-05 --app-space-05",
+    "replacement": "var(--app-space-05) var(--app-space-05)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      },
+      {
+        "target": "--app-space-05"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 5,
+    "selector": ".tooltip",
+    "property": "z-index",
+    "original": "9999",
+    "target": "--app-z-popover",
+    "replacement": "var(--app-z-popover)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 7,
+    "selector": ".tooltip .tooltip-inner",
+    "property": "background-color",
+    "original": "#000",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 8,
+    "selector": ".tooltip .tooltip-inner",
+    "property": "color",
+    "original": "#fff",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 9,
+    "selector": ".tooltip .tooltip-inner",
+    "property": "max-width",
+    "original": "200px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "12.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 10,
+    "selector": ".tooltip .tooltip-inner",
+    "property": "padding",
+    "original": "3px 8px",
+    "target": "--app-space-05 --app-space-1",
+    "replacement": "var(--app-space-05) var(--app-space-1)",
+    "tokens": [
+      {
+        "target": "--app-space-05"
+      },
+      {
+        "target": "--app-space-1"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 12,
+    "selector": ".tooltip .tooltip-inner",
+    "property": "box-shadow",
+    "original": "0 0 5px 0 black",
+    "target": "--app-shadow-raised",
+    "replacement": "var(--app-shadow-raised)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 13,
+    "selector": ".tooltip .tooltip-inner",
+    "property": "border-radius",
+    "original": "3px",
+    "target": "--app-radius-xs",
+    "replacement": "var(--app-radius-xs)",
+    "tokens": [
+      {
+        "target": "--app-radius-xs"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 14,
+    "selector": ".tooltip .tooltip-inner",
+    "property": "-moz-border-radius",
+    "original": "3px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.1875rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 15,
+    "selector": ".tooltip .tooltip-inner",
+    "property": "-webkit-border-radius",
+    "original": "3px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.1875rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 19,
+    "selector": ".tooltip .tooltip-arrow",
+    "property": "line-height",
+    "original": "0",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 20,
+    "selector": ".tooltip .tooltip-arrow",
+    "property": "border",
+    "original": "5px dashed #000",
+    "target": "--app-border",
+    "replacement": "5px dashed var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 21,
+    "selector": ".tooltip .tooltip-arrow-n",
+    "property": "border-bottom-color",
+    "original": "#000",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 22,
+    "selector": ".tooltip .tooltip-arrow-s",
+    "property": "border-top-color",
+    "original": "#000",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 23,
+    "selector": ".tooltip .tooltip-arrow-e",
+    "property": "border-left-color",
+    "original": "#000",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 24,
+    "selector": ".tooltip .tooltip-arrow-w",
+    "property": "border-right-color",
+    "original": "#000",
+    "target": "--app-border",
+    "replacement": "var(--app-border)",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 25,
+    "selector": ".tooltip.tooltip-n .tooltip-arrow",
+    "property": "top",
+    "original": "0px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 27,
+    "selector": ".tooltip.tooltip-n .tooltip-arrow",
+    "property": "margin-left",
+    "original": "-5px",
+    "target": "--app-preserved-geometry-9d2a3058",
+    "replacement": "var(--app-preserved-geometry-9d2a3058)",
+    "tokens": [
+      {
+        "target": "--app-preserved-geometry-9d2a3058",
+        "value": "-0.3125rem",
+        "reason": "Retain chart/drawer alignment; structural geometry only."
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 33,
+    "selector": ".tooltip.tooltip-nw .tooltip-arrow",
+    "property": "left",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 39,
+    "selector": ".tooltip.tooltip-ne .tooltip-arrow",
+    "property": "right",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 46,
+    "selector": ".tooltip.tooltip-s .tooltip-arrow",
+    "property": "margin-left",
+    "original": "-5px",
+    "target": "--app-preserved-geometry-9d2a3058",
+    "replacement": "var(--app-preserved-geometry-9d2a3058)",
+    "tokens": [
+      {
+        "target": "--app-preserved-geometry-9d2a3058",
+        "value": "-0.3125rem",
+        "reason": "Retain chart/drawer alignment; structural geometry only."
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 52,
+    "selector": ".tooltip.tooltip-sw .tooltip-arrow",
+    "property": "left",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 58,
+    "selector": ".tooltip.tooltip-se .tooltip-arrow",
+    "property": "right",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 65,
+    "selector": ".tooltip.tooltip-e .tooltip-arrow",
+    "property": "margin-top",
+    "original": "-5px",
+    "target": "--app-preserved-geometry-c1bff830",
+    "replacement": "var(--app-preserved-geometry-c1bff830)",
+    "tokens": [
+      {
+        "target": "--app-preserved-geometry-c1bff830",
+        "value": "-0.3125rem",
+        "reason": "Retain chart/drawer alignment; structural geometry only."
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "static/css/jquery.tooltips.css",
+    "ordinal": 72,
+    "selector": ".tooltip.tooltip-w .tooltip-arrow",
+    "property": "margin-top",
+    "original": "-5px",
+    "target": "--app-preserved-geometry-c1bff830",
+    "replacement": "var(--app-preserved-geometry-c1bff830)",
+    "tokens": [
+      {
+        "target": "--app-preserved-geometry-c1bff830",
+        "value": "-0.3125rem",
+        "reason": "Retain chart/drawer alignment; structural geometry only."
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 4,
+    "selector": "body",
+    "property": "font-family",
+    "original": "'Open Sans', Arial, Helvetica, sans-serif",
+    "target": "--app-font-sans",
+    "replacement": "var(--app-font-sans)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 5,
+    "selector": "body",
+    "property": "color",
+    "original": "grey",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 6,
+    "selector": "body",
+    "property": "background-color",
+    "original": "black",
+    "target": "--app-surface-sunken",
+    "replacement": "var(--app-surface-sunken)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 20,
+    "selector": "#inner div",
+    "property": "line-height",
+    "original": "1em",
+    "target": "--app-text-body-leading",
+    "replacement": "var(--app-text-body-leading)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 25,
+    "selector": "#errorMessage",
+    "property": "font-size",
+    "original": "25em",
+    "target": "--app-text-heading-lg-size",
+    "replacement": "var(--app-text-heading-lg-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 27,
+    "selector": ".close",
+    "property": "color",
+    "original": "white",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 28,
+    "selector": ".close",
+    "property": "font",
+    "original": "4em 'Open Sans'",
+    "target": "--app-font-weight-normal --app-text-body-size --app-text-body-leading --app-font-sans",
+    "replacement": "var(--app-font-weight-normal) var(--app-text-body-size)/var(--app-text-body-leading) var(--app-font-sans)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 31,
+    "selector": ".close",
+    "property": "right",
+    "original": "20px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "1.25rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-shared.css",
+    "ordinal": 33,
+    "selector": ".close",
+    "property": "z-index",
+    "original": "10",
+    "target": "--app-z-sticky",
+    "replacement": "var(--app-z-sticky)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 1,
+    "selector": "#config-form",
+    "property": "top",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 2,
+    "selector": "#config-form",
+    "property": "left",
+    "original": "10px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "0.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 3,
+    "selector": "#config-form",
+    "property": "width",
+    "original": "250px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "15.625rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 4,
+    "selector": "#config-form",
+    "property": "min-width",
+    "original": "220px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "13.75rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 5,
+    "selector": "#config-form",
+    "property": "background",
+    "original": "white",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 6,
+    "selector": "#config-form",
+    "property": "color",
+    "original": "black",
+    "target": "--app-text",
+    "replacement": "var(--app-text)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 9,
+    "selector": "#config-form",
+    "property": "font-size",
+    "original": "10px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 10,
+    "selector": "#config-form p",
+    "property": "margin",
+    "original": "15px",
+    "target": "--app-space-2",
+    "replacement": "var(--app-space-2)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 12,
+    "selector": "input.elmt",
+    "property": "width",
+    "original": "120px",
+    "target": "保留なし：構造寸法を維持",
+    "replacement": "7.5rem",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 14,
+    "selector": "#facename",
+    "property": "font-size",
+    "original": "7px",
+    "target": "--app-text-body-size",
+    "replacement": "var(--app-text-body-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 15,
+    "selector": "#clocklink",
+    "property": "font-size",
+    "original": "18px",
+    "target": "--app-text-heading-sm-size",
+    "replacement": "var(--app-text-heading-sm-size)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 16,
+    "selector": "#clocklink:link, #clocklink:visited",
+    "property": "background-color",
+    "original": "#f44336",
+    "target": "--app-surface",
+    "replacement": "var(--app-surface)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 17,
+    "selector": "#clocklink:link, #clocklink:visited",
+    "property": "color",
+    "original": "white",
+    "target": "--app-text-link",
+    "replacement": "var(--app-text-link)",
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 18,
+    "selector": "#clocklink:link, #clocklink:visited",
+    "property": "padding",
+    "original": "14px 25px",
+    "target": "--app-space-2 --app-space-3",
+    "replacement": "var(--app-space-2) var(--app-space-3)",
+    "tokens": [
+      {
+        "target": "--app-space-2"
+      },
+      {
+        "target": "--app-space-3"
+      }
+    ],
+    "previousReplacements": []
+  },
+  {
+    "file": "views/clockviews/clock-config.css",
+    "ordinal": 22,
+    "selector": "#clocklink:hover, #clocklink:active",
+    "property": "background-color",
+    "original": "red",
+    "target": "--app-danger-bg",
+    "replacement": "var(--app-danger-bg)",
+    "previousReplacements": []
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-13T15:46:58.402Z",
+  "scope": "Tracked and non-ignored publishable text; actual local API secret and its SHA-1 checked without printing either value",
+  "results": [
+    {
+      "repository": "sera-glucose",
+      "checkedTextFiles": 1109,
+      "privateConfigurationMatches": [],
+      "hostNodeModulesRetained": true
+    },
+    {
+      "repository": "sera-inc-public-site",
+      "checkedTextFiles": 1767,
+      "privateConfigurationMatches": [],
+      "hostNodeModulesRetained": true
+    }
+  ]
+}

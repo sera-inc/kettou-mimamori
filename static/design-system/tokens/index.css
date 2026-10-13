@@ -1,0 +1,13 @@
+/*
+ * tokens/index.css — 三層トークンの統合エントリポイント（読み込み順が層構造）
+ *
+ *   Layer 1: dads.css     — DADS 原本（生成物・改変禁止）
+ *   Layer 2: brand.css    — ブランド上書き（プロダクトごとに差し替え可）
+ *   Layer 2: semantic.css — セマンティック層（--app-*）
+ *
+ * 利用側は本ファイルを1つ読み込めばよい:
+ *   @import "digital-design-system/tokens/index.css";
+ */
+@import "./dads.css";
+@import "./brand.css";
+@import "./semantic.css";

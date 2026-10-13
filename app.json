@@ -1,161 +1,166 @@
 {
-  "name": "CGM Remote Monitor",
-  "repository": "https://github.com/nightscout/cgm-remote-monitor",
+  "name": "血糖みまもり",
+  "repository": "https://github.com/sera-inc/kettou-mimamori",
   "env": {
     "MONGODB_URI": {
-      "description": "The MongoDB Connection String to connect to your MongoDB cluster. If you don't have this from MongoDB Atlas, please re-read installation instructions at http://nightscout.github.io/nightscout/new_user/ before continuing",
+      "description": "MongoDBの接続文字列を指定します。接続先と認証情報は、利用するデータベースの管理者へ確認してください。",
       "value": "",
       "required": true
     },
     "ALARM_HIGH": {
-      "description": "Default setting for new browser views, for the High alarm (triggered when BG crosses BG_TARGET_TOP). ('on' or 'off')",
+      "description": "新しいブラウザの高血糖警報の初期設定です。血糖値がBG_TARGET_TOPを超えると発動します。onまたはoffを指定します。",
       "value": "on",
       "required": false
     },
     "ALARM_LOW": {
-      "description": "Default setting for new browser views, for the Low alarm (triggered when BG crosses BG_TARGET_BOTTOM). ('on' or 'off')",
+      "description": "新しいブラウザの低血糖警報の初期設定です。血糖値がBG_TARGET_BOTTOMを下回ると発動します。onまたはoffを指定します。",
       "value": "on",
       "required": false
     },
     "ALARM_TIMEAGO_URGENT": {
-      "description": "Default setting for new browser views, for an urgent alarm when CGM data hasn't been received in the number of minutes set in ALARM_TIMEAGO_URGENT_MINS. ('on' or 'off')",
+      "description": "測定データがALARM_TIMEAGO_URGENT_MINS分以上届かない場合の緊急警報です。onまたはoffを指定します。",
       "value": "on",
       "required": false
     },
     "ALARM_TIMEAGO_URGENT_MINS": {
-      "description": "Default setting for new browser views, for the number of minutes since the last CGM reading to trigger an ALARM_TIMEAGO_URGENT alarm.",
+      "description": "最後の血糖測定から緊急警報を出すまでの時間を分で指定します。",
       "value": "30",
       "required": false
     },
     "ALARM_TIMEAGO_WARN": {
-      "description": "Default setting for new browser views, for a warning alarm when CGM data hasn't been received in the number of minutes set in ALARM_TIMEAGO_WARN_MINS. ('on' or 'off')",
+      "description": "測定データがALARM_TIMEAGO_WARN_MINS分以上届かない場合の警告です。onまたはoffを指定します。",
       "value": "on",
       "required": false
     },
     "ALARM_TIMEAGO_WARN_MINS": {
-      "description": "Default setting for new browser views, for the number of minutes since the last CGM reading to trigger an ALARM_TIMEAGO_WARN alarm.",
+      "description": "最後の血糖測定から警告を出すまでの時間を分で指定します。",
       "value": "15",
       "required": false
     },
     "ALARM_TYPES": {
-      "description": "'simple' and/or 'predict'. Simple alarms trigger when BG crosses the various thresholds set below. Predict alarms use a formula that forecasts where the BG is going based on its trend. You will *not* get warnings when crossing the BG thresholds set below when using the predict type.",
+      "description": "simple（しきい値による警報）、predict（推移の予測による警報）、または両方を指定します。predictだけでは、下記の血糖しきい値を超えたことによる警報は出ません。",
       "value": "simple",
       "required": false
     },
     "ALARM_URGENT_HIGH": {
-      "description": "Default setting for new browser views, for the Urgent High alarm (triggered when BG crosses BG_HIGH). ('on' or 'off')",
+      "description": "新しいブラウザの重度の高血糖警報の初期設定です。血糖値がBG_HIGHを超えると発動します。onまたはoffを指定します。",
       "value": "on",
-      "required": false 
+      "required": false
     },
     "ALARM_URGENT_LOW": {
-      "description": "Default setting for new browser views, for the Urgent Low alarm (triggered when BG crosses BG_LOW). ('on' or 'off')",
+      "description": "新しいブラウザの重度の低血糖警報の初期設定です。血糖値がBG_LOWを下回ると発動します。onまたはoffを指定します。",
       "value": "on",
       "required": false
     },
     "API_SECRET": {
-      "description": "A passphrase that must be at least 12 characters long. Avoid 'special' characters, which can cause problems in some cases.",
+      "description": "APIの認証に使用する12文字以上の秘密の文字列です。十分に長いランダムな値を使用してください。",
       "value": "",
       "required": true
     },
     "BG_HIGH": {
-      "description": "Urgent High BG threshold, triggers the ALARM_URGENT_HIGH alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
+      "description": "重度の高血糖警報のしきい値です。DISPLAY_UNITSで指定したmg/dLまたはmmol/Lの単位で設定します。",
       "value": "260",
       "required": false
     },
     "BG_LOW": {
-      "description": "Urgent Low BG threshold, triggers the ALARM_URGENT_LOW alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
+      "description": "重度の低血糖警報のしきい値です。DISPLAY_UNITSで指定したmg/dLまたはmmol/Lの単位で設定します。",
       "value": "55",
       "required": false
     },
     "BG_TARGET_BOTTOM": {
-      "description": "Low BG threshold, triggers the ALARM_LOW alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
+      "description": "低血糖警報のしきい値です。DISPLAY_UNITSで指定したmg/dLまたはmmol/Lの単位で設定します。",
       "value": "80",
       "required": false
     },
     "BG_TARGET_TOP": {
-      "description": "High BG threshold, triggers the ALARM_HIGH alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
+      "description": "高血糖警報のしきい値です。DISPLAY_UNITSで指定したmg/dLまたはmmol/Lの単位で設定します。",
       "value": "180",
       "required": false
     },
     "BOLUS_RENDER_OVER": {
-      "description": "U value over which the bolus values are rendered on the chart if the 'x U and Over' option is selected.",
+      "description": "一定量以上の投与をグラフに表示する場合の、投与量の下限を単位数で指定します。",
       "value": "1",
       "required": false
     },
     "BRIDGE_PASSWORD": {
-      "description": "Your Dexcom account password, to receive CGM data from the Dexcom Share service. Also make sure to include 'bridge' in your ENABLE line.",
+      "description": "Dexcom Shareから血糖データを受信するアカウントのパスワードです。ENABLEにbridgeを追加してください。",
       "value": "",
       "required": false
     },
     "BRIDGE_SERVER": {
-      "description": "If you are bridging from the Dexcom Share service, and are anywhere *outside* the US, change this to EU. ('US' or 'EU')",
+      "description": "Dexcom Shareの接続先です。米国はUS、米国外はEUを指定します。",
       "value": "US",
       "required": false
     },
     "BRIDGE_USER_NAME": {
-      "description": "Your Dexcom account username, to receive CGM data from the Dexcom Share service. Also make sure to include 'bridge' in your ENABLE line.",
+      "description": "Dexcom Shareから血糖データを受信するアカウントの利用者名です。ENABLEにbridgeを追加してください。",
       "value": "",
       "required": false
     },
     "CUSTOM_TITLE": {
-      "description": "The display name for the Nightscout site. Appears in the upper left of the main view. Often set to the name of the CGM wearer.",
+      "description": "記録画面に表示する名前です。利用者や確認対象を区別する名前を設定できます。",
       "value": "",
       "required": false
     },
     "DISPLAY_UNITS": {
-      "description": "Preferred BG units for the site: 'mg/dl' or 'mmol/L' (or just 'mmol').",
+      "description": "血糖値の表示単位です。mg/dlまたはmmol/L（mmolも可）を指定します。",
       "value": "mg/dl",
       "required": true
     },
     "ENABLE": {
-      "description": "Plugins to enable for your site. Must be a space-delimited, lower-case list. Include the word 'bridge' here if you are receiving data from the Dexcom Share service. Include 'mmconnect' if you are bridging from the MiniMed CareLink service.",
+      "description": "有効にする機能名を、小文字と半角スペース区切りで指定します。Dexcom Shareはbridge、MiniMed CareLinkはmmconnectを追加します。",
       "value": "careportal basal dbsize",
       "required": false
     },
     "MMCONNECT_USER_NAME": {
-      "description": "Your CareLink account username, to receive CGM data from the CareLink service. Also make sure to include 'mmconnect' in your ENABLE line.",
+      "description": "CareLinkから血糖データを受信するアカウントの利用者名です。ENABLEにmmconnectを追加してください。",
       "value": "",
       "required": false
     },
     "MMCONNECT_PASSWORD": {
-      "description": "Your CareLink account password, to receive CGM data from the CareLink service. Also make sure to include 'mmconnect' in your ENABLE line.",
+      "description": "CareLinkから血糖データを受信するアカウントのパスワードです。ENABLEにmmconnectを追加してください。",
       "value": "",
       "required": false
     },
     "MMCONNECT_SERVER": {
-      "description": "If you are bridging from the CareLink service, and are anywhere *outside* the US, change this to EU. ('US' or 'EU')",
+      "description": "CareLinkの接続先です。米国はUS、米国外はEUを指定します。",
       "value": "US",
       "required": false
     },
     "NIGHT_MODE": {
-      "description": "Default setting for new browser views, for whether Night Mode should be enabled. ('on' or 'off')",
+      "description": "夜間に画面を暗くする設定の初期値です。onまたはoffを指定します。",
       "value": "off",
-      "required": false 
+      "required": false
     },
     "SHOW_PLUGINS": {
-      "description": "Default setting for whether or not these plugins are checked (active) by default, not merely enabled. Include plugins here as in the ENABLE line; space-separated and lower-case.",
+      "description": "最初から表示する有効な機能名を、小文字と半角スペース区切りで指定します。ENABLEとは別に、表示状態を設定します。",
       "value": "careportal dbsize",
       "required": false
     },
     "SHOW_RAWBG": {
-      "description": "Default setting for new browser views, for the display of raw CGM data (if available). ('always', 'never', or 'noise')",
+      "description": "生の血糖データがある場合の表示設定です。always（常時）、never（表示しない）、noise（ノイズがある場合）を指定します。",
       "value": "never",
-      "required": false 
+      "required": false
     },
     "THEME": {
-      "description": "Default setting for new browser views, for the color theme of the CGM graph. ('default', 'colors', or 'colorblindfriendly')",
+      "description": "血糖グラフの色設定の初期値です。default、colors、colorblindfriendlyを指定します。",
       "value": "colors",
-      "required": false 
+      "required": false
     },
     "TIME_FORMAT": {
-      "description": "Default setting for new browser views, for the time mode. ('12' or '24')",
-      "value": "12",
-      "required": false 
+      "description": "時刻の表示形式の初期値です。12時間表示は12、24時間表示は24を指定します。",
+      "value": "24",
+      "required": false
     },
     "USE_NPM_INSTALL": {
-      "description": "You need to have this set for deployment to work in Heroku",
+      "description": "Herokuへの配備に必要な依存ファイルのインストール設定です。",
       "value": "true",
-      "required": true 
+      "required": true
+    },
+    "LANGUAGE": {
+      "description": "画面の表示言語です。日本語はjaを指定します。",
+      "value": "ja",
+      "required": false
     }
   },
   "addons": [

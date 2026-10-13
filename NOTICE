@@ -1,0 +1,12 @@
+血糖みまもり
+改変・提供・お問い合わせ：株式会社世良（info@sera-inc.co.jp）
+
+本プロダクトはNightscout cgm-remote-monitorを基盤としています。
+上流：https://github.com/nightscout/cgm-remote-monitor
+元の著作権表示とGNU Affero General Public License第3版を保持します。
+改変内容はGitの履歴とdocs/design-system-migration.md等に記録しています。
+
+デザインシステム：https://github.com/sera-inc/digital-design-system
+Digital Agency Design SystemのHTML部品の原本・ライセンスは
+static/design-system/vendor/配下に保持しています。
+提供元の政府機関との関係や認定を示すものではありません。

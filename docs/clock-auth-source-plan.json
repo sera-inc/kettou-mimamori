@@ -1,0 +1,20 @@
+[
+  {
+    "file": "lib/client/clock-client.js",
+    "before": "client.query = function query () {",
+    "after": "client.readApiSecret = function readApiSecret () {\r\n  var stored = typeof localStorage !== 'undefined' ? localStorage.getItem('apisecrethash') : '';\r\n  if (!stored) return '';\r\n  // Browser storage serializes strings as JSON; legacy raw hashes remain valid.\r\n  try {\r\n    var parsed = JSON.parse(stored);\r\n    return typeof parsed === 'string' ? parsed : stored;\r\n  } catch (err) {\r\n    return stored;\r\n  }\r\n};\r\n\r\nclient.query = function query () {",
+    "beforeSHA256": "741c8a2d5ba2c3a549213d8c57a42430a2687dab3393e82cba9cd2031674bddc"
+  },
+  {
+    "file": "lib/client/clock-client.js",
+    "before": "  var secret = localStorage.getItem('apisecrethash');",
+    "after": "  var secret = client.readApiSecret();",
+    "beforeSHA256": "7a4c1e14c8e10510014cd6e7c4787d007f8860d774d7c594f74d873f8f4bc425"
+  },
+  {
+    "file": "views/clockviews/clock.html",
+    "before": "    var secret = typeof localStorage !== 'undefined' ? localStorage.getItem('apisecrethash') : '';",
+    "after": "    var secret = window.Nightscout.client.readApiSecret();",
+    "beforeSHA256": "d0880b2318d5171fe28fcc0a90d363ad81dc1d3aa7193a1c25a6a27f76435b48"
+  }
+]

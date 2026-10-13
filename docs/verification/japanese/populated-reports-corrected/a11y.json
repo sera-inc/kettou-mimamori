@@ -1,0 +1,177 @@
+{
+  "generatedAt": "2026-10-13T03:44:15.861Z",
+  "scope": "All enabled axe rules on the whole desktop document after the actual Show workflow with fourteen days of synthetic data; explicitly selected populated panels; incomplete retained for human review",
+  "selectedReports": [
+    "calibrations",
+    "profiles"
+  ],
+  "scans": [
+    {
+      "id": "calibrations",
+      "version": "4.13.0",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "g[transform=\"translate(0.5,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">0</text>",
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(52,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">50</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(103.5,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">100</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(155,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">150</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(206.5,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">200</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(258,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">250</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(309.5,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">300</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(361,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">350</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(412.5,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">400</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(464,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">450</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(515.5,0)\"] > text[y=\"9\"][dy=\"0.71em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" y=\"9\" dy=\"0.71em\">500</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,455.5)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">0</text>",
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,398.625)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">50,000</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,341.75)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">100,000</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,284.875)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">150,000</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,228)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">200,000</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,171.125)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">250,000</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,114.25)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">300,000</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,57.375)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">350,000</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "g[transform=\"translate(0,0.5)\"] > text[x=\"-9\"][dy=\"0.32em\"]"
+              ],
+              "html": "<text fill=\"currentColor\" x=\"-9\" dy=\"0.32em\">400,000</text>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "#authorizationstatus"
+              ],
+              "html": "<div id=\"authorizationstatus\">認証されていません<br>初期権限で読み取りが有効<br> <a href=\"#\" onclick=\"Nightscout.client.hashauth.requestAuthentication(); return false;\">(認証)</a></div>",
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "profiles",
+      "version": "4.13.0",
+      "violations": [],
+      "incomplete": []
+    }
+  ]
+}

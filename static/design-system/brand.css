@@ -1,0 +1,7 @@
+/* Layer 3: original service assets within the existing DDS shell. */
+.app-brand {display:inline-flex;align-items:center;gap:var(--app-space-1);}
+.app-brand-mark {display:block;flex:none;width:var(--app-space-4);height:var(--app-space-4);}
+.app-service-name {font-size:var(--app-text-heading-sm-size);line-height:var(--app-text-heading-sm-leading);}
+.app-reading-context {margin-block:var(--app-space-1);color:var(--app-text);font-size:var(--app-text-body-size);line-height:var(--app-text-body-leading);}
+@media (max-width:48rem) {.app-service-name {font-size:var(--app-text-body-size);}}
+.app-care-illustration {display:block;width:100%;height:auto;max-width:100%;margin-block:var(--app-space-2);}

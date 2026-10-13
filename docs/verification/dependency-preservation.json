@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-13T15:40:17.903Z",
+  "baseline": "92d0834219aa771b5837dbcbf1baeb839a200cf6",
+  "existingPackagesWithUnchangedVersions": 1028,
+  "addedPackages": [
+    "node_modules/axe-core",
+    "node_modules/playwright",
+    "node_modules/playwright-core",
+    "node_modules/playwright/node_modules/fsevents"
+  ],
+  "productionDependenciesUnchanged": true,
+  "productionBuildAudit": {
+    "total": 33,
+    "low": 1,
+    "moderate": 12,
+    "high": 19,
+    "critical": 1,
+    "notResolvedByUIChange": true
+  }
+}

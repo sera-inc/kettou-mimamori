@@ -1,0 +1,62 @@
+[
+  {
+    "route": "/",
+    "actualUrl": "http://localhost:8410/",
+    "status": 200,
+    "title": "",
+    "errors": []
+  },
+  {
+    "route": "/report",
+    "actualUrl": "http://localhost:8410/report/",
+    "status": 200,
+    "title": "",
+    "errors": []
+  },
+  {
+    "route": "/profile",
+    "actualUrl": "http://localhost:8410/profile",
+    "status": 200,
+    "title": "",
+    "errors": []
+  },
+  {
+    "route": "/food",
+    "actualUrl": "http://localhost:8410/food",
+    "status": 200,
+    "title": "",
+    "errors": []
+  },
+  {
+    "route": "/admin",
+    "actualUrl": "http://localhost:8410/admin/",
+    "status": 200,
+    "title": "",
+    "errors": []
+  },
+  {
+    "route": "/clock/sg30,ar20,tm10",
+    "actualUrl": "http://localhost:8410/clock/sg30,ar20,tm10",
+    "status": 200,
+    "title": "Nightscout",
+    "errors": [
+      "Cannot read properties of undefined (reading '0')"
+    ]
+  },
+  {
+    "route": "/clock/config",
+    "actualUrl": "http://localhost:8410/clock/config",
+    "status": 200,
+    "title": "Nightscout",
+    "errors": [
+      "Cannot read properties of undefined (reading '0')"
+    ]
+  },
+  {
+    "route": "/split",
+    "actualUrl": "http://localhost:8410/split",
+    "status": 200,
+    "title": "Nightscout multiframe view",
+    "errors": []
+  }
+]

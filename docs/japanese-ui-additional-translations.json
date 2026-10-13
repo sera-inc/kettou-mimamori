@@ -1,0 +1,9 @@
+{
+  "Bolus Wizard Preview": "ボーラス計算の参照",
+  "Cannula Age": "カニューレの使用日数",
+  "When enabled small white dots will be displayed for raw BG data": "有効にすると、未加工の血糖データを小さな白い点で表示します",
+  "Settings are disabled.": "表示設定を保存できません。",
+  "Please enable cookies so you may customize your Nightscout site.": "表示設定を変更するには、ブラウザーのデータ保存を許可してください。",
+  "Alarm was muted (?mute=true)": "警報音を停止しています（検証用の消音設定）",
+  "Close": "閉じる"
+}

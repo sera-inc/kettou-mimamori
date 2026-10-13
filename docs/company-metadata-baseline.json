@@ -1,0 +1,12 @@
+[
+  {
+    "file": "package.json",
+    "semanticSHA256": "734445daba1c94e844cb9449327a07e8f4148bae29f6dd26ccc8c40e49347a68",
+    "source": "Original package/API metadata captured before company changes in japanese-populated-source.tar"
+  },
+  {
+    "file": "lib/api3/swagger.json",
+    "semanticSHA256": "b8191a370dec215afc97725f464c9e89783417f4a0a22f357bc5fdb82ed18dad",
+    "source": "Original package/API metadata captured before company changes in japanese-populated-source.tar"
+  }
+]

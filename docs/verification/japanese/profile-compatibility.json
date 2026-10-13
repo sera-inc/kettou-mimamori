@@ -1,0 +1,72 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 16,
+    "passes": 16,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T03:36:22.024Z",
+    "end": "2026-10-13T03:36:24.749Z",
+    "duration": 2725
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/japanese-locale.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T03:36:22.333Z",
+        "end": "2026-10-13T03:36:22.547Z",
+        "duration": 214
+      }
+    },
+    {
+      "file": "tests/profile-sinks.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 6,
+        "passes": 6,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T03:36:23.452Z",
+        "end": "2026-10-13T03:36:24.168Z",
+        "duration": 716
+      }
+    },
+    {
+      "file": "tests/profileeditor.records.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 4,
+        "passes": 4,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T03:36:24.440Z",
+        "end": "2026-10-13T03:36:24.452Z",
+        "duration": 12
+      }
+    },
+    {
+      "file": "tests/profileeditor.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T03:36:24.729Z",
+        "end": "2026-10-13T03:36:24.737Z",
+        "duration": 8
+      }
+    }
+  ],
+  "failures": []
+}

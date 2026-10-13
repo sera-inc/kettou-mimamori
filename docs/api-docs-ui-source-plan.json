@@ -1,0 +1,14 @@
+[
+  {
+    "file": "lib/server/app.js",
+    "before": "const swaggerUseSchema = schema => (...args) => swaggerUi.setup(schema)(...args);",
+    "after": "const swaggerUseSchema = schema => (...args) => swaggerUi.setup(schema, {\r\n    customSiteTitle: '血糖みまもり APIの説明',\r\n    customfavIcon: '/brand/mark.svg',\r\n    customCssUrl: '/design-system/api-docs.css',\r\n    customJs: '/api-docs-ja.js'\r\n  })(...args);",
+    "beforeSHA256": "59239fe2e4e240f045d9b9cb34502380a90191b770d1590ff103dce31ae324b9"
+  },
+  {
+    "file": "lib/server/app.js",
+    "before": "  app.use('/api3-docs', swaggerUi.serve, swaggerUseSchema(swaggerDocumentApiV3));",
+    "after": "  app.use('/api3-docs', swaggerUi.serve, swaggerUseSchema(swaggerDocumentApiV3));\r\n\r\n  app.get('/api-docs.html', function(req, res) {\r\n    res.redirect(307, '/api-docs');\r\n  });",
+    "beforeSHA256": "e07f89376f5427d6162389da682300ef418f55c1852fa8252da0be0d50ed8836"
+  }
+]

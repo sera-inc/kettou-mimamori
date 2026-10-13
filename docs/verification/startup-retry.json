@@ -1,0 +1,23 @@
+[
+  {
+    "scenario": "startup",
+    "pass": true,
+    "delayMs": 5000,
+    "immediateRequests": 1,
+    "completionCallbackPreserved": true
+  },
+  {
+    "scenario": "offline",
+    "pass": true,
+    "delayMs": 5000,
+    "immediateRequests": 1,
+    "completionCallbackPreserved": true
+  },
+  {
+    "scenario": "authentication",
+    "pass": true,
+    "delayMs": 5000,
+    "immediateRequests": 1,
+    "completionCallbackPreserved": true
+  }
+]

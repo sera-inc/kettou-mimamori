@@ -1,0 +1,44 @@
+[
+  {
+    "case": "empty array",
+    "pass": true,
+    "originalTimedOut": true,
+    "missingValuesRemainMissing": true
+  },
+  {
+    "case": "all 288 bins missing",
+    "pass": true,
+    "originalTimedOut": true,
+    "missingValuesRemainMissing": true
+  },
+  {
+    "case": "existing finite/decreasing/increasing/negative interpolation",
+    "pass": true,
+    "allowNegative": false,
+    "exactOriginalOutput": true
+  },
+  {
+    "case": "existing finite/decreasing/increasing/negative interpolation",
+    "pass": true,
+    "allowNegative": false,
+    "exactOriginalOutput": true
+  },
+  {
+    "case": "existing finite/decreasing/increasing/negative interpolation",
+    "pass": true,
+    "allowNegative": false,
+    "exactOriginalOutput": true
+  },
+  {
+    "case": "existing finite/decreasing/increasing/negative interpolation",
+    "pass": true,
+    "allowNegative": true,
+    "exactOriginalOutput": true
+  },
+  {
+    "case": "existing finite/decreasing/increasing/negative interpolation",
+    "pass": true,
+    "allowNegative": false,
+    "exactOriginalOutput": true
+  }
+]

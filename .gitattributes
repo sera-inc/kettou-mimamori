@@ -12,3 +12,8 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
+
+# Preserve unmodified upstream documents and raw diagnostic output.
+docs/upstream/README.md -whitespace
+docs/baseline-linux-unit-isolated.json -whitespace
+docs/verification/**/*.log -whitespace

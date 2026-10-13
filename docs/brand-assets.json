@@ -1,0 +1,50 @@
+{
+  "service": "血糖みまもり",
+  "repository": "kettou-mimamori",
+  "mark": "Original droplet and trend stroke, drawn in native SVG; public service design clarity and DADS blue",
+  "icons": [
+    "help-circled",
+    "angle-double-up",
+    "angle-double-down",
+    "menu",
+    "cog",
+    "cancel-circled",
+    "volume",
+    "plus",
+    "hourglass",
+    "calc",
+    "tint",
+    "chart-line",
+    "sort-numeric",
+    "edit",
+    "lock",
+    "lock-open",
+    "trash-empty",
+    "up",
+    "copy",
+    "check",
+    "battery-25",
+    "battery-50",
+    "battery-75",
+    "battery-100"
+  ],
+  "directionNames": [
+    "NONE",
+    "Flat",
+    "SingleUp",
+    "SingleDown",
+    "FortyFiveUp",
+    "FortyFiveDown",
+    "DoubleUp",
+    "TripleUp",
+    "DoubleDown",
+    "TripleDown"
+  ],
+  "rasterIllustration": {
+    "tool": "Codex built-in image generation (user-approved alternative to an unavailable selectable Image2.5)",
+    "source": "exec-289e39b2-c98f-4ab2-ae0a-c6a030794172.png",
+    "file": "static/brand/care-connection.png",
+    "description": "Original blue-and-white illustration of a person checking a phone and a healthcare worker checking a tablet, connected by a trend line; no government logo or official endorsement"
+  },
+  "pngIcons": "Deterministic browser rasterization of the original SVG mark; no generated illustration editing"
+}

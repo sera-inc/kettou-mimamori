@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "case": "all clock components, size validation, background, age, threshold and undo retain exact face grammar; preview sizes fit panel",
+      "preview": {
+        "x": 869,
+        "y": 254.171875,
+        "width": 530,
+        "height": 480
+      },
+      "fontSize": 192,
+      "pass": true
+    },
+    {
+      "case": "mobile clock configuration scrolls without page overflow and supports shared keyboard navigation",
+      "pass": true
+    },
+    {
+      "case": "clinical band boundary 54 uses --app-danger-bg",
+      "contrast": 11.215333188413963,
+      "pass": true
+    },
+    {
+      "case": "clinical band boundary 55 uses --app-primary-bg",
+      "contrast": 11.097095842988264,
+      "pass": true
+    },
+    {
+      "case": "clinical band boundary 80 uses --app-success-bg",
+      "contrast": 11.212827193615064,
+      "pass": true
+    },
+    {
+      "case": "clinical band boundary 180 uses --app-warning-bg",
+      "contrast": 11.575252247093676,
+      "pass": true
+    },
+    {
+      "case": "clinical band boundary 260 uses --app-danger-bg",
+      "contrast": 11.215333188413963,
+      "pass": true
+    },
+    {
+      "case": "stale measurements remain struck through with elapsed time",
+      "pass": true
+    },
+    {
+      "case": "dark clock retains readable value and a visible keyboard-focused return action",
+      "contrast": 12.63465434445799,
+      "pass": true
+    }
+  ],
+  "thresholds": {
+    "bgHigh": 260,
+    "bgTargetTop": 180,
+    "bgTargetBottom": 80,
+    "bgLow": 55
+  },
+  "pageErrors": []
+}

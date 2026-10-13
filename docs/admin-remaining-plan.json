@@ -1,0 +1,121 @@
+[
+  {
+    "file": "lib/admin_plugins/futureitems.js",
+    "before": ".css('background-color', '#0f0f0f')",
+    "after": ".css('background-color', 'var(--app-surface)')",
+    "count": 1,
+    "beforeSHA256": "050958e2e32c2c9d19d18b74f8d499a00ef2168b3fd2edf6d27c3928697ae86c"
+  },
+  {
+    "file": "lib/admin_plugins/futureitems.js",
+    "before": ".css('background', '#040404')",
+    "after": ".css('background', 'var(--app-surface-sunken)')",
+    "count": 1,
+    "beforeSHA256": "1f42df74c66c37e4fd09b285f57b1ab00f033cd781d52dbe7b25ffe0b61a5c8b"
+  },
+  {
+    "file": "lib/admin_plugins/futureitems.js",
+    "before": ".css('width', '80px')",
+    "after": ".css('width', '5rem')",
+    "count": 1,
+    "beforeSHA256": "6691894513330e75bc3a1ccf8bb3d0c037223c7c196ddb7761d0058b9e544c7e"
+  },
+  {
+    "file": "lib/admin_plugins/futureitems.js",
+    "before": ".css('width', '150px')",
+    "after": ".css('width', '9.375rem')",
+    "count": 3,
+    "beforeSHA256": "bc8916427ba79dbd49e7e2e1ca2ee7593db3f1e53cd1258c569219f45e8d7efc"
+  },
+  {
+    "file": "lib/admin_plugins/futureitems.js",
+    "before": ".css('width', '50px')",
+    "after": ".css('width', '3.125rem')",
+    "count": 2,
+    "beforeSHA256": "236e44de9a25dbdbb3d88409873db07a2d166915630cbf2df5ebdda92a9bfa59"
+  },
+  {
+    "file": "lib/admin_plugins/futureitems.js",
+    "before": ".css('width', '300px')",
+    "after": ".css('width', '18.75rem')",
+    "count": 1,
+    "beforeSHA256": "b85f77222804841508a53b3241b3e2b6dfd3dc21db40a4cd5d651d747d053942"
+  },
+  {
+    "file": "lib/admin_plugins/futureitems.js",
+    "before": ".css('margin-top', '10px')",
+    "after": ".css('margin-top', '0.625rem')",
+    "count": 1,
+    "beforeSHA256": "2a13a504415d68a24523109295e169ef16ed2454dfc61ef7382b99b97a562332"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "margin-top: 10px",
+    "after": "margin-top: 0.625rem",
+    "count": 1,
+    "beforeSHA256": "ab693a237736923d5e4692453e73d3a1e80bbd485b0491adee042a55dfd9afcd"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "margin-right: 10px",
+    "after": "margin-right: 0.625rem",
+    "count": 1,
+    "beforeSHA256": "4705b8212781ef070ebd9791b84326051b2a66a693a4acde96782fef4a88f2b0"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "margin-left: 10px",
+    "after": "margin-left: 0.625rem",
+    "count": 1,
+    "beforeSHA256": "fd04128698c9a3049856b17211aabb73d5631583e9532b110bda65001fe6a787"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "margin-top: 5px",
+    "after": "margin-top: 0.3125rem",
+    "count": 1,
+    "beforeSHA256": "f171b78ab08c7d2bd4ac3a3fa7b5da233f47890d2fa1eedaa0300eaf97bbb563"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "color: #666",
+    "after": "color: var(--app-text-muted)",
+    "count": 1,
+    "beforeSHA256": "6b5356d3296be6dbc1053d2982345a9ffc838df55f3b3507d683e987360cb30d"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "color: '#666'",
+    "after": "color: 'var(--app-text-muted)'",
+    "count": 2,
+    "beforeSHA256": "6c38bbd1aa94e0b7178c81b254cdc57bfe4ba378978f835d6a40f12f95740af7"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "color: 'red'",
+    "after": "color: 'var(--app-danger-text)'",
+    "count": 2,
+    "beforeSHA256": "e1c4d1a84ca2a9dc7d6aacb866c458bc96c334a18abcb5822c5b1928acc30dd2"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "color: 'orange'",
+    "after": "color: 'var(--app-warning-text)'",
+    "count": 3,
+    "beforeSHA256": "7a0f57eeef472f8a2ba81ff81e9ae0ba126dc2c6b1a48dd4af1858baa9a93fad"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "color: 'gray'",
+    "after": "color: 'var(--app-text-muted)'",
+    "count": 2,
+    "beforeSHA256": "2161f6d0fa78e998fdabe39654a7a967236d9751fc042e60cec9c64da540adc6"
+  },
+  {
+    "file": "lib/admin_plugins/daterangedelete.js",
+    "before": "color: 'green'",
+    "after": "color: 'var(--app-success-text)'",
+    "count": 2,
+    "beforeSHA256": "67906fe7d1be0ffe1295757cccf197413e67dde9565e8194acfbf666ad1e618c"
+  }
+]

@@ -31,7 +31,13 @@ const CACHE_LIST = [
     '/bundle/js/bundle.clock.js',
     '/socket.io/socket.io.js',
     '/js/client.js',
-    '/images/logo2.png'
+    '/images/logo2.png',
+    '/brand/mark.svg',
+    '/brand/icon-192.png',
+    '/brand/icon-512.png',
+    '/brand/care-connection.png',
+    '/design-system/icons.css',
+    '/design-system/brand.css'
 ];
 
 function returnRangeRequest(request) {

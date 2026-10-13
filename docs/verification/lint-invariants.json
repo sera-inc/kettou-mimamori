@@ -1,0 +1,40 @@
+{
+  "baseline": "92d0834219aa771b5837dbcbf1baeb839a200cf6",
+  "results": [
+    {
+      "file": "lib/api2/summary/basaldataprocessor.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing unused binding/argument removal, function-scoped var redeclaration or equivalent unconditional retry loop. require calls, calculations, returns, authorization and payloads preserved."
+    },
+    {
+      "file": "lib/api3/alarmSocket.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing unused binding/argument removal, function-scoped var redeclaration or equivalent unconditional retry loop. require calls, calculations, returns, authorization and payloads preserved."
+    },
+    {
+      "file": "lib/api/profile/index.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing unused binding/argument removal, function-scoped var redeclaration or equivalent unconditional retry loop. require calls, calculations, returns, authorization and payloads preserved."
+    },
+    {
+      "file": "lib/server/bootevent.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing unused binding/argument removal, function-scoped var redeclaration or equivalent unconditional retry loop. require calls, calculations, returns, authorization and payloads preserved."
+    },
+    {
+      "file": "lib/server/server.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing unused binding/argument removal, function-scoped var redeclaration or equivalent unconditional retry loop. require calls, calculations, returns, authorization and payloads preserved."
+    },
+    {
+      "file": "lib/storage/mongo-storage.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream after reversing unused binding/argument removal, function-scoped var redeclaration or equivalent unconditional retry loop. require calls, calculations, returns, authorization and payloads preserved."
+    },
+    {
+      "file": "lib/profile/profileeditor.js",
+      "pass": true,
+      "scope": "Complete AST matches upstream except an unreferenced wrapper; active migrateRecordStore, profile editing and range math remain identical."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 29,
+    "passes": 29,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T03:29:11.280Z",
+    "end": "2026-10-13T03:29:14.209Z",
+    "duration": 2929
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/browser-settings.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T03:29:12.745Z",
+        "end": "2026-10-13T03:29:12.969Z",
+        "duration": 224
+      }
+    },
+    {
+      "file": "tests/japanese-locale.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T03:29:13.344Z",
+        "end": "2026-10-13T03:29:13.573Z",
+        "duration": 229
+      }
+    },
+    {
+      "file": "tests/language.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T03:29:13.840Z",
+        "end": "2026-10-13T03:29:13.908Z",
+        "duration": 68
+      }
+    },
+    {
+      "file": "tests/settings.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 14,
+        "passes": 14,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T03:29:14.171Z",
+        "end": "2026-10-13T03:29:14.199Z",
+        "duration": 28
+      }
+    }
+  ],
+  "failures": []
+}

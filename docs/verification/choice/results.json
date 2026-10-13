@@ -1,0 +1,19 @@
+[
+  {
+    "case": "checkbox toggles with Space, visible focus and 44px target",
+    "focus": {
+      "height": 44,
+      "width": 44,
+      "outline": "solid"
+    },
+    "pass": true
+  },
+  {
+    "case": "radio exclusivity and stored values, disabled skip, indeterminate native state",
+    "pass": true
+  },
+  {
+    "case": "forced-colors retains native visible control and operation",
+    "pass": true
+  }
+]

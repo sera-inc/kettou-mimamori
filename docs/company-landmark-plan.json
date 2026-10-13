@@ -1,0 +1,6 @@
+{
+  "file": "views/partials/toolbar.ejs",
+  "before": "<div class=\"app-service-support\">",
+  "after": "<div class=\"app-service-support\" role=\"contentinfo\" aria-label=\"会社とお問い合わせ\">",
+  "beforeSHA256": "259a3f085de5134f37dbc69f1eefce7df4db56aa51e81287a3ed18d919e6e731"
+}

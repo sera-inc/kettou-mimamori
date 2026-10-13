@@ -1,0 +1,400 @@
+
+> kettou-mimamori@15.0.8 test:core
+> mocha --timeout 5000 --exit ./tests/client-core/**/*.test.js
+
+
+
+  captured fixtures lint
+    loop/
+      ✔ entries.json exists
+      ✔ entries.json contains no banned tokens
+      ✔ entries.json contains no unrecognized suspicious PII shapes
+      ✔ entries.json stays under 110000 bytes
+      ✔ treatments.json exists
+      ✔ treatments.json contains no banned tokens
+      ✔ treatments.json contains no unrecognized suspicious PII shapes
+      ✔ treatments.json stays under 60000 bytes
+      ✔ devicestatus.json exists
+      ✔ devicestatus.json contains no banned tokens
+      ✔ devicestatus.json contains no unrecognized suspicious PII shapes
+      ✔ devicestatus.json stays under 100000 bytes
+      ✔ profile.json exists
+      ✔ profile.json contains no banned tokens
+      ✔ profile.json contains no unrecognized suspicious PII shapes
+      ✔ profile.json stays under 60000 bytes
+      ✔ every entry has _id, date, type (75ms)
+      ✔ every treatment has _id, eventType, created_at
+      ✔ every devicestatus has _id, created_at, device
+      ✔ profile records have store + defaultProfile
+    trio/
+      ✔ treatments.json exists
+      ✔ treatments.json contains no banned tokens
+      ✔ treatments.json contains no unrecognized suspicious PII shapes
+      ✔ treatments.json stays under 40000 bytes
+      ✔ devicestatus.json exists
+      ✔ devicestatus.json contains no banned tokens
+      ✔ devicestatus.json contains no unrecognized suspicious PII shapes
+      ✔ devicestatus.json stays under 100000 bytes
+      ✔ every treatment has _id, eventType, created_at
+      ✔ every devicestatus has _id, created_at, device
+    phone-uploader/
+      ✔ treatments.json exists
+      ✔ treatments.json contains no banned tokens
+      ✔ treatments.json contains no unrecognized suspicious PII shapes
+      ✔ treatments.json stays under 20000 bytes
+      ✔ devicestatus.json exists
+      ✔ devicestatus.json contains no banned tokens
+      ✔ devicestatus.json contains no unrecognized suspicious PII shapes
+      ✔ devicestatus.json stays under 15000 bytes
+      ✔ every treatment has _id, eventType, created_at
+      ✔ every devicestatus has _id, created_at, device
+    aaps/
+      ✔ treatments.json exists
+      ✔ treatments.json contains no banned tokens
+      ✔ treatments.json contains no unrecognized suspicious PII shapes
+      ✔ treatments.json stays under 30000 bytes
+      ✔ devicestatus.json exists
+      ✔ devicestatus.json contains no banned tokens
+      ✔ devicestatus.json contains no unrecognized suspicious PII shapes
+      ✔ devicestatus.json stays under 110000 bytes
+      ✔ every treatment has _id, eventType, created_at
+      ✔ every devicestatus has _id, created_at, device
+    time anchor (loop fixtures)
+      ✔ latest loop entry lands at the documented reference epoch (within tolerance)
+    determinism (sanitizer is pure)
+      ✔ sanitizeEntry produces stable _id for stable input (104ms)
+
+  client-core/careportal/confirm-text
+    ✔ always emits the verify header and event-type line (176ms)
+    ✔ uses the injected translate fn for static labels
+    ✔ routes the event-type through resolveEventName
+    ✔ appends "Cancel" to the event line for a Temporary Target with duration 0
+    ✔ includes glucose, carbs, insulin, notes, enteredBy when present
+    ✔ omits optional fields when falsy
+    ✔ rounds mmol target values to 1 decimal
+    ✔ emits Combo Bolus split percentages
+    ✔ emits Basal value when "absolute" key exists (even if 0)
+    ✔ uses opts.now for the Event Time fallback
+    ✔ uses data.eventTime.toLocaleString() when provided
+
+  client-core/careportal/duration
+    ✔ parses blank and invalid values as zero milliseconds
+    ✔ preserves the legacy unitless numeric behavior
+    ✔ parses minute values
+    ✔ parses whole-hour values
+    ✔ parses fractional-hour values
+    ✔ keeps legacy support for scientific notation and digit group commas
+
+  client-core/careportal/event-types
+    ✔ buildEvents returns only val + name
+    ✔ buildEvents handles non-array input
+    ✔ buildInputMatrix keys by val and picks INPUT_KEYS only
+    ✔ buildInputMatrix preserves explicit profile=false (used by gather to drop profile)
+    ✔ buildInputMatrix omits entries with no val
+    ✔ buildSubmitHooks maps val → submitHook (or undefined)
+
+  client-core: careportal / normalize-treatment (captured Loop fixtures)
+    ✔ captured fixture set is non-empty
+    ✔ normalize() does not throw for any captured record
+    ✔ output never contains empty-string or null fields (119ms)
+    ✔ Temp Basal records retain eventType, rate, duration, absolute
+    ✔ idempotent: n(n(adapter(x))) === n(adapter(x)) (69ms)
+    ✔ event-type histogram is documented
+    ✔ event-types module is loadable
+
+  client-core/careportal/normalize-treatment
+    ✔ drops empty and null fields from the result
+    ✔ parses preBolus to int and drops it when NaN
+    ✔ attaches reasonDisplay when reason matches a row in inputMatrix
+    ✔ omits reasonDisplay when reason does not match
+    ✔ upconverts mmol target values to mg/dL
+    ✔ preserves mg/dL targets unchanged when units != mmol
+    ✔ sets data.absolute when absoluteRaw is a numeric string (including "0")
+    ✔ omits data.absolute when absoluteRaw is empty or non-numeric
+    ✔ uses opts.now for created_at when no eventTime is supplied
+    ✔ uses data.eventTime for created_at when supplied
+    ✔ drops profile when the eventType row in inputMatrix has profile=false
+    ✔ keeps profile when the eventType row has profile=true
+    ✔ normalises any "Temp Basal" variant to "Temp Basal"
+    ✔ handles "Temporary Target Cancel" by setting duration=0 and clearing targets
+    ✔ attaches splitNow/splitExt for Combo Bolus from the *Raw fields
+    ✔ does not mutate the input raw object
+
+  client-core/careportal/resolve-event-name
+    ✔ returns the matching event name for a known val
+    ✔ returns the input value when no match is found
+    ✔ returns the input value when events is undefined
+    ✔ returns the input value when events is empty
+    ✔ returns the input value when events contains a falsy entry
+
+  client-core/careportal/validate
+    ✔ passes through non-temporary-target events with no messages
+    ✔ passes a Temporary Target Cancel (duration === 0) without checking targets
+    ✔ flags missing top/bottom for Temporary Target
+    ✔ flags NaN top for Temporary Target
+    ✔ accepts an in-range Temporary Target in mg/dl
+    ✔ rejects a Temporary Target above 18 mmol/L (mg/dl input)
+    ✔ rejects a Temporary Target below 4 mmol/L (mg/dl input)
+    ✔ rejects an inverted target range (top < bottom)
+    ✔ accepts Temporary Target in mmol units after conversion
+    ✔ rejects Temporary Target above 18 in mmol units
+    ✔ rejects Temporary Target below 4 in mmol units
+    ✔ uses default MMOL_TO_MGDL when not provided
+
+  client-core: devicestatus / loop (selectLoopState)
+    contract
+      ✔ returns the documented null-shape for an empty list
+      ✔ handles non-array input without throwing
+      ✔ skips records without a loop.timestamp
+    captured Loop iOS fixtures
+      ✔ selects a lastLoop
+      ✔ selects a lastPredicted with a startDate + values array
+      ✔ lastOkMoment is the latest non-failure loop moment
+      ✔ display code is one of the documented states
+      ✔ captured Loop fixtures produce a "looping" or "enacted" display when within recent window
+      ✔ lastEnacted (when present) carries timestamp and a moment
+    captured Trio fixtures (no loop block)
+      ✔ returns the null-shape because Trio devicestatus has no `loop` body
+    display state machine
+      ✔ failureReason → error
+      ✔ enacted but not received → error
+      ✔ enacted and received within recent window → enacted
+      ✔ plain recent loop (no enacted, no recommendation) → looping
+
+  client-core: devicestatus / openaps (selectOpenAPSState)
+    contract
+      ✔ returns the documented null-shape for an empty list
+      ✔ handles non-array input without throwing
+      ✔ skips records without an openaps body
+      ✔ normalizes openaps.iob array → first element with .timestamp from .time
+    mutation contract
+      ✔ grafts enacted.moment onto the input enacted object
+      ✔ grafts suggested.moment onto the input suggested object
+      ✔ grafts mmtune.moment when status.mmtune.timestamp is present
+      ✔ collapses status.openaps.iob array to first element and back-fills .timestamp from .time
+    predBGs and mmtune selection
+      ✔ uses an enacted.predBGs bare Array as lastPredBGs.values and stamps a moment
+      ✔ lets newer suggested.predBGs supersede enacted.predBGs
+      ✔ populates seenDevices[uri].mmtune and stamps mmtune.moment
+    captured AAPS-Android fixtures (full openaps body)
+      ✔ seenDevices contains an entry keyed by the openaps://AndroidAPS URI
+      ✔ per-device status surfaces "Waiting" via noWarning=true even when no enacted/suggested timestamps exist
+      ✔ top-level status code is one of the documented states
+      ✔ lastEnacted / lastSuggested are null when blocks lack timestamps (matches legacy plugin)
+    captured Trio (oref1) fixtures
+Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments: 
+[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: x, _f: undefined, _strict: undefined, _locale: [object Object]
+Error
+    at Function.createFromInputFallback (/opt/app/node_modules/moment/moment.js:324:25)
+    at configFromString (/opt/app/node_modules/moment/moment.js:2613:19)
+    at configFromInput (/opt/app/node_modules/moment/moment.js:3056:13)
+    at prepareConfig (/opt/app/node_modules/moment/moment.js:3039:13)
+    at createFromConfig (/opt/app/node_modules/moment/moment.js:3006:44)
+    at createLocalOrUTC (/opt/app/node_modules/moment/moment.js:3100:16)
+    at createLocal (/opt/app/node_modules/moment/moment.js:3104:16)
+    at hooks (/opt/app/node_modules/moment/moment.js:16:29)
+    at /opt/app/lib/client-core/devicestatus/loop.js:78:24
+    at Array.forEach (<anonymous>)
+    at selectLoopState (/opt/app/lib/client-core/devicestatus/loop.js:70:18)
+    at Context.<anonymous> (/opt/app/tests/client-core/devicestatus-loop.test.js:115:15)
+    at callFn (/opt/app/node_modules/mocha/lib/runnable.js:366:21)
+    at Runnable.run (/opt/app/node_modules/mocha/lib/runnable.js:354:5)
+    at Runner.runTest (/opt/app/node_modules/mocha/lib/runner.js:719:10)
+    at /opt/app/node_modules/mocha/lib/runner.js:842:12
+    at next (/opt/app/node_modules/mocha/lib/runner.js:634:14)
+    at /opt/app/node_modules/mocha/lib/runner.js:644:7
+    at next (/opt/app/node_modules/mocha/lib/runner.js:527:14)
+    at Immediate._onImmediate (/opt/app/node_modules/mocha/lib/runner.js:612:5)
+    at process.processImmediate (node:internal/timers:484:21)
+      ✔ selects lastSuggested from the oref1 suggested block (which carries a timestamp)
+      ✔ selects lastEnacted from records carrying enacted.timestamp + received
+      ✔ captures predBGs (per-curve object) from the oref1 enacted/suggested block
+      ✔ top-level status reaches "enacted" when latest enacted is within recent
+    captured Loop iOS fixtures (no openaps body)
+      ✔ returns the null-shape because Loop devicestatus has no `openaps` body
+    display state machine
+      ✔ enacted + received within recent window → enacted
+      ✔ enacted but not received → notenacted
+      ✔ only suggested within recent window → looping
+      ✔ fresh notEnacted after fresh enacted → notenacted
+      ✔ stale data (outside recent window, no enacted/suggested fresh) → warning
+    deviceName injection
+      ✔ uses the supplied deviceName helper when provided
+      ✔ default deviceName mirrors the legacy lib/utils.js logic
+
+  client-core: devicestatus / pump (selectLatestPumpStatus)
+    ✔ returns null for empty / non-array input
+    ✔ returns the only record when given a single-element list
+    ✔ picks the record with the latest pump.clock
+    ✔ falls back to status.mills when pump.clock is absent
+    ✔ compares pump.clock against status.mills consistently
+    ✔ mutates each input status with computed clockMills (legacy contract)
+    ✔ selects a captured pump-bearing devicestatus from the Loop fixture
+
+  client-core: devicestatus / uploader (classifyUploader)
+    ✔ returns "unknown" for null / undefined / non-object
+    ✔ classifies presence of `loop` block as "loop"
+    ✔ classifies presence of `openaps` block as "openaps"
+    ✔ falls back to device-string prefix when no body block is present
+    ✔ returns "pump" for pump-only records (no loop/openaps body)
+    ✔ returns "unknown" for an empty record
+    ✔ every captured devicestatus classifies to "loop" (Loop iOS only capture)
+    ✔ every Trio captured devicestatus classifies to "openaps"
+    ✔ every phone-uploader devicestatus classifies to "unknown" (no body block)
+    ✔ every AAPS-Android devicestatus classifies to "openaps"
+
+  plugin wiring: loop.analyzeData → selectLoopState
+ Prefs: { warn: 30, urgent: 60, enableAlerts: undefined }
+    ✔ forwards (recentData, recent, { moment }) and filters out non-loop / out-of-window records
+
+  plugin wiring: openaps.analyzeData → selectOpenAPSState
+    ✔ forwards (recentData, recent, { moment, deviceName }) to the pure module
+
+  captured-fixture pill goldens
+    aaps
+For the COB plugin to function you need a treatment profile
+ Prefs: { warn: 30, urgent: 60, enableAlerts: undefined }
+      ✔ matches committed pills-golden.json (119ms)
+    loop
+ Prefs: { warn: 30, urgent: 60, enableAlerts: undefined }
+      ✔ matches committed pills-golden.json (64ms)
+    phone-uploader
+For the COB plugin to function you need a treatment profile
+ Prefs: { warn: 30, urgent: 60, enableAlerts: undefined }
+      ✔ matches committed pills-golden.json
+    trio
+For the COB plugin to function you need a treatment profile
+ Prefs: { warn: 30, urgent: 60, enableAlerts: undefined }
+      ✔ matches committed pills-golden.json
+
+  client-core: profile-editor / default-profile + time-utils
+    buildDefaultProfile
+      ✔ returns a fresh object on each call (no shared reference)
+      ✔ has the canonical shape (basal, sens, target_low/high arrays)
+      ✔ exposes both default export and named buildDefaultProfile
+    toMinutesFromMidnight
+      ✔ parses HH:mm
+      ✔ returns NaN for non-string
+    toTimeString
+      ✔ formats integer minutes as zero-padded HH:mm
+      ✔ wraps 1440 to 00:00 (matches moment behaviour)
+      ✔ handles invalid input safely
+      ✔ round-trips with toMinutesFromMidnight
+
+  client-core: profile-editor / migrate (captured Loop fixtures)
+    ✔ captured fixture set is non-empty
+    record[0] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[1] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[2] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[3] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[4] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[5] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[6] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[7] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[8] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+    record[9] (Default)
+      ✔ returns a mismatchedProfiles array (possibly empty)
+      ✔ every store profile has the canonical default key set
+      ✔ every range field is an array of {time,value} entries
+      ✔ migration is idempotent
+
+  client-core: profile-editor / migrate
+    alignProfileWithDefaults
+      ✔ adds missing keys from defaults
+      ✔ drops keys not present in defaults
+      ✔ is a no-op for null inputs
+    convertToRanges
+      ✔ coerces scalar carbratio/sens/target/basal into [{time,value}]
+      ✔ leaves array-form fields untouched
+      ✔ flags mismatch when target_low/target_high lengths differ and resets to defaults
+    migrateRecordStore
+      ✔ applies align+convert to every named profile and returns mismatch list
+      ✔ handles records with no store gracefully
+
+  client-core: profile-editor / profiles CRUD
+    uniqueName
+      ✔ returns the base when free
+      ✔ appends 1s until free
+    addProfile
+      ✔ adds with the supplied baseName
+      ✔ falls back to "New profile" and disambiguates collisions
+      ✔ clones defaults so future mutations do not leak
+    getFirstAvailableProfile
+      ✔ returns null when only the current profile exists
+      ✔ returns first sibling key
+    removeProfile
+      ✔ refuses when no other profile exists
+      ✔ deletes and switches to the first available
+    cloneProfile
+      ✔ appends "(copy)" suffix and disambiguates
+      ✔ deep-clones the source profile
+    renameProfile
+      ✔ is a no-op when names match
+      ✔ renames and disambiguates collisions
+
+  client-core: profile-editor / ranges
+    addRangeStop
+      ✔ inserts a {time:"00:00", value:0} stop at index
+      ✔ clamps a too-large index to the end
+      ✔ treats invalid index as 0
+    removeRangeStop
+      ✔ refuses to remove the only stop
+      ✔ removes at index and forces arr[0].time = "00:00" invariant
+      ✔ rejects out-of-bounds index without modifying array
+    addTargetStop / removeTargetStop
+      ✔ keeps target_low and target_high in lockstep
+
+  client-core: profile-editor / records CRUD
+    newEmptyRecord
+      ✔ builds a record with Default profile and current ISO startDate
+    addRecord
+      ✔ appends and points currentIndex at the new record
+    removeRecord
+      ✔ refuses to remove the only record (length<=1)
+      ✔ removes when length>1 and resets currentIndex to 0
+    cloneRecord
+      ✔ appends a sibling stripped of persistence keys with a fresh startDate
+
+  plugin wiring: pump.setProperties → selectLatestPumpStatus
+    ✔ forwards filtered pump records and { moment } to the pure module
+
+
+  263 passing (2s)
+

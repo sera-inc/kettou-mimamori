@@ -1,0 +1,443 @@
+[
+  {
+    "file": "lib/client/chart.js",
+    "line": 38,
+    "start": 847,
+    "end": 856,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 403,
+    "start": 13270,
+    "end": 13276,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 413,
+    "start": 13768,
+    "end": 13774,
+    "original": "'#777'",
+    "target": "--app-border-strong",
+    "replacement": "\"var(--app-border-strong)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 423,
+    "start": 14282,
+    "end": 14288,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 433,
+    "start": 14804,
+    "end": 14810,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 443,
+    "start": 15298,
+    "end": 15304,
+    "original": "'#777'",
+    "target": "--app-border-strong",
+    "replacement": "\"var(--app-border-strong)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 448,
+    "start": 15503,
+    "end": 15509,
+    "original": "'#111'",
+    "target": "--app-primary-bg",
+    "replacement": "\"var(--app-primary-bg)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 454,
+    "start": 15747,
+    "end": 15754,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 459,
+    "start": 15944,
+    "end": 15951,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 469,
+    "start": 16390,
+    "end": 16396,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 479,
+    "start": 16908,
+    "end": 16914,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/chart.js",
+    "line": 489,
+    "start": 17430,
+    "end": 17436,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 130,
+    "start": 4197,
+    "end": 4204,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 311,
+    "start": 12382,
+    "end": 12389,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 313,
+    "start": 12443,
+    "end": 12451,
+    "original": "'orange'",
+    "target": "--app-warning-text",
+    "replacement": "\"var(--app-warning-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 315,
+    "start": 12505,
+    "end": 12511,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 321,
+    "start": 12611,
+    "end": 12617,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 323,
+    "start": 12671,
+    "end": 12679,
+    "original": "'orange'",
+    "target": "--app-warning-text",
+    "replacement": "\"var(--app-warning-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 325,
+    "start": 12733,
+    "end": 12738,
+    "original": "'red'",
+    "target": "--app-danger-text",
+    "replacement": "\"var(--app-danger-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 367,
+    "start": 14277,
+    "end": 14283,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 369,
+    "start": 14343,
+    "end": 14351,
+    "original": "'Violet'",
+    "target": "--app-chart-exercise",
+    "replacement": "\"var(--app-chart-exercise)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 371,
+    "start": 14414,
+    "end": 14422,
+    "original": "'Salmon'",
+    "target": "--app-chart-note",
+    "replacement": "\"var(--app-chart-note)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 373,
+    "start": 14497,
+    "end": 14508,
+    "original": "'lightgray'",
+    "target": "--app-border",
+    "replacement": "\"var(--app-border)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 461,
+    "start": 17564,
+    "end": 17571,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 492,
+    "start": 18743,
+    "end": 18750,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 539,
+    "start": 20108,
+    "end": 20115,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 542,
+    "start": 20386,
+    "end": 20395,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 690,
+    "start": 27373,
+    "end": 27378,
+    "original": "'red'",
+    "target": "--app-danger-text",
+    "replacement": "\"var(--app-danger-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 700,
+    "start": 27766,
+    "end": 27771,
+    "original": "'red'",
+    "target": "--app-danger-text",
+    "replacement": "\"var(--app-danger-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 725,
+    "start": 28712,
+    "end": 28719,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 735,
+    "start": 29124,
+    "end": 29131,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 745,
+    "start": 29541,
+    "end": 29550,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 755,
+    "start": 29962,
+    "end": 29971,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 803,
+    "start": 32054,
+    "end": 32061,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 974,
+    "start": 38413,
+    "end": 38420,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 1137,
+    "start": 44800,
+    "end": 44809,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 1144,
+    "start": 45000,
+    "end": 45009,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 1153,
+    "start": 45275,
+    "end": 45284,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 1161,
+    "start": 45498,
+    "end": 45507,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 1179,
+    "start": 46197,
+    "end": 46206,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/renderer.js",
+    "line": 1262,
+    "start": 50078,
+    "end": 50087,
+    "original": "'#0099ff'",
+    "target": "--app-primary",
+    "replacement": "\"var(--app-primary)\""
+  },
+  {
+    "file": "lib/client/index.js",
+    "line": 689,
+    "start": 22937,
+    "end": 22943,
+    "original": "'grey'",
+    "target": "--app-text-muted",
+    "replacement": "\"var(--app-text-muted)\""
+  },
+  {
+    "file": "lib/client/index.js",
+    "line": 693,
+    "start": 23066,
+    "end": 23071,
+    "original": "'red'",
+    "target": "--app-danger-text",
+    "replacement": "\"var(--app-danger-text)\""
+  },
+  {
+    "file": "lib/client/index.js",
+    "line": 695,
+    "start": 23156,
+    "end": 23164,
+    "original": "'yellow'",
+    "target": "--app-warning-text",
+    "replacement": "\"var(--app-warning-text)\""
+  },
+  {
+    "file": "lib/client/index.js",
+    "line": 697,
+    "start": 23340,
+    "end": 23349,
+    "original": "'#4cff00'",
+    "target": "--app-success-text",
+    "replacement": "\"var(--app-success-text)\""
+  },
+  {
+    "file": "lib/client/index.js",
+    "line": 699,
+    "start": 23428,
+    "end": 23433,
+    "original": "'red'",
+    "target": "--app-danger-text",
+    "replacement": "\"var(--app-danger-text)\""
+  },
+  {
+    "file": "lib/client/index.js",
+    "line": 701,
+    "start": 23521,
+    "end": 23529,
+    "original": "'yellow'",
+    "target": "--app-warning-text",
+    "replacement": "\"var(--app-warning-text)\""
+  },
+  {
+    "file": "lib/client/index.js",
+    "line": 1324,
+    "start": 44285,
+    "end": 44292,
+    "original": "'white'",
+    "target": "--app-text",
+    "replacement": "\"var(--app-text)\""
+  },
+  {
+    "file": "lib/client/index.js",
+    "line": 1339,
+    "start": 44929,
+    "end": 44934,
+    "original": "'red'",
+    "target": "--app-danger-text",
+    "replacement": "\"var(--app-danger-text)\""
+  }
+]

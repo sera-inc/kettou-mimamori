@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 61,
+    "tests": 319,
+    "passes": 299,
+    "pending": 0,
+    "failures": 20,
+    "start": "2026-10-12T13:03:02.635Z",
+    "end": "2026-10-12T13:06:19.256Z",
+    "duration": 196621
+  },
+  "failures": [
+    {
+      "title": "API_SECRET should fail when unauthorized",
+      "error": "Timeout of 7000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/security.test.js)",
+      "stack": "Error: Timeout of 7000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/security.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    },
+    {
+      "title": "API_SECRET should work fine set",
+      "error": "Timeout of 7000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/security.test.js)",
+      "stack": "Error: Timeout of 7000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/security.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    },
+    {
+      "title": "purifier sanitizes nested strings and leaves primitive non-strings alone",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier removes unsafe URL attributes from HTML strings",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier preserves harmless text and profile references byte-for-byte",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier does not expand large plain-text strings during sanitization",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier rejects oversized strings that require HTML parsing",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier bounds aggregate HTML parsing across an object",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier sanitizes reasonably deep input without exhausting the call stack",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier rejects excessive nesting before traversal state can exhaust the heap",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier rejects excessive object and property counts",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier is idempotent when a write crosses more than one guarded boundary",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier sanitizes own prototype-like keys without polluting global prototypes",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier purifies direct storage batches per document and fails closed without a purifier",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier keeps disabled SVG, form and raw-text parser features inert",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "purifier handles cycles and leaves date and binary values untouched",
+      "stack": "InvalidCharacterError: The string to be decoded contains invalid characters."
+    },
+    {
+      "title": "verifyauth should return defaults when called without secret",
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    },
+    {
+      "title": "verifyauth should fail when calling with wrong secret",
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    },
+    {
+      "title": "verifyauth should fail unauthorized and delay subsequent attempts",
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    },
+    {
+      "title": "verifyauth should work fine authorized",
+      "error": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)",
+      "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/opt/app/tests/verifyauth.test.js)\n    at listOnTimeout (node:internal/timers:585:17)\n    at process.processTimers (node:internal/timers:521:7)"
+    }
+  ]
+}

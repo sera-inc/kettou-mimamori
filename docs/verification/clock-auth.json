@@ -1,0 +1,144 @@
+{
+  "generatedAt": "2026-10-13T12:38:48.287Z",
+  "scope": "Actual status/properties endpoints and rendered clocks with JSON-string storage, legacy raw storage and default read-only anonymous role; no response substitution or API writes",
+  "results": [
+    {
+      "format": "json",
+      "route": "/clock/config",
+      "responses": [
+        {
+          "path": "/api/v1/status.js",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        }
+      ],
+      "reading": "101",
+      "arrowAndClockVisible": true,
+      "pageErrors": []
+    },
+    {
+      "format": "json",
+      "route": "/clock/cy10-sg40-ar30-tm10",
+      "responses": [
+        {
+          "path": "/api/v1/status.js",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        }
+      ],
+      "reading": "101",
+      "arrowAndClockVisible": true,
+      "pageErrors": []
+    },
+    {
+      "format": "raw",
+      "route": "/clock/config",
+      "responses": [
+        {
+          "path": "/api/v1/status.js",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        }
+      ],
+      "reading": "101",
+      "arrowAndClockVisible": true,
+      "pageErrors": []
+    },
+    {
+      "format": "raw",
+      "route": "/clock/cy10-sg40-ar30-tm10",
+      "responses": [
+        {
+          "path": "/api/v1/status.js",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        }
+      ],
+      "reading": "101",
+      "arrowAndClockVisible": true,
+      "pageErrors": []
+    },
+    {
+      "format": "absent",
+      "route": "/clock/config",
+      "responses": [
+        {
+          "path": "/api/v1/status.js",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        }
+      ],
+      "reading": "101",
+      "arrowAndClockVisible": true,
+      "pageErrors": []
+    },
+    {
+      "format": "absent",
+      "route": "/clock/cy10-sg40-ar30-tm10",
+      "responses": [
+        {
+          "path": "/api/v1/status.js",
+          "status": 200
+        },
+        {
+          "path": "/api/v2/properties",
+          "status": 200
+        }
+      ],
+      "reading": "101",
+      "arrowAndClockVisible": true,
+      "pageErrors": []
+    }
+  ]
+}

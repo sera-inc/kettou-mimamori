@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "case": "drawer supports mobile dimensions, named modal, trapped Tab, native close, Space opening, Escape and trigger focus return",
+      "pass": true
+    },
+    {
+      "case": "treatmentDrawer supports mobile dimensions, named modal, trapped Tab, native close, Space opening, Escape and trigger focus return",
+      "pass": true
+    },
+    {
+      "case": "nested food picker closes with Escape while insulin drawer stays open",
+      "pass": true
+    },
+    {
+      "case": "boluscalcDrawer supports mobile dimensions, named modal, trapped Tab, native close, Space opening, Escape and trigger focus return",
+      "pass": true
+    },
+    {
+      "case": "adminNotifiesDrawer supports mobile dimensions, named modal, trapped Tab, native close, Space opening, Escape and trigger focus return",
+      "pass": true
+    },
+    {
+      "case": "desktop backdrop dismisses; no record save, native confirmation or page error occurs during any dismissal",
+      "pass": true
+    }
+  ],
+  "writeRequests": [],
+  "nativeDialogs": [],
+  "pageErrors": []
+}

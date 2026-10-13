@@ -1,0 +1,56 @@
+{
+  "baseline": "92d0834219aa771b5837dbcbf1baeb839a200cf6",
+  "results": [
+    {
+      "file": "lib/client/chart.js",
+      "verified": "AST identical except reviewed color literals",
+      "changedColors": 12
+    },
+    {
+      "file": "lib/client/renderer.js",
+      "verified": "AST identical except reviewed color literals",
+      "changedColors": 29
+    },
+    {
+      "file": "lib/client/index.js",
+      "verified": "AST identical except reviewed color literals",
+      "changedColors": 8
+    },
+    {
+      "file": "views/index.html",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    },
+    {
+      "file": "views/profileindex.html",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    },
+    {
+      "file": "views/foodindex.html",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    },
+    {
+      "file": "views/adminindex.html",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    },
+    {
+      "file": "views/reportindex.html",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    },
+    {
+      "file": "views/frame.html",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    },
+    {
+      "file": "views/error.html",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    },
+    {
+      "file": "views/clockviews/clock.html",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    },
+    {
+      "file": "views/partials/toolbar.ejs",
+      "verified": "event IDs, EJS bindings and scripts retained"
+    }
+  ]
+}

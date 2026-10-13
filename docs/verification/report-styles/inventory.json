@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-10-13T01:56:43.829Z",
+  "scope": "Owned report and report-plugin JavaScript literals using all 148 CSS named colors, embedded literals/templates, and font attr/style calls; an inventory, not proof of migration or accessibility. Third-party Flot source untouched.",
+  "count": 15,
+  "appearance": 0,
+  "files": {
+    "lib/report_plugins/daytoday.js": 3,
+    "lib/report_plugins/loopalyzer.js": 2,
+    "lib/report_plugins/weektoweek.js": 3,
+    "lib/report/reportclient.js": 7
+  },
+  "records": [
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 288,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 289,
+      "type": "color-literal",
+      "value": "transparent",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/daytoday.js",
+      "line": 393,
+      "type": "color-literal",
+      "value": "purple",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 87,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "border-collapse",
+          "value": "collapse"
+        },
+        {
+          "property": "border",
+          "value": "0px"
+        }
+      ],
+      "classification": "structural-border-no-visible-paint"
+    },
+    {
+      "file": "lib/report_plugins/loopalyzer.js",
+      "line": 89,
+      "type": "embedded-style",
+      "declarations": [
+        {
+          "property": "border-collapse",
+          "value": "collapse"
+        },
+        {
+          "property": "border",
+          "value": "0px"
+        }
+      ],
+      "classification": "structural-border-no-visible-paint"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 113,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 289,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report_plugins/weektoweek.js",
+      "line": 290,
+      "type": "color-literal",
+      "value": "transparent",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 188,
+      "type": "color-literal",
+      "value": "darkgreen",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 191,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 193,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 843,
+      "type": "color-literal",
+      "value": "gray",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 852,
+      "type": "color-literal",
+      "value": "red",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 857,
+      "type": "color-literal",
+      "value": "transparent",
+      "classification": "internal-classification-or-invisible-sentinel"
+    },
+    {
+      "file": "lib/report/reportclient.js",
+      "line": 858,
+      "type": "color-literal",
+      "value": "transparent",
+      "classification": "internal-classification-or-invisible-sentinel"
+    }
+  ]
+}

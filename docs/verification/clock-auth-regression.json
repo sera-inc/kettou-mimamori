@@ -1,0 +1,30 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 17,
+    "passes": 17,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T12:47:58.426Z",
+    "end": "2026-10-13T12:48:04.256Z",
+    "duration": 5830
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/clock-client.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 17,
+        "passes": 17,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T12:48:03.072Z",
+        "end": "2026-10-13T12:48:04.120Z",
+        "duration": 1048
+      }
+    }
+  ],
+  "failures": []
+}

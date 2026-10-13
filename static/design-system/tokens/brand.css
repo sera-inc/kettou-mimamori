@@ -1,0 +1,20 @@
+/*
+ * tokens/brand.css — Layer 2: ブランド上書き（設計書 DS-EXT-001 §3.5）
+ *
+ * U-01 決定（2026-08-23 / D-06）: Option A — DADS blue をそのまま継承。
+ * コントラスト比は DADS 担保済みのため再検証不要。
+ *
+ * プロダクト固有のブランド色を使う場合は、このファイルのみをプロダクト側で
+ * 上書きする（--app-* は共通基盤に置き、触らない）。差し替えた場合は必ず
+ * WCAG 2.2 の再検証を行い、結果を docs/deviations.md に記録すること:
+ *   - 通常テキスト 4.5:1 以上
+ *   - 大きいテキスト（18.66px以上bold / 24px以上）3:1 以上
+ *   - UI部品・境界・フォーカスリング 3:1 以上
+ */
+:root {
+  --brand-primary: var(--dads-color-blue-900); /* #0017c1 対白 11.10:1 */
+  --brand-primary-hover: var(--dads-color-blue-1000); /* #00118f */
+  --brand-primary-active: var(--dads-color-blue-1200); /* #000060 */
+  --brand-primary-text: var(--dads-color-white); /* primary 上に載るテキスト */
+  --brand-selected: var(--dads-color-blue-50); /* 選択面の淡色 #e8f1fe */
+}

@@ -1,0 +1,21 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const {execFileSync}=require('node:child_process');
+const image=process.argv[2]||'kettou-mimamori:verification';
+const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
+const metadata=JSON.parse(execFileSync('docker',['image','inspect',image],{encoding:'utf8'}))[0];
+const probe=`const fs=require('node:fs'),crypto=require('node:crypto');
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const files=[];function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const file=dir+'/'+entry.name;if(entry.isDirectory())walk(file);else files.push({file:file.slice('/opt/app/'.length),sha256:sha(fs.readFileSync(file))});}}
+for(const dir of ['lib','static','views','translations'])walk('/opt/app/'+dir);
+for(const file of ['LICENSE','COPYRIGHT','NOTICE','package.json','package-lock.json','server.js'])files.push({file,sha256:sha(fs.readFileSync('/opt/app/'+file))});
+console.log(JSON.stringify({files,privateEnvIncluded:fs.existsSync('/opt/app/.env.local'),buildSecretIncluded:fs.existsSync('/run/secrets/local_ca'),bundles:['app','clock'].map(name=>({name,bytes:fs.statSync('/opt/app/node_modules/.cache/_ns_cache/public/js/bundle.'+name+'.js').size}))}));`;
+const actual=JSON.parse(execFileSync('docker',['run','--rm','--entrypoint','node',image,'-e',probe],{encoding:'utf8',maxBuffer:10*1024*1024}));
+assert.equal(actual.privateEnvIncluded,false);assert.equal(actual.buildSecretIncluded,false);
+for(const file of actual.files)assert.equal(file.sha256,sha(fs.readFileSync(path.resolve(file.file))),file.file+' must match current source');
+for(const bundle of actual.bundles)assert(bundle.bytes>10000,bundle.name+' must be built');
+if(image==='kettou-mimamori:verification')assert.equal(metadata.Config.User,'node');
+const result={checkedAt:new Date().toISOString(),image,imageId:metadata.Id,user:metadata.Config.User,checkedSourceFiles:actual.files.length,privateEnvIncluded:false,buildSecretIncluded:false,legalFiles:['LICENSE','COPYRIGHT','NOTICE'],bundles:actual.bundles,sourceHashes:actual.files};
+fs.mkdirSync('docs/verification',{recursive:true});
+fs.writeFileSync('docs/verification/'+(image==='kettou-mimamori:verification'?'production':'local')+'-image-verification.json',JSON.stringify(result,null,2));
+console.log('PASS: '+actual.files.length+' image source files match, both bundles exist, legal notices included, private env/build secret excluded.');

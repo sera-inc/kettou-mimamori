@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-10-12T16:32:02.980Z",
+  "results": [
+    {
+      "viewport": "desktop",
+      "reportTypes": [
+        "daytoday",
+        "weektoweek",
+        "dailystats",
+        "glucosedistribution",
+        "hourlystats",
+        "percentile",
+        "success",
+        "calibrations",
+        "treatments",
+        "profiles",
+        "loopalyzer"
+      ],
+      "pass": true,
+      "assertions": [
+        "all eleven types by keyboard",
+        "Home/End and wrapped arrows",
+        "Enter/Space",
+        "visible focus and selected indicator",
+        "one active panel and roving stop",
+        "Tab exits to filters",
+        "dates/targets/notes remain exact",
+        "no horizontal page overflow"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "reportTypes": [
+        "daytoday",
+        "weektoweek",
+        "dailystats",
+        "glucosedistribution",
+        "hourlystats",
+        "percentile",
+        "success",
+        "calibrations",
+        "treatments",
+        "profiles",
+        "loopalyzer"
+      ],
+      "pass": true,
+      "assertions": [
+        "all eleven types by keyboard",
+        "Home/End and wrapped arrows",
+        "Enter/Space",
+        "visible focus and selected indicator",
+        "one active panel and roving stop",
+        "Tab exits to filters",
+        "dates/targets/notes remain exact",
+        "no horizontal page overflow"
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "apiWrites": []
+}

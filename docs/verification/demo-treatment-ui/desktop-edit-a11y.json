@@ -1,0 +1,50 @@
+{
+  "violations": [
+    {
+      "id": "label",
+      "impact": "critical",
+      "nodes": [
+        {
+          "target": [
+            "#rped_bgfromsensor"
+          ],
+          "html": "<input type=\"radio\" name=\"rp_bginput\" id=\"rped_bgfromsensor\" value=\"Sensor\">"
+        },
+        {
+          "target": [
+            "#rped_bgfrommeter"
+          ],
+          "html": "<input type=\"radio\" name=\"rp_bginput\" id=\"rped_bgfrommeter\" value=\"Finger\">"
+        },
+        {
+          "target": [
+            "#rped_bgmanual"
+          ],
+          "html": "<input type=\"radio\" name=\"rp_bginput\" id=\"rped_bgmanual\" value=\"Manual\">"
+        },
+        {
+          "target": [
+            "#rped_eventDateValue"
+          ],
+          "html": "<input type=\"date\" id=\"rped_eventDateValue\" class=\"rp_eventinput\">"
+        },
+        {
+          "target": [
+            "#rped_eventTimeValue"
+          ],
+          "html": "<input type=\"time\" id=\"rped_eventTimeValue\" class=\"rp_eventinput\">"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious"
+    },
+    {
+      "id": "th-has-data-cells",
+      "impact": "serious"
+    }
+  ]
+}

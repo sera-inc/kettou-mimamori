@@ -1,0 +1,170 @@
+/*
+ * tokens/semantic.css — Layer 2: セマンティック層（設計書 DS-EXT-001 §3）
+ *
+ * DADS プリミティブ（--dads-*）に自社SaaSの文脈における用途名を与える層。
+ * Layer 3 のコンポーネントは本層のトークンのみを参照する（原則3: 生値の禁止）。
+ * 本層の値変更は設計書の改訂手続きに従う（原則2）。
+ *
+ * 参照可能な値: var(--dads-*) / var(--brand-*) / 本層で定義する構造値のみ。
+ * コントラスト比は全値検証済み（デザインキャンバス「Layer 2 セマンティックトークン」参照）。
+ */
+:root {
+  /* ===== 3.1.1 サーフェス・境界 ===== */
+  --app-surface: var(--dads-color-white);
+  --app-surface-sunken: var(--dads-color-solid-gray-50); /* #f2f2f2 */
+  --app-surface-raised: var(--dads-color-white); /* + --app-shadow-raised */
+  --app-surface-hover: var(--dads-color-solid-gray-50);
+  --app-surface-selected: var(--brand-selected);
+  /* DADS divider 最淡色（3:1）より淡い値への変更禁止（設計書 §3.1.1 注） */
+  --app-border: var(--dads-color-solid-gray-420); /* #949494 対白 3.03:1 */
+  --app-border-strong: var(--dads-color-solid-gray-536); /* #767676 */
+
+  /* ===== 3.1.2 テキスト ===== */
+  --app-text: var(--dads-color-solid-gray-800); /* #333333 対白 12.63:1 AAA */
+  --app-text-muted: var(--dads-color-solid-gray-600); /* #666666 対白 5.74:1 AA */
+  --app-text-inverse: var(--dads-color-white);
+  --app-text-link: var(--dads-color-blue-1000); /* #00118f、下線必須（link-text準拠） */
+  --app-text-link-hover: var(--dads-color-blue-900);
+
+  /* ===== 3.1.3 意味色（-bg / -border / -text の3変種） ===== */
+  --app-primary: var(--brand-primary);
+  --app-primary-hover: var(--brand-primary-hover);
+  --app-primary-active: var(--brand-primary-active);
+  --app-primary-text: var(--brand-primary-text);
+  --app-primary-bg: var(--brand-selected);
+  --app-primary-border: var(--brand-primary);
+
+  --app-danger: var(--dads-color-red-800); /* error-1 #ec0000 */
+  --app-danger-bg: var(--dads-color-red-50); /* #fdeeee */
+  --app-danger-border: var(--dads-color-red-800);
+  --app-danger-text: var(--dads-color-red-900); /* error-2 #ce0000 対bg 5.14:1 */
+
+  --app-warning: var(--dads-color-yellow-700); /* warning-yellow-1 #b78f00 */
+  --app-warning-bg: var(--dads-color-yellow-50); /* #fbf5e0 */
+  --app-warning-border: var(--dads-color-yellow-700);
+  --app-warning-text: var(--dads-color-yellow-1000); /* #806300 対bg 5.20:1 */
+
+  --app-success: var(--dads-color-green-800); /* success-2 #197a4b */
+  --app-success-bg: var(--dads-color-green-50); /* #e6f5ec */
+  --app-success-border: var(--dads-color-green-800);
+  --app-success-text: var(--dads-color-green-800); /* 対bg 4.75:1 */
+
+  --app-info: var(--dads-color-blue-900); /* #0017c1 */
+  --app-info-bg: var(--dads-color-blue-50); /* #e8f1fe */
+  --app-info-border: var(--dads-color-blue-900);
+  --app-info-text: var(--dads-color-blue-900); /* 対bg 9.75:1 */
+
+  /* ===== 3.1.4 フォーカス（DADS v2.17.0 機能カラー） ===== */
+  /* フォーカスリングの除去（outline: none）は禁止。lint:tokens で検出する */
+  --app-focus-ring: var(--dads-color-focus-blue); /* #0877d7 */
+  --app-focus-ring-width: 3px;
+  --app-focus-ring-offset: 2px;
+
+  /* ===== 3.2 タイポグラフィ（管理画面 = Dense系 / 公開ページ = Standard系） ===== */
+  --app-font-sans: var(--dads-font-sans);
+  --app-font-mono: var(--dads-font-mono);
+  --app-font-weight-normal: var(--dads-font-weight-400);
+  --app-font-weight-bold: var(--dads-font-weight-700);
+
+  /* 本文・フォームの値: Dense 14 */
+  --app-text-body-size: var(--dads-text-dns-14N-130-size);
+  --app-text-body-weight: var(--dads-text-dns-14N-130-weight);
+  --app-text-body-leading: var(--dads-text-dns-14N-130-leading);
+  --app-text-body-tracking: var(--dads-text-dns-14N-130-tracking);
+  /* 補助情報・フォームラベル: 12px。DADS v2.17.1 の Dense 系は 14px が最小のため
+     12px は自社定義（逸脱 DEV-001、docs/deviations.md 参照） */
+  --app-text-body-sm-size: 0.75rem;
+  --app-text-body-sm-weight: 400;
+  --app-text-body-sm-leading: 1.3;
+  --app-text-body-sm-tracking: 0.02em;
+  --app-text-label-size: 0.75rem;
+  --app-text-label-weight: 700;
+  --app-text-label-leading: 1.3;
+  --app-text-label-tracking: 0.02em;
+  /* テーブルセル: Dense 14 */
+  --app-text-table-size: var(--dads-text-dns-14N-130-size);
+  --app-text-table-weight: var(--dads-text-dns-14N-130-weight);
+  --app-text-table-leading: var(--dads-text-dns-14N-130-leading);
+  --app-text-table-tracking: var(--dads-text-dns-14N-130-tracking);
+  /* 見出し: Standard 系 */
+  --app-text-heading-lg-size: var(--dads-text-std-24B-150-size);
+  --app-text-heading-lg-weight: var(--dads-text-std-24B-150-weight);
+  --app-text-heading-lg-leading: var(--dads-text-std-24B-150-leading);
+  --app-text-heading-lg-tracking: var(--dads-text-std-24B-150-tracking);
+  --app-text-heading-size: var(--dads-text-std-20B-160-size);
+  --app-text-heading-weight: var(--dads-text-std-20B-160-weight);
+  --app-text-heading-leading: var(--dads-text-std-20B-160-leading);
+  --app-text-heading-tracking: var(--dads-text-std-20B-160-tracking);
+  --app-text-heading-sm-size: var(--dads-text-std-18B-160-size);
+  --app-text-heading-sm-weight: var(--dads-text-std-18B-160-weight);
+  --app-text-heading-sm-leading: var(--dads-text-std-18B-160-leading);
+  --app-text-heading-sm-tracking: var(--dads-text-std-18B-160-tracking);
+  /* 金額・ID・数値列: Mono（等幅で桁揃え） */
+  --app-text-numeric-size: var(--dads-text-mono-14N-150-size);
+  --app-text-numeric-weight: var(--dads-text-mono-14N-150-weight);
+  --app-text-numeric-leading: var(--dads-text-mono-14N-150-leading);
+  --app-text-numeric-tracking: var(--dads-text-mono-14N-150-tracking);
+  /* ダッシュボードのKPI数値: Display（大）/ Standard 32B（KPIカード標準） */
+  --app-text-display-size: var(--dads-text-dsp-48B-140-size);
+  --app-text-display-weight: var(--dads-text-dsp-48B-140-weight);
+  --app-text-display-leading: var(--dads-text-dsp-48B-140-leading);
+  --app-text-display-tracking: var(--dads-text-dsp-48B-140-tracking);
+  --app-text-display-sm-size: var(--dads-text-std-32B-150-size);
+  --app-text-display-sm-weight: var(--dads-text-std-32B-150-weight);
+  --app-text-display-sm-leading: var(--dads-text-std-32B-150-leading);
+  --app-text-display-sm-tracking: var(--dads-text-std-32B-150-tracking);
+
+  /* ===== 3.3 レイアウト・余白 ===== */
+  /* 余白は DADS spacing（8px基準スケール）のエイリアス。独自の中間値を作らない */
+  --app-space-0: var(--dads-spacing-0);
+  --app-space-05: var(--dads-spacing-05); /* 4px */
+  --app-space-1: var(--dads-spacing-1); /* 8px */
+  --app-space-2: var(--dads-spacing-2); /* 16px */
+  --app-space-3: var(--dads-spacing-3); /* 24px */
+  --app-space-4: var(--dads-spacing-4); /* 32px */
+  --app-space-5: var(--dads-spacing-5); /* 40px */
+  --app-space-6: var(--dads-spacing-6); /* 48px */
+  --app-space-8: var(--dads-spacing-8); /* 64px */
+  --app-nav-width: 240px;
+  --app-nav-width-collapsed: 56px;
+  --app-header-height: 56px;
+  --app-content-max: 1280px;
+  --app-gutter: var(--dads-spacing-3); /* 24px */
+  --app-row-height-dense: 36px;
+  --app-row-height: 44px;
+  --app-row-height-comfy: 52px;
+
+  /* ===== 3.4 エレベーション・角丸・z-index ===== */
+  --app-shadow-raised: var(--dads-shadow-1); /* ポップオーバー・ドロップダウン */
+  --app-shadow-overlay: var(--dads-shadow-3); /* モーダル・トースト */
+  --app-radius-xs: var(--dads-radius-4);
+  --app-radius-sm: var(--dads-radius-6);
+  --app-radius-md: var(--dads-radius-8);
+  --app-radius-lg: var(--dads-radius-12);
+  --app-radius-full: var(--dads-radius-full);
+  /* z-index（DADS 未規定・自社定義） */
+  --app-z-base: 0;
+  --app-z-sticky: 100;
+  --app-z-drawer: 200;
+  --app-z-modal: 300;
+  --app-z-popover: 400;
+  --app-z-toast: 500;
+}
+
+/* ===== タイポグラフィ・ユーティリティクラス ===== */
+.app-text-body { font-size: var(--app-text-body-size); font-weight: var(--app-text-body-weight); line-height: var(--app-text-body-leading); letter-spacing: var(--app-text-body-tracking); }
+.app-text-body-sm { font-size: var(--app-text-body-sm-size); font-weight: var(--app-text-body-sm-weight); line-height: var(--app-text-body-sm-leading); letter-spacing: var(--app-text-body-sm-tracking); }
+.app-text-label { font-size: var(--app-text-label-size); font-weight: var(--app-text-label-weight); line-height: var(--app-text-label-leading); letter-spacing: var(--app-text-label-tracking); }
+.app-text-table { font-size: var(--app-text-table-size); font-weight: var(--app-text-table-weight); line-height: var(--app-text-table-leading); letter-spacing: var(--app-text-table-tracking); }
+.app-text-heading-lg { font-size: var(--app-text-heading-lg-size); font-weight: var(--app-text-heading-lg-weight); line-height: var(--app-text-heading-lg-leading); letter-spacing: var(--app-text-heading-lg-tracking); }
+.app-text-heading { font-size: var(--app-text-heading-size); font-weight: var(--app-text-heading-weight); line-height: var(--app-text-heading-leading); letter-spacing: var(--app-text-heading-tracking); }
+.app-text-heading-sm { font-size: var(--app-text-heading-sm-size); font-weight: var(--app-text-heading-sm-weight); line-height: var(--app-text-heading-sm-leading); letter-spacing: var(--app-text-heading-sm-tracking); }
+.app-text-numeric { font-family: var(--app-font-mono); font-size: var(--app-text-numeric-size); font-weight: var(--app-text-numeric-weight); line-height: var(--app-text-numeric-leading); letter-spacing: var(--app-text-numeric-tracking); font-variant-numeric: tabular-nums; }
+.app-text-display { font-size: var(--app-text-display-size); font-weight: var(--app-text-display-weight); line-height: var(--app-text-display-leading); letter-spacing: var(--app-text-display-tracking); }
+.app-text-display-sm { font-size: var(--app-text-display-sm-size); font-weight: var(--app-text-display-sm-weight); line-height: var(--app-text-display-sm-leading); letter-spacing: var(--app-text-display-sm-tracking); }
+
+/* ===== フォーカスリング（除去禁止 / DADS フォーカスカラー） ===== */
+.app-focus-ring:focus-visible {
+  outline: var(--app-focus-ring-width) solid var(--app-focus-ring);
+  outline-offset: var(--app-focus-ring-offset);
+}

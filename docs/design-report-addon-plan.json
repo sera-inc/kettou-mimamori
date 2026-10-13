@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-10-13T01:55:54.288Z",
+  "addons": [
+    {
+      "file": "lib/report_plugins/treatments.js",
+      "before": "'  border-bottom:1pt solid #eee;'",
+      "after": "'  border-bottom:1px solid var(--app-border);'",
+      "sourceSHA256": "62cbaf44cac768eecb1ae6a02342b5e055754091d43dd25aedb5738ec840ac20",
+      "reason": "Legacy concatenated CSS fragment omitted by the initial property-boundary inventory; use a DDS 3:1 border and native 1px divider."
+    }
+  ]
+}

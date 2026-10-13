@@ -1,66 +1,21 @@
-<div id="config-form">
-    <h2>Clock view configurator</h2>
-    <form action="#">
-        <p>
-            <label for="bgcolor">Background type</label>
-            <select name="bgcolor" id="bgcolor">
-                <option value="c" selected="selected">Color</option>
-                <option value="b">Black</option>
-            </select>
-        </p>
-        <p>
-            <label for="sgage">Show SGV age</label>
-            <select name="sgage" id="sgage">
-                <option value="y" selected="selected">Always</option>
-                <option value="n">Only after threshold</option>
-            </select>
-        </p>
-        <p>SGV age threshold: <input type="number" class="threshold" id="threshold" name="threshold" min="1" max="99" value="10"> minutes</p>
-        <p><input type="button" class="elmt" id="cfg_nl" name="nl" value="Add line break"></p>
-        <p><input type="button" class="elmt" id="cfg_sg" name="sg" value="Add SGV"> Size: <input type="number" class="size" id="cfg_sg_size" name="cfg_sg_size" min="1" max="99" value="40"></p>
-        <p><input type="button" class="elmt" id="cfg_ag" name="ag" value="Add SGV age"> Size: <input type="number" class="size" id="cfg_ag_size" name="cfg_ag_size" min="1" max="99" value="6"></p>
-        <p><input type="button" class="elmt" id="cfg_dt" name="dt" value="Add SGV delta"> Size: <input type="number" class="size" id="cfg_dt_size" name="cfg_dt_size" min="1" max="99" value="14"></p>
-        <p><input type="button" class="elmt" id="cfg_ar" name="ar" value="Add trend arrow"> Size: <input type="number" class="size" id="cfg_ar_size" name="cfg_ar_size" min="1" max="99" value="30"></p>
-        <p><input type="button" class="elmt" id="cfg_tm" name="tm" value="Add time"> Size: <input type="number" class="size" id="cfg_tm_size" name="cfg_tm_size" min="1" max="99" value="10"></p>
-        <p><input type="button" class="elmt" id="cfg_em" name="em" value="Add emoji"> Size: <input type="number" class="size" id="cfg_em_size" name="cfg_em_size" min="1" max="99" value="40"></p>
-        <p><input type="button" class="undo" id="cfg_undo" name="undo" value="Remove last element"></p>
-        <a id="clocklink" target=”_blank” href="/clock/cy10">Open my clock view!</a>
-        <div id="facename">cy10</div>
-    </form>
-</div>
-<script type="text/javascript">
-    $( function() {
-        $( "input.elmt" ).click( function() {
-            let size = $("input#" + this.id + "_size").val();
-            let append = '-' + this.name + (size ? size : '');
-            let $facename = $( "#facename" );
-            $facename.text($facename.text() + append);
-            $facename.change();
-        } );
-        $( "select#sgage" ).change( function() {
-            let $facename = $( "#facename" );
-            $facename.text($facename.text().substring(0, 1) + this.value + $facename.text().substring(2));
-            $facename.change();
-        } );
-        $( "input#threshold" ).change( function() {
-            let $facename = $( "#facename" );
-            $facename.text($facename.text().substring(0, 2) + (((this.value < 10) ? '0' : '') + this.value) + $facename.text().substring(4));
-            $facename.change();
-        } );
-        $( "select#bgcolor" ).change( function() {
-            let $facename = $( "#facename" );
-            $facename.text(this.value + $facename.text().substring(1));
-            $facename.change();
-        } );
-        $( "input.undo" ).click( function() {
-            let $facename = $( "#facename" );
-            $facename.text($facename.text().substring(0, $facename.text().lastIndexOf('-') < 0 ? $facename.text().length: $facename.text().lastIndexOf('-')));
-            $facename.change();
-        } );
-        $( "#facename" ).change(function() {
-            $( "#inner" ).attr('data-face-config', $(this).text());
-            $( "#clocklink" ).attr('href', ('/clock/' + $(this).text()));
-            window.Nightscout.client.query();
-        } );
-    } );
-</script>
+<section id="config-form" aria-labelledby="clock-options-title">
+  <h2 id="clock-options-title">表示する情報を選ぶ</h2>
+  <form action="#">
+    <fieldset>
+      <legend>背景と更新時刻</legend>
+      <p><label for="bgcolor">背景</label><select name="bgcolor" id="bgcolor"><option value="c" selected>血糖の範囲に応じた色</option><option value="b">暗い背景</option></select></p>
+      <p><label for="sgage">測定からの経過時間</label><select name="sgage" id="sgage"><option value="y" selected>常に表示する</option><option value="n">設定した時間を超えたら表示する</option></select></p>
+      <p><label for="threshold">古いデータとして表示するまでの時間（分）</label><input type="number" class="threshold" id="threshold" name="threshold" min="1" max="99" value="10"></p>
+    </fieldset>
+    <fieldset>
+      <legend>表示要素を追加する</legend>
+      <% const parts=[['sg','血糖値',40],['ag','経過時間',6],['dt','血糖の変化量',14],['ar','傾向の矢印',30],['tm','現在の時刻',10],['em','状態の絵文字',40]];parts.forEach(function(part){ %>
+      <p class="app-clock-element"><input type="button" class="elmt" id="cfg_<%= part[0] %>" name="<%= part[0] %>" value="<%= part[1] %>を追加"><label for="cfg_<%= part[0] %>_size">大きさ</label><input type="number" class="size" id="cfg_<%= part[0] %>_size" name="cfg_<%= part[0] %>_size" min="1" max="99" value="<%= part[2] %>" required></p>
+      <% }); %>
+      <p><input type="button" class="elmt" id="cfg_nl" name="nl" value="改行を追加"></p>
+      <p><input type="button" class="undo" id="cfg_undo" name="undo" value="最後の要素を削除"></p>
+    </fieldset>
+    <p><a id="clocklink" class="app-button" target="_blank" rel="noopener" href="/clock/cy10">この時計を新しい画面で開く</a></p>
+    <p>表示設定：<code id="facename">cy10</code></p>
+  </form>
+</section>

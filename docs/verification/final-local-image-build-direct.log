@@ -1,0 +1,107 @@
+2026/10/14 00:35:00 http2: server: error reading preface from client //./pipe/dockerDesktopLinuxEngine: file has already been closed
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.local
+#1 transferring dockerfile: 389B 0.0s done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 0.9s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#4 DONE 0.7s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 822B done
+#5 DONE 0.0s
+
+#6 [stage-0 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#6 resolve docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 1.05MB 0.3s done
+#7 DONE 0.3s
+
+#8 [stage-0 2/6] WORKDIR /opt/app
+#8 CACHED
+
+#9 [stage-0 3/6] COPY package.json package-lock.json ./
+#9 DONE 0.1s
+
+#10 [stage-0 4/6] RUN --mount=type=secret,id=local_ca,required=true     NODE_EXTRA_CA_CERTS=/run/secrets/local_ca npm ci --ignore-scripts --omit=optional --force --no-audit --no-fund
+#10 0.850 npm warn using --force Recommended protections disabled.
+#10 52.22 
+#10 52.22 added 1028 packages in 51s
+#10 52.22 npm notice
+#10 52.22 npm notice New major version of npm available! 10.9.9 -> 12.2.0
+#10 52.22 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+#10 52.22 npm notice To update run: npm install -g npm@12.2.0
+#10 52.22 npm notice
+#10 DONE 53.3s
+
+#11 [stage-0 5/6] COPY . .
+#11 DONE 5.8s
+
+#12 [stage-0 6/6] RUN npm run bundle
+#12 1.114 
+#12 1.114 > kettou-mimamori@15.0.8 bundle
+#12 1.114 > webpack --mode production --config webpack/webpack.config.js && npm run-script post-generate-keys
+#12 1.114 
+#12 14.88 [BABEL] Note: The code generator has deoptimised the styling of /opt/app/node_modules/jquery-ui-bundle/jquery-ui.js as it exceeds the max of 500KB.
+#12 85.39 asset js/bundle.app.js 1.71 MiB [emitted] [minimized] [big] (name: app) 2 related assets
+#12 85.39 asset js/bundle.clock.js 150 KiB [emitted] [minimized] (name: clock) 2 related assets
+#12 85.39 asset images/730d0f4654094d2dcd3c1127a227a6e9.png 1.2 KiB [emitted] [immutable] [from: static/images/logo2.png] (auxiliary name: app)
+#12 85.39 orphan modules 544 KiB [orphan] 521 modules
+#12 85.39 runtime modules 1.87 KiB 10 modules
+#12 85.39 built modules 3.38 MiB [built]
+#12 85.39   modules by path ./node_modules/ 2.4 MiB 205 modules
+#12 85.39   modules by path ./lib/ 896 KiB 111 modules
+#12 85.39   modules by path ./static/ 29.2 KiB 7 modules
+#12 85.39   modules by path ./bundle/*.js 1.39 KiB
+#12 85.39     ./bundle/bundle.source.js 1.22 KiB [built] [code generated]
+#12 85.39     ./bundle/bundle.clocks.source.js 178 bytes [built] [code generated]
+#12 85.39   modules by path ./translations/ 77.9 KiB
+#12 85.39     ./translations/ja_JP.json 34.1 KiB [built] [code generated]
+#12 85.39     ./translations/en/en.json 43.8 KiB [built] [code generated]
+#12 85.39   crypto (ignored) 15 bytes [built] [code generated]
+#12 85.39   util (ignored) 15 bytes [built] [code generated]
+#12 85.39   util (ignored) 15 bytes [built] [code generated]
+#12 85.39 
+#12 85.39 WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+#12 85.39 This can impact web performance.
+#12 85.39 Assets: 
+#12 85.39   js/bundle.app.js (1.71 MiB)
+#12 85.39 
+#12 85.39 WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+#12 85.39 Entrypoints:
+#12 85.39   app (1.71 MiB)
+#12 85.39       js/bundle.app.js
+#12 85.39 
+#12 85.39 WARNING in webpack performance recommendations: 
+#12 85.39 You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+#12 85.39 For more info visit https://webpack.js.org/guides/code-splitting/
+#12 85.39 
+#12 85.39 webpack 5.106.2 compiled with 3 warnings in 82065 ms
+#12 86.16 
+#12 86.16 > kettou-mimamori@15.0.8 post-generate-keys
+#12 86.16 > node bin/generateRandomString.js >node_modules/.cache/_ns_cache/randomString
+#12 86.16 
+#12 DONE 86.5s
+
+#13 exporting to image
+#13 exporting layers
+#13 exporting layers 44.1s done
+#13 exporting manifest sha256:06203b38f88cd392da0ba3ce6bddabf22fde8ddfa33a46b7aeb0e2983c6fe5be 0.0s done
+#13 exporting config sha256:55823a63afdeefbe8cfd9f9631852cae2eca62c59d4523afaa16eb8791156e58 0.0s done
+#13 exporting attestation manifest sha256:aca2b55945fb8e3b9a925ade8aa0cd8db9a34f24e0ce703157ea746de848db8d 0.0s done
+#13 exporting manifest list sha256:bd83890b3a3d3d653c182468f8708f41b072b9c77429c62dec72d0c65b06f4aa
+#13 exporting manifest list sha256:bd83890b3a3d3d653c182468f8708f41b072b9c77429c62dec72d0c65b06f4aa 0.0s done
+#13 naming to docker.io/library/kettou-mimamori-local:latest 0.0s done
+#13 unpacking to docker.io/library/kettou-mimamori-local:latest
+#13 unpacking to docker.io/library/kettou-mimamori-local:latest 26.0s done
+#13 DONE 70.4s

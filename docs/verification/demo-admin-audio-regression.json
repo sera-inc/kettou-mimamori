@@ -1,0 +1,86 @@
+{
+  "stats": {
+    "suites": 9,
+    "tests": 31,
+    "passes": 31,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-10-13T05:13:56.221Z",
+    "end": "2026-10-13T05:14:07.942Z",
+    "duration": 11721
+  },
+  "isolation": "one-process-per-test-file",
+  "files": [
+    {
+      "file": "tests/admintools.modern.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 5,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:13:59.447Z",
+        "end": "2026-10-13T05:14:00.520Z",
+        "duration": 1073
+      }
+    },
+    {
+      "file": "tests/alarm-audio.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 3,
+        "passes": 3,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:14:00.897Z",
+        "end": "2026-10-13T05:14:00.918Z",
+        "duration": 21
+      }
+    },
+    {
+      "file": "tests/api.treatments.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 9,
+        "passes": 9,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:14:01.659Z",
+        "end": "2026-10-13T05:14:04.838Z",
+        "duration": 3179
+      }
+    },
+    {
+      "file": "tests/japanese-locale.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 5,
+        "passes": 5,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:14:05.371Z",
+        "end": "2026-10-13T05:14:05.679Z",
+        "duration": 308
+      }
+    },
+    {
+      "file": "tests/stored-output-sinks.test.js",
+      "exitCode": 0,
+      "stats": {
+        "suites": 1,
+        "tests": 7,
+        "passes": 7,
+        "pending": 0,
+        "failures": 0,
+        "start": "2026-10-13T05:14:06.964Z",
+        "end": "2026-10-13T05:14:07.917Z",
+        "duration": 953
+      }
+    }
+  ],
+  "failures": []
+}

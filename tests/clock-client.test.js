@@ -81,8 +81,52 @@ describe('clock client', function() {
     };
   }
 
+  [
+    {name:'legacy raw hash',stored:'abcdef0123456789abcdef0123456789abcdef0123',expected:'abcdef0123456789abcdef0123456789abcdef0123'},
+    {name:'JSON-serialized hash',stored:JSON.stringify('abcdef0123456789abcdef0123456789abcdef0123'),expected:'abcdef0123456789abcdef0123456789abcdef0123'},
+    {name:'numeric legacy hash without precision loss',stored:'1234567890123456789012345678901234567890',expected:'1234567890123456789012345678901234567890'},
+    {name:'missing stored authentication',stored:null,expected:''}
+  ].forEach(function(example) {
+    it('uses '+example.name+' for clock property authentication',function() {
+      const previousLocation=global.location;
+      global.location={search:''};
+      global.localStorage.getItem=function(key){key.should.equal('apisecrethash');return example.stored;};
+      try {
+        clockClient.readApiSecret().should.equal(example.expected);
+        let called=false;
+        $.ajax=function(url){url.should.equal('/api/v2/properties'+(example.expected?'?secret='+example.expected:''));called=true;};
+        clockClient.query();called.should.equal(true);
+      } finally {if(previousLocation===undefined)delete global.location;else global.location=previousLocation;}
+    });
+  });
+
   beforeEach(setupClockClient);
   afterEach(teardownClockClient);
+
+  [{minutes:0,text:'たった今'},{minutes:1,text:'1分前'},{minutes:17,text:'17分前'}].forEach(function(example) {
+    it('renders Japanese elapsed measurement text for '+example.minutes+' minutes without changing the reading', function() {
+      $('#inner').attr('data-face','by0-sg40-dt14-ag6-ar25');
+      var properties=propertiesWithUnits('100','+5');
+      properties.bgnow.sgvs[0].mills=Date.now()-example.minutes*60000;
+      renderProperties('mg/dl','mg/dl',properties);
+      clockClient.settings.language='ja';clockClient.render();
+      $('.ag').text().should.equal(example.text);
+      $('.sg').text().should.equal('100');$('.dt').text().should.equal('+5');
+    });
+  });
+
+  [{}, {bgnow:{}}, {bgnow:{sgvs:[]}}, {bgnow:{sgvs:null}}, null].forEach(function(properties,index) {
+    it('shows an empty state for missing measurement variant '+index+' and recovers on new data',function() {
+      renderProperties('mg/dl','mg/dl',properties);
+      $('#errorMessage').attr('role').should.equal('status');
+      $('#errorMessage').text().should.containEql('血糖データはまだありません');
+      $('#inner').css('display').should.equal('none');
+      renderProperties('mg/dl','mg/dl',propertiesWithUnits('100','+5'));
+      $('.sg').text().should.equal('100');
+      $('#errorMessage').css('display').should.equal('none');
+      $('#inner').css('display').should.not.equal('none');
+    });
+  });
 
   it('constructs every supported face component with bounded numeric sizing', function() {
     $('#inner').attr('data-face', 'bn0-sg40-dt14-nl-ar25-ag6-tm10-em40');
