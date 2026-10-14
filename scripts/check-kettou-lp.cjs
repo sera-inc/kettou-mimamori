@@ -40,8 +40,10 @@ const target='/healthcare/products/kettou-mimamori';
       const videos=[];
       for(const video of await page.locator('video').all()){
         await video.evaluate(el=>el.load());await video.evaluate(el=>el.readyState>=1?Promise.resolve():new Promise((resolve,reject)=>{el.addEventListener('loadedmetadata',resolve,{once:true});el.addEventListener('error',reject,{once:true});}));
-        const metadata=await video.evaluate(el=>({duration:el.duration,width:el.videoWidth,height:el.videoHeight,autoplay:el.autoplay,controls:el.controls,caption:el.querySelector('track')?.getAttribute('src')}));
+        const metadata=await video.evaluate(el=>{const caption=document.getElementById('kettou-video-caption');return {duration:el.duration,width:el.videoWidth,height:el.videoHeight,autoplay:el.autoplay,controls:el.controls,caption:caption?.textContent,nativeTracks:el.textTracks.length,captionBelowVideo:caption.getBoundingClientRect().top>=el.getBoundingClientRect().bottom-1};});
         assert(metadata.duration>10&&metadata.width===1440&&metadata.height===1000&&metadata.controls&&!metadata.autoplay&&metadata.caption);
+        assert.equal(metadata.nativeTracks,0,'Captions must not overlay the video');
+        assert(metadata.captionBelowVideo,'Caption stays below the complete video frame');
         await video.evaluate(async el=>{await el.play();});await page.waitForTimeout(700);assert(await video.evaluate(el=>el.currentTime>0));await video.evaluate(el=>el.pause());videos.push(metadata);
       }
       assert.equal(videos.length,1);
