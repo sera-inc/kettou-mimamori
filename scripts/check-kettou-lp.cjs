@@ -37,7 +37,6 @@ const target='/healthcare/products/kettou-mimamori';
           const loaded=await gallery.locator('img').evaluate(img=>({src:img.getAttribute('src'),width:img.naturalWidth,height:img.naturalHeight}));assert(loaded.width>0&&loaded.height>0);media.push(loaded);
         }
       }
-      await page.locator('summary').filter({hasText:'食品の絞り込み'}).click();
       const videos=[];
       for(const video of await page.locator('video').all()){
         await video.evaluate(el=>el.load());await video.evaluate(el=>el.readyState>=1?Promise.resolve():new Promise((resolve,reject)=>{el.addEventListener('loadedmetadata',resolve,{once:true});el.addEventListener('error',reject,{once:true});}));
@@ -45,7 +44,11 @@ const target='/healthcare/products/kettou-mimamori';
         assert(metadata.duration>10&&metadata.width===1440&&metadata.height===1000&&metadata.controls&&!metadata.autoplay&&metadata.caption);
         await video.evaluate(async el=>{await el.play();});await page.waitForTimeout(700);assert(await video.evaluate(el=>el.currentTime>0));await video.evaluate(el=>el.pause());videos.push(metadata);
       }
-      assert.equal(videos.length,2);
+      assert.equal(videos.length,1);
+      assert.equal(await page.locator('#usecases img').count(),0,'Role cards must use icons rather than cropped screenshots');
+      assert.equal(await page.locator('#usecases svg').count(),4,'Four role icons');
+      const displayedText=await page.locator('body').innerText();
+      assert(!displayedText.includes('利用者・権限・保存した記録を管理')&&!displayedText.includes('接続・共有・使いやすさ'));
       await page.addScriptTag({path:require.resolve('axe-core/axe.min.js')});
       const audit=await page.evaluate(async()=>{const r=await axe.run(document);return {violations:r.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>({target:n.target,html:n.html,failureSummary:n.failureSummary}))})),incomplete:r.incomplete.map(v=>({id:v.id,targets:v.nodes.map(n=>n.target)}))};});
       fs.writeFileSync(path.join(out,size+'-a11y.json'),JSON.stringify(audit,null,2));
@@ -62,6 +65,6 @@ const target='/healthcare/products/kettou-mimamori';
     }
     assert.deepEqual(errors,[]);assert.deepEqual(writes,[]);
     fs.writeFileSync(path.join(out,'browser-results.json'),JSON.stringify({generatedAt:new Date().toISOString(),base,results,pageErrors:errors,contactAndAnalyticsPosts:writes},null,2));
-    console.log('PASS: PC/mobile, exact ordered Sumai section structure, 25 actual screen choices, two playable complete-frame videos, whole-page axe, prices and healthcare card.');
+    console.log('PASS: PC/mobile, exact ordered Sumai section structure, 25 actual screen choices, one playable complete-frame video, four role icon cards, removed extra blocks, whole-page axe, prices and healthcare card.');
   }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
